@@ -49,6 +49,14 @@
      .side-menu a:focus {
         outline: 3px solid #000;
      }
+      .logo-area {
+         min-height: 120px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         text-align: center;
+      }
      .main-area {
         flex-grow: 1;
         display: flex;
@@ -96,14 +104,14 @@
         .col-3 { grid-column: span 3; }
      }
    </style>
-
 </head>
 
 <body>
-
    <aside>
-      <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/sigla.png?raw=true" alt="Sigla cu textul 'Școala Gimnazială „Nicu Albu” Piatra Neamț' și elemente grafice în albastru și roșu">
-      <h1>Școala Gimnazială<br>„Nicu Albu”<br>Piatra Neamț</h1>
+      <div class="logo-area">
+         <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/sigla.png?raw=true" alt="Sigla cu textul 'Școala Gimnazială „Nicu Albu” Piatra Neamț' și elemente grafice în albastru și roșu">
+         <h1>Școala Gimnazială<br>„Nicu Albu”<br>Piatra Neamț</h1>
+      </div>
       <nav class="side-menu" aria-label="Meniu principal">
          <a href="index.html" aria-current="page">Prezentare</a>
          <a href="oferta.html">Oferta educațională</a>
@@ -127,12 +135,12 @@
          .banner img {
             width: 100%;
             height: auto;
-            max-height: 200px;
+            max-height: 120px;
             object-fit: cover;
          }
       @media (max-width: 768px) {
          .banner img {
-            max-height: 100px;
+            max-height: 120px;
          }
       }
       .top-menu {
@@ -194,7 +202,7 @@
       </section>
    </main>
    </div>
-
 </body>
 
 </html>
+
