@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <title>Școala Gimnazială „Nicu Albu” Piatra Neamț</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      --grid-cols: 12;
+      --button-gutter: 1rem;
+    }
+
+    html, body {
+      margin: 0; padding: 0;
+      height: 100%;
+      font-family: sans-serif;
+      background: #fff;
+      color: #000;
+    }
+    a { text-decoration: none; color: #000; }
+    a:focus { outline: 3px solid #005FCC; }
+
+    .skip-link {
+      position: absolute; left: -999px; top: auto;
+      width: 1px; height: 1px; overflow: hidden;
+    }
+    .skip-link:focus {
+      position: static;
+      width: auto; height: auto;
+      background: #005FCC; color: #fff;
+      padding: 0.5rem;
+    }
+
+    .layout { display: flex; height: 100vh; }
+
+    aside {
+      flex: 0 0 250px;
+      background: #f2f2f2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+      box-sizing: border-box;
+    }
+    aside img {
+      max-width: 100%;
+      height: auto;
+    }
+    aside h1, aside h2 {
+      margin: 0.5rem 0;
+      text-align: center;
+      font-size: 1.1rem;
+    }
+
+    nav.vertical ul {
+      list-style: none; padding: 0; margin-top: 1rem;
+      width: 100%;
+    }
+    nav.vertical li { margin-bottom: .5rem; }
+    nav.vertical a {
+      display: block; padding: .5rem;
+      color: #005FCC;
+    }
+    nav.vertical a:focus,
+    nav.vertical a:hover { background: #dbeaff; }
+
+    .main-area {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+    }
+
+    .page-image {
+      width: 100%;
+      overflow: hidden;
+      animation: fadeIn 1s ease-in;
+    }
+    .page-image img {
+      width: 100%; height: auto;
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    nav.horizontal {
+      display: grid;
+      grid-template-columns: repeat(var(--grid-cols), 1fr);
+      gap: var(--button-gutter);
+      padding: 1rem;
+      justify-items: start;
+      align-items: center;
+    }
+    nav.horizontal a {
+      grid-column: span 3; /* default: 3/12 */
+      padding: 0.5rem 1rem;
+      border: 2px solid #000;
+      background: transparent;
+      font-weight: bold;
+      text-align: center;
+    }
+    nav.horizontal a[aria-current="page"] {
+      background: #000; color: #fff;
+    }
+    nav.horizontal a:focus,
+    nav.horizontal a:hover {
+      background: #000; color: #fff;
+    }
+
+    main {
+      padding: 2rem;
+    }
+    footer {
+      background: #f2f2f2; text-align: center;
+      padding: 1rem; font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Sari la conținut</a>
+
+<div class="layout">
+  <aside aria-label="Meniu principal">
+    <img src="https://drive.google.com/uc?export=view&id=14oQPz6-eUD1ajV5fvdpk7AlD3JHuZzPW" alt="Sigla Școlii Gimnaziale Nicu Albu">
+    <h1>Școala Gimnazială</h1>
+    <h2>„Nicu Albu”</h2>
+    <nav class="vertical">
+      <ul>
+        <li><a href="index.html">Acasă</a></li>
+        <li><a href="prezentare.html">Prezentare</a></li>
+        <li><a href="clasa-pregatitoare.html">Clasa pregătitoare</a></li>
+        <li><a href="oferta.html">Oferta educațională</a></li>
+        <li><a href="istoric.html">Istoric</a></li>
+        <li><a href="cadre.html">Cadre didactice</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <div class="main-area">
+    <div class="page-image">
+      <img src="https://drive.google.com/uc?export=view&id=14oQPz6-eUD1ajV5fvdpk7AlD3JHuZzPW" alt="Imaginea fațadei școlii">
+    </div>
+    <nav class="horizontal" role="navigation" aria-label="Subpagini">
+      <a href="index.html" aria-current="page" style="grid-column: span 1;">Acasă</a>
+      <a href="anunturi.html" style="grid-column: span 1;">Anunțuri</a>
+      <a href="documente.html" style="grid-column: span 1;">Documente</a>
+      <a href="contact.html" style="grid-column: span 1;">Contact</a>
+      <a href="contact.html" style="grid-column: span 1;">Contact</a>
+    </nav>
+
+    <main id="main" role="main">
+      <h1>Bine ați venit</h1>
+      <p>Școala Gimnazială „Nicu Albu” vă oferă un mediu educațional dedicat și modern.</p>
+    </main>
+
+    <footer role="contentinfo">
+      <p>&copy; 2025 Școala Gimnazială „Nicu Albu” Piatra Neamț</p>
+      <p>Str. Ecoului nr. 5 | Tel: 0233 218 177 | Email: <a href="mailto:scoalanicualbu@gmail.com">scoalanicualbu@gmail.com</a></p>
+      <p><a href="https://drive.google.com/...">Galerie foto</a> | <a href="https://drive.google.com/...">Documente PDF</a></p>
+    </footer>
+  </div>
+</div>
+
+</body>
+</html>
