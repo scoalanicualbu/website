@@ -5,12 +5,8 @@
   <title>Școala Gimnazială „Nicu Albu” Piatra Neamț</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    :root {
-      --grid-columns: 12;
-    }
-    * {
-      box-sizing: border-box;
-    }
+    :root { --grid-columns: 12; }
+    * { box-sizing: border-box; }
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -51,13 +47,14 @@
       display: flex;
       flex-direction: column;
     }
-    header {
-      padding: 0;
-      margin: 0;
-    }
-    .banner img {
-      width: 100%;
-      height: auto;
+    .parallax {
+      background-image: url('https://github.com/scoalanicualbu/website/blob/main/prezentare/Imaginea_intrarii_principale_in_Scoala_Gimnaziala_Nicu_Albu_Piatra_Neamt.png?raw=true');
+      min-height: 300px;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      clip-path: inset(0 0 20px 0);
     }
     .top-menu {
       display: flex;
@@ -110,10 +107,7 @@
 
 <div class="main-area">
   <header>
-    <div class="banner">
-      <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/Imaginea_intrarii_principale_in_Scoala_Gimnaziala_Nicu_Albu_Piatra_Neamt.png?raw=true" alt="Imaginea intrării principale în Școala Gimnazială „Nicu Albu” Piatra Neamț">
-
-    </div>
+    <div class="parallax" role="img" aria-label="Imaginea intrării principale în Școala Gimnazială „Nicu Albu” Piatra Neamț"></div>
     <nav class="top-menu" aria-label="Submeniuri">
       <a href="organigrama.html" class="col-3">Organigrama</a>
       <a href="regulament.html" class="col-3 active">Regulament intern</a>
@@ -126,41 +120,7 @@
     <section class="grid">
       <div class="col">
         <h2>Bine ați venit</h2>
-        <p>Aceasta este pagina oficială a Școlii Gimnaziale „Nicu Albu” din Piatra Neamț. Aici puteți găsi informații utile pentru părinți, elevi și profesori.</p>
-      </div>
-      <div class="col-6">
-        <img src="https://via.placeholder.com/600x400" alt="Activitate cu elevii">
-      </div>
-      <div class="col-6">
-        <p>Şcoala Gimnazială „Nicu Albu” Piatra Neamţ este o şcoală urbană, care se situează în partea de vest a Municipiului Piatra Neamţ, în cartierul Precista, pe strada Ecoului, la numărul 5.
-
-
-În anul 1993, o dată cu construirea unei şcoli noi în cartierul Precista cu scopul de a descongestiona numărul mare de elevi şi clase care funcţionau la școala din acelaşi cartier, Şcoala cu clasele I-VIII Nr. 4 Piatra Neamț, apare, ca organizație nouă, Şcoala cu clasele I-VIII Nr. 10 Piatra Neamţ.
-
-
-Funcţionând din anul şcolar 1993-1994 într-un corp de clădire în construcţie, clădirea Şcolii cu clasele I-VIII Nr. 10 Piatra Neamţ a fost finalizată în 1997 aşa cum atestă procesul verbal de recepţie finală, datat 15.12.1997.
-
-
-Din data de 01.09.2010, prin Decizia Inspectoratului Școlar Județean Neamţ nr. 664 din 13.05.2010, denumirea Şcolii cu clasele I-VIII Nr. 10 Piatra Neamţ s-a modificat în Şcoala cu clasele I-VIII „Nicu Albu” Piatra Neamţ.
-
-
-Prin Hotărârea Consiliului Local al Municipiului Piatra Neamţ nr. 99 din 10.03.2012 privind aprobarea schimbării denumirii unor unităţi şcolare care aparţin reţelei şcolare a învăţământului preuniversitar din Municipiul Piatra Neamţ, începând cu anul şcolar 2012-2013 denumirea unităţii şcolare s-a modificat, respectiv, în Şcoala Gimnazială „Nicu Albu” Piatra Neamţ.
-
-
-Şcoala Gimnazială „Nicu Albu” Piatra Neamţ este o unitate de învăţământ de stat acreditată aparţinând sistemului educaţional preuniversitar, cu grupe și clase structurate pe 3 niveluri: preşcolar, primar şi gimnazial.
-
-
-Sfera educaţională a şcolii cuprinde desfăşurarea simultană a două sisteme, sistemul educaţional tradiţional şi un sistem alternativ de educaţie, sistemul Step by Step. Este prima şcoală din judeţul Neamţ care a experimentat şi aplică sistemul alternativ de educaţie Step by Step din anul școlar 2001-2002.
-
-
-Unitatea de învăţământ şi-a construit un brand din aceasta şi, în prezent, este apreciată şi căutată de părinţii care optează pentru această alternativă educațională aplicată doar pentru învățământul primar.
-
-
-În comparaţie cu sistemul tradiţional, în sistemul educațional Step by Step se foloseşte acelaşi plan-cadru de învăţământ, aceleaşi programe şcolare, dar oferă o altă modalitate de lucru cu elevii: lucrul pe centre de activitate, în care sunt aplicate metode interactive şi individualizate, tot demersul fiind centrat pe elev.
-
-
-Clasele de învăţământ primar în care se aplică alternativa educaţională Step by Step lucrează în programul „şcolii complete” (zilnic, între orele 08.00-16.00) şi prin implicarea considerabilă a părinţilor. În cele două spaţii amenajate ca săli cu mese se poate servi masa de prânz de către elevi, prin servicii de catering, suportate financiar de părinţi.
-</p>
+        <p>Pagina oficială a Școlii Gimnaziale „Nicu Albu” din Piatra-Neamț.</p>
       </div>
     </section>
   </main>
