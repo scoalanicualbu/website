@@ -5,8 +5,12 @@
   <title>Școala Gimnazială „Nicu Albu” Piatra Neamț</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    :root { --grid-columns: 12; }
-    * { box-sizing: border-box; }
+    :root {
+      --grid-columns: 12;
+    }
+    * {
+      box-sizing: border-box;
+    }
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -15,14 +19,14 @@
     }
     aside {
       background-color: #f5f5f5;
-      width: 250px;
+      width: 500px;
       padding: 1rem;
       display: flex;
       flex-direction: column;
       align-items: center;
     }
     aside img {
-      max-width: 100%;
+      max-width: 50%;
       height: auto;
       margin-bottom: 1rem;
     }
@@ -47,14 +51,13 @@
       display: flex;
       flex-direction: column;
     }
-    .parallax {
-      background-image: url('https://github.com/scoalanicualbu/website/blob/main/prezentare/Imaginea_intrarii_principale_in_Scoala_Gimnaziala_Nicu_Albu_Piatra_Neamt.png?raw=true');
-      min-height: 300px;
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      clip-path: inset(0 0 20px 0);
+    header {
+      padding: 0;
+      margin: 0;
+    }
+    .banner img {
+      width: 100%;
+      height: auto;
     }
     .top-menu {
       display: flex;
@@ -94,8 +97,8 @@
 <body>
 
 <aside>
-  <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/Imaginea_siglei_Scolii_Gimnaziale_Nicu_Albu_Piatra_Neamt.png?raw=true" alt="Imaginea siglei Școlii Gimnaziale „Nicu Albu” Piatra Neamț">
-  <h1>Școala Gimnazială<br>„Nicu Albu”<br>Piatra Neamț</h1>
+  <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/sigla.png?raw=true" alt="Sigla Școlii Gimnaziale „Nicu Albu” Piatra Neamț">
+  <h1>Școala Gimnazială „Nicu Albu”<br>Piatra Neamț</h1>
   <nav class="side-menu" aria-label="Meniu principal">
     <a href="index.html" aria-current="page">Acasă</a>
     <a href="prezentare.html">Prezentare</a>
@@ -107,7 +110,10 @@
 
 <div class="main-area">
   <header>
-    <div class="parallax" role="img" aria-label="Imaginea intrării principale în Școala Gimnazială „Nicu Albu” Piatra Neamț"></div>
+    <div class="banner">
+      <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/intrare.png?raw=true" alt="Intrare principală în Școala Gimnazială „Nicu Albu” Piatra Neamț">
+
+    </div>
     <nav class="top-menu" aria-label="Submeniuri">
       <a href="organigrama.html" class="col-3">Organigrama</a>
       <a href="regulament.html" class="col-3 active">Regulament intern</a>
@@ -162,4 +168,3 @@ Clasele de învăţământ primar în care se aplică alternativa educaţională
 
 </body>
 </html>
-
