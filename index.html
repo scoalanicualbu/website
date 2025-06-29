@@ -1,173 +1,205 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <title>Școala Gimnazială „Nicu Albu” Piatra Neamț</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     :root {
-      --grid-cols: 12;
-      --button-gutter: 1rem;
+      --grid-columns: 12;
     }
-
-    html, body {
-      margin: 0; padding: 0;
-      height: 100%;
-      font-family: sans-serif;
-      background: #fff;
-      color: #000;
+    * {
+      box-sizing: border-box;
     }
-    a { text-decoration: none; color: #000; }
-    a:focus { outline: 3px solid #005FCC; }
-
-    .skip-link {
-      position: absolute; left: -999px; top: auto;
-      width: 1px; height: 1px; overflow: hidden;
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      min-height: 100vh;
     }
-    .skip-link:focus {
-      position: static;
-      width: auto; height: auto;
-      background: #005FCC; color: #fff;
-      padding: 0.5rem;
-    }
-
-    .layout { display: flex; height: 100vh; }
-
     aside {
-      flex: 0 0 250px;
-      background: #f2f2f2;
+      background-color: #f5f5f5;
+      width: 500px;
+      padding: 1rem;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 1rem;
-      box-sizing: border-box;
     }
     aside img {
       max-width: 100%;
       height: auto;
+      margin-bottom: 1rem;
     }
-    aside h1, aside h2 {
-      margin: 0.5rem 0;
-      text-align: center;
+    aside h1 {
       font-size: 1.1rem;
+      text-align: center;
     }
-
-    nav.vertical ul {
-      list-style: none; padding: 0; margin-top: 1rem;
-      width: 100%;
+    .side-menu a {
+      display: block;
+      margin: 0.5rem 0;
+      text-decoration: none;
+      color: #000;
+      border: 1px solid #000;
+      padding: 0.5rem;
+      text-align: center;
     }
-    nav.vertical li { margin-bottom: .5rem; }
-    nav.vertical a {
-      display: block; padding: .5rem;
-      color: #005FCC;
+    .side-menu a:focus {
+      outline: 3px solid #000;
     }
-    nav.vertical a:focus,
-    nav.vertical a:hover { background: #dbeaff; }
-
     .main-area {
-      flex: 1;
+      flex-grow: 1;
       display: flex;
       flex-direction: column;
-      overflow-y: auto;
     }
-
-    .page-image {
+    header {
+      padding: 0;
+      margin: 0;
+    }
+    .banner img {
       width: 100%;
-      overflow: hidden;
-      animation: fadeIn 1s ease-in;
+      height: auto;
     }
-    .page-image img {
-      width: 100%; height: auto;
-      display: block;
+    .top-menu {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0.5rem;
+      justify-content: start;
     }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-10px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    nav.horizontal {
-      display: grid;
-      grid-template-columns: repeat(var(--grid-cols), 1fr);
-      gap: var(--button-gutter);
-      padding: 1rem;
-      justify-items: start;
-      align-items: center;
-    }
-    nav.horizontal a {
-      grid-column: span 3; /* default: 3/12 */
-      padding: 0.5rem 1rem;
-      border: 2px solid #000;
-      background: transparent;
-      font-weight: bold;
+    .top-menu a {
+      margin: 0.25rem;
+      text-decoration: none;
+      color: #000;
+      border: 1px solid #000;
+      padding: 0.5rem;
       text-align: center;
+      flex-grow: 1;
     }
-    nav.horizontal a[aria-current="page"] {
-      background: #000; color: #fff;
+    .top-menu a.active {
+      background: #000;
+      color: #fff;
     }
-    nav.horizontal a:focus,
-    nav.horizontal a:hover {
-      background: #000; color: #fff;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(var(--grid-columns), 1fr);
+      gap: 1rem;
+      padding: 1rem;
     }
-
-    main {
-      padding: 2rem;
+    .col {
+      grid-column: span 12;
     }
-    footer {
-      background: #f2f2f2; text-align: center;
-      padding: 1rem; font-size: 0.9rem;
+    @media (min-width: 768px) {
+      .col-6 { grid-column: span 6; }
+      .col-4 { grid-column: span 4; }
+      .col-3 { grid-column: span 3; }
     }
   </style>
 </head>
 <body>
 
-<a href="#main" class="skip-link">Sari la conținut</a>
+<aside>
+  <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/sigla.png?raw=true" alt="Sigla cu textul 'Școala Gimnazială „Nicu Albu” Piatra Neamț' și elemente grafice în albastru și roșu">
+  <h1>Școala Gimnazială<br>„Nicu Albu”<br>Piatra Neamț</h1>
+  <nav class="side-menu" aria-label="Meniu principal">
+    <a href="index.html" aria-current="page">Acasă</a>
+    <a href="prezentare.html">Prezentare</a>
+    <a href="oferta.html">Oferta educațională</a>
+    <a href="personal.html">Cadre didactice</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</aside>
 
-<div class="layout">
-  <aside aria-label="Meniu principal">
-    <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/Imaginea_siglei_Scolii_Gimnaziale_Nicu_Albu_Piatra_Neamt.png?raw=true" alt="Imaginea siglei Școlii Gimnaziale „Nicu Albu” Piatra Neamț">
-    <h1>Școala Gimnazială</h1>
-    <h2>„Nicu Albu”</h2>
-    <h3>Piatra Neamț</h3>
+<div class="main-area">
+<style>
+  .banner img {
+    width: 100%;
+    height: auto;
+    max-height: 245px;
+    object-fit: cover;
+  }
 
-    <nav class="vertical">
-      <ul>
-        <li><a href="index.html">Acasă</a></li>
-        <li><a href="prezentare.html">Prezentare</a></li>
-        <li><a href="clasa-pregatitoare.html">Clasa pregătitoare</a></li>
-        <li><a href="oferta.html">Oferta educațională</a></li>
-        <li><a href="istoric.html">Istoric</a></li>
-        <li><a href="cadre.html">Cadre didactice</a></li>
-      </ul>
-    </nav>
-  </aside>
+  @media (max-width: 768px) {
+    .banner img {
+      max-height: 100px;
+    }
+  }
 
-  <div class="main-area">
-    <div class="page-image">
-       <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/Imaginea_intrarii_principale_in_Scoala_Gimnaziala_Nicu_Albu_Piatra_Neamt.png?raw=true" alt="Imaginea intrării principale în Școala Gimnazială „Nicu Albu” Piatra Neamț">
-    </div>
-    <nav class="horizontal" role="navigation" aria-label="Subpagini">
-      <a href="index.html" aria-current="page" style="grid-column: span 1;">Acasă</a>
-      <a href="anunturi.html" style="grid-column: span 1;">Anunțuri</a>
-      <a href="documente.html" style="grid-column: span 1;">Documente</a>
-      <a href="contact.html" style="grid-column: span 1;">Contact</a>
-      <a href="contact.html" style="grid-column: span 1;">Contact</a>
-    </nav>
+  .top-menu {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    padding-top: 0.5rem;
+    justify-content: start;
+  }
 
-    <main id="main" role="main">
-      <h1>Bine ați venit</h1>
-      <p>Școala Gimnazială „Nicu Albu” Piatra Neamț vă oferă un mediu educațional dedicat și modern.</p>
-    </main>
+  .top-menu a {
+    margin: 0.25rem;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #000;
+    padding: 0.5rem;
+    flex-grow: 1;
+  }
 
-    <footer role="contentinfo">
-      <p>&copy; 2025 Școala Gimnazială „Nicu Albu” Piatra Neamț</p>
-      <p>Str. Ecoului, nr. 5 | Tel: 0233 218 177 | Fax: 0233 210 651 | Email: <a href="mailto:scoalazece@yahoo.com">scoalazece@yahoo.com</a></p>
-      <!--p><a href="https://drive.google.com/...">Galerie foto</a> | <a href="https://drive.google.com/...">Documente PDF</a></p-->
-    </footer>
+  .top-menu a.active {
+    background: #000;
+    color: #fff;
+  }
+</style>
+
+<header>
+  <div class="banner">
+    <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/intrare.png?raw=true" alt="Fotografie cu intrarea principală a Școlii Gimnaziale „Nicu Albu” Piatra Neamț, cu ușă dublă, trepte și stema școlii deasupra">
   </div>
+  <nav class="top-menu" aria-label="Submeniuri">
+    <a href="organigrama.html">Organigrama</a>
+    <a href="regulament.html">Regulament intern</a>
+    <a href="proiecte.html" class="active">Proiecte</a>
+    <a href="documente.html">Documente</a>
+  </nav>
+</header>
+  <main>
+    <section class="grid">
+      <div class="col">
+        <h2>Bine ați venit</h2>
+        <p>Aceasta este pagina oficială a Școlii Gimnaziale „Nicu Albu” din Piatra Neamț. Aici puteți găsi informații utile pentru părinți, elevi și profesori.</p>
+      </div>
+      <div class="col-6">
+        <img src="https://via.placeholder.com/600x400" alt="Activitate cu elevii">
+      </div>
+      <div class="col-6">
+        <p>Şcoala Gimnazială „Nicu Albu” Piatra Neamţ este o şcoală urbană, care se situează în partea de vest a Municipiului Piatra Neamţ, în cartierul Precista, pe strada Ecoului, la numărul 5.
+
+
+În anul 1993, o dată cu construirea unei şcoli noi în cartierul Precista cu scopul de a descongestiona numărul mare de elevi şi clase care funcţionau la școala din acelaşi cartier, Şcoala cu clasele I-VIII Nr. 4 Piatra Neamț, apare, ca organizație nouă, Şcoala cu clasele I-VIII Nr. 10 Piatra Neamţ.
+
+
+Funcţionând din anul şcolar 1993-1994 într-un corp de clădire în construcţie, clădirea Şcolii cu clasele I-VIII Nr. 10 Piatra Neamţ a fost finalizată în 1997 aşa cum atestă procesul verbal de recepţie finală, datat 15.12.1997.
+
+
+Din data de 01.09.2010, prin Decizia Inspectoratului Școlar Județean Neamţ nr. 664 din 13.05.2010, denumirea Şcolii cu clasele I-VIII Nr. 10 Piatra Neamţ s-a modificat în Şcoala cu clasele I-VIII „Nicu Albu” Piatra Neamţ.
+
+
+Prin Hotărârea Consiliului Local al Municipiului Piatra Neamţ nr. 99 din 10.03.2012 privind aprobarea schimbării denumirii unor unităţi şcolare care aparţin reţelei şcolare a învăţământului preuniversitar din Municipiul Piatra Neamţ, începând cu anul şcolar 2012-2013 denumirea unităţii şcolare s-a modificat, respectiv, în Şcoala Gimnazială „Nicu Albu” Piatra Neamţ.
+
+
+Şcoala Gimnazială „Nicu Albu” Piatra Neamţ este o unitate de învăţământ de stat acreditată aparţinând sistemului educaţional preuniversitar, cu grupe și clase structurate pe 3 niveluri: preşcolar, primar şi gimnazial.
+
+
+Sfera educaţională a şcolii cuprinde desfăşurarea simultană a două sisteme, sistemul educaţional tradiţional şi un sistem alternativ de educaţie, sistemul Step by Step. Este prima şcoală din judeţul Neamţ care a experimentat şi aplică sistemul alternativ de educaţie Step by Step din anul școlar 2001-2002.
+
+
+Unitatea de învăţământ şi-a construit un brand din aceasta şi, în prezent, este apreciată şi căutată de părinţii care optează pentru această alternativă educațională aplicată doar pentru învățământul primar.
+
+
+În comparaţie cu sistemul tradiţional, în sistemul educațional Step by Step se foloseşte acelaşi plan-cadru de învăţământ, aceleaşi programe şcolare, dar oferă o altă modalitate de lucru cu elevii: lucrul pe centre de activitate, în care sunt aplicate metode interactive şi individualizate, tot demersul fiind centrat pe elev.
+
+
+Clasele de învăţământ primar în care se aplică alternativa educaţională Step by Step lucrează în programul „şcolii complete” (zilnic, între orele 08.00-16.00) şi prin implicarea considerabilă a părinţilor. În cele două spaţii amenajate ca săli cu mese se poate servi masa de prânz de către elevi, prin servicii de catering, suportate financiar de părinţi.
+</p>
+      </div>
+    </section>
+  </main>
 </div>
 
 </body>
 </html>
-
-
