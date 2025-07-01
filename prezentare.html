@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Școala Gimnazială „Nicu Albu” Piatra Neamț</title>
     <style>
-        /* Stiluri CSS pentru scalabilitate si design */
+        /* Stiluri generale */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -14,16 +14,18 @@
 
         .container {
             display: grid;
-            grid-template-columns: repeat(14, 1fr);
+            grid-template-columns: repeat(14, 1fr); /* 14 coloane */
             gap: 10px;
             padding: 20px;
         }
 
-        /* Antet */
+        /* Antet - secțiunea principală */
         .antet {
             grid-column: span 14;
             display: flex;
             justify-content: space-between;
+            align-items: center;
+            padding: 10px;
         }
 
         .sigla {
@@ -32,8 +34,6 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            border-right: 2px solid black;
-            padding: 10px;
         }
 
         .sigla img {
@@ -44,24 +44,28 @@
         .sigla h1 {
             text-align: center;
             margin-top: 10px;
+            font-size: 16px;
         }
 
         .banner {
             grid-column: span 12;
-            padding: 10px;
+            height: 200px; /* Ajustăm dimensiunea banner-ului */
+            overflow: hidden;
         }
 
         .banner img {
             width: 100%;
-            height: auto;
+            height: 100%;
+            object-fit: cover; /* Taie imaginea pentru a se potrivi */
         }
 
-        /* Meniu vertical */
+        /* Meniu vertical - secțiunea din stânga */
         .meniu-vertical {
             grid-column: span 2;
+            background-color: #f4f4f4;
             display: flex;
             flex-direction: column;
-            background-color: #f4f4f4;
+            height: 100vh;
         }
 
         .meniu-vertical a {
@@ -81,6 +85,15 @@
             font-weight: bold;
         }
 
+        /* Secțiunea principală de conținut - dreapta */
+        .continut {
+            grid-column: span 12;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* Meniu orizontal - sub secțiunea de conținut */
         .meniu-orizontal {
             grid-column: span 12;
             display: flex;
@@ -105,7 +118,6 @@
 
         /* Casete de continut */
         .caseta-text {
-            grid-column: span 12;
             background-color: #fff;
             padding: 20px;
             border: 1px solid black;
@@ -134,10 +146,6 @@
             height: auto;
         }
 
-        .carusel {
-            grid-column: span 4;
-        }
-
         /* Responsivitate */
         @media (max-width: 1200px) {
             .container {
@@ -150,18 +158,20 @@
 
             .banner {
                 grid-column: span 12;
+                height: 150px;
             }
 
             .meniu-vertical {
                 grid-column: span 2;
+                height: auto;
             }
 
             .meniu-orizontal {
                 grid-column: span 12;
             }
 
-            .caseta-text {
-                grid-column: span 12;
+            .continut {
+                grid-column: span 10;
             }
 
             .caseta-imagine {
@@ -179,15 +189,18 @@
                 grid-template-columns: repeat(6, 1fr);
             }
 
-            .sigla {
-                grid-column: span 6;
-            }
-
-            .meniu-vertical {
-                grid-column: span 6;
-            }
-
+            .sigla,
+            .meniu-vertical,
             .meniu-orizontal {
+                grid-column: span 6;
+            }
+
+            .banner {
+                grid-column: span 6;
+                height: 120px;
+            }
+
+            .continut {
                 grid-column: span 6;
             }
 
@@ -210,7 +223,7 @@
             .banner,
             .meniu-vertical,
             .meniu-orizontal,
-            .caseta-text,
+            .continut,
             .caseta-imagine,
             .caseta-imagini {
                 grid-column: span 1;
@@ -221,7 +234,7 @@
 <body>
     <div class="container">
 
-        <!-- Antet -->
+        <!-- Secțiunea principală Antet -->
         <div class="antet">
             <div class="sigla">
                 <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/sigla.png?raw=true" alt="Sigla Scolii">
@@ -240,42 +253,38 @@
             <a href="#">Contact</a>
         </div>
 
-        <!-- Meniu Orizontal -->
-        <div class="meniu-orizontal">
-            <a href="#" class="active">Acasă</a>
-            <a href="#">Despre</a>
-            <a href="#">Galerie</a>
+        <!-- Secțiunea principală de conținut -->
+        <div class="continut">
+            
+            <!-- Meniu Orizontal -->
+            <div class="meniu-orizontal">
+                <a href="#" class="active">Acasă</a>
+                <a href="#">Despre</a>
+                <a href="#">Galerie</a>
+            </div>
+
+            <!-- Subsecțiuni de conținut -->
+            <div class="caseta-text">
+                <p>Textul principal al paginii</p>
+            </div>
+
+            <div class="caseta-imagine">
+                <img src="imagine1.jpg" alt="Imagine 1">
+            </div>
+            <div class="caseta-text">
+                <p>Text asociat imaginii</p>
+            </div>
+
+            <div class="caseta-imagini">
+                <img src="imagine2.jpg" alt="Imagine 2">
+                <img src="imagine3.jpg" alt="Imagine 3">
+                <img src="imagine4.jpg" alt="Imagine 4">
+                <img src="imagine5.jpg" alt="Imagine 5">
+                <img src="imagine6.jpg" alt="Imagine 6">
+            </div>
+
         </div>
 
-        <!-- Subsecțiuni de conținut -->
-        <div class="caseta-text">
-            <p>Textul principal al paginii</p>
-        </div>
-
-        <div class="caseta-imagine">
-            <img src="imagine1.jpg" alt="Imagine">
-        </div>
-        <div class="caseta-text">
-            <p>Text asociat imaginii</p>
-        </div>
-
-        <div class="caseta-imagini">
-            <img src="imagine2.jpg" alt="Imagine 2">
-            <img src="imagine3.jpg" alt="Imagine 3">
-            <img src="imagine4.jpg" alt="Imagine 4">
-            <img src="imagine5.jpg" alt="Imagine 5">
-            <img src="imagine6.jpg" alt="Imagine 6">
-        </div>
-
-        <div class="meniu-vertical">
-            <a href="#" class="active">Submeniu 1</a>
-            <a href="#">Submeniu 2</a>
-        </div>
-        <div class="carusel">
-            <img src="carusel1.jpg" alt="Carusel">
-            <img src="carusel2.jpg" alt="Carusel">
-            <img src="carusel3.jpg" alt="Carusel">
-        </div>
     </div>
 </body>
 </html>
