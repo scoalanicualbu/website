@@ -21,19 +21,20 @@
 
         /* Secțiunea principală Antet */
         .antet {
-            grid-column: span 14;
+            grid-column: span 14; /* Secțiunea antet ocupă întreaga lățime */
             display: flex;
-            align-items: stretch; /* Aliniere pe verticală pentru subsecțiuni */
+            align-items: stretch;
             height: 200px; /* Înălțimea fixă a secțiunii antet */
         }
 
         /* Subsecțiunea 1 (Sigla și Denumire Școală) */
         .subsecțiune-sigla {
+            width: 100%; /* Ocupă 2 coloane din grilaj */
+            max-width: 2fr; /* Limitează la 2 coloane din grilajul de 14 */
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
-            width: 100%;
             height: 100%; /* Aliniere verticală completă */
             padding: 10px;
         }
@@ -52,12 +53,12 @@
 
         /* Subsecțiunea 2 (Banner) */
         .banner {
-            width: 100%;
+            width: 100%; /* Ocupă 12 coloane din 14 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
             height: 100%;
             overflow: hidden;
-            display: flex;
-            justify-content: center; /* Aliniere orizontală */
-            align-items: center; /* Aliniere verticală */
         }
 
         .banner img {
