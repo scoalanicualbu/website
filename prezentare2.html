@@ -22,21 +22,18 @@
         /* Secțiunea principală Antet */
         .antet {
             grid-column: span 14;
-            display: grid;
-            grid-template-columns: 2fr 12fr; /* Prima subsecțiune în 2 coloane și a doua subsecțiune în 12 coloane */
-            align-items: stretch; /* Asigură alinierea corectă a subsecțiunilor pe aceleași înălțimi */
+            display: flex;
+            align-items: stretch; /* Aliniere pe verticală pentru subsecțiuni */
         }
 
         /* Subsecțiunea 1 (Sigla și Denumire Școală) */
         .subsecțiune-sigla {
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
+            justify-content: space-between;
             align-items: center;
-        }
-
-        .sigla {
-            margin-bottom: 10px; /* Spațiu între siglă și denumirea școlii */
+            width: 100%; /* Asigurăm că ocupă întreaga lățime disponibilă */
+            height: 200px; /* Setăm înălțimea fixă pentru a o face uniformă cu bannerul */
         }
 
         .sigla img {
@@ -52,7 +49,8 @@
 
         /* Subsecțiunea 2 (Banner) */
         .banner {
-            height: 200px; /* Înălțimea bannerului este fixă */
+            width: 100%; /* Ocupă întreaga lățime a secțiunii */
+            height: 200px; /* Setăm înălțimea fixă pentru a fi egală cu sigla + denumirea */
             overflow: hidden;
             display: flex;
             justify-content: center; /* Aliniere orizontală */
@@ -62,7 +60,7 @@
         .banner img {
             width: 100%;
             height: 100%;
-            object-fit: cover; /* Taie imaginea pentru a se potrivi înălțimea secțiunii */
+            object-fit: cover; /* Asigură că imaginea este decupată corespunzător pentru a se potrivi în container */
         }
 
         /* Meniu Vertical - secțiunea din stânga */
@@ -263,40 +261,17 @@
 
         <!-- Meniu Vertical -->
         <div class="meniu-vertical">
-            <a href="#" class="active">Pagina Principală</a>
-            <a href="#">Despre Noi</a>
-            <a href="#">Activități</a>
-            <a href="#">Contact</a>
-        </div>
+            <a href="#" class="active">Meniu 1</a>
+            <a href="#">Meniu 2</a>
+            <a href="#">Meniu 3</a>
+           <a href="#">Meniu 4</a>
+       </div>
 
-        <!-- Secțiunea principală de conținut -->
-        <div class="continut">
-            
-            <!-- Meniu Orizontal -->
-            <div class="meniu-orizontal">
-                <a href="#" class="active">Acasă</a>
-                <a href="#">Despre</a>
-                <a href="#">Galerie</a>
-            </div>
-
-            <!-- Subsecțiuni de conținut -->
-            <div class="caseta-text">
-                <p>Textul principal al paginii</p>
-            </div>
-
-            <div class="caseta-imagine">
-                <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/imagine1.jpg?raw=true" alt="Imagine 1">
-            </div>
-
-            <div class="caseta-imagini">
-                <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/imagine2.jpg?raw=true" alt="Imagine 2">
-                <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/imagine3.jpg?raw=true" alt="Imagine 3">
-                <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/imagine4.jpg?raw=true" alt="Imagine 4">
-                <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/imagine5.jpg?raw=true" alt="Imagine 5">
-                <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/imagine6.jpg?raw=true" alt="Imagine 6">
-            </div>
-
-        </div>
-    </div>
-</body>
+       <!-- Secțiune de conținut -->
+       <div class="continut">
+           <h2>Despre Școala noastră</h2>
+           <p>Informații detaliate despre școala și activitățile noastre.</p>
+       </div>
+   </div>
+</body> 
 </html>
