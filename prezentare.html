@@ -19,21 +19,25 @@
             padding: 20px;
         }
 
-        /* Secțiunea Antet */
+        /* Secțiunea principală Antet */
         .antet {
             grid-column: span 14;
             display: grid;
-            grid-template-columns: 2fr 12fr; /* Sigla în 2 coloane și bannerul în 12 coloane */
+            grid-template-columns: 2fr 12fr; /* Prima subsecțiune în 2 coloane și a doua subsecțiune în 12 coloane */
             grid-gap: 10px;
             align-items: center;
         }
 
-        .sigla {
+        /* Subsecțiunea 1 (Sigla + Denumire școală) */
+        .subsecțiune-sigla {
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
-            padding: 10px;
+        }
+
+        .sigla {
+            margin-bottom: 10px; /* Spațiu între siglă și denumirea școlii */
         }
 
         .sigla img {
@@ -41,17 +45,17 @@
             height: auto;
         }
 
-        .sigla h1 {
+        .denumire-scoala {
             text-align: center;
-            margin-top: 10px;
             font-size: 16px;
+            font-weight: bold;
         }
 
+        /* Subsecțiunea 2 (Imaginea școlii - Banner) */
         .banner {
             grid-column: span 12;
-            height: 150px; /* Ajustăm înălțimea bannerului */
+            height: 200px; /* Ajustăm înălțimea bannerului */
             overflow: hidden;
-            padding: 0;
         }
 
         .banner img {
@@ -240,10 +244,17 @@
 
         <!-- Secțiunea principală Antet -->
         <div class="antet">
-            <div class="sigla">
-                <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/sigla.png?raw=true" alt="Sigla Scolii">
-                <h1>Școala Gimnazială „Nicu Albu” Piatra Neamț</h1>
+            <!-- Prima subsecțiune (Sigla și Denumire Școală) -->
+            <div class="subsecțiune-sigla">
+                <div class="sigla">
+                    <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/sigla.png?raw=true" alt="Sigla Scolii">
+                </div>
+                <div class="denumire-scoala">
+                    <p>Școala Gimnazială „Nicu Albu” Piatra Neamț</p>
+                </div>
             </div>
+
+            <!-- A doua subsecțiune (Banner) -->
             <div class="banner">
                 <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/intrare.png?raw=true" alt="Imaginea Scolii">
             </div>
