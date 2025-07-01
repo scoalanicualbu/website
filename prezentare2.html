@@ -22,15 +22,14 @@
         /* Secțiunea principală Antet */
         .antet {
             grid-column: span 14; /* Secțiunea antet ocupă întreaga lățime */
-            display: flex;
-            align-items: stretch;
+            display: grid;
+            grid-template-columns: 2fr 12fr; /* 2 coloane pentru sigla+denumire și 12 pentru banner */
+            gap: 10px;
             height: 200px; /* Înălțimea fixă a secțiunii antet */
         }
 
         /* Subsecțiunea 1 (Sigla și Denumire Școală) */
         .subsecțiune-sigla {
-            width: 100%; /* Ocupă 2 coloane din grilaj */
-            max-width: 2fr; /* Limitează la 2 coloane din grilajul de 14 */
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -53,7 +52,6 @@
 
         /* Subsecțiunea 2 (Banner) */
         .banner {
-            width: 100%; /* Ocupă 12 coloane din 14 */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -150,78 +148,6 @@
             display: grid;
             grid-template-columns: repeat(6, 1fr);
             gap: 10px;
-        }
-
-        .caseta-imagini img {
-            width: 100%;
-            height: auto;
-        }
-
-        /* Responsivitate */
-        @media (max-width: 1200px) {
-            .container {
-                grid-template-columns: repeat(12, 1fr);
-            }
-
-            .sigla {
-                grid-column: span 2;
-            }
-
-            .banner {
-                grid-column: span 12;
-                height: 150px;
-            }
-
-            .meniu-vertical {
-                grid-column: span 2;
-                height: auto;
-            }
-
-            .meniu-orizontal {
-                grid-column: span 12;
-            }
-
-            .continut {
-                grid-column: span 10;
-            }
-
-            .caseta-imagine {
-                grid-column: span 6;
-            }
-
-            .caseta-imagini {
-                grid-column: span 12;
-                grid-template-columns: repeat(3, 1fr);
-            }
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                grid-template-columns: repeat(6, 1fr);
-            }
-
-            .sigla,
-            .meniu-vertical,
-            .meniu-orizontal {
-                grid-column: span 6;
-            }
-
-            .banner {
-                grid-column: span 6;
-                height: 120px;
-            }
-
-            .continut {
-                grid-column: span 6;
-            }
-
-            .caseta-imagine {
-                grid-column: span 6;
-            }
-
-            .caseta-imagini {
-                grid-column: span 6;
-                grid-template-columns: repeat(2, 1fr);
             }
         }
 
