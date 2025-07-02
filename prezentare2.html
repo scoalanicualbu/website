@@ -1,31 +1,39 @@
 <!DOCTYPE html>
-<html lang="ro">
+<html lang="ro-RO">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Școala Gimnazială „Nicu Albu” Piatra Neamț</title>
+    <title>Școala Gimnazială „Nicu Albu” Piatra Neamț</title>
     <style>
-        /* CSS pentru a face pagina scalabilă și responsivă */
-        body {
-            font-family: Arial, sans-serif;
+        /* Resetare margini, padding și fonturi */
+        * {
             margin: 0;
             padding: 0;
-            display: flex;
-            flex-wrap: wrap;
+            box-sizing: border-box;
         }
 
+        /* Containerul principal cu grid pe 14 coloane */
+        body {
+            font-family: Arial, sans-serif;
+            display: grid;
+            grid-template-columns: repeat(14, 1fr); /* 14 coloane egale */
+            grid-gap: 10px;
+            min-height: 100vh;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        /* Stilizare pentru header și footer */
         header, footer {
             display: none;
         }
 
         /* Meniu (stânga) */
         .menu {
-            width: 100%;
-            max-width: 250px;
+            grid-column: span 2; /* ocupa primele 2 coloane */
             background-color: #f4f4f4;
             padding: 20px;
-            box-sizing: border-box;
-            flex: 1 1 250px;
+            text-align: center;
         }
 
         .menu img {
@@ -55,10 +63,9 @@
 
         /* Conținut (dreapta) */
         .content {
-            width: 100%;
+            grid-column: span 12; /* ocupa următoarele 12 coloane */
             padding: 20px;
-            box-sizing: border-box;
-            flex: 1 1 100%;
+            background-color: #fff;
         }
 
         .content img {
@@ -71,20 +78,176 @@
             color: #333;
         }
 
-        /* Responsivitate */
-        @media (min-width: 768px) {
+        /* Banner (12 coloane) */
+        .banner {
+            grid-column: span 12;
+            margin-bottom: 20px;
+        }
+
+        /* Meniu orizontal (pe 12 coloane) */
+        .horizontal-menu {
+            grid-column: span 12;
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+
+        .horizontal-menu a {
+            text-decoration: none;
+            color: black;
+            background-color: gray;
+            padding: 10px;
+            border: 2px solid black;
+            text-align: center;
+            font-weight: normal;
+            transition: all 0.3s ease;
+        }
+
+        .horizontal-menu a:hover {
+            font-weight: bold;
+            background-color: lightgray;
+        }
+
+        .horizontal-menu a.active {
+            background-color: black;
+            color: white;
+            pointer-events: none;
+        }
+
+        /* Subsecțiuni de conținut (pe 12 coloane) */
+        .subsection {
+            grid-column: span 12;
+            margin-bottom: 20px;
+        }
+
+        .subsection-text {
+            grid-column: span 12;
+            padding: 20px;
+            background-color: #e0e0e0;
+        }
+
+        /* Subsecțiune cu imagini și text */
+        .subsection-image-text {
+            display: grid;
+            grid-template-columns: 4fr 8fr;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .subsection-image-text img {
+            width: 100%;
+            height: auto;
+        }
+
+        .subsection-image-text .text {
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        /* Subsecțiune cu imagini (6 imagini pe 12 coloane) */
+        .subsection-images {
+            display: grid;
+            grid-template-columns: repeat(6, 2fr);
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .subsection-images img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Meniu vertical (2 coloane) */
+        .vertical-menu {
+            grid-column: span 2;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .vertical-menu a {
+            display: block;
+            text-decoration: none;
+            color: black;
+            background-color: gray;
+            padding: 10px;
+            border: 2px solid black;
+            text-align: center;
+            margin: 10px 0;
+            font-weight: normal;
+            transition: all 0.3s ease;
+        }
+
+        .vertical-menu a:hover {
+            font-weight: bold;
+            background-color: lightgray;
+        }
+
+        .vertical-menu a.active {
+            background-color: black;
+            color: white;
+            pointer-events: none;
+        }
+
+        /* Conținut în dreapta (10 coloane) */
+        .main-content-right {
+            grid-column: span 10;
+            display: grid;
+            grid-template-columns: 4fr 6fr;
+            gap: 20px;
+        }
+
+        .main-content-right .carousel, .main-content-right .text-box {
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .main-content-right .text-box {
+            grid-column: span 6;
+        }
+
+        /* Subsecțiune cu imagini (3 imagini pe 2 coloane fiecare) */
+        .main-content-right .images-row {
+            display: grid;
+            grid-template-columns: repeat(3, 2fr);
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        /* Stilizare pentru imagini carusel */
+        .carousel img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Media Query pentru mobil */
+        @media (max-width: 768px) {
+            body {
+                grid-template-columns: 1fr; /* o singură coloană pe mobil */
+            }
+
             .menu {
-                flex: 0 0 250px;
+                grid-column: span 1;
             }
 
             .content {
-                flex: 1 1 auto;
+                grid-column: span 1;
             }
-        }
 
-        @media (min-width: 1024px) {
-            .content h2 {
-                font-size: 2.5em;
+            .horizontal-menu {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .subsection-image-text {
+                grid-template-columns: 1fr;
+            }
+
+            .subsection-images {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .main-content-right {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -93,7 +256,7 @@
 
     <!-- Meniu (stânga) -->
     <div class="menu">
-         <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/sigla.png?raw=true" alt="Sigla Școlii Gimnaziale „Nicu Albu” Piatra Neamț" />
+        <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/sigla.png?raw=true" alt="Sigla Școlii Gimnaziale „Nicu Albu” Piatra Neamț" >
         <h1>Școala Gimnazială<br>„Nicu Albu”<br>Piatra Neamț</h1>
         <ul>
             <li aria-current="page"><a href="index.html" class="active">Prezentare</a></li>
@@ -115,8 +278,23 @@
 
     <!-- Conținut (dreapta) -->
     <div class="content">
-        <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/intrare.png?raw=true" alt="Intrarea principală în Școala Gimnazială „Nicu Albu” Piatra Neamț" />
-        <h2>Bine ați venit pe site-ul Școlii</h2>
+
+        <!-- Banner (12 coloane) -->
+        <div class="banner">
+            <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/intrare.png?raw=true" alt="Intrarea în Școlii Gimnaziale „Nicu Albu” Piatra Neamț" >
+        </div>
+
+        <!-- Meniu orizontal -->
+        <div class="horizontal-menu">
+            <a href="istoric.html">Scurt istoric</a>
+           <a href="circumscriptie.html">Circumscripție</a>
+            <a href="program.html">Program de lucru</a>
+            <a href="comunicari.html">Comunicări</a>
+        </div>
+
+        <!-- Subsecțiune cu text -->
+        <div class="subsection subsection-text">
+            <h2>Subsecțiune 1</h2>
             <p>Şcoala Gimnazială „Nicu Albu” Piatra Neamţ este o şcoală urbană, care se situează în partea de vest a Municipiului Piatra Neamţ, în cartierul Precista, pe strada Ecoului, la numărul 5. </p>
             <p>În anul 1993, o dată cu construirea unei şcoli noi în cartierul Precista cu scopul de a descongestiona numărul mare de elevi şi clase care funcţionau la școala din acelaşi cartier, Şcoala cu clasele I-VIII Nr. 4 Piatra Neamț, apare, ca organizație nouă, Şcoala cu clasele I-VIII Nr. 10 Piatra Neamţ. </p>
             <p>Funcţionând din anul şcolar 1993-1994 într-un corp de clădire în construcţie, clădirea Şcolii cu clasele I-VIII Nr. 10 Piatra Neamţ a fost finalizată în 1997 aşa cum atestă procesul verbal de recepţie finală, datat 15.12.1997. </p>
@@ -128,6 +306,52 @@
             <p>În comparaţie cu sistemul tradiţional, în sistemul educațional Step by Step se foloseşte acelaşi plan-cadru de învăţământ, aceleaşi programe şcolare, dar oferă o altă modalitate de lucru cu elevii: lucrul pe centre de activitate, în care sunt aplicate metode interactive şi individualizate, tot demersul fiind centrat pe elev. </p>
             <p>Clasele de învăţământ primar în care se aplică alternativa educaţională Step by Step lucrează în programul „şcolii complete” (zilnic, între orele 08:00-16:00) şi prin implicarea considerabilă a părinţilor. În cele două spaţii amenajate ca săli cu mese se poate servi masa de prânz de către elevi, prin servicii de catering, suportate financiar de părinţi. </p>
             <br>
+        </div>
+
+        <!-- Subsecțiune cu imagine și text -->
+        <div class="subsection subsection-image-text">
+            <img src="image.jpg" alt="Imagine">
+            <div class="text">
+                <h3>Textul din dreapta imaginii</h3>
+                <p>Aici este textul corespunzător imaginii din stânga.</p>
+            </div>
+        </div>
+
+        <!-- Subsecțiune cu imagini (6 imagini pe 12 coloane) -->
+        <div class="subsection subsection-images">
+            <img src="image1.jpg" alt="Imagine 1">
+            <img src="image2.jpg" alt="Imagine 2">
+            <img src="image3.jpg" alt="Imagine 3">
+            <img src="image4.jpg" alt="Imagine 4">
+            <img src="image5.jpg" alt="Imagine 5">
+            <img src="image6.jpg" alt="Imagine 6">
+        </div>
+
+        <!-- Subsecțiune cu meniu vertical (2 coloane) -->
+        <div class="subsection">
+            <div class="vertical-menu">
+                <a href="#" class="active">Meniu 1</a>
+                <a href="#">Meniu 2</a>
+                <a href="#">Meniu 3</a>
+            </div>
+            <div class="main-content-right">
+                <div class="carousel">
+                    <h3>Carusel de imagini</h3>
+                    <img src="carousel1.jpg" alt="Carusel imagine">
+                    <img src="carousel2.jpg" alt="Carusel imagine">
+                </div>
+                <div class="text-box">
+                    <h3>Text general</h3>
+                    <p>Acesta este un text explicativ care poate fi folosit pentru a descrie conținutul de mai sus.</p>
+                </div>
+                <div class="images-row">
+                    <img src="image1.jpg" alt="Imagine 1">
+                    <img src="image2.jpg" alt="Imagine 2">
+                    <img src="image3.jpg" alt="Imagine 3">
+                </div>
+            </div>
+        </div>
+
     </div>
 
 </body>
