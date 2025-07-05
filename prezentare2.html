@@ -5,67 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Școala Gimnazială „Nicu Albu” Piatra Neamț</title>
     <style>
-        /* Resetare margini, padding și fonturi */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+      :root {
+         --grid-columns: 12;
+      }
+      * {
+         box-sizing: border-box;
+      }
+      body {
+         display: flex;
+         min-height: 100vh;
+         font-family: Arial, sans-serif;
+      }
+      aside {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         max-width: 15em; 
+         padding: 0.5em;
+         background-color: #f5f5f5;
+      }
+      aside img {
+         max-width: 14em;
+         height: auto;
+         padding: 0.75em;
+border: 1px solid #333333;
+
+      }
+      aside h1 {
+         padding: 0 2.5em;
+         text-align: center;
+         font-size: 1em;
+border: 1px solid #333333;
+      }
+      .side-menu a {
+         display: block;
+margin: 0em 0;
+         padding: 0.5em;
+         text-align: center;
+         text-decoration: none;
+         color: #333333;
+border: 1px solid #333333;
+      }
+      .side-menu ul {
+         width: 14em;
+         padding: 0;
+         list-style: none;
+         text-align: center;
+      }
+
+        ul li:hover {
+           font-weight:bold;
         }
 
-        /* Containerul principal cu grid pe 14 coloane */
-        body {
-            font-family: Arial, sans-serif;
-            display: grid;
-            grid-template-columns: repeat(14, 1fr); /* 14 coloane egale */
-            grid-gap: 10px;
-            min-height: 100vh;
-            padding: 20px;
-            background-color: #f0f0f0;
+        .side-menu ul li a {
+            font-size: 1em;
+            color: #333333;
         }
 
-        /* Stilizare pentru header și footer */
-        header, footer {
-            display: none;
-        }
-
-        /* Meniu (stânga) */
-        .menu {
-            grid-column: span 2; /* ocupa primele 2 coloane */
-            background-color: #f4f4f4;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .menu img {
-            width: 100%;
-            height: auto;
-        }
-
-        .menu h1 {
-            font-size: 1.5em;
-            color: #333;
-        }
-
-        .menu ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .menu ul li {
-            margin: 10px 0;
-        }
-
-        .menu ul li a {
-            text-decoration: none;
-            color: #333;
-            font-size: 1.2em;
+        .side-menu ul li a.inactive {
+           pointer-events: none;
+           font-size: 1.3em;
+           font-weight:bold;
         }
 
         /* Conținut (dreapta) */
         .content {
-            grid-column: span 12; /* ocupa următoarele 12 coloane */
-            padding: 20px;
-            background-color: #fff;
+           display: flex;
+           flex-direction: column;
+           flex-grow: 1;
+           margin: 0;
+           padding: 0.5em;
+border: 1px solid #333333;
         }
 
         .content img {
@@ -74,44 +84,60 @@
         }
 
         .content h2 {
-            font-size: 2em;
-            color: #333;
+            font-size: 1.5em;
+            color: #333333;
         }
 
-        /* Banner (12 coloane) */
         .banner {
             grid-column: span 12;
-            margin-bottom: 20px;
+        }
+
+        .banner img {
+            object-fit: cover;
+            width: 100%;
+            height: 14em;
+border: 1px solid #333333;
         }
 
         /* Meniu orizontal (pe 12 coloane) */
         .horizontal-menu {
             grid-column: span 12;
             display: flex;
-            justify-content: space-around;
-            margin-bottom: 20px;
+            justify-content: space-between; /* distribuie butoanele pe toată lățimea */
+            margin-top: 0.5em;
+            padding-top: 0;
+            gap: 0.5em; /* spațiu între butoane */
+            background-color: #ffffff; /* Gri similar cu meniul vertical */
+border: 0px solid #333333;
         }
 
         .horizontal-menu a {
-            text-decoration: none;
-            color: black;
-            background-color: gray;
-            padding: 10px;
-            border: 2px solid black;
+            display: block;
+            flex-grow: 1; /* Fiecare buton se va extinde pentru a ocupa egal spațiul disponibil */
+            box-sizing: border-box; /* Asigură că padding-ul și border-ul nu afectează dimensiunea finală */
+            border: 1px solid black;
+            height: 3.5em;
+            padding: 0em 0.5em;
             text-align: center;
+            text-decoration: none;
             font-weight: normal;
-            transition: all 0.3s ease;
+            color: black;
+            background-color: #f5f5f5; /* Fundal gri */
         }
 
+        /* Când trecem cu mouse-ul peste butoane */
         .horizontal-menu a:hover {
+            padding 0em 0em;
             font-weight: bold;
-            background-color: lightgray;
+            color: #ffffff;
+            background-color: #888888; /* Gri mai deschis */
         }
 
+        /* Buton activ (linkul deja accesat) */
         .horizontal-menu a.active {
             background-color: black;
             color: white;
-            pointer-events: none;
+            pointer-events: none; /* Dezactivează linkul pentru butonul activ */
         }
 
         /* Subsecțiuni de conținut (pe 12 coloane) */
@@ -122,8 +148,10 @@
 
         .subsection-text {
             grid-column: span 12;
-            padding: 20px;
-            background-color: #e0e0e0;
+            margin-top: 0.5em;
+            padding: 0.5em;
+            background-color: #f0f0f0;
+border: 1px solid #333333;
         }
 
         /* Subsecțiune cu imagini și text */
@@ -252,29 +280,31 @@
         }
     </style>
 </head>
+
 <body>
 
-    <!-- Meniu (stânga) -->
-    <div class="menu">
-        <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/sigla.png?raw=true" alt="Sigla Școlii Gimnaziale „Nicu Albu” Piatra Neamț" >
-        <h1>Școala Gimnazială<br>„Nicu Albu”<br>Piatra Neamț</h1>
-        <ul>
-            <li aria-current="page"><a href="index.html" class="active">Prezentare</a></li>
-            <li><a href="oferta.html">Oferta educațională</a></li>
+   <aside>
+      <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/sigla.png?raw=true" alt="Sigla Școlii Gimnaziale „Nicu Albu” Piatra Neamț" >
+      <h1>Școala Gimnazială<br>„Nicu Albu”<br>Piatra Neamț</h1>
+      <nav class="side-menu" role="navigation" id="Meniu site" aria-label="Meniu principal">
+         <ul>
+            <li aria-current="page"><a href="index.html" class="inactive">Prezentare</a></li>
+            <li><a href="oferta.html" class="inactive">Oferta educațională</a></li>
             <li><a href="gradinita.html">Grădiniță</a></li>
-            <li><a href="pregatitoare.html">Clasa pregătitoare</a></li>
-            <li><a href="evaluare.html">Evaluare națională</a></li>
-            <li><a href="admitere.html" aria-current="page">Admitere</a></li>
-            <li><a href="altfel.html" aria-current="page">Școala Altfel</a></li>
-            <li><a href="verde.html" aria-current="page">Săptămâna verde</a></li>
-            <li><a href="proiecte.html" aria-current="page">Proiecte</a></li>
-            <li><a href="strategie.html" aria-current="page">Strategie</a></li>
-            <li><a href="regulamente.html" aria-current="page">Regulamente</a></li>
-            <li><a href="personal.html" aria-current="page">Personal</a></li>
-            <li><a href="organigrama.html" aria-current="page">Organigrama</a></li>
-            <li><a href="contact.html" aria-current="page">Contact</a></li>
-        </ul>
-    </div>
+            <li><a href="pregatitoare.html" class="inactive">Clasa pregătitoare</a></li>
+            <li><a href="evaluare.html" class="inactive">Evaluare națională</a></li>
+            <li><a href="admitere.html">Admitere</a></li>
+            <li><a href="altfel.html">Școala Altfel</a></li>
+            <li><a href="verde.html" class="inactive">Săptămâna verde</a></li>
+            <li><a href="proiecte.html">Proiecte</a></li>
+            <li><a href="strategie.html">Strategie</a></li>
+            <li><a href="regulamente.html">Regulamente</a></li>
+            <li><a href="personal.html">Personal</a></li>
+            <li><a href="organigrama.html">Organigrama</a></li>
+            <li><a href="contact.html">Contact</a></li>
+         </ul>
+      </nav>
+    </aside>
 
     <!-- Conținut (dreapta) -->
     <div class="content">
@@ -286,8 +316,8 @@
 
         <!-- Meniu orizontal -->
         <div class="horizontal-menu">
-            <a href="istoric.html">Scurt istoric</a>
-           <a href="circumscriptie.html">Circumscripție</a>
+            <a href="istoric.html">Scurt istoric Aici este textul corespunzător imaginii din stânga.</a>
+            <a href="circumscriptie.html">Circumscripție</a>
             <a href="program.html">Program de lucru</a>
             <a href="comunicari.html">Comunicări</a>
         </div>
