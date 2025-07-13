@@ -1,301 +1,496 @@
-<!DOCTYPE html>
-<html lang="ro">
+ <!DOCTYPE html>
+
+<!-- Limbă și localizare -->
+<html lang="ro-RO">
+
 <head>
+
+<!-- Titlu -->
+    <title>Prezentare</title>
+
+<!-- Codificare caractere -->
     <meta charset="UTF-8">
+
+<!-- Vizualizare pagină -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Școala Gimnazială „Nicu Albu” Piatra Neamț</title>
+
+<!-- Structurare pagină -->
     <style>
-        /* Stiluri generale */
+        :root {
+            --grid-columns: 12;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
         body {
+            display: flex;
+            min-height: 100vh;
             font-family: Arial, sans-serif;
+        }
+
+            h1 {
+                margin-top: 0;
+                margin-bottom: 0;
+                font-size: 1.3rem;
+            }
+
+            h2 {
+                margin-top: 0;
+                margin-bottom: 0;
+                font-size: 1.2rem;
+            }
+
+            h3 {
+                margin-top: 0;
+                margin-bottom: 0;
+                font-size: 1.1rem;
+            }
+
+            h4 {
+                margin-top: 0;
+                margin-bottom: 0;
+                font-size: 1rem;
+            }
+
+/* Secțiune Meniu */
+        aside {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 15rem; 
+            padding: 0.5rem;
+            background-color: #f5f5f5;
+border: 0px solid #333333;
+        }
+
+/* Siglă */
+            aside img {
+                max-width: 14rem;
+                height: auto;
+                margin-bottom: 1rem;
+                padding: 0.5rem 2.9rem;
+border: 0px solid #333333;
+            }
+
+/* Denumire */
+            .side-name {
+                display: block;
+                width: 14rem;
+                margin: -0.5rem 0;
+                padding: 0.5rem 0.5rem;
+                text-align: center;
+                text-decoration: none;
+                font-weight: bold;
+                color: #333333;
+border: 0px solid #333333;
+            }
+
+/* Meniu principal */
+            .side-menu a {
+                display: block;
+                padding: 0.5rem;
+                text-align: center;
+                text-decoration: none;
+                color: #333333;
+border: 0px solid #333333;
+            }
+
+            .side-menu ul {
+                width: 14rem;
+                padding: 0;
+                list-style: none;
+                text-align: center;
+            }
+
+            .side-menu ul li:hover {
+                font-weight: bold;
+            }
+
+            .side-menu ul li a {
+                font-size: 1rem;
+                color: #333333;
+            }
+
+            .side-menu ul li a.inactive {
+                pointer-events: none;
+                padding: 0.3rem 0.5rem;
+                font-size: 1.3rem;
+                font-weight: bold;
+            }
+
+/* Secțiune Conținut */
+        .content {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
             margin: 0;
             padding: 0;
+border: 0px solid #333333;
+           background-color: #ffffff;
         }
 
-        .container {
-            display: grid;
-            grid-template-columns: repeat(14, 1fr); /* 14 coloane */
-            gap: 10px;
-            padding: 20px;
-        }
-
-        /* Secțiunea principală Antet */
-        .antet {
-            grid-column: span 14;
-            display: grid;
-            grid-template-columns: 2fr 12fr; /* Prima subsecțiune în 2 coloane și a doua subsecțiune în 12 coloane */
-            grid-gap: 10px;
-            align-items: center;
-        }
-
-        /* Subsecțiunea 1 (Sigla și Denumire Școală) */
-        .subsecțiune-sigla {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-        }
-
-        .sigla {
-            margin-bottom: 10px; /* Spațiu între siglă și denumirea școlii */
-        }
-
-        .sigla img {
-            width: 100%;
-            height: auto;
-        }
-
-        .denumire-scoala {
-            text-align: center;
-            font-size: 16px;
-            font-weight: bold;
-        }
-
-        /* Subsecțiunea 2 (Imaginea școlii - Banner) */
-        .banner {
-            grid-column: span 12;
-            height: 200px; /* Ajustăm înălțimea bannerului */
-            overflow: hidden;
-        }
-
-        .banner img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* Taie imaginea pentru a se potrivi înălțimii secțiunii */
-        }
-
-        /* Meniu Vertical - secțiunea din stânga */
-        .meniu-vertical {
-            grid-column: span 2;
-            background-color: #f4f4f4;
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-            padding: 10px;
-        }
-
-        .meniu-vertical a {
-            text-align: center;
-            padding: 10px;
-            border: 1px solid black;
-            text-decoration: none;
-            color: black;
-            font-weight: normal;
-            background-color: white;
-            margin-bottom: 5px; /* Adăugăm spațiu între butoane */
-        }
-
-        .meniu-vertical a.active,
-        .meniu-vertical a:hover {
-            background-color: black;
-            color: white;
-            font-weight: bold;
-        }
-
-        /* Secțiunea principală de conținut - dreapta */
-        .continut {
-            grid-column: span 12;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        /* Meniu Orizontal - sub secțiunea de conținut */
-        .meniu-orizontal {
-            grid-column: span 12;
-            display: flex;
-            justify-content: space-around;
-            background-color: #f4f4f4;
-        }
-
-        .meniu-orizontal a {
-            padding: 10px;
-            text-decoration: none;
-            color: black;
-            font-weight: normal;
-            border: 1px solid black;
-            margin: 0 5px; /* Adăugăm un mic spațiu între butoane */
-        }
-
-        .meniu-orizontal a.active,
-        .meniu-orizontal a:hover {
-            background-color: black;
-            color: white;
-            font-weight: bold;
-        }
-
-        /* Casete de continut */
-        .caseta-text {
-            background-color: #fff;
-            padding: 20px;
-            border: 1px solid black;
-            margin-bottom: 20px;
-        }
-
-        .caseta-imagine {
-            grid-column: span 4;
-            padding: 10px;
-        }
-
-        .caseta-imagine img {
-            width: 100%;
-            height: auto;
-        }
-
-        .caseta-imagini {
-            grid-column: span 12;
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 10px;
-        }
-
-        .caseta-imagini img {
-            width: 100%;
-            height: auto;
-        }
-
-        /* Responsivitate */
-        @media (max-width: 1200px) {
-            .container {
-                grid-template-columns: repeat(12, 1fr);
-            }
-
-            .sigla {
-                grid-column: span 2;
-            }
-
-            .banner {
-                grid-column: span 12;
-                height: 150px;
-            }
-
-            .meniu-vertical {
-                grid-column: span 2;
+/* Banner */
+            .content img {
+                width: 100%;
                 height: auto;
-            }
-
-            .meniu-orizontal {
-                grid-column: span 12;
-            }
-
-            .continut {
-                grid-column: span 10;
-            }
-
-            .caseta-imagine {
-                grid-column: span 6;
-            }
-
-            .caseta-imagini {
-                grid-column: span 12;
-                grid-template-columns: repeat(3, 1fr);
-            }
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                grid-template-columns: repeat(6, 1fr);
-            }
-
-            .sigla,
-            .meniu-vertical,
-            .meniu-orizontal {
-                grid-column: span 6;
+                padding: 0.5rem;
             }
 
             .banner {
-                grid-column: span 6;
-                height: 120px;
+                grid-column: span 12;
             }
 
-            .continut {
-                grid-column: span 6;
+            .banner img {
+                object-fit: cover;
+                width: 100%;
+                height: 14.9rem;
+border: 0px solid #333333;
             }
 
-            .caseta-imagine {
-                grid-column: span 6;
+/* Meniu pagină */
+            .page-menu a {
+                display: block;
+                margin: 0.5rem 0;
+                min-height: 2.3rem;
+                padding: 0 0.5rem;
+                text-align: center;
+                justify-content: center;
+                text-decoration: none;
+                color: #333333;
+border: 1px solid #333333;
+            }
+       
+            .page-menu ul {
+                display:flex;
+                justify-content: space-between;
+                gap: 1rem; 
+                margin-top: -0.3rem;
+                margin-bottom: 0rem;
+                padding: 0 0.5rem;
+                list-style: none;
+                text-align: center;
+border: 0px solid #333333;
             }
 
-            .caseta-imagini {
-                grid-column: span 6;
-                grid-template-columns: repeat(2, 1fr);
+            .page-menu li {
+                flex-grow: 1;
             }
+
+            .page-menu ul li:hover {
+                font-weight:bold;
+            }
+
+            .page-menu ul li a {
+                display:flex;
+                align-items: center;
+                font-size: 1rem;
+                color: #333333;
+                background-color: #f5f5f5;
+            }
+
+            .page-menu ul li a.inactive {
+                pointer-events: none;
+                padding 0.3rem 0.5rem;
+                font-size: 1.3rem;
+                font-weight: bold;
+                background-color: #c0c0c0;
+            }
+
+/* Subsecțiuni de conținut */
+
+/* Subsecțiune text */
+        .subsection-text {
+            grid-column: span 12;
+            margin-top: 0;
+            margin-bottom: -1rem;
+            margin-left: 0;
+            margin-right: 0;
+            padding-top: 0.84rem;
+            padding-bottom: 0;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+            text-align: justify;
+            background-color: #ffffff;
+border: 0px solid #333333;
         }
 
-        @media (max-width: 480px) {
-            .container {
+/* Subsecțiune informații */
+        .subsection-info {
+            margin-top: 1rem;
+            margin-bottom: 0;
+            margin-left: 0;
+            margin-right: 0;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+            text-align: justify;
+            background-color: #ffffff;
+border: 0px solid #333333;
+        }
+
+            .subsection-info a {
+                float: left;   
+                clear: both;
+                min-height: 2.3rem;
+                padding: 0.5rem 0rem;
+                text-decoration: none;
+                color: #333333;
+border: 0px solid #333333;
+            }
+       
+            .subsection-info ul {
+                margin: -0.5rem 0;
+                padding: 0 0rem;
+                list-style: none;
+            }
+
+            .subsection-info ul li:hover {
+                font-weight:bold;
+            }
+
+            .subsection-info ul li a {
+                display: inline-block;
+            }
+
+/* Subsecțiune conexiuni */
+        .subsection-connex {
+            display: flex;
+            grid-template-columns: repeat(4, 2fr);
+            gap: 0rem;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-left: 0;
+            margin-right: 0;
+            padding: 0rem;
+border: 0px solid #333333;
+        }
+
+            .subsection-connex ul {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 1rem; 
+                margin: 0.5rem;
+                padding: 0;
+                list-style: none;
+            }
+
+            .subsection-connex ul li {
+                flex-grow: 1;
+border: 1px solid #333333;
+            }
+
+            .subsection-connex ul li:hover {
+                font-weight:bold;
+                background-color: #f5f5f5;
+            }
+
+            .subsection-connex ul li cell {
+                display: flex;
+                grid-template-columns: repeat(2, 2fr);
+                margin: 0;
+                padding: 0;
+border: 0px solid #333333;
+            }
+
+                .subsection-connex img {
+                    width: 5rem;
+                    height: 5rem;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    margin-left: 0;
+                    margin-right: 0;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+
+                .subsection-connex a {
+                    display: flex;
+                    min-height: 5.5rem;
+                    padding-left: 0.5rem;
+                    padding-right: 0.5rem;
+                    align-items: center;
+                    text-align: center;
+                    text-decoration: none;
+                    color: #333333;
+border: 0px solid #333333;
+                }
+
+/* Subsol */
+        .footer {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            margin-top: 1rem;
+            margin-bottom: 0;
+            margin-left: 0;
+            margin-right: 0;
+            padding: 0.5rem;
+            max-height: 2.3rem;
+            text-align: center;
+border: 0px solid #333333;
+           background-color: #ffffff;
+        }
+
+/* Scalare pagină */
+        /* Media Query pentru mobil */
+        @media (max-width: 768px) {
+            body {
+                grid-template-columns: 1fr; /* o singură coloană pe mobil */
+            }
+
+            .menu {
+                grid-column: span 1;
+            }
+
+            .content {
+                grid-column: span 1;
+            }
+
+            .horizontal-menu {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .subsection-image-text {
                 grid-template-columns: 1fr;
             }
 
-            .sigla,
-            .banner,
-            .meniu-vertical,
-            .meniu-orizontal,
-            .continut,
-            .caseta-imagine,
-            .caseta-imagini {
-                grid-column: span 1;
+            .subsection-images {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .main-content-right {
+                grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
+
 <body>
-    <div class="container">
 
-        <!-- Secțiunea principală Antet -->
-        <div class="antet">
-            <!-- Prima subsecțiune (Sigla și Denumire Școală) -->
-            <div class="subsecțiune-sigla">
-                <div class="sigla">
-                    <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/sigla.png?raw=true" alt="Sigla Scolii">
-                </div>
-                <div class="denumire-scoala">
-                    <p>Școala Gimnazială „Nicu Albu” Piatra Neamț</p>
-                </div>
-            </div>
+<!-- Secțiune Meniu -->
+   <aside role="complementary" id="Aside" aria-label="Secțiunea Meniu">
 
-            <!-- A doua subsecțiune (Banner) -->
-            <div class="banner">
-                <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/intrare.png?raw=true" alt="Imaginea Scolii">
-            </div>
+<!-- Siglă -->
+      <img role="img" id="Siglă" aria-label="Sigla școlii" src="https://github.com/scoalanicualbu/website/blob/main/prezentare/sigla.png?raw=true" alt="Sigla Școlii Gimnaziale „Nicu Albu” Piatra Neamț">
+
+<!-- Denumire -->
+      <div class="side-name" role="name" id="Denumire" aria-label="Denumirea școlii">
+            Școala Gimnazială<br>„Nicu Albu”<br>Piatra Neamț
+      </div>
+
+<!-- Meniu principal -->
+      <nav class="side-menu" role="navigation" id="Meniu site" aria-label="Meniul principal">
+         <ul>
+            <li aria-current="page"><h1><a href="index.html" class="inactive">Prezentare</a></h1></li>
+            <li><a href="oferta.html">Oferta educațională</a></li>
+            <li><a href="gradinita.html">Grădiniță</a></li>
+            <li><a href="pregatitoare.html">Clasa pregătitoare</a></li>
+            <li><a href="evaluare.html">Evaluare națională</a></li>
+            <li><a href="admitere.html">Admitere</a></li>
+            <li><a href="altfel.html">Școala Altfel</a></li>
+            <li><a href="verde.html">Săptămâna verde</a></li>
+            <li><a href="proiecte.html">Proiecte</a></li>
+            <li><a href="strategie.html">Strategie</a></li>
+            <li><a href="regulamente.html">Regulamente</a></li>
+            <li><a href="personal.html">Personal</a></li>
+            <li><a href="organigrama.html">Organigrama</a></li>
+            <li><a href="contact.html">Contact</a></li>
+         </ul>
+      </nav>
+    </aside>
+
+<!-- Secțiune Conținut -->
+    <div class="content" role="main" id="Conținut" aria-label="Secțiunea Conținut">
+
+<!-- Banner -->
+        <div class="banner" role="banner" id="Banner" aria-label="Imaginea paginii">
+            <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/intrare.png?raw=true" alt="Intrarea în Școala Gimnazială „Nicu Albu” Piatra Neamț" >
         </div>
 
-        <!-- Meniu Vertical -->
-        <div class="meniu-vertical">
-            <a href="#" class="active">Pagina Principală</a>
-            <a href="#">Despre Noi</a>
-            <a href="#">Activități</a>
-            <a href="#">Contact</a>
+<!-- Meniu pagină -->
+        <nav class="page-menu" role="navigation" id="Meniu pagină" aria-label="Meniul paginii">
+            <ul>
+                <li><a href="istoric.html">Scurt istoric</a></li>
+                <li><a href="circumscriptie.html">Circumscripție</a></li>
+                <li><a href="program.html">Program de lucru</a></li>
+                <li><a href="comunicari.html">Comunicări</a></li>
+            </ul>    
+        </nav>
+
+<!-- Subsecțiuni de conținut -->
+        <div class="subsection-text">
+            <br>
+            <h3>Motto:</h3>
+            <br>
+            <h4>„Suntem o familie! Împreună construim, învăţăm, inovăm! Suntem o şcoală deschisă, pentru comunitate!” </h4>
+            <br>
+            <p>Şcoala Gimnazială „Nicu Albu” Piatra Neamţ este o şcoală urbană, care se situează în partea de vest a Municipiului Piatra Neamţ, în cartierul Precista, pe strada Ecoului, la numărul 5.</p>
+            <p>În anul 1993, o dată cu construirea unei şcoli noi în cartierul Precista cu scopul de a descongestiona numărul mare de elevi şi clase care funcţionau la școala din acelaşi cartier, Şcoala cu clasele I-VIII Nr. 4 Piatra Neamț, apare, ca organizație nouă, Şcoala cu clasele I-VIII Nr. 10 Piatra Neamţ.</p>
+            <p>Funcţionând din anul şcolar 1993-1994 într-un corp de clădire în construcţie, clădirea Şcolii cu clasele I-VIII Nr. 10 Piatra Neamţ a fost finalizată în 1997 aşa cum atestă procesul verbal de recepţie finală, datat 15.12.1997.</p>
+            <p>Din data de 01.09.2010, prin Decizia Inspectoratului Școlar Județean Neamţ nr. 664 din 13.05.2010, denumirea Şcolii cu clasele I-VIII Nr. 10 Piatra Neamţ s-a modificat în Şcoala cu clasele I-VIII „Nicu Albu” Piatra Neamţ.</p>
+            <p>Prin Hotărârea Consiliului Local al Municipiului Piatra Neamţ nr. 99 din 10.03.2012 privind aprobarea schimbării denumirii unor unităţi şcolare care aparţin reţelei şcolare a învăţământului preuniversitar din Municipiul Piatra Neamţ, începând cu anul şcolar 2012-2013 denumirea unităţii şcolare s-a modificat, respectiv, în Şcoala Gimnazială „Nicu Albu” Piatra Neamţ.</p>
+            <p>Şcoala Gimnazială „Nicu Albu” Piatra Neamţ este o unitate de învăţământ de stat acreditată aparţinând sistemului educaţional preuniversitar, cu grupe și clase structurate pe 3 niveluri: preşcolar, primar şi gimnazial.</p>
+            <p>Sfera educaţională a şcolii cuprinde desfăşurarea simultană a două sisteme, sistemul educaţional tradiţional şi un sistem alternativ de educaţie, sistemul Step by Step. Este prima şcoală din judeţul Neamţ care a experimentat şi aplică sistemul alternativ de educaţie Step by Step din anul școlar 2001-2002.</p>
+            <p>Unitatea de învăţământ şi-a construit un brand din aceasta şi, în prezent, este apreciată şi căutată de părinţii care optează pentru această alternativă educațională aplicată doar pentru învățământul primar.</p>
+            <p>În comparaţie cu sistemul tradiţional, în sistemul educațional Step by Step se foloseşte acelaşi plan-cadru de învăţământ, aceleaşi programe şcolare, dar oferă o altă modalitate de lucru cu elevii: lucrul pe centre de activitate, în care sunt aplicate metode interactive şi individualizate, tot demersul fiind centrat pe elev.</p>
+            <p>Clasele de învăţământ primar în care se aplică alternativa educaţională Step by Step lucrează în programul „şcolii complete” (zilnic, între orele 08:00-16:00) şi prin implicarea considerabilă a părinţilor. În cele două spaţii amenajate ca săli cu mese se poate servi masa de prânz de către elevi, prin servicii de catering, suportate financiar de părinţi.</p>
         </div>
 
-        <!-- Secțiunea principală de conținut -->
-        <div class="continut">
-            
-            <!-- Meniu Orizontal -->
-            <div class="meniu-orizontal">
-                <a href="#" class="active">Acasă</a>
-                <a href="#">Despre</a>
-                <a href="#">Galerie</a>
-            </div>
+            <div class="subsection-info">
+                <h3>Noutăți:</h3>
+                <br>
+                <ul>
+                    <li><a href="https://drive.google.com/file/d/1CLVRw1GlJCwDIsDDFJc56dk1OkiulyMg/view?usp=sharing">Condiții specifice ocupării posturilor didactice vacante pentru anul școlar 2025-2026</a></li>
+                </ul> 
+            </div>  
 
-            <!-- Subsecțiuni de conținut -->
-            <div class="caseta-text">
-                <p>Textul principal al paginii</p>
-            </div>
-
-            <div class="caseta-imagine">
-                <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/imagine1.jpg?raw=true" alt="Imagine 1">
-            </div>
-
-            <div class="caseta-imagini">
-                <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/imagine2.jpg?raw=true" alt="Imagine 2">
-                <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/imagine3.jpg?raw=true" alt="Imagine 3">
-                <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/imagine4.jpg?raw=true" alt="Imagine 4">
-                <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/imagine5.jpg?raw=true" alt="Imagine 5">
-                <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/imagine6.jpg?raw=true" alt="Imagine 6">
-            </div>
+        <!-- Subsecțiune connex) -->
+        <div class="subsection-connex">
+            <ul>
+                <li>
+                   <div class="subsection-connex cell">
+                      <a href="https://www.edu.ro"><img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/mec.png?raw=true" alt="Ministerul Educației și Cercetării"></a>
+                      <a href="https://www.edu.ro">Ministerul Educației și Cercetării</a>
+                   </div>
+                </li>
+                <li>
+                    <div class="subsection-connex cell">
+                        <a href="https://www.isjneamt.ro"><img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/isjneamt.png?raw=true" alt="Inspectoratul Școlar Județean Neamț"></a>
+                        <a href="https://www.isjneamt.ro">Inspectoratul Școlar Județean Neamț</a>
+                   </div>
+                </li>
+                <li>
+                    <div class="subsection-connex cell">
+                        <a href="https://www.cjrae-neamt.ro"><img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/cjraeneamt.png?raw=true" alt="Centrul Județean de Resurse și Asistență Educațională Neamț"></a>
+                        <a href="https://www.cjrae-neamt.ro">Centrul Județean de Resurse și Asistență Educațională Neamț</a>
+                   </div>
+                </li>
+                <li>
+                    <div class="subsection-connex cell">
+                        <a href="https://www.ccdneamt.ro"><img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/ccdneamt.png?raw=true" alt="Casa Corpului Didactic Neamț"></a>
+                        <a href="https://www.ccdneamt.ro">Casa Corpului Didactic Neamț</a>
+                   </div>
+                </li>
+            </ul>
         </div>
+
+<footer>
+    <div class="footer">
+        &copy; 1993-<script>document.write(new Date().getFullYear());</script> Școala Gimnazială „Nicu Albu” Piatra Neamț
+    </div>
+</footer>
 
     </div>
+
 </body>
+
 </html>
