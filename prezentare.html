@@ -160,7 +160,7 @@ border: 0px solid #333333;
 
             .side-menu ul {
 border: 0px solid #333333;
-                margin-top: 1.5rem;
+                margin-top: 1rem;
                 margin-bottom: 0;
                 margin-left: 0;
                 margin-right: 0;
@@ -267,17 +267,36 @@ border: 0px solid #333333;
         }
 
             .page-menu li {
+                margin-top: 0;
+                margin-bottom: 0;
+                margin-left: 0;
+                margin-right: 0;
+                padding-top: 0;
+                padding-bottom: 0;
+                padding-left: 0;
+                padding-right: 0;
+                min-height: 2.3rem;
                 flex-grow: 1;
             }
 
             .page-menu li:hover {
+                margin-top: 0;
+                margin-bottom: 0;
+                margin-left: 0;
+                margin-right: 0;
+                padding-top: 0;
+                padding-bottom: 0;
+                padding-left: 0;
+                padding-right: 0;
+                min-height: 2.3rem;
                 text-shadow: 0.4px 0 currentColor, -0.4px 0 currentColor;
+                background-color: #f0f0f0;
             }
 
             .page-menu a {
 border: 1px solid #333333;
-                margin-top: 0.5rem;
-                margin-bottom: 0.5rem;
+                margin-top: 0;
+                margin-bottom: 0;
                 margin-left: 0;
                 margin-right: 0;
                 padding-top: 0;
@@ -292,7 +311,6 @@ border: 1px solid #333333;
                 text-decoration: none;
                 font-size: 1rem;
                 color: #333333;
-                background-color: #f5f5f5;
             }
 
             .page-menu li a.active {
@@ -316,7 +334,7 @@ border: 1px solid #333333;
         .subsection-text {
 border: 0px solid #333333;
             margin-top: 0;
-            margin-bottom: -1rem;
+            margin-bottom: 0;
             margin-left: 0;
             margin-right: 0;
             padding-top: 0.7rem;
@@ -330,7 +348,7 @@ border: 0px solid #333333;
 /* Subsecțiune Noutăți */
         .subsection-info {
 border: 0px solid #333333;
-            margin-top: 1rem;
+            margin-top: 0;
             margin-bottom: 0;
             margin-left: 0;
             margin-right: 0;
@@ -629,12 +647,12 @@ border: 0px solid #333333;
 <!-- Subsecțiune Text -->
         <article id="Subsecțiune - Text" role="region" aria-label="Subsecțiune - Text" aria-labelledby="Articolul principal" class="subsection-text">
             <br>
-            <h3 id="Titlu - Motto" role="region" aria-label="Titlu - Motto" aria-labelledby="Motto">Motto:</h3>
+            <h3 id="Titlu - Motto" aria-label="Titlu - Motto" aria-labelledby="Motto">Motto:</h3>
             <br>
-            <h4>„Suntem o familie! Împreună construim, învăţăm, inovăm! Suntem o şcoală deschisă, pentru comunitate!” </h4>
+            <b>„Suntem o familie! Împreună construim, învăţăm, inovăm! Suntem o şcoală deschisă, pentru comunitate!”</b>
             <br>
-            
-            <h3 id="Titlu - Prezentare" role="region" aria-label="Titlu - Prezentare" aria-labelledby="Prezentare"style="display:none;">Prezentare</h3>
+            <br>            
+            <h3 id="Titlu - Prezentare" aria-label="Titlu - Prezentare" aria-labelledby="Prezentare" style="display:none;">Prezentare</h3>
             <p>Şcoala Gimnazială „Nicu Albu” Piatra Neamţ este o şcoală urbană, care se situează în partea de vest a Municipiului Piatra Neamţ, în cartierul Precista, pe strada Ecoului, la numărul 5.</p>
             <p>În anul 1993, o dată cu construirea unei şcoli noi în cartierul Precista cu scopul de a descongestiona numărul mare de elevi şi clase care funcţionau la școala din acelaşi cartier, Şcoala cu clasele I-VIII Nr. 4 Piatra Neamț, apare, ca organizație nouă, Şcoala cu clasele I-VIII Nr. 10 Piatra Neamţ.</p>
             <p>Funcţionând din anul şcolar 1993-1994 într-un corp de clădire în construcţie, clădirea Şcolii cu clasele I-VIII Nr. 10 Piatra Neamţ a fost finalizată în 1997 aşa cum atestă procesul verbal de recepţie finală, datat 15.12.1997.</p>
@@ -649,54 +667,61 @@ border: 0px solid #333333;
 
 <!-- Subsecțiune Noutăți -->
             <div  id="Subsecțiune - Noutăți" role="region" aria-label="Subsecțiune - Noutăți" aria-labelledby="Noutăți" class="subsection-info">
-                <h3 id="Titlu - Noutăți" role="list" aria-label="Titlu - Noutăți">Noutăți:</h3>
+                <h3 id="Titlu - Noutăți" aria-label="Titlu - Noutăți">Noutăți:</h3>
                 <br>
                 <ul>
                     <li>
                         <a  id="Legătură - Pagina - Condiții specifice ocupării posturilor didactice vacante pentru anul școlar 2025-2026" role="link" aria-label="Legătură - Pagina - Condiții specifice ocupării posturilor didactice vacante pentru anul școlar 2025-2026" href="https://drive.google.com/file/d/1CLVRw1GlJCwDIsDDFJc56dk1OkiulyMg/view?usp=sharing" target="_blank" rel="noopener noreferrer">Condiții specifice ocupării posturilor didactice vacante pentru anul școlar 2025-2026</a>
                     </li>
-                </ul> 
-            </div>  
+                </ul>
+            </div> 
 
 <!-- Subsecțiune Legături -->
-        <div class="subsection-connex" aria-labelledby="Legături">
-            <h3 id="Titlu - Conexiuni" style="display:none;">Conexiuni:</h3>
+        <div id="Subsecțiune - Legături" role="region" aria-label="Subsecțiune - Legături" aria-labelledby="Legături" class="subsection-connex">
+            <h3 id="Titlu - Legături" style="display: none;">Legături:</h3>
             <ul>
                 <li>
-                   <div class="subsection-connex" role="region" aria-labelledby="Pagina externă - Ministerul Educației și Cercetării">
-                      <a href="https://www.edu.ro" aria-label="Site oficial - Ministerul Educației și Cercetării" target="_blank" rel="noopener noreferrer">
-                          <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/mec.png?raw=true" alt="Ministerul Educației și Cercetării"></a>
-                      <a href="https://www.edu.ro">Ministerul Educației și Cercetării</a>
+                   <div id="Site oficial - Ministerul Educației și Cercetării" role="region" aria-labelledby="Site oficial - Ministerul Educației și Cercetării" class="subsection-connex" >
+                      <a role="link" href="https://www.edu.ro" target="_blank" rel="noopener noreferrer">
+                          <img alt="Ministerul Educației și Cercetării" src="https://github.com/scoalanicualbu/website/blob/main/prezentare/mec.png?raw=true">
+                     </a>
+                     <a id="Legătură - Pagina externă - Ministerul Educației și Cercetării" role="link" aria-label="Legătură - Pagina externă - Ministerul Educației și Cercetării" href="https://www.edu.ro" target="_blank" rel="noopener noreferrer">Ministerul Educației și Cercetării</a>
                    </div>
                 </li>
                 <li>
-                    <div class="subsection-connex">
-                        <a href="https://www.isjneamt.ro"><img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/isjneamt.png?raw=true" alt="Inspectoratul Școlar Județean Neamț"></a>
-                        <a href="https://www.isjneamt.ro">Inspectoratul Școlar Județean Neamț</a>
+                    <div id="Site oficial - Inspectoratul Școlar Județean Neamț" role="region" aria-labelledby="Site oficial - Inspectoratul Școlar Județean Neamț" class="subsection-connex">
+                        <a role="link" href="https://www.isjneamt.ro" target="_blank" rel="noopener noreferrer">
+                            <img alt="Inspectoratul Școlar Județean Neamț" src="https://github.com/scoalanicualbu/website/blob/main/prezentare/isjneamt.png?raw=true">
+                       </a>
+                       <a id="Legătură - Pagina externă - Inspectoratul Școlar Județean Neamț" role="link" aria-label="Legătură - Pagina externă - Inspectoratul Școlar Județean Neamț" href="https://www.isjneamt.ro" target="_blank" rel="noopener noreferrer">Inspectoratul Școlar Județean Neamț</a>
                    </div>
                 </li>
                 <li>
-                    <div class="subsection-connex">
-                        <a href="https://www.cjrae-neamt.ro"><img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/cjraeneamt.png?raw=true" alt="Centrul Județean de Resurse și Asistență Educațională Neamț"></a>
-                        <a href="https://www.cjrae-neamt.ro">Centrul Județean de Resurse și Asistență Educațională Neamț</a>
+                    <div id="Site oficial - Centrul Județean de Resurse și Asistență Educațională Neamț" role="region" aria-labelledby="Site oficial - Centrul Județean de Resurse și Asistență Educațională Neamț" class="subsection-connex">
+                        <a role="link" href="https://www.cjrae-neamt.ro" target="_blank" rel="noopener noreferrer">
+                            <img alt="Centrul Județean de Resurse și Asistență Educațională Neamț" src="https://github.com/scoalanicualbu/website/blob/main/prezentare/cjraeneamt.png?raw=true">
+                        </a>
+                        <a id="Legătură - Pagina externă - Centrul Județean de Resurse și Asistență Educațională Neamț" role="link" aria-label="Legătură - Pagina externă - Centrul Județean de Resurse și Asistență Educațională Neamț" href="https://www.cjrae-neamt.ro" target="_blank" rel="noopener noreferrer">Centrul Județean de Resurse și Asistență Educațională Neamț</a>
                    </div>
                 </li>
                 <li>
-                    <div class="subsection-connex">
-                        <a href="https://www.ccdneamt.ro"><img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/ccdneamt.png?raw=true" alt="Casa Corpului Didactic Neamț"></a>
-                        <a href="https://www.ccdneamt.ro">Casa Corpului Didactic Neamț</a>
+                    <div  id="Site oficial - Casa Corpului Didactic Neamț" role="region" aria-labelledby="Site oficial - Casa Corpului Didactic Neamț" class="subsection-connex">
+                        <a role="link" href="https://www.ccdneamt.ro"  target="_blank" rel="noopener noreferrer">
+                           <img alt="Casa Corpului Didactic Neamț" src="https://github.com/scoalanicualbu/website/blob/main/prezentare/ccdneamt.png?raw=true">
+                       </a>
+                       <a id="Legătură - Pagina externă - Casa Corpului Didactic Neamț" role="link" aria-label="Legătură - Pagina externă - Casa Corpului Didactic Neamț" href="https://www.ccdneamt.ro"  target="_blank" rel="noopener noreferrer">Casa Corpului Didactic Neamț</a>
                    </div>
                 </li>
             </ul>
         </div>
 
-<footer>
-    <div class="footer">
-        <div class="footer-info">
-            &copy; 1993-<script>document.write(new Date().getFullYear());</script> Școala Gimnazială „Nicu Albu” Piatra Neamț
-        </div>
-    </div>
-</footer>
+
+<!-- Subsol pagină-->
+         <footer>
+            <div id="Subsol pagină" role="contentinfo" aria-label="Subsol pagină" aria-labelledby="Subsol" class="footer-info">
+                &copy; 1993-<script>document.write(new Date().getFullYear());</script> Școala Gimnazială „Nicu Albu” Piatra Neamț
+            </div>
+        </footer>
 
     </div>
 
