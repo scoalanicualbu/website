@@ -151,6 +151,7 @@ border: 0px solid #333333;
                 padding-bottom: 0.5rem;
                 padding-left: 0.5rem;
                 padding-right: 0.5rem;
+                height: 2.3rem;
                 display: block;
                 text-align: center;
                 text-decoration: none;
@@ -173,21 +174,32 @@ border: 0px solid #333333;
             }
 
             .side-menu li:hover {
-                font-weight: bold;
-            }
-
-            .side-menu a.inactive {
-                pointer-events: none;
                 margin-top: 0;
                 margin-bottom: 0;
                 margin-left: 0;
                 margin-right: 0;
-                padding-top: 0.3rem;
-                padding-bottom: 0.3rem;
+                padding-top: 0;
+                padding-bottom: 0;
+                padding-left: 0;
+                padding-right: 0;
+                height: 2.3rem;
+                font-size: 1rem;
+                text-shadow: 0.4px 0 currentColor, -0.4px 0 currentColor;
+            }
+
+            .side-menu a.inactive {
+                margin-top: 0;
+                margin-bottom: 0;
+                margin-left: 0;
+                margin-right: 0;
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
                 padding-left: 0.5rem;
                 padding-right: 0.5rem;
-                font-size: 1.3rem;
-                font-weight: bold;
+                height: 2.3rem;
+                pointer-events: none;
+                font-size: 1.1rem;
+                text-shadow: 0.4px 0 currentColor, -0.4px 0 currentColor;
             }
 
 /* Secțiune Conținut */
@@ -259,7 +271,7 @@ border: 0px solid #333333;
             }
 
             .page-menu li:hover {
-                font-weight: bold;
+                text-shadow: 0.4px 0 currentColor, -0.4px 0 currentColor;
             }
 
             .page-menu a {
@@ -283,31 +295,6 @@ border: 1px solid #333333;
                 background-color: #f5f5f5;
             }
 
-            .page-menu a::before {
-border: 0px solid #333333;
-                margin-top: 0.5rem;
-                margin-bottom: 0.5rem;
-                margin-left: 0;
-                margin-right: 0;
-                padding-top: 0;
-                padding-bottom: 0;
-                padding-left: 0.5rem;
-                padding-right: 0.5rem;
-        min-height: 2.19rem;
-        position: absolute;
-        visibility: hidden;
-        content: attr(item);
-                display: flex;
-justify-content: center;
-                align-items: center;
-text-align: center;
-text-decoration: none;
-font-size: 1rem;
-        font-weight: bold;
-                color: #333333;
-                background-color: #f5f5f5;
-            }
-
             .page-menu li a.inactive {
                 margin-top: 0.5rem;
                 margin-bottom: 0.5rem;
@@ -318,9 +305,9 @@ font-size: 1rem;
                 padding-left: 0.5rem;
                 padding-right: 0.5rem;
                 pointer-events: none;
-                font-size: 1.3rem;
-                font-weight: bold;
-                background-color: #c0c0c0;
+                font-size: 1rem;
+                text-shadow: 0.4px 0 currentColor, -0.4px 0 currentColor;
+                background-color: #c4c4c4;
             }
 
 /* Subsecțiuni de conținut */
@@ -367,7 +354,15 @@ border: 0px solid #333333;
             }
 
                 .subsection-info li:hover {
-                    font-weight: bold;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    margin-left: 0;
+                    margin-right: 0;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    padding-left: 0;
+                    padding-right: 0;
+                    text-shadow: 0.4px 0 currentColor, -0.4px 0 currentColor;
                 }
 
             .subsection-info a {
@@ -436,7 +431,7 @@ border: 1px solid #333333;
             }
 
             .subsection-connex li:hover {
-                font-weight: bold;
+                text-shadow: 0.4px 0 currentColor, -0.4px 0 currentColor;
                 background-color: #f5f5f5;
             }
 
