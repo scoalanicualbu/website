@@ -187,7 +187,7 @@ border: 0px solid #333333;
                 text-shadow: 0.4px 0 currentColor, -0.4px 0 currentColor;
             }
 
-            .side-menu a.inactive {
+            .side-menu a.active {
                 margin-top: 0;
                 margin-bottom: 0;
                 margin-left: 0;
@@ -295,7 +295,7 @@ border: 1px solid #333333;
                 background-color: #f5f5f5;
             }
 
-            .page-menu li a.inactive {
+            .page-menu li a.active {
                 margin-top: 0.5rem;
                 margin-bottom: 0.5rem;
                 margin-left: 0;
@@ -312,7 +312,7 @@ border: 1px solid #333333;
 
 /* Subsecțiuni de conținut */
 
-/* Subsecțiune text */
+/* Subsecțiune Text */
         .subsection-text {
 border: 0px solid #333333;
             margin-top: 0;
@@ -327,7 +327,7 @@ border: 0px solid #333333;
             text-align: justify;
         }
 
-/* Subsecțiune informații */
+/* Subsecțiune Noutăți */
         .subsection-info {
 border: 0px solid #333333;
             margin-top: 1rem;
@@ -382,7 +382,7 @@ border: 0px solid #333333;
                 color: #333333;
             }
 
-/* Subsecțiune conexiuni */
+/* Subsecțiune Legături */
         .subsection-connex {
 border: 0px solid #333333;
             margin-top: 0;
@@ -536,62 +536,105 @@ border: 0px solid #333333;
 <body>
 
 <!-- Secțiune Meniu -->
-   <aside role="complementary" id="Aside" aria-label="Secțiunea Meniu">
+   <aside id="Secțiunea Meniu" role="complementary" aria-label="Secțiunea Meniu" aria-labelledby="Secțiunea Meniu">
 
 <!-- Siglă -->
-      <img role="img" id="Siglă" aria-label="Sigla școlii" src="https://github.com/scoalanicualbu/website/blob/main/prezentare/sigla.png?raw=true" alt="Sigla Școlii Gimnaziale „Nicu Albu” Piatra Neamț">
+      <img id="Siglă" alt="Sigla Școlii Gimnaziale „Nicu Albu” Piatra Neamț" src="https://github.com/scoalanicualbu/website/blob/main/prezentare/sigla.png?raw=true">
 
 <!-- Denumire -->
-      <div class="side-name" role="name" id="Denumire" aria-label="Denumirea școlii">
+      <div id="Denumire" role="region" aria-label="Denumirea școlii" aria-labelledby="Denumirea școlii" class="side-name">
+            <span id="Etichetă - Denumire" style="display: none;">Denumirea școlii</span>
             Școala Gimnazială<br>„Nicu Albu”<br>Piatra Neamț
       </div>
 
 <!-- Meniu principal -->
-      <nav class="side-menu" role="navigation" id="Meniu site" aria-label="Meniul principal">
+      <nav id="Meniu principal" role="navigation" aria-label="Meniul principal" aria-labelledby="Meniul principal" class="side-menu">
          <ul>
-            <li aria-current="page"><h1><a href="index.html" class="inactive">Prezentare</a></h1></li>
-            <li><a href="oferta.html">Oferta educațională</a></li>
-            <li><a href="gradinita.html">Grădiniță</a></li>
-            <li><a href="pregatitoare.html">Clasa pregătitoare</a></li>
-            <li><a href="evaluare.html">Evaluare națională</a></li>
-            <li><a href="admitere.html">Admitere</a></li>
-            <li><a href="altfel.html">Școala Altfel</a></li>
-            <li><a href="verde.html">Săptămâna verde</a></li>
-            <li><a href="proiecte.html">Proiecte</a></li>
-            <li><a href="strategie.html">Strategie</a></li>
-            <li><a href="regulamente.html">Regulamente</a></li>
-            <li><a href="personal.html">Personal</a></li>
-            <li><a href="organigrama.html">Organigrama</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li aria-current="page">
+                <h1 id="Etichetă - Prezentare">
+                    <a id="Legătură - Pagina - Prezentare" role="link" aria-label="Pagina principală - Prezentare" class="active" href="index.html">Prezentare</a>
+                </h1>
+            </li>
+            <li>
+                <a id="Legătură - Pagina - Oferta educațională" role="link" aria-label="Legătură - Pagina - Oferta educațională" href="oferta.html">Oferta educațională</a>
+            </li>
+            <li>
+                <a id="Legătură - Pagina - Grădiniță" role="link" aria-label="Legătură - Pagina - Grădiniță" href="gradinita.html" >Grădiniță</a>
+            </li>
+            <li>
+                <a id="Legătură - Pagina - Clasa pregătitoare" role="link" aria-label="Legătură - Pagina - Clasa pregătitoare" href="pregatitoare.html">Clasa pregătitoare</a>
+            </li>
+            <li>
+                <a id="Legătură - Pagina - Evaluare națională" role="link" aria-label="Legătură - Pagina - Evaluare națională" href="evaluare.html">Evaluare națională</a>
+            </li>
+            <li>
+                <a id="Legătură - Pagina - Admitere" role="link" aria-label="Legătură - Pagina - Admitere" href="admitere.html">Admitere</a>
+            </li>
+            <li>
+                <a id="Legătură - Pagina - Școala Altfel" role="link" aria-label="Legătură - Pagina - Școala Altfel" href="altfel.html">Școala Altfel</a>
+            </li>
+            <li>
+                <a id="Legătură - Pagina - Săptămâna verde" role="link" aria-label="Legătură - Pagina - Săptămâna verde" href="verde.html">Săptămâna verde</a>
+            </li>
+            <li>
+            <a id="Legătură - Pagina - Proiecte" role="link" aria-label="Legătură - Pagina - Proiecte" href="proiecte.html">Proiecte</a>
+            </li>
+            <li>
+                <a id="Legătură - Pagina - Strategie" role="link" aria-label="Legătură - Pagina - Strategie" href="strategie.html">Strategie</a>
+            </li>
+            <li>
+                <a id="Legătură - Pagina - Regulamente" role="link" aria-label="Legătură - Pagina - Regulamente" href="regulamente.html">Regulamente</a>
+            </li>
+            <li>
+                <a id="Legătură - Pagina - Personal" role="link" aria-label="Legătură - Pagina - Personal" href="personal.html">Personal</a>
+             </li>
+            <li>
+                <a id="Legătură - Pagina - Organigrama" role="link" aria-label="Legătură - Pagina - Organigrama" href="organigrama.html">Organigrama</a>
+            </li>
+            <li>
+                <a id="Legătură - Pagina - Contact" role="link" aria-label="Legătură - Pagina - Contact" href="contact.html">Contact</a>
+             </li>
          </ul>
       </nav>
     </aside>
 
 <!-- Secțiune Conținut -->
-    <div class="content" role="main" id="Conținut" aria-label="Secțiunea Conținut">
+    <div id="Secțiunea Conținut" role="main" aria-label="Secțiunea Conținut" aria-labelledby="Secțiunea Conținut" class="content">
 
 <!-- Banner -->
-        <div class="banner" role="banner" id="Banner" aria-label="Imaginea paginii">
-            <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/intrare.png?raw=true" alt="Intrarea în Școala Gimnazială „Nicu Albu” Piatra Neamț" >
+        <div id="Banner" role="banner" aria-label="Imaginea paginii" aria-labelledby="Imaginea paginii" class="banner">
+            <img  id="Imagine - Intrarea în Școala Gimnazială „Nicu Albu” Piatra Neamț" alt="Intrarea în Școala Gimnazială „Nicu Albu” Piatra Neamț" src="https://github.com/scoalanicualbu/website/blob/main/prezentare/intrare.png?raw=true">
         </div>
 
 <!-- Meniu pagină -->
-        <nav class="page-menu" role="navigation" id="Meniu pagină" aria-label="Meniul paginii">
+        <nav id="Meniu pagină" role="navigation" aria-label="Meniul paginii" aria-labelledby="Meniul paginii" class="page-menu">
             <ul>
-                <li><a href="istoric.html" item="Scurt istoric">Scurt istoric</a></li>
-                <li><a href="circumscriptie.html" item="Circumscripție">Circumscripție</a></li>
-                <li><a href="program.html" item="Program de lucru">Program de lucru</a></li>
-                <li><a href="comunicari.html" item="Comunicări">Comunicări</a></li>
+                <li>
+                    <a id="Legătură - Pagina - Scurt istoric" role="link" aria-label="Legătură - Pagina - Scurt istoric" href="istoric.html">Scurt istoric</a>
+                </li>
+                <li>
+                    <a id="Legătură - Pagina - Circumscripție" role="link" aria-label="Legătură - Pagina - Circumscripție" href="circumscriptie.html">Circumscripție</a>
+                </li>
+                <li>
+                    <a id="Legătură - Pagina - Program de lucru" role="link" aria-label="Legătură - Pagina - Program de lucru" href="program.html">Program de lucru</a>
+                </li>
+                <li>
+                    <a id="Legătură - Pagina - Comunicări" role="link" aria-label="Legătură - Pagina - Comunicări" href="comunicari.html">Comunicări</a>
+                </li>
             </ul>    
         </nav>
 
 <!-- Subsecțiuni de conținut -->
-        <div class="subsection-text">
+
+<!-- Subsecțiune Text -->
+        <article id="Subsecțiune - Text" role="region" aria-label="Subsecțiune - Text" aria-labelledby="Articolul principal" class="subsection-text">
             <br>
-            <h3>Motto:</h3>
+            <h3 id="Titlu - Motto" role="region" aria-label="Titlu - Motto" aria-labelledby="Motto">Motto:</h3>
             <br>
             <h4>„Suntem o familie! Împreună construim, învăţăm, inovăm! Suntem o şcoală deschisă, pentru comunitate!” </h4>
             <br>
+            
+            <h3 id="Titlu - Prezentare" role="region" aria-label="Titlu - Prezentare" aria-labelledby="Prezentare"style="display:none;">Prezentare</h3>
             <p>Şcoala Gimnazială „Nicu Albu” Piatra Neamţ este o şcoală urbană, care se situează în partea de vest a Municipiului Piatra Neamţ, în cartierul Precista, pe strada Ecoului, la numărul 5.</p>
             <p>În anul 1993, o dată cu construirea unei şcoli noi în cartierul Precista cu scopul de a descongestiona numărul mare de elevi şi clase care funcţionau la școala din acelaşi cartier, Şcoala cu clasele I-VIII Nr. 4 Piatra Neamț, apare, ca organizație nouă, Şcoala cu clasele I-VIII Nr. 10 Piatra Neamţ.</p>
             <p>Funcţionând din anul şcolar 1993-1994 într-un corp de clădire în construcţie, clădirea Şcolii cu clasele I-VIII Nr. 10 Piatra Neamţ a fost finalizată în 1997 aşa cum atestă procesul verbal de recepţie finală, datat 15.12.1997.</p>
@@ -602,22 +645,27 @@ border: 0px solid #333333;
             <p>Unitatea de învăţământ şi-a construit un brand din aceasta şi, în prezent, este apreciată şi căutată de părinţii care optează pentru această alternativă educațională aplicată doar pentru învățământul primar.</p>
             <p>În comparaţie cu sistemul tradiţional, în sistemul educațional Step by Step se foloseşte acelaşi plan-cadru de învăţământ, aceleaşi programe şcolare, dar oferă o altă modalitate de lucru cu elevii: lucrul pe centre de activitate, în care sunt aplicate metode interactive şi individualizate, tot demersul fiind centrat pe elev.</p>
             <p>Clasele de învăţământ primar în care se aplică alternativa educaţională Step by Step lucrează în programul „şcolii complete” (zilnic, între orele 08:00-16:00) şi prin implicarea considerabilă a părinţilor. În cele două spaţii amenajate ca săli cu mese se poate servi masa de prânz de către elevi, prin servicii de catering, suportate financiar de părinţi.</p>
-        </div>
+        </article>
 
-            <div class="subsection-info">
-                <h3>Noutăți:</h3>
+<!-- Subsecțiune Noutăți -->
+            <div  id="Subsecțiune - Noutăți" role="region" aria-label="Subsecțiune - Noutăți" aria-labelledby="Noutăți" class="subsection-info">
+                <h3 id="Titlu - Noutăți" role="list" aria-label="Titlu - Noutăți">Noutăți:</h3>
                 <br>
                 <ul>
-                    <li><a href="https://drive.google.com/file/d/1CLVRw1GlJCwDIsDDFJc56dk1OkiulyMg/view?usp=sharing" target="_blank" rel="noopener noreferrer">Condiții specifice ocupării posturilor didactice vacante pentru anul școlar 2025-2026</a></li>
+                    <li>
+                        <a  id="Legătură - Pagina - Condiții specifice ocupării posturilor didactice vacante pentru anul școlar 2025-2026" role="link" aria-label="Legătură - Pagina - Condiții specifice ocupării posturilor didactice vacante pentru anul școlar 2025-2026" href="https://drive.google.com/file/d/1CLVRw1GlJCwDIsDDFJc56dk1OkiulyMg/view?usp=sharing" target="_blank" rel="noopener noreferrer">Condiții specifice ocupării posturilor didactice vacante pentru anul școlar 2025-2026</a>
+                    </li>
                 </ul> 
             </div>  
 
-        <!-- Subsecțiune connex) -->
-        <div class="subsection-connex">
+<!-- Subsecțiune Legături -->
+        <div class="subsection-connex" aria-labelledby="Legături">
+            <h3 id="Titlu - Conexiuni" style="display:none;">Conexiuni:</h3>
             <ul>
                 <li>
-                   <div class="subsection-connex">
-                      <a href="https://www.edu.ro"><img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/mec.png?raw=true" alt="Ministerul Educației și Cercetării"></a>
+                   <div class="subsection-connex" role="region" aria-labelledby="Pagina externă - Ministerul Educației și Cercetării">
+                      <a href="https://www.edu.ro" aria-label="Site oficial - Ministerul Educației și Cercetării" target="_blank" rel="noopener noreferrer">
+                          <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/mec.png?raw=true" alt="Ministerul Educației și Cercetării"></a>
                       <a href="https://www.edu.ro">Ministerul Educației și Cercetării</a>
                    </div>
                 </li>
