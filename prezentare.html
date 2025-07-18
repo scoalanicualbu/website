@@ -87,6 +87,15 @@ border: 0px solid #333333;
                 font-size: 1rem;
             }
 
+            .sr-only {
+                position: absolute;
+                left: -10000px;
+                top: auto;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+}
+
 /* Sari la Conținut */
         .skip-link {
             position: absolute;
@@ -571,21 +580,19 @@ border: 0px solid #333333;
 <body>
 
 <!-- Sari la Conținut -->
-    <a href="#Etichetă - Conținut" class="skip-link">Sari la Conținut</a>
+    <a href="#Continut" class="skip-link">Sari la conținut</a>
 
 
 <!-- Secțiune Meniu -->
    <aside id="Secțiunea Meniu" role="complementary" aria-label="Secțiunea Meniu" aria-labelledby="Secțiunea Meniu">
 
 <!-- Siglă -->
-      <div id="Sigla școlii" role="region" aria-label="Sigla școlii" aria-labelledby="Sigla școlii" class="side-name">
-          <span id="Etichetă - Siglă" style="display: none;">Sigla școlii</span>
-          <img id="Siglă" alt="Sigla Școlii Gimnaziale „Nicu Albu” Piatra Neamț" src="https://github.com/scoalanicualbu/website/blob/main/prezentare/sigla.png?raw=true">
+      <div id="Siglă" role="region" aria-label="Sigla școlii" aria-labelledby="Sigla școlii" class="side-name">
+          <img id="Sigla școlii" alt="Sigla Școlii Gimnaziale „Nicu Albu” Piatra Neamț" src="https://github.com/scoalanicualbu/website/blob/main/prezentare/sigla.png?raw=true">
       </div>
 
 <!-- Denumire -->
-      <div id="Denumirea școlii" role="region" aria-label="Denumirea școlii" aria-labelledby="Denumirea școlii" class="side-name">
-         <span id="Etichetă - Denumire" style="display: none;">Denumirea școlii</span>
+      <div id="Denumire" role="region" aria-label="Denumirea școlii" aria-labelledby="Denumirea școlii" class="side-name">
          Școala Gimnazială<br>„Nicu Albu”<br>Piatra Neamț
       </div>
 
@@ -593,8 +600,8 @@ border: 0px solid #333333;
       <nav id="Meniu principal" role="navigation" aria-label="Meniul principal" aria-labelledby="Meniul principal" class="side-menu">
          <ul>
             <li aria-current="page">
-                <h1 id="Etichetă - Prezentare">
-                    <a id="Legătură - Pagina - Prezentare" role="link" aria-label="Pagina principală - Prezentare" class="active" href="index.html">Prezentare</a>
+                <h1 id="Pagina - Prezentare">
+                    <a id="Legătură - Pagina - Prezentare" role="link" aria-label="Pagina - Prezentare" class="active" href="index.html">Prezentare</a>
                 </h1>
             </li>
             <li>
@@ -667,7 +674,7 @@ border: 0px solid #333333;
         </nav>
 
 <!-- Subsecțiuni de conținut -->
-        <span id="Etichetă - Conținut" style="display: none;">Conținutul paginii</span>
+        <span id="Continut" style="display: none;">Conținutul paginii</span>
 
 <!-- Subsecțiune Text -->
         <article id="Subsecțiune - Text" role="region" aria-label="Subsecțiune - Text" aria-labelledby="Articolul principal" class="subsection-text">
@@ -677,7 +684,7 @@ border: 0px solid #333333;
             <b>„Suntem o familie! Împreună construim, învăţăm, inovăm! Suntem o şcoală deschisă, pentru comunitate!”</b>
             <br>
             <br>            
-            <h3 id="Titlu - Prezentare" aria-label="Titlu - Prezentare" aria-labelledby="Prezentare" style="display:none;">Prezentare</h3>
+            <h3 id="Titlu - Prezentare" aria-label="Titlu - Prezentare" aria-labelledby="Prezentare" class="sr-only">Prezentare</h3>
             <p>Şcoala Gimnazială „Nicu Albu” Piatra Neamţ este o şcoală urbană, care se situează în partea de vest a Municipiului Piatra Neamţ, în cartierul Precista, pe strada Ecoului, la numărul 5.</p>
             <p>În anul 1993, o dată cu construirea unei şcoli noi în cartierul Precista cu scopul de a descongestiona numărul mare de elevi şi clase care funcţionau la școala din acelaşi cartier, Şcoala cu clasele I-VIII Nr. 4 Piatra Neamț, apare, ca organizație nouă, Şcoala cu clasele I-VIII Nr. 10 Piatra Neamţ.</p>
             <p>Funcţionând din anul şcolar 1993-1994 într-un corp de clădire în construcţie, clădirea Şcolii cu clasele I-VIII Nr. 10 Piatra Neamţ a fost finalizată în 1997 aşa cum atestă procesul verbal de recepţie finală, datat 15.12.1997.</p>
