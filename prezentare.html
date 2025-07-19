@@ -3,43 +3,30 @@
 <!-- Limbă și localizare -->
 <html lang="ro-RO">
 
-<head>
+    <head>
 
 <!-- Titlu -->
-    <title>Prezentare</title>
+        <title>Prezentare</title>
 
 <!-- Codificare caractere -->
-    <meta charset="UTF-8">
+        <meta charset="UTF-8">
 
 <!-- Vizualizare pagină -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- Structurare pagină -->
-    <style>
-        :root {
-            --grid-columns: 12;
-        }
+        <style>
 
-        * {
-            box-sizing: border-box;
-        }
+            :root {
+                --grid-columns: 12;
+            }
 
-        body {
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
 border: 0px solid #333333;
-            margin-top: 0;
-            margin-bottom: 0;
-            margin-left: 0;
-            margin-right: 0;
-            padding-top: 0;
-            padding-bottom: 0;
-            padding-left: 0;
-            padding-right: 0;
-            min-height: 100vh;
-            display: flex;
-            font-family: Arial, sans-serif;
-        }
-
-            h1 {
                 margin-top: 0;
                 margin-bottom: 0;
                 margin-left: 0;
@@ -48,356 +35,12 @@ border: 0px solid #333333;
                 padding-bottom: 0;
                 padding-left: 0;
                 padding-right: 0;
-                font-size: 1.3rem;
-            }
-
-            h2 {
-                margin-top: 0;
-                margin-bottom: 0;
-                margin-left: 0;
-                margin-right: 0;
-                padding-top: 0;
-                padding-bottom: 0;
-                padding-left: 0;
-                padding-right: 0;
-                font-size: 1.2rem;
-            }
-
-            h3 {
-                margin-top: 0;
-                margin-bottom: 0;
-                margin-left: 0;
-                margin-right: 0;
-                padding-top: 0;
-                padding-bottom: 0;
-                padding-left: 0;
-                padding-right: 0;
-                font-size: 1.1rem;
-            }
-
-            h4 {
-                margin-top: 0;
-                margin-bottom: 0;
-                margin-left: 0;
-                margin-right: 0;
-                padding-top: 0;
-                padding-bottom: 0;
-                padding-left: 0;
-                padding-right: 0;
-                font-size: 1rem;
-            }
-
-            .sr-only {
-                position: absolute;
-                left: -10000px;
-                top: auto;
-                width: 1px;
-                height: 1px;
-                overflow: hidden;
-}
-
-/* Sari la Conținut */
-        .skip-link {
-            position: absolute;
-            top: -40px;
-            left: 0;
-            padding: 8px;
-            z-index: 100;
-            text-decoration: none;
-            color: #fff;
-            background: #000;
-        }
-
-        .skip-link:focus,
-        .skip-link:focus-visible {
-            top: 0;
-            outline: 2px dashed yellow; /* vizualizarea focus-ului */
-        }
-
-/* Secțiune Meniu */
-        aside {
-border: 0px solid #333333;
-            margin-top: 0;
-            margin-bottom: 0;
-            margin-left: 0;
-            margin-right: 0;
-            padding-top: 0.5rem;
-            padding-bottom: 0.5rem;
-            padding-left: 0.5rem;
-            padding-right: 0.5rem;
-            max-width: 15rem; 
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: #f5f5f5;
-        }
-
-/* Siglă */
-            aside img {
-border: 0px solid #333333;
-                margin-top: 0;
-                margin-bottom: 1rem;
-                margin-left: 0;
-                margin-right: 0;
-                padding-top: 0.5rem;
-                padding-bottom: 0.5rem;
-                padding-left: 2.9rem;
-                padding-right: 2.9rem;
-                max-width: 14rem;
-                height: auto;
-            }
-
-/* Denumire */
-            .side-name {
-border: 0px solid #333333;
-                margin-top: -0.5rem;
-                margin-bottom: -0.5rem;
-                margin-left: 0;
-                margin-right: 0;
-                padding-top: 0.5rem;
-                padding-bottom: 0.5rem;
-                padding-left: 0.5rem;
-                padding-right: 0.5rem;
-                width: 14rem;
-                display: block;
-                text-align: center;
-                text-decoration: none;
-                font-weight: bold;
-                color: #333333;
-            }
-
-/* Meniu principal */
-            .side-menu a {
-border: 0px solid #333333;
-                margin-top: 0;
-                margin-bottom: 0;
-                margin-left: 0;
-                margin-right: 0;
-                padding-top: 0.5rem;
-                padding-bottom: 0.5rem;
-                padding-left: 0.5rem;
-                padding-right: 0.5rem;
-                height: 2.3rem;
-                display: block;
-                text-align: center;
-                text-decoration: none;
-                color: #333333;
-            }
-
-            .side-menu ul {
-border: 0px solid #333333;
-                margin-top: 1rem;
-                margin-bottom: 0;
-                margin-left: 0;
-                margin-right: 0;
-                padding-top: 0;
-                padding-bottom: 0;
-                padding-left: 0;
-                padding-right: 0;
-                width: 14rem;
-                list-style: none;
-                text-align: center;
-            }
-
-            .side-menu li:hover {
-                margin-top: 0;
-                margin-bottom: 0;
-                margin-left: 0;
-                margin-right: 0;
-                padding-top: 0;
-                padding-bottom: 0;
-                padding-left: 0;
-                padding-right: 0;
-                height: 2.3rem;
-                font-size: 1rem;
-                text-shadow: 0.4px 0 currentColor, -0.4px 0 currentColor;
-            }
-
-            .side-menu a.active {
-                margin-top: 0;
-                margin-bottom: 0;
-                margin-left: 0;
-                margin-right: 0;
-                padding-top: 0.5rem;
-                padding-bottom: 0.5rem;
-                padding-left: 0.5rem;
-                padding-right: 0.5rem;
-                height: 2.3rem;
-                pointer-events: none;
-                font-size: 1.1rem;
-                text-shadow: 0.4px 0 currentColor, -0.4px 0 currentColor;
-            }
-
-/* Secțiune Conținut */
-        .content {
-border: 0px solid #333333;
-            margin-top: 0;
-            margin-bottom: 0;
-            margin-left: 0;
-            margin-right: 0;
-            padding-top: 0;
-            padding-bottom: 0;
-            padding-left: 0;
-            padding-right: 0;
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1;
-            background-color: #ffffff;
-        }
-
-/* Banner */
-            .banner {
-border: 0px solid #333333;
-                margin-top: 0;
-                margin-bottom: 0;
-                margin-left: 0;
-                margin-right: 1rem;
-                padding-top: 0;
-                padding-bottom: 0;
-                padding-left: 0;
-                padding-right: 0;
-                grid-column: span 12;
-            }
-
-            .banner img {
-border: 0px solid #333333;
-                margin-top: 0.5rem;
-                margin-bottom: 0.3rem;
-                margin-left: 0.5rem;
-                margin-right: 0.5rem;
-                padding-top: 0;
-                padding-bottom: 0;
-                padding-left: 0;
-                padding-right: 0;
-                width: 100%;
-                height: 14.2rem;
-                object-fit: cover;
-            }
-
-/* Meniu pagină */
-        .page-menu ul {
-border: 0px solid #333333;
-            margin-top: 0;
-            margin-bottom: 0;
-            margin-left: 0;
-            margin-right: 0;
-            padding-top: 0;
-            padding-bottom: 0;
-            padding-left: 0.5rem;
-            padding-right: 0.5rem;
-            display: flex;
-            justify-content: space-between;
-            gap: 1rem;
-            list-style: none;
-            text-align: center;
-        }
-
-            .page-menu li {
-                margin-top: 0;
-                margin-bottom: 0;
-                margin-left: 0;
-                margin-right: 0;
-                padding-top: 0;
-                padding-bottom: 0;
-                padding-left: 0;
-                padding-right: 0;
-                min-height: 2.3rem;
-                flex-grow: 1;
-            }
-
-            .page-menu li:hover {
-                margin-top: 0;
-                margin-bottom: 0;
-                margin-left: 0;
-                margin-right: 0;
-                padding-top: 0;
-                padding-bottom: 0;
-                padding-left: 0;
-                padding-right: 0;
-                min-height: 2.3rem;
-                text-shadow: 0.4px 0 currentColor, -0.4px 0 currentColor;
-                background-color: #f0f0f0;
-            }
-
-            .page-menu a {
-border: 1px solid #333333;
-                margin-top: 0;
-                margin-bottom: 0;
-                margin-left: 0;
-                margin-right: 0;
-                padding-top: 0;
-                padding-bottom: 0;
-                padding-left: 0.5rem;
-                padding-right: 0.5rem;
-                min-height: 2.3rem;
+                min-height: 100vh;
                 display: flex;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-                text-decoration: none;
-                font-size: 1rem;
-                color: #333333;
+                font-family: Arial, sans-serif;
             }
 
-            .page-menu li a.active {
-                margin-top: 0.5rem;
-                margin-bottom: 0.5rem;
-                margin-left: 0;
-                margin-right: 0;
-                padding-top: 0.3rem;
-                padding-bottom: 0.3rem;
-                padding-left: 0.5rem;
-                padding-right: 0.5rem;
-                pointer-events: none;
-                font-size: 1rem;
-                text-shadow: 0.4px 0 currentColor, -0.4px 0 currentColor;
-                background-color: #c4c4c4;
-            }
-
-/* Subsecțiuni de conținut */
-
-/* Subsecțiune Text */
-        .subsection-text {
-border: 0px solid #333333;
-            margin-top: 0;
-            margin-bottom: 0;
-            margin-left: 0;
-            margin-right: 0;
-            padding-top: 0.7rem;
-            padding-bottom: 0;
-            padding-left: 0.5rem;
-            padding-right: 0.5rem;
-            grid-column: span 12;
-            text-align: justify;
-        }
-
-/* Subsecțiune Noutăți */
-        .subsection-info {
-border: 0px solid #333333;
-            margin-top: 0;
-            margin-bottom: 0;
-            margin-left: 0;
-            margin-right: 0;
-            padding-top: 0.5rem;
-            padding-bottom: 0.5rem;
-            padding-left: 0.5rem;
-            padding-right: 0.5rem;
-            text-align: justify;
-        }
-
-            .subsection-info ul {
-                margin-top: -0.5rem;
-                margin-bottom: 0;
-                margin-left: 0;
-                margin-right: 0;
-                padding-top: 0;
-                padding-bottom: 0;
-                padding-left: 0;
-                padding-right: 0;
-                list-style: none;
-            }
-
-                .subsection-info li:hover {
+                h1 {
                     margin-top: 0;
                     margin-bottom: 0;
                     margin-left: 0;
@@ -406,45 +49,238 @@ border: 0px solid #333333;
                     padding-bottom: 0;
                     padding-left: 0;
                     padding-right: 0;
-                    text-shadow: 0.4px 0 currentColor, -0.4px 0 currentColor;
+                    font-size: 1.3rem;
                 }
 
-            .subsection-info a {
+                h2 {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    margin-left: 0;
+                    margin-right: 0;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    padding-left: 0;
+                    padding-right: 0;
+                    font-size: 1.2rem;
+                }
+
+                h3 {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    margin-left: 0;
+                    margin-right: 0;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    padding-left: 0;
+                    padding-right: 0;
+                    font-size: 1.1rem;
+                }
+
+                h4 {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    margin-left: 0;
+                    margin-right: 0;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    padding-left: 0;
+                    padding-right: 0;
+                    font-size: 1rem;
+                }
+
+                .sr-only {
+                    position: absolute;
+                    left: -10000px;
+                    top: auto;
+                    width: 1px;
+                    height: 1px;
+                    overflow: hidden;
+                }
+
+/* Sari la Conținut */
+            .skip-link {
+                position: absolute;
+                top: -40px;
+                left: 0;
+                padding: 8px;
+                z-index: 100;
+                text-decoration: none;
+                color: #fff;
+                background: #000;
+            }
+
+                .skip-link: focus {
+                    top: 0;
+                    outline: 2px dashed yellow; /* vizualizarea focus-ului */
+                }
+
+                .skip-link:focus-visible {
+                    top: 0;
+                    outline: 2px dashed yellow; /* vizualizarea focus-ului */
+                }
+
+/* Secțiune Meniu */
+            aside {
 border: 0px solid #333333;
                 margin-top: 0;
                 margin-bottom: 0;
-                margin-left: -0.5rem;
+                margin-left: 0;
                 margin-right: 0;
-                padding-top: 0.5rem;
-                padding-bottom: 0.5rem;
+                padding-top: 0;
+                padding-bottom: 0;
                 padding-left: 0.5rem;
                 padding-right: 0.5rem;
-                min-height: 2.3rem;
-                float: left;
-                clear: both;
-                text-decoration: none;
-                color: #333333;
+                max-width: 15rem; 
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: #f5f5f5;
             }
 
-/* Subsecțiune Legături */
-        .subsection-connex {
+/* Siglă */
+                aside img {
 border: 0px solid #333333;
-            margin-top: 0;
-            margin-bottom: 0;
-            margin-left: 0;
-            margin-right: 0;
-            padding-top: 0;
-            padding-bottom: 0;
-            padding-left: 0;
-            padding-right: 0;
-            grid-template-columns: repeat(4, 2fr);
-            display: flex;
-            gap: 0;
-            justify-content: center;
-            align-items: center;
-        }
+                    margin-top: 0.5rem;
+                    margin-bottom: -0.3rem;
+                    margin-left: 0;
+                    margin-right: 0;
+                    padding-top: 0.5rem;
+                    padding-bottom: 0.5rem;
+                    padding-left: 2.9rem;
+                    padding-right: 2.9rem;
+                    max-width: 14rem;
+                    height: auto;
+                }
 
-            .subsection-connex ul {
+/* Denumire */
+                .side-name {
+border: 0px solid #333333;
+                    margin-top: 0.5rem;
+                    margin-bottom: 0;
+                    margin-left: 0;
+                    margin-right: 0;
+                    padding-top: 0.5rem;
+                    padding-bottom: 0.5rem;
+                    padding-left: 0;
+                    padding-right: 0;
+                    width: 14rem;
+                    display: block;
+                    text-align: center;
+                    text-decoration: none;
+                    font-weight: bold;
+                    color: #333333;
+                }
+
+/* Meniu site */
+                .side-menu a {
+border: 0px solid #333333;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    margin-left: 0;
+                    margin-right: 0;
+                    padding-top: 0.5rem;
+                    padding-bottom: 0.5rem;
+                    padding-left: 0.5rem;
+                    padding-right: 0.5rem;
+                    height: 2.3rem;
+                    display: block;
+                    text-align: center;
+                    text-decoration: none;
+                    color: #333333;
+                }
+
+                .side-menu ul {
+border: 0px solid #333333;
+                    margin-top: 0.5rem;
+                    margin-bottom: 0;
+                    margin-left: 0;
+                    margin-right: 0;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    padding-left: 0;
+                    padding-right: 0;
+                    width: 14rem;
+                    list-style: none;
+                    text-align: center;
+                }
+
+                .side-menu li:hover {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    margin-left: 0;
+                    margin-right: 0;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    padding-left: 0;
+                    padding-right: 0;
+                    height: 2.3rem;
+                    font-size: 1rem;
+                    text-shadow: 0.4px 0 currentColor, -0.4px 0 currentcolor;
+                }
+
+                .side-menu a.active {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    margin-left: 0;
+                    margin-right: 0;
+                    padding-top: 0.5rem;
+                    padding-bottom: 0.5rem;
+                    padding-left: 0.5rem;
+                    padding-right: 0.5rem;
+                    height: 2.3rem;
+                    pointer-events: none;
+                    font-size: 1.1rem;
+                    text-shadow: 0.4px 0 currentColor, -0.4px 0 currentcolor;
+                }
+
+/* Secțiune Conținut */
+            .content {
+border: 0px solid #333333;
+                margin-top: 0;
+                margin-bottom: 0;
+                margin-left: 0;
+                margin-right: 0;
+                padding-top: 0;
+                padding-bottom: 0;
+                padding-left: 0;
+                padding-right: 0;
+                display: flex;
+                flex-direction: column;
+                flex-grow: 1;
+                background-color: #ffffff;
+            }
+
+/* Banner */
+                .banner {
+border: 0px solid #333333;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    margin-left: 0;
+                    margin-right: 0;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    padding-left: 0;
+                    padding-right: 1rem;
+                    grid-column: span 12;
+                }
+
+                .banner img {
+border: 0px solid #333333;
+                    margin-top: 0.5rem;
+                    margin-bottom: 0.3rem;
+                    margin-left: 0.5rem;
+                    margin-right: 0.5rem;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    padding-left: 0;
+                    padding-right: 0;
+                    width: 100%;
+                    height: 14.2rem;
+                    object-fit: cover;
+                }
+
+/* Meniu pagină */
+            .page-menu ul {
 border: 0px solid #333333;
                 margin-top: 0;
                 margin-bottom: 0;
@@ -457,75 +293,91 @@ border: 0px solid #333333;
                 display: flex;
                 justify-content: space-between;
                 gap: 1rem;
-                align-items: center;
                 list-style: none;
-            }
-
-            .subsection-connex li {
-border: 1px solid #333333;
-                margin-top: 0;
-                margin-bottom: 0;
-                margin-left: 0;
-                margin-right: 0;
-                padding-top: 0;
-                padding-bottom: 0;
-                padding-left: 0;
-                padding-right: 0;
-                flex-grow: 1;
-            }
-
-            .subsection-connex li:hover {
-                text-shadow: 0.4px 0 currentColor, -0.4px 0 currentColor;
-                background-color: #f5f5f5;
-            }
-
-            .subsection-connex img {
-border: 0px solid #333333;
-                margin-top: 0;
-                margin-bottom: 0;
-                margin-left: 0;
-                margin-right: 0.5rem;
-                padding-top: 0;
-                padding-bottom: 0;
-                padding-left: 0;
-                padding-right: 0;
-                width: 5rem;
-                height: 5rem;
-            }
-
-            .subsection-connex a {
-border: 0px solid #333333;
-                margin-top: 0;
-                margin-bottom: 0;
-                margin-left: 0;
-                margin-right: 0;
-                padding-top: 0;
-                padding-bottom: 0;
-                padding-left: 0.2rem;
-                padding-right: 0.5rem;
-                min-height: 5.5rem;
-                display: flex;
-                align-items: center;
                 text-align: center;
-                text-decoration: none;
-                color: #333333;
             }
 
-/* Subsol pagină */
-        .footer {
-border: 0px solid #333333;
-            margin-top: 0;
-            margin-bottom: 0;
-            margin-left: 0;
-            margin-right: 0;
-            padding-top: 0.5rem;
-            padding-bottom: 0.5rem;
-            padding-left: 0.5rem;
-            padding-right: 0.5rem;
-            grid-column: span 12;
-        }
+                .page-menu li {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    margin-left: 0;
+                    margin-right: 0;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    padding-left: 0;
+                    padding-right: 0;
+                    min-height: 2.3rem;
+                    flex-grow: 1;
+                }
 
-            .footer-info {
+                .page-menu li:hover {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    margin-left: 0;
+                    margin-right: 0;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    padding-left: 0;
+                    padding-right: 0;
+                    min-height: 2.3rem;
+                    text-shadow: 0.4px 0 currentColor, -0.4px 0 currentcolor;
+                    background-color: #f0f0f0;
+                }
+
+                .page-menu a {
+border: 1px solid #333333;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    margin-left: 0;
+                    margin-right: 0;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    padding-left: 0.5rem;
+                    padding-right: 0.5rem;
+                    min-height: 2.3rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    text-decoration: none;
+                    font-size: 1rem;
+                    color: #333333;
+                }
+
+                .page-menu li a.active {
+                    margin-top: 0.5rem;
+                    margin-bottom: 0.5rem;
+                    margin-left: 0;
+                    margin-right: 0;
+                    padding-top: 0.3rem;
+                    padding-bottom: 0.3rem;
+                    padding-left: 0.5rem;
+                    padding-right: 0.5rem;
+                    pointer-events: none;
+                    font-size: 1rem;
+                    text-shadow: 0.4px 0 currentColor, -0.4px 0 currentcolor;
+                    background-color: #c4c4c4;
+                }
+
+/* Subsecțiuni de conținut */
+
+/* Subsecțiune Text */
+            .subsection-text {
+border: 0px solid #333333;
+                margin-top: 0;
+                margin-bottom: 0;
+                margin-left: 0;
+                margin-right: 0;
+                padding-top: 0.7rem;
+                padding-bottom: 0;
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+                grid-column: span 12;
+                text-align: justify;
+            }
+
+/* Subsecțiune Noutăți */
+            .subsection-info {
 border: 0px solid #333333;
                 margin-top: 0;
                 margin-bottom: 0;
@@ -535,225 +387,347 @@ border: 0px solid #333333;
                 padding-bottom: 0.5rem;
                 padding-left: 0.5rem;
                 padding-right: 0.5rem;
-                max-height: 2.3rem;
+                text-align: justify;
+            }
+
+                .subsection-info ul {
+                    margin-top: -0.5rem;
+                    margin-bottom: 0;
+                    margin-left: 0;
+                    margin-right: 0;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    padding-left: 0;
+                    padding-right: 0;
+                    list-style: none;
+                }
+
+                    .subsection-info li:hover {
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        margin-left: 0;
+                        margin-right: 0;
+                        padding-top: 0;
+                        padding-bottom: 0;
+                        padding-left: 0;
+                        padding-right: 0;
+                        text-shadow: 0.4px 0 currentColor, -0.4px 0 currentcolor;
+                    }
+
+                .subsection-info a {
+border: 0px solid #333333;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    margin-left: -0.5rem;
+                    margin-right: 0;
+                    padding-top: 0.5rem;
+                    padding-bottom: 0.5rem;
+                    padding-left: 0.5rem;
+                    padding-right: 0.5rem;
+                    min-height: 2.3rem;
+                    float: left;
+                    clear: both;
+                    text-decoration: none;
+                    color: #333333;
+                }
+
+/* Subsecțiune Legături */
+            .subsection-connex {
+border: 0px solid #333333;
+                margin-top: 0;
+                margin-bottom: 0;
+                margin-left: 0;
+                margin-right: 0;
+                padding-top: 0;
+                padding-bottom: 0;
+                padding-left: 0;
+                padding-right: 0;
+                grid-template-columns: repeat(4, 2fr);
                 display: flex;
-                flex-direction: column;
-                flex-grow: 1;
-                text-align: center;
-            }
-
-/* Scalare pagină */
-        /* Media Query pentru mobil */
-        @media (max-width: 768px) {
-            body {
-                grid-template-columns: 1fr; /* o singură coloană pe mobil */
-            }
-
-            .menu {
-                grid-column: span 1;
-            }
-
-            .content {
-                grid-column: span 1;
-            }
-
-            .horizontal-menu {
-                flex-direction: column;
+                gap: 0;
+                justify-content: center;
                 align-items: center;
             }
 
-            .subsection-image-text {
-                grid-template-columns: 1fr;
+                .subsection-connex ul {
+border: 0px solid #333333;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    margin-left: 0;
+                    margin-right: 0;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    padding-left: 0.5rem;
+                    padding-right: 0.5rem;
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 1rem;
+                    align-items: center;
+                    list-style: none;
+                }
+
+                .subsection-connex li {
+border: 1px solid #333333;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    margin-left: 0;
+                    margin-right: 0;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    padding-left: 0;
+                    padding-right: 0;
+                    flex-grow: 1;
+                }
+
+                .subsection-connex li:hover {
+                    text-shadow: 0.4px 0 currentColor, -0.4px 0 currentcolor;
+                    background-color: #f5f5f5;
+                }
+
+                .subsection-connex img {
+border: 0px solid #333333;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    margin-left: 0;
+                    margin-right: 0.5rem;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    padding-left: 0;
+                    padding-right: 0;
+                    width: 5rem;
+                    height: 5rem;
+                }
+
+                .subsection-connex a {
+border: 0px solid #333333;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    margin-left: 0;
+                    margin-right: 0;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    padding-left: 0.2rem;
+                    padding-right: 0.5rem;
+                    min-height: 5.5rem;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    text-decoration: none;
+                    color: #333333;
+                }
+
+/* Subsol pagină */
+            .footer {
+border: 0px solid #333333;
+                margin-top: 0;
+                margin-bottom: 0;
+                margin-left: 0;
+                margin-right: 0;
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+                grid-column: span 12;
             }
 
-            .subsection-images {
-                grid-template-columns: 1fr 1fr;
+                .footer-info {
+border: 0px solid #333333;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    margin-left: 0;
+                    margin-right: 0;
+                    padding-top: 0.5rem;
+                    padding-bottom: 0.5rem;
+                    padding-left: 0.5rem;
+                    padding-right: 0.5rem;
+                    max-height: 2.3rem;
+                    display: flex;
+                    flex-direction: column;
+                    flex-grow: 1;
+                    text-align: center;
+                }
+
+/* Scalare pagină */
+        /* Media Query pentru mobil */
+           @media (max-width: 768px) {
+                body {
+                    grid-template-columns: 1fr; /* o singură coloană pe mobil */
+                }
+
+                .menu {
+                    grid-column: span 1;
+                }
+
+                .content {
+                    grid-column: span 1;
+                }
+
+                .horizontal-menu {
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .subsection-image-text {
+                    grid-template-columns: 1fr;
+                }
+
+                .subsection-images {
+                    grid-template-columns: 1fr 1fr;
+                }
+
+                .main-content-right {
+                    grid-template-columns: 1fr;
+                }
             }
 
-            .main-content-right {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
-</head>
+        </style>
 
-<body>
+    </head>
 
-<!-- Sari la Conținut -->
-    <a href="#Continut" class="skip-link">Sari la conținut</a>
+    <body>
+
+<!-- Sari la conținut -->
+        <a href="#main-content" class="skip-link">Sari la conținut</a>
 
 
 <!-- Secțiune Meniu -->
-   <aside id="Secțiunea Meniu" role="complementary" aria-label="Secțiunea Meniu" aria-labelledby="Secțiunea Meniu">
+        <aside aria-label="Secțiunea Meniu" role="complementary">
+
+            <header>
 
 <!-- Siglă -->
-      <div id="Siglă" role="region" aria-label="Sigla școlii" aria-labelledby="Sigla școlii" class="side-name">
-          <img id="Sigla școlii" alt="Sigla Școlii Gimnaziale „Nicu Albu” Piatra Neamț" src="https://github.com/scoalanicualbu/website/blob/main/prezentare/sigla.png?raw=true">
-      </div>
+                <div aria-label="Siglă" aria-labelledby="sigla-label" id="sigla-region" role="region">
+                    <div id="sigla-label" class="side-name sr-only">Sigla școlii</div>
+                    <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/sigla.png?raw=true" alt="Sigla Școlii Gimnaziale „Nicu Albu” Piatra Neamț"/>
+                </div>
 
 <!-- Denumire -->
-      <div id="Denumire" role="region" aria-label="Denumirea școlii" aria-labelledby="Denumirea școlii" class="side-name">
-         Școala Gimnazială<br>„Nicu Albu”<br>Piatra Neamț
-      </div>
+                <div aria-label="Denumire" aria-labelledby="denumire-label" id="denumire-region" role="region">
+                    <h2 id="denumire-label" class="side-name sr-only">Denumirea școlii</h2>
+                    <p class="side-name">Școala Gimnazială<br>„Nicu Albu”<br>Piatra Neamț</p>
+                </div>
 
-<!-- Meniu principal -->
-      <nav id="Meniu principal" role="navigation" aria-label="Meniul principal" aria-labelledby="Meniul principal" class="side-menu">
-         <ul>
-            <li aria-current="page">
-                <h1 id="Pagina - Prezentare">
-                    <a id="Legătură - Pagina - Prezentare" role="link" aria-label="Pagina - Prezentare" class="active" href="index.html">Prezentare</a>
-                </h1>
-            </li>
-            <li>
-                <a id="Legătură - Pagina - Oferta educațională" role="link" aria-label="Legătură - Pagina - Oferta educațională" href="oferta.html">Oferta educațională</a>
-            </li>
-            <li>
-                <a id="Legătură - Pagina - Grădiniță" role="link" aria-label="Legătură - Pagina - Grădiniță" href="gradinita.html" >Grădiniță</a>
-            </li>
-            <li>
-                <a id="Legătură - Pagina - Clasa pregătitoare" role="link" aria-label="Legătură - Pagina - Clasa pregătitoare" href="pregatitoare.html">Clasa pregătitoare</a>
-            </li>
-            <li>
-                <a id="Legătură - Pagina - Evaluare națională" role="link" aria-label="Legătură - Pagina - Evaluare națională" href="evaluare.html">Evaluare națională</a>
-            </li>
-            <li>
-                <a id="Legătură - Pagina - Admitere" role="link" aria-label="Legătură - Pagina - Admitere" href="admitere.html">Admitere</a>
-            </li>
-            <li>
-                <a id="Legătură - Pagina - Școala Altfel" role="link" aria-label="Legătură - Pagina - Școala Altfel" href="altfel.html">Școala Altfel</a>
-            </li>
-            <li>
-                <a id="Legătură - Pagina - Săptămâna verde" role="link" aria-label="Legătură - Pagina - Săptămâna verde" href="verde.html">Săptămâna verde</a>
-            </li>
-            <li>
-            <a id="Legătură - Pagina - Proiecte" role="link" aria-label="Legătură - Pagina - Proiecte" href="proiecte.html">Proiecte</a>
-            </li>
-            <li>
-                <a id="Legătură - Pagina - Strategie" role="link" aria-label="Legătură - Pagina - Strategie" href="strategie.html">Strategie</a>
-            </li>
-            <li>
-                <a id="Legătură - Pagina - Regulamente" role="link" aria-label="Legătură - Pagina - Regulamente" href="regulamente.html">Regulamente</a>
-            </li>
-            <li>
-                <a id="Legătură - Pagina - Personal" role="link" aria-label="Legătură - Pagina - Personal" href="personal.html">Personal</a>
-             </li>
-            <li>
-                <a id="Legătură - Pagina - Organigrama" role="link" aria-label="Legătură - Pagina - Organigrama" href="organigrama.html">Organigrama</a>
-            </li>
-            <li>
-                <a id="Legătură - Pagina - Contact" role="link" aria-label="Legătură - Pagina - Contact" href="contact.html">Contact</a>
-             </li>
-         </ul>
-      </nav>
-    </aside>
+            </header>
+
+<!-- Meniu site -->
+          <nav aria-label="Meniu site" class="side-menu">
+             <ul>
+                <li  aria-current="page"><a class="active" href="index.html"><h1>Prezentare</h1></a></li>
+                <li><a href="oferta.html">Oferta educațională</a></li>
+                <li><a href="gradinita.html" >Grădiniță</a></li>
+                <li><a href="pregatitoare.html">Clasa pregătitoare</a></li>
+                <li><a href="evaluare.html">Evaluare națională</a></li>
+                <li><a href="admitere.html">Admitere</a></li>
+                <li><a href="altfel.html">Școala Altfel</a></li>
+                <li><a href="verde.html">Săptămâna verde</a></li>
+                <li><a proiecte.html">Proiecte</a></li>
+                <li><a href="strategie.html">Strategie</a></li>
+                <li><a href="regulamente.html">Regulamente</a></li>
+                <li><a href="personal.html">Personal</a></li>
+                <li><a href="organigrama.html">Organigrama</a></li>
+                <li><a href="contact.html">Contact</a></li>
+             </ul>
+          </nav>
+
+        </aside>
 
 <!-- Secțiune Conținut -->
-    <div id="Secțiunea Conținut" role="main" aria-label="Secțiunea Conținut" aria-labelledby="Secțiunea Conținut" class="content">
+        <main aria-label="Secțiunea Conținut" id="main-content" role="main" class="content">
 
 <!-- Banner -->
-        <div id="Banner" role="banner" aria-label="Imaginea paginii" aria-labelledby="Imaginea paginii" class="banner">
-            <img  id="Imagine - Intrarea în Școala Gimnazială „Nicu Albu” Piatra Neamț" alt="Intrarea în Școala Gimnazială „Nicu Albu” Piatra Neamț" src="https://github.com/scoalanicualbu/website/blob/main/prezentare/intrare.png?raw=true">
-        </div>
+            <section aria-label="Imagine pagină" aria-labelledby="banner-label" role="region" class="banner">
+                <h2 id="banner-label" class="sr-only">Intrarea în Școala Gimnazială „Nicu Albu” Piatra Neamț</h2>
+                <img  src="https://github.com/scoalanicualbu/website/blob/main/prezentare/intrare.png?raw=true" alt="Intrarea în Școala Gimnazială „Nicu Albu” Piatra Neamț">
+            </section>
 
 <!-- Meniu pagină -->
-        <nav id="Meniu pagină" role="navigation" aria-label="Meniul paginii" aria-labelledby="Meniul paginii" class="page-menu">
-            <ul>
-                <li>
-                    <a id="Legătură - Pagina - Scurt istoric" role="link" aria-label="Legătură - Pagina - Scurt istoric" href="istoric.html">Scurt istoric</a>
-                </li>
-                <li>
-                    <a id="Legătură - Pagina - Circumscripție" role="link" aria-label="Legătură - Pagina - Circumscripție" href="circumscriptie.html">Circumscripție</a>
-                </li>
-                <li>
-                    <a id="Legătură - Pagina - Program de lucru" role="link" aria-label="Legătură - Pagina - Program de lucru" href="program.html">Program de lucru</a>
-                </li>
-                <li>
-                    <a id="Legătură - Pagina - Comunicări" role="link" aria-label="Legătură - Pagina - Comunicări" href="comunicari.html">Comunicări</a>
-                </li>
-            </ul>    
-        </nav>
+            <nav aria-label="Meniu pagină" class="page-menu">
+                <ul>
+                    <li><a href="istoric.html">Scurt istoric</a></li>
+                    <li><a href="circumscriptie.html">Circumscripție</a></li>
+                    <li><a href="program.html">Program de lucru</a></li>
+                    <li><a href="comunicari.html">Comunicări</a></li>
+                </ul>    
+            </nav>
 
 <!-- Subsecțiuni de conținut -->
-        <span id="Continut" style="display: none;">Conținutul paginii</span>
 
 <!-- Subsecțiune Text -->
-        <article id="Subsecțiune - Text" role="region" aria-label="Subsecțiune - Text" aria-labelledby="Articolul principal" class="subsection-text">
-            <br>
-            <h3 id="Titlu - Motto" aria-label="Titlu - Motto" aria-labelledby="Motto">Motto:</h3>
-            <br>
-            <p><strong>„Suntem o familie! Împreună construim, învăţăm, inovăm! Suntem o şcoală deschisă, pentru comunitate!”</strong></p>
-            <br>
-            <br>            
-            <h3 id="Titlu - Prezentare" aria-label="Titlu - Prezentare" aria-labelledby="Prezentare" class="sr-only">Prezentare</h3>
-            <p>Şcoala Gimnazială „Nicu Albu” Piatra Neamţ este o şcoală urbană, care se situează în partea de vest a Municipiului Piatra Neamţ, în cartierul Precista, pe strada Ecoului, la numărul 5.</p>
-            <p>În anul 1993, o dată cu construirea unei şcoli noi în cartierul Precista cu scopul de a descongestiona numărul mare de elevi şi clase care funcţionau la școala din acelaşi cartier, Şcoala cu clasele I-VIII Nr. 4 Piatra Neamț, apare, ca organizație nouă, Şcoala cu clasele I-VIII Nr. 10 Piatra Neamţ.</p>
-            <p>Funcţionând din anul şcolar 1993-1994 într-un corp de clădire în construcţie, clădirea Şcolii cu clasele I-VIII Nr. 10 Piatra Neamţ a fost finalizată în 1997 aşa cum atestă procesul verbal de recepţie finală, datat 15.12.1997.</p>
-            <p>Din data de 01.09.2010, prin Decizia Inspectoratului Școlar Județean Neamţ nr. 664 din 13.05.2010, denumirea Şcolii cu clasele I-VIII Nr. 10 Piatra Neamţ s-a modificat în Şcoala cu clasele I-VIII „Nicu Albu” Piatra Neamţ.</p>
-            <p>Prin Hotărârea Consiliului Local al Municipiului Piatra Neamţ nr. 99 din 10.03.2012 privind aprobarea schimbării denumirii unor unităţi şcolare care aparţin reţelei şcolare a învăţământului preuniversitar din Municipiul Piatra Neamţ, începând cu anul şcolar 2012-2013 denumirea unităţii şcolare s-a modificat, respectiv, în Şcoala Gimnazială „Nicu Albu” Piatra Neamţ.</p>
-            <p>Şcoala Gimnazială „Nicu Albu” Piatra Neamţ este o unitate de învăţământ de stat acreditată aparţinând sistemului educaţional preuniversitar, cu grupe și clase structurate pe 3 niveluri: preşcolar, primar şi gimnazial.</p>
-            <p>Sfera educaţională a şcolii cuprinde desfăşurarea simultană a două sisteme, sistemul educaţional tradiţional şi un sistem alternativ de educaţie, sistemul Step by Step. Este prima şcoală din judeţul Neamţ care a experimentat şi aplică sistemul alternativ de educaţie Step by Step din anul școlar 2001-2002.</p>
-            <p>Unitatea de învăţământ şi-a construit un brand din aceasta şi, în prezent, este apreciată şi căutată de părinţii care optează pentru această alternativă educațională aplicată doar pentru învățământul primar.</p>
-            <p>În comparaţie cu sistemul tradiţional, în sistemul educațional Step by Step se foloseşte acelaşi plan-cadru de învăţământ, aceleaşi programe şcolare, dar oferă o altă modalitate de lucru cu elevii: lucrul pe centre de activitate, în care sunt aplicate metode interactive şi individualizate, tot demersul fiind centrat pe elev.</p>
-            <p>Clasele de învăţământ primar în care se aplică alternativa educaţională Step by Step lucrează în programul „şcolii complete” (zilnic, între orele 08:00-16:00) şi prin implicarea considerabilă a părinţilor. În cele două spaţii amenajate ca săli cu mese se poate servi masa de prânz de către elevi, prin servicii de catering, suportate financiar de părinţi.</p>
-        </article>
+            <section aria-label="Prezentare" aria-labelledby="prezenrare-label" role="region" class="subsection-text">
+                <h2 id="prezenrare-label" class="sr-only">Prezentare</h2>
+                <article>
+                    <h3>Motto:</h3>
+                    <p><strong>„Suntem o familie! Împreună construim, învăţăm, inovăm! Suntem o şcoală deschisă, pentru comunitate!”</strong></p>
+                </article>
+                <article>
+                    <h3 class="sr-only">Prezentare</h3>
+                    <p>Şcoala Gimnazială „Nicu Albu” Piatra Neamţ este o şcoală urbană, care se situează în partea de vest a Municipiului Piatra Neamţ, în cartierul Precista, pe strada Ecoului, la numărul 5.</p>
+                    <p>În anul 1993, o dată cu construirea unei şcoli noi în cartierul Precista cu scopul de a descongestiona numărul mare de elevi şi clase care funcţionau la școala din acelaşi cartier, Şcoala cu clasele I-VIII Nr. 4 Piatra Neamț, apare, ca organizație nouă, Şcoala cu clasele I-VIII Nr. 10 Piatra Neamţ.</p>
+                    <p>Funcţionând din anul şcolar 1993-1994 într-un corp de clădire în construcţie, clădirea Şcolii cu clasele I-VIII Nr. 10 Piatra Neamţ a fost finalizată în 1997 aşa cum atestă procesul verbal de recepţie finală, datat 15.12.1997.</p>
+                    <p>Din data de 01.09.2010, prin Decizia Inspectoratului Școlar Județean Neamţ nr. 664 din 13.05.2010, denumirea Şcolii cu clasele I-VIII Nr. 10 Piatra Neamţ s-a modificat în Şcoala cu clasele I-VIII „Nicu Albu” Piatra Neamţ.</p>
+                    <p>Prin Hotărârea Consiliului Local al Municipiului Piatra Neamţ nr. 99 din 10.03.2012 privind aprobarea schimbării denumirii unor unităţi şcolare care aparţin reţelei şcolare a învăţământului preuniversitar din Municipiul Piatra Neamţ, începând cu anul şcolar 2012-2013 denumirea unităţii şcolare s-a modificat, respectiv, în Şcoala Gimnazială „Nicu Albu” Piatra Neamţ.</p>
+                    <p>Şcoala Gimnazială „Nicu Albu” Piatra Neamţ este o unitate de învăţământ de stat acreditată aparţinând sistemului educaţional preuniversitar, cu grupe și clase structurate pe 3 niveluri: preşcolar, primar şi gimnazial.</p>
+                    <p>Sfera educaţională a şcolii cuprinde desfăşurarea simultană a două sisteme, sistemul educaţional tradiţional şi un sistem alternativ de educaţie, sistemul Step by Step. Este prima şcoală din judeţul Neamţ care a experimentat şi aplică sistemul alternativ de educaţie Step by Step din anul școlar 2001-2002.</p>
+                    <p>Unitatea de învăţământ şi-a construit un brand din aceasta şi, în prezent, este apreciată şi căutată de părinţii care optează pentru această alternativă educațională aplicată doar pentru învățământul primar.</p>
+                    <p>În comparaţie cu sistemul tradiţional, în sistemul educațional Step by Step se foloseşte acelaşi plan-cadru de învăţământ, aceleaşi programe şcolare, dar oferă o altă modalitate de lucru cu elevii: lucrul pe centre de activitate, în care sunt aplicate metode interactive şi individualizate, tot demersul fiind centrat pe elev.</p>
+                    <p>Clasele de învăţământ primar în care se aplică alternativa educaţională Step by Step lucrează în programul „şcolii complete” (zilnic, între orele 08:00-16:00) şi prin implicarea considerabilă a părinţilor. În cele două spaţii amenajate ca săli cu mese se poate servi masa de prânz de către elevi, prin servicii de catering, suportate financiar de părinţi.</p>
+                </article>
+            </section>
 
 <!-- Subsecțiune Noutăți -->
-            <div  id="Subsecțiune - Noutăți" role="region" aria-label="Subsecțiune - Noutăți" aria-labelledby="Noutăți" class="subsection-info">
-                <h3 id="Titlu - Noutăți" aria-label="Titlu - Noutăți">Noutăți:</h3>
-                <br>
+            <section aria-label="Noutăți" aria-labelledby="noutati-label" role="region"  class="subsection-info">
+                <h3 id="noutati-label">Noutăți:</h3>
                 <ul>
-                    <li>
-                        <a  id="Legătură - Pagina - Condiții specifice ocupării posturilor didactice vacante pentru anul școlar 2025-2026" role="link" aria-label="Legătură - Pagina - Condiții specifice ocupării posturilor didactice vacante pentru anul școlar 2025-2026" href="https://drive.google.com/file/d/1CLVRw1GlJCwDIsDDFJc56dk1OkiulyMg/view?usp=sharing" target="_blank" rel="noopener noreferrer">Condiții specifice ocupării posturilor didactice vacante pentru anul școlar 2025-2026</a>
-                    </li>
+                    <li><a href="https://drive.google.com/file/d/1CLVRw1GlJCwDIsDDFJc56dk1OkiulyMg/view?usp=sharing" target="_blank" rel="noopener noreferrer"><p>Condiții specifice ocupării posturilor didactice vacante pentru anul școlar 2025-2026</p></a></li>
                 </ul>
-            </div> 
+            </section> 
 
 <!-- Subsecțiune Legături -->
-        <div id="Subsecțiune - Legături" role="region" aria-label="Subsecțiune - Legături" aria-labelledby="Legături" class="subsection-connex">
-            <h3 id="Titlu - Legături" style="display: none;">Legături:</h3>
-            <ul>
-                <li>
-                    <div id="Site oficial - Ministerul Educației și Cercetării" role="region" aria-labelledby="Site oficial - Ministerul Educației și Cercetării" class="subsection-connex">
-                        <a role="link" href="https://www.edu.ro" target="_blank" rel="noopener noreferrer">
-                            <img alt="Ministerul Educației și Cercetării" src="https://github.com/scoalanicualbu/website/blob/main/prezentare/mec.png?raw=true">
-                            <span id="Legătură - Pagina externă - Ministerul Educației și Cercetării" aria-label="Legătură - Pagina externă - Ministerul Educației și Cercetării">Ministerul Educației și Cercetării</span>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div id="Site oficial - Inspectoratul Școlar Județean Neamț" role="region" aria-labelledby="Site oficial - Inspectoratul Școlar Județean Neamț" class="subsection-connex">
-                        <a role="link" href="https://www.isjneamt.ro" target="_blank" rel="noopener noreferrer">
-                            <img alt="Inspectoratul Școlar Județean Neamț" src="https://github.com/scoalanicualbu/website/blob/main/prezentare/isjneamt.png?raw=true">
-                            <span id="Legătură - Pagina externă - Inspectoratul Școlar Județean Neamț" aria-label="Legătură - Pagina externă - Inspectoratul Școlar Județean Neamț">Inspectoratul Școlar Județean Neamț</span>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div id="Site oficial - Centrul Județean de Resurse și Asistență Educațională Neamț" role="region" aria-labelledby="Site oficial - Centrul Județean de Resurse și Asistență Educațională Neamț" class="subsection-connex">
-                        <a role="link" href="https://www.cjrae-neamt.ro" target="_blank" rel="noopener noreferrer">
-                            <img alt="Centrul Județean de Resurse și Asistență Educațională Neamț" src="https://github.com/scoalanicualbu/website/blob/main/prezentare/cjraeneamt.png?raw=true">
-                            <span  id="Legătură - Pagina externă - Centrul Județean de Resurse și Asistență Educațională Neamț" aria-label="Legătură - Pagina externă - Centrul Județean de Resurse și Asistență Educațională Neamț">Centrul Județean de Resurse și Asistență Educațională Neamț</span>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div  id="Site oficial - Casa Corpului Didactic Neamț" role="region" aria-labelledby="Site oficial - Casa Corpului Didactic Neamț" class="subsection-connex">
-                        <a role="link" href="https://www.ccdneamt.ro"  target="_blank" rel="noopener noreferrer">
-                            <img alt="Casa Corpului Didactic Neamț" src="https://github.com/scoalanicualbu/website/blob/main/prezentare/ccdneamt.png?raw=true">
-                            <span  id="Legătură - Pagina externă - Casa Corpului Didactic Neamț" aria-label="Legătură - Pagina externă - Casa Corpului Didactic Neamț">Casa Corpului Didactic Neamț</span>
-                        </a>
-                    </div>
-                </li>
-            </ul>
-        </div>
+            <section aria-label="Legături" aria-labelledby="legaturi-label" role="region" class="subsection-connex">
+                <h2 id="legaturi-label" class="sr-only">Legături:</h2>
+                <ul>
+                    <li>
+                       <div aria-label="Ministerul Educației și Cercetării" aria-labelledby="mec-label" role="region" class="subsection-connex">
+                            <a href="https://www.edu.ro" target="_blank" rel="noopener noreferrer">
+                                <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/mec.png?raw=true" alt="Ministerul Educației și Cercetării">
+                                <span id="mec-label">Ministerul Educației și Cercetării</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div aria-label="Inspectoratul Școlar Județean Neamț" aria-labelledby="isjn-label" role="region" class="subsection-connex">
+                            <a href="https://www.isjneamt.ro" target="_blank" rel="noopener noreferrer">
+                                <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/isjneamt.png?raw=true" alt="Inspectoratul Școlar Județean Neamț">
+                                <span id="isjn-label">Inspectoratul Școlar Județean Neamț</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div aria-label="Centrul Județean de Resurse și Asistență Educațională Neamț" aria-labelledby="cjraen-label" role="region" class="subsection-connex">
+                            <a href="https://www.cjrae-neamt.ro" target="_blank" rel="noopener noreferrer">
+                                <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/cjraeneamt.png?raw=true" alt="Centrul Județean de Resurse și Asistență Educațională Neamț">
+                                <span  id="cjraen-label">Centrul Județean de Resurse și Asistență Educațională Neamț</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div aria-label="Casa Corpului Didactic Neamț" role="region" aria-labelledby="ccdn-label" class="subsection-connex">
+                            <a href="https://www.ccdneamt.ro"  target="_blank" rel="noopener noreferrer">
+                                <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/ccdneamt.png?raw=true" alt="Casa Corpului Didactic Neamț">
+                                <span  id="ccdn-label" >Casa Corpului Didactic Neamț</span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </section>
 
 <!-- Subsol pagină-->
-         <footer id="Subsol pagină" aria-label="Subsol pagină" aria-labelledby="Subsol" class="footer-info">
-                <span  class="footer-info">&copy; 1993-<script>document.write(new Date().getFullYear());</script> Școala Gimnazială „Nicu Albu” Piatra Neamț</span>
+         <footer aria-label="Subsol pagină" aria-labelledby="subsol" role="contentinfo" class="footer-info">
+                <span id="subsol" class="footer-info">&copy; 1993-<script>document.write(new Date().getFullYear());</script> Școala Gimnazială „Nicu Albu” Piatra Neamț</span>
         </footer>
 
-    </div>
+        </main>
 
-</body>
+    </body>
 
 </html>
