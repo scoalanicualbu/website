@@ -130,12 +130,36 @@ border: 0px solid #333333;
                 padding-bottom: 0;
                 padding-left: 0.5rem;
                 padding-right: 0.5rem;
-                max-width: 15rem; 
+                width: 100%;
+                max-width: 15rem;
+                overflow-x: hidden;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 background-color: #f5f5f5;
             }
+
+                  aside.show {
+                      opacity: 1;
+                      transform: translateX(0);
+                      pointer-events: auto;
+                  }
+
+            #menu-toggle {
+                position: fixed;
+                top: 10px;
+                left: 10px;
+                z-index: 9999;
+                display: block;
+                border: none;
+                font-size: 2rem;
+                cursor: pointer;
+                background: transparent;
+            }
+
+                  aside.show + #menu-toggle {
+                      display: none;
+                  }
 
 /* Siglă */
                 aside img {
@@ -548,6 +572,44 @@ border: 0px solid #333333;
                 }
 
 /* Scalare pagină */
+
+            @media (max-width: 1920px) {
+
+                aside {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    max-height: 100vh;
+                    overflow-y: auto;
+                    opacity: 0;
+                    pointer-events: none;
+                    transform: translateX(-100%);
+                    transition: opacity 0.3s ease, transform 0.3s ease;
+                    z-index: 998;
+                }
+
+                    aside.show {
+                        opacity: 1;
+                        transform: translateX(0);
+                        pointer-events: auto;
+                    }
+
+                #menu-toggle {
+                display: block;
+                }
+
+                    aside.show + #menu-toggle {
+                        display: none;
+                    }
+
+                }
+
+
+
+
+
+
         /* Media Query pentru mobil */
            @media (max-width: 768px) {
                 body {
@@ -589,7 +651,6 @@ border: 0px solid #333333;
 <!-- Sari la conținut -->
         <a href="#main-content" class="skip-link">Sari la conținut</a>
 
-
 <!-- Secțiune Meniu -->
         <aside aria-label="Secțiunea Meniu" role="complementary">
 
@@ -630,6 +691,10 @@ border: 0px solid #333333;
           </nav>
 
         </aside>
+
+        <button aria-label="Buton Meniu" id="menu-toggle"  aria-expanded="false">
+            &#9776;
+        </button>
 
 <!-- Secțiune Conținut -->
         <main aria-label="Secțiunea Conținut" id="main-content" role="main" class="content">
@@ -722,6 +787,62 @@ border: 0px solid #333333;
         </footer>
 
         </main>
+
+        <script>
+
+            // Buton Meniu pagină
+            document.addEventListener('DOMContentLoaded', () => {
+                const toggleBtn = document.getElementById('menu-toggle');
+                const aside = document.querySelector('aside');
+
+            // Funcție pentru a seta iconița și vizibilitatea butonului
+            function updateButton() {
+                if (aside.classList.contains('show')) {
+                    toggleBtn.innerHTML = '×'; // X pentru închidere
+                    toggleBtn.setAttribute('aria-label', 'Închide meniu');
+                    toggleBtn.setAttribute('aria-expanded', 'true');
+                } else {
+                    toggleBtn.innerHTML = '☰'; // iconiță hamburger
+                    toggleBtn.setAttribute('aria-label', 'Meniu');
+                    toggleBtn.setAttribute('aria-expanded', 'false');
+                }
+            }
+
+            // La încărcare
+            updateButton();
+
+            // La click pe buton
+            toggleBtn.addEventListener('click', () => {
+                aside.classList.toggle('show');
+                updateButton();
+            });
+
+            // La schimbarea dimensiunii ecranului (zoom)
+            window.addEventListener('resize', () => {
+
+            // Dacă `<aside>` nu este vizibil (de exemplu, în media query sau la zoom), butonul este vizibil
+            const asideStyle = getComputedStyle(aside);
+                if (asideStyle.display === 'none' || asideStyle.opacity === '0' || asideStyle.pointerEvents === 'none') {
+                toggleBtn.style.display = 'block';
+
+                // Iconița și aria se vor actualiza la următorul click
+                } else {
+
+                    // Dacă `<aside>` este vizibil, se ascunde butonul
+                    toggleBtn.style.display = 'none';
+                    }
+                });
+
+            // La încărcare, se verifică starea de vizibilitate a `<aside>` și se setează vizibilitatea butonului
+            const asideStyle = getComputedStyle(aside);
+                if (asideStyle.display === 'none' || asideStyle.opacity === '0' || asideStyle.pointerEvents === 'none') {
+                    toggleBtn.style.display = 'block';
+                    } else {
+                        toggleBtn.style.display = 'none';
+                        }
+                });
+
+        </script>
 
     </body>
 
