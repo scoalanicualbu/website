@@ -17,10 +17,6 @@
 <!-- Structurare pagină -->
         <style>
 
-            :root {
-                --grid-columns: 12;
-            }
-
             * {
                 box-sizing: border-box;
             }
@@ -98,382 +94,29 @@ border: 0px solid #333333;
                 }
 
 /* Sari la Conținut */
-            .skip-link {
-                position: absolute;
-                top: -40px;
-                left: 0;
-                padding: 8px;
-                z-index: 100;
-                text-decoration: none;
-                color: #fff;
-                background: #000;
-            }
-
-                .skip-link: focus {
-                    top: 0;
-                    outline: 2px dashed yellow; /* vizualizarea focus-ului */
-                }
-
-                .skip-link:focus-visible {
-                    top: 0;
-                    outline: 2px dashed yellow; /* vizualizarea focus-ului */
-                }
-
-/* Secțiune Meniu */
-            aside {
-border: 0px solid #333333;
-                margin-top: 0;
-                margin-bottom: 0;
-                margin-left: 0;
-                margin-right: 0;
-                padding-top: 0;
-                padding-bottom: 0;
-                padding-left: 0.5rem;
-                padding-right: 0.5rem;
-                width: 100%;
-                max-width: 15rem;
-                overflow-x: hidden;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                background-color: #f5f5f5;
-            }
-
-                  aside.show {
-                      opacity: 1;
-                      transform: translateX(0);
-                      pointer-events: auto;
-                  }
-
-            #menu-toggle {
-                position: fixed;
-                top: 10px;
-                left: 10px;
-                z-index: 9999;
-                display: block;
-                border: none;
-                font-size: 2rem;
-                cursor: pointer;
-                background: transparent;
-            }
-
-                  aside.show + #menu-toggle {
-                      display: none;
-                  }
-
-/* Siglă */
-                aside img {
-border: 0px solid #333333;
-                    margin-top: 0.5rem;
-                    margin-bottom: -0.3rem;
-                    margin-left: 0;
-                    margin-right: 0;
-                    padding-top: 0.5rem;
-                    padding-bottom: 0.5rem;
-                    padding-left: 2.9rem;
-                    padding-right: 2.9rem;
-                    max-width: 14rem;
-                    height: auto;
-                }
-
-/* Denumire */
-                .side-name {
-border: 0px solid #333333;
-                    margin-top: 0.5rem;
-                    margin-bottom: 0;
-                    margin-left: 0;
-                    margin-right: 0;
-                    padding-top: 0.5rem;
-                    padding-bottom: 0.5rem;
-                    padding-left: 0;
-                    padding-right: 0;
-                    width: 14rem;
-                    display: block;
-                    text-align: center;
+                .skip-link {
+                    position: absolute;
+                    top: -40px;
+                    left: 0;
+                    padding: 8px;
+                    z-index: 100;
                     text-decoration: none;
-                    font-weight: bold;
-                    color: #333333;
+                    color: #fff;
+                    background: #000;
                 }
 
-/* Meniu site */
-                .side-menu a {
-border: 0px solid #333333;
-                    margin-top: 0;
-                    margin-bottom: 0;
-                    margin-left: 0;
-                    margin-right: 0;
-                    padding-top: 0.5rem;
-                    padding-bottom: 0.5rem;
-                    padding-left: 0.5rem;
-                    padding-right: 0.5rem;
-                    height: 2.3rem;
-                    display: block;
-                    text-align: center;
-                    text-decoration: none;
-                    color: #333333;
-                }
-
-                .side-menu ul {
-border: 0px solid #333333;
-                    margin-top: 0.5rem;
-                    margin-bottom: 0;
-                    margin-left: 0;
-                    margin-right: 0;
-                    padding-top: 0;
-                    padding-bottom: 0;
-                    padding-left: 0;
-                    padding-right: 0;
-                    width: 14rem;
-                    list-style: none;
-                    text-align: center;
-                }
-
-                .side-menu li:hover {
-                    margin-top: 0;
-                    margin-bottom: 0;
-                    margin-left: 0;
-                    margin-right: 0;
-                    padding-top: 0;
-                    padding-bottom: 0;
-                    padding-left: 0;
-                    padding-right: 0;
-                    height: 2.3rem;
-                    font-size: 1rem;
-                    text-shadow: 0.4px 0 currentColor, -0.4px 0 currentcolor;
-                }
-
-                .side-menu a.active {
-                    margin-top: 0;
-                    margin-bottom: 0;
-                    margin-left: 0;
-                    margin-right: 0;
-                    padding-top: 0.5rem;
-                    padding-bottom: 0.5rem;
-                    padding-left: 0.5rem;
-                    padding-right: 0.5rem;
-                    height: 2.3rem;
-                    pointer-events: none;
-                    font-size: 1.1rem;
-                    text-shadow: 0.4px 0 currentColor, -0.4px 0 currentcolor;
-                }
-
-/* Secțiune Conținut */
-            .content {
-border: 0px solid #333333;
-                margin-top: 0;
-                margin-bottom: 0;
-                margin-left: 0;
-                margin-right: 0;
-                padding-top: 0;
-                padding-bottom: 0;
-                padding-left: 0;
-                padding-right: 0;
-                display: flex;
-                flex-direction: column;
-                flex-grow: 1;
-                background-color: #ffffff;
-            }
-
-/* Banner */
-                .banner {
-border: 0px solid #333333;
-                    margin-top: 0;
-                    margin-bottom: 0;
-                    margin-left: 0;
-                    margin-right: 0;
-                    padding-top: 0;
-                    padding-bottom: 0;
-                    padding-left: 0;
-                    padding-right: 1rem;
-                    grid-column: span 12;
-                }
-
-                .banner img {
-border: 0px solid #333333;
-                    margin-top: 0.5rem;
-                    margin-bottom: 0.3rem;
-                    margin-left: 0.5rem;
-                    margin-right: 0.5rem;
-                    padding-top: 0;
-                    padding-bottom: 0;
-                    padding-left: 0;
-                    padding-right: 0;
-                    width: 100%;
-                    height: 14.2rem;
-                    object-fit: cover;
-                }
-
-/* Meniu pagină */
-            .page-menu ul {
-border: 0px solid #333333;
-                margin-top: 0;
-                margin-bottom: 0;
-                margin-left: 0;
-                margin-right: 0;
-                padding-top: 0;
-                padding-bottom: 0;
-                padding-left: 0.5rem;
-                padding-right: 0.5rem;
-                display: flex;
-                justify-content: space-between;
-                gap: 1rem;
-                list-style: none;
-                text-align: center;
-            }
-
-                .page-menu li {
-                    margin-top: 0;
-                    margin-bottom: 0;
-                    margin-left: 0;
-                    margin-right: 0;
-                    padding-top: 0;
-                    padding-bottom: 0;
-                    padding-left: 0;
-                    padding-right: 0;
-                    min-height: 2.3rem;
-                    flex-grow: 1;
-                }
-
-                .page-menu li:hover {
-                    margin-top: 0;
-                    margin-bottom: 0;
-                    margin-left: 0;
-                    margin-right: 0;
-                    padding-top: 0;
-                    padding-bottom: 0;
-                    padding-left: 0;
-                    padding-right: 0;
-                    min-height: 2.3rem;
-                    text-shadow: 0.4px 0 currentColor, -0.4px 0 currentcolor;
-                    background-color: #f0f0f0;
-                }
-
-                .page-menu a {
-border: 1px solid #333333;
-                    margin-top: 0;
-                    margin-bottom: 0;
-                    margin-left: 0;
-                    margin-right: 0;
-                    padding-top: 0;
-                    padding-bottom: 0;
-                    padding-left: 0.5rem;
-                    padding-right: 0.5rem;
-                    min-height: 2.3rem;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    text-align: center;
-                    text-decoration: none;
-                    font-size: 1rem;
-                    color: #333333;
-                }
-
-                .page-menu li a.active {
-                    margin-top: 0.5rem;
-                    margin-bottom: 0.5rem;
-                    margin-left: 0;
-                    margin-right: 0;
-                    padding-top: 0.3rem;
-                    padding-bottom: 0.3rem;
-                    padding-left: 0.5rem;
-                    padding-right: 0.5rem;
-                    pointer-events: none;
-                    font-size: 1rem;
-                    text-shadow: 0.4px 0 currentColor, -0.4px 0 currentcolor;
-                    background-color: #c4c4c4;
-                }
-
-/* Subsecțiuni de conținut */
-
-/* Subsecțiune Text */
-            .subsection-text {
-border: 0px solid #333333;
-                margin-top: 0;
-                margin-bottom: 0;
-                margin-left: 0;
-                margin-right: 0;
-                padding-top: 0.7rem;
-                padding-bottom: 0;
-                padding-left: 0.5rem;
-                padding-right: 0.5rem;
-                grid-column: span 12;
-                text-align: justify;
-            }
-
-/* Subsecțiune Noutăți */
-            .subsection-info {
-border: 0px solid #333333;
-                margin-top: 0;
-                margin-bottom: 0;
-                margin-left: 0;
-                margin-right: 0;
-                padding-top: 0.5rem;
-                padding-bottom: 0.5rem;
-                padding-left: 0.5rem;
-                padding-right: 0.5rem;
-                text-align: justify;
-            }
-
-                .subsection-info ul {
-                    margin-top: -0.5rem;
-                    margin-bottom: 0;
-                    margin-left: 0;
-                    margin-right: 0;
-                    padding-top: 0;
-                    padding-bottom: 0;
-                    padding-left: 0;
-                    padding-right: 0;
-                    list-style: none;
-                }
-
-                    .subsection-info li:hover {
-                        margin-top: 0;
-                        margin-bottom: 0;
-                        margin-left: 0;
-                        margin-right: 0;
-                        padding-top: 0;
-                        padding-bottom: 0;
-                        padding-left: 0;
-                        padding-right: 0;
-                        text-shadow: 0.4px 0 currentColor, -0.4px 0 currentcolor;
+                    .skip-link: focus {
+                        top: 0;
+                        outline: 2px dashed yellow; /* vizualizarea focus-ului */
                     }
 
-                .subsection-info a {
-border: 0px solid #333333;
-                    margin-top: 0;
-                    margin-bottom: 0;
-                    margin-left: -0.5rem;
-                    margin-right: 0;
-                    padding-top: 0.5rem;
-                    padding-bottom: 0.5rem;
-                    padding-left: 0.5rem;
-                    padding-right: 0.5rem;
-                    min-height: 2.3rem;
-                    float: left;
-                    clear: both;
-                    text-decoration: none;
-                    color: #333333;
-                }
+                    .skip-link:focus-visible {
+                        top: 0;
+                        outline: 2px dashed yellow; /* vizualizarea focus-ului */
+                    }
 
-/* Subsecțiune Legături */
-            .subsection-connex {
-border: 0px solid #333333;
-                margin-top: 0;
-                margin-bottom: 0;
-                margin-left: 0;
-                margin-right: 0;
-                padding-top: 0;
-                padding-bottom: 0;
-                padding-left: 0;
-                padding-right: 0;
-                grid-template-columns: repeat(4, 2fr);
-                display: flex;
-                gap: 0;
-                justify-content: center;
-                align-items: center;
-            }
-
-                .subsection-connex ul {
+/* Secțiune Meniu */
+                aside {
 border: 0px solid #333333;
                     margin-top: 0;
                     margin-bottom: 0;
@@ -483,110 +126,13 @@ border: 0px solid #333333;
                     padding-bottom: 0;
                     padding-left: 0.5rem;
                     padding-right: 0.5rem;
-                    display: flex;
-                    justify-content: space-between;
-                    gap: 1rem;
-                    align-items: center;
-                    list-style: none;
-                }
-
-                .subsection-connex li {
-border: 1px solid #333333;
-                    margin-top: 0;
-                    margin-bottom: 0;
-                    margin-left: 0;
-                    margin-right: 0;
-                    padding-top: 0;
-                    padding-bottom: 0;
-                    padding-left: 0;
-                    padding-right: 0;
-                    flex-grow: 1;
-                }
-
-                .subsection-connex li:hover {
-                    text-shadow: 0.4px 0 currentColor, -0.4px 0 currentcolor;
-                    background-color: #f5f5f5;
-                }
-
-                .subsection-connex img {
-border: 0px solid #333333;
-                    margin-top: 0;
-                    margin-bottom: 0;
-                    margin-left: 0;
-                    margin-right: 0.5rem;
-                    padding-top: 0;
-                    padding-bottom: 0;
-                    padding-left: 0;
-                    padding-right: 0;
-                    width: 5rem;
-                    height: 5rem;
-                }
-
-                .subsection-connex a {
-border: 0px solid #333333;
-                    margin-top: 0;
-                    margin-bottom: 0;
-                    margin-left: 0;
-                    margin-right: 0;
-                    padding-top: 0;
-                    padding-bottom: 0;
-                    padding-left: 0.2rem;
-                    padding-right: 0.5rem;
-                    min-height: 5.5rem;
-                    display: flex;
-                    align-items: center;
-                    text-align: center;
-                    text-decoration: none;
-                    color: #333333;
-                }
-
-/* Subsol pagină */
-            .footer {
-border: 0px solid #333333;
-                margin-top: 0;
-                margin-bottom: 0;
-                margin-left: 0;
-                margin-right: 0;
-                padding-top: 0.5rem;
-                padding-bottom: 0.5rem;
-                padding-left: 0.5rem;
-                padding-right: 0.5rem;
-                grid-column: span 12;
-            }
-
-                .footer-info {
-border: 0px solid #333333;
-                    margin-top: 0;
-                    margin-bottom: 0;
-                    margin-left: 0;
-                    margin-right: 0;
-                    padding-top: 0.5rem;
-                    padding-bottom: 0.5rem;
-                    padding-left: 0.5rem;
-                    padding-right: 0.5rem;
-                    max-height: 2.3rem;
+                    width: 100%;
+                    max-width: 15rem;
+                    overflow-x: hidden;
                     display: flex;
                     flex-direction: column;
-                    flex-grow: 1;
-                    text-align: center;
-                }
-
-/* Scalare pagină */
-
-            @media (max-width: 1136px) {
-
-                aside {
-                    position: fixed;
-                    top: 0;
-                    left: 0;
-                    height: 100%;
-                    max-height: 100vh;
-                    overflow-y: auto;
-                    opacity: 0;
-                    pointer-events: none;
-                    transform: translateX(-100%);
-                    transition: opacity 0.3s ease, transform 0.3s ease;
-                    z-index: 998;
+                    align-items: center;
+                    background-color: #f5f5f5;
                 }
 
                     aside.show {
@@ -595,14 +141,474 @@ border: 0px solid #333333;
                         pointer-events: auto;
                     }
 
-                #menu-toggle {
-                display: block;
-                }
+                    #menu-toggle {
+                        position: fixed;
+                        top: 10px;
+                        left: 10px;
+                        z-index: 9999;
+                        display: block;
+                        border: none;
+                        font-size: 2rem;
+                        cursor: pointer;
+                        background: transparent;
+                    }
 
                     aside.show + #menu-toggle {
                         display: none;
                     }
 
+/* Siglă */
+                    aside img {
+border: 0px solid #333333;
+                        margin-top: 0.5rem;
+                        margin-bottom: -0.3rem;
+                        margin-left: 0;
+                        margin-right: 0;
+                        padding-top: 0.5rem;
+                        padding-bottom: 0.5rem;
+                        padding-left: 2.9rem;
+                        padding-right: 2.9rem;
+                        max-width: 14rem;
+                        height: auto;
+                    }
+
+/* Denumire */
+                    .side-name {
+border: 0px solid #333333;
+                        margin-top: 0.5rem;
+                        margin-bottom: 0;
+                        margin-left: 0;
+                        margin-right: 0;
+                        padding-top: 0.5rem;
+                        padding-bottom: 0.5rem;
+                        padding-left: 0;
+                        padding-right: 0;
+                        width: 14rem;
+                        display: block;
+                        text-align: center;
+                        text-decoration: none;
+                        font-weight: bold;
+                        color: #333333;
+                    }
+
+/* Meniu site */
+                    .side-menu ul {
+border: 0px solid #333333;
+                        margin-top: 1rem;
+                        margin-bottom: 0;
+                        margin-left: 0;
+                        margin-right: 0;
+                        padding-top: 0;
+                        padding-bottom: 0;
+                        padding-left: 0;
+                        padding-right: 0;
+                        width: 14rem;
+                        list-style: none;
+                        text-align: center;
+                    }
+
+                        .side-menu li:hover {
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            height: 2.3rem;
+                            font-size: 1rem;
+                            text-shadow: 0.4px 0 currentcolor, -0.4px 0 currentcolor;
+                        }
+
+                            .side-menu a {
+border: 0px solid #333333;
+                                margin-top: 0;
+                                margin-bottom: 0;
+                                margin-left: 0;
+                                margin-right: 0;
+                                padding-top: 0.5rem;
+                                padding-bottom: 0.5rem;
+                                padding-left: 0.5rem;
+                                padding-right: 0.5rem;
+                                height: 2.3rem;
+                                display: block;
+                                text-align: center;
+                                text-decoration: none;
+                                color: #333333;
+                            }
+
+                                .side-menu a.active {
+                                    margin-top: 0;
+                                    margin-bottom: 0;
+                                    margin-left: 0;
+                                    margin-right: 0;
+                                    padding-top: 0.3rem;
+                                    padding-bottom: 0.7rem;
+                                    padding-left: 0.5rem;
+                                    padding-right: 0.5rem;
+                                    height: 2.3rem;
+                                    pointer-events: none;
+                                    text-shadow: 0.4px 0 currentcolor, -0.4px 0 currentcolor;
+                                }
+
+/* Secțiune Conținut */
+                .content {
+border: 0px solid #333333;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    margin-left: 0;
+                    margin-right: 0;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    padding-left: 0;
+                    padding-right: 0;
+                    grid-column: span 12;
+                    display: flex;
+                    flex-direction: column;
+                    flex-grow: 1;
+                    background-color: #ffffff;
+                }
+
+/* Banner */
+                    .banner {
+border: 0px solid #333333;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        margin-left: 0;
+                        margin-right: 0;
+                        padding-top: 0;
+                        padding-bottom: 0;
+                        padding-left: 0;
+                        padding-right: 1rem;
+                        grid-column: span 12;
+                    }
+
+                        .banner img {
+border: 0px solid #333333;
+                            margin-top: 0.5rem;
+                            margin-bottom: 0.3rem;
+                            margin-left: 0.5rem;
+                            margin-right: 0.5rem;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            width: 100%;
+                            height: 14.2rem;
+                            object-fit: cover;
+                        }
+
+/* Meniu pagină */
+                    .page-menu {
+border: 0px solid #333333;
+                        margin-top: 0.5rem;
+                        margin-bottom: 0.5rem;
+                        margin-left: 0;
+                        margin-right: 0;
+                        padding-top: 0;
+                        padding-bottom: 0;
+                        padding-left: 0.5rem;
+                        padding-right: 0.5rem;
+                        grid-column: span 12;
+                    }
+
+                        .page-menu ul {
+border: 0px solid #333333;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            grid-template-columns: repeat(4, 1fr);
+                            display: flex;
+                            justify-content: space-between;
+                            gap: 1rem;
+                            list-style: none;
+                        }
+
+                            .page-menu li {
+                                margin-top: 0;
+                                margin-bottom: 0;
+                                margin-left: 0;
+                                margin-right: 0;
+                                padding-top: 0;
+                                padding-bottom: 0;
+                                padding-left: 0;
+                                padding-right: 0;
+                                min-height: 2.3rem;
+                                flex-grow: 1;
+                            }
+
+                                .page-menu li:hover {
+                                    margin-top: 0;
+                                    margin-bottom: 0;
+                                    margin-left: 0;
+                                    margin-right: 0;
+                                    padding-top: 0;
+                                    padding-bottom: 0;
+                                    padding-left: 0;
+                                    padding-right: 0;
+                                    min-height: 2.3rem;
+                                    text-shadow: 0.4px 0 currentcolor, -0.4px 0 currentcolor;
+                                    background-color: #f0f0f0;
+                                }
+
+                                .page-menu a {
+border: 1px solid #333333;
+                                    margin-top: 0;
+                                    margin-bottom: 0;
+                                    margin-left: 0;
+                                    margin-right: 0;
+                                    padding-top: 0;
+                                    padding-bottom: 0;
+                                    padding-left: 0.5rem;
+                                    padding-right: 0.5rem;
+                                    min-height: 2.3rem;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    text-align: center;
+                                    text-decoration: none;
+                                    font-size: 1rem;
+                                    color: #333333;
+                                }
+
+                                    .page-menu a.active {
+                                        margin-top: 0;
+                                        margin-bottom: 0;
+                                        margin-left: 0;
+                                        margin-right: 0;
+                                        padding-top: 0.3rem;
+                                        padding-bottom: 0.3rem;
+                                        padding-left: 0.5rem;
+                                        padding-right: 0.5rem;
+                                        pointer-events: none;
+                                        font-size: 1.1rem;
+                                        text-shadow: 0.4px 0 currentcolor, -0.4px 0 currentcolor;
+                                        background-color: #c4c4c4;
+                                    }
+
+/* Subsecțiuni de conținut */
+
+/* Subsecțiune Text */
+                    .subsection-text {
+border: 0px solid #333333;
+                        margin-top: 0.5rem;
+                        margin-bottom: 0;
+                        margin-left: 0;
+                        margin-right: 0;
+                        padding-top: 0.7rem;
+                        padding-bottom: 0;
+                        padding-left: 0.5rem;
+                        padding-right: 0.5rem;
+                        grid-column: span 12;
+                        text-align: justify;
+                    }
+
+/* Subsecțiune Noutăți */
+                    .subsection-news {
+border: 0px solid #333333;
+                        margin-top: 1rem;
+                        margin-bottom: 0;
+                        margin-left: 0;
+                        margin-right: 0;
+                        padding-top: 0.5rem;
+                        padding-bottom: 0.5rem;
+                        padding-left: 0.5rem;
+                        padding-right: 0.5rem;
+                        grid-column: span 12;
+                        text-align: justify;
+                    }
+
+                        .subsection-news ul {
+                            margin-top: -0.5rem;
+                            margin-bottom: 0;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            list-style: none;
+                        }
+
+                            .subsection-news li:hover {
+                                margin-top: 0;
+                                margin-bottom: 0;
+                                margin-left: 0;
+                                margin-right: 0;
+                                padding-top: 0;
+                                padding-bottom: 0;
+                                padding-left: 0;
+                                padding-right: 0;
+                                text-shadow: 0.4px 0 currentcolor, -0.4px 0 currentcolor;
+                            }
+
+                            .subsection-news a {
+border: 0px solid #333333;
+                                margin-top: 0;
+                                margin-bottom: 0;
+                                margin-left: -0.5rem;
+                                margin-right: 0;
+                                padding-top: 0.5rem;
+                                padding-bottom: 0.5rem;
+                                padding-left: 0.5rem;
+                                padding-right: 0.5rem;
+                                min-height: 2.3rem;
+                                float: left;
+                                clear: both;
+                                text-decoration: none;
+                                color: #333333;
+                            }
+
+/* Subsecțiune Legături */
+                    .subsection-connectins {
+border: 0px solid #333333;
+                        margin-top: 1rem;
+                        margin-bottom: 0;
+                        margin-left: 0;
+                        margin-right: 0;
+                        padding-top: 0;
+                        padding-bottom: 0;
+                        padding-left: 0;
+                        padding-right: 0;
+                        grid-column: span 12;
+                        display: flex;
+                        gap: 0;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                        .subsection-connections ul {
+border: 0px solid #333333;
+                            margin-top: 1rem;
+                            margin-bottom: 0;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0.5rem;
+                            padding-right: 0.5rem;
+                            grid-template-columns: repeat(4, 1fr);
+                            display: flex;
+                            justify-content: space-between;
+                            gap: 1rem;
+                            align-items: center;
+                            list-style: none;
+                        }
+
+                            .subsection-connections li {
+border: 1px solid #333333;
+                                margin-top: 0;
+                                margin-bottom: 0;
+                                margin-left: 0;
+                                margin-right: 0;
+                                padding-top: 0;
+                                padding-bottom: 0;
+                                padding-left: 0;
+                                padding-right: 0;
+                                flex-grow: 1;
+                            }
+
+                                .subsection-connections li:hover {
+                                    text-shadow: 0.4px 0 currentcolor, -0.4px 0 currentcolor;
+                                    background-color: #f5f5f5;
+                                }
+
+                                .subsection-connections img {
+border: 0px solid #333333;
+                                    margin-top: 0;
+                                    margin-bottom: 0;
+                                    margin-left: 0;
+                                    margin-right: 0.5rem;
+                                    padding-top: 0;
+                                    padding-bottom: 0;
+                                    padding-left: 0;
+                                    padding-right: 0;
+                                    width: 5rem;
+                                    height: 5rem;
+                                }
+
+                                .subsection-connections a {
+border: 0px solid #333333;
+                                    margin-top: 0;
+                                    margin-bottom: 0;
+                                    margin-left: 0;
+                                    margin-right: 0;
+                                    padding-top: 0;
+                                    padding-bottom: 0;
+                                    padding-left: 0.2rem;
+                                    padding-right: 0.5rem;
+                                    min-height: 5.5rem;
+                                    display: flex;
+                                    align-items: center;
+                                    text-align: center;
+                                    text-decoration: none;
+                                    color: #333333;
+                                }
+
+/* Subsol pagină */
+                    .footer-info {
+border: 0px solid #333333;
+                        margin-top: 1rem;
+                        margin-bottom: 0;
+                        margin-left: 0.5rem;
+                        margin-right: 0.5rem;
+                        padding-top: 0.5rem;
+                        padding-bottom: 0.5rem;
+                        padding-left: 0.5rem;
+                        padding-right: 0.5rem;
+                        max-height: 2.3rem;
+                        grid-column: span 12;
+                        display: flex;
+                        flex-direction: column;
+                        flex-grow: 1;
+                        text-align: center;
+                    }
+
+/* Scalare pagină */
+
+                @media (max-width: 1136px) {
+
+                    aside {
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        height: 100%;
+                        max-height: 100vh;
+                        overflow-y: auto;
+                        opacity: 0;
+                        pointer-events: none;
+                        transform: translateX(-100%);
+                        transition: opacity 0.3s ease, transform 0.3s ease;
+                        z-index: 998;
+                    }
+
+                        aside.show {
+                            opacity: 1;
+                            transform: translateX(0);
+                            pointer-events: auto;
+                        }
+
+                        #menu-toggle {
+                            display: block;
+                        }
+
+                        aside.show + #menu-toggle {
+                            display: none;
+                        }
+
+                }
+
+                @media (max-width: 854px) {
+                    .subsection-connections ul {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                    }
                 }
 
         </style>
@@ -636,7 +642,7 @@ border: 0px solid #333333;
 <!-- Meniu site -->
           <nav aria-label="Meniu site" class="side-menu">
              <ul>
-                <li aria-current="page"><a class="active" href="index.html"><h1>Prezentare</h1></a></li>
+                <li aria-current="page"><a href="index.html" class="active"><h1>Prezentare</h1></a></li>
                 <li><a href="oferta.html">Oferta educațională</a></li>
                 <li><a href="gradinita.html" >Grădiniță</a></li>
                 <li><a href="pregatitoare.html">Clasa pregătitoare</a></li>
@@ -683,7 +689,7 @@ border: 0px solid #333333;
 <!-- Subsecțiune Text -->
             <section aria-label="Prezentare" aria-labelledby="prezentare-label" role="region" class="subsection-text">
                 <article>
-                    <h3 style="margin-top: 2rem; margin bottom: 0.1rem">Motto:</h3>
+                    <h3 style="margin-top: 1rem; margin bottom: 0.1rem">Motto:</h3>
                     <p style="margin-bottom: 2.3rem;"><strong>„Suntem o familie! Împreună construim, învăţăm, inovăm! Suntem o şcoală deschisă, pentru comunitate!”</strong></p>
                 </article>
                 <h3 class="sr-only">Prezentare</h3>
@@ -702,41 +708,41 @@ border: 0px solid #333333;
             </section>
 
 <!-- Subsecțiune Noutăți -->
-            <section aria-label="Noutăți" class="subsection-info">
-                <h3 id="noutati-label">Noutăți:</h3>
+            <section aria-label="Noutăți" class="subsection-news">
+                <h3 id="noutati-label" style="margin-bottom: 1rem">Noutăți:</h3>
                 <ul>
                     <li>
                         <a aria-label="Condiții specifice ocupării posturilor didactice vacante pentru anul școlar 2025-2026" aria-hidden="false" href="https://drive.google.com/file/d/1CLVRw1GlJCwDIsDDFJc56dk1OkiulyMg/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                            <span><p>Condiții specifice ocupării posturilor didactice vacante pentru anul școlar 2025-2026</p></span>
+                            <span>Condiții specifice ocupării posturilor didactice vacante pentru anul școlar 2025-2026</span>
                         </a>
                      </li>
                 </ul>
             </section> 
 
 <!-- Subsecțiune Legături -->
-            <section aria-label="Legături" aria-labelledby="legaturi-label" role="region" class="subsection-connex">
+            <section aria-label="Legături" aria-labelledby="legaturi-label" role="region" class="subsection-connections">
                 <h3 id="legaturi-label" class="sr-only">Legături:</h3>
                 <ul>
                     <li>
-                        <a aria-label="Legătură către Ministerul Educației și Cercetării" href="https://www.edu.ro" target="_blank" rel="noopener noreferrer" class="subsection-connex">
+                        <a aria-label="Legătură către Ministerul Educației și Cercetării" href="https://www.edu.ro" target="_blank" rel="noopener noreferrer" class="subsection-connections">
                             <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/mec.png?raw=true" alt="Sigla Ministerului Educației și Cercetării">
                             <span>Ministerul Educației și Cercetării</span>
                         </a>
                     </li>
                     <li>
-                        <a aria-label="Legătură către Inspectoratul Școlar Județean Neamț" href="https://www.isjneamt.ro" target="_blank" rel="noopener noreferrer" class="subsection-connex">
+                        <a aria-label="Legătură către Inspectoratul Școlar Județean Neamț" href="https://www.isjneamt.ro" target="_blank" rel="noopener noreferrer" class="subsection-connections">
                             <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/isjneamt.png?raw=true" alt="Sigla Inspectoratului Școlar Județean Neamț">
                             <span>Inspectoratul Școlar Județean Neamț</span>
                         </a>
                     </li>
                     <li>
-                        <a aria-label="Legătură către Centrul Județean de Resurse și Asistență Educațională Neamț" href="https://www.cjrae-neamt.ro" target="_blank" rel="noopener noreferrer" class="subsection-connex">
+                        <a aria-label="Legătură către Centrul Județean de Resurse și Asistență Educațională Neamț" href="https://www.cjrae-neamt.ro" target="_blank" rel="noopener noreferrer" class="subsection-connections">
                             <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/cjraeneamt.png?raw=true" alt="Sigla Centrului Județean de Resurse și Asistență Educațională Neamț">
                             <span>Centrul Județean de Resurse și Asistență Educațională Neamț</span>
                         </a>
                     </li>
                     <li>
-                        <a aria-label="Legătură către Casa Corpului Didactic Neamț" href="https://www.ccdneamt.ro"  target="_blank" rel="noopener noreferrer" class="subsection-connex">
+                        <a aria-label="Legătură către Casa Corpului Didactic Neamț" href="https://www.ccdneamt.ro"  target="_blank" rel="noopener noreferrer" class="subsection-connections">
                             <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/ccdneamt.png?raw=true" alt="Sigla Casei Corpului Didactic Neamț">
                             <span>Casa Corpului Didactic Neamț</span>
                         </a>
@@ -745,9 +751,9 @@ border: 0px solid #333333;
             </section>
 
 <!-- Subsol pagină-->
-         <footer aria-label="Subsol pagină" aria-labelledby="subsol" role="contentinfo" class="footer-info">
-                <span id="subsol" class="footer-info">&copy; 1993-<script>document.write(new Date().getFullYear());</script> Școala Gimnazială „Nicu Albu” Piatra Neamț</span>
-        </footer>
+            <footer aria-label="Subsol pagină" aria-labelledby="subsol" role="contentinfo" class="footer-info">
+                <span id="subsol">&copy; 1993-<script>document.write(new Date().getFullYear());</script> Școala Gimnazială „Nicu Albu” Piatra Neamț</span>
+            </footer>
 
         </main>
 
