@@ -139,8 +139,13 @@ border: 0px solid #333333;
                         top: 10px;
                         left: 10px;
                         z-index: 9999;
+                        padding: 0;
+                        width: 3rem;
+                        height: 3rem;
                         display: block;
                         border: none;
+                        justify-content: center;
+                        align-items: center;
                         font-size: 2rem;
                         cursor: pointer;
                         background: transparent;
@@ -684,7 +689,7 @@ border: 0px solid #333333;
 
         </aside>
 
-        <button aria-label="Buton Meniu" id="menu-toggle"  aria-expanded="false">
+        <button aria-label="Buton Meniu" id="menu-toggle"  aria-expanded="false" tabindex="0">
             &#9776;
         </button>
 
@@ -780,63 +785,77 @@ border: 0px solid #333333;
 
 <!-- Subsol pagină-->
         <footer aria-label="Subsol pagină" aria-labelledby="subsol" class="footer-info">
-            <span id="subsol">&copy; 1993-<script>document.write(new Date().getFullYear());</script> Școala Gimnazială „Nicu Albu” Piatra Neamț</span>
+            <span id="subsol">&copy; 1993-<span id="year"></span> Școala Gimnazială „Nicu Albu” Piatra Neamț</span>
         </footer>
 
         </div>
 
         <script>
 
-            // Buton Meniu pagină
+// Secțiune meniu
             document.addEventListener('DOMContentLoaded', () => {
                 const toggleBtn = document.getElementById('menu-toggle');
                 const aside = document.querySelector('aside');
 
-            // Funcție pentru a seta iconița și vizibilitatea butonului
-            function updateButton() {
-                if (aside.classList.contains('show')) {
-                    toggleBtn.innerHTML = '×'; // X pentru închidere
-                    toggleBtn.setAttribute('aria-label', 'Închide meniu');
-                    toggleBtn.setAttribute('aria-expanded', 'true');
-                } else {
-                    toggleBtn.innerHTML = '☰'; // iconiță hamburger
-                    toggleBtn.setAttribute('aria-label', 'Meniu');
-                    toggleBtn.setAttribute('aria-expanded', 'false');
-                }
-            }
-
-            // La încărcare
-            updateButton();
-
-            // La click pe buton
-            toggleBtn.addEventListener('click', () => {
-                aside.classList.toggle('show');
-                updateButton();
-            });
-
-            // La schimbarea dimensiunii ecranului (zoom)
-            window.addEventListener('resize', () => {
-
-            // Dacă `<aside>` nu este vizibil (de exemplu, în media query sau la zoom), butonul este vizibil
-            const asideStyle = getComputedStyle(aside);
-                if (asideStyle.display === 'none' || asideStyle.opacity === '0' || asideStyle.pointerEvents === 'none') {
-                toggleBtn.style.display = 'block';
-
-                // Iconița și aria se vor actualiza la următorul click
-                } else {
-
-                    // Dacă `<aside>` este vizibil, se ascunde butonul
-                    toggleBtn.style.display = 'none';
+// Setare iconiță și vizibilitate buton
+                function updateButton() {
+                    if (aside.classList.contains('show')) {
+                        toggleBtn.innerHTML = '⨯'; // Închide
+                        toggleBtn.setAttribute('aria-label', 'Închide meniu');
+                        toggleBtn.setAttribute('aria-expanded', 'true');
+                    } else {
+                        toggleBtn.innerHTML = '≡'; // Hamburger≡⨯
+                        toggleBtn.setAttribute('aria-label', 'Meniu');
+                        toggleBtn.setAttribute('aria-expanded', 'false');
+                        }
                     }
+
+// Încărcare buton
+                updateButton();
+
+// Click pe buton
+                toggleBtn.addEventListener('click', () => {
+                    aside.classList.toggle('show');
+                    if (aside.classList.contains('show')) {
+                        toggleBtn.focus();
+                    }
+                    updateButton();
                 });
 
-            // La încărcare, se verifică starea de vizibilitate a `<aside>` și se setează vizibilitatea butonului
-            const asideStyle = getComputedStyle(aside);
-                if (asideStyle.display === 'none' || asideStyle.opacity === '0' || asideStyle.pointerEvents === 'none') {
-                    toggleBtn.style.display = 'block';
-                    } else {
-                        toggleBtn.style.display = 'none';
+// Detectare dacă meniul este vizibil sau nu
+                    let isAsideVisible = false;
+
+// Gestionare globală pentru apăsarea exclusivă a tastei CTRL
+                    document.addEventListener('keydown', (e) => {
+                        if (e.key === 'Control') {
+
+// Comutare vizibilitate
+                    aside.classList.toggle('show');
+                    if (aside.classList.contains('show')) {
+                        toggleBtn.focus();
+                    }
+                    updateButton();
+                    }
+                    });
+
+// Verificare vizibilitate
+                    function checkAsideVisibility() {
+                        const style = getComputedStyle(aside);
+                        if (style.display === 'none' || style.opacity === '0' || style.pointerEvents === 'none') {
+                            toggleBtn.style.display = 'block';
+                        } else {
+                            toggleBtn.style.display = 'none';
                         }
+                    }
+
+// Încărcare și redimensionare
+                window.addEventListener('resize', checkAsideVisibility);
+                checkAsideVisibility();
+                });
+
+// Subsol pagină
+            document.addEventListener('DOMContentLoaded', function() {
+                document.getElementById('year').textContent = new Date().getFullYear();
                 });
 
         </script>
