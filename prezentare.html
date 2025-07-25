@@ -38,7 +38,9 @@ border: 0px solid #333333;
                 padding-right: 0;
                 min-height: 100vh;
                 display: flex;
+                flex-direction: column;
                 font-family: Arial, sans-serif;
+                background-color: #f5f5f5;
             }
 
                 h1 {
@@ -111,6 +113,7 @@ border: 0px solid #333333;
 /* Secțiune Meniu */
                 aside {
 border: 0px solid #333333;
+position: absolute;
                     margin-top: 0;
                     margin-bottom: 0;
                     margin-left: 0;
@@ -139,9 +142,9 @@ border: 0px solid #333333;
                         top: 10px;
                         left: 10px;
                         z-index: 9999;
-                        padding: 0;
-                        width: 3rem;
-                        height: 3rem;
+                        padding-bottom: 0.8rem;
+                        width: 2.8rem;
+                        height: 2.8rem;
                         display: block;
                         border: none;
                         justify-content: center;
@@ -262,6 +265,8 @@ border: 0px solid #333333;
                     padding-bottom: 0;
                     padding-left: 0;
                     padding-right: 0;
+
+                    max-height: auto;
                     grid-column: span 12;
                     display: flex;
                     flex-direction: column;
@@ -558,22 +563,47 @@ border: 0px solid #333333;
                     .footer-info {
 border: 0px solid #333333;
                         margin-top: auto;
-                        margin-bottom: 0.5rem;
-                        margin-left: 0.5rem;
-                        margin-right: 0.5rem;
+                        margin-bottom: 0;
+                        margin-left: 0rem;
+                        margin-right: 0;
                         padding-top: 0.5rem;
                         padding-bottom: 0.5rem;
                         padding-left: 0.5rem;
                         padding-right: 0.5rem;
-                        max-height: 2.3rem;
-                        grid-column: span 12;
-                        display: flex;
-                        flex-direction: column;
-                        flex-grow: 1;
-                        text-align: center;
+                        background-color: #ffffff;
                     }
 
+                        .box{
+border: 0px solid #333333;
+                            margin-top: 0rem;
+                            margin-bottom: 0;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0.5rem;
+                            padding-bottom: 0.5rem;
+                            padding-left: 0.5rem;
+                            padding-right: 0.5rem;
+                            max-height: 2.3rem;
+                            text-align: center;
+                            background-color: #ffffff;
+                        }
+
 /* Scalare pagină */
+                @media (min-width: 1367px) {
+
+                    aside {
+                        min-height: 100vh;
+                    }
+
+                    .content {
+                        margin-left: 15rem;
+                    }
+
+                    .footer-info {
+                        margin-left: 15rem;
+                    }
+
+                    }
 
                 @media (max-width: 1366px) {
 
@@ -695,10 +725,7 @@ border: 0px solid #333333;
         </button>
 
 <!-- Secțiune Conținut -->
-        <div aria-label="Secțiunea Conținut" id="content" role="region" class="content">
-
-<!-- Conținut pagină -->
-        <main aria-label="Conținut pagină" id="main-content">
+        <main aria-label="Conținut pagină" id="main-content"  class="content">
 
 <!-- Banner -->
             <section aria-labelledby="banner-label" class="banner">
@@ -794,10 +821,10 @@ border: 0px solid #333333;
 
 <!-- Subsol pagină-->
         <footer aria-labelledby="subsol" class="footer-info">
-            <span id="subsol">&copy; 1993-<span id="year"></span> Școala Gimnazială „Nicu Albu” Piatra Neamț</span>
+            <div  id="subsol" class="box">
+                <span>&copy; 1993-<span id="year"></span> Școala Gimnazială „Nicu Albu” Piatra Neamț</span>
+            </div>
         </footer>
-
-        </div>
 
         <script>
 
