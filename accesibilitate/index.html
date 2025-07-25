@@ -1,0 +1,359 @@
+
+<!DOCTYPE html>
+<html lang="ro-RO">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Widget Accesibilitate</title>
+<link rel="stylesheet" href="styles.css" />
+
+    <style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  transition: all 0.3s ease;
+}
+
+/* Buton floating omuleț */
+.floating-btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 1000;
+  user-select: none;
+}
+.floating-btn:focus {
+  outline: 2px solid #fff;
+}
+
+/* Widget styling */
+.widget {
+  position: fixed;
+  top: 70px;
+  right: 10px;
+  width: 350px;
+  max-width: 90%;
+  max-height: 80vh;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  overflow-y: auto;
+  z-index: 999;
+}
+
+/* Header */
+.widget-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Profiluri și opțiuni */
+.preferences-btn {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.preferences-panel {
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+/* Lista profilurilor */
+.profiles-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Profil individual */
+.profile-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border: none;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 5px;
+  transition: background-color 0.2s, border 0.2s;
+}
+.profile-button:hover, .profile-button:focus {
+  background-color: #ddd;
+  outline: 2px solid #666;
+}
+.profile-button[aria-pressed="true"] {
+  background-color: #cce5ff;
+  border: 2px solid #3399ff;
+}
+
+/* Opțiuni generale */
+.option {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+.option-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icon-title {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.buttons {
+  display: flex;
+  gap: 5px;
+}
+.dropdown-menu {
+  margin-top: 5px;
+  padding-left: 20px;
+}
+
+/* Responsivitate */
+@media(max-width: 500px){
+  .widget {
+    width: 90%;
+  }
+}
+    </style>
+
+</head>
+
+<body>
+
+<!-- Declarație de accesibilitate -->
+<div id="declaration" role="region" aria-labelledby="declarationTitle" class="modal" style="display:none;">
+  <h2 id="declarationTitle">Declarație de accesibilitate</h2>
+  <p>Acest site respectă standardele WCAG 2.2 AA și EAA / EN 301 549 pentru a asigura o experiență accesibilă tuturor utilizatorilor.</p>
+  <button aria-label="Închide declarația" onclick="toggleDeclaration()">X</button>
+</div>
+
+<!-- Buton floating bulină omuleț -->
+<div id="accessibility-toggle" role="button" aria-label="Accesibilitate" aria-pressed="false" 
+     class="floating-btn" tabindex="0" onclick="toggleWidget()" onkeydown="if(event.key==='Enter'){toggleWidget();}">
+  👤
+</div>
+
+<!-- Widget -->
+<div id="accessibility-widget" class="widget" style="display:none;">
+  <!-- Header -->
+  <div class="widget-header">
+    <h3>Setări accesibilitate</h3>
+    <button aria-label="Închide widget" onclick="toggleWidget()">X</button>
+  </div>
+
+  <!-- Preferințe -->
+  <button id="preferencesBtn" class="preferences-btn" aria-expanded="false" aria-controls="preferencesPanel" onclick="togglePreferences()">
+    <span aria-hidden="true">👤</span> Profiluri de accesibilitate
+  </button>
+
+  <!-- Profiluri -->
+  <div id="preferencesPanel" class="preferences-panel" style="display:none;">
+    <button aria-label="Adaugă/șterge profiluri" onclick="toggleProfiles()">Profiluri</button>
+    <div id="profilesList" class="profiles-list">
+      <!-- Profilurile generate JS -->
+    </div>
+  </div>
+
+  <!-- Lista opțiuni -->
+  <div class="options-container">
+    <!-- Exemplu opțiune: Mărire font -->
+    <div class="option">
+      <div class="option-header">
+        <div class="icon-title">
+          <img src="https://img.icons8.com/ios/24/000000/font-size.png" alt="" />
+          <span>Mărire font</span>
+        </div>
+        <div class="buttons">
+          <button aria-label="Mărește font" onclick="changeFontSize('increase')">+</button>
+          <button aria-label="Micșorează font" onclick="changeFontSize('decrease')">−</button>
+        </div>
+      </div>
+    </div>
+    <!-- Exemplu opțiune: Contrast -->
+    <div class="option">
+      <div class="option-header">
+        <div class="icon-title">
+          <img src="https://img.icons8.com/ios/24/000000/contrast.png" alt="" />
+          <span>Contrast</span>
+        </div>
+        <div class="buttons">
+          <button onclick="setContrast('normal')">Normal</button>
+          <button onclick="setContrast('high')">Ridicat</button>
+        </div>
+      </div>
+    </div>
+    <!-- Mărime font (dropdown) -->
+    <div class="option">
+      <div class="option-header">
+        <div class="icon-title">
+          <img src="https://img.icons8.com/ios/24/000000/text-size.png" alt="" />
+          <span>Mărime font</span>
+        </div>
+        <button aria-haspopup="true" aria-expanded="false" aria-controls="fontSizeMenu" onclick="toggleDropdown(this)">▼</button>
+      </div>
+      <div id="fontSizeMenu" class="dropdown-menu" style="display:none;">
+        <button onclick="setFontSize('small')">Mic</button>
+        <button onclick="setFontSize('medium')">Mediu</button>
+        <button onclick="setFontSize('large')">Mare</button>
+      </div>
+    </div>
+    <!-- Alte opțiuni și subopțiuni pot fi adăugate aici -->
+  </div>
+</div>
+
+<script>
+// Funcție pentru afișarea/ascunderea widgetului
+function toggleWidget() {
+  const widget = document.getElementById('accessibility-widget');
+  const toggleBtn = document.getElementById('accessibility-toggle');
+  const isVisible = widget.style.display === 'block';
+
+  widget.style.display = isVisible ? 'none' : 'block';
+  toggleBtn.setAttribute('aria-pressed', String(!isVisible));
+}
+
+// Funcție pentru declarație
+function toggleDeclaration() {
+  const decl = document.getElementById('declaration');
+  decl.style.display = decl.style.display === 'block' ? 'none' : 'block';
+}
+
+// Toggle preferințe
+function togglePreferences() {
+  const panel = document.getElementById('preferencesPanel');
+  const btn = document.getElementById('preferencesBtn');
+  const expanded = btn.getAttribute('aria-expanded') === 'true';
+
+  btn.setAttribute('aria-expanded', String(!expanded));
+  panel.style.display = expanded ? 'none' : 'block';
+}
+
+// Toggle profiluri
+function toggleProfiles() {
+  const panel = document.getElementById('profilesList');
+  panel.style.display = panel.style.display === 'flex' ? 'none' : 'flex';
+}
+
+// Generate profiluri
+const profiles = [
+  { name: 'Profil 1', icon: 'https://img.icons8.com/ios/24/000000/user.png' },
+  { name: 'Profil 2', icon: 'https://img.icons8.com/ios/24/000000/user-group.png' },
+  { name: 'Profil 3', icon: 'https://img.icons8.com/ios/24/000000/people.png' },
+  { name: 'Profil 4', icon: 'https://img.icons8.com/ios/24/000000/elderly.png' },
+  { name: 'Profil 5', icon: 'https://img.icons8.com/ios/24/000000/child.png' },
+  { name: 'Profil 6', icon: 'https://img.icons8.com/ios/24/000000/woman.png' },
+  { name: 'Profil 7', icon: 'https://img.icons8.com/ios/24/000000/man.png' },
+  { name: 'Profil 8', icon: 'https://img.icons8.com/ios/24/000000/disabled.png' },
+  { name: 'Profil 9', icon: 'https://img.icons8.com/ios/24/000000/accessible.png' },
+];
+
+const profilesContainer = document.getElementById('profilesList');
+
+function createProfileButton(profile) {
+  const btn = document.createElement('button');
+  btn.className = 'profile-button';
+  btn.setAttribute('aria-pressed', 'false');
+  btn.onclick = () => {
+    const pressed = btn.getAttribute('aria-pressed') === 'true';
+    btn.setAttribute('aria-pressed', String(!pressed));
+    alert(`Activat ${profile.name}`);
+  };
+  const img = document.createElement('img');
+  img.src = profile.icon;
+  img.alt = '';
+  const span = document.createElement('span');
+  span.innerText = profile.name;
+  btn.appendChild(img);
+  btn.appendChild(span);
+  return btn;
+}
+
+// Initializează profilurile
+profiles.forEach(p => {
+  const btn = createProfileButton(p);
+  profilesContainer.appendChild(btn);
+});
+
+// Modificări stil
+let currentFontSize = 1;
+function changeFontSize(direction) {
+  if (direction === 'increase') {
+    currentFontSize += 0.1;
+  } else if (direction === 'decrease') {
+    currentFontSize = Math.max(0.5, currentFontSize - 0.1);
+  }
+  document.body.style.fontSize = currentFontSize + 'em';
+}
+
+// Contrast
+function setContrast(level) {
+  if (level === 'high') {
+    document.body.style.backgroundColor = '#000';
+    document.body.style.color = '#fff';
+  } else {
+    document.body.style.backgroundColor = '';
+    document.body.style.color = '';
+  }
+}
+
+// Toggle dropdown
+function toggleDropdown(btn) {
+  const controlsId = btn.getAttribute('aria-controls');
+  const menu = document.getElementById(controlsId);
+  const expanded = btn.getAttribute('aria-expanded') === 'true';
+  btn.setAttribute('aria-expanded', String(!expanded));
+  menu.style.display = expanded ? 'none' : 'block';
+}
+
+// Set font size
+function setFontSize(size) {
+  switch(size) {
+    case 'small':
+      document.body.style.fontSize = '0.8em';
+      break;
+    case 'medium':
+      document.body.style.fontSize = '1em';
+      break;
+    case 'large':
+      document.body.style.fontSize = '1.2em';
+      break;
+  }
+}
+</script>
+
+</body>
+
+</html>
