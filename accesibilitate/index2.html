@@ -491,11 +491,11 @@ border-radius: 4px;
   right: 1rem; /* aliniat la colțul din dreapta */
   background-color: #fff; /* culoarea fundalului */
   padding: 0.5rem; /* spațiu interior pentru text */
-width: auto;
+width: auto !important;
 display: inline-block;
-white-space: normal;
-overflow-wrap: break-word; 
-  max-width: 50rem;  /* lățime maximă pentru text lung */
+white-space: normal !important;
+overflow-wrap: break-word !important; 
+  max-width: 50rem !important;  /* lățime maximă pentru text lung */
   z-index: 2000; /* pentru a fi peste alte elemente */
   box-shadow: 0 2px 8px rgba(0,0,0,0.2);
   opacity: 0; /* inițial invizibil */
@@ -941,10 +941,12 @@ function initProfiluri() {
 
 // La hover
 infoIcon.addEventListener('mouseenter', ()=>{ 
-  p.style.display='inline-block'; 
-  p.style.opacity='1'; 
+p.style.display = 'inline-block'; // pentru a permite extinderea
+  p.style.opacity='1';
+p.style.width = 'auto'; // se ajustează la conținut
 p.style.maxWidth = '50rem';
-p.style.whiteSpace = 'normal';
+p.style.whiteSpace = 'normal'; // pentru wrap
+p.style.overflowWrap = 'break-word'; // asigură ruperea cuvintele lungi
   p.style.pointerEvents='auto'; 
 });
 infoIcon.addEventListener('mouseleave', ()=>{ 
@@ -1066,10 +1068,12 @@ function initOptiuni() {
 
 // La hover
 infoIcon.addEventListener('mouseenter', ()=>{ 
-  p.style.display='inline-block'; 
-  p.style.opacity='1'; 
+p.style.display = 'inline-block'; // pentru a permite extinderea
+  p.style.opacity='1';
+p.style.width = 'auto'; // se ajustează la conținut
 p.style.maxWidth = '50rem';
-p.style.whiteSpace = 'normal';
+p.style.whiteSpace = 'normal'; // pentru wrap
+p.style.overflowWrap = 'break-word'; // asigură ruperea cuvintele lungi
   p.style.pointerEvents='auto'; 
 });
 infoIcon.addEventListener('mouseleave', ()=>{ 
