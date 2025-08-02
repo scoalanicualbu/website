@@ -479,7 +479,7 @@ border: 1px solid #808080;
   font-weight: bold;
   cursor: default;
   background-color: #ffffff;
-  z-index: 10;
+  z-index: 1000;
 }
 
 /* Popup floating, complet vizibil, deasupra widgetului si depasind marginile */
@@ -491,10 +491,22 @@ border-radius: 4px;
   right: 1rem; /* aliniat la colțul din dreapta */
   background-color: #fff; /* culoarea fundalului */
   padding: 0.5rem; /* spațiu interior pentru text */
-  max-width: 200px;  /* lățime maximă pentru text lung */
-  z-index: 1000; /* pentru a fi peste alte elemente */
+width: auto:
+display: inline-block;
+white-space: normal;
+overflow-wrap: break-word; 
+  max-width: 50rem;  /* lățime maximă pentru text lung */
+  z-index: 2000; /* pentru a fi peste alte elemente */
   box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-  display: none; /* inițial ascuns */
+  opacity: 0; /* inițial invizibil */
+  pointer-events: none; /* nu interacționează când nu e vizibil */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Afișează popup-ul doar la hover pe iconiță */
+.info-icon:hover .popup-info {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 /* Container pentru text box de 6rem, cu două rânduri, centrat */
@@ -926,8 +938,19 @@ function initProfiluri() {
     popup.className='popup-info';
     popup.innerText=p.descriere;
     infoIcon.appendChild(popup);
-    infoIcon.addEventListener('mouseenter', ()=>{ popup.style.display='block'; });
-    infoIcon.addEventListener('mouseleave', ()=>{ popup.style.display='none'; });
+
+// La hover
+infoIcon.addEventListener('mouseenter', ()=>{ 
+  p.style.display='inline-block'; 
+  p.style.opacity='1'; 
+p.style.maxWidth = '50rem';
+p.style.whiteSpace = 'normal';
+  p.style.pointerEvents='auto'; 
+});
+infoIcon.addEventListener('mouseleave', ()=>{ 
+  p.style.opacity='0'; 
+  p.style.pointerEvents='none'; 
+});
 
     // Adaugă iconița "i" în profil
     btn.appendChild(infoIcon);
@@ -1040,8 +1063,19 @@ function initOptiuni() {
     popup.className='popup-info';
     popup.innerText=opt.descriere;
     infoIcon.appendChild(popup);
-    infoIcon.addEventListener('mouseenter', ()=>{ popup.style.display='block'; });
-    infoIcon.addEventListener('mouseleave', ()=>{ popup.style.display='none'; });
+
+// La hover
+infoIcon.addEventListener('mouseenter', ()=>{ 
+  p.style.display='inline-block'; 
+  p.style.opacity='1'; 
+p.style.maxWidth = '50rem';
+p.style.whiteSpace = 'normal';
+  p.style.pointerEvents='auto'; 
+});
+infoIcon.addEventListener('mouseleave', ()=>{ 
+  p.style.opacity='0'; 
+  p.style.pointerEvents='none'; 
+});
 
     // Adaugă iconița "i" în buton
     btn.appendChild(infoIcon);
@@ -1221,10 +1255,6 @@ function reset() {
     subOptiuniStare[k] = -1; // sau 0 dacă vrei să fie activat implicit
   });
 
-  // Ascunde toate popup-urile
-  document.querySelectorAll('.popup-info').forEach(p => {
-    p.style.display='none'; // sau folosește classList.remove('active') dacă preferi clase CSS
-  });
 }
 
 
