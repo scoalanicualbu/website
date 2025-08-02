@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+
+<!-- Limbă și localizare -->
+<html
+        lang="ro-RO">
+
+    <head>
+
+<!-- Codificare caractere -->
+        <meta
+            charset="UTF-8">
+
+<!-- Vizualizare pagină -->
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0">
+
+<!-- Descriere pagină -->
+        <meta
+             name="description"
+             content="Setări pentru accesibilitate, cu tasta SHIFT.
+             Aici poti vizualiza Declarația de accesibilitate, poti alege Profiluri de accesibilitate, sau poti seta Opțiuni de accesibilitate.">
+
+<!-- Titlu pagină -->
+        <title>
+            Accesibilitate
+        </title>
+
+<!-- Structurare pagină -->
+        <style>
+
+            h1 {
+                margin-top: 0;
+                margin-bottom: 0;
+                margin-left: 0;
+                margin-right: 0;
+                padding-top: 0;
+                padding-bottom: 0;
+                padding-left: 0;
+                padding-right: 0;
+                font-size: 1.2rem;	
+            }
+
+            h2 {
+                margin-top: 0;
+                margin-bottom: 0;
+                margin-left: 0;
+                margin-right: 0;
+                padding-top: 0;
+                padding-bottom: 0;
+                padding-left: 0;
+                padding-right: 0;
+                font-size: 1.1rem;
+            }
+
+            h3 {
+                margin-top: 0;
+                margin-bottom: 0;
+                margin-left: 0;
+                margin-right: 0;
+                padding-top: 0;
+                padding-bottom: 0;
+                padding-left: 0;
+                padding-right: 0;
+                font-size: 1rem;
+            }
+
+                .sr-only {
+                    position: absolute;
+                    left: -10000px;
+                    top: auto;
+                    width: 1px;
+                    height: 1px;
+                    overflow: hidden;
+                }
+
+            body {
+border: 0px solid #000000;
+                margin-top: 0;
+                margin-bottom: 0;
+                margin-left: 0;
+                margin-right: 0;
+                padding-top: 0;
+                padding-bottom: 0;
+                padding-left: 0;
+                padding-right: 0;
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+                font-family: Arial, sans-serif;
+                transition: all 0.3s ease;
+                font-family: Arial, sans-serif;
+            }
+
+/* Buton de accesibilitate */
+                .floating-btn {
+border: 0px solid #000000;
+border-radius: 50%;
+                    position: fixed;
+                    top: 0;
+                    right: 0;
+                    z-index: 1000;
+                    margin-top: 1.1rem;
+                    margin-bottom: 0;
+                    margin-left: 0;
+                    margin-right: 1.1rem;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    padding-left: 0;
+                    padding-right: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    user-select: none;
+                    background-color: transparent;  
+                }
+
+                    .floating-btn img {
+border: 0px solid #000000;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        margin-left: 0;
+                        margin-right: 0;
+                        padding-top: 0.01rem;
+                        padding-bottom: 0.01rem;
+                        padding-left: 0.01rem;
+                        padding-right: 0.01rem;
+                        width: 3rem;
+                        height: auto;
+                 }
+
+                    .floating-btn:focus {
+                        outline: 2px solid #000000;
+                    }
+
+/* Container pentru Iconiță de accesibilitate și Etichetă de accesibilitate */
+                .icon-and-text {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                }
+
+/* Etichetă de accesibilitate */
+                .accessibility-label {
+border: 1px solid #808080;
+border-radius: 4px;
+                    position: absolute;
+                    left: -8rem;
+                    margin-left: 0;
+                    padding: 0.5rem;
+                    opacity: 0;
+                    transition: opacity 0.3s ease, transform 0.3s ease;
+                    transform: translateX(0);
+                    pointer-events: none;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    font-family: Arial, sans-serif;
+                    white-space: nowrap;
+                    background-color: #ffffff;
+                }
+
+/* Afișare Etichetă de accesibilitate când Meniul Setări pentru accesibilitate este ascuns */
+                #accessibilityButton:hover .accessibility-label,
+                #accessibilityButton[aria-expanded="false"]:hover .accessibility-label {
+                    opacity: 1;
+                }
+
+/* Ascundere Etichetă de accesibilitate când Meniul Setări pentru accesibilitate este afișat */
+                #accessibilityButton[aria-expanded="true"] .accessibility-label {
+                    opacity: 0;
+                    transition: none;
+                }
+
+/* Iconiță de accesibilitate */
+                .icon-image {
+                    cursor: pointer; /* cursor pointer doar pe iconiță */
+                    transition: transform 0.3s ease;
+                }
+
+/* Efect de animație la trecere peste Iconița de accesibilitate */
+                    .icon-image:hover + .accessibility-label,
+                    .icon-image:focus + .accessibility-label {
+                        opacity: 1;
+                        transform: translateX(0);
+                    }
+
+                    .icon-image:hover,
+                    .icon-image:focus {
+                        transform: scale(1.05);
+                    }
+
+/* Meniu Setări pentru accesibilitate */
+                .widget {
+border: 1px solid #808080;
+border-radius: 8px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+                    position: fixed;
+                    top: 0;
+                    right: 0;
+                    z-index: 999;
+                    padding: 0.5rem;
+                    width: 100%;
+                    max-width: 23.13rem;
+                    max-height: 100vh;
+                    overflow-y: auto;
+                    scrollbar-width: none;
+                    background-color: #ffffff;
+                }
+
+                    .profile-button:focus {
+                        outline: 2px solid #000000;
+                    }
+
+/* Antet */
+                    .widget-header {
+border: 0px solid #808080;
+border-radius: 4px;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        margin-left: 0;
+                        margin-right: 0;
+                        padding-top: 1.5rem;
+                        padding-bottom: 1.5rem;
+                        padding-left: 0.5rem;
+                        padding-right: 0.5rem;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        font-weight: bold;
+                    }
+
+/* Declarație de accesibilitate */
+                    .declaratie-btn {
+border: 1px solid #808080;
+border-radius: 4px;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        margin-left: 0;
+                        margin-right: 0;
+                        padding-top: 0.5rem;
+                        padding-bottom: 0.5rem;
+                        padding-left: 0.5rem;
+                        padding-right: 0.5rem;
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        gap: 0.5rem;
+                        cursor: pointer;
+                        font-size: 1rem;
+                        background-color: #f8f8f8;
+                    }
+
+                        .declaratie-btn:hover{
+                            border: 1px solid #000000;
+                            background-color: #e8e8e8;
+                        }
+
+                        .declaratie-btn:focus {
+                            outline: 2px solid #000000;
+                        }
+
+                        .left-text {
+                            text-align: left;
+                            transition: opacity 0.3s ease;
+                        }
+
+                        .arrow {
+                            transition: transform 0.3s ease;
+                            font-size: 1rem;
+                        }
+
+/* Textul Declarației de accesibilitate */
+                        .declaratie-text {
+border: 1px solid #808080;
+border-radius: 4px;
+                            margin-top: -1px;
+                            margin-bottom: 0;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 1rem;
+                            padding-bottom: 0;
+                            padding-left: 0.5rem;
+                            padding-right: 0.5rem;
+                            font-size: 0.9rem;
+                        }
+
+                        .declaratie-text ul {
+                            margin-left: -1.5rem;
+                        }
+
+/* Profiluri de accesibilitate */
+                    .profiles-btn {
+border: 1px solid #808080;
+border-radius: 4px;
+                        margin-top: 0.5rem;
+                        margin-bottom: 0;
+                        margin-left: 0;
+                        margin-right: 0;
+                        padding-top: 0.5rem;
+                        padding-bottom: 0.5rem;
+                        padding-left: 0.5rem;
+                        padding-right: 0.5rem;
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        gap: 0.5rem;
+                        cursor: pointer;
+                        font-size: 1rem;
+                        background-color: #f8f8f8;
+                    }
+
+                        .profiles-panel {
+border: 1px solid #808080;
+border-radius: 4px;
+                            margin-top: -1px;
+                            margin-bottom: 0;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0.5rem;
+                            padding-bottom: 0.5rem;
+                            padding-left: 0.5rem;
+                            padding-right: 0.5rem;
+                        }
+
+                        .profiles-btn:hover{
+                            border: 1px solid #000000;
+                            background-color: #e8e8e8;
+                        }
+
+                        .profiles-btn:focus {
+                            outline: 2px solid #000000;
+                        }
+
+/* Lista Profilurilor de accesibilitate */
+                            .profiles-list {
+                                display: flex;
+                                flex-wrap: wrap;
+                                gap: 0.5rem;
+                            }
+
+/* Profil individual de accesibilitate */
+                                .profile-button {
+border: 1px solid #808080;
+border-radius: 4px;
+                                    width: 7rem;
+                                    height: 5rem;
+                                    padding: 0.5rem;
+                                    transition: background-color 0.2s, border 0.2s;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    font-size: 0.8rem;
+                                    cursor: pointer;
+                                    background-color: #f8f8f8;
+                                }
+
+                                    .profile-button:hover{
+                                        border: 1px solid #000000;
+                                        background-color: #e8e8e8;
+                                    }
+
+                                    .profile-button:focus {
+                                        outline: 2px solid #000000;
+                                    }
+
+                                    .profile-button[aria-pressed="true"] {
+                                        border: 1px solid #000000;
+                                        background-color: #d3d3d3;
+                                    }
+
+/* Opțiuni de accesibilitate */
+                    .options-btn {
+border: 1px solid #808080;
+border-radius: 4px;
+                        margin-top: 0.5rem;
+                        margin-bottom: 0;
+                        margin-left: 0;
+                        margin-right: 0;
+                        padding-top: 0.5rem;
+                        padding-bottom: 0.5rem;
+                        padding-left: 0.5rem;
+                        padding-right: 0.5rem;
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        gap: 0.5rem;
+                        cursor: pointer;
+                        font-size: 1rem;
+                        background-color: #f8f8f8;
+                    }
+
+                        .options-btn:hover{
+                            border: 1px solid #000000;
+                            background-color: #e8e8e8;
+                        }
+
+                        .options-btn:focus {
+                            outline: 2px solid #000000;
+                        }
+
+                        .options-panel {
+border: 1px solid #808080;
+border-radius: 4px;
+                            margin-top: -1px;
+                            margin-bottom: 0;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0.5rem;
+                            padding-bottom: 0.5rem;
+                            padding-left: 0.5rem;
+                            padding-right: 0.5rem;
+                        }
+
+/* Lista Opțiunilor de accesibilitate */
+                            .options-list {
+                                display: flex;
+                                flex-wrap: wrap;
+                                gap: 0.5rem;
+                            }
+
+/* Opțiune individuală de accesibilitate */
+                                .option-button {
+border: 1px solid #808080;
+border-radius: 4px;
+                                    width: 7rem;
+                                    height: 5rem;
+                                    padding: 0.5rem;
+                                    transition: background-color 0.2s, border 0.2s;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    font-size: 0.8rem;
+                                    cursor: pointer;
+                                    background-color: #f8f8f8;
+                                }
+
+                                    .option-button:hover{
+                                        border: 1px solid #000000;
+                                        background-color: #e8e8e8;
+                                    }
+
+                                    .option-button:focus {
+                                        outline: 2px solid #000000;
+                                    }
+
+                                    .option-button[aria-pressed="true"] {
+                                        border: 1px solid #000000;
+                                        background-color: #d3d3d3;
+                                    }
+
+/* Iconița reprezentativă a butonului (SVG) */
+.button-icon {
+  display: block;
+  margin: 0.5rem auto 0.2rem auto;
+  width: 2rem;
+  height: 2rem;
+  stroke: #000; /* necolorat, contur simplu */
+  fill: none;
+  stroke-width: 2px;
+}
+
+/* Iconița "i" în cerc, poziționată în colțul din dreapta sus */
+.info-icon {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+border: 1px solid #808080;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: default;
+  background-color: #ffffff;
+  z-index: 10;
+}
+
+/* Popup floating, complet vizibil, deasupra widgetului si depasind marginile */
+.popup-info {
+border: 1px solid #808080;
+border-radius: 4px;
+  position: absolute; /* poziționare față de iconița "i" */
+  bottom: 100%; /* sa apară deasupra iconitei */
+  right: 1rem; /* aliniat la colțul din dreapta */
+  background-color: #fff; /* culoarea fundalului */
+  padding: 0.5rem; /* spațiu interior pentru text */
+  max-width: 200px  /* lățime maximă pentru text lung */
+  z-index: 1000; /* pentru a fi peste alte elemente */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  display: none; /* inițial ascuns */
+}
+
+/* Container pentru text box de 6rem, cu două rânduri, centrat */
+.text-box {
+  width: 6rem;
+  height: auto;
+  margin: 0.5rem auto 0.5rem auto;
+  padding: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-size: 0.8rem;
+  overflow: hidden;
+}
+
+/* Sub-opțiuni ciclice - container pentru casete mici */
+.sub-options-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+/* Casete mici pentru sub-opțiuni ciclice */
+.sub-option {
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  border: 1px solid #555;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.sub-option.active {
+  background-color: #000;
+}
+
+/* Responsivitate */
+            @media(max-width: 500px){
+
+                .widget {
+                    width: 90%;
+                }
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+<!-- Link "Sari la Meniul Setări pentru accesibilitate" -->
+        <a
+            href="#accessibilityWidget"
+            id="skipToAccessibility"
+            class="sr-only">
+            Mergi la Setări pentru accesibilitate
+        </a>
+
+<!-- Buton de accesibilitate -->
+        <button
+            id="accessibilityButton"
+            class="floating-btn"
+            aria-labelledby="accessibilityButtonLabel"
+            aria-pressed="false"
+            aria-expanded="false"
+            aria-controls="accessibilityWidget"
+            onclick="toggleWidget()"
+            onkeydown="if(event.key==='Enter'){toggleWidget();}">
+            <div
+                class="icon-and-text">
+                <img
+                    id="accessibilityIcon"
+                    class="icon-image"
+                    src="https://raw.githubusercontent.com/scoalanicualbu/website/main/accesibilitate/accesibilitate.png"
+                    alt="Accesibilitate"
+                    aria-label="Iconiță de accesibilitate"
+                    aria-hidden="true">
+                <span
+                    id="accessibilityButtonLabel"
+                    class="accessibility-label">
+                    Accesibilitate
+                </span>
+            </div>
+        </button>
+
+<!-- Meniu Setări pentru accesibilitate -->
+        <div
+            id="accessibilityWidget"
+            class="widget"
+            role="region"
+            aria-labelledby="accessibilityWidgetLabel"
+            aria-hidden="true">
+
+  <!-- Antetul widget-ului -->
+            <div
+                id="accessibilityWidgetLabel"
+                class="widget-header"
+                role="heading"
+                aria-level="2">
+                Setări pentru accesibilitate
+            </div>
+
+  <!-- Declarație de accesibilitate -->
+            <button
+                id="declaratieBtn"
+                class="declaratie-btn"
+                aria-label="Declarație de accesibilitate"
+                aria-expanded="false"
+                aria-controls="declaratieText"
+                onclick="toggleDeclaratie(this)">
+                <span
+                    id="declaratieLabel"
+                    class="left-text">
+                    Declarație de accesibilitate
+                </span>
+                <span
+                    class="arrow"
+                    aria-hidden="true">
+                    ▼
+                </span>
+            </button>
+            <div
+                id="declaratieText"
+                class="declaratie-text"
+                aria-labelledby="declaratieLabel"
+                aria-hidden="true">
+                <h3>
+                    1. Informații generale
+                </h3>
+                <p>
+                    Acest site web a fost creat pentru a fi accesibil tuturor utilizatorilor, inclusiv persoanelor cu dizabilități, oferind o experiență online inclusivă și ușor de utilizat.
+                </p>
+                <h3>
+                    2. Măsuri de accesibilitate
+                </h3>
+                <p>
+                    Pentru a asigura accesibilitatea, au fost implementate următoarele soluții tehnice și de design:
+                </p>
+                <ul>
+                    <li>
+                        Utilizarea atributelor ARIA, pentru interpretarea corectă a elementelor din pagină și îmbunătățirea experienței utilizatorilor care folosesc cititoare de ecran;
+                    </li>
+                    <li>
+                        Structurarea semantică a conținutului HTML pentru o navigare clară, intuitivă și facilitarea înțelegerii informațiilor;
+                    </li>
+                    <li>
+                        Furnizarea de texte alternative pentru imagini, pentru extinderea accesibilității vizuale;
+                    </li>
+                    <li>
+                        Asigurarea unui contrast adecvat între text și fundal, pentru o mai bună lizibilitate a conținutului;
+                    </li>
+                    <li>
+                        Posibilitatea navigării complete prin tastatură, pentru a îmbunătăți experiența utilizatorilor în cazuri de mobilitate redusă;
+                    </li>
+                    <li>
+                        Integrarea unui widget de accesibilitate, pentru personalizarea experienței de navigare.
+                    </li>
+                </ul>
+                <h3>
+                    3. Conformitate
+                </h3>
+                <p>
+                    Acest site web este proiectat pentru a fi conform cu standardul internațional Web Content Accessibility Guidelines (WCAG) 2.1 nivel AA și cu standardul european EAA / EN 301 549.
+                </p>
+                <p>
+                    WCAG 2.1 oferă recomandări pentru îmbunătățirea accesibilității conținutului web, abordând aspecte legate de percepție, funcționare, înțelegere și robustețe. Nivelul AA reprezintă un echilibru între accesibilitate și implementare practică.
+                </p>
+                <p>
+                    Standardul EAA / EN 301 549 definește cerințele tehnice pentru accesibilitatea produselor și serviciilor TIC, inclusiv a site-urilor web, asigurând conformitatea cu legislația europeană privind accesibilitatea digitală.
+                </p>
+                <h3>
+                    4. Feedback
+                </h3>
+                <p>
+                    Apreciem sugestiile și observațiile legate de accesibilitate. Dacă întâmpinați dificultăți în utilizarea site-ului web sau aveți propuneri de îmbunătățire, vă rugăm să ne contactați.
+                </p>
+                <h3>
+                    5. Actualizări
+                </h3>
+                <p>
+                    Declarația de accesibilitate este revizuită periodic pentru a reflecta evoluțiile și îmbunătățirile aduse site-ului. Vă recomandăm să verificați această pagină pentru informații actualizate.
+                </p>
+                <p>
+                    Data ultimei actualizări: 24.05.2024.
+                </p>
+            </div>
+
+
+
+  <!-- Profiluri de accesibilitate -->
+<button id="profilesBtn" class="profiles-btn" aria-label="Profiluri de accesibilitate" aria-expanded="false" aria-controls="profilesPanel" onclick="toggleProfiles(this)">
+  <span id="profilesLabel" class="left-text">Profiluri de accesibilitate</span>
+  <span class="arrow" aria-hidden="true">▼</span>
+</button>
+<div id="profilesPanel" class="profiles-panel" aria-labelledby="profilesLabel" aria-hidden="true">
+  <div id="profilesList" class="profiles-list">
+<!-- Profiluri generate din JS -->
+                </div>
+            </div>
+
+ <!-- Opțiuni de accesibilitate -->
+<button id="optionsBtn" class="options-btn" aria-label="Opțiuni de accesibilitate" aria-expanded="false" aria-controls="optionsPanel" onclick="toggleOptions(this)">
+  <span id="optionsLabel" class="left-text">Opțiuni de accesibilitate</span>
+  <span class="arrow" aria-hidden="true">▼</span>
+</button>
+<div id="optionsPanel" class="options-panel" aria-labelledby="optionsLabel" aria-hidden="true">
+  <div id="optionsList" class="options-list">
+<!-- Opțiuni generate din JS -->
+                </div>
+            </div>
+
+        </div>
+
+        <script>
+
+// Funcții de bază și utilitare
+
+// Afișare sau ascundere Meniu Setări pentru accesibilitate
+            function toggleWidget() {
+                const widget=document.getElementById('accessibilityWidget');
+                const btn=document.getElementById('accessibilityButton');
+                if (widget.getAttribute('aria-hidden')==='true') {
+
+// Afișare Meniu Setări pentru accesibilitate
+                    widget.setAttribute('aria-hidden','false');
+                    widget.style.display='block';
+                    btn.setAttribute('aria-pressed','true');
+                    btn.setAttribute('aria-expanded','true');
+
+// Focusare pe Declarația de accesibilitate
+                    document.getElementById('declaratieLabel')?.focus();
+                } else {
+
+// Ascundere Meniu Setări pentru accesibilitate
+                    widget.setAttribute('aria-hidden','true');
+                    widget.style.display='none';
+                    btn.setAttribute('aria-pressed','false');
+                    btn.setAttribute('aria-expanded','false');
+
+// Focusare pe Butonul de accesibilitate
+                    document.getElementById('accessibilityButton').focus();
+                }
+            }
+
+// Deschidere sau închidere Declarație de accesibilitate
+            function toggleDeclaratie(btn) {
+                const text=document.getElementById('declaratieText');
+                const arrow=btn.querySelector('.arrow');
+                if (btn.getAttribute('aria-expanded')==='true') {
+                    btn.setAttribute('aria-expanded','false');
+                    text.setAttribute('aria-hidden','true');
+                    text.style.display='none';
+                    arrow.textContent='▼';
+                } else {
+                    btn.setAttribute('aria-expanded','true');
+                    text.setAttribute('aria-hidden','false');
+                    text.style.display='block';
+                    arrow.textContent='▲';
+                }
+            }
+
+// Deschidere sau închidere Profiluri de accesibilitate
+            function toggleProfiles(btn) {
+                const panel=document.getElementById('profilesPanel');
+                const arrow=btn.querySelector('.arrow');
+                if (btn.getAttribute('aria-expanded')==='true') {
+                    btn.setAttribute('aria-expanded','false');
+                    panel.setAttribute('aria-hidden','true');
+                    panel.style.display='none';
+                    arrow.textContent='▼';
+
+// Focusare pe Profiluri de accesibilitate
+                     document.getElementById('profilesBtn').focus();
+
+                } else {
+                    btn.setAttribute('aria-expanded','true');
+                    panel.setAttribute('aria-hidden','false');
+                    panel.style.display='block';
+                    arrow.textContent='▲';
+
+// Focusare pe primul Profil de accesibilitate
+                    document.querySelector('.profile-button')?.focus();
+                }
+            }
+
+// Păstrare stare setări la închidere Profiluri de accesibilitate
+            function updateProfilesButtonStyle() {
+                const btn=document.getElementById('profilesBtn');
+                const pressed= Array.from(document.querySelectorAll('.profile-button')).some(b=>b.getAttribute('aria-pressed')==='true');
+                btn.style.backgroundColor=pressed?'#d3d3d3':'#f8f8f8';
+            }
+
+// Deschidere sau închidere Opțiuni de accesibilitate
+            function toggleOptions(btn) {
+                const panel=document.getElementById('optionsPanel');
+                const arrow=btn.querySelector('.arrow');
+                if (btn.getAttribute('aria-expanded')==='true') {
+                    btn.setAttribute('aria-expanded','false');
+                    panel.setAttribute('aria-hidden','true');
+                    panel.style.display='none';
+                    arrow.textContent='▼';
+
+// Focusare pe Opțiuni de accesibilitate
+                     document.getElementById('optionsBtn').focus();
+
+                } else {
+                    btn.setAttribute('aria-expanded','true');
+                    panel.setAttribute('aria-hidden','false');
+                    panel.style.display='block';
+                    arrow.textContent='▲';
+
+// Focusare pe prima Opțiune de accesibilitate
+                    document.querySelector('.option-button')?.focus();
+                }
+            }
+
+// Păstrare stare setări la închidere Opțiuni de accesibilitate
+            function updateOptionsButtonStyle() {
+                const anyActive = Array.from(document.querySelectorAll('.option-button'))
+                    .some(b => b.getAttribute('aria-pressed') === 'true');
+                const btn = document.getElementById('optionsBtn');
+                btn.style.backgroundColor = anyActive ? '#d3d3d3' : '#f8f8f8';
+}
+
+// Activare și dezactivare ciclică subOpțiune individuală de accesibilitate
+function toggleOptiune(i) {
+  if (!optiuni[i].subOptiuni) return;
+  if (subOptiuniState[i] === undefined || subOptiuniState[i] === -1) {
+    subOptiuniState[i] = 0;
+  } else {
+    if (subOptiuniState[i] === optiuni[i].subOptiuni.length - 1) {
+      subOptiuniState[i] = -1;
+    } else {
+      subOptiuniState[i]++;
+    }
+  }
+  // Actualizează UI dacă vrei să afișezi starea
+  console.log(`Optiunea ${optiuni[i].nume} activată:`, subOptiuniState[i] !== -1 ? optiuni[i].subOptiuni[subOptiuniState[i]] : 'Dezactivat');
+}
+
+// Funcții de inițializare
+
+// Generare Profiluri individuale de accesibilitate
+const profiluri = [
+  {
+    nume: 'Vârstnic',
+    descriere: 'Profilul Vârstnic activează opțiunile; Oprire animații, Contrast inteligent, Ghid de lectură, Cursor mare alb, Lupă de text și Evidențiere focus.',
+    icon: '🧓'
+  },
+  {
+    nume: 'Mobilitate redusă',
+    descriere: 'Profilul Mobilitate redusă activează opțiunile; Oprire animații și Lupă de text.',
+    icon: '🚶‍♂️'
+  },
+  {
+    nume: 'Vedere redusă',
+    descriere: 'Profilul Vedere redusă activează opțiunile; Oprire animații, Saturație ridicată, Font care poate fi citit și Cursor mare alb.',
+    icon: '👓'
+  },
+  {
+    nume: 'Orb',
+    descriere: 'Profilul Orb activează opțiunile; Vorbește și tastează și Cititor de ecran.',
+    icon: '🦽'
+  },
+  {
+    nume: 'Daltonic',
+    descriere: 'Profilul Daltonic activează opțiunea Daltonic, subopțiunea Deuteranomalic, cea mai răspândită. Pentru alte variante de daltonism, încercați opțiunea Daltonic de mai jos, cu alte subopțiuni.',
+    icon: '🌈'
+  },
+  {
+    nume: 'Dislexic',
+    descriere: 'Profilul Dislexic activează opțiunile; Oprire animații și Font pentru dislexie.',
+    icon: '📖'
+  },
+  {
+    nume: 'Retard',
+    descriere: 'Profilul Retard activează opțiunile; Oprire animații, Mască de lectură și Lupă de text.',
+    icon: '🧠'
+  },
+  {
+    nume: 'Epileptic',
+    descriere: 'Profilul Epileptic activează opțiunile; Oprire animații și Saturație scăzută.',
+    icon: '⚠️'
+  },
+  {
+    nume: 'Tulburat',
+    descriere: 'Profilul Tulburat activează opțiunile; Oprire animații, Mască de lectură și Saturație scăzută.',
+    icon: '🤯'
+  }
+];
+
+function initProfiluri() {
+  const container = document.getElementById('profilesList');
+  container.innerHTML = '';
+
+  profiluri.forEach((p, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'profile-button';
+    btn.setAttribute('aria-pressed', 'false');
+    btn.setAttribute('aria-label', p.nume);
+    btn.style.position='relative'; // pentru poziționarea iconițelor
+
+    // Toggle stare
+    btn.onclick = () => {
+      const e = btn.getAttribute('aria-pressed')==='true';
+      btn.setAttribute('aria-pressed', String(!e));
+      updateProfilesButtonStyle();
+    };
+
+    // Icon SVG reprezentativ
+    const iconSVG = document.createElement('svg');
+    iconSVG.className='button-icon';
+    iconSVG.setAttribute('viewBox','0 0 64 64');
+    iconSVG.innerHTML= `<circle cx="32" cy="16" r="12" stroke="black" stroke-width="2" fill="none"/>
+<rect x="24" y="28" width="16" height="20" stroke="black" stroke-width="2" fill="none"/>`;
+    btn.appendChild(iconSVG);
+
+    // Iconița "i" în colțul din dreapta sus
+    const infoIcon = document.createElement('div');
+    infoIcon.className='info-icon';
+    infoIcon.innerText='i';
+
+    // Popup descriere
+    const popup = document.createElement('div');
+    popup.className='popup-info';
+    popup.innerText=p.descriere;
+    infoIcon.appendChild(popup);
+    infoIcon.addEventListener('mouseenter', ()=>{ popup.style.display='block'; });
+    infoIcon.addEventListener('mouseleave', ()=>{ popup.style.display='none'; });
+
+    // Adaugă iconița "i" în profil
+    btn.appendChild(infoIcon);
+
+    // Textul profilului
+    const spanText = document.createElement('span');
+    spanText.innerText=p.nume;
+    btn.appendChild(spanText);
+
+    container.appendChild(btn);
+  });
+}
+
+// Generare Opțiuni individuale de accesibilitate
+const optiuni = [
+  {nume:'Dezactivare sunet', descriere:'Sunet dezactivat.', icon:'🔇', subOptiuni:[]},
+  {nume:'Oprire animații', descriere:'Animații oprite.', icon:'🚫', subOptiuni:[]},
+  {nume:'Ascundere imagini', descriere:'Imagini ascunse.', icon:'🖼️', subOptiuni:[]},
+  {nume:'Daltonic', descriere:'Acromatopsic, Acromatomalic, Protanopic, Deuteranopic, Tritanopic, Protanomalic, Deuteranomalic, Trianomalic', icon:'🌈', subOptiuni:['Acromatopsic', 'Acromatomalic', 'Protanopic', 'Deuteranopic', 'Tritanopic', 'Protanomalic', 'Deuteranomalic', 'Trianomalic']},
+  {nume:'Contrast', descriere:'Contrast inteligent, Contrast mare, Contrast luminos, Contrast întunecat', icon:'🎨', subOptiuni:['Contrast inteligent', 'Contrast mare', 'Contrast luminos', 'Contrast întunecat']},
+  {nume:'Saturație', descriere:'Saturație scăzută, Saturație ridicată', icon:'🌈', subOptiuni:['Saturație scăzută', 'Saturație ridicată']},
+  {nume:'Culoare fundal', descriere:'Fundal Alb, Fundal Galben, Fundal Portocaliu, Fundal Verde, Fundal Roșu, Fundal Albastru, Fundal Violet, Fundal Negru', icon:'🖍️', subOptiuni:['Fundal Alb', 'Fundal Galben', 'Fundal Portocaliu', 'Fundal Verde', 'Fundal Roșu', 'Fundal Albastru', 'Fundal Violet', 'Fundal Negru']},
+  {nume:'Evidențiere focus', descriere:'Focus evidențiat.', icon:'🎯', subOptiuni:[]},
+  {nume:'Cursor', descriere:'Cursor mare Alb, Cursor mare Negru', icon:'🖱️', subOptiuni:['Cursor mare Alb', 'Cursor mare Negru']},
+  {nume:'Evidențiere trecere', descriere:'Trecere evidențiată.', icon:'➡️', subOptiuni:[]},
+  {nume:'Evidențiere legături', descriere:'Legături evidențiate.', icon:'🔗', subOptiuni:[]},
+  {nume:'Evidențiere titluri', descriere:'Titluri evidențiate.', icon:'🏷️', subOptiuni:[]},
+  {nume:'Culoare text', descriere:'Text Alb, Text Galben, Text Portocaliu, Text Verde, Text Roșu, Text Albastru, Text Violet, Text Negru', icon:'📝', subOptiuni:['Text Alb', 'Text Galben', 'Text Portocaliu', 'Text Verde', 'Text Roșu', 'Text Albastru', 'Text Violet', 'Text Negru']},
+  {nume:'Culoare titlu', descriere:'Titlu Alb, Titlu Galben, Titlu Portocaliu, Titlu Verde, Titlu Roșu, Titlu Albastru, Titlu Violet, Titlu Negru', icon:'🏷️', subOptiuni:['Titlu Alb', 'Titlu Galben', 'Titlu Portocaliu', 'Titlu Verde', 'Titlu Roșu', 'Titlu Albastru', 'Titlu Violet', 'Titlu Negru']},
+  {nume:'Scalare conținut', descriere:'Conținut Foarte mic, Conținut Mic, Conținut Mare, Conținut Foarte mare', icon:'🔍', subOptiuni:['Conținut Foarte mic', 'Conținut Mic', 'Conținut Mare', 'Conținut Foarte mare']},
+  {nume:'Aliniere text', descriere:'Aliniere Stânga, Aliniere Centru, Aliniere Dreapta, Aliniere Stânga-Dreapta', icon:'↔️', subOptiuni:['Aliniere Stânga', 'Aliniere Centru', 'Aliniere Dreapta', 'Aliniere Stânga-Dreapta']},
+  {nume:'Înălțime linie', descriere:'Linie Micșorată, Linie Mărită, Linie Mare, Linie Foarte mare', icon:'📏', subOptiuni:['Linie Micșorată', 'Linie Mărită', 'Linie Mare', 'Linie Foarte mare']},
+  {nume:'Spațiu dintre litere', descriere:'Spațiu Micșorat, Spațiu Mărit, Spațiu Mare, Spațiu Foarte mare', icon:'✏️', subOptiuni:['Spațiu Micșorat', 'Spațiu Mărit', 'Spațiu Mare', 'Spațiu Foarte mare']},
+  {nume:'Mărime font', descriere:'Font Foarte mic, Font Mic, Mare, Font Foarte mare', icon:'🔠', subOptiuni:['Font Foarte mic', 'Font Mic', 'Font Mare', 'Font Foarte mare']},
+  {nume:'Font', descriere:'Font care poate fi citit, Font pentru dislexie', icon:'🔤', subOptiuni:['Font care poate fi citit', 'Font pentru dislexie']},
+  {nume:'Mască de lectură', descriere:'Mască de lectură activată.', icon:'🛡️', subOptiuni:[]},
+  {nume:'Filtrare conținut', descriere:'Conținut filtrat.', icon:'🚫', subOptiuni:[]},
+  {nume:'Mod citire', descriere:'Mod citire activat.', icon:'📖', subOptiuni:[]},
+  {nume:'Cititor de ecran', descriere:'Cititor de ecran activat.', icon:'🧑‍🦯', subOptiuni:[]},
+  {nume:'Tastatură virtuală', descriere:'Tastatură virtuală activată.', icon:'⌨️', subOptiuni:[]},
+  {nume:'Vorbire și tastează', descriere:'Vorbire convertită în text.', icon:'🎙️', subOptiuni:[]},
+  {nume:'Dicționar', descriere:'Dicționar activat.', icon:'📚', subOptiuni:[]}
+];
+
+// Lista de subopțiuni ciclice pentru fiecare opțiune care are subopțiuni
+const subOptiuni = [
+  ['Acromatopsic', 'Acromatomalic', 'Protanopic', 'Deuteranopic', 'Tritanopic', 'Protanomalic', 'Deuteranomalic', 'Trianomalic'],
+  ['Contrast inteligent', 'Contrast mare', 'Contrast luminos', 'Contrast întunecat'],
+  ['Saturație scăzută', 'Saturație ridicată'],
+  ['Fundal Alb', 'Fundal Galben', 'Fundal Portocaliu', 'Fundal Verde', 'Fundal Roșu', 'Fundal Albastru', 'Fundal Violet', 'Fundal Negru'],
+  ['Cursor mare Alb', 'Cursor mare Negru'],
+  ['Text Alb', 'Text Galben', 'Text Portocaliu', 'Text Verde', 'Text Roșu', 'Text Albastru', 'Text Violet', 'Text Negru'],
+  ['Titlu Alb', 'Titlu Galben', 'Titlu Portocaliu', 'Titlu Verde', 'Titlu Roșu', 'Titlu Albastru', 'Titlu Violet', 'Titlu Negru'],
+  ['Conținut Foarte mic', 'Conținut Mic', 'Conținut Mare', 'Conținut Foarte mare'],
+  ['Aliniere Stânga', 'Aliniere Centru', 'Aliniere Dreapta', 'Aliniere Stânga-Dreapta'],
+  ['Linie Micșorată', 'Linie Mărită', 'Linie Mare', 'Linie Foarte mare'],
+  ['Spațiu Micșorat', 'Spațiu Mărit', 'Spațiu Mare', 'Spațiu Foarte mare'],
+  ['Font Foarte mic', 'Font Mic', 'Mare', 'Font Foarte mare'],
+  ['Font care poate fi citit', 'Font pentru dislexie']
+];
+
+// Starea subopțiunilor pentru fiecare opțiune
+const subOptiuniStare = {}; // cheia: index opțiune, valoare: index subopțiune sau -1 pentru dezactivat
+
+// Funcție de inițializare pentru Opțiuni
+function initOptiuni() {
+  const container = document.getElementById('optionsList');
+  container.innerHTML = '';
+
+  optiuni.forEach((opt, index) => {
+    const btn = document.createElement('button');
+    btn.className = 'option-button';
+    btn.setAttribute('aria-pressed', 'false');
+    btn.setAttribute('aria-label', opt.nume);
+    btn.style.position='relative'; // pentru poziționarea iconițelor
+    btn.onclick = () => {
+      const e = btn.getAttribute('aria-pressed')==='true';
+      btn.setAttribute('aria-pressed', String(!e));
+      updateOptionsButtonStyle();
+
+      if (opt.subOptiuni.length > 1) {
+        // Gestionare casete ciclice
+        cicluSubOptiune(btn, index);
+      } else {
+        // Toggle pentru o singură sub-opțiune
+        if (subOptiuniStare[index]===-1 || subOptiuniStare[index]===undefined) {
+          subOptiuniStare[index]=0; // activat
+        } else {
+          subOptiuniStare[index]=-1; // dezactivat
+        }
+        updateOptiuneText(btn, index);
+      }
+    };
+
+    // Adaugă iconița SVG reprezentativă
+    const iconSVG = document.createElement('svg');
+    iconSVG.className='button-icon';
+    iconSVG.setAttribute('viewBox','0 0 64 64');
+    iconSVG.innerHTML= `<circle cx="32" cy="16" r="12" stroke="black" stroke-width="2" fill="none"/>
+<rect x="24" y="28" width="16" height="20" stroke="black" stroke-width="2" fill="none"/>`;
+    btn.appendChild(iconSVG);
+
+    // Adaugă iconița "i" în colțul din dreapta sus
+    const infoIcon = document.createElement('div');
+    infoIcon.className='info-icon';
+    infoIcon.innerText='i';
+
+    // Popup pentru descriere
+    const popup = document.createElement('div');
+    popup.className='popup-info';
+    popup.innerText=opt.descriere;
+    infoIcon.appendChild(popup);
+    infoIcon.addEventListener('mouseenter', ()=>{ popup.style.display='block'; });
+    infoIcon.addEventListener('mouseleave', ()=>{ popup.style.display='none'; });
+
+    // Adaugă iconița "i" în buton
+    btn.appendChild(infoIcon);
+
+    // Textul opțiunii
+    const spanText = document.createElement('span');
+    spanText.innerText=opt.nume;
+    btn.appendChild(spanText);
+
+    // Adaugă butonul în container
+    container.appendChild(btn);
+
+    // Inițial, actualizează textul butonului
+    updateOptiuneText(btn, index);
+  });
+}
+
+// Actualizează textul butonului pentru opțiunea cu index dat
+function updateOptiuneText(btn, index) {
+  const e = btn.getAttribute('aria-pressed')==='true';
+  const opt = optiuni[index];
+  let text = '';
+  if (opt.subOptiuni.length>1) {
+    // casete ciclice
+    const activeIdx = subOptiuniStare[index];
+    if (activeIdx===undefined || activeIdx===-1) {
+      text=opt.nume; // dezactivat
+    } else {
+      text=opt.subOptiuni[activeIdx]; // starea activa
+    }
+  } else {
+    // doar nume sau sub-optiune
+    if (subOptiuniStare[index]===-1 || subOptiuniStare[index]===undefined) {
+      text=opt.nume;
+    } else {
+      text=opt.subOptiuni[subOptiuniStare[index]];
+    }
+  }
+  // setare text
+  const span = btn.querySelector('span');
+  span.innerText=text;
+}
+
+// Funcție de inițializare pentru casetele ciclice
+function cicluSubOptiune(parentBtn, indexOpt) {
+  const container = parentBtn.querySelector('.sub-options-container');
+  if (subOptiuniStare[indexOpt]===undefined || subOptiuniStare[indexOpt]===-1) {
+    subOptiuniStare[indexOpt]=0;
+  } else {
+    subOptiuniStare[indexOpt]= (subOptiuniStare[indexOpt]+1) % subOptiuni[indexOpt].length;
+  }
+  initCaseta(container, indexOpt);
+  // Actualizează textul
+  updateOptiuneText(parentBtn, indexOpt);
+}
+
+// Generare casete ciclice
+function initCaseta(container, indexOpt) {
+  container.innerHTML='';
+  const currentIdx = subOptiuniStare[indexOpt] || 0;
+  subOptiuni[indexOpt].forEach((val,i) => {
+    const div = document.createElement('div');
+    div.className='sub-option';
+    if (i===currentIdx) div.classList.add('active');
+    div.onclick= ()=> {
+      subOptiuniStare[indexOpt]=i;
+      initCaseta(container,indexOpt);
+      // actualizează textul butonului
+      const btn = document.querySelector(`.option-button[aria-label="${optiuni[indexOpt].nume}"]`);
+      if (btn) updateOptiuneText(btn, indexOpt);
+    };
+    container.appendChild(div);
+  });
+}
+
+// Inițializare Meniu Setări pentru accesibilitate
+            function initialize() {
+
+// Ascundere Meniu Setări pentru accesibilitate
+                document.getElementById('accessibilityWidget').style.display='none';
+                document.getElementById('accessibilityWidget').setAttribute('aria-hidden','true');
+
+// Inchidere Declarație de accesibilitate
+                document.getElementById('declaratieText').style.display='none';
+                document.getElementById('declaratieText').setAttribute('aria-hidden','true');
+                document.getElementById('declaratieBtn').setAttribute('aria-expanded','false');
+                document.querySelector('#declaratieBtn .arrow').textContent='▼';
+
+// Inchidere Profiluri de accesibilitate
+                document.getElementById('profilesPanel').style.display='none';
+                document.getElementById('profilesPanel').setAttribute('aria-hidden','true');
+                document.getElementById('profilesBtn').setAttribute('aria-expanded','false');
+                document.querySelector('#profilesBtn .arrow').textContent='▼';
+
+// Dezactivare Profiluri individuale de accesibilitate
+                document.querySelectorAll('.profile-button').forEach(btn => {
+                    btn.setAttribute('aria-pressed','false');
+                });
+
+// Actualizare stiluri Profiluri de accesibilitate
+                updateProfilesButtonStyle();
+
+// Inițializare Profiluri indivituale de accesibilitate
+                initProfiluri();
+
+// Deschidere Opțiuni de accesibilitate
+                document.getElementById('optionsPanel').style.display='block';
+                document.getElementById('optionsPanel').setAttribute('aria-hidden','false');
+                document.getElementById('optionsBtn').setAttribute('aria-expanded','true');
+                document.querySelector('#optionsBtn .arrow').textContent='▲';
+
+// Dezactivare Opțiuni individuale de accesibilitate
+                document.querySelectorAll('.option-button').forEach(btn => {
+                    btn.setAttribute('aria-pressed','false');
+                });
+
+// Actualizare stiluri Opțiuni indivituale de accesibilitate
+                updateOptionsButtonStyle()
+
+// Inițializare Opțiuni indivituale de accesibilitate
+  initOptiuni();
+
+// Inițial, pentru toate opțiunile cu subOpțiuni multiple, setează starea -1 (dezactivat)
+Object.keys(subOptiuniStare).forEach(k => {
+  if (optiuni[k] && optiuni[k].subOptiuni.length > 1) {
+    subOptiuniStare[k] = -1;
+  } else {
+    subOptiuniStare[k] = 0;
+  }
+});
+
+}
+
+// Resetare stare Meniu Setări pentru accesibilitate
+function reset() {
+
+// Ascundere Meniu Setări pentru accesibilitate
+                document.getElementById('accessibilityWidget').style.display='none';
+                document.getElementById('accessibilityWidget').setAttribute('aria-hidden','true');
+
+// Inchidere Declarație de accesibilitate
+                document.getElementById('declaratieText').style.display='none';
+                document.getElementById('declaratieText').setAttribute('aria-hidden','true');
+                document.getElementById('declaratieBtn').setAttribute('aria-expanded','false');
+                document.querySelector('#declaratieBtn .arrow').textContent='▼';
+
+// Inchidere Profiluri de accesibilitate
+                document.getElementById('profilesPanel').style.display='none';
+                document.getElementById('profilesPanel').setAttribute('aria-hidden','true');
+                document.getElementById('profilesBtn').setAttribute('aria-expanded','false');
+                document.querySelector('#profilesBtn .arrow').textContent='▼';
+
+// Dezactivare Profiluri individuale de accesibilitate
+                document.querySelectorAll('.profile-button').forEach(btn => {
+                    btn.setAttribute('aria-pressed','false');
+                });
+
+// Actualizare stiluri Profiluri de accesibilitate
+                updateProfilesButtonStyle();
+
+// Deschidere Opțiuni de accesibilitate
+                document.getElementById('optionsPanel').style.display='block';
+                document.getElementById('optionsPanel').setAttribute('aria-hidden','false');
+                document.getElementById('optionsBtn').setAttribute('aria-expanded','true');
+                document.querySelector('#optionsBtn .arrow').textContent='▲';
+
+// Dezactivare Opțiuni individuale de accesibilitate
+                document.querySelectorAll('.option-button').forEach(btn => {
+                    btn.setAttribute('aria-pressed','false');
+                });
+
+// Actualizare stiluri Opțiuni indivituale de accesibilitate
+                updateOptionsButtonStyle()
+
+  // Resetare stări interne, dacă e cazul
+  Object.keys(subOptiuniStare).forEach(k => {
+    subOptiuniStare[k] = -1; // sau 0 dacă vrei să fie activat implicit
+  });
+
+  // Ascunde toate popup-urile
+  document.querySelectorAll('.popup-info').forEach(p => {
+    p.style.display='none'; // sau folosește classList.remove('active') dacă preferi clase CSS
+  });
+}
+
+
+// Funcții de eveniment și de gestionare a interacțiunii
+
+// Inițializare setări la încărcarea paginii
+            window.addEventListener('DOMContentLoaded', initialize);
+
+// Gestionare taste la apăsare
+            document.addEventListener('keydown', function(e) {
+
+// Tasta ESC - reinițializare Meniu Setări pentru accesibilitate
+                if (e.key==='Escape') {
+
+// Blocare comportament implicit pentru apasarea tastei ESC
+                    e.preventDefault();
+
+// Setare comportament particularizat pentru apasarea tastei ESC
+                    reset();
+                    document.getElementById('accessibilityButton').focus();
+                    return;
+                }
+
+            });
+
+        </script>
+
+    </body>
+
+</html>
