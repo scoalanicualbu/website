@@ -275,10 +275,10 @@ border: 0px solid #404040;
                     margin-bottom: 0;
                     margin-left: 0;
                     margin-right: 0;
-                    padding-top: 0;
-                    padding-bottom: 0;
-                    padding-left: 0;
-                    padding-right: 0;
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
+                    padding-left: 1rem;
+                    padding-right: 1rem;
                     grid-column: span 12;
                     display: flex;
                     flex-direction: column;
@@ -632,29 +632,6 @@ border: 0px solid #404040;
                             background-color: #FFFFFF;
                         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Scalare pagină */
                 @media (min-width: 2561px) {
                     aside {
@@ -666,11 +643,10 @@ border: 0px solid #404040;
                     .footer-info {
                         margin-left: 15rem;
                     }
-                     .coloane {
-                         column-count: 4;
+                    .coloane {
+                        column-count: 4;
                     }
                 }
-
 
                 @media (min-width: 1367px) and (max-width: 2560px) {
                     aside {
@@ -682,8 +658,8 @@ border: 0px solid #404040;
                     .footer-info {
                         margin-left: 15rem;
                     }
-                     .coloane {
-                         column-count: 2;
+                    .coloane {
+                        column-count: 2;
                     }
                 }
 
@@ -703,28 +679,47 @@ border: 0px solid #404040;
                     }
                 }
 
-                @media (min-width: 321px) and (max-width: 768px) {
+                @media (min-width: 641px) and (max-width: 768px) {
                     aside {
                         border-radius: 4px;
                     }
                     .page-menu ul {
-                         grid-template-columns: repeat(2, 1fr);
+                        grid-template-columns: repeat(2, 1fr);
                     }
-                     .subsection-connections ul {
-                         grid-template-columns: repeat(1, 1fr);
-                        }
-                     .subsection-connections a {
-                         text-align: left;  
-                        }
+                    .subsection-connections ul {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
                     }
+                }
+
+                @media (min-width: 321px) and (max-width: 640px) {
+                    aside {
+                        border-radius: 4px;
+                    }
+                    .page-menu ul {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                    .subsection-connections ul {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                    .subsection-connections a {
+                        text-align: left;  
+                    }
+                }
 
                 @media (max-width: 320px) {
                     aside {
                         border-radius: 4px;
-                }
-                     .page-menu ul {
-                     grid-template-columns: repeat(1, 1fr);
-                     }
+                    }
+                    .page-menu ul {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                    .subsection-connections ul {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                    .subsection-connections a {
+                        text-align: left;  
+                    }
                 }
 
         </style>
