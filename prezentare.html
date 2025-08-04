@@ -79,8 +79,8 @@ border: 0px solid #404040;
                 }
 
                 p {
-                    margin-top: 0;
-                    margin-bottom: 0.5rem;
+                    margin-top: 0.5rem;
+                    margin-bottom: 0;
                     margin-left: 0;
                     margin-right: 0;
                     padding-top: 0;
@@ -275,10 +275,10 @@ border: 0px solid #404040;
                     margin-bottom: 0;
                     margin-left: 0;
                     margin-right: 0;
-                    padding-top: 1rem;
+                    padding-top: 0;
                     padding-bottom: 1rem;
-                    padding-left: 1rem;
-                    padding-right: 1rem;
+                    padding-left: 1.5rem;
+                    padding-right: 1.5rem;
                     grid-column: span 12;
                     display: flex;
                     flex-direction: column;
@@ -426,7 +426,7 @@ border: 0px solid #404040;
                         margin-bottom: 0;
                         margin-left: 0;
                         margin-right: 0;
-                        padding-top: 0.5rem;
+                        padding-top: 0;
                         padding-bottom: 0;
                         padding-left: 0.5rem;
                         padding-right: 0.5rem;
@@ -654,12 +654,21 @@ border: 0px solid #404040;
                     }
                     .content {
                         margin-left: 15rem;
+                        padding-left: 1rem;
+                        padding-right: 1rem;
+                    }
+                    .page-menu ul {
+                        gap: 1.5rem;
                     }
                     .footer-info {
                         margin-left: 15rem;
                     }
                     .coloane {
                         column-count: 2;
+                        gap: 1.5rem;
+                    }
+                    .subsection-connections ul {
+                        gap: 1.5rem;
                     }
                 }
 
@@ -667,15 +676,33 @@ border: 0px solid #404040;
                     aside {
                         border-radius: 4px;
                     }
+                    .content {
+                        padding-left: 0;
+                        padding-right: 0;
+                    }
+                    .page-menu ul {
+                        gap: 1rem;
+                    }
+                    .subsection-connections ul {
+                        gap: 1rem;
+                    }
                 }
 
                 @media (min-width: 769px) and (max-width: 1280px) {
                     aside {
                         border-radius: 4px;
                     }
+                    .content {
+                        padding-left: 0;
+                        padding-right: 0;
+                    }
+                    .page-menu ul {
+                        gap: 1rem;
+                    }
                     .subsection-connections ul {
                         display: grid;
                         grid-template-columns: repeat(2, 1fr);
+                        gap: 1rem;
                     }
                 }
 
@@ -683,12 +710,18 @@ border: 0px solid #404040;
                     aside {
                         border-radius: 4px;
                     }
+                    .content {
+                        padding-left: 0;
+                        padding-right: 0;
+                    }
                     .page-menu ul {
                         grid-template-columns: repeat(2, 1fr);
+                        gap: 1rem;
                     }
                     .subsection-connections ul {
                         display: grid;
                         grid-template-columns: repeat(2, 1fr);
+                        gap: 1rem;
                     }
                 }
 
@@ -696,8 +729,13 @@ border: 0px solid #404040;
                     aside {
                         border-radius: 4px;
                     }
+                    .content {
+                        padding-left: 0;
+                        padding-right: 0;
+                    }
                     .page-menu ul {
                         grid-template-columns: repeat(2, 1fr);
+                        gap: 1rem;
                     }
                     .subsection-connections ul {
                         grid-template-columns: repeat(1, 1fr);
@@ -710,6 +748,10 @@ border: 0px solid #404040;
                 @media (max-width: 320px) {
                     aside {
                         border-radius: 4px;
+                    }
+                    .content {
+                        padding-left: 0;
+                        padding-right: 0
                     }
                     .page-menu ul {
                         grid-template-columns: repeat(1, 1fr);
@@ -855,10 +897,10 @@ border: 0px solid #404040;
 
 <!-- Subsecțiune Text -->
             <section aria-labelledby="prezentare-label" class="subsection-text">
-                        <div style="margin-top: 1rem; margin-bottom: 0.5rem">
+                        <div style="margin-top: 0.6rem; margin-bottom: 0.5rem">
                             <h2>Motto:</h2>
                         </div>
-                        <p style="margin-top: 0.5rem; margin-bottom: 1.7rem; font-weight: bold;">Suntem o familie! Împreună construim, învățăm, inovăm! Suntem o școală deschisă, pentru comunitate!</p>
+                        <p style="margin-top: 0; margin-bottom: 1.3rem; font-weight: bold;">Suntem o familie! Împreună construim, învățăm, inovăm! Suntem o școală deschisă, pentru comunitate!</p>
                 <article>
                     <header>
                         <div id="prezentare-label" class="sr-only">
