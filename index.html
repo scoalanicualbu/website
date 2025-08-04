@@ -1,210 +1,199 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 
+<!-- Limbă și localizare -->
 <html lang="ro-RO">
 
-<head>
-   <meta charset="UTF-8">
-   <title>Școala Gimnazială „Nicu Albu” Piatra Neamț</title>
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
 
-   <style>
-      :root {
-         --grid-columns: 12;
-      }
-      * {
-         box-sizing: border-box;
-      }
-      body {
-         margin: 0;
-         font-family: Arial, sans-serif;
-         display: flex;
-         min-height: 100vh;
-      }
-      aside {
-         background-color: #f5f5f5;
-         width: 500px;
-         padding: 1rem;
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-      }
-      aside img {
-         max-width: 50%;
-         height: auto;
-         margin-bottom: 1rem;
-      }
-      aside h1 {
-         font-size: 1.1rem;
-         text-align: center;
-      }
-      .side-menu a {
-         display: block;
-         margin: 0.5rem 0;
-         text-decoration: none;
-         color: #000;
-         border: 1px solid #000;
-         padding: 0.5rem;
-         text-align: center;
-      }
-      .side-menu a:focus {
-         outline: 3px solid #000;
-      }
-       .logo-area {
-          min-height: 120px;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          text-align: center;
-       }
-      .main-area {
-         flex-grow: 1;
-         display: flex;
-         flex-direction: column;
-      }
-      header {
-         padding: 0;
-         margin: 0;
-      }
-    .banner img {
-      max-height: 120px;
-     height: auto;
-     object-fit: cover;
-     width: 100%;
-      }
-      .top-menu {
-         display: flex;
-         flex-wrap: wrap;
-         padding: 0.5rem;
-         justify-content: start;
-      }
-      .top-menu a {
-         margin: 0.25rem;
-         text-decoration: none;
-         color: #000;
-         border: 1px solid #000;
-         padding: 0.5rem;
-         text-align: center;
-         flex-grow: 1;
-      }
-      .top-menu a.active {
-         background: #000;
-         color: #fff;
-      }
-      .grid {
-         display: grid;
-         grid-template-columns: repeat(var(--grid-columns), 1fr);
-         gap: 1rem;
-         padding: 1rem;
-      }
-      .col {
-         grid-column: span 12;
-      }
-      @media (min-width: 768px) {
-         .col-6 { grid-column: span 6; }
-         .col-4 { grid-column: span 4; }
-         .col-3 { grid-column: span 3; }
-      }
-   </style>
-</head>
+<!-- Codificare caractere -->
+        <meta charset="UTF-8">
 
-<body>
-   <aside>
-      <div class="logo-area">
-         <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/sigla.png?raw=true" alt="Sigla cu textul 'Școala Gimnazială „Nicu Albu” Piatra Neamț' și elemente grafice în albastru și roșu">
-         <h1>Școala Gimnazială<br>„Nicu Albu”<br>Piatra Neamț</h1>
-      </div>
-      <nav class="side-menu" aria-label="Meniu principal">
-         <a href="index.html" aria-current="page">Prezentare</a>
-         <a href="oferta.html">Oferta educațională</a>
-         <a href="gradinita.html">Grădiniță</a>
-         <a href="pregatitoare.html">Clasa pregătitoare</a>
-         <a href="evaluare.html">Evaluare națională</a>
-         <a href="admitere.html" aria-current="page">Admitere</a>
-         <a href="altfel.html" aria-current="page">Școala Altfel</a>
-         <a href="verde.html" aria-current="page">Săptămâna verde</a>
-         <a href="proiecte.html" aria-current="page">Proiecte</a>
-         <a href="strategie.html" aria-current="page">Strategie</a>
-         <a href="regulamente.html" aria-current="page">Regulamente</a>
-         <a href="personal.html" aria-current="page">Personal</a>
-         <a href="organigrama.html" aria-current="page">Organigrama</a>
-         <a href="contact.html" aria-current="page">Contact</a>
-      </nav>
-   </aside>
+<!-- Vizualizare pagină -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-   <div class="main-area">
-      <style>
-         .banner img {
-            width: 100%;
-            height: auto;
-            max-height: 120px;
-            object-fit: cover;
-         }
-      @media (max-width: 768px) {
-         .banner img {
-            max-height: 120px;
-         }
-      }
-      .top-menu {
-         display: flex;
-         flex-wrap: wrap;
-         margin-top: 0;
-         padding-top: 0.5rem;
-         justify-content: start;
-      }
-      .top-menu a {
-         margin: 0.25rem;
-         text-decoration: none;
-         color: #000;
-         border: 1px solid #000;
-         padding: 0.5rem;
-         flex-grow: 1;
-      }
-      .top-menu a.active {
-         background: #000;
-         color: #fff;
-      }
-   </style>
+<!-- Descriere pagină -->
+        <meta name="description"
+             content="Site-ul oficial al Școlii Gimnaziale „Nicu Albu” Piatra Neamț.
+             Aici găsești informații generale despre școală și link-uri către secțiuni precum istoric, circumscripție, program de lucru, comunicări.">
 
-   <header>
-      <div class="banner">
-         <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/intrare.png?raw=true" alt="Fotografie cu intrarea principală a Școlii Gimnaziale „Nicu Albu” Piatra Neamț, cu ușă dublă, trepte și stema școlii deasupra">
-      </div>
-      <nav class="top-menu" aria-label="Submeniuri">
-         <a href="index.html" class="active">Prezentare</a>
-         <a href="istoric.html">Scurt istoric</a>
-         <a href="circumscriptie.html">Circumscripție</a>
-         <a href="program.html">Program de lucru</a>
-         <a href="comunicari.html">Comunicări</a>
-         <a href="contact.html">Contact</a>
-      </nav>
-   </header>
+<!-- Titlu -->
+        <title>Prezentare</title>
 
-   <main>
-      <section class="grid">
+<!-- Structurare pagină -->
+        <link rel="stylesheet" href="https://scoalanicualbu.github.io/website/prezentare/prezentare.css">
 
-         <div class="col">
-            <h2>Motto:</h2>
-            <p>„Suntem o familie! Împreună construim, învăţăm, inovăm! Suntem o şcoală deschisă, pentru comunitate!”</p>
-            <br>
+    </head>
 
-         <div class="col-1">
-            <p>Şcoala Gimnazială „Nicu Albu” Piatra Neamţ este o şcoală urbană, care se situează în partea de vest a Municipiului Piatra Neamţ, în cartierul Precista, pe strada Ecoului, la numărul 5. </p>
-            <p>În anul 1993, o dată cu construirea unei şcoli noi în cartierul Precista cu scopul de a descongestiona numărul mare de elevi şi clase care funcţionau la școala din acelaşi cartier, Şcoala cu clasele I-VIII Nr. 4 Piatra Neamț, apare, ca organizație nouă, Şcoala cu clasele I-VIII Nr. 10 Piatra Neamţ. </p>
-            <p>Funcţionând din anul şcolar 1993-1994 într-un corp de clădire în construcţie, clădirea Şcolii cu clasele I-VIII Nr. 10 Piatra Neamţ a fost finalizată în 1997 aşa cum atestă procesul verbal de recepţie finală, datat 15.12.1997. </p>
-            <p>Din data de 01.09.2010, prin Decizia Inspectoratului Școlar Județean Neamţ nr. 664 din 13.05.2010, denumirea Şcolii cu clasele I-VIII Nr. 10 Piatra Neamţ s-a modificat în Şcoala cu clasele I-VIII „Nicu Albu” Piatra Neamţ. </p>
-            <p>Prin Hotărârea Consiliului Local al Municipiului Piatra Neamţ nr. 99 din 10.03.2012 privind aprobarea schimbării denumirii unor unităţi şcolare care aparţin reţelei şcolare a învăţământului preuniversitar din Municipiul Piatra Neamţ, începând cu anul şcolar 2012-2013 denumirea unităţii şcolare s-a modificat, respectiv, în Şcoala Gimnazială „Nicu Albu” Piatra Neamţ. </p>
-            <p>Şcoala Gimnazială „Nicu Albu” Piatra Neamţ este o unitate de învăţământ de stat acreditată aparţinând sistemului educaţional preuniversitar, cu grupe și clase structurate pe 3 niveluri: preşcolar, primar şi gimnazial. </p>
-            <p>Sfera educaţională a şcolii cuprinde desfăşurarea simultană a două sisteme, sistemul educaţional tradiţional şi un sistem alternativ de educaţie, sistemul Step by Step. Este prima şcoală din judeţul Neamţ care a experimentat şi aplică sistemul alternativ de educaţie Step by Step din anul școlar 2001-2002. </p>
-            <p>Unitatea de învăţământ şi-a construit un brand din aceasta şi, în prezent, este apreciată şi căutată de părinţii care optează pentru această alternativă educațională aplicată doar pentru învățământul primar. </p>
-            <p>În comparaţie cu sistemul tradiţional, în sistemul educațional Step by Step se foloseşte acelaşi plan-cadru de învăţământ, aceleaşi programe şcolare, dar oferă o altă modalitate de lucru cu elevii: lucrul pe centre de activitate, în care sunt aplicate metode interactive şi individualizate, tot demersul fiind centrat pe elev. </p>
-            <p>Clasele de învăţământ primar în care se aplică alternativa educaţională Step by Step lucrează în programul „şcolii complete” (zilnic, între orele 08.00-16.00) şi prin implicarea considerabilă a părinţilor. În cele două spaţii amenajate ca săli cu mese se poate servi masa de prânz de către elevi, prin servicii de catering, suportate financiar de părinţi. </p>
-            <br>
-         </div>
-      </section>
-   </main>
-   </div>
-</body>
+    <body>
+
+<!-- Link "Sari la conținut" -->
+        <a href="#main-content" id="skipToContinut" class="skip-link">Mergi la conținutul paginii</a>
+
+<!-- SECȚIUNE MENIU -->
+        <aside id="main-menu" aria-label="Secțiunea Meniu">
+
+            <header>
+
+<!-- Siglă -->
+                <div id="sigla-region" role="region" aria-labelledby="sigla-label">
+                    <div id="sigla-label" class="side-name sr-only">Sigla școlii</div>
+                    <div class="img-box">
+                        <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/sigla.png?raw=true" alt="Sigla Școlii Gimnaziale „Nicu Albu” Piatra Neamț">
+                    </div>
+                </div>
+
+<!-- Denumire -->
+                <div id="denumire-region" role="region" aria-labelledby="denumire-label">
+                    <p id="denumire-label" class="side-name sr-only">Denumirea școlii</p>
+                    <p class="side-name">Școala Gimnazială<br>„Nicu Albu”<br>Piatra Neamț</p>
+                </div>
+
+            </header>
+
+<!-- Meniu site -->
+            <nav id="menu" class="side-menu" aria-label="Meniu site">
+                <ul>
+                    <li aria-current="page"><a href="index.html" class="active">Prezentare</a></li>
+                    <li><a href="oferta.html">Oferta educațională</a></li>
+                    <li><a href="gradinita.html" >Grădiniță</a></li>
+                    <li><a href="pregatitoare.html">Clasa pregătitoare</a></li>
+                    <li><a href="evaluare.html">Evaluare națională</a></li>
+                    <li><a href="admitere.html">Admitere</a></li>
+                    <li><a href="altfel.html">Școala Altfel</a></li>
+                    <li><a href="verde.html">Săptămâna verde</a></li>
+                    <li><a href="proiecte.html">Proiecte</a></li>
+                    <li><a href="strategie.html">Strategie</a></li>
+                    <li><a href="regulamente.html">Regulamente</a></li>
+                    <li><a href="personal.html">Personal</a></li>
+                    <li><a href="organigrama.html">Organigrama</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+<!-- Buton Meniu -->
+        <button aria-label="Buton Meniu" id="menu-toggle"  aria-expanded="false" tabindex="0">&#9776;</button>
+
+<!-- SECȚIUNE CONȚINUT -->
+        <main aria-label="Conținut pagină" id="main-content"  class="content">
+
+<!-- Banner -->
+            <section aria-labelledby="banner-label" class="banner">
+
+                <img  src="https://github.com/scoalanicualbu/website/blob/main/prezentare/intrare.png?raw=true" alt="Intrarea în Școala Gimnazială „Nicu Albu” Piatra Neamț">
+                <div id="banner-label" class="sr-only">
+                    <h1>Școala Gimnazială „Nicu Albu” Piatra Neamț</h1>
+                </div>
+
+            </section>
+
+<!-- Meniu pagină -->
+            <nav aria-label="Meniu pagină" class="page-menu">
+                <ul>
+                    <li><a href="istoric.html">Scurt istoric</a></li>
+                    <li><a href="circumscriptie.html">Circumscripție</a></li>
+                    <li><a href="program.html">Program de lucru</a></li>
+                    <li><a href="comunicari.html">Comunicări</a></li>
+                </ul>    
+            </nav>
+
+<!-- Subsecțiuni de conținut -->
+
+<!-- Subsecțiune Text -->
+            <section aria-labelledby="prezentare-label" class="subsection-text">
+
+                <div style="margin-top: 0.6rem; margin-bottom: 0.5rem">
+                    <h2>Motto:</h2>
+                </div>
+                <p style="margin-top: 0; margin-bottom: 1.3rem; font-weight: bold;">Suntem o familie! Împreună construim, învățăm, inovăm! Suntem o școală deschisă, pentru comunitate!</p>
+
+                <article>
+
+                    <header>
+                        <div id="prezentare-label" class="sr-only">
+                            <h2>Prezentare</h2>
+                        </div>
+                    </header>
+
+                    <div class="coloane">
+                        <p>Şcoala Gimnazială „Nicu Albu” Piatra Neamţ este o şcoală urbană, care se situează în partea de vest a Municipiului Piatra Neamţ, în cartierul Precista, pe strada Ecoului, la numărul 5.</p>
+                        <p>În anul 1993, o dată cu construirea unei şcoli noi în cartierul Precista cu scopul de a descongestiona numărul mare de elevi şi clase care funcţionau la școala din acelaşi cartier, Şcoala cu clasele I-VIII Nr. 4 Piatra Neamț, apare, ca organizație nouă, Şcoala cu clasele I-VIII Nr. 10 Piatra Neamţ.</p>
+                        <p>Funcţionând din anul şcolar 1993-1994 într-un corp de clădire în construcţie, clădirea Şcolii cu clasele I-VIII Nr. 10 Piatra Neamţ a fost finalizată în 1997 aşa cum atestă procesul verbal de recepţie finală, datat 15.12.1997.</p>
+                        <p>Din data de 01.09.2010, prin Decizia Inspectoratului Școlar Județean Neamţ nr. 664 din 13.05.2010, denumirea Şcolii cu clasele I-VIII Nr. 10 Piatra Neamţ s-a modificat în Şcoala cu clasele I-VIII „Nicu Albu” Piatra Neamţ.</p>
+                        <p>Prin Hotărârea Consiliului Local al Municipiului Piatra Neamţ nr. 99 din 10.03.2012 privind aprobarea schimbării denumirii unor unităţi şcolare care aparţin reţelei şcolare a învăţământului preuniversitar din Municipiul Piatra Neamţ, începând cu anul şcolar 2012-2013 denumirea unităţii şcolare s-a modificat, respectiv, în Şcoala Gimnazială „Nicu Albu” Piatra Neamţ.</p>
+                        <p>Şcoala Gimnazială „Nicu Albu” Piatra Neamţ este o unitate de învăţământ de stat acreditată aparţinând sistemului educaţional preuniversitar, cu grupe și clase structurate pe 3 niveluri: preşcolar, primar şi gimnazial.</p>
+                        <p>Sfera educaţională a şcolii cuprinde desfăşurarea simultană a două sisteme, sistemul educaţional tradiţional şi un sistem alternativ de educaţie, sistemul Step by Step. Este prima şcoală din judeţul Neamţ care a experimentat şi aplică sistemul alternativ de educaţie Step by Step din anul școlar 2001-2002.</p>
+                        <p>Unitatea de învăţământ şi-a construit un brand din aceasta şi, în prezent, este apreciată şi căutată de părinţii care optează pentru această alternativă educațională aplicată doar pentru învățământul primar.</p>
+                        <p>În comparaţie cu sistemul tradiţional, în sistemul educațional Step by Step se foloseşte acelaşi plan-cadru de învăţământ, aceleaşi programe şcolare, dar oferă o altă modalitate de lucru cu elevii: lucrul pe centre de activitate, în care sunt aplicate metode interactive şi individualizate, tot demersul fiind centrat pe elev.</p>
+                        <p>Clasele de învăţământ primar în care se aplică alternativa educaţională Step by Step lucrează în programul „şcolii complete” (zilnic, între orele 08:00-16:00) şi prin implicarea considerabilă a părinţilor. În cele două spaţii amenajate ca săli cu mese se poate servi masa de prânz de către elevi, prin servicii de catering, suportate financiar de părinţi.</p>
+                    </div>
+
+                </article>
+
+            </section>
+
+<!-- Subsecțiune Noutăți -->
+            <section aria-labelledby="noutati-label" class="subsection-news">
+
+                <div id="noutati-label" style="margin-bottom: 0.7rem">
+                    <h2>Noutăți:</h2>
+                </div>
+                <ul>
+                    <li>
+                        <a aria-label="Condiții specifice" href="https://drive.google.com/file/d/1CLVRw1GlJCwDIsDDFJc56dk1OkiulyMg/view?usp=sharing" target="_blank" rel="noopener noreferrer">Condiții specifice ocupării posturilor didactice vacante pentru anul școlar 2025-2026</a>
+                    </li>
+                </ul>
+
+            </section> 
+
+<!-- Subsecțiune Legături -->
+            <section aria-labelledby="legaturi-label" class="subsection-connections">
+
+                <div id="legaturi-label" class="sr-only">
+                    <h2>Legături:</h2>
+                </div>
+                <ul>
+                    <li>
+                        <a aria-label="Legătură către Ministerul Educației și Cercetării" href="https://www.edu.ro" target="_blank" rel="noopener noreferrer" class="subsection-connections">
+                            <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/mec.png?raw=true" alt="Sigla Ministerului Educației și Cercetării">
+                            <span>Ministerul Educației și Cercetării</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a aria-label="Legătură către Inspectoratul Școlar Județean Neamț" href="https://www.isjneamt.ro" target="_blank" rel="noopener noreferrer" class="subsection-connections">
+                            <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/isjneamt.png?raw=true" alt="Sigla Inspectoratului Școlar Județean Neamț">
+                            <span>Inspectoratul Școlar Județean Neamț</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a aria-label="Legătură către Centrul Județean de Resurse și Asistență Educațională Neamț" href="https://www.cjrae-neamt.ro" target="_blank" rel="noopener noreferrer" class="subsection-connections">
+                            <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/cjraeneamt.png?raw=true" alt="Sigla Centrului Județean de Resurse și Asistență Educațională Neamț">
+                            <span>Centrul Județean de Resurse și Asistență Educațională Neamț</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a aria-label="Legătură către Casa Corpului Didactic Neamț" href="https://www.ccdneamt.ro"  target="_blank" rel="noopener noreferrer" class="subsection-connections">
+                            <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/ccdneamt.png?raw=true" alt="Sigla Casei Corpului Didactic Neamț">
+                            <span>Casa Corpului Didactic Neamț</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </section>
+
+        </main>
+
+<!-- Subsol pagină -->
+        <footer aria-labelledby="subsol" class="footer-info">
+
+            <div  id="subsol" class="footer-box">
+                <span>&copy; 1993-<span id="year"></span> Școala Gimnazială „Nicu Albu” Piatra Neamț</span>
+            </div>
+
+        </footer>
+
+        <script src="https://scoalanicualbu.github.io/website/prezentare/prezentare.js"></script>
+
+    </body>
 
 </html>
-
