@@ -456,7 +456,7 @@ border-radius: 4px;
                     }
 
 /* Subsecțiune Noutăți */
-                    .subsection-news {
+                    .subsection-informatii {
 border: 0px solid #404040;
 border-radius: 4px;
                         margin-top: 1rem;
@@ -470,7 +470,7 @@ border-radius: 4px;
                         grid-column: span 12;
                     }
 
-                        .subsection-news ul {
+                        .subsection-informatii ul {
                             margin-top: 0;
                             margin-bottom: 0;
                             margin-left: 0;
@@ -482,7 +482,7 @@ border-radius: 4px;
                             list-style: none;
                         }
 
-                            .subsection-news li {
+                            .subsection-informatii li {
                                 margin-top: 0;
                                 margin-bottom: 0;
                                 margin-left: 0;
@@ -494,7 +494,7 @@ border-radius: 4px;
                                 list-style: none;
                             }
 
-                                .subsection-news li:hover {
+                                .subsection-informatii li:hover {
                                     margin-top: 0;
                                     margin-bottom: 0;
                                     margin-left: 0;
@@ -506,7 +506,7 @@ border-radius: 4px;
                                     text-shadow: 0.4px 0 currentcolor, -0.4px 0 currentcolor;
                                 }
 
-                                .subsection-news a {
+                                .subsection-informatii a {
 border: 0px solid #404040;
 border-radius: 4px;
                                     margin-top: -0.5rem;
@@ -538,7 +538,7 @@ border-radius: 4px;
                         grid-column: span 12;
                     }
 
-                        .subsection-connections ul {
+                        .subsection-legaturi ul {
 border: 0px solid #404040;
 border-radius: 4px;
                             margin-top: 1rem;
@@ -556,7 +556,7 @@ border-radius: 4px;
                             list-style: none;
                         }
 
-                            .subsection-connections li {
+                            .subsection-legaturi li {
 border: 1px solid #404040;
 border-radius: 4px;
                                 margin-top: 0;
@@ -570,14 +570,14 @@ border-radius: 4px;
                                 flex-grow: 1;
                             }
 
-                                .subsection-connections li:hover {
+                                .subsection-legaturi li:hover {
 border: 1px solid #000000;
 border-radius: 4px;
                                     text-shadow: 0.4px 0 currentcolor, -0.4px 0 currentcolor;
                                     background-color: #F8F8F8;
                                 }
 
-                                .subsection-connections img {
+                                .subsection-legaturi img {
 border: 1px solid #404040;
 border-radius: 4px;
                                     margin-top: 0;
@@ -593,7 +593,7 @@ border-radius: 4px;
                                     background-color: #FFFFFF;
                                 }
 
-                                .subsection-connections a {
+                                .subsection-legaturi a {
 border: 0px solid #404040;
 border-radius: 4px;
                                     margin-top: 0;
@@ -678,7 +678,7 @@ border-radius: 4px;
                         column-count: 2;
                         gap: 1.5rem;
                     }
-                    .subsection-connections ul {
+                    .subsection-legaturi ul {
                         gap: 1.5rem;
                     }
                 }
@@ -694,7 +694,7 @@ border-radius: 4px;
                     .page-menu ul {
                         gap: 1rem;
                     }
-                    .subsection-connections ul {
+                    .subsection-legaturi ul {
                         gap: 1rem;
                     }
                 }
@@ -710,7 +710,7 @@ border-radius: 4px;
                     .page-menu ul {
                         gap: 1rem;
                     }
-                    .subsection-connections ul {
+                    .subsection-legaturi ul {
                         display: grid;
                         grid-template-columns: repeat(2, 1fr);
                         gap: 1rem;
@@ -729,7 +729,7 @@ border-radius: 4px;
                         grid-template-columns: repeat(2, 1fr);
                         gap: 1rem;
                     }
-                    .subsection-connections ul {
+                    .subsection-legaturi ul {
                         display: grid;
                         grid-template-columns: repeat(2, 1fr);
                         gap: 1rem;
@@ -748,11 +748,11 @@ border-radius: 4px;
                         grid-template-columns: repeat(2, 1fr);
                         gap: 1rem;
                     }
-                    .subsection-connections ul {
+                    .subsection-legaturi ul {
                         grid-template-columns: repeat(1, 1fr);
                         gap: 0.5rem;
                     }
-                    .subsection-connections a {
+                    .subsection-legaturi a {
                         text-align: left;  
                     }
                 }
@@ -769,11 +769,11 @@ border-radius: 4px;
                         grid-template-columns: repeat(1, 1fr);
                        gap: 0.5rem;
                     }
-                    .subsection-connections ul {
+                    .subsection-legaturi ul {
                         grid-template-columns: repeat(1, 1fr);
                         gap: 0.5rem;
                     }
-                    .subsection-connections a {
+                    .subsection-legaturi a {
                         text-align: left;  
                     }
                 }
