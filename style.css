@@ -150,7 +150,7 @@ border-right: 1px solid #404040;
 
 /* Siglă */
                     .img-box {
-border: 0px solid #404040;
+border: 1px solid #404040;
 border-radius: 4px;
                         margin-top: 0.5rem;
                         margin-bottom: 0.5rem;
@@ -182,7 +182,7 @@ border-radius: 50%;
 
 /* Denumire */
                     .side-name {
-border: 0px solid #404040;
+border: 1px solid #404040;
 border-radius: 4px;
                         margin-top: 0.5rem;
                         margin-bottom: 1.5rem;
@@ -202,7 +202,7 @@ border-radius: 4px;
 
 /* Meniu site */
                     .side-menu ul {
-border: 0px solid #404040;
+border: 1px solid #404040;
 border-radius: 4px;
                         margin-top: 0;
                         margin-bottom: 0;
@@ -298,7 +298,7 @@ border-radius: 4px;
 
 /* Banner */
                     .banner {
-border: 0px solid #404040;
+border: 1px solid #404040;
 border-radius: 4px;
                         margin-top: 0;
                         margin-bottom: 0.5rem;
@@ -329,7 +329,7 @@ border-radius: 4px;
 
 /* Meniu pagină */
                     .page-menu {
-border: 0px solid #404040;
+border: 1px solid #404040;
 border-radius: 4px;
                         margin-top: 0.5rem;
                         margin-bottom: 1rem;
@@ -466,7 +466,7 @@ border-radius: 4px;
 
 /* Subsecțiune Text */
                     .subsection-text {
-border: 0px solid #404040;
+border: 1px solid #404040;
 border-radius: 4px;
                         margin-top: 0;
                         margin-bottom: 1rem;
@@ -482,7 +482,7 @@ border-radius: 4px;
 
 /* Subsecțiune Noutăți */
                     .subsection-informatii {
-border: 0px solid #404040;
+border: 1px solid #404040;
 border-radius: 4px;
                         margin-top: 0;
                         margin-bottom: 1rem;
@@ -550,7 +550,7 @@ border-radius: 4px;
 
 /* Subsecțiune Legături */
                     .subsection-legaturi {
-border: 0px solid #404040;
+border: 1px solid #404040;
 border-radius: 4px;
                         margin-top: auto;
                         margin-bottom: 1rem;
@@ -639,7 +639,7 @@ border-radius: 4px;
 
 /* Subsol pagină */
                 .footer {
-border: 0px solid #404040;
+border: 1px solid #404040;
 border-radius: 4px;
                     margin-top: 0;
                     margin-bottom: 0;
@@ -653,7 +653,7 @@ border-radius: 4px;
                 }
 
                     .footer-informatii {
-border: 0px solid #404040;
+border: 1px solid #404040;
 border-radius: 4px;
                         margin-top: 0;
                         margin-bottom: 0;
@@ -690,15 +690,8 @@ border-radius: 4px;
                         padding-left: 1rem;
                         padding-right: 1rem;
                     }
-                    .page-menu ul {
-                        gap: 1.5rem;
-                    }
                     .coloane {
                         column-count: 2;
-                        column-gap: 1.5rem;
-                    }
-                    .subsection-legaturi ul {
-                        gap: 1.5rem;
                     }
                     .footer {
                         margin-left: 16rem;
