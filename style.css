@@ -264,6 +264,19 @@ border-radius: 4px;
                                     font-weight: bold;
                                 }
 
+                                .side-menu a.inactive {
+                                    margin-top: 0;
+                                    margin-bottom: 0;
+                                    margin-left: 0;
+                                    margin-right: 0;
+                                    padding-top: 0.3rem;
+                                    padding-bottom: 0.7rem;
+                                    padding-left: 0.5rem;
+                                    padding-right: 0.5rem;
+                                    height: 2.3rem;
+                                    font-size: 1.3rem;
+                                }
+
 /* Secțiune Conținut */
                 .content {
 border: 0px solid #404040;
@@ -340,11 +353,22 @@ border-radius: 4px;
                             padding-bottom: 0;
                             padding-left: 0;
                             padding-right: 0;
-                            grid-template-columns: repeat(4, 1fr);
                             display: grid;
                             gap: 2rem;
                             list-style: none;
                         }
+
+                            .page-menu .trei {
+                                grid-template-columns: repeat(3, 1fr);
+                            }
+
+                            .page-menu .patru {
+                                grid-template-columns: repeat(4, 1fr);
+                            }
+
+                            .page-menu .sase {
+                                grid-template-columns: repeat(6, 1fr);
+                            }
 
                             .page-menu li {
 border: 1px solid #404040;
@@ -670,6 +694,7 @@ border-radius: 4px;
                         gap: 1.5rem;
                     }
                     .coloane {
+                        column-count: 2;
                         column-gap: 1.5rem;
                     }
                     .subsection-legaturi ul {
@@ -702,14 +727,14 @@ border-radius: 4px;
                         margin-bottom: 0.5rem;
                     }
                     .page-menu ul {
-                        gap: 1rem;
+                        gap: 1.5rem;
                     }
                     .subsection-text {
                         margin-bottom: 0.5rem;
                     }
                     .coloane {
                         column-count: 2;
-                        column-gap: 1rem;
+                        column-gap: 1.5rem;
                     }
                     .subsection-informatii {
                         margin-bottom: 0.5rem;
@@ -718,7 +743,7 @@ border-radius: 4px;
                         margin-bottom: 0;
                     }
                     .subsection-legaturi ul {
-                        gap: 1rem;
+                        gap: 1.5rem;
                     }
                     .footer {
                         margin-left: 15.5rem;
@@ -850,8 +875,10 @@ border-radius: 4px;
                         padding-top: 0;
                         padding-bottom: 0;
                     }
-                    .page-menu ul {
+                    .page-menu .patru {
                         grid-template-columns: repeat(2, 1fr);
+                    }
+                    .page-menu ul {
                         gap: 0.5rem;
                     }
                     .subsection-text {
@@ -902,8 +929,10 @@ border-radius: 4px;
                         padding-top: 0;
                         padding-bottom: 0;
                     }
-                    .page-menu ul {
+                    .page-menu .patru {
                         grid-template-columns: repeat(2, 1fr);
+                    }
+                    .page-menu ul {
                         gap: 0.5rem;
                     }
                     .subsection-text {
@@ -957,8 +986,10 @@ border-radius: 4px;
                         padding-top: 0;
                         padding-bottom: 0;
                     }
-                    .page-menu ul {
+                    .4 {
                         grid-template-columns: repeat(1, 1fr);
+                    }
+                    .page-menu ul {
                         gap: 0.5rem;
                     }
                     .subsection-text {
