@@ -150,7 +150,7 @@ border-right: 1px solid #404040;
 
 /* Siglă */
                     .img-box {
-border: 1px solid #404040;
+border: 0px solid #404040;
 border-radius: 4px;
                         margin-top: 0.5rem;
                         margin-bottom: 0.5rem;
@@ -182,7 +182,7 @@ border-radius: 50%;
 
 /* Denumire */
                     .side-name {
-border: 1px solid #404040;
+border: 0px solid #404040;
 border-radius: 4px;
                         margin-top: 0.5rem;
                         margin-bottom: 1.5rem;
@@ -202,7 +202,7 @@ border-radius: 4px;
 
 /* Meniu site */
                     .side-menu ul {
-border: 1px solid #404040;
+border: 0px solid #404040;
 border-radius: 4px;
                         margin-top: 0;
                         margin-bottom: 0;
@@ -298,10 +298,10 @@ border-radius: 4px;
 
 /* Banner */
                     .banner {
-border: 1px solid #404040;
+border: 0px solid #404040;
 border-radius: 4px;
                         margin-top: 0;
-                        margin-bottom: 0.5rem;
+                        margin-bottom: 1rem;
                         margin-left: 0;
                         margin-right: 0;
                         padding-top: 0;
@@ -329,9 +329,9 @@ border-radius: 4px;
 
 /* Meniu pagină */
                     .page-menu {
-border: 1px solid #404040;
+border: 0px solid #404040;
 border-radius: 4px;
-                        margin-top: 0.5rem;
+                        margin-top: 0;
                         margin-bottom: 1rem;
                         margin-left: 0;
                         margin-right: 0;
@@ -466,7 +466,7 @@ border-radius: 4px;
 
 /* Subsecțiune Text */
                     .subsection-text {
-border: 1px solid #404040;
+border: 0px solid #404040;
 border-radius: 4px;
                         margin-top: 0;
                         margin-bottom: 1rem;
@@ -482,7 +482,7 @@ border-radius: 4px;
 
 /* Subsecțiune Noutăți */
                     .subsection-informatii {
-border: 1px solid #404040;
+border: 0px solid #404040;
 border-radius: 4px;
                         margin-top: 0;
                         margin-bottom: 1rem;
@@ -550,7 +550,7 @@ border-radius: 4px;
 
 /* Subsecțiune Legături */
                     .subsection-legaturi {
-border: 1px solid #404040;
+border: 0px solid #404040;
 border-radius: 4px;
                         margin-top: auto;
                         margin-bottom: 1rem;
@@ -639,7 +639,7 @@ border-radius: 4px;
 
 /* Subsol pagină */
                 .footer {
-border: 1px solid #404040;
+border: 0px solid #404040;
 border-radius: 4px;
                     margin-top: 0;
                     margin-bottom: 0;
@@ -653,7 +653,7 @@ border-radius: 4px;
                 }
 
                     .footer-informatii {
-border: 1px solid #404040;
+border: 0px solid #404040;
 border-radius: 4px;
                         margin-top: 0;
                         margin-bottom: 0;
@@ -685,10 +685,19 @@ border-radius: 4px;
                     aside {
                         min-height: 100vh;
                     }
+                    .side-name {
+                        margin-bottom: 1rem;
+                    }
+                    .side-menu ul {
+                        margin-top: 0;
+                    }
                     .content {
                         margin-left: 15rem;
                         padding-left: 1rem;
                         padding-right: 1rem;
+                    }
+                    .banner {
+                        margin-bottom: 0.5rem;
                     }
                     .coloane {
                         column-count: 2;
@@ -714,6 +723,9 @@ border-radius: 4px;
                         padding-left: 0.5rem;
                         padding-right: 0.5rem;
                         padding-bottom: 0.5rem;
+                    }
+                    .banner {
+                        margin-bottom: 0.5rem;
                     }
                     .page-menu {
                         margin-top: 0;
@@ -979,7 +991,7 @@ border-radius: 4px;
                         padding-top: 0;
                         padding-bottom: 0;
                     }
-                    .4 {
+                    .page-menu .patru {
                         grid-template-columns: repeat(1, 1fr);
                     }
                     .page-menu ul {
