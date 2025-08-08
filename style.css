@@ -519,18 +519,6 @@ border-radius: 4px;
                                 list-style: none;
                             }
 
-                                .subsection-informatii li:hover {
-                                    margin-top: 0;
-                                    margin-bottom: 0;
-                                    margin-left: 0;
-                                    margin-right: 0;
-                                    padding-top: 0.5rem;
-                                    padding-bottom: 0.5rem;
-                                    padding-left: 0;
-                                    padding-right: 0;
-                                    text-shadow: 0.4px 0 currentcolor, -0.4px 0 currentcolor;
-                                }
-
                                 .subsection-informatii a {
 border: 0px solid #404040;
 border-radius: 4px;
@@ -547,6 +535,24 @@ border-radius: 4px;
                                     text-decoration: none;
                                     color: #404040;
                                 }
+
+                                    .subsection-informatii a:hover {
+border: 0px solid #404040;
+border-radius: 4px;
+                                        margin-top: -0.5rem;
+                                        margin-bottom: -0.5rem;
+                                        margin-left: -0.5rem;
+                                        margin-right: 0;
+                                        padding-top: 0.5rem;
+                                        padding-bottom: 0.5rem;
+                                        padding-left: 0.5rem;
+                                        padding-right: 0.5rem;
+                                        min-height: 2.3rem;
+                                        display: inline-block;
+                                        text-decoration: none;
+                                        color: #404040;
+                                        text-shadow: 0.4px 0 currentcolor, -0.4px 0 currentcolor;
+                                    }
 
 /* Subsecțiune Legături */
                     .subsection-legaturi {
