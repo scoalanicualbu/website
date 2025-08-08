@@ -149,7 +149,7 @@ border-right: 1px solid #404040;
                     }
 
 /* Siglă */
-                    .img-box {
+                    .side-logo {
 border: 0px solid #404040;
 border-radius: 4px;
                         margin-top: 0.5rem;
@@ -164,7 +164,7 @@ border-radius: 4px;
                         height: auto;
                     }
 
-                        aside img {
+                        .side-logo img {
 border: 1px solid #404040;
 border-radius: 50%;
                             margin-top: 0;
