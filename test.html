@@ -1304,10 +1304,10 @@ border-radius: 4px;
                         gap: 0.5rem;
                     }
                     .wrap-program {
-                        height: 25rem;
+                        height: 24.5rem;
                     }
                     .wrap-tabel {
-                        height: 25rem;
+                        height: 24.5rem;
                     }
                     .subsection-informatii {
                         margin-bottom: 0;
@@ -1392,7 +1392,7 @@ border-radius: 4px;
                     }
                 }
 
-                @media (min-width: 385px) and (max-width: 640px) {
+                @media (min-width: 480px) and (max-width: 640px) {
                     aside {
                         border-radius: 4px;
                     }
@@ -1434,6 +1434,75 @@ border-radius: 4px;
                     }
                     #program .continut-4 {
                         grid-column: span 6;
+                    }
+                    #program .wrap-program{
+                        display: none;
+                    }
+                    #program .wrap-tabel {
+                        height: 25rem;
+                    }
+                    .subsection-informatii {
+                        margin-bottom: 0;
+                    }
+                    .subsection-legaturi {
+                        margin-bottom: 0;
+                    }
+                    .subsection-legaturi ul {
+                        display: grid;
+                        grid-template-columns: repeat(1, 1fr);
+                        gap: 0.5rem;
+                    }
+                    .subsection-legaturi a {
+                        text-align: left;  
+                    }
+                    .footer {
+                        margin-left: 0;
+                        margin-right: 0;
+                    }
+                }
+
+                @media (min-width: 385px) and (max-width: 480px) {
+                    aside {
+                        border-radius: 4px;
+                    }
+                    .side-name {
+                        margin-bottom: 0.5rem;
+                    }
+                    .side-menu ul {
+                        margin-top: 0;
+                        padding-top: 0;
+                    }
+                    .content {
+                        padding-bottom: 0;
+                        padding-left: 0;
+                        padding-right: 0;
+                    }
+                    .banner {
+                        margin-bottom: 0;
+                    }
+                    .page-menu {
+                        margin-bottom: 1rem;
+                        padding-top: 0;
+                        padding-bottom: 0;
+                    }
+                    .page-menu .patru {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                    .page-menu ul {
+                        gap: 0.5rem;
+                    }
+                    .subsection-text {
+                        margin-bottom: 0
+                    }
+                    .coloane {
+                        column-count: 1;
+                    }
+                    .subsection-continut {
+                        margin-bottom: 0;
+                        gap: 0.5rem;
+                    }
+                    #program .continut-4 {
+                        grid-column: span 12;
                     }
                     #program .wrap-program{
                         display: none;
