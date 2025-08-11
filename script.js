@@ -1,7 +1,7 @@
 // Secțiune Meniu
 
 // Actualizare stare Meniu
-            function updateUI() {
+            function updateMeniu() {
                 const aside = document.querySelector('aside');
                 const toggleBtn = document.getElementById('menu-toggle');
                 const width = window.innerWidth;
@@ -32,11 +32,58 @@
                     }
             }
 
-// Inițializare Meniu la încărcare pagină
-                window.addEventListener('load', updateUI);
+// Secțiune Conținut
 
-// Inițializare Meniu la redimensionare pagină
-                window.addEventListener('resize', updateUI);
+// Calculare spațiere prin interpolare liniară
+            function getGap() {
+                const maxGap = 2;
+                const minGap = 0.5;
+                const maxVW = 2160;
+                const minVW = 300;
+                const VW = window.innerWidth;
+                if (VW >= maxVW) {
+                    return maxGap + 'rem';
+                }
+                if (VW <= minVW) {
+                    return minGap + 'rem';
+                }
+                const ratio = (VW - minVW) / (maxVW - minVW);
+                const valueGap = minGap + ratio * (maxGap - minGap);
+                return valueGap.toFixed(2) + 'rem';
+            }
+
+            function updateGap() {
+                const sizeGap = getGap();
+                document.documentElement.style.setProperty('--gap', sizeGap);
+            }
+
+// Setare înălțime imagine "Program de lucru"
+            function updateProgram() {
+                const programSecretariat = document.getElementById('program-secretariat');
+                const programImagine = document.querySelector('#imagine-lucru img');
+                if (programSecretariat && programImagine) {
+                    const heightDiv = programSecretariat.offsetHeight;
+                    programImagine.style.height = heightDiv + 'px';
+                }
+            }
+
+// Funcții de inițializare
+
+// Inițializare setări la încărcare pagină
+                window.addEventListener('load', () => {
+                    updateMeniu();
+                    updateGap();
+                    updateProgram();
+                });
+
+// Inițializare setări la redimensionare pagină
+                window.addEventListener('resize', () => {
+                    updateMeniu();
+                    updateGap();
+                    updateProgram();
+                });
+
+// Funcții de gestionare evenimente
 
 // Afișare sau ascundere Meniu la click pe buton
                 document.getElementById('menu-toggle').addEventListener('click', () => {
@@ -88,7 +135,7 @@
                 }
             }, { passive: false });
 
-// Secțiune subsol
+// Subsol pagină
             document.addEventListener('DOMContentLoaded', function() {
                 document.getElementById('year').textContent = new Date().getFullYear();
                 });
