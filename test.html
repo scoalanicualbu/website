@@ -58,6 +58,10 @@
 
         <style>
 
+            :root {
+                --gap: 2rem; /* valoarea implicită, va fi suprascrisă de JS */
+            }
+
             * {
                 box-sizing: border-box;
             }
@@ -413,7 +417,7 @@ border-radius: 4px;
                             padding-left: 0;
                             padding-right: 0;
                             display: grid;
-                            gap: 2rem;
+                            gap: var(--gap);
                             list-style: none;
                         }
 
@@ -534,7 +538,7 @@ border-radius: 4px;
                         padding-left: 0;
                         padding-right: 0;
                         column-count: 4;
-                        column-gap: 2rem;
+                        column-gap: var(--gap);
                         text-align: justify;
                     }
 
@@ -669,7 +673,7 @@ border-radius: 4px;
                             padding-right: 0.5rem;
                             grid-template-columns: repeat(4, 1fr);
                             display:grid;
-                            gap: 2rem;
+                            gap: var(--gap);
                             align-items: center;
                             list-style: none;
                         }
@@ -744,7 +748,7 @@ border-radius: 4px;
                         padding-right: 0.5rem;
                         display: grid;
                         grid-template-columns: repeat(12, 1fr);
-                        gap: 2rem;
+                        gap: var(--gap);
                     }
 
                         .continut-1 {
@@ -759,6 +763,7 @@ border-radius: 4px;
                             padding-left: 0;
                             padding-right: 0;
                             grid-column: span 1;
+                            height: auto;
                             display: flex;
                             flex-direction: column;
                             flex-grow: 1;
@@ -776,6 +781,7 @@ border-radius: 4px;
                             padding-left: 0;
                             padding-right: 0;
                             grid-column: span 2;
+                            height: auto;
                             display: flex;
                             flex-direction: column;
                             flex-grow: 1;
@@ -793,6 +799,7 @@ border-radius: 4px;
                             padding-left: 0;
                             padding-right: 0;
                             grid-column: span 3;
+                            height: auto;
                             display: flex;
                             flex-direction: column;
                             flex-grow: 1;
@@ -830,6 +837,7 @@ border-radius: 4px;
                             padding-left: 0;
                             padding-right: 0;
                             grid-column: span 5;
+                            height: auto;
                             display: flex;
                             flex-direction: column;
                             flex-grow: 1;
@@ -847,6 +855,7 @@ border-radius: 4px;
                             padding-left: 0;
                             padding-right: 0;
                             grid-column: span 6;
+                            height: auto;
                             display: flex;
                             flex-direction: column;
                             flex-grow: 1;
@@ -864,6 +873,7 @@ border-radius: 4px;
                             padding-left: 0;
                             padding-right: 0;
                             grid-column: span 7;
+                            height: auto;
                             display: flex;
                             flex-direction: column;
                             flex-grow: 1;
@@ -881,6 +891,7 @@ border-radius: 4px;
                             padding-left: 0;
                             padding-right: 0;
                             grid-column: span 8;
+                            height: auto;
                             display: flex;
                             flex-direction: column;
                             flex-grow: 1;
@@ -898,6 +909,7 @@ border-radius: 4px;
                             padding-left: 0;
                             padding-right: 0;
                             grid-column: span 9;
+                            height: auto;
                             display: flex;
                             flex-direction: column;
                             flex-grow: 1;
@@ -915,6 +927,7 @@ border-radius: 4px;
                             padding-left: 0;
                             padding-right: 0;
                             grid-column: span 10;
+                            height: auto;
                             display: grid;
                             grid-template-columns: repeat(10, 1fr);
                         }
@@ -931,6 +944,7 @@ border-radius: 4px;
                             padding-left: 0;
                             padding-right: 0;
                             grid-column: span 11;
+                            height: auto;
                             display: flex;
                             flex-direction: column;
                             flex-grow: 1;
@@ -948,13 +962,14 @@ border-radius: 4px;
                             padding-left: 0;
                             padding-right: 0;
                             grid-column: span 12;
+                            height: auto;
                             display: flex;
                             flex-direction: column;
                             flex-grow: 1;
                         }
 
                         .content-imagine {
-border: 1px solid red;
+border: 0px solid #404040;
 border-radius: 4px;
                             margin-top: 0;
                             margin-bottom: 0;
@@ -974,6 +989,7 @@ border-radius: 4px;
                             }
 
                             .wrap-size {
+                                height: 0;
                             }
 
                             .wrap-show {
@@ -1023,7 +1039,7 @@ border-collapse: collapse;
                                 padding-right: 0.5rem;
                                 width: 100%;
                                 max-width: 100%;
-                        }
+                            }
 
                                 table tr:first-child th {
                                     border-top: 0;
@@ -1043,31 +1059,31 @@ border-collapse: collapse;
                                     border-right: 0;
                                 }
 
-                            .content-tabel th {
+                                .content-tabel th {
 border: 1px solid #404040;
 border-radius: 4px;
-                                margin-top: 0;
-                                margin-bottom: 0;
-                                margin-left: 0;
-                                margin-right: 0;
-                                padding-top: 0.5rem;
-                                padding-bottom: 0.5rem;
-                                padding-left: 0.5rem;
-                                padding-right: 0.5rem;
-                                background-color: #F8F8F8;
-                        }
+                                    margin-top: 0;
+                                    margin-bottom: 0;
+                                    margin-left: 0;
+                                    margin-right: 0;
+                                    padding-top: 0.5rem;
+                                    padding-bottom: 0.5rem;
+                                    padding-left: 0.5rem;
+                                    padding-right: 0.5rem;
+                                    background-color: #F8F8F8;
+                                }
 
-                            .content-tabel td {
+                                .content-tabel td {
 border: 1px solid #404040;
-                                margin-top: 0;
-                                margin-bottom: 0;
-                                margin-left: 0;
-                                margin-right: 0;
-                                padding-top: 0.5rem;
-                                padding-bottom: 0.5rem;
-                                padding-left: 0.5rem;
-                                padding-right: 0.5rem;
-                        }
+                                    margin-top: 0;
+                                    margin-bottom: 0;
+                                    margin-left: 0;
+                                    margin-right: 0;
+                                    padding-top: 0.5rem;
+                                    padding-bottom: 0.5rem;
+                                    padding-left: 0.5rem;
+                                    padding-right: 0.5rem;
+                                }
 
 
 
@@ -1133,9 +1149,6 @@ border-radius: 4px;
                     .content {
                         margin-left: 15rem;
                     }
-                    #program .wrap-size {
-                        height: 17.8rem;
-                    }
                     .footer {
                         margin-left: 16.5rem;
                         margin-right: 1.5rem;
@@ -1162,9 +1175,6 @@ border-radius: 4px;
                     }
                     .coloane {
                         column-count: 2;
-                    }
-                    #program .wrap-size {
-                        height: 19.6rem;
                     }
                     .footer {
                         margin-left: 16rem;
@@ -1194,31 +1204,20 @@ border-radius: 4px;
                     .page-menu {
                         margin-bottom: 1rem;
                     }
-                    .page-menu ul {
-                        gap: 1.5rem;
-                    }
                     .subsection-text {
                         margin-bottom: 0.5rem;
                     }
                     .coloane {
                         column-count: 2;
-                        column-gap: 1.5rem;
                     }
                     .subsection-continut {
                         margin-bottom: 0.5rem;
-                        gap: 1.5rem;
-                    }
-                    #program .wrap-size {
-                        height: 22.6rem;
                     }
                     .subsection-informatii {
                         margin-bottom: 0.5rem;
                     }
                     .subsection-legaturi {
                         margin-bottom: 0;
-                    }
-                    .subsection-legaturi ul {
-                        gap: 1.5rem;
                     }
                     .footer {
                         margin-left: 15.5rem;
@@ -1248,31 +1247,20 @@ border-radius: 4px;
                     .page-menu {
                         margin-bottom: 0.5rem;
                     }
-                    .page-menu ul {
-                        gap: 1.5rem;
-                    }
                     .subsection-text {
                         margin-bottom: 0
                     }
                     .coloane {
                         column-count: 2;
-                        column-gap: 1.5rem;
                     }
                     .subsection-continut {
                         margin-bottom: 0;
-                        gap: 1.5rem;
-                    }
-                    #program .wrap-size {
-                        height: 22.6rem;
                     }
                     .subsection-informatii {
                         margin-bottom: 0;
                     }
                     .subsection-legaturi {
                         margin-bottom: 0;
-                    }
-                    .subsection-legaturi ul {
-                        gap: 1.5rem;
                     }
                     .footer {
                         margin-left: 0.5rem;
@@ -1304,9 +1292,6 @@ border-radius: 4px;
                         padding-top: 0;
                         padding-bottom: 0;
                     }
-                    .page-menu ul {
-                        gap: 0.5rem;
-                    }
                     .subsection-text {
                         margin-bottom: 0
                     }
@@ -1315,7 +1300,6 @@ border-radius: 4px;
                     }
                     .subsection-continut {
                         margin-bottom: 0;
-                        gap: 0.5rem;
                     }
                     #program .continut-4 {
                         grid-column: span 6;
@@ -1332,7 +1316,6 @@ border-radius: 4px;
                     .subsection-legaturi ul {
                         display: grid;
                         grid-template-columns: repeat(2, 1fr);
-                        gap: 0.5rem;
                     }
                     .footer {
                         margin-left: 0;
@@ -1367,9 +1350,6 @@ border-radius: 4px;
                     .page-menu .patru {
                         grid-template-columns: repeat(2, 1fr);
                     }
-                    .page-menu ul {
-                        gap: 0.5rem;
-                    }
                     .subsection-text {
                         margin-bottom: 0;
                     }
@@ -1378,7 +1358,6 @@ border-radius: 4px;
                     }
                     .subsection-continut {
                         margin-bottom: 0;
-                        gap: 0.5rem;
                     }
                     #program .continut-4 {
                         grid-column: span 6;
@@ -1395,7 +1374,6 @@ border-radius: 4px;
                     .subsection-legaturi ul {
                         display: grid;
                         grid-template-columns: repeat(2, 1fr);
-                        gap: 0.5rem;
                     }
                     .footer {
                         margin-left: 0;
@@ -1430,9 +1408,6 @@ border-radius: 4px;
                     .page-menu .patru {
                         grid-template-columns: repeat(2, 1fr);
                     }
-                    .page-menu ul {
-                        gap: 0.5rem;
-                    }
                     .subsection-text {
                         margin-bottom: 0
                     }
@@ -1441,7 +1416,6 @@ border-radius: 4px;
                     }
                     .subsection-continut {
                         margin-bottom: 0;
-                        gap: 0.5rem;
                     }
                     #program .continut-4 {
                         grid-column: span 6;
@@ -1458,7 +1432,6 @@ border-radius: 4px;
                     .subsection-legaturi ul {
                         display: grid;
                         grid-template-columns: repeat(1, 1fr);
-                        gap: 0.5rem;
                     }
                     .subsection-legaturi a {
                         text-align: left;  
@@ -1496,9 +1469,6 @@ border-radius: 4px;
                     .page-menu .patru {
                         grid-template-columns: repeat(2, 1fr);
                     }
-                    .page-menu ul {
-                        gap: 0.5rem;
-                    }
                     .subsection-text {
                         margin-bottom: 0
                     }
@@ -1507,7 +1477,6 @@ border-radius: 4px;
                     }
                     .subsection-continut {
                         margin-bottom: 0;
-                        gap: 0.5rem;
                     }
                     #program .continut-4 {
                         grid-column: span 12;
@@ -1524,7 +1493,6 @@ border-radius: 4px;
                     .subsection-legaturi ul {
                         display: grid;
                         grid-template-columns: repeat(1, 1fr);
-                        gap: 0.5rem;
                     }
                     .subsection-legaturi a {
                         text-align: left;  
@@ -1562,9 +1530,6 @@ border-radius: 4px;
                     .page-menu .patru {
                         grid-template-columns: repeat(1, 1fr);
                     }
-                    .page-menu ul {
-                        gap: 0.5rem;
-                    }
                     .subsection-text {
                         margin-bottom: 0
                     }
@@ -1573,7 +1538,6 @@ border-radius: 4px;
                     }
                     .subsection-continut {
                         margin-bottom: 0;
-                        gap: 0.5rem;
                     }
                     #program .continut-4 {
                         grid-column: span 12;
@@ -1590,7 +1554,6 @@ border-radius: 4px;
                     .subsection-legaturi ul {
                         display: grid;
                         grid-template-columns: repeat(1, 1fr);
-                        gap: 0.5rem;
                     }
                     .subsection-legaturi a {
                         text-align: left;  
@@ -1689,9 +1652,9 @@ border-radius: 4px;
                         </div>
                     </header>
 
-                    <div id="program-imagine" class="continut-4 wrap-down wrap-show" aria-label="Imagine Program de lucru">
-                        <div id="imagine-lucru" class="content-imagine wrap-down">
-                           <img class="wrap-size" src="https://github.com/scoalanicualbu/website/blob/main/prezentare/intrare.png?raw=true" alt="">
+                    <div id="program-imagine" class="continut-4 wrap-show" aria-label="Imagine Program de lucru">
+                        <div id="imagine-lucru" class="content-imagine wrap-size">
+                           <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/intrare.png?raw=true" alt="">
                         </div>
                     </div>
 
@@ -1829,7 +1792,7 @@ border-radius: 4px;
 // Secțiune Meniu
 
 // Actualizare stare Meniu
-            function updateUI() {
+            function updateMeniu() {
                 const aside = document.querySelector('aside');
                 const toggleBtn = document.getElementById('menu-toggle');
                 const width = window.innerWidth;
@@ -1860,11 +1823,52 @@ border-radius: 4px;
                     }
             }
 
-// Inițializare Meniu la încărcare pagină
-                window.addEventListener('load', updateUI);
+// Secțiune Conținut - Calculare spațiere prin interpolare liniară
+            function getGap() {
+                const maxGap = 2;
+                const minGap = 0.5;
+                const maxVW = 2160;
+                const minVW = 300;
+                const vw = window.innerWidth;
+                if (vw >= maxVW) {
+                    return maxGap + 'rem';
+                }
+                if (vw <= minVW) {
+                    return minGap + 'rem';
+                }
+                const ratio = (vw - minVW) / (maxVW - minVW);
+                const valueGap = minGap + ratio * (maxGap - minGap);
+                return valueGap.toFixed(2) + 'rem';
+            }
 
-// Inițializare Meniu la redimensionare pagină
-                window.addEventListener('resize', updateUI);
+            function updateGap() {
+                const sizeGap = getGap();
+                document.documentElement.style.setProperty('--gap', sizeGap);
+            }
+
+// Secțiune Conținut - Setare înălțime imagine
+            function updateProgram() {
+                const programSecretariat = document.getElementById('program-secretariat');
+                const programImagine = document.querySelector('#imagine-lucru img');
+                if (programSecretariat && programImagine) {
+                    const heightDiv = programSecretariat.offsetHeight;
+                    programImagine.style.height = heightDiv + 'px';
+                }
+            }
+
+// Inițializare setări la încărcare pagină
+                window.addEventListener('load', () => {
+                    updateMeniu();
+                    updateGap();
+                    updateProgram();
+                });
+
+// Inițializare setări la redimensionare pagină
+                window.addEventListener('resize', () => {
+                    updateMeniu();
+                    updateGap();
+                    updateProgram();
+                });
 
 // Afișare sau ascundere Meniu la click pe buton
                 document.getElementById('menu-toggle').addEventListener('click', () => {
