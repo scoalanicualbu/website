@@ -1,8 +1,8 @@
             :root {
                 --gap: 2rem;
-            }
+            }  
 
-            * {
+          * {
                 box-sizing: border-box;
             }
 
@@ -100,7 +100,7 @@ border: 0px solid #404040;
                         outline: 2px dashed yellow; /* vizualizarea focus-ului */
                     }
 
-/* Secțiune Meniu */
+/* MENIU */
                 aside {
 border: none;
 border-right: 1px solid #404040;
@@ -281,7 +281,7 @@ border-radius: 4px;
                                     font-size: 1.3rem;
                                 }
 
-/* Secțiune Conținut */
+/* CONȚINUT */
                 .content {
 border: 0px solid #404040;
 border-radius: 4px;
@@ -449,302 +449,22 @@ border-radius: 4px;
                                             text-shadow: none;
                                         }
 
-/* Subsecțiuni de conținut */
-
-/* Subsecțiune Text */
-                    .subsection-text {
+/* Conținut pagină */
+                    .page-content {
 border: 0px solid #404040;
 border-radius: 4px;
                         margin-top: 0;
                         margin-bottom: 0;
-                        margin-left: 0;
-                        margin-right: 0;
-                        padding-top: 1rem;
-                        padding-bottom: 0;
-                        padding-left: 0.5rem;
-                        padding-right: 0.5rem;
-                        text-align: justify;
-                    }
-
-                    .coloane {
-border: 0px solid #404040;
-border-radius: 4px;
-                        margin-top: 0;
-                        margin-bottom: 0.5rem;
                         margin-left: 0;
                         margin-right: 0;
                         padding-top: 0;
                         padding-bottom: 0;
                         padding-left: 0;
                         padding-right: 0;
-                        column-count: 4;
-                        column-gap: var(--gap);
-                        text-align: justify;
-                    }
-
-                        .citat-1 {
-border: 0px solid #404040;
-border-radius: 4px;
-                            margin-top: 0.1rem;
-                            margin-bottom: 0.5rem;
-                            margin-left: 0;
-                            margin-right: 0;
-                            padding-top: 0;
-                            padding-bottom: 0;
-                            padding-left: 0;
-                            padding-right: 0;
-                            text-align: justify;
-                        }
-
-                        .citat-2 {
-border: 0px solid #404040;
-border-radius: 4px;
-                            margin-top: 0;
-                            margin-bottom: 1.7rem;
-                            margin-left: 0;
-                            margin-right: 0;
-                            padding-top: 0;
-                            padding-bottom: 0;
-                            padding-left: 0;
-                            padding-right: 0;
-                            text-align: justify;
-                            font-weight: bold;
-                        }
-
-/* Subsecțiune Imagine */
-
-/* Subsecțiune Conținut */
-                    .subsection-continut {
-border: 0px solid #404040;
-border-radius: 4px;
-                        margin-top: 0;
-                        margin-bottom: 0;
-                        margin-left: 0;
-                        margin-right: 0;
-                        padding-top: 0.5rem;
-                        padding-bottom: 0.5rem;
-                        padding-left: 0.5rem;
-                        padding-right: 0.5rem;
-                        display: grid;
-                        grid-template-columns: repeat(12, 1fr);
-                        gap: var(--gap);
-                    }
-
-                        .continut-1 {
-border: 1px solid #404040;
-border-radius: 4px;
-                            margin-top: 0;
-                            margin-bottom: 0;
-                            margin-left: 0;
-                            margin-right: 0;
-                            padding-top: 0;
-                            padding-bottom: 0;
-                            padding-left: 0;
-                            padding-right: 0;
-                            grid-column: span 1;
-                            height: auto;
-                            display: flex;
-                            flex-direction: column;
-                            flex-grow: 1;
-                        }
-
-                        .continut-2 {
-border: 1px solid #404040;
-border-radius: 4px;
-                            margin-top: 0;
-                            margin-bottom: 0;
-                            margin-left: 0;
-                            margin-right: 0;
-                            padding-top: 0;
-                            padding-bottom: 0;
-                            padding-left: 0;
-                            padding-right: 0;
-                            grid-column: span 2;
-                            height: auto;
-                            display: flex;
-                            flex-direction: column;
-                            flex-grow: 1;
-                        }
-
-                        .continut-3 {
-border: 1px solid #404040;
-border-radius: 4px;
-                            margin-top: 0;
-                            margin-bottom: 0;
-                            margin-left: 0;
-                            margin-right: 0;
-                            padding-top: 0;
-                            padding-bottom: 0;
-                            padding-left: 0;
-                            padding-right: 0;
-                            grid-column: span 3;
-                            height: auto;
-                            display: flex;
-                            flex-direction: column;
-                            flex-grow: 1;
-                        }
-
-                        .continut-4 {
-border: 0px solid #404040;
-border-radius: 4px;
-                            margin-top: 0;
-                            margin-bottom: 0;
-                            margin-left: 0;
-                            margin-right: 0;
-                            padding-top: 0;
-                            padding-bottom: 0;
-                            padding-left: 0;
-                            padding-right: 0;
-                            grid-column: span 4;
-                            height: auto;
-                            display: flex;
-                            flex-direction: column;
-                            flex: 1;
-                            align-items: center;
-                            text-align: center;
-                        }
-
-                        .continut-5 {
-border: 1px solid #404040;
-border-radius: 4px;
-                            margin-top: 0;
-                            margin-bottom: 0;
-                            margin-left: 0;
-                            margin-right: 0;
-                            padding-top: 0;
-                            padding-bottom: 0;
-                            padding-left: 0;
-                            padding-right: 0;
-                            grid-column: span 5;
-                            height: auto;
-                            display: flex;
-                            flex-direction: column;
-                            flex-grow: 1;
-                        }
-
-                        .continut-6 {
-border: 1px solid #404040;
-border-radius: 4px;
-                            margin-top: 0;
-                            margin-bottom: 0;
-                            margin-left: 0;
-                            margin-right: 0;
-                            padding-top: 0;
-                            padding-bottom: 0;
-                            padding-left: 0;
-                            padding-right: 0;
-                            grid-column: span 6;
-                            height: auto;
-                            display: flex;
-                            flex-direction: column;
-                            flex-grow: 1;
-                        }
-
-                        .continut-7 {
-border: 1px solid #404040;
-border-radius: 4px;
-                            margin-top: 0;
-                            margin-bottom: 0;
-                            margin-left: 0;
-                            margin-right: 0;
-                            padding-top: 0;
-                            padding-bottom: 0;
-                            padding-left: 0;
-                            padding-right: 0;
-                            grid-column: span 7;
-                            height: auto;
-                            display: flex;
-                            flex-direction: column;
-                            flex-grow: 1;
-                        }
-
-                        .continut-8 {
-border: 1px solid #404040;
-border-radius: 4px;
-                            margin-top: 0;
-                            margin-bottom: 0;
-                            margin-left: 0;
-                            margin-right: 0;
-                            padding-top: 0;
-                            padding-bottom: 0;
-                            padding-left: 0;
-                            padding-right: 0;
-                            grid-column: span 8;
-                            height: auto;
-                            display: flex;
-                            flex-direction: column;
-                            flex-grow: 1;
-                        }
-
-                        .continut-9 {
-border: 1px solid #404040;
-border-radius: 4px;
-                            margin-top: 0;
-                            margin-bottom: 0;
-                            margin-left: 0;
-                            margin-right: 0;
-                            padding-top: 0;
-                            padding-bottom: 0;
-                            padding-left: 0;
-                            padding-right: 0;
-                            grid-column: span 9;
-                            height: auto;
-                            display: flex;
-                            flex-direction: column;
-                            flex-grow: 1;
-                        }
-
-                        .continut-10 {
-border: 1px solid #404040;
-border-radius: 4px;
-                            margin-top: 0;
-                            margin-bottom: 0;
-                            margin-left: 0;
-                            margin-right: 0;
-                            padding-top: 0;
-                            padding-bottom: 0;
-                            padding-left: 0;
-                            padding-right: 0;
-                            grid-column: span 10;
-                            height: auto;
-                            display: grid;
-                            grid-template-columns: repeat(10, 1fr);
-                        }
-
-                        .continut-11 {
-border: 1px solid #404040;
-border-radius: 4px;
-                            margin-top: 0;
-                            margin-bottom: 0;
-                            margin-left: 0;
-                            margin-right: 0;
-                            padding-top: 0;
-                            padding-bottom: 0;
-                            padding-left: 0;
-                            padding-right: 0;
-                            grid-column: span 11;
-                            height: auto;
-                            display: flex;
-                            flex-direction: column;
-                            flex-grow: 1;
-                        }
-
-                        .continut-12 {
-border: 1px solid #404040;
-border-radius: 4px;
-                            margin-top: 0;
-                            margin-bottom: 0;
-                            margin-left: 0;
-                            margin-right: 0;
-                            padding-top: 0;
-                            padding-bottom: 0;
-                            padding-left: 0;
-                            padding-right: 0;
-                            grid-column: span 12;
-                            height: auto;
-                            display: flex;
-                            flex-direction: column;
-                            flex-grow: 1;
+                        display: flex;
+                        flex-direction: column;
+                        flex-grow: 1;
+                        background-color: #FFFFFF;
                         }
 
                         .content-imagine {
@@ -762,18 +482,6 @@ border-radius: 4px;
                             height: auto;
                             display: block;
                         }
-
-                            .wrap-down {
-                                padding-top: 0.5rem;
-                                justify-content: flex-end;
-                            }
-
-                            .wrap-size {
-                                height: 0;
-                            }
-
-                            .wrap-show {
-                            }
 
                             .content-imagine img {
 border: 1px solid #404040;
@@ -865,22 +573,330 @@ border: 1px solid #404040;
                                     padding-right: 0.5rem;
                                 }
 
-/* Subsecțiune Informații */
-                    .subsection-informatii {
+/* Secțiuni de conținut */
+
+/* Secțiune Continut */
+                    .sectiune-continut {
 border: 0px solid #404040;
 border-radius: 4px;
                         margin-top: 0;
                         margin-bottom: 0;
                         margin-left: 0;
                         margin-right: 0;
-                        padding-top: 0.5rem;
+                        padding-top: 1rem;
+                        padding-bottom: 0.5rem;
+                        padding-left: 0.5rem;
+                        padding-right: 0.5rem;
+                        display: grid;
+                        grid-template-columns: repeat(12, 1fr);
+                        gap: var(--gap);
+                    }
+
+                        .wrap-1 {
+border: 1px solid #404040;
+border-radius: 4px;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            grid-column: span 1;
+                            height: auto;
+                            display: flex;
+                            flex-direction: column;
+                            flex-grow: 1;
+                        }
+
+                        .wrap-2 {
+border: 1px solid #404040;
+border-radius: 4px;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            grid-column: span 2;
+                            height: auto;
+                            display: flex;
+                            flex-direction: column;
+                            flex-grow: 1;
+                        }
+
+                        .wrap-3 {
+border: 1px solid #404040;
+border-radius: 4px;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            grid-column: span 3;
+                            height: auto;
+                            display: flex;
+                            flex-direction: column;
+                            flex-grow: 1;
+                        }
+
+                        .wrap-4 {
+border: 0px solid #404040;
+border-radius: 4px;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            grid-column: span 4;
+                            height: auto;
+                            display: flex;
+                            flex-direction: column;
+                            flex: 1;
+                            align-items: center;
+                            text-align: center;
+                        }
+
+                        .wrap-5 {
+border: 1px solid #404040;
+border-radius: 4px;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            grid-column: span 5;
+                            height: auto;
+                            display: flex;
+                            flex-direction: column;
+                            flex-grow: 1;
+                        }
+
+                        .wrap-6 {
+border: 1px solid #404040;
+border-radius: 4px;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            grid-column: span 6;
+                            height: auto;
+                            display: flex;
+                            flex-direction: column;
+                            flex-grow: 1;
+                        }
+
+                        .wrap-7 {
+border: 1px solid #404040;
+border-radius: 4px;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            grid-column: span 7;
+                            height: auto;
+                            display: flex;
+                            flex-direction: column;
+                            flex-grow: 1;
+                        }
+
+                        .wrap-8 {
+border: 1px solid #404040;
+border-radius: 4px;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            grid-column: span 8;
+                            height: auto;
+                            display: flex;
+                            flex-direction: column;
+                            flex-grow: 1;
+                        }
+
+                        .wrap-9 {
+border: 1px solid #404040;
+border-radius: 4px;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            grid-column: span 9;
+                            height: auto;
+                            display: flex;
+                            flex-direction: column;
+                            flex-grow: 1;
+                        }
+
+                        .wrap-10 {
+border: 1px solid #404040;
+border-radius: 4px;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            grid-column: span 10;
+                            height: auto;
+                            display: grid;
+                            grid-template-columns: repeat(10, 1fr);
+                        }
+
+                        .wrap-11 {
+border: 1px solid #404040;
+border-radius: 4px;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            grid-column: span 11;
+                            height: auto;
+                            display: flex;
+                            flex-direction: column;
+                            flex-grow: 1;
+                        }
+
+                        .wrap-12 {
+border: 1px solid #404040;
+border-radius: 4px;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            grid-column: span 12;
+                            height: auto;
+                            display: flex;
+                            flex-direction: column;
+                            flex-grow: 1;
+                        }
+
+                            .wrap-down {
+                                padding-top: 0.5rem;
+                                justify-content: flex-end;
+                            }
+
+                            .wrap-size {
+                                height: 0;
+                            }
+
+                            .wrap-show {
+                            }
+
+/* Secțiune Text */
+                    .sectiune-text {
+border: 0px solid #404040;
+border-radius: 4px;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        margin-left: 0;
+                        margin-right: 0;
+                        padding-top: 1rem;
+                        padding-bottom: 0;
+                        padding-left: 0.5rem;
+                        padding-right: 0.5rem;
+                        text-align: justify;
+                    }
+
+                    .coloane {
+border: 0px solid #404040;
+border-radius: 4px;
+                        margin-top: 0;
+                        margin-bottom: 0.5rem;
+                        margin-left: 0;
+                        margin-right: 0;
+                        padding-top: 0;
+                        padding-bottom: 0;
+                        padding-left: 0;
+                        padding-right: 0;
+                        column-count: 4;
+                        column-gap: var(--gap);
+                        text-align: justify;
+                    }
+
+                        .citat-1 {
+border: 0px solid #404040;
+border-radius: 4px;
+                            margin-top: 0;
+                            margin-bottom: 0.5rem;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            text-align: justify;
+                        }
+
+                        .citat-2 {
+border: 0px solid #404040;
+border-radius: 4px;
+                            margin-top: 0;
+                            margin-bottom: 1rem;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            text-align: justify;
+                            font-weight: bold;
+                        }
+
+/* Secțiune Informații */
+                    .sectiune-informatii {
+border: 0px solid #404040;
+border-radius: 4px;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        margin-left: 0;
+                        margin-right: 0;
+                        padding-top: 1rem;
                         padding-bottom: 0;
                         padding-left: 0.5rem;
                         padding-right: 0.5rem;
                     }
 
-                        .subsection-informatii ul {
-                            margin-top: 1.2rem;
+                        .sectiune-informatii ul {
+                            margin-top: 0.5rem;
                             margin-bottom: 0;
                             margin-left: 0;
                             margin-right: 0;
@@ -891,7 +907,7 @@ border-radius: 4px;
                             list-style: none;
                         }
 
-                            .subsection-informatii li {
+                            .sectiune-informatii li {
                                 margin-top: 0;
                                 margin-bottom: 0;
                                 margin-left: 0;
@@ -903,7 +919,7 @@ border-radius: 4px;
                                 list-style: none;
                             }
 
-                                .subsection-informatii a {
+                                .sectiune-informatii a {
 border: 0px solid #404040;
 border-radius: 4px;
                                     margin-top: -0.5rem;
@@ -920,7 +936,7 @@ border-radius: 4px;
                                     color: #404040;
                                 }
 
-                                .subsection-informatii a:hover {
+                                .sectiune-informatii a:hover {
 border: 0px solid #404040;
 border-radius: 4px;
                                     margin-top: -0.5rem;
@@ -938,8 +954,8 @@ border-radius: 4px;
                                     text-shadow: 0.4px 0 currentcolor, -0.4px 0 currentcolor;
                                 }
 
-/* Subsecțiune Legături */
-                    .subsection-legaturi {
+/* Secțiune Legături */
+                    .sectiune-legaturi {
 border: 0px solid #404040;
 border-radius: 4px;
                         margin-top: auto;
@@ -952,7 +968,7 @@ border-radius: 4px;
                         padding-right: 0;
                     }
 
-                        .subsection-legaturi ul {
+                        .sectiune-legaturi ul {
 border: 0px solid #404040;
 border-radius: 4px;
                             margin-top: 0.5rem;
@@ -970,7 +986,7 @@ border-radius: 4px;
                             list-style: none;
                         }
 
-                            .subsection-legaturi li {
+                            .sectiune-legaturi li {
 border: 1px solid #404040;
 border-radius: 4px;
                                 margin-top: 0;
@@ -984,14 +1000,14 @@ border-radius: 4px;
                                 flex-grow: 1;
                             }
 
-                                .subsection-legaturi li:hover {
+                                .sectiune-legaturi li:hover {
 border: 1px solid #000000;
 border-radius: 4px;
                                     text-shadow: 0.4px 0 currentcolor, -0.4px 0 currentcolor;
                                     background-color: #F8F8F8;
                                 }
 
-                                .subsection-legaturi img {
+                                .sectiune-legaturi img {
 border: 1px solid #404040;
 border-radius: 4px;
                                     margin-top: 0;
@@ -1007,7 +1023,7 @@ border-radius: 4px;
                                     background-color: #FFFFFF;
                                 }
 
-                                .subsection-legaturi a {
+                                .sectiune-legaturi a {
 border: 0px solid #404040;
 border-radius: 4px;
                                     margin-top: 0;
@@ -1026,7 +1042,7 @@ border-radius: 4px;
                                     color: #404040;
                                 }
 
-/* Subsol pagină */
+/* SUBSOL */
                 .footer {
 border: 0px solid #404040;
 border-radius: 4px;
@@ -1106,7 +1122,7 @@ border-radius: 4px;
                     .coloane {
                         column-count: 2;
                     }
-                    .subsection-legaturi {
+                    .sectiune-legaturi {
                         margin-bottom: 0;
                     }
                 }
@@ -1118,13 +1134,13 @@ border-radius: 4px;
                     .coloane {
                         column-count: 1;
                     }
-                    #program .continut-4 {
+                    #program-continut .wrap-4 {
                         grid-column: span 6;
                     }
-                    #program .wrap-show {
+                    #program-continut .wrap-show {
                         display: none;
                     }
-                    .subsection-legaturi ul {
+                    .sectiune-legaturi ul {
                         display: grid;
                         grid-template-columns: repeat(2, 1fr);
                     }
@@ -1140,13 +1156,13 @@ border-radius: 4px;
                     .coloane {
                         column-count: 1;
                     }
-                    #program .continut-4 {
+                    #program-continut .wrap-4 {
                         grid-column: span 6;
                     }
-                    #program .wrap-show {
+                    #program-continut .wrap-show {
                         display: none;
                     }
-                    .subsection-legaturi ul {
+                    .sectiune-legaturi ul {
                         display: grid;
                         grid-template-columns: repeat(2, 1fr);
                     }
@@ -1162,17 +1178,17 @@ border-radius: 4px;
                     .coloane {
                         column-count: 1;
                     }
-                    #program .continut-4 {
+                    #program-continut .wrap-4 {
                         grid-column: span 6;
                     }
-                    #program .wrap-show {
+                    #program-continut .wrap-show {
                         display: none;
                     }
-                    .subsection-legaturi ul {
+                    .sectiune-legaturi ul {
                         display: grid;
                         grid-template-columns: repeat(1, 1fr);
                     }
-                    .subsection-legaturi a {
+                    .sectiune-legaturi a {
                         text-align: left;  
                     }
                 }
@@ -1187,17 +1203,17 @@ border-radius: 4px;
                     .coloane {
                         column-count: 1;
                     }
-                    #program .continut-4 {
+                    #program-continut .wrap-4 {
                         grid-column: span 12;
                     }
-                    #program .wrap-show {
+                    #program-continut .wrap-show {
                         display: none;
                     }
-                    .subsection-legaturi ul {
+                    .sectiune-legaturi ul {
                         display: grid;
                         grid-template-columns: repeat(1, 1fr);
                     }
-                    .subsection-legaturi a {
+                    .sectiune-legaturi a {
                         text-align: left;  
                     }
                 }
@@ -1212,17 +1228,17 @@ border-radius: 4px;
                     .coloane {
                         column-count: 1;
                     }
-                    #program .continut-4 {
+                    #program-continut .wrap-4 {
                         grid-column: span 12;
                     }
-                    #program .wrap-show {
+                    #program-continut .wrap-show {
                         display: none;
                     }
-                    .subsection-legaturi ul {
+                    .sectiune-legaturi ul {
                         display: grid;
                         grid-template-columns: repeat(1, 1fr);
                     }
-                    .subsection-legaturi a {
+                    .sectiune-legaturi a {
                         text-align: left;  
                     }
                 }
