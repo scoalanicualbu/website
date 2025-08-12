@@ -529,8 +529,8 @@ border-collapse: collapse;
                                 max-width: 100%;
                             }
 
-                                table tr:first-child th {
-                                    border-top: 0;
+                                table caption {
+                                    padding-top: 0.5rem;
                                 }
 
                                 table tr:last-child td {
@@ -810,7 +810,6 @@ border-radius: 4px;
                         }
 
                             .wrap-down {
-                                padding-top: 0.5rem;
                                 justify-content: flex-end;
                             }
 
