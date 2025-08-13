@@ -66,19 +66,19 @@
 <!-- MENIU -->
         <aside id="main-menu" aria-label="Meniu">
 
-            <header>
+            <header role="presentation">
 
 <!-- Siglă -->
-                <section id="sigla" aria-labelledby="sigla-label">
-                    <div id="sigla-label" class="side-name sr-only">Sigla școlii</div>
-                        <div class="side-logo">
+                <section id="sigla" aria-label="Siglă">
+                    <div class="side-name sr-only">Sigla școlii</div>
+                        <div class="side-logo" role="banner">
                             <img src="https://github.com/scoalanicualbu/website/blob/main/sigla.png?raw=true" alt="Sigla Școlii Gimnaziale „Nicu Albu” Piatra Neamț">
                         </div>
                 </section>
 
 <!-- Denumire -->
-                <section id="denumire" aria-labelledby="denumire-label">
-                    <p id="denumire-label" class="side-name sr-only">Denumirea școlii</p>
+                <section id="denumire" aria-label="Denumire">
+                    <p class="side-name sr-only">Denumirea școlii</p>
                     <p class="side-name">Școala Gimnazială<br>„Nicu Albu”<br>Piatra Neamț</p>
                 </section>
 
@@ -112,13 +112,13 @@
 <!-- CONȚINUT -->
         <main id="prezentare" class="content" aria-label="Conținut">
 
-            <header>
+            <header role="presentation">
 
 <!-- Banner -->
-                <section id="banner" class="banner" aria-labelledby="banner-label">
+                <section id="banner" class="banner" role="banner" aria-label="Banner">
 
                     <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/intrare.png?raw=true" alt="Intrarea în Școala Gimnazială „Nicu Albu” Piatra Neamț">
-                    <div id="banner-label" class="sr-only">
+                    <div class="sr-only">
                         <h1>Școala Gimnazială „Nicu Albu” Piatra Neamț</h1>
                     </div>
 
@@ -142,7 +142,7 @@
 <!-- Secțiune Text -->
                 <section id="prezentare-text" class="sectiune-text" aria-label="Secțiune Text">
 
-                    <header>
+                   <header role="presentation">
                         <div class="citat-1">
                             <h2>Motto:</h2>
                         </div>
@@ -151,7 +151,7 @@
 
                     <article>
 
-                        <header>
+                        <header role="presentation">
                             <div class="sr-only">
                                 <h2>Prezentare</h2>
                             </div>
@@ -175,10 +175,12 @@
                 </section>
 
 <!-- Secțiune Informații -->
-                <section id="prezentare-informatii" class="sectiune-informatii" aria-label="Secțiune Informații">
+                <section id="prezentare-informatii" class="sectiune-informatii" role="region" aria-labelledby="informatii-label">
 
-                    <header>
+                    <header role="presentation">
+                        <div id="informatii-label">
                             <h2>Noutăți:</h2>
+                        </div>
                     </header>
 
                     <ul>
@@ -190,10 +192,10 @@
                 </section> 
 
 <!-- Secțiune Legături -->
-                <section id="prezentare-legaturi" class="sectiune-legaturi" aria-labelledby="legaturi-label">
+                <section id="prezentare-legaturi" class="sectiune-legaturi" aria-label="Secțiune Legături">
 
-                    <header>
-                        <div id="legaturi-label" class="sr-only">
+                    <header role="presentation">
+                        <div class="sr-only">
                             <h2>Legături:</h2>
                         </div>
                     </header>
@@ -232,7 +234,7 @@
         </main>
 
 <!-- SUBSOL -->
-        <footer class="footer" aria-labelledby="subsol">
+        <footer class="footer" role="contentinfo" aria-labelledby="subsol">
 
             <div  id="subsol" class="footer-informatii">
                 <span>&copy; 1993-<span id="year"></span> Școala Gimnazială „Nicu Albu” Piatra Neamț</span>
