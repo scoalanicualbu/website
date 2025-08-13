@@ -66,19 +66,19 @@
 <!-- MENIU -->
         <aside id="main-menu" aria-label="Meniu">
 
-            <header>
+            <header role="presentation">
 
 <!-- Siglă -->
-                <section id="sigla" aria-labelledby="sigla-label">
-                    <div id="sigla-label" class="side-name sr-only">Sigla școlii</div>
-                        <div class="side-logo">
+                <section id="sigla" aria-label="Siglă">
+                    <div class="side-name sr-only">Sigla școlii</div>
+                        <div class="side-logo" role="banner">
                             <img src="https://github.com/scoalanicualbu/website/blob/main/sigla.png?raw=true" alt="Sigla Școlii Gimnaziale „Nicu Albu” Piatra Neamț">
                         </div>
                 </section>
 
 <!-- Denumire -->
-                <section id="denumire" aria-labelledby="denumire-label">
-                    <p id="denumire-label" class="side-name sr-only">Denumirea școlii</p>
+                <section id="denumire" aria-label="Denumire">
+                    <p class="side-name sr-only">Denumirea școlii</p>
                     <p class="side-name">Școala Gimnazială<br>„Nicu Albu”<br>Piatra Neamț</p>
                 </section>
 
@@ -112,13 +112,13 @@
 <!-- CONȚINUT -->
         <main id="program" class="content" aria-label="Conținut">
 
-            <header>
+            <header role="presentation">
 
 <!-- Banner -->
-                <section id="banner" class="banner" aria-labelledby="banner-label">
+                <section id="banner" class="banner" role="banner" aria-label="Banner">
 
                     <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/intrare.png?raw=true" alt="Intrarea în Școala Gimnazială „Nicu Albu” Piatra Neamț">
-                    <div id="banner-label" class="sr-only">
+                    <div class="sr-only">
                         <h1>Școala Gimnazială „Nicu Albu” Piatra Neamț</h1>
                     </div>
 
@@ -140,21 +140,19 @@
             <div id="main-content" class="page-content" role="region" aria-label="Conținut pagină">
 
 <!-- Secțiune Conținut -->
-                <section id="program-continut" class="sectiune-continut" aria-labelledby="program-label">
+                <section id="program-continut" class="sectiune-continut" aria-label="Secțiune Conținut">
 
-                    <header class="sr-only">
-                        <div id="program-label">
+                    <header class="sr-only" role="presentation">
                             <h2>Program de lucru</h2>
-                        </div>
                     </header>
 
-                    <div id="program-imagine" class="wrap-4 wrap-show" aria-label="Imagine Program de lucru">
+                    <div id="program-imagine" class="wrap-4 wrap-show" role="region" aria-label="Imagine Program de lucru">
                         <div id="imagine-lucru" class="content-imagine wrap-size">
                            <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/intrare.png?raw=true" alt="">
                         </div>
                     </div>
 
-                    <div id="program-secretariat" class="wrap-4 wrap-down" aria-labelledby="secretariat-label">
+                    <div id="program-secretariat" class="wrap-4 wrap-down" role="region" aria-labelledby="secretariat-label">
                         <div id="tabel-secretariat" class="content-tabel">
                             <table>
                                 <caption id="secretariat-label">
@@ -195,7 +193,7 @@
                         </div>
                     </div>
 
-                    <div id="program-director" class="wrap-4 wrap-down" aria-labelledby="director-label">
+                    <div id="program-director" class="wrap-4 wrap-down" role="region" aria-labelledby="director-label">
                         <div id="tabel-director" class="content-tabel">
                             <table>
                                 <caption id="director-label">
@@ -240,37 +238,37 @@
                 </section>
 
 <!-- Secțiune Legături -->
-                <section id="program-legaturi" class="sectiune-legaturi" aria-labelledby="legaturi-label">
+                <section id="prezentare-legaturi" class="sectiune-legaturi" aria-label="Secțiune Legături">
 
-                    <header>
-                        <div id="legaturi-label" class="sr-only">
+                    <header role="presentation">
+                        <div class="sr-only">
                             <h2>Legături:</h2>
                         </div>
                     </header>
 
                     <ul>
                         <li>
-                            <a href="https://www.edu.ro" target="_blank" rel="noopener noreferrer" class="sectiune-legaturi" aria-label="Legătură către site-ul oficial al Ministerului Educației și Cercetării">
-                                <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/mec.png?raw=true" alt="Sigla Ministerului Educației și Cercetării">
-                                <span>Ministerul Educației și Cercetării</span>
+                            <a href="https://www.edu.ro" target="_blank" rel="noopener noreferrer" class="sectiune-legaturi" aria-labelledby="mec">
+                                <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/mec.png?raw=true" alt="Sigla Ministerului Educației și Cercetării (opens in new window)">
+                                <span id="mec">Ministerul Educației și Cercetării</span>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.isjneamt.ro" target="_blank" rel="noopener noreferrer" class="sectiune-legaturi" aria-label="Legătură către site-ul oficial al Inspectoratului Școlar Județean Neamț">
-                                <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/isjneamt.png?raw=true" alt="Sigla Inspectoratului Școlar Județean Neamț">
-                                <span>Inspectoratul Școlar Județean Neamț</span>
+                            <a href="https://www.isjneamt.ro" target="_blank" rel="noopener noreferrer" class="sectiune-legaturi" aria-labelledby="isjneamt">
+                                <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/isjneamt.png?raw=true" alt="Sigla Inspectoratului Școlar Județean Neamț (opens in new window)">
+                                <span id="isjneamt">Inspectoratul Școlar Județean Neamț</span>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.cjrae-neamt.ro" target="_blank" rel="noopener noreferrer" class="sectiune-legaturi" aria-label="Legătură către site-ul oficial al Centrului Județean de Resurse și Asistență Educațională Neamț">
-                                <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/cjraeneamt.png?raw=true" alt="Sigla Centrului Județean de Resurse și Asistență Educațională Neamț">
-                                <span>Centrul Județean de Resurse și Asistență Educațională Neamț</span>
+                            <a href="https://www.cjrae-neamt.ro" target="_blank" rel="noopener noreferrer" class="sectiune-legaturi" aria-labelledby="cjraeneamt">
+                                <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/cjraeneamt.png?raw=true" alt="Sigla Centrului Județean de Resurse și Asistență Educațională Neamț (opens in new window)">
+                                <span id="cjraeneamt">Centrul Județean de Resurse și Asistență Educațională Neamț</span>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.ccdneamt.ro"  target="_blank" rel="noopener noreferrer" class="sectiune-legaturi" aria-label="Legătură către site-ul oficial al Casei Corpului Didactic Neamț">
-                                <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/ccdneamt.png?raw=true" alt="Sigla Casei Corpului Didactic Neamț">
-                                <span>Casa Corpului Didactic Neamț</span>
+                            <a href="https://www.ccdneamt.ro"  target="_blank" rel="noopener noreferrer" class="sectiune-legaturi" aria-labelledby="ccdneamt">
+                                <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/ccdneamt.png?raw=true" alt="Sigla Casei Corpului Didactic Neamț (opens in new window)">
+                                <span id="ccdneamt">Casa Corpului Didactic Neamț</span>
                             </a>
                         </li>
                     </ul>
@@ -282,7 +280,7 @@
         </main>
 
 <!-- SUBSOL -->
-        <footer class="footer" aria-labelledby="subsol">
+        <footer class="footer" role="contentinfo" aria-labelledby="subsol">
 
             <div  id="subsol" class="footer-informatii">
                 <span>&copy; 1993-<span id="year"></span> Școala Gimnazială „Nicu Albu” Piatra Neamț</span>
