@@ -1,4 +1,11 @@
             :root {
+                --sz1: 1.45rem;
+                --pd1: 0.65rem;
+                --sz2: 1.3rem;
+                --pd2: 0.725rem;
+                --sz3: 1.15rem;
+                --pd3: 0.8rem;
+                --szp: 0.8rem;
                 --gap: 2rem;
             }  
 
@@ -20,6 +27,7 @@ border: 0px solid #404040;
                 display: flex;
                 flex-direction: column;
                 font-family: Arial, sans-serif;
+                font-size: var(--sz3);
                 background-color: #FFFFFF;
             }
 
@@ -32,7 +40,7 @@ border: 0px solid #404040;
                     padding-bottom: 0;
                     padding-left: 0;
                     padding-right: 0;
-                    font-size: 1.2rem;
+                    font-size: var(--sz1);
                 }
 
                 h2 {
@@ -44,7 +52,7 @@ border: 0px solid #404040;
                     padding-bottom: 0;
                     padding-left: 0;
                     padding-right: 0;
-                    font-size: 1.1rem;
+                    font-size: var(--sz2);
                 }
 
                 h3 {
@@ -56,12 +64,12 @@ border: 0px solid #404040;
                     padding-bottom: 0;
                     padding-left: 0;
                     padding-right: 0;
-                    font-size: 1rem;
+                    font-size: var(--sz3);
                 }
 
                 p {
                     margin-top: 0;
-                    margin-bottom: 1rem;
+                    margin-bottom: var(--szp);
                     margin-left: 0;
                     margin-right: 0;
                     padding-top: 0;
@@ -72,10 +80,14 @@ border: 0px solid #404040;
 
                 .sr-only {
                     position: absolute;
-                    left: -10000px;
-                    top: auto;
+                    border: 0;
+                    margin: -1px;
+                    padding: 0;
                     width: 1px;
                     height: 1px;
+                    clip: rect(0, 0, 0, 0);
+                    overflow: hidden;
+                    white-space: nowrap;
                 }
 
 /* Sari la Conținut */
@@ -154,18 +166,17 @@ border-right: 1px solid #404040;
 
 /* Siglă */
                     .side-logo {
-border: 0px solid #404040;
-border-radius: 4px;
+    border: 0px solid #404040;
+    border-radius: 4px;
                         margin-top: 0.5rem;
-                        margin-bottom: 0.5rem;
-                        margin-left: 0;
-                        margin-right: 0;
-                        padding-top: 0.5rem;
-                        padding-bottom: 0.3rem;
-                        padding-left: 2.9rem;
-                        padding-right: 2.9rem;
+                        margin-bottom: 0;
+                        margin-left: auto;
+                        margin-right: auto;
+                        padding-top: 0;
+                        padding-bottom: 0;
                         max-width: 14rem;
                         height: auto;
+                        display: block;
                     }
 
                         .side-logo img {
@@ -173,14 +184,11 @@ border: 1px solid #404040;
 border-radius: 50%;
                             margin-top: 0;
                             margin-bottom: 0;
-                            margin-left: 0;
-                            margin-right: 0;
-                            padding-top: 0;
-                            padding-bottom: 0;
-                            padding-left: 0;
-                            padding-right: 0;
+                            margin-left: auto;
+                            margin-right: auto;
                             width: 8.2rem;
                             height: 8.2rem;
+                            display: block;
                             background-color: #FFFFFF;
                         }
 
@@ -188,19 +196,21 @@ border-radius: 50%;
                     .side-name {
 border: 0px solid #404040;
 border-radius: 4px;
-                        margin-top: 0.5rem;
-                        margin-bottom: 1rem;
+                        margin-top: 0;
+                        margin-bottom: 0;
                         margin-left: 0;
                         margin-right: 0;
-                        padding-top: 0.5rem;
-                        padding-bottom: 0.5rem;
+                        padding-top: var(--pd3);
+                        padding-bottom: var(--pd3);
                         padding-left: 0;
                         padding-right: 0;
                         width: 14rem;
                         display: block;
                         text-align: center;
                         text-decoration: none;
+                        font-size: var(--sz3);
                         font-weight: bold;
+                        line-height: 1.5;
                         color: #202020;
                     }
 
@@ -222,16 +232,6 @@ border-radius: 4px;
                     }
 
                         .side-menu li:hover {
-                            margin-top: 0;
-                            margin-bottom: 0;
-                            margin-left: 0;
-                            margin-right: 0;
-                            padding-top: 0;
-                            padding-bottom: 0;
-                            padding-left: 0;
-                            padding-right: 0;
-                            height: 2.3rem;
-                            font-size: 1rem;
                             font-weight: bold;
                         }
 
@@ -242,11 +242,11 @@ border-radius: 4px;
                                 margin-bottom: 0;
                                 margin-left: 0;
                                 margin-right: 0;
-                                padding-top: 0.5rem;
-                                padding-bottom: 0.5rem;
+                                padding-top: var(--pd3);
+                                padding-bottom: var(--pd3);
                                 padding-left: 0.5rem;
                                 padding-right: 0.5rem;
-                                height: 2.3rem;
+                                font-size: var(--sz3);
                                 display: block;
                                 text-align: center;
                                 text-decoration: none;
@@ -258,14 +258,13 @@ border-radius: 4px;
                                     margin-bottom: 0;
                                     margin-left: 0;
                                     margin-right: 0;
-                                    padding-top: 0.3rem;
-                                    padding-bottom: 0.7rem;
+                                    padding-top: var(--pd1);
+                                    padding-bottom: var(--pd1);
                                     padding-left: 0.5rem;
                                     padding-right: 0.5rem;
-                                    height: 2.3rem;
-                                    font-size: 1.3rem;
-                                    pointer-events: none;
+                                    font-size: var(--sz1);
                                     font-weight: bold;
+                                    pointer-events: none;
                                 }
 
                                 .side-menu a.inactive {
@@ -273,12 +272,11 @@ border-radius: 4px;
                                     margin-bottom: 0;
                                     margin-left: 0;
                                     margin-right: 0;
-                                    padding-top: 0.3rem;
-                                    padding-bottom: 0.7rem;
+                                    padding-top: var(--pd1);
+                                    padding-bottom: var(--pd1);
                                     padding-left: 0.5rem;
                                     padding-right: 0.5rem;
-                                    height: 2.3rem;
-                                    font-size: 1.3rem;
+                                    font-size: var(--sz1);
                                 }
 
 /* CONȚINUT */
@@ -399,7 +397,6 @@ border-radius: 4px;
                                     padding-bottom: 0;
                                     padding-left: 0;
                                     padding-right: 0;
-                                    min-height: 2.3rem;
                                     background-color: #F8F8F8;
                                 }
 
@@ -410,17 +407,16 @@ border-radius: 4px;
                                     margin-bottom: 0;
                                     margin-left: 0;
                                     margin-right: 0;
-                                    padding-top: 0;
-                                    padding-bottom: 0;
+                                    padding-top: var(--pd3);
+                                    padding-bottom: var(--pd3);
                                     padding-left: 0.5rem;
                                     padding-right: 0.5rem;
-                                    min-height: 2.3rem;
                                     display: flex;
                                     justify-content: center;
                                     align-items: center;
                                     text-align: center;
                                     text-decoration: none;
-                                    font-size: 1rem;
+                                    font-size: var(--sz3);
                                     color: #404040;
                                 }
 
@@ -435,12 +431,12 @@ border-radius: 4px;
                                         margin-bottom: 0;
                                         margin-left: 0;
                                         margin-right: 0;
-                                        padding-top: 0.3rem;
-                                        padding-bottom: 0.3rem;
+                                        padding-top: var(--pd2);
+                                        padding-bottom: var(--pd2);
                                         padding-left: 0.5rem;
                                         padding-right: 0.5rem;
                                         pointer-events: none;
-                                        font-size: 1.1rem;
+                                        font-size: var(--sz2);
                                         font-weight: bold;
                                         background-color: #DCDCDC;
                                     }
@@ -832,7 +828,8 @@ border-radius: 4px;
                         padding-bottom: 0;
                         padding-left: 0.5rem;
                         padding-right: 0.5rem;
-                        text-align: justify;
+                        text-align: left;
+                        line-height: 1.5;
                     }
 
                     .coloane {
@@ -848,7 +845,8 @@ border-radius: 4px;
                         padding-right: 0;
                         column-count: 4;
                         column-gap: var(--gap);
-                        text-align: justify;
+                        text-align: left;
+                        line-height: 1.5;
                     }
 
                         .citat-1 {
@@ -862,21 +860,21 @@ border-radius: 4px;
                             padding-bottom: 0;
                             padding-left: 0;
                             padding-right: 0;
-                            text-align: justify;
+                            text-align: left;
                         }
 
                         .citat-2 {
 border: 0px solid #404040;
 border-radius: 4px;
                             margin-top: 0;
-                            margin-bottom: 1rem;
+                            margin-bottom: var(--szp);
                             margin-left: 0;
                             margin-right: 0;
                             padding-top: 0;
                             padding-bottom: 0;
                             padding-left: 0;
                             padding-right: 0;
-                            text-align: justify;
+                            text-align: left;
                             font-weight: bold;
                         }
 
@@ -888,19 +886,19 @@ border-radius: 4px;
                         margin-bottom: 0;
                         margin-left: 0;
                         margin-right: 0;
-                        padding-top: 1rem;
-                        padding-bottom: 0;
+                        padding-top: 1.5rem;
+                        padding-bottom: 0.5rem;
                         padding-left: 0.5rem;
                         padding-right: 0.5rem;
                     }
 
                         .sectiune-informatii ul {
-                            margin-top: 0.5rem;
+                            margin-top: 0;
                             margin-bottom: 0;
                             margin-left: 0;
                             margin-right: 0;
                             padding-top: 0;
-                            padding-bottom: 0.5rem;
+                            padding-bottom: 0;
                             padding-left: 0;
                             padding-right: 0;
                             list-style: none;
@@ -911,8 +909,8 @@ border-radius: 4px;
                                 margin-bottom: 0;
                                 margin-left: 0;
                                 margin-right: 0;
-                                padding-top: 0.5rem;
-                                padding-bottom: 0.5rem;
+                                padding-top: 0
+                                padding-bottom: 0;
                                 padding-left: 0;
                                 padding-right: 0;
                                 list-style: none;
@@ -921,36 +919,24 @@ border-radius: 4px;
                                 .sectiune-informatii a {
 border: 0px solid #404040;
 border-radius: 4px;
-                                    margin-top: -0.5rem;
-                                    margin-bottom: -0.5rem;
+                                    margin-top: 0
+                                    margin-bottom: 0;
                                     margin-left: -0.5rem;
                                     margin-right: 0;
-                                    padding-top: 0.5rem;
-                                    padding-bottom: 0.5rem;
+                                    padding-top: var(--pd3);
+                                    padding-bottom: var(--pd3);
                                     padding-left: 0.5rem;
                                     padding-right: 0.5rem;
-                                    min-height: 2.3rem;
                                     display: inline-block;
                                     text-decoration: none;
+                                    font-size: var(--sz3);
+                                    line-height: 1.5;
                                     color: #404040;
                                 }
 
                                 .sectiune-informatii a:hover {
-border: 0px solid #404040;
-border-radius: 4px;
-                                    margin-top: -0.5rem;
-                                    margin-bottom: -0.5rem;
-                                    margin-left: -0.5rem;
-                                    margin-right: 0;
-                                    padding-top: 0.5rem;
-                                    padding-bottom: 0.5rem;
-                                    padding-left: 0.5rem;
-                                    padding-right: 0.5rem;
-                                    min-height: 2.3rem;
-                                    display: inline-block;
-                                    text-decoration: none;
-                                    color: #404040;
                                     text-shadow: 0.4px 0 currentcolor, -0.4px 0 currentcolor;
+                                    color: #404040;
                                 }
 
 /* Secțiune Legături */
@@ -1029,8 +1015,8 @@ border-radius: 4px;
                                     margin-bottom: 0;
                                     margin-left: 0;
                                     margin-right: 0;
-                                    padding-top: 0;
-                                    padding-bottom: 0;
+                                    padding-top: 0.5rem;
+                                    padding-bottom: 0.5rem;
                                     padding-left: 0.2rem;
                                     padding-right: 0.5rem;
                                     min-height: 5.5rem;
@@ -1038,6 +1024,8 @@ border-radius: 4px;
                                     align-items: center;
                                     text-align: center;
                                     text-decoration: none;
+                                    font-size: var(--sz3);
+                                    line-height: 1.5;
                                     color: #404040;
                                 }
 
@@ -1063,11 +1051,13 @@ border-radius: 4px;
                         margin-bottom: 0;
                         margin-left: 0;
                         margin-right: 0;
-                        padding-top: 0.5rem;
-                        padding-bottom: 0.5rem;
+                        padding-top: var(--pd3);
+                        padding-bottom: var(--pd3);
                         padding-left: 0.5rem;
                         padding-right: 0.5rem;
                         text-align: center;
+                        font-size: var(--sz3);
+                        line-height: 1.5;
                         background-color: #FFFFFF;
                     }
 
