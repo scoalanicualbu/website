@@ -6,7 +6,7 @@
     <head>
 
 <!-- Titlu -->
-        <title>Program de lucru</title>
+        <title>Prezentare</title>
 
 <!-- Resurse -->
         <base href="https://scoalanicualbu.github.io/website/">
@@ -24,20 +24,20 @@
 
 <!-- Descriere -->
         <meta name="description"
-             content="Site-ul oficial al Școlii Gimnaziale „Nicu Albu” Piatra Neamț, pagina „Program de lucru”.
-             Aici sunt cuprinse informații despre programul de lucru al școlii și legături către secțiuni precum istoric, circumscripție, comunicări.">
+             content="Site-ul oficial al Școlii Gimnaziale „Nicu Albu” Piatra Neamț, pagina principală, „Prezentare”.
+             Aici sunt cuprinse informații generale despre școală și legături către secțiuni precum istoric, circumscripție, program de lucru, comunicări.">
 
 <!-- Autor -->
         <meta name="author" content="informatician IFTIMIA DAN-ADRIAN">
 
 <!-- Cuvinte cheie -->
-        <meta name="keywords" content="ȘCOALA GIMNAZIALĂ NICU ALBU PIATRA NEAMȚ PROGRAM LUCRU">
+        <meta name="keywords" content="ȘCOALA GIMNAZIALĂ NICU ALBU PIATRA NEAMȚ PREZENTARE">
 
 <!-- Proprietate -->
         <meta property="og:site_name" content="Școala Gimnazială „Nicu Albu” Piatra Neamț">
         <meta property="og:url" content="https://scoalanicualbu.github.io/website">
-        <meta property="og:title" content="Site-ul oficial al Școlii Gimnaziale „Nicu Albu” Piatra Neamț, pagina „Program de lucru”">
-        <meta property="og:description" content="Aici sunt cuprinse informații despre programul de lucru al școlii și legături către secțiuni precum istoric, circumscripție, comunicări.">
+        <meta property="og:title" content="Site-ul oficial al Școlii Gimnaziale „Nicu Albu” Piatra Neamț, pagina principală, „Prezentare”">
+        <meta property="og:description" content="Aici sunt cuprinse informații generale despre școală și legături către secțiuni precum istoric, circumscripție, program de lucru, comunicări.">
         <meta property="og:type" content="website">
         <meta property="og:locale" content="ro_RO">
         <meta property="og:image" content="https://github.com/scoalanicualbu/website/blob/main/prezentare/intrare.png?raw=true">
@@ -54,7 +54,7 @@
         <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
 <!-- Structurare -->
-       <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css">
 
     </head>
 
@@ -87,7 +87,7 @@
 <!-- Meniu site -->
             <nav id="meniu-site" class="side-menu" aria-label="Meniu site">
                 <ul>
-                    <li><a href="prezentare.html" class="inactive">Prezentare</a></li>
+                    <li aria-current="page"><a href="prezentare.html" class="active">Prezentare</a></li>
                     <li><a href="oferta.html">Oferta educațională</a></li>
                     <li><a href="gradinita.html" >Grădiniță</a></li>
                     <li><a href="pregatitoare.html">Clasa pregătitoare</a></li>
@@ -110,7 +110,7 @@
         <button id="menu-toggle" aria-label="Buton Meniu site" aria-expanded="false" tabindex="0">&#9776;</button>
 
 <!-- CONȚINUT -->
-        <main id="program" class="content" aria-label="Conținut">
+        <main id="prezentare" class="content" aria-label="Conținut">
 
             <header>
 
@@ -129,7 +129,7 @@
                     <ul class="patru">
                         <li><a href="prezentare/istoric.html">Scurt istoric</a></li>
                         <li><a href="prezentare/circumscriptie.html">Circumscripție</a></li>
-                        <li aria-current="page"><a href="prezentare/program.html" class="active">Program de lucru</a></li>
+                        <li><a href="prezentare/program.html">Program de lucru</a></li>
                         <li><a href="prezentare/comunicari.html">Comunicări</a></li>
                     </ul>    
                 </nav>
@@ -139,108 +139,58 @@
 <!-- Secțiuni de conținut -->
             <div id="main-content" class="page-content" role="region" aria-label="Conținut pagină">
 
-<!-- Secțiune Conținut -->
-                <section id="program-continut" class="sectiune-continut" aria-labelledby="program-label">
+<!-- Secțiune Text -->
+                <section id="prezentare-text" class="sectiune-text" aria-labelledby="prezentare-label">
 
-                    <header class="sr-only">
-                        <div id="program-label">
-                            <h2>Program de lucru</h2>
+                    <header>
+                        <div class="citat-1">
+                            <h2>Motto:</h2>
                         </div>
+                        <p class="citat-2">Suntem o familie! Împreună construim, învățăm, inovăm! Suntem o școală deschisă, pentru comunitate!</p>
                     </header>
 
-                    <div id="program-imagine" class="wrap-4 wrap-show" aria-label="Imagine Program de lucru">
-                        <div id="imagine-lucru" class="content-imagine wrap-size">
-                           <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/intrare.png?raw=true" alt="">
-                        </div>
-                    </div>
+                    <article>
 
-                    <div id="program-secretariat" class="wrap-4 wrap-down" aria-labelledby="secretariat-label">
-                        <div id="tabel-secretariat" class="content-tabel">
-                            <table>
-                                <caption id="secretariat-label">
-                                    <h2>PROGRAM DE LUCRU CU PUBLICUL</h2>
-                                    <h3>Compartimentul Secretariat<br>Compartimentul Administrativ-Financiar</h3>
-                                    <br>
-                                    <p>Aprobat în ședința Consiliului de Administrație din data de 10.10.2024</p>
-                                </caption>
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Ziua</th>
-                                        <th scope="col">Intervalul orar</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Luni</td>
-                                        <td>10:00 - 14:00</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Marți</td>
-                                        <td>12:00 - 16:00</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Miercuri</td>
-                                        <td>12:00 - 16:00</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Joi</td>
-                                        <td>08:30 - 12:30</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Vineri</td>
-                                        <td>08:30 - 12:30</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
+                        <header>
+                            <div id="prezentare-label" class="sr-only">
+                                <h2>Prezentare</h2>
+                            </div>
+                        </header>
 
-                    <div id="program-director" class="wrap-4 wrap-down" aria-labelledby="director-label">
-                        <div id="tabel-director" class="content-tabel">
-                            <table>
-                                <caption id="director-label">
-                                    <br>
-                                    <br>
-                                    <h2>PROGRAM DE AUDIENȚE DIRECTOR</h2>
-                                    <br>
-                                    <p>Aprobat în ședința Consiliului de Administrație din data de 10.10.2024</p>
-                                </caption>
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Ziua</th>
-                                        <th scope="col">Intervalul orar</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Luni</td>
-                                        <td>09:00 - 11:00</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Marți</td>
-                                        <td>10:00 - 12:00</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Miercuri</td>
-                                        <td>-</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Joi</td>
-                                        <td>-</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Vineri</td>
-                                        <td>09:00 - 11:00</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                        <div class="coloane">
+                            <p>Şcoala Gimnazială „Nicu Albu” Piatra Neamţ este o şcoală urbană, care se situează în partea de vest a Municipiului Piatra Neamţ, în cartierul Precista, pe strada Ecoului, la numărul 5.</p>
+                            <p>În anul 1993, o dată cu construirea unei şcoli noi în cartierul Precista cu scopul de a descongestiona numărul mare de elevi şi clase care funcţionau la școala din acelaşi cartier, Şcoala cu clasele I-VIII Nr. 4 Piatra Neamț, apare, ca organizație nouă, Şcoala cu clasele I-VIII Nr. 10 Piatra Neamţ.</p>
+                            <p>Funcţionând din anul şcolar 1993-1994 într-un corp de clădire în construcţie, clădirea Şcolii cu clasele I-VIII Nr. 10 Piatra Neamţ a fost finalizată în 1997 aşa cum atestă procesul verbal de recepţie finală, datat 15.12.1997.</p>
+                            <p>Din data de 01.09.2010, prin Decizia Inspectoratului Școlar Județean Neamţ nr. 664 din 13.05.2010, denumirea Şcolii cu clasele I-VIII Nr. 10 Piatra Neamţ s-a modificat în Şcoala cu clasele I-VIII „Nicu Albu” Piatra Neamţ.</p>
+                            <p>Prin Hotărârea Consiliului Local al Municipiului Piatra Neamţ nr. 99 din 10.03.2012 privind aprobarea schimbării denumirii unor unităţi şcolare care aparţin reţelei şcolare a învăţământului preuniversitar din Municipiul Piatra Neamţ, începând cu anul şcolar 2012-2013 denumirea unităţii şcolare s-a modificat, respectiv, în Şcoala Gimnazială „Nicu Albu” Piatra Neamţ.</p>
+                            <p>Şcoala Gimnazială „Nicu Albu” Piatra Neamţ este o unitate de învăţământ de stat acreditată aparţinând sistemului educaţional preuniversitar, cu grupe și clase structurate pe 3 niveluri: preşcolar, primar şi gimnazial.</p>
+                            <p>Sfera educaţională a şcolii cuprinde desfăşurarea simultană a două sisteme, sistemul educaţional tradiţional şi un sistem alternativ de educaţie, sistemul Step by Step. Este prima şcoală din judeţul Neamţ care a experimentat şi aplică sistemul alternativ de educaţie Step by Step din anul școlar 2001-2002.</p>
+                            <p>Unitatea de învăţământ şi-a construit un brand din aceasta şi, în prezent, este apreciată şi căutată de părinţii care optează pentru această alternativă educațională aplicată doar pentru învățământul primar.</p>
+                            <p>În comparaţie cu sistemul tradiţional, în sistemul educațional Step by Step se foloseşte acelaşi plan-cadru de învăţământ, aceleaşi programe şcolare, dar oferă o altă modalitate de lucru cu elevii: lucrul pe centre de activitate, în care sunt aplicate metode interactive şi individualizate, tot demersul fiind centrat pe elev.</p>
+                            <p>Clasele de învăţământ primar în care se aplică alternativa educaţională Step by Step lucrează în programul „şcolii complete” (zilnic, între orele 08:00-16:00) şi prin implicarea considerabilă a părinţilor. În cele două spaţii amenajate ca săli cu mese se poate servi masa de prânz de către elevi, prin servicii de catering, suportate financiar de părinţi.</p>
                         </div>
-                    </div>
+
+                    </article>
 
                 </section>
 
+<!-- Secțiune Informații -->
+                <section id="prezentare-informatii" class="sectiune-informatii" aria-label="Informatii">
+
+                    <header>
+                            <h2>Noutăți:</h2>
+                    </header>
+
+                    <ul>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1CLVRw1GlJCwDIsDDFJc56dk1OkiulyMg/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Legătură către documentul „Condiții specifice”">Condiții specifice ocupării posturilor didactice vacante pentru anul școlar 2025-2026</a>
+                        </li>
+                    </ul>
+
+                </section> 
+
 <!-- Secțiune Legături -->
-                <section id="program-legaturi" class="sectiune-legaturi" aria-labelledby="legaturi-label">
+                <section id="prezentare-legaturi" class="sectiune-legaturi" aria-labelledby="legaturi-label">
 
                     <header>
                         <div id="legaturi-label" class="sr-only">
@@ -250,27 +200,27 @@
 
                     <ul>
                         <li>
-                            <a href="https://www.edu.ro" target="_blank" rel="noopener noreferrer" class="sectiune-legaturi" aria-label="Legătură către site-ul oficial al Ministerului Educației și Cercetării" title="Legătură către site-ul oficial al Ministerului Educației și Cercetării" tabindex="1">
+                            <a href="https://www.edu.ro" target="_blank" rel="noopener noreferrer" class="sectiune-legaturi" aria-label="Legătură către site-ul oficial al Ministerului Educației și Cercetării">
                                 <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/mec.png?raw=true" alt="Sigla Ministerului Educației și Cercetării">
-                                <span>Ministerul Educației și Cercetării</span><span class="sr-only">Ministerul Educației și Cercetării</span>
+                                <span>Ministerul Educației și Cercetării</span>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.isjneamt.ro" target="_blank" rel="noopener noreferrer" class="sectiune-legaturi" aria-label="Legătură către site-ul oficial al Inspectoratului Școlar Județean Neamț" title="Legătură către site-ul oficial al Inspectoratului Școlar Județean Neamț" tabindex="2">
+                            <a href="https://www.isjneamt.ro" target="_blank" rel="noopener noreferrer" class="sectiune-legaturi" aria-label="Legătură către site-ul oficial al Inspectoratului Școlar Județean Neamț">
                                 <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/isjneamt.png?raw=true" alt="Sigla Inspectoratului Școlar Județean Neamț">
-                                <span>Inspectoratul Școlar Județean Neamț</span><span class="sr-only">Inspectoratul Școlar Județean Neamț</span>
+                                <span>Inspectoratul Școlar Județean Neamț</span>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.cjrae-neamt.ro" target="_blank" rel="noopener noreferrer" class="sectiune-legaturi" aria-label="Legătură către site-ul oficial al Centrului Județean de Resurse și Asistență Educațională Neamț" title="Legătură către site-ul oficial al Centrului Județean de Resurse și Asistență Educațională Neamț" tabindex="3">
+                            <a href="https://www.cjrae-neamt.ro" target="_blank" rel="noopener noreferrer" class="sectiune-legaturi" aria-label="Legătură către site-ul oficial al Centrului Județean de Resurse și Asistență Educațională Neamț">
                                 <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/cjraeneamt.png?raw=true" alt="Sigla Centrului Județean de Resurse și Asistență Educațională Neamț">
-                                <span>Centrul Județean de Resurse și Asistență Educațională Neamț</span><span class="sr-only">Centrul Județean de Resurse și Asistență Educațională Neamț</span>
+                                <span>Centrul Județean de Resurse și Asistență Educațională Neamț</span>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.ccdneamt.ro"  target="_blank" rel="noopener noreferrer" class="sectiune-legaturi" aria-label="Legătură către site-ul oficial al Casei Corpului Didactic Neamț" title="Legătură către site-ul oficial al Casei Corpului Didactic Neamț" tabindex="4">
+                            <a href="https://www.ccdneamt.ro"  target="_blank" rel="noopener noreferrer" class="sectiune-legaturi" aria-label="Legătură către site-ul oficial al Casei Corpului Didactic Neamț">
                                 <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/ccdneamt.png?raw=true" alt="Sigla Casei Corpului Didactic Neamț">
-                                <span>Casa Corpului Didactic Neamț</span><span class="sr-only">Casa Corpului Didactic Neamț</span>
+                                <span>Casa Corpului Didactic Neamț</span>
                             </a>
                         </li>
                     </ul>
