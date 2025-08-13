@@ -65,7 +65,7 @@
                 --pd2: 0.725rem;
                 --sz3: 1.15rem;
                 --pd3: 0.8rem;
-                --szp: 0;
+                --szp: 0.8rem;
                 --gap: 2rem;
             }  
 
@@ -222,7 +222,7 @@ border-right: 1px solid #404040;
 
 /* Siglă */
                     .side-logo {
-    border: 1px solid #404040;
+    border: 0px solid #404040;
     border-radius: 4px;
                         margin-top: 0.5rem;
                         margin-bottom: 0;
@@ -250,10 +250,10 @@ border-radius: 50%;
 
 /* Denumire */
                     .side-name {
-border: 1px solid #404040;
+border: 0px solid #404040;
 border-radius: 4px;
                         margin-top: 0;
-                        margin-bottom: 1rem;
+                        margin-bottom: 0;
                         margin-left: 0;
                         margin-right: 0;
                         padding-top: var(--pd3);
@@ -272,7 +272,7 @@ border-radius: 4px;
 
 /* Meniu site */
                     .side-menu ul {
-border: 1px solid #404040;
+border: 0px solid #404040;
 border-radius: 4px;
                         margin-top: 0;
                         margin-bottom: 0;
@@ -292,7 +292,7 @@ border-radius: 4px;
                         }
 
                             .side-menu a {
-border: 1px solid #404040;
+border: 0px solid #404040;
 border-radius: 4px;
                                 margin-top: 0;
                                 margin-bottom: 0;
@@ -387,7 +387,7 @@ border-radius: 4px;
 
 /* Meniu pagină */
                     .page-menu {
-border: 1px solid #404040;
+border: 0px solid #404040;
 border-radius: 4px;
                         margin-top: 0;
                         margin-bottom: 0;
@@ -874,7 +874,7 @@ border-radius: 4px;
 
 /* Secțiune Text */
                     .sectiune-text {
-border: 1px solid #404040;
+border: 0px solid #404040;
 border-radius: 4px;
                         margin-top: 0;
                         margin-bottom: 0;
@@ -884,7 +884,7 @@ border-radius: 4px;
                         padding-bottom: 0;
                         padding-left: 0.5rem;
                         padding-right: 0.5rem;
-                        text-align: justify;
+                        text-align: left;
                         line-height: 1.5;
                     }
 
@@ -901,7 +901,7 @@ border-radius: 4px;
                         padding-right: 0;
                         column-count: 4;
                         column-gap: var(--gap);
-                        text-align: justify;
+                        text-align: left;
                         line-height: 1.5;
                     }
 
@@ -916,7 +916,7 @@ border-radius: 4px;
                             padding-bottom: 0;
                             padding-left: 0;
                             padding-right: 0;
-                            text-align: justify;
+                            text-align: left;
                         }
 
                         .citat-2 {
@@ -930,13 +930,13 @@ border-radius: 4px;
                             padding-bottom: 0;
                             padding-left: 0;
                             padding-right: 0;
-                            text-align: justify;
+                            text-align: left;
                             font-weight: bold;
                         }
 
 /* Secțiune Informații */
                     .sectiune-informatii {
-border: 1px solid #404040;
+border: 0px solid #404040;
 border-radius: 4px;
                         margin-top: 0;
                         margin-bottom: 0;
@@ -973,7 +973,7 @@ border-radius: 4px;
                             }
 
                                 .sectiune-informatii a {
-border: 1px solid #404040;
+border: 0px solid #404040;
 border-radius: 4px;
                                     margin-top: -0.5rem;
                                     margin-bottom: -0.5rem;
@@ -997,7 +997,7 @@ border-radius: 4px;
 
 /* Secțiune Legături */
                     .sectiune-legaturi {
-border: 1px solid #404040;
+border: 0px solid #404040;
 border-radius: 4px;
                         margin-top: auto;
                         margin-bottom: 1rem;
@@ -1087,7 +1087,7 @@ border-radius: 4px;
 
 /* SUBSOL */
                 .footer {
-border: 1px solid #404040;
+border: 0px solid #404040;
 border-radius: 4px;
                     margin-top: 0;
                     margin-bottom: 0;
@@ -1101,7 +1101,7 @@ border-radius: 4px;
                 }
 
                     .footer-informatii {
-border: 1px solid #404040;
+border: 0px solid #404040;
 border-radius: 4px;
                         margin-top: 0;
                         margin-bottom: 0;
@@ -1300,19 +1300,19 @@ border-radius: 4px;
 <!-- MENIU -->
         <aside id="main-menu" aria-label="Meniu">
 
-            <header>
+            <header role="presentation">
 
 <!-- Siglă -->
-                <section id="sigla" aria-labelledby="sigla-label">
-                    <div id="sigla-label" class="side-name sr-only">Sigla școlii</div>
-                        <div class="side-logo">
+                <section id="sigla" aria-label="Siglă">
+                    <div class="side-name sr-only">Sigla școlii</div>
+                        <div class="side-logo" role="banner">
                             <img src="https://github.com/scoalanicualbu/website/blob/main/sigla.png?raw=true" alt="Sigla Școlii Gimnaziale „Nicu Albu” Piatra Neamț">
                         </div>
                 </section>
 
 <!-- Denumire -->
-                <section id="denumire" aria-labelledby="denumire-label">
-                    <p id="denumire-label" class="side-name sr-only">Denumirea școlii</p>
+                <section id="denumire" aria-label="Denumire">
+                    <p class="side-name sr-only">Denumirea școlii</p>
                     <p class="side-name">Școala Gimnazială<br>„Nicu Albu”<br>Piatra Neamț</p>
                 </section>
 
@@ -1346,13 +1346,13 @@ border-radius: 4px;
 <!-- CONȚINUT -->
         <main id="prezentare" class="content" aria-label="Conținut">
 
-            <header>
+            <header role="presentation">
 
 <!-- Banner -->
-                <section id="banner" class="banner" aria-labelledby="banner-label">
+                <section id="banner" class="banner" role="banner" aria-label="Banner">
 
                     <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/intrare.png?raw=true" alt="Intrarea în Școala Gimnazială „Nicu Albu” Piatra Neamț">
-                    <div id="banner-label" class="sr-only">
+                    <div class="sr-only">
                         <h1>Școala Gimnazială „Nicu Albu” Piatra Neamț</h1>
                     </div>
 
@@ -1374,9 +1374,9 @@ border-radius: 4px;
             <div id="main-content" class="page-content" role="region" aria-label="Conținut pagină">
 
 <!-- Secțiune Text -->
-                <section id="prezentare-text" class="sectiune-text" aria-labelledby="prezentare-label">
+                <section id="prezentare-text" class="sectiune-text" aria-label="Secțiune Text">
 
-                    <header>
+                   <header role="presentation">
                         <div class="citat-1">
                             <h2>Motto:</h2>
                         </div>
@@ -1385,8 +1385,8 @@ border-radius: 4px;
 
                     <article>
 
-                        <header>
-                            <div id="prezentare-label" class="sr-only">
+                        <header role="presentation">
+                            <div class="sr-only">
                                 <h2>Prezentare</h2>
                             </div>
                         </header>
@@ -1409,9 +1409,9 @@ border-radius: 4px;
                 </section>
 
 <!-- Secțiune Informații -->
-                <section id="prezentare-informatii" class="sectiune-informatii" aria-labelledby="informatii-label">
+                <section id="prezentare-informatii" class="sectiune-informatii" role="region" aria-labelledby="informatii-label">
 
-                    <header>
+                    <header role="presentation">
                         <div id="informatii-label">
                             <h2>Noutăți:</h2>
                         </div>
@@ -1419,42 +1419,42 @@ border-radius: 4px;
 
                     <ul>
                         <li>
-                            <a href="https://drive.google.com/file/d/1CLVRw1GlJCwDIsDDFJc56dk1OkiulyMg/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Legătură către documentul „Condiții specifice”">Condiții specifice ocupării posturilor didactice vacante pentru anul școlar 2025-2026</a>
+                            <a href="https://drive.google.com/file/d/1CLVRw1GlJCwDIsDDFJc56dk1OkiulyMg/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Condiții specifice ocupării posturilor didactice vacante pentru anul școlar 2025-2026">Condiții specifice ocupării posturilor didactice vacante pentru anul școlar 2025-2026</a>
                         </li>
                     </ul>
 
                 </section> 
 
 <!-- Secțiune Legături -->
-                <section id="prezentare-legaturi" class="sectiune-legaturi" aria-labelledby="legaturi-label">
+                <section id="prezentare-legaturi" class="sectiune-legaturi" aria-label="Secțiune Legături">
 
-                    <header>
-                        <div id="legaturi-label" class="sr-only">
+                    <header role="presentation">
+                        <div class="sr-only">
                             <h2>Legături:</h2>
                         </div>
                     </header>
 
                     <ul>
                         <li>
-                            <a href="https://www.edu.ro" target="_blank" rel="noopener noreferrer" class="sectiune-legaturi" aria-label="Legătură către site-ul oficial al Ministerului Educației și Cercetării">
+                            <a href="https://www.edu.ro" target="_blank" rel="noopener noreferrer" class="sectiune-legaturi" aria-label="Ministerul Educației și Cercetării">
                                 <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/mec.png?raw=true" alt="Sigla Ministerului Educației și Cercetării">
                                 <span>Ministerul Educației și Cercetării</span>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.isjneamt.ro" target="_blank" rel="noopener noreferrer" class="sectiune-legaturi" aria-label="Legătură către site-ul oficial al Inspectoratului Școlar Județean Neamț">
+                            <a href="https://www.isjneamt.ro" target="_blank" rel="noopener noreferrer" class="sectiune-legaturi" aria-label="Inspectoratul Școlar Județean Neamț">
                                 <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/isjneamt.png?raw=true" alt="Sigla Inspectoratului Școlar Județean Neamț">
                                 <span>Inspectoratul Școlar Județean Neamț</span>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.cjrae-neamt.ro" target="_blank" rel="noopener noreferrer" class="sectiune-legaturi" aria-label="Legătură către site-ul oficial al Centrului Județean de Resurse și Asistență Educațională Neamț">
+                            <a href="https://www.cjrae-neamt.ro" target="_blank" rel="noopener noreferrer" class="sectiune-legaturi" aria-label="Centrul Județean de Resurse și Asistență Educațională Neamț">
                                 <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/cjraeneamt.png?raw=true" alt="Sigla Centrului Județean de Resurse și Asistență Educațională Neamț">
                                 <span>Centrul Județean de Resurse și Asistență Educațională Neamț</span>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.ccdneamt.ro"  target="_blank" rel="noopener noreferrer" class="sectiune-legaturi" aria-label="Legătură către site-ul oficial al Casei Corpului Didactic Neamț">
+                            <a href="https://www.ccdneamt.ro"  target="_blank" rel="noopener noreferrer" class="sectiune-legaturi" aria-label="Casa Corpului Didactic Neamț">
                                 <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/ccdneamt.png?raw=true" alt="Sigla Casei Corpului Didactic Neamț">
                                 <span>Casa Corpului Didactic Neamț</span>
                             </a>
@@ -1468,7 +1468,7 @@ border-radius: 4px;
         </main>
 
 <!-- SUBSOL -->
-        <footer class="footer" aria-labelledby="subsol">
+        <footer class="footer" role="contentinfo" aria-labelledby="subsol">
 
             <div  id="subsol" class="footer-informatii">
                 <span>&copy; 1993-<span id="year"></span> Școala Gimnazială „Nicu Albu” Piatra Neamț</span>
