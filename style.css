@@ -1,19 +1,17 @@
             :root {
-                --sz1: 1.45rem;
-                --pd1: 0.65rem;
-                --mgu: 0.1rem;
-                --mgd: 0.1rem;
-                --mgl: 0.4rem;
-                --mgr: 0.35rem;
-                --pdu: 0.5rem;
-                --pdd: 0.6rem;
-                --sz2: 1.3rem;
-                --pd2: 0.725rem;
-                --sz3: 1.15rem;
-                --pd3: 0.8rem;
+                --sz1: 1.5rem;
+                --pd1: 0.625rem;
+                --mgu: 0;
+                --mgd: 0;
+                --mgl: 0.1rem;
+                --mgr: 0.05rem;
+                --sz2: 1.25rem;
+                --pd2: 0.75rem;
+                --sz3: 1rem;
+                --pd3: 0.875rem;
                 --szp: 0.8rem;
-                --asz: 16rem;
-                --asu: 15rem;
+                --asz: 17rem;
+                --asu: 16rem;
                 --gap: 2rem;
             }  
 
@@ -194,8 +192,8 @@ border-radius: 50%;
                             margin-bottom: 0;
                             margin-left: auto;
                             margin-right: auto;
-                            width: 8.2rem;
-                            height: 8.2rem;
+                            width: 8rem;
+                            height: 8rem;
                             display: block;
                             background-color: #FFFFFF;
                         }
@@ -205,7 +203,7 @@ border-radius: 50%;
 border: 0px solid #404040;
 border-radius: 4px;
                         margin-top: 0;
-                        margin-bottom: 0;
+                        margin-bottom: 1rem;
                         margin-left: 0;
                         margin-right: 0;
                         padding-top: var(--pd3);
@@ -250,11 +248,10 @@ border-radius: 4px;
                                 padding-bottom: var(--pd3);
                                 padding-left: 0.5rem;
                                 padding-right: 0.5rem;
-                                font-size: var(--sz3);
                                 display: block;
                                 text-align: center;
                                 text-decoration: none;
-                                line-height: 1.5;
+                                font-size: var(--sz3);
                                 color: #202020;
                             }
 
@@ -293,9 +290,9 @@ border-radius: 4px;
                                         margin-bottom: var(--mgd);
                                         margin-left: var(--mgl);
                                         margin-right: var(--mgr);
-                                        padding-top: var(--pdu);
-                                        padding-bottom: var(--pdd);
-                                        transform: scale(1.05);
+                                        padding-top: var(--pd1);
+                                        padding-bottom: var(--pd1);
+                                        transform: scale(1.01);
                                     }
 
 /* CONȚINUT */
@@ -862,7 +859,7 @@ border-radius: 4px;
                         padding-bottom: 0;
                         padding-left: 0;
                         padding-right: 0;
-                        column-count: 4;
+                        column-width: 40rem;
                         column-gap: var(--gap);
                         text-align: left;
                         line-height: 1.5;
@@ -1100,9 +1097,6 @@ border-radius: 4px;
                     .content {
                         margin-left: var(--asz);
                     }
-                    .coloane {
-                        column-count: 2;
-                    }
                     .footer {
                         margin-left: var(--asz);
                     }
@@ -1115,9 +1109,6 @@ border-radius: 4px;
                     .content {
                         margin-left: var(--asz);
                     }
-                    .coloane {
-                        column-count: 2;
-                    }
                     .footer {
                         margin-left: var(--asz);
                     }
@@ -1127,9 +1118,6 @@ border-radius: 4px;
                     aside {
                         border-radius: 4px;
                     }
-                    .coloane {
-                        column-count: 2;
-                    }
                     .sectiune-legaturi {
                         margin-bottom: 0;
                     }
@@ -1138,9 +1126,6 @@ border-radius: 4px;
                 @media (min-width: 769px) and (max-width: 1280px) {
                     aside {
                         border-radius: 4px;
-                    }
-                    .coloane {
-                        column-count: 1;
                     }
                     #program-continut .wrap-4 {
                         grid-column: span 6;
@@ -1161,9 +1146,6 @@ border-radius: 4px;
                     .page-menu .patru {
                         grid-template-columns: repeat(2, 1fr);
                     }
-                    .coloane {
-                        column-count: 1;
-                    }
                     #program-continut .wrap-4 {
                         grid-column: span 6;
                     }
@@ -1182,9 +1164,6 @@ border-radius: 4px;
                     }
                     .page-menu .patru {
                         grid-template-columns: repeat(2, 1fr);
-                    }
-                    .coloane {
-                        column-count: 1;
                     }
                     #program-continut .wrap-4 {
                         grid-column: span 6;
@@ -1208,9 +1187,6 @@ border-radius: 4px;
                     .page-menu .patru {
                         grid-template-columns: repeat(2, 1fr);
                     }
-                    .coloane {
-                        column-count: 1;
-                    }
                     #program-continut .wrap-4 {
                         grid-column: span 12;
                     }
@@ -1232,9 +1208,6 @@ border-radius: 4px;
                     }
                     .page-menu .patru {
                         grid-template-columns: repeat(1, 1fr);
-                    }
-                    .coloane {
-                        column-count: 1;
                     }
                     #program-continut .wrap-4 {
                         grid-column: span 12;
