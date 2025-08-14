@@ -1,11 +1,19 @@
             :root {
                 --sz1: 1.45rem;
                 --pd1: 0.65rem;
+                --mgu: 0.1rem;
+                --mgd: 0.1rem;
+                --mgl: 0.4rem;
+                --mgr: 0.35rem;
+                --pdu: 0.5rem;
+                --pdd: 0.6rem;
                 --sz2: 1.3rem;
                 --pd2: 0.725rem;
                 --sz3: 1.15rem;
                 --pd3: 0.8rem;
                 --szp: 0.8rem;
+                --asz: 16rem;
+                --asu: 15rem;
                 --gap: 2rem;
             }  
 
@@ -125,7 +133,7 @@ border-right: 1px solid #404040;
                     padding-left: 0.5rem;
                     padding-right: 0.5rem;
                     width: 100%;
-                    max-width: 15rem;
+                    max-width: var(--asz);
                     height: 100%;
                     overflow-x: hidden;
                     scrollbar-width: none;
@@ -174,7 +182,7 @@ border-right: 1px solid #404040;
                         margin-right: auto;
                         padding-top: 0;
                         padding-bottom: 0;
-                        max-width: 14rem;
+                        max-width: var(--asu);
                         height: auto;
                         display: block;
                     }
@@ -204,7 +212,7 @@ border-radius: 4px;
                         padding-bottom: var(--pd3);
                         padding-left: 0;
                         padding-right: 0;
-                        width: 14rem;
+                        width: var(--asu);
                         display: block;
                         text-align: center;
                         text-decoration: none;
@@ -226,14 +234,10 @@ border-radius: 4px;
                         padding-bottom: 0;
                         padding-left: 0;
                         padding-right: 0;
-                        width: 14rem;
+                        width: var(--asu);
                         list-style: none;
                         text-align: center;
                     }
-
-                        .side-menu li:hover {
-                            font-weight: bold;
-                        }
 
                             .side-menu a {
 border: 0px solid #404040;
@@ -250,8 +254,13 @@ border-radius: 4px;
                                 display: block;
                                 text-align: center;
                                 text-decoration: none;
+                                line-height: 1.5;
                                 color: #202020;
                             }
+
+                                .side-menu a:hover {
+                                    font-weight: bold;
+                                }
 
                                 .side-menu a.active {
                                     margin-top: 0;
@@ -278,6 +287,16 @@ border-radius: 4px;
                                     padding-right: 0.5rem;
                                     font-size: var(--sz1);
                                 }
+
+                                    .side-menu a.inactive:hover {
+                                        margin-top: var(--mgu);
+                                        margin-bottom: var(--mgd);
+                                        margin-left: var(--mgl);
+                                        margin-right: var(--mgr);
+                                        padding-top: var(--pdu);
+                                        padding-bottom: var(--pdd);
+                                        transform: scale(1.05);
+                                    }
 
 /* CONȚINUT */
                 .content {
@@ -1067,10 +1086,10 @@ border-radius: 4px;
                         min-height: 100vh;
                     }
                     .content {
-                        margin-left: 15rem;
+                        margin-left: var(--asz);
                     }
                     .footer {
-                        margin-left: 15rem;
+                        margin-left: var(--asz);
                     }
                 }
 
@@ -1079,13 +1098,13 @@ border-radius: 4px;
                         min-height: 100vh;
                     }
                     .content {
-                        margin-left: 15rem;
+                        margin-left: var(--asz);
                     }
                     .coloane {
                         column-count: 2;
                     }
                     .footer {
-                        margin-left: 15rem;
+                        margin-left: var(--asz);
                     }
                 }
 
@@ -1094,13 +1113,13 @@ border-radius: 4px;
                         min-height: 100vh;
                     }
                     .content {
-                        margin-left: 15rem;
+                        margin-left: var(--asz);
                     }
                     .coloane {
                         column-count: 2;
                     }
                     .footer {
-                        margin-left: 15rem;
+                        margin-left: var(--asz);
                     }
                 }
 
