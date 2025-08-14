@@ -11,15 +11,15 @@
     padding: 1rem;
     position: relative;
     border: 1px solid #ccc;
-    width: 600px; /* pentru testare mai ușoară */
-    height: 300px; /* pentru spațiu */
+    width: 80%; /* ajustare pentru testare */
+    max-width: 800px; /* pentru ecran mai larg */
+    height: auto;
   }
   .image-container {
     flex-shrink: 0;
   }
   #text-area {
     position: relative;
-    width: calc(100% - 100px); /* ajustare */
   }
   /* Stil pentru rânduri */
   .line {
@@ -143,6 +143,7 @@ function impareazaText() {
   }, 0);
 }
 
+// Reapelare la redimensionare
 window.addEventListener('resize', impareazaText);
 impareazaText();
 </script>
