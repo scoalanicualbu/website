@@ -1241,7 +1241,7 @@ border-radius: 4px;
                     }
                 }
 
-                @media (min-width: 480px) and (max-width: 640px) {
+                @media (min-width: 577px) and (max-width: 640px) {
                     aside {
                         border-radius: 4px;
                     }
@@ -1254,6 +1254,24 @@ border-radius: 4px;
                     #program-continut .wrap-show {
                         display: none;
                     }
+                }
+
+                @media (min-width: 480px) and (max-width: 576px) {
+                    aside {
+                        border-radius: 4px;
+                    }
+                    .page-menu .patru {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                    #program-continut .wrap-4 {
+                        grid-column: span 6;
+                    }
+                    #program-continut .wrap-show {
+                        display: none;
+                    }
+                    .container {
+                            grid-template-columns: repeat(auto-fit, minmax(var(--ga2), 1fr));
+                        }
                 }
 
                 @media (min-width: 385px) and (max-width: 480px) {
@@ -1303,7 +1321,7 @@ border-radius: 4px;
 <!-- Siglă -->
                 <section id="sigla" aria-label="Siglă">
                     <div class="side-name sr-only">Sigla școlii</div>
-                        <div class="side-logo" role="banner">
+                        <div class="side-logo" role="region">
                             <img src="https://github.com/scoalanicualbu/website/blob/main/sigla.png?raw=true" alt="Sigla Școlii Gimnaziale „Nicu Albu” Piatra Neamț">
                         </div>
                 </section>
