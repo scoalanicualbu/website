@@ -674,7 +674,7 @@ border-radius: 4px;
                                 padding-left: 0;
                                 padding-right: 0;
                                 display: grid;
-                                grid-template-columns: repeat(auto-fit, minmax(1rem, 1fr));
+                                grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
                                 gap: var(--gap);
                                 list-style: none;
                             }
@@ -691,7 +691,7 @@ border-radius: 4px;
                                 padding-left: 0;
                                 padding-right: 0;
                                 display: grid;
-                                grid-template-columns: repeat(auto-fit, minmax(1rem, 1fr));
+                                grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
                                 gap: var(--gap);
                             }
 
@@ -699,7 +699,7 @@ border-radius: 4px;
 border: 1px solid #404040;
 border-radius: 4px;
                                     list-style: none;
-                                    min-width: 1rem;
+                                    min-width: 16rem;
                                 }
 
                                     .item-1:hover {
@@ -713,62 +713,15 @@ border-radius: 4px;
 border: 1px solid #404040;
 border-radius: 4px;
                                     list-style: none;
-                                    min-width: 1rem;
+                                    min-width: 16rem;
                                 }
 
                                     .item-2:hover {
 border: 1px solid #000000;
 border-radius: 4px;
-                                        text-shadow: 0.4px 0 currentcolor, -0.4px 0 currentcolor;
-                                        background-color: #F8F8F8;
-                                    }
-
-                .wrap-text {
-border: 1px solid #404040;
-border-radius: 4px;
-                    margin-top: 0;
-                    margin-bottom: 0;
-                    margin-left: 0.3rem;
-                    margin-right: 0.5rem;
-                    padding-top: 0;
-                    padding-bottom: 0;
-                    padding-left: 0;
-                    padding-right: 0;
-                    width: 100%;
-
-                    height: 100%;
-                    min-height: 5rem;
-                }
-
-                .imagine {
-                    flex-shrink: 0;
-                    border: 1px solid black;
-                    border-radius: 8px;
-                    padding: 0;
-                    margin-right: 0.5rem;
-                    box-sizing: border-box;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-
-                    .imagine img {
-                        max-width: 80px;
-                        height: auto;
-                    }
-
-                .text-area {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    width: 100%;
-                }
-
-                .line {
-                    white-space: nowrap;
-                    line-height: 1rem;
-                    margin-top: 0.3rem;
-                }
+                                    text-shadow: 0.4px 0 currentcolor, -0.4px 0 currentcolor;
+                                    background-color: #F8F8F8;
+                                }
 
 /* Secțiuni de conținut */
 
@@ -1182,7 +1135,7 @@ border-radius: 4px;
                                 }
 
                                 .wrap-span a {
-border: 1px solid #404040;
+border: 0px solid #404040;
 border-radius: 4px;
                                     margin-top: 0;
                                     margin-bottom: 0;
@@ -1190,10 +1143,11 @@ border-radius: 4px;
                                     margin-right: 0;
                                     padding-top: 0.5rem;
                                     padding-bottom: 0.5rem;
-                                    padding-left: 0.3rem;
+                                    padding-left: 0.2rem;
                                     padding-right: 0.5rem;
                                     min-height: 5.5rem;
-                                    max-width: 100%;
+                                    max-width: 100%;  
+                                    align-items: flex-start;  
                                     text-decoration: none;
                                     font-size: var(--sz3);
                                     line-height: 1.5;
@@ -1201,12 +1155,10 @@ border-radius: 4px;
                                 }
 
                                 .wrap-span span {
-border: 1px solid #404040;
-border-radius: 4px;
                                     padding-left: 0.5rem;
+                                    display: block;
                                     max-width: calc(100% - 0.5rem);
-                                    display: flex;
-                                    align-items: center;
+                                    text-align: center;
                                     word-wrap: break-word;
                                     color: #404040;
                                 }
@@ -1302,6 +1254,9 @@ border-radius: 4px;
                     #program-continut .wrap-show {
                         display: none;
                     }
+                    .sectiune-legaturi a {
+                        text-align: left;  
+                    }
                 }
 
                 @media (min-width: 385px) and (max-width: 480px) {
@@ -1316,6 +1271,9 @@ border-radius: 4px;
                     }
                     #program-continut .wrap-show {
                         display: none;
+                    }
+                    .sectiune-legaturi a {
+                        text-align: left;  
                     }
                 }
 
@@ -1332,7 +1290,9 @@ border-radius: 4px;
                     #program-continut .wrap-show {
                         display: none;
                     }
-
+                    .sectiune-legaturi a {
+                        text-align: left;  
+                    }
                 }
 
         </style>
@@ -1486,18 +1446,37 @@ border-radius: 4px;
 	
                     <ul class="container">                    
 
-
+                        <li class="list-1">
+                            <ul class="list-2">
+                                <li class="item-2">
+                                    <a href="https://www.edu.ro" target="_blank" rel="noopener noreferrer" class="wrap-span" aria-labelledby="mec">
+                                        <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/mec.png?raw=true" alt="Sigla Ministerului Educației și Cercetării (opens in new window)">
+                                        <span id="mec">Ministerul Educației și Cercetării</span>
+                                    </a>
+                                </li>
+                                <li class="item-2">
+                                    <a href="https://www.isjneamt.ro" target="_blank" rel="noopener noreferrer" class="wrap-span" aria-labelledby="isjneamt">
+                                        <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/isjneamt.png?raw=true" alt="Sigla Inspectoratului Școlar Județean Neamț (opens in new window)">
+                                        <span id="isjneamt">Inspectoratul Școlar Județean Neamț</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
 
                         <li class="list-1">
                             <ul class="list-2">
                                 <li class="item-2">
                                     <a href="https://www.cjrae-neamt.ro" target="_blank" rel="noopener noreferrer" class="wrap-span" aria-labelledby="cjraeneamt">
                                         <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/cjraeneamt.png?raw=true" alt="Sigla Centrului Județean de Resurse și Asistență Educațională Neamț (opens in new window)">
-                                        <span id="med" >Centrul Județean de Resurse și Asistență Educațională Neamț </span>
-                                        <!-- Buton Meniu <span id="mec" class="wrap-text">Acesta este un exemplu de text lung care trebuie împărțit dinamic pe rânduri și aliniat intr-un box cu dimensiune variabila dar care are o latime minima a b c d e f g h i</span>Buton Meniu -->
+                                        <span id="cjraeneamt">Centrul Județean de Resurse și Asistență Educațională Neamț</span>
                                     </a>
                                 </li>
-
+                                <li class="item-2">
+                                    <a href="https://www.ccdneamt.ro" target="_blank" rel="noopener noreferrer" class="wrap-span" aria-labelledby="ccdneamt">
+                                        <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/ccdneamt.png?raw=true" alt="Sigla Casei Corpului Didactic Neamț (opens in new window)">
+                                        <span id="ccdneamt">Casa Corpului Didactic Neamț</span>
+                                    </a>
+                                </li>
                             </ul>
                         </li>
 
@@ -1558,172 +1537,6 @@ border-radius: 4px;
             }
 
 // Secțiune Conținut
-
-// Măsurare lungime text
-                function masoaraString(text) {
-                    const span = document.createElement('span');
-                    span.style.visibility = 'hidden';
-                    span.style.position = 'absolute';
-                    span.style.whiteSpace = 'pre';
-                    span.innerText = text;
-                    document.body.appendChild(span);
-                    const latime = span.offsetWidth;
-                    document.body.removeChild(span);
-                    return latime;
-                }
-
-// Potrivire text
-                function potrivesteText(id) {
-
-// Identificare zonă text pentru potrivire
-                    const container = document.getElementById('id');
-                    if (!container) return;
-
-// Ascundere zonă text inainte de potrivire
-                    container.style.visibility = 'hidden';
-
-// Ștergere conținut anterior a zonei text
-                    container.innerHTML = '';
-
-// Preluare conținut text pentru potrivire
-                    const element = document.getElementById(id);
-                    if (!element) return;
-                    const textOriginal = element.textContent.trim();
-
-// Împărțire text în cuvinte
-                    const cuvinte = textOriginal.split(' ');
-                    const wrapRect = document.getElementById('wrap').getBoundingClientRect();
-                    const imagineRect = document.getElementById('imagine').getBoundingClientRect();
-                    const paddingPx = 0.5 * 16;
-                    const totalAvailableWidth = wrapRect.right - wrapRect.left - paddingPx;
-                    const imagineRightEdgeInContainer = imagineRect.right - wrapRect.left;
-                    const maxLineLength = totalAvailableWidth - imagineRightEdgeInContainer - paddingPx;
-
-// Împărțire text în rânduri
-                    let randuri = [];
-                    let currentLine = [];
-                    for (const cuvant of cuvinte) {
-                        const tempLineText = currentLine.concat(cuvant).join(' ');
-                        const width = masoaraString(tempLineText);
-                        if (width <= maxLineLength) {
-                            currentLine.push(cuvant);
-                        } else {
-                            if (currentLine.length > 0) {
-                                randuri.push(currentLine.join(' '));
-                            }
-                            const cuvantWidth = masoaraString(cuvant);
-                            if (cuvantWidth > maxLineLength) {
-                                randuri.push(cuvant);
-                                currentLine = [];
-                            } else {
-                                currentLine = [cuvant];
-                                }
-                            }
-                    }
-                    if (currentLine.length > 0) {
-                        randuri.push(currentLine.join(' '));
-                    }
-
-// Determinare lungime maximă rând
-                    let lungimeMaxima = 0;
-                    const randuriDimensiuni = [];
-                    randuri.forEach(r => {
-                        const width = masoaraString(r);
-                        randuriDimensiuni.push(width);
-                        if (width > lungimeMaxima) lungimeMaxima = width;
-                    });
-
-// Afișare și centrare text
-                    container.innerHTML = '';
-                    randuri.forEach((r, idx) => {
-                        const lineDiv = document.createElement('div');
-                        lineDiv.className = 'line';
-                        lineDiv.innerText = r;
-
-// Centrare rând față de lungimea maximă
-                        lineDiv.style.marginLeft = ((lungimeMaxima - randuriDimensiuni[idx]) / 2) + 'px';
-
-                        container.appendChild(lineDiv);
-                    });
-
-// Afișare zonă text după potrivire text
-                    container.style.visibility = 'visible';
-                }
-
-// Potrivire texte
-                function potrivesteTexte() {
-
-// Identificare texte pentru potrivire
-                const ids = ['mec', 'isjneamt', 'cjraeneamt', 'ccdneamt'];
-
-                ids.forEach(id => {
-                    const el = document.getElementById(id);
-                    if (el) {
-                        const img = el.querySelector('img');
-                        if (!img) {
-
-// Așteptare dacă imaginea nu există
-                            setTimeout(() => {
-                                potrivesteText(id);
-                            }, 300);
-                        } else {
-
-// Potrivire text dacă imaginea există
-                            if (img.complete && img.naturalWidth !== 0) {
-
-// Potrivire text dacă imaginea s-a încărcat
-                                potrivesteText(id);
-                            } else {
-
-// Așteptare încărcare imagine și apoi potrivire text
-                                img.addEventListener('load', () => {
-                                    potrivesteText(id);
-                                });
-                                }
-                            }
-                        }
-                    });
-                }
-
-// Potrivire texte la încărcare pagină
-                window.addEventListener('load', () => {
-                    potrivesteTexte();
-                });
-
-// Repotrivire texte la redimensionare pagină
-                window.addEventListener('resize', () => {
-                    potrivesteTexte();
-                });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // Calculare spațiere prin interpolare liniară
             function getGap() {
@@ -1836,4 +1649,3 @@ border-radius: 4px;
     </body>
 
 </html>
-
