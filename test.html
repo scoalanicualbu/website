@@ -73,6 +73,8 @@
                 --asz: 16rem;
                 --asu: 15rem;
                 --gap: 2rem;
+                --ga1: 2rem;
+                --ga2: 14.4rem;
             }  
 
           * {
@@ -657,7 +659,7 @@ border-radius: 4px;
                             padding-left: 0;
                             padding-right: 0;
                             display: grid;
-                            grid-template-columns: repeat(auto-fit, minmax(calc(29.4rem + var(--gap)), 1fr));
+                            grid-template-columns: repeat(auto-fit, minmax(calc(2 * var(--ga2) + var(--gap)), 1fr));
                             gap: var(--gap);
                             list-style: none;
                         }
@@ -674,7 +676,7 @@ border-radius: 4px;
                                 padding-left: 0;
                                 padding-right: 0;
                                 display: grid;
-                                grid-template-columns: repeat(auto-fit, minmax(14.7rem, 1fr));
+                                grid-template-columns: repeat(auto-fit, minmax(var(--ga2), 1fr));
                                 gap: var(--gap);
                                 list-style: none;
                             }
@@ -691,7 +693,7 @@ border-radius: 4px;
                                 padding-left: 0;
                                 padding-right: 0;
                                 display: grid;
-                                grid-template-columns: repeat(auto-fit, minmax(14.7rem, 1fr));
+                                grid-template-columns: repeat(auto-fit, minmax(var(--ga2), 1fr));
                                 gap: var(--gap);
                             }
 
@@ -699,7 +701,7 @@ border-radius: 4px;
 border: 1px solid #404040;
 border-radius: 4px;
                                     list-style: none;
-                                    min-width: 14.7rem;
+                                    min-width: var(--ga1);
                                 }
 
                                     .item-1:hover {
@@ -713,7 +715,7 @@ border-radius: 4px;
 border: 1px solid #404040;
 border-radius: 4px;
                                     list-style: none;
-                                    min-width: 14.7rem;
+                                    min-width: var(--ga2);
                                 }
 
                                     .item-2:hover {
