@@ -647,84 +647,6 @@ border: 1px solid #404040;
                                     padding-right: 0.5rem;
                                 }
 
-                        .container {
-border: 0px solid #404040;
-border-radius: 4px;
-                            margin-top: 0;
-                            margin-bottom: 0;
-                            margin-left: 0;
-                            margin-right: 0;
-                            padding-top: 0;
-                            padding-bottom: 0;
-                            padding-left: 0;
-                            padding-right: 0;
-                            display: grid;
-                            grid-template-columns: repeat(auto-fit, minmax(calc(2 * var(--ga2) + var(--gap)), 1fr));
-                            gap: var(--gap);
-                            list-style: none;
-                        }
-
-                            .list-1 {
-border: 0px solid #404040;
-border-radius: 4px;
-                                margin-top: 0;
-                                margin-bottom: 0;
-                                margin-left: 0;
-                                margin-right: 0;
-                                padding-top: 0;
-                                padding-bottom: 0;
-                                padding-left: 0;
-                                padding-right: 0;
-                                display: grid;
-                                grid-template-columns: repeat(auto-fit, minmax(var(--ga2), 1fr));
-                                gap: var(--gap);
-                                list-style: none;
-                            }
-
-                            .list-2 {
-border: 0px solid #404040;
-border-radius: 4px;
-                                margin-top: 0;
-                                margin-bottom: 0;
-                                margin-left: 0;
-                                margin-right: 0;
-                                padding-top: 0;
-                                padding-bottom: 0;
-                                padding-left: 0;
-                                padding-right: 0;
-                                display: grid;
-                                grid-template-columns: repeat(auto-fit, minmax(var(--ga2), 1fr));
-                                gap: var(--gap);
-                            }
-
-                                .item-1 {
-border: 1px solid #404040;
-border-radius: 4px;
-                                    list-style: none;
-                                    min-width: var(--ga1);
-                                }
-
-                                    .item-1:hover {
-border: 1px solid #000000;
-border-radius: 4px;
-                                    text-shadow: 0.4px 0 currentcolor, -0.4px 0 currentcolor;
-                                    background-color: #F8F8F8;
-                                }
-
-                                .item-2 {
-border: 1px solid #404040;
-border-radius: 4px;
-                                    list-style: none;
-                                    min-width: var(--ga2);
-                                }
-
-                                    .item-2:hover {
-border: 1px solid #000000;
-border-radius: 4px;
-                                    text-shadow: 0.4px 0 currentcolor, -0.4px 0 currentcolor;
-                                    background-color: #F8F8F8;
-                                }
-
 /* Secțiuni de conținut */
 
 /* Secțiune Continut */
@@ -1103,51 +1025,89 @@ border-radius: 4px;
                         margin-bottom: 1rem;
                         margin-left: 0;
                         margin-right: 0;
-                        padding-top: 0.5rem;
-                        padding-bottom: 0.5rem;
-                        padding-left: 0.5rem;
-                        padding-right: 0.5rem;
+                        padding-top: 0;
+                        padding-bottom: 0;
+                        padding-left: 0;
+                        padding-right: 0;
                     }
 
-                        .wrap-span {
+                        .sectiune-legaturi ul {
 border: 0px solid #404040;
 border-radius: 4px;
-                            margin-top: 0;
-                            margin-bottom: 0
+                            margin-top: 0.5rem;
+                            margin-bottom: 0.5rem;
                             margin-left: 0;
                             margin-right: 0;
                             padding-top: 0;
                             padding-bottom: 0;
-                            padding-left: 0;
+                            padding-left: 0.5rem;
                             padding-right: 0.5rem;
-                            width: 100%;
-                            display: inline-flex;
+                            grid-template-columns: repeat(4, 1fr);
+                            display:grid;
+                            gap: var(--gap);
                             align-items: center;
-                            text-decoration: none;
-                            font-size: var(--sz3);
-                            line-height: 1.5;
-                            color: #404040;
+                            list-style: none;
                         }
 
-                            .wrap-span img {
+                            .sectiune-legaturi li {
 border: 1px solid #404040;
 border-radius: 4px;
-                                margin-top: 0.2rem;
-                                margin-bottom: 0.2rem;
-                                margin-left: 0.2rem;
-                                margin-right: 0.5rem;
+                                margin-top: 0;
+                                margin-bottom: 0;
+                                margin-left: 0;
+                                margin-right: 0;
                                 padding-top: 0;
                                 padding-bottom: 0;
                                 padding-left: 0;
                                 padding-right: 0;
-                                width: 5rem;
-                                height: 5rem;
-                                display: inline-flex; 
-                                background-color: #FFFFFF;
+                                flex-grow: 1;
                             }
 
-                        .wrap-text {
+                                .sectiune-legaturi li:hover {
+border: 1px solid #000000;
+border-radius: 4px;
+                                    text-shadow: 0.4px 0 currentcolor, -0.4px 0 currentcolor;
+                                    background-color: #F8F8F8;
+                                }
+
+                                .sectiune-legaturi img {
+border: 1px solid #404040;
+border-radius: 4px;
+                                    margin-top: 0.2rem;
+                                    margin-bottom: 0.2rem;
+                                    margin-left: 0.2rem;
+                                    margin-right: 0.5rem;
+                                    padding-top: 0;
+                                    padding-bottom: 0;
+                                    padding-left: 0;
+                                    padding-right: 0;
+                                    width: 5rem;
+                                    height: 5rem;
+                                    background-color: #FFFFFF;
+                                }
+
+                                .sectiune-legaturi a {
 border: 0px solid #404040;
+border-radius: 4px;
+                                    margin-top: 0;
+                                    margin-bottom: 0
+                                    margin-left: 0;
+                                    margin-right: 0;
+                                    padding-top: 0;
+                                    padding-bottom: 0;
+                                    padding-left: 0;
+                                    padding-right: 0.5rem;
+                                    width: 100%;
+                                    display: inline-flex;
+                                    align-items: center;
+                                    text-decoration: none;
+                                    font-size: var(--sz3);
+                                    line-height: 1.5;
+                                    color: #404040;
+                                }
+
+                        .wrap-text {
+border: 1px solid #404040;
 border-radius: 4px;
                             margin-top: 0;
                             margin-bottom: 0
@@ -1453,42 +1413,31 @@ border-radius: 4px;
                         </div>
                     </header>
 	
-                    <ul class="container">                    
-
-                        <li class="list-1">
-                            <ul class="list-2">
-                                <li class="item-2">
-                                    <a href="https://www.edu.ro" target="_blank" rel="noopener noreferrer" class="wrap-span" aria-labelledby="mec">
-                                        <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/mec.png?raw=true" alt="Sigla Ministerului Educației și Cercetării (opens in new window)">
-                                        <span id="mec" class="wrap-text">Ministerul Educației și Cercetării</span>
-                                    </a>
-                                </li>
-                                <li class="item-2">
-                                    <a href="https://www.isjneamt.ro" target="_blank" rel="noopener noreferrer" class="wrap-span" aria-labelledby="isjneamt">
-                                        <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/isjneamt.png?raw=true" alt="Sigla Inspectoratului Școlar Județean Neamț (opens in new window)">
-                                        <span id="isjneamt" class="wrap-text">Inspectoratul Școlar Județean Neamț</span>
-                                    </a>
-                                </li>
-                            </ul>
+                    <ul>                    
+                        <li>
+                            <a href="https://www.edu.ro" target="_blank" rel="noopener noreferrer"aria-labelledby="mec">
+                                <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/mec.png?raw=true" alt="Sigla Ministerului Educației și Cercetării (link opens in new window)">
+                                <span id="mec" class="wrap-text">Ministerul Educației și Cercetării</span>
+                            </a>
                         </li>
-
-                        <li class="list-1">
-                            <ul class="list-2">
-                                <li class="item-2">
-                                    <a href="https://www.cjrae-neamt.ro" target="_blank" rel="noopener noreferrer" class="wrap-span" aria-labelledby="cjraeneamt">
-                                        <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/cjraeneamt.png?raw=true" alt="Sigla Centrului Județean de Resurse și Asistență Educațională Neamț (opens in new window)">
-                                        <span id="cjraeneamt" class="wrap-text">Centrul Județean de Resurse și Asistență Educațională Neamț</span>
-                                    </a>
-                                </li>
-                                <li class="item-2">
-                                    <a href="https://www.ccdneamt.ro" target="_blank" rel="noopener noreferrer" class="wrap-span" aria-labelledby="ccdneamt">
-                                        <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/ccdneamt.png?raw=true" alt="Sigla Casei Corpului Didactic Neamț (opens in new window)">
-                                        <span id="ccdneamt" class="wrap-text">Casa Corpului Didactic Neamț</span>
-                                    </a>
-                                </li>
-                            </ul>
+                        <li>
+                            <a href="https://www.isjneamt.ro" target="_blank" rel="noopener noreferrer"aria-labelledby="isjneamt">
+                                <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/isjneamt.png?raw=true" alt="Sigla Inspectoratului Școlar Județean Neamț (link opens in new window)">
+                                <span id="isjneamt" class="wrap-text">Inspectoratul Școlar Județean Neamț</span>
+                            </a>
                         </li>
-
+                        <li>
+                            <a href="https://www.cjrae-neamt.ro" target="_blank" rel="noopener noreferrer"aria-labelledby="cjraeneamt">
+                                <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/cjraeneamt.png?raw=true" alt="Sigla Centrului Județean de Resurse și Asistență Educațională Neamț (link opens in new window)">
+                                <span id="cjraeneamt" class="wrap-text">Centrul Județean de Resurse și Asistență Educațională Neamț</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.ccdneamt.ro" target="_blank" rel="noopener noreferrer"aria-labelledby="ccdneamt">
+                                <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/ccdneamt.png?raw=true" alt="Sigla Casei Corpului Didactic Neamț (link opens in new window)">
+                                <span id="ccdneamt" class="wrap-text">Casa Corpului Didactic Neamț</span>
+                            </a>
+                        </li>
                     </ul>
 
                 </section>
