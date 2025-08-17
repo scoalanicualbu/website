@@ -60,15 +60,15 @@
 
             :root {
                 --sz1: 1.5rem;
-                --pd1: 0.625rem;
+                --pd1: 0.2rem;
                 --mgu: 0;
                 --mgd: 0;
                 --mgl: 0.1rem;
                 --mgr: 0.05rem;
                 --sz2: 1.25rem;
-                --pd2: 0.75rem;
+                --pd2: 0.35rem;
                 --sz3: 1rem;
-                --pd3: 0.875rem;
+                --pd3: 0.55rem;
                 --szp: 0.8rem;
                 --asz: 16rem;
                 --asu: 15rem;
@@ -94,6 +94,7 @@ border: 0px solid #404040;
                 min-height: 100vh;
                 display: flex;
                 flex-direction: column;
+                line-height: 1.5;
                 font-family: Arial, sans-serif;
                 font-size: var(--sz3);
                 background-color: #FFFFFF;
@@ -254,8 +255,8 @@ border-radius: 50%;
                             margin-bottom: 0;
                             margin-left: auto;
                             margin-right: auto;
-                            width: 8rem;
-                            height: 8rem;
+                            width: 8.6rem;
+                            height: 8.6rem;
                             display: block;
                             background-color: #FFFFFF;
                         }
@@ -300,7 +301,7 @@ border-radius: 4px;
                     }
 
                             .side-menu a {
-border: 0px solid #404040;
+border:0px solid #404040;
 border-radius: 4px;
                                 margin-top: 0;
                                 margin-bottom: 0;
@@ -877,16 +878,33 @@ border-radius: 4px;
                             flex-grow: 1;
                         }
 
-                            .wrap-down {
-                                justify-content: flex-end;
-                            }
+                        .wrap-down {
+                            justify-content: flex-end;
+                        }
 
-                            .wrap-size {
-                                height: 0;
-                            }
+                        .wrap-size {
+                            height: 0;
+                        }
 
-                            .wrap-show {
-                            }
+                        .wrap-show {
+                        }
+
+                        .wrap-text {
+border: 1px solid #404040;
+border-radius: 4px;
+                            margin-top: 0;
+                            margin-bottom: 0
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            width: 100%;
+                            height: 5.5rem;
+                            display: flex; 
+                            align-items: center;
+                        }
 
                     .coloane {
 border: 0px solid #404040;
@@ -902,7 +920,6 @@ border-radius: 4px;
                         column-width: 40rem;
                         column-gap: var(--gap);
                         text-align: left;
-                        line-height: 1.5;
                     }
 
 /* Secțiune Text */
@@ -918,7 +935,6 @@ border-radius: 4px;
                         padding-left: 0.5rem;
                         padding-right: 0.5rem;
                         text-align: left;
-                        line-height: 1.5;
                     }
 
                         .citat-1 {
@@ -1002,7 +1018,6 @@ border-radius: 4px;
                                     display: inline-block;
                                     text-decoration: none;
                                     font-size: var(--sz3);
-                                    line-height: 1.5;
                                     color: #404040;
                                 }
 
@@ -1098,26 +1113,8 @@ border-radius: 4px;
                                     align-items: center;
                                     text-decoration: none;
                                     font-size: var(--sz3);
-                                    line-height: 1.5;
                                     color: #404040;
                                 }
-
-                        .wrap-text {
-border: 1px solid #404040;
-border-radius: 4px;
-                            margin-top: 0;
-                            margin-bottom: 0
-                            margin-left: 0;
-                            margin-right: 0;
-                            padding-top: 0;
-                            padding-bottom: 0;
-                            padding-left: 0;
-                            padding-right: 0;
-                            width: 100%;
-                            height: 5.5rem;
-                            display: flex; 
-                            align-items: center;
-                        }
 
 /* SUBSOL */
                 .footer {
@@ -1147,7 +1144,6 @@ border-radius: 4px;
                         padding-right: 0.5rem;
                         text-align: center;
                         font-size: var(--sz3);
-                        line-height: 1.5;
                         background-color: #FFFFFF;
                     }
 
@@ -1266,6 +1262,7 @@ border-radius: 4px;
                     }
                 }
 
+/* page-menu 1 */
                 @media (max-width: 352px) {
                     aside {
                         border-radius: 4px;
@@ -1358,7 +1355,7 @@ border-radius: 4px;
 <!-- Meniu pagină -->
                 <nav id="meniu-pagina" class="page-menu" aria-label="Meniu pagină">
                     <ul class="patru">
-                        <li><a href="prezentare/istoric.html">Scurt istoric</a></li>
+                        <li><a href="prezentare/istoric.html" class="active">Scurt istoric</a></li>
                         <li><a href="prezentare/circumscriptie.html">Circumscripție</a></li>
                         <li><a href="prezentare/program.html">Program de lucru</a></li>
                         <li><a href="prezentare/comunicari.html">Comunicări</a></li>
