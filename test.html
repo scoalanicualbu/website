@@ -740,7 +740,7 @@ border-radius: 4px;
                                     padding-top: 0;
                                     padding-bottom: 0;
                                     padding-left: 0;
-                                    padding-right: 0.2rem;
+                                    padding-right: 0;
                                     width: 100%;
                                     display: flex;
                                     align-items: center;
@@ -1297,7 +1297,10 @@ border-radius: 4px;
     <body>
 
 <!-- Link "Sari la conținut" -->
-        <a href="#main-content" id="skipToContinut" class="skip-link">Mergi la conținutul paginii</a>
+        <a href="#main-content" id="skipToContinut" target="_self" class="skip-link">
+            Mergi la conținutul paginii
+            <span class="sr-only"> (se deschide în aceeași fereastră)</span>
+        </a>
 
 <!-- MENIU -->
         <aside id="main-menu" aria-label="Meniu">
@@ -1323,8 +1326,14 @@ border-radius: 4px;
 <!-- Meniu site -->
             <nav id="meniu-site" class="side-menu" aria-label="Meniu site">
                 <ul>
-                    <li aria-current="page"><a href="prezentare.html" class="active">Prezentare</a></li>
-                    <li><a href="oferta.html">Oferta educațională</a></li>
+                    <li aria-current="page">
+                        <a href="prezentare.html" target="_self" class="active">
+                            Prezentare
+                            <span class="sr-only"> (se deschide în aceeași fereastră)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="oferta.html" target="_self">Oferta educațională<span class="sr-only"> (se deschide în aceeași fereastră)</span></a></li>
                     <li><a href="gradinita.html" >Grădiniță</a></li>
                     <li><a href="pregatitoare.html">Clasa pregătitoare</a></li>
                     <li><a href="evaluare.html">Evaluare națională</a></li>
@@ -1422,7 +1431,7 @@ border-radius: 4px;
                     <ul>
                         <li>
                             <a href="https://drive.google.com/file/d/1CLVRw1GlJCwDIsDDFJc56dk1OkiulyMg/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-labelledby="conditii-specifice">
-                                <span id="conditii-specifice">Condiții specifice ocupării posturilor didactice vacante pentru anul școlar 2025-2026</span><span class="sr-only"> (opens in new window)</span>
+                                <span id="conditii-specifice">Condiții specifice ocupării posturilor didactice vacante pentru anul școlar 2025-2026</span><span class="sr-only"> (link opens in new window)</span>
                             </a>
                         </li>
                         <li>
@@ -1573,7 +1582,7 @@ border-radius: 4px;
                     container.style.visibility = 'hidden';
                     container.innerHTML = '';
                     const aRect = aElement.getBoundingClientRect();
-                    const paddingPx = (0.2 + 0.1 + 5 + 0.1 + 0.5 + 0.1 + 0.1 + 0.2) * 16;
+                    const paddingPx = (0.2 + 0.1 + 5 + 0.1 + 0.5 + 0.1 + 0.1 + 0) * 16;
                     const totalAvailableWidth = aRect.width - paddingPx;
                     const maxLineLength = totalAvailableWidth;
                     const cuvinte = text.split(' ');
