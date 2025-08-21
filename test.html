@@ -15,7 +15,7 @@
         <meta charset="UTF-8">
 
 <!-- Compatibilitate -->
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">	
         <meta name="mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-capable" content="yes">
 
@@ -536,9 +536,84 @@ border-radius: 4px;
                         background-color: #FFFFFF;
                         }
 
-                        .content-imagine {
+/* Secțiuni de conținut */
+
+/* Secțiune Text */
+                    .sectiune-text {
 border: 0px solid #404040;
 border-radius: 4px;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        margin-left: 0;
+                        margin-right: 0;
+                        padding-top: 1.5rem;
+                        padding-bottom: 0;
+                        padding-left: 0.5rem;
+                        padding-right: 0.5rem;
+                        width: 100%;
+                        text-align: left;
+                    }
+
+                        .citat-1 {
+border: 0px solid #404040;
+border-radius: 4px;
+                            margin-top: 0;
+                            margin-bottom: 0.5rem;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            text-align: left;
+                        }
+
+                        .citat-2 {
+border: 0px solid #404040;
+border-radius: 4px;
+                            margin-top: 0;
+                            margin-bottom: 1rem;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            text-align: left;
+                            font-weight: bold;
+                        }
+
+                    .coloane {
+border: 0px solid #404040;
+border-radius: 4px;
+                        margin-top: 0;
+                        margin-bottom: 0.5rem;
+                        margin-left: 0;
+                        margin-right: 0;
+                        padding-top: 0;
+                        padding-bottom: 0;
+                        padding-left: 0;
+                        padding-right: 0;
+                        column-width: 40rem;
+                        column-gap: var(--gap);
+                        text-align: left;
+                    }
+
+/* Secțiune Informații */
+                    .sectiune-informatii {
+border: 0px solid #404040;
+border-radius: 4px;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        margin-left: 0;
+                        margin-right: 0;
+                        padding-top: 1.5rem;
+                        padding-bottom: 0.5rem;
+                        padding-left: 0.5rem;
+                        padding-right: 0.5rem;
+                    }
+
+                        .sectiune-informatii ul {
                             margin-top: 0;
                             margin-bottom: 0;
                             margin-left: 0;
@@ -547,12 +622,76 @@ border-radius: 4px;
                             padding-bottom: 0;
                             padding-left: 0;
                             padding-right: 0;
-                            width: 100%;
-                            height: auto;
-                            display: block;
+                            list-style: none;
                         }
 
-                            .content-imagine img {
+                            .sectiune-informatii li {
+                                margin-top: 0;
+                                margin-bottom: 0;
+                                margin-left: 0;
+                                margin-right: 0;
+                                padding-top: 0
+                                padding-bottom: 0;
+                                padding-left: 0;
+                                padding-right: 0;
+                                list-style: none;
+                            }
+
+                                .sectiune-informatii a {
+border: 0px solid #404040;
+border-radius: 4px;
+                                    margin-top: 0
+                                    margin-bottom: 0;
+                                    margin-left: -0.5rem;
+                                    margin-right: 0;
+                                    padding-top: var(--pd3);
+                                    padding-bottom: var(--pd3);
+                                    padding-left: 0.5rem;
+                                    padding-right: 0.5rem;
+                                    display: inline-block;
+                                    text-decoration: none;
+                                    font-size: var(--sz3);
+                                    color: #404040;
+                                }
+
+                                .sectiune-informatii a:hover {
+                                    text-shadow: 0.4px 0 currentcolor, -0.4px 0 currentcolor;
+                                    color: #404040;
+                                }
+
+/* Secțiune Legături */
+                    .sectiune-legaturi {
+border: 0px solid #404040;
+border-radius: 4px;
+                        margin-top: auto;
+                        margin-bottom: 1rem;
+                        margin-left: 0;
+                        margin-right: 0;
+                        padding-top: 0;
+                        padding-bottom: 0;
+                        padding-left: 0;
+                        padding-right: 0;
+                    }
+
+                        .sectiune-legaturi ul {
+border: 0px solid #404040;
+border-radius: 4px;
+                            margin-top: 0.5rem;
+                            margin-bottom: 0.5rem;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0.5rem;
+                            padding-right: 0.5rem;
+                            grid-template-columns: repeat(4, 1fr);
+                            display:grid;
+                            gap: var(--gap);
+                            align-items: center;
+                            list-style: none;
+                        }
+
+                            .sectiune-legaturi li {
 border: 1px solid #404040;
 border-radius: 4px;
                                 margin-top: 0;
@@ -563,86 +702,76 @@ border-radius: 4px;
                                 padding-bottom: 0;
                                 padding-left: 0;
                                 padding-right: 0;
-                                width: 100%;
-                                height: auto;
-                                display: block;
-                                object-fit: cover;
+                                display: flex;
+                                align-items: center;
+                                flex-grow: 1;
                             }
 
-                        .content-tabel {
-border: 1px solid #404040;
+                                .sectiune-legaturi li:hover {
+border: 1px solid #000000;
 border-radius: 4px;
-                            margin-top: 0;
-                            margin-bottom: 0;
-                            margin-left: 0;
-                            margin-right: 0;
-                            padding-top: 0;
-                            padding-bottom: 0;
-                            padding-left: 0;
-                            padding-right: 0;
-                            width: 100%;
-                        }
-
-                            .content-tabel table {
-border: none;
-border-collapse: collapse;
-                                margin-top: 0;
-                                margin-bottom: 0;
-                                margin-left: 0;
-                                margin-right: 0;
-                                padding-top: 0.5rem;
-                                padding-bottom: 0.5rem;
-                                padding-left: 0.5rem;
-                                padding-right: 0.5rem;
-                                width: 100%;
-                                max-width: 100%;
-                            }
-
-                                table caption {
-                                    padding-top: 0.5rem;
-                                }
-
-                                table tr:last-child td {
-                                    border-bottom: 0;
-                                }
-
-                                table tr td:first-child,
-                                table tr th:first-child {
-                                    border-left: 0;
-                                }
-
-                                table tr td:last-child,
-                                table tr th:last-child {
-                                    border-right: 0;
-                                }
-
-                                .content-tabel th {
-border: 1px solid #404040;
-border-radius: 4px;
-                                    margin-top: 0;
-                                    margin-bottom: 0;
-                                    margin-left: 0;
-                                    margin-right: 0;
-                                    padding-top: 0.5rem;
-                                    padding-bottom: 0.5rem;
-                                    padding-left: 0.5rem;
-                                    padding-right: 0.5rem;
+                                    text-shadow: 0.4px 0 currentcolor, -0.4px 0 currentcolor;
                                     background-color: #F8F8F8;
                                 }
 
-                                .content-tabel td {
+                                .sectiune-legaturi img {
 border: 1px solid #404040;
-                                    margin-top: 0;
-                                    margin-bottom: 0;
-                                    margin-left: 0;
-                                    margin-right: 0;
-                                    padding-top: 0.5rem;
-                                    padding-bottom: 0.5rem;
-                                    padding-left: 0.5rem;
-                                    padding-right: 0.5rem;
+border-radius: 4px;
+                                    margin-top: 0.2rem;
+                                    margin-bottom: 0.2rem;
+                                    margin-left: 0.2rem;
+                                    margin-right: 0.5rem;
+                                    padding-top: 0;
+                                    padding-bottom: 0;
+                                    padding-left: 0;
+                                    padding-right: 0;
+                                    width: 5rem;
+                                    height: 5rem;
+                                    background-color: #FFFFFF;
                                 }
 
-/* Secțiuni de conținut */
+                                .sectiune-legaturi a {
+border: 0px solid #404040;
+border-radius: 4px;
+                                    margin-top: 0;
+                                    margin-bottom: 0
+                                    margin-left: 0;
+                                    margin-right: 0;
+                                    padding-top: 0;
+                                    padding-bottom: 0;
+                                    padding-left: 0;
+                                    padding-right: 0.5rem;
+                                    width: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: flex-start;
+                                    text-decoration: none;
+                                    font-size: var(--sz3);
+                                    color: #404040;
+                                }
+
+                                    .text {
+border: 0px solid #404040;
+border-radius: 4px;
+                                        margin-top: 0;
+                                        margin-bottom: 0
+                                        margin-left: 0;
+                                        margin-right: 0;
+                                        padding-top: 0;
+                                        padding-bottom: 0;
+                                        padding-left: 0;
+                                        padding-right: 0;
+                                        width: 100%;
+                                        height: 5.5rem;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: center;
+                                    }
+
+                                        .line {
+                                            margin-top: 0;
+                                            white-space: nowrap;
+                                        }
 
 /* Secțiune Continut */
                     .sectiune-continut {
@@ -889,82 +1018,9 @@ border-radius: 4px;
                         .wrap-show {
                         }
 
-                    .coloane {
+                        .content-imagine {
 border: 0px solid #404040;
 border-radius: 4px;
-                        margin-top: 0;
-                        margin-bottom: 0.5rem;
-                        margin-left: 0;
-                        margin-right: 0;
-                        padding-top: 0;
-                        padding-bottom: 0;
-                        padding-left: 0;
-                        padding-right: 0;
-                        column-width: 40rem;
-                        column-gap: var(--gap);
-                        text-align: left;
-                    }
-
-/* Secțiune Text */
-                    .sectiune-text {
-border: 0px solid #404040;
-border-radius: 4px;
-                        margin-top: 0;
-                        margin-bottom: 0;
-                        margin-left: 0;
-                        margin-right: 0;
-                        padding-top: 1.5rem;
-                        padding-bottom: 0;
-                        padding-left: 0.5rem;
-                        padding-right: 0.5rem;
-                        width: 100%;
-                        text-align: left;
-                    }
-
-                        .citat-1 {
-border: 0px solid #404040;
-border-radius: 4px;
-                            margin-top: 0;
-                            margin-bottom: 0.5rem;
-                            margin-left: 0;
-                            margin-right: 0;
-                            padding-top: 0;
-                            padding-bottom: 0;
-                            padding-left: 0;
-                            padding-right: 0;
-                            text-align: left;
-                        }
-
-                        .citat-2 {
-border: 0px solid #404040;
-border-radius: 4px;
-                            margin-top: 0;
-                            margin-bottom: 1rem;
-                            margin-left: 0;
-                            margin-right: 0;
-                            padding-top: 0;
-                            padding-bottom: 0;
-                            padding-left: 0;
-                            padding-right: 0;
-                            text-align: left;
-                            font-weight: bold;
-                        }
-
-/* Secțiune Informații */
-                    .sectiune-informatii {
-border: 0px solid #404040;
-border-radius: 4px;
-                        margin-top: 0;
-                        margin-bottom: 0;
-                        margin-left: 0;
-                        margin-right: 0;
-                        padding-top: 1.5rem;
-                        padding-bottom: 0.5rem;
-                        padding-left: 0.5rem;
-                        padding-right: 0.5rem;
-                    }
-
-                        .sectiune-informatii ul {
                             margin-top: 0;
                             margin-bottom: 0;
                             margin-left: 0;
@@ -973,76 +1029,12 @@ border-radius: 4px;
                             padding-bottom: 0;
                             padding-left: 0;
                             padding-right: 0;
-                            list-style: none;
+                            width: 100%;
+                            height: auto;
+                            display: block;
                         }
 
-                            .sectiune-informatii li {
-                                margin-top: 0;
-                                margin-bottom: 0;
-                                margin-left: 0;
-                                margin-right: 0;
-                                padding-top: 0
-                                padding-bottom: 0;
-                                padding-left: 0;
-                                padding-right: 0;
-                                list-style: none;
-                            }
-
-                                .sectiune-informatii a {
-border: 0px solid #404040;
-border-radius: 4px;
-                                    margin-top: 0
-                                    margin-bottom: 0;
-                                    margin-left: -0.5rem;
-                                    margin-right: 0;
-                                    padding-top: var(--pd3);
-                                    padding-bottom: var(--pd3);
-                                    padding-left: 0.5rem;
-                                    padding-right: 0.5rem;
-                                    display: inline-block;
-                                    text-decoration: none;
-                                    font-size: var(--sz3);
-                                    color: #404040;
-                                }
-
-                                .sectiune-informatii a:hover {
-                                    text-shadow: 0.4px 0 currentcolor, -0.4px 0 currentcolor;
-                                    color: #404040;
-                                }
-
-/* Secțiune Legături */
-                    .sectiune-legaturi {
-border: 0px solid #404040;
-border-radius: 4px;
-                        margin-top: auto;
-                        margin-bottom: 1rem;
-                        margin-left: 0;
-                        margin-right: 0;
-                        padding-top: 0;
-                        padding-bottom: 0;
-                        padding-left: 0;
-                        padding-right: 0;
-                    }
-
-                        .sectiune-legaturi ul {
-border: 0px solid #404040;
-border-radius: 4px;
-                            margin-top: 0.5rem;
-                            margin-bottom: 0.5rem;
-                            margin-left: 0;
-                            margin-right: 0;
-                            padding-top: 0;
-                            padding-bottom: 0;
-                            padding-left: 0.5rem;
-                            padding-right: 0.5rem;
-                            grid-template-columns: repeat(4, 1fr);
-                            display:grid;
-                            gap: var(--gap);
-                            align-items: center;
-                            list-style: none;
-                        }
-
-                            .sectiune-legaturi li {
+                            .content-imagine img {
 border: 1px solid #404040;
 border-radius: 4px;
                                 margin-top: 0;
@@ -1053,58 +1045,17 @@ border-radius: 4px;
                                 padding-bottom: 0;
                                 padding-left: 0;
                                 padding-right: 0;
-                                display: flex;
-                                align-items: center;
-                                flex-grow: 1;
+                                width: 100%;
+                                height: auto;
+                                display: block;
+                                object-fit: cover;
                             }
 
-                                .sectiune-legaturi li:hover {
-border: 1px solid #000000;
-border-radius: 4px;
-                                    text-shadow: 0.4px 0 currentcolor, -0.4px 0 currentcolor;
-                                    background-color: #F8F8F8;
-                                }
-
-                                .sectiune-legaturi img {
-border: 1px solid #404040;
-border-radius: 4px;
-                                    margin-top: 0.2rem;
-                                    margin-bottom: 0.2rem;
-                                    margin-left: 0.2rem;
-                                    margin-right: 0.5rem;
-                                    padding-top: 0;
-                                    padding-bottom: 0;
-                                    padding-left: 0;
-                                    padding-right: 0;
-                                    width: 5rem;
-                                    height: 5rem;
-                                    background-color: #FFFFFF;
-                                }
-
-                                .sectiune-legaturi a {
-border: 0px solid #404040;
-border-radius: 4px;
-                                    margin-top: 0;
-                                    margin-bottom: 0
-                                    margin-left: 0;
-                                    margin-right: 0;
-                                    padding-top: 0;
-                                    padding-bottom: 0;
-                                    padding-left: 0;
-                                    padding-right: 0.5rem;
-                                    width: 100%;
-                                    display: inline-flex;
-                                    align-items: center;
-                                    text-decoration: none;
-                                    font-size: var(--sz3);
-                                    color: #404040;
-                                }
-
-                        .wrap-text {
+                        .content-tabel {
 border: 1px solid #404040;
 border-radius: 4px;
                             margin-top: 0;
-                            margin-bottom: 0
+                            margin-bottom: 0;
                             margin-left: 0;
                             margin-right: 0;
                             padding-top: 0;
@@ -1112,15 +1063,66 @@ border-radius: 4px;
                             padding-left: 0;
                             padding-right: 0;
                             width: 100%;
-                            height: 5.5rem;
-                            display: inline-block; 
-                            white-space: pre-wrap;
                         }
 
-                        .line {
-                            margin-top: 0;
-                            white-space: pre-wrap;
-                        }
+                            .content-tabel table {
+border: none;
+border-collapse: collapse;
+                                margin-top: 0;
+                                margin-bottom: 0;
+                                margin-left: 0;
+                                margin-right: 0;
+                                padding-top: 0.5rem;
+                                padding-bottom: 0.5rem;
+                                padding-left: 0.5rem;
+                                padding-right: 0.5rem;
+                                width: 100%;
+                                max-width: 100%;
+                            }
+
+                                table caption {
+                                    padding-top: 0.5rem;
+                                }
+
+                                table tr:last-child td {
+                                    border-bottom: 0;
+                                }
+
+                                table tr td:first-child,
+                                table tr th:first-child {
+                                    border-left: 0;
+                                }
+
+                                table tr td:last-child,
+                                table tr th:last-child {
+                                    border-right: 0;
+                                }
+
+                                .content-tabel th {
+border: 1px solid #404040;
+border-radius: 4px;
+                                    margin-top: 0;
+                                    margin-bottom: 0;
+                                    margin-left: 0;
+                                    margin-right: 0;
+                                    padding-top: 0.5rem;
+                                    padding-bottom: 0.5rem;
+                                    padding-left: 0.5rem;
+                                    padding-right: 0.5rem;
+                                    background-color: #F8F8F8;
+                                }
+
+                                .content-tabel td {
+border: 1px solid #404040;
+                                    margin-top: 0;
+                                    margin-bottom: 0;
+                                    margin-left: 0;
+                                    margin-right: 0;
+                                    padding-top: 0.5rem;
+                                    padding-bottom: 0.5rem;
+                                    padding-left: 0.5rem;
+                                    padding-right: 0.5rem;
+                                }
 
 /* SUBSOL */
                 .footer {
@@ -1441,25 +1443,25 @@ border-radius: 4px;
                         <li>
                             <a href="https://www.edu.ro" target="_blank" rel="noopener noreferrer" aria-labelledby="mec">
                                 <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/mec.png?raw=true" alt="Sigla Ministerului Educației și Cercetării (link opens in new window)">
-                                <span id="mec" class="wrap-text">Ministerul Educației și Cercetării</span>
+                                <div id="mec" class="text">Ministerul Educației și Cercetării</div>
                             </a>
                         </li>
                         <li>
                             <a href="https://www.isjneamt.ro" target="_blank" rel="noopener noreferrer" aria-labelledby="isjneamt">
                                 <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/isjneamt.png?raw=true" alt="Sigla Inspectoratului Școlar Județean Neamț (link opens in new window)">
-                                <span id="isjneamt" class="wrap-text">Inspectoratul Școlar Județean Neamț</span>
+                                <div id="isjneamt" class="text">Inspectoratul Școlar Județean Neamț</div>
                             </a>
                         </li>
                         <li>
                             <a href="https://www.cjrae-neamt.ro" target="_blank" rel="noopener noreferrer" aria-labelledby="cjraeneamt">
                                 <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/cjraeneamt.png?raw=true" alt="Sigla Centrului Județean de Resurse și Asistență Educațională Neamț (link opens in new window)">
-                                <span id="cjraeneamt" class="wrap-text">Centrul Județean de Resurse și Asistență Educațională Neamț</span>
+                                <div id="cjraeneamt" class="text">Centrul Județean de Resurse și Asistență Educațională Neamț</div>
                             </a>
                         </li>
                         <li>
                             <a href="https://www.ccdneamt.ro" target="_blank" rel="noopener noreferrer" aria-labelledby="ccdneamt">
                                 <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/ccdneamt.png?raw=true" alt="Sigla Casei Corpului Didactic Neamț (link opens in new window)">
-                                <span id="ccdneamt" class="wrap-text">Casa Corpului Didactic Neamț</span>
+                                <div id="ccdneamt" class="text">Casa Corpului Didactic Neamț</div>
                             </a>
                         </li>
                     </ul>
@@ -1491,8 +1493,6 @@ border-radius: 4px;
                 const aside = document.querySelector('aside');
                 const toggleBtn = document.getElementById('menu-toggle');
                 const width = window.innerWidth;
-
-// Verificare vizibilitate Meniu pentru scalare pagină
                 if (width >= 1367) {
                     aside.classList.add('show');
                     toggleBtn.style.display = 'none';
@@ -1520,144 +1520,6 @@ border-radius: 4px;
 
 // Secțiune Conținut
 
-// Măsurare lungime text
-                function masoaraString(text) {
-                    const span = document.createElement('span');
-                    span.style.visibility = 'hidden';
-                    span.style.position = 'absolute';
-                    span.style.whiteSpace = 'pre';
-                    span.innerText = text;
-                    document.body.appendChild(span);
-                    const width = span.offsetWidth;
-                    document.body.removeChild(span);
-                    return width;
-                }
-
-// Potrivire text
-                function potrivesteText(id) {
-
-// Definire zonă text pentru potrivire text
-                    const container = document.getElementById(id);
-                    if (!container) return;
-
-// Ascundere zonă text inainte de potrivire
-                    container.style.visibility = 'hidden';
-
-// Determinare lățime zonă text pentru potrivire text
-                    const containerRect = container.getBoundingClientRect();
-                    const maxLineWidth = containerRect.width;
-
-// Preluare conținut text pentru potrivire
-                    const text = container.textContent.trim();
-
-// Împărțire text în cuvinte
-                    const cuvinte = text.split(' ');
-
-// Ștergere conținut anterior a zonei text
-                    container.innerHTML = '';
-
-// Împărțire text în rânduri
-                    let randuri = [];
-                    let currentLine = [];
-                    for (const cuvant of cuvinte) {
-                        const tempLineText = currentLine.concat(cuvant).join(' ');
-                        const width = masoaraString(tempLineText);
-                        if (width <= maxLineWidth) {
-                            currentLine.push(cuvant);
-                        } else {
-                            if (currentLine.length > 0) {
-                                randuri.push(currentLine.join(' '));
-                            }
-                            const cuvantWidth = masoaraString(cuvant);
-                            if (cuvantWidth > maxLineWidth) {
-                                randuri.push(cuvant);
-                                currentLine = [];
-                            } else {
-                                currentLine = [cuvant];
-                                }
-                            }
-                    }
-                    if (currentLine.length > 0) {
-                        randuri.push(currentLine.join(' '));
-                    }
-
-// Determinare lungime maximă rând
-                    let lungimeMaxima = 0;
-                    const randuriDimensiuni = [];
-                    randuri.forEach(r => {
-                        const width = masoaraString(r);
-                        randuriDimensiuni.push(width);
-                        if (width > lungimeMaxima) lungimeMaxima = width;
-                    });
-
-// Înainte de a crea rândurile
-container.innerHTML = '';
-console.log('Conținut container după ștergere:', container.innerHTML);
-container.style.visibility = 'hidden';
-container.style.whiteSpace = 'pre'; // explicit
-
-// Afișare și centrare text
-                    randuri.forEach((r, idx) => {
-                        const lineDiv = document.createElement('div');
-                        lineDiv.className = 'line';
-lineDiv.style.whiteSpace = 'pre'; // explicit
-                        lineDiv.innerText = r;
-
-// Centrare rând față de lungimea maximă
-                        lineDiv.style.marginLeft = ((lungimeMaxima - randuriDimensiuni[idx]) / 2) + 'px';
-
-                        container.appendChild(lineDiv);
-                    });
-
-// Afișare zonă text după potrivire text
-                    container.style.visibility = 'visible';
-                }
-
-// Potrivire texte
-                function potrivesteTexte() {
-
-// Identificare texte pentru potrivire
-                const ids = ['mec', 'isjneamt', 'cjraeneamt', 'ccdneamt'];
-
-                ids.forEach(id => {
-                    const el = document.getElementById(id);
-                    if (el) {
-                        const img = el.querySelector('img');
-                        if (!img) {
-
-// Așteptare dacă imaginea nu există
-                            setTimeout(() => {
-                                potrivesteText(id);
-                            }, 300);
-                        } else {
-
-// Potrivire text dacă imaginea există
-                            if (img.complete && img.naturalWidth !== 0) {
-
-// Potrivire text dacă imaginea s-a încărcat
-                                potrivesteText(id);
-                            } else {
-
-// Așteptare încărcare imagine și apoi potrivire text
-                                img.addEventListener('load', () => {
-                                    potrivesteText(id);
-                                });
-                                }
-                            }
-                        }
-                    });
-                }
-
-// Potrivire texte la încărcare pagină
-                window.addEventListener('load', () => {
-                    potrivesteTexte();
-                });
-
-// Repotrivire texte la redimensionare pagină
-                window.addEventListener('resize', () => {
-                    potrivesteTexte();
-                });
-
 // Calculare spațiere prin interpolare liniară
             function getGap() {
                 const maxGap = 2;
@@ -1681,7 +1543,101 @@ lineDiv.style.whiteSpace = 'pre'; // explicit
                 document.documentElement.style.setProperty('--gap', sizeGap);
             }
 
-// Setare înălțime imagine "Program de lucru"
+// Aranjare text, "Secțiune Legături"
+            const parametri = [];
+            function initializeParams() {
+                const ids = ['mec', 'isjneamt', 'cjraeneamt', 'ccdneamt'];
+                ids.forEach(id => {
+                    const el = document.getElementById(id);
+                    if (el) {
+                        const text = el.innerText || el.textContent;
+                        parametri.push({ id, text });
+                    }
+                });
+            }
+            function masoaraString(text) {
+                const span = document.createElement('span');
+                span.style.visibility = 'hidden';
+                span.style.position = 'absolute';
+                span.style.whiteSpace = 'pre';
+                span.innerText = text;
+                document.body.appendChild(span);
+                const latime = span.offsetWidth;
+                document.body.removeChild(span);
+                return latime;
+            }
+            function potrivesteText(id, text) {
+                const aElement = document.querySelector(`a[aria-labelledby="${id}"]`);
+                const container = document.getElementById(id);
+                if (!aElement || !container) return;
+                    container.style.visibility = 'hidden';
+                    container.innerHTML = '';
+                    const aRect = aElement.getBoundingClientRect();
+                    const paddingPx = (0.2 + 0.1 + 5 + 0.1 + 0.5 + 0.1 + 0.1 + 0.5) * 16;
+                    const totalAvailableWidth = aRect.width - paddingPx;
+                    const maxLineLength = totalAvailableWidth;
+                    const cuvinte = text.split(' ');
+                    let randuri = [];
+                    let currentLine = [];
+                    for (const cuvant of cuvinte) {
+                        const tempLineText = currentLine.concat(cuvant).join(' ');
+                        const width = masoaraString(tempLineText);
+                        if (width <= maxLineLength) {
+                        currentLine.push(cuvant);
+                        } else {
+                            if (currentLine.length > 0) {
+                                randuri.push(currentLine.join(' '));
+                            }
+                            const cuvantWidth = masoaraString(cuvant);
+                            if (cuvantWidth > maxLineLength) {
+                                randuri.push(cuvant);
+                                currentLine = [];
+                            } else {
+                                currentLine = [cuvant];
+                                }
+                        }
+                }
+                if (currentLine.length > 0) {
+                    randuri.push(currentLine.join(' '));
+                }
+                let lungimeMaxima = 0;
+                const randuriDimensiuni = [];
+                randuri.forEach(r => {
+                    const width = masoaraString(r);
+                    randuriDimensiuni.push(width);
+                    if (width > lungimeMaxima) lungimeMaxima = width;
+                });
+                randuri.forEach((r, idx) => {
+                    const lineDiv = document.createElement('div');
+                    lineDiv.className = 'line';
+                    lineDiv.innerText = r;
+                    lineDiv.style.marginLeft = ((lungimeMaxima - randuriDimensiuni[idx]) / 2) + 'px';
+                    container.appendChild(lineDiv);
+                });
+                container.style.visibility = 'visible';
+            }
+            function potrivesteTexte() {
+                parametri.forEach(({ id, text }) => {
+                    const el = document.getElementById(id);
+                    if (!el) return;
+                    const img = document.querySelector(`a[aria-labelledby="${id}"] img`);
+                    if (!img) {
+                        setTimeout(() => {
+                            potrivesteText(id, text);
+                        }, 300);
+                    } else {
+                        if (img.complete && img.naturalWidth !== 0) {
+                            potrivesteText(id, text);
+                        } else {
+                            img.addEventListener('load', () => {
+                                potrivesteText(id, text);
+                            });
+                        }
+                    }
+                });
+            }
+
+// Setare înălțime imagine, "Program de lucru"
             function updateProgram() {
                 const programSecretariat = document.getElementById('program-secretariat');
                 const programImagine = document.querySelector('#imagine-lucru img');
@@ -1694,49 +1650,42 @@ lineDiv.style.whiteSpace = 'pre'; // explicit
 // Funcții de inițializare
 
 // Inițializare setări la încărcare pagină
-                window.addEventListener('load', () => {
-                    updateMeniu();
-                    updateGap();
-                    updateProgram();
-                });
+            window.addEventListener('load', () => {
+                updateMeniu();
+                updateGap();
+                updateProgram();
+                initializeParams();
+                potrivesteTexte();
+            });
 
 // Inițializare setări la redimensionare pagină
-                window.addEventListener('resize', () => {
-                    updateMeniu();
-                    updateGap();
-                    updateProgram();
-                });
+            window.addEventListener('resize', () => {
+                updateMeniu();
+                updateGap();
+                updateProgram();
+                potrivesteTexte();
+            });
 
 // Funcții de gestionare evenimente
 
 // Afișare sau ascundere Meniu la click pe buton
-                document.getElementById('menu-toggle').addEventListener('click', () => {
-                    const aside = document.querySelector('aside');
-                    aside.classList.toggle('show');
-                    updateButton();
-                });
+            document.getElementById('menu-toggle').addEventListener('click', () => {
+                const aside = document.querySelector('aside');
+                aside.classList.toggle('show');
+                updateButton();
+            });
 
 // Gestionare apăsare tastă CTRL
             const width = window.innerWidth;
             let ctrlToggleDone = false;
-
-// Afișare sau ascundere Meniu la apăsarea tastei CTRL
             document.addEventListener('keydown', (e) => {
                 if (e.key === 'Control') {
-
-// Verificare lățime ecran
                     if (window.innerWidth < 1367) {
-
-// Blocare comportament implicit pentru apasarea tastei CTRL
                         e.preventDefault();
-
-// Setare comportament particularizat pentru apasarea tastei CTRL
                         if (!ctrlToggleDone) {
                             const aside = document.querySelector('aside');
                             aside.classList.toggle('show');
                             updateButton();
-
-// Blocare apasare multiplă a tastei ESC
                             ctrlToggleDone = true;
                         }
                     }
@@ -1746,8 +1695,6 @@ lineDiv.style.whiteSpace = 'pre'; // explicit
 // Gestionare eliberare tastă CTRL
             document.addEventListener('keyup', (e) => {
                 if (e.key === 'Control') {
-
-// Resetetare stare pentru următoarea apăsare a tastei CTRL
                     ctrlToggleDone = false;
                 }
             });
