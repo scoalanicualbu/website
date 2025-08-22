@@ -61,7 +61,10 @@
     <body>
 
 <!-- Link "Sari la conținut" -->
-        <a href="#main-content" id="skipToContinut" class="skip-link">Mergi la conținutul paginii</a>
+        <a href="#main-content" id="skipToContinut" target="_self" class="skip-link" arialabelledby="link-sari-la-continut">
+            <span id="link-sari-la-continut">Mergi la conținutul paginii</span>
+            <span class="sr-only"> (se deschide în aceeași fereastră)</span>
+        </a>
 
 <!-- MENIU -->
         <aside id="main-menu" aria-label="Meniu">
@@ -71,7 +74,7 @@
 <!-- Siglă -->
                 <section id="sigla" aria-label="Siglă">
                     <div class="side-name sr-only">Sigla școlii</div>
-                        <div class="side-logo" role="banner">
+                        <div class="side-logo" role="region">
                             <img src="https://github.com/scoalanicualbu/website/blob/main/sigla.png?raw=true" alt="Sigla Școlii Gimnaziale „Nicu Albu” Piatra Neamț">
                         </div>
                 </section>
@@ -87,20 +90,90 @@
 <!-- Meniu site -->
             <nav id="meniu-site" class="side-menu" aria-label="Meniu site">
                 <ul>
-                    <li ><a href="prezentare.html" class="inactive">Prezentare</a></li>
-                    <li><a href="oferta.html">Oferta educațională</a></li>
-                    <li><a href="gradinita.html" >Grădiniță</a></li>
-                    <li><a href="pregatitoare.html">Clasa pregătitoare</a></li>
-                    <li><a href="evaluare.html">Evaluare națională</a></li>
-                    <li><a href="admitere.html">Admitere</a></li>
-                    <li><a href="altfel.html">Școala Altfel</a></li>
-                    <li><a href="verde.html">Săptămâna verde</a></li>
-                    <li><a href="proiecte.html">Proiecte</a></li>
-                    <li><a href="strategie.html">Strategie</a></li>
-                    <li><a href="regulamente.html">Regulamente</a></li>
-                    <li><a href="personal.html">Personal</a></li>
-                    <li><a href="organigrama.html">Organigrama</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li>
+                        <a href="prezentare.html" target="_self" class="inactive" arialabelledby="link-pagina-prezentare">
+                            <span id="link-pagina-prezentare">Prezentare</span>
+                            <span class="sr-only"> (se deschide în aceeași fereastră)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="oferta.html" target="_self" arialabelledby="link-pagina-oferta-educationala">
+                            <span id="link-pagina-oferta-educationala">Oferta educațională</span>
+                            <span class="sr-only"> (se deschide în aceeași fereastră)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="gradinita.html" target="_self" arialabelledby="link-pagina-gradinita">
+                            <span id="link-pagina-gradinita">Grădiniță</span>
+                            <span class="sr-only"> (se deschide în aceeași fereastră)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pregatitoare.html" target="_self" arialabelledby="link-pagina-clasa-pregatitoare">
+                            <span id="link-pagina-clasa-pregatitoare">Clasa pregătitoare</span>
+                            <span class="sr-only"> (se deschide în aceeași fereastră)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="evaluare.html" target="_self" arialabelledby="link-pagina-evaluare-nationala">
+                            <span id="link-pagina-evaluare-nationala">Evaluare națională</span>
+                            <span class="sr-only"> (se deschide în aceeași fereastră)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="admitere.html" target="_self" arialabelledby="link-pagina-admitere">
+                            <span id="link-pagina-admitere">Admitere</span>
+                            <span class="sr-only"> (se deschide în aceeași fereastră)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="altfel.html" target="_self" arialabelledby="link-pagina-scoala-altfel">
+                            <span id="link-pagina-scoala-altfel">Școala Altfel</span>
+                            <span class="sr-only"> (se deschide în aceeași fereastră)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="verde.html" target="_self" arialabelledby="link-pagina-saptamana-verde">
+                            <span id="link-pagina-saptamana-verde">Săptămâna verde</span>
+                            <span class="sr-only"> (se deschide în aceeași fereastră)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="proiecte.html" target="_self" arialabelledby="link-pagina-proiecte">
+                            <span id="link-pagina-proiecte">Proiecte</span>
+                            <span class="sr-only"> (se deschide în aceeași fereastră)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="strategie.html" target="_self" arialabelledby="link-pagina-strategie">
+                        <span id="link-pagina-strategie">Strategie</span>
+                            <span class="sr-only"> (se deschide în aceeași fereastră)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="regulamente.html" target="_self" arialabelledby="link-pagina-regulamente">
+                            <span id="link-pagina-regulamente">Regulamente</span>
+                            <span class="sr-only"> (se deschide în aceeași fereastră)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="personal.html" target="_self" arialabelledby="link-pagina-personal">
+                            <span id="link-pagina-personal">Personal</span>
+                            <span class="sr-only"> (se deschide în aceeași fereastră)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="organigrama.html" target="_self" arialabelledby="link-pagina-organigrama">
+                            <span id="link-pagina-organigrama">Organigrama</span>
+                            <span class="sr-only"> (se deschide în aceeași fereastră)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html" target="_self" arialabelledby="link-pagina-contact">
+                            <span id="link-pagina-contact">Contact</span>
+                            <span class="sr-only"> (se deschide în aceeași fereastră)</span>
+                        </a>
+                    </li>
                 </ul>
             </nav>
 
@@ -110,27 +183,47 @@
         <button id="menu-toggle" aria-label="Buton Meniu site" aria-expanded="false" tabindex="0">&#9776;</button>
 
 <!-- CONȚINUT -->
-        <main id="istoric" class="content" aria-label="Conținut">
-
-            <header role="presentation">
 
 <!-- Banner -->
-                <section id="banner" class="banner" role="banner" aria-label="Banner">
+                <header id="banner" class="banner" role="banner" aria-label="Banner">
 
                     <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/intrare.png?raw=true" alt="Intrarea în Școala Gimnazială „Nicu Albu” Piatra Neamț">
                     <div class="sr-only">
                         <h1>Școala Gimnazială „Nicu Albu” Piatra Neamț</h1>
                     </div>
 
-                </section>
+                </header>
 
+        <main id="istoric" class="content" aria-label="Conținut">
+
+            <header role="presentation">
 <!-- Meniu pagină -->
                 <nav id="meniu-pagina" class="page-menu" aria-label="Meniu pagină">
                     <ul class="patru">
-                        <li aria-current="page"><a href="prezentare/istoric.html" class="active">Scurt istoric</a></li>
-                        <li><a href="prezentare/circumscriptie.html">Circumscripție</a></li>
-                        <li><a href="prezentare/program.html">Program de lucru</a></li>
-                        <li><a href="prezentare/comunicari.html">Comunicări</a></li>
+                        <li aria-current="page">
+                            <a href="prezentare/istoric.html" target="_self"  class="active" arialabelledby="link-pagina-scurt-istoric">
+                                <span id="link-pagina-scurt-istoric">Scurt istoric</span>
+                                <span class="sr-only"> (se deschide în aceeași fereastră)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="prezentare/circumscriptie.html" target="_self" arialabelledby="link-pagina-circumscriptie">
+                                <span id="link-pagina-circumscriptie">Circumscripție</span>
+                                <span class="sr-only"> (se deschide în aceeași fereastră)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="prezentare/program.html" target="_self" arialabelledby="link-pagina-program-de-lucru">
+                                <span id="link-pagina-program-de-lucru">Program de lucru</span>
+                                <span class="sr-only"> (se deschide în aceeași fereastră)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="prezentare/comunicari.html" target="_self" arialabelledby="link-pagina-comunicari">
+                                <span id="link-pagina-comunicari">Comunicări</span>
+                                <span class="sr-only"> (se deschide în aceeași fereastră)</span>
+                            </a>
+                        </li>
                     </ul>    
                 </nav>
 
@@ -183,27 +276,32 @@
                     <ul>
                         <li>
                             <a href="https://drive.google.com/file/d/1MmRQ5-2wcftL0jIVp16O4xi7A2_qrxbv/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-labelledby="prescolari-elevi-asociatie">
-                                <span id="prescolari-elevi-asociatie">Preșcolari, elevi şi asociaţia părinţilor</span><span class="sr-only"> (opens in new window)</span>
+                                <span id="prescolari-elevi-asociatie">Preșcolari, elevi şi asociaţia părinţilor</span>
+                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
                             </a>
                         </li>
                         <li>
                             <a href="https://drive.google.com/file/d/16IOfkM2ubZ4QX6MzmSvErq2elV_ssptc/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-labelledby="resurse-umane">
-                                <span id="resurse-umane">Resurse umane</span><span class="sr-only"> (opens in new window)</span>
+                                <span id="resurse-umane">Resurse umane</span>
+                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
                             </a>
                         </li>
                         <li>
                             <a href="https://drive.google.com/file/d/1aWslTO5OPtMfHABjoUQ6un29vjRA2BBk/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-labelledby="resurse-materiale-oferta">
-                                <span id="resurse-materiale-oferta">Resurse materiale şi oferta educaţională</span><span class="sr-only"> (opens in new window)</span>
+                                <span id="resurse-materiale-oferta">Resurse materiale şi oferta educaţională</span>
+                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
                             </a>
                         </li>
                         <li>
                             <a href="https://drive.google.com/file/d/1GyevwXqsjnQ2nRBDOCcsWx_Qk9PNlF_8/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-labelledby="decizie-denumire">
-                                <span id="decizie-denumire">Decizie de modificare a denumirii unității de învățământ</span><span class="sr-only"> (opens in new window)</span>
+                                <span id="decizie-denumire">Decizie de modificare a denumirii unității de învățământ</span>
+                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
                             </a>
                         </li>
                         <li>
                             <a  href="https://drive.google.com/file/d/1I-CY2xHXZM9llP7hrRa-Ken15fwpIaR5/view?usp=sharing" target="_blank" rel="noopener noreferrer"aria-labelledby="istorie-locala">
-                                <span id="istorie-locala">Pagini de istorie locală, personalitatea lui Nicu Albu</span><span class="sr-only"> (opens in new window)</span>
+                                <span id="istorie-locala">Pagini de istorie locală, personalitatea lui Nicu Albu</span>
+                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
                             </a>
                         </li>
                     </ul>
@@ -219,29 +317,33 @@
                         </div>
                     </header>
 
-                    <ul>
+                    <ul>                    
                         <li>
-                            <a href="https://www.edu.ro" target="_blank" rel="noopener noreferrer" class="sectiune-legaturi" aria-labelledby="mec">
-                                <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/mec.png?raw=true" alt="Sigla Ministerului Educației și Cercetării (opens in new window)">
-                                <span id="mec">Ministerul Educației și Cercetării</span>
+                            <a href="https://www.edu.ro" target="_new" rel="noopener noreferrer" aria-labelledby="mec">
+                                <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/mec.png?raw=true" alt="Sigla Ministerului Educației și Cercetării">
+                                <div id="mec" class="text">Ministerul Educației și Cercetării</div>
+                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.isjneamt.ro" target="_blank" rel="noopener noreferrer" class="sectiune-legaturi" aria-labelledby="isjneamt">
-                                <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/isjneamt.png?raw=true" alt="Sigla Inspectoratului Școlar Județean Neamț (opens in new window)">
-                                <span id="isjneamt">Inspectoratul Școlar Județean Neamț</span>
+                            <a href="https://www.isjneamt.ro" target="_new" rel="noopener noreferrer" aria-labelledby="isjneamt">
+                                <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/isjneamt.png?raw=true" alt="Sigla Inspectoratului Școlar Județean Neamț">
+                                <div id="isjneamt" class="text">Inspectoratul Școlar Județean Neamț</div>
+                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.cjrae-neamt.ro" target="_blank" rel="noopener noreferrer" class="sectiune-legaturi" aria-labelledby="cjraeneamt">
-                                <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/cjraeneamt.png?raw=true" alt="Sigla Centrului Județean de Resurse și Asistență Educațională Neamț (opens in new window)">
-                                <span id="cjraeneamt">Centrul Județean de Resurse și Asistență Educațională Neamț</span>
+                            <a href="https://www.cjrae-neamt.ro" target="_new" rel="noopener noreferrer" aria-labelledby="cjraeneamt">
+                                <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/cjraeneamt.png?raw=true" alt="Sigla Centrului Județean de Resurse și Asistență Educațională Neamț">
+                                <div id="cjraeneamt" class="text">Centrul Județean de Resurse și Asistență Educațională Neamț</div>
+                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.ccdneamt.ro"  target="_blank" rel="noopener noreferrer" class="sectiune-legaturi" aria-labelledby="ccdneamt">
-                                <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/ccdneamt.png?raw=true" alt="Sigla Casei Corpului Didactic Neamț (opens in new window)">
-                                <span id="ccdneamt">Casa Corpului Didactic Neamț</span>
+                            <a href="https://www.ccdneamt.ro" target="_new" rel="noopener noreferrer" aria-labelledby="ccdneamt">
+                                <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/ccdneamt.png?raw=true" alt="Sigla Casei Corpului Didactic Neamț">
+                                <div id="ccdneamt" class="text">Casa Corpului Didactic Neamț</div>
+                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
                             </a>
                         </li>
                     </ul>
