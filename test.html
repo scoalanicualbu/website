@@ -359,6 +359,39 @@ border-radius: 4px;
                                     }
 
 /* CONȚINUT */
+
+/* Banner */
+                .banner {
+border: 0px solid #404040;
+border-radius: 4px;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    margin-left: 0;
+                    margin-right: 0;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    padding-left: 0;
+                    padding-right: 1rem;
+                }
+
+                    .banner img {
+border: 1px solid #404040;
+border-radius: 4px;
+                        margin-top: 0.5rem;
+                        margin-bottom: 0.5rem;
+                        margin-left: 0.5rem;
+                        margin-right: 0.5rem;
+                        padding-top: 0;
+                        padding-bottom: 0;
+                        padding-left: 0;
+                        padding-right: 0;
+                        width: 100%;
+                        max-width: 100%;
+                        height: 14.2rem;
+                        object-fit: cover;
+                        display: block;
+                    }
+
                 .content {
 border: 0px solid #404040;
 border-radius: 4px;
@@ -376,37 +409,6 @@ border-radius: 4px;
                     background-color: #FFFFFF;
                 }
 
-/* Banner */
-                    .banner {
-border: 0px solid #404040;
-border-radius: 4px;
-                        margin-top: 0;
-                        margin-bottom: 0;
-                        margin-left: 0;
-                        margin-right: 0;
-                        padding-top: 0;
-                        padding-bottom: 0;
-                        padding-left: 0;
-                        padding-right: 1rem;
-                    }
-
-                        .banner img {
-border: 1px solid #404040;
-border-radius: 4px;
-                            margin-top: 0.5rem;
-                            margin-bottom: 0.5rem;
-                            margin-left: 0.5rem;
-                            margin-right: 0.5rem;
-                            padding-top: 0;
-                            padding-bottom: 0;
-                            padding-left: 0;
-                            padding-right: 0;
-                            width: 100%;
-                            max-width: 100%;
-                            height: 14.2rem;
-                            object-fit: cover;
-                            display: block;
-                        }
 
 /* Meniu pagină */
                     .page-menu {
@@ -1160,6 +1162,9 @@ border-radius: 4px;
                     aside {
                         min-height: 100vh;
                     }
+                    .banner {
+                        margin-left: var(--asz);
+                    }
                     .content {
                         margin-left: var(--asz);
                     }
@@ -1419,19 +1424,20 @@ border-radius: 4px;
         <button id="menu-toggle" aria-label="Buton Meniu site" aria-expanded="false" tabindex="0">&#9776;</button>
 
 <!-- CONȚINUT -->
+
+<!-- Banner -->
+        <header id="banner" class="banner" role="banner" aria-label="Banner">
+
+            <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/intrare.png?raw=true" alt="Intrarea principală în Școala Gimnazială „Nicu Albu” Piatra Neamț">
+            <div class="sr-only">
+                <h1>Școala Gimnazială „Nicu Albu” Piatra Neamț</h1>
+            </div>
+
+        </header>
+
         <main id="prezentare" class="content" aria-label="Conținut">
 
             <header role="presentation">
-
-<!-- Banner -->
-                <section id="banner" class="banner" role="banner" aria-label="Banner">
-
-                    <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/intrare.png?raw=true" alt="Intrarea principală în Școala Gimnazială „Nicu Albu” Piatra Neamț">
-                    <div class="sr-only">
-                        <h1>Școala Gimnazială „Nicu Albu” Piatra Neamț</h1>
-                    </div>
-
-                </section>
 
 <!-- Meniu pagină -->
                 <nav id="meniu-pagina" class="page-menu" aria-label="Meniu pagină">
@@ -1514,7 +1520,7 @@ border-radius: 4px;
 
                     <ul>
                         <li>
-                            <a href="https://drive.google.com/file/d/1CLVRw1GlJCwDIsDDFJc56dk1OkiulyMg/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-labelledby="conditii-specifice">
+                            <a href="https://drive.google.com/file/d/1CLVRw1GlJCwDIsDDFJc56dk1OkiulyMg/view?usp=sharing" target="_new" rel="noopener noreferrer" aria-labelledby="conditii-specifice">
                                 <span id="conditii-specifice">Condiții specifice ocupării posturilor didactice vacante pentru anul școlar 2025-2026</span>
                                 <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
                             </a>
@@ -1535,28 +1541,28 @@ border-radius: 4px;
 	
                     <ul>                    
                         <li>
-                            <a href="https://www.edu.ro" target="_blank" rel="noopener noreferrer" aria-labelledby="mec">
+                            <a href="https://www.edu.ro" target="_new" rel="noopener noreferrer" aria-labelledby="mec">
                                 <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/mec.png?raw=true" alt="Sigla Ministerului Educației și Cercetării">
                                 <div id="mec" class="text">Ministerul Educației și Cercetării</div>
                                 <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.isjneamt.ro" target="_blank" rel="noopener noreferrer" aria-labelledby="isjneamt">
+                            <a href="https://www.isjneamt.ro" target="_new" rel="noopener noreferrer" aria-labelledby="isjneamt">
                                 <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/isjneamt.png?raw=true" alt="Sigla Inspectoratului Școlar Județean Neamț">
                                 <div id="isjneamt" class="text">Inspectoratul Școlar Județean Neamț</div>
                                 <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.cjrae-neamt.ro" target="_blank" rel="noopener noreferrer" aria-labelledby="cjraeneamt">
+                            <a href="https://www.cjrae-neamt.ro" target="_new" rel="noopener noreferrer" aria-labelledby="cjraeneamt">
                                 <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/cjraeneamt.png?raw=true" alt="Sigla Centrului Județean de Resurse și Asistență Educațională Neamț">
                                 <div id="cjraeneamt" class="text">Centrul Județean de Resurse și Asistență Educațională Neamț</div>
                                 <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.ccdneamt.ro" target="_blank" rel="noopener noreferrer" aria-labelledby="ccdneamt">
+                            <a href="https://www.ccdneamt.ro" target="_new" rel="noopener noreferrer" aria-labelledby="ccdneamt">
                                 <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/ccdneamt.png?raw=true" alt="Sigla Casei Corpului Didactic Neamț">
                                 <div id="ccdneamt" class="text">Casa Corpului Didactic Neamț</div>
                                 <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
