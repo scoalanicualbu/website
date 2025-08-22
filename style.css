@@ -1,18 +1,20 @@
             :root {
                 --sz1: 1.5rem;
-                --pd1: 0.625rem;
+                --pd1: 0.25rem;
                 --mgu: 0;
                 --mgd: 0;
                 --mgl: 0.1rem;
                 --mgr: 0.05rem;
                 --sz2: 1.25rem;
-                --pd2: 0.75rem;
+                --pd2: 0.45rem;
                 --sz3: 1rem;
-                --pd3: 0.875rem;
+                --pd3: 0.625rem;
                 --szp: 0.8rem;
-                --asz: 17rem;
-                --asu: 16rem;
+                --asz: 16rem;
+                --asu: 15rem;
                 --gap: 2rem;
+                --ga1: 2rem;
+                --ga2: 16rem;
             }  
 
           * {
@@ -32,6 +34,7 @@ border: 0px solid #404040;
                 min-height: 100vh;
                 display: flex;
                 flex-direction: column;
+                line-height: 1.5;
                 font-family: Arial, sans-serif;
                 font-size: var(--sz3);
                 background-color: #FFFFFF;
@@ -192,8 +195,8 @@ border-radius: 50%;
                             margin-bottom: 0;
                             margin-left: auto;
                             margin-right: auto;
-                            width: 8rem;
-                            height: 8rem;
+                            width: 8.25rem;
+                            height: 8.25rem;
                             display: block;
                             background-color: #FFFFFF;
                         }
@@ -203,7 +206,7 @@ border-radius: 50%;
 border: 0px solid #404040;
 border-radius: 4px;
                         margin-top: 0;
-                        margin-bottom: 1rem;
+                        margin-bottom: 1.2rem;
                         margin-left: 0;
                         margin-right: 0;
                         padding-top: var(--pd3);
@@ -238,7 +241,7 @@ border-radius: 4px;
                     }
 
                             .side-menu a {
-border: 0px solid #404040;
+border:0px solid #404040;
 border-radius: 4px;
                                 margin-top: 0;
                                 margin-bottom: 0;
@@ -246,8 +249,8 @@ border-radius: 4px;
                                 margin-right: 0;
                                 padding-top: var(--pd3);
                                 padding-bottom: var(--pd3);
-                                padding-left: 0.5rem;
-                                padding-right: 0.5rem;
+                                padding-left: 0.4rem;
+                                padding-right: 0.4rem;
                                 display: block;
                                 text-align: center;
                                 text-decoration: none;
@@ -266,8 +269,8 @@ border-radius: 4px;
                                     margin-right: 0;
                                     padding-top: var(--pd1);
                                     padding-bottom: var(--pd1);
-                                    padding-left: 0.5rem;
-                                    padding-right: 0.5rem;
+                                    padding-left: 0.4rem;
+                                    padding-right: 0.4rem;
                                     font-size: var(--sz1);
                                     font-weight: bold;
                                     pointer-events: none;
@@ -280,8 +283,8 @@ border-radius: 4px;
                                     margin-right: 0;
                                     padding-top: var(--pd1);
                                     padding-bottom: var(--pd1);
-                                    padding-left: 0.5rem;
-                                    padding-right: 0.5rem;
+                                    padding-left: 0.4rem;
+                                    padding-right: 0.4rem;
                                     font-size: var(--sz1);
                                 }
 
@@ -296,6 +299,39 @@ border-radius: 4px;
                                     }
 
 /* CONȚINUT */
+
+/* Banner */
+                .banner {
+border: 0px solid #404040;
+border-radius: 4px;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    margin-left: 0;
+                    margin-right: 0;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    padding-left: 0;
+                    padding-right: 1rem;
+                }
+
+                    .banner img {
+border: 1px solid #404040;
+border-radius: 4px;
+                        margin-top: 0.5rem;
+                        margin-bottom: 0.5rem;
+                        margin-left: 0.5rem;
+                        margin-right: 0.5rem;
+                        padding-top: 0;
+                        padding-bottom: 0;
+                        padding-left: 0;
+                        padding-right: 0;
+                        width: 100%;
+                        max-width: 100%;
+                        height: 14.2rem;
+                        object-fit: cover;
+                        display: block;
+                    }
+
                 .content {
 border: 0px solid #404040;
 border-radius: 4px;
@@ -313,37 +349,6 @@ border-radius: 4px;
                     background-color: #FFFFFF;
                 }
 
-/* Banner */
-                    .banner {
-border: 0px solid #404040;
-border-radius: 4px;
-                        margin-top: 0;
-                        margin-bottom: 0;
-                        margin-left: 0;
-                        margin-right: 0;
-                        padding-top: 0;
-                        padding-bottom: 0;
-                        padding-left: 0;
-                        padding-right: 1rem;
-                    }
-
-                        .banner img {
-border: 1px solid #404040;
-border-radius: 4px;
-                            margin-top: 0.5rem;
-                            margin-bottom: 0.5rem;
-                            margin-left: 0.5rem;
-                            margin-right: 0.5rem;
-                            padding-top: 0;
-                            padding-bottom: 0;
-                            padding-left: 0;
-                            padding-right: 0;
-                            width: 100%;
-                            max-width: 100%;
-                            height: 14.2rem;
-                            object-fit: cover;
-                            display: block;
-                        }
 
 /* Meniu pagină */
                     .page-menu {
@@ -372,6 +377,7 @@ border-radius: 4px;
                             padding-right: 0;
                             display: grid;
                             gap: var(--gap);
+                            align-items: center;
                             list-style: none;
                         }
 
@@ -398,21 +404,14 @@ border-radius: 4px;
                                 padding-bottom: 0;
                                 padding-left: 0;
                                 padding-right: 0;
-                                min-height: 2.3rem;
+                                display: flex;
+                                align-items: center;
                                 flex-grow: 1;
                             }
 
                                 .page-menu li:hover {
 border: 1px solid #000000;
 border-radius: 4px;
-                                    margin-top: 0;
-                                    margin-bottom: 0;
-                                    margin-left: 0;
-                                    margin-right: 0;
-                                    padding-top: 0;
-                                    padding-bottom: 0;
-                                    padding-left: 0;
-                                    padding-right: 0;
                                     background-color: #F8F8F8;
                                 }
 
@@ -427,10 +426,10 @@ border-radius: 4px;
                                     padding-bottom: var(--pd3);
                                     padding-left: 0.5rem;
                                     padding-right: 0.5rem;
+                                    width: 100%;
                                     display: flex;
-                                    justify-content: center;
                                     align-items: center;
-                                    text-align: center;
+                                    justify-content: center;
                                     text-decoration: none;
                                     font-size: var(--sz3);
                                     color: #404040;
@@ -479,9 +478,84 @@ border-radius: 4px;
                         background-color: #FFFFFF;
                         }
 
-                        .content-imagine {
+/* Secțiuni de conținut */
+
+/* Secțiune Text */
+                    .sectiune-text {
 border: 0px solid #404040;
 border-radius: 4px;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        margin-left: 0;
+                        margin-right: 0;
+                        padding-top: 1.5rem;
+                        padding-bottom: 0;
+                        padding-left: 0.5rem;
+                        padding-right: 0.5rem;
+                        width: 100%;
+                        text-align: left;
+                    }
+
+                        .citat-1 {
+border: 0px solid #404040;
+border-radius: 4px;
+                            margin-top: 0;
+                            margin-bottom: 0.5rem;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            text-align: left;
+                        }
+
+                        .citat-2 {
+border: 0px solid #404040;
+border-radius: 4px;
+                            margin-top: 0;
+                            margin-bottom: 1rem;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            text-align: left;
+                            font-weight: bold;
+                        }
+
+                    .coloane {
+border: 0px solid #404040;
+border-radius: 4px;
+                        margin-top: 0;
+                        margin-bottom: 0.5rem;
+                        margin-left: 0;
+                        margin-right: 0;
+                        padding-top: 0;
+                        padding-bottom: 0;
+                        padding-left: 0;
+                        padding-right: 0;
+                        column-width: 40rem;
+                        column-gap: var(--gap);
+                        text-align: left;
+                    }
+
+/* Secțiune Informații */
+                    .sectiune-informatii {
+border: 0px solid #404040;
+border-radius: 4px;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        margin-left: 0;
+                        margin-right: 0;
+                        padding-top: 1.5rem;
+                        padding-bottom: 0.5rem;
+                        padding-left: 0.5rem;
+                        padding-right: 0.5rem;
+                    }
+
+                        .sectiune-informatii ul {
                             margin-top: 0;
                             margin-bottom: 0;
                             margin-left: 0;
@@ -490,12 +564,76 @@ border-radius: 4px;
                             padding-bottom: 0;
                             padding-left: 0;
                             padding-right: 0;
-                            width: 100%;
-                            height: auto;
-                            display: block;
+                            list-style: none;
                         }
 
-                            .content-imagine img {
+                            .sectiune-informatii li {
+                                margin-top: 0;
+                                margin-bottom: 0;
+                                margin-left: 0;
+                                margin-right: 0;
+                                padding-top: 0;
+                                padding-bottom: 0;
+                                padding-left: 0;
+                                padding-right: 0;
+                                list-style: none;
+                            }
+
+                                .sectiune-informatii a {
+border: 0px solid #404040;
+border-radius: 4px;
+                                    margin-top: 0;
+                                    margin-bottom: 0;
+                                    margin-left: -0.5rem;
+                                    margin-right: 0;
+                                    padding-top: var(--pd3);
+                                    padding-bottom: var(--pd3);
+                                    padding-left: 0.5rem;
+                                    padding-right: 0.5rem;
+                                    display: inline-block;
+                                    text-decoration: none;
+                                    font-size: var(--sz3);
+                                    color: #404040;
+                                }
+
+                                .sectiune-informatii a:hover {
+                                    text-shadow: 0.4px 0 currentcolor, -0.4px 0 currentcolor;
+                                    color: #404040;
+                                }
+
+/* Secțiune Legături */
+                    .sectiune-legaturi {
+border: 0px solid #404040;
+border-radius: 4px;
+                        margin-top: auto;
+                        margin-bottom: 1rem;
+                        margin-left: 0;
+                        margin-right: 0;
+                        padding-top: 0;
+                        padding-bottom: 0;
+                        padding-left: 0;
+                        padding-right: 0;
+                    }
+
+                        .sectiune-legaturi ul {
+border: 0px solid #404040;
+border-radius: 4px;
+                            margin-top: 0.5rem;
+                            margin-bottom: 0.5rem;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0.5rem;
+                            padding-right: 0.5rem;
+                            grid-template-columns: repeat(4, 1fr);
+                            display:grid;
+                            gap: var(--gap);
+                            align-items: center;
+                            list-style: none;
+                        }
+
+                            .sectiune-legaturi li {
 border: 1px solid #404040;
 border-radius: 4px;
                                 margin-top: 0;
@@ -506,86 +644,76 @@ border-radius: 4px;
                                 padding-bottom: 0;
                                 padding-left: 0;
                                 padding-right: 0;
-                                width: 100%;
-                                height: auto;
-                                display: block;
-                                object-fit: cover;
+                                display: flex;
+                                align-items: center;
+                                flex-grow: 1;
                             }
 
-                        .content-tabel {
-border: 1px solid #404040;
+                                .sectiune-legaturi li:hover {
+border: 1px solid #000000;
 border-radius: 4px;
-                            margin-top: 0;
-                            margin-bottom: 0;
-                            margin-left: 0;
-                            margin-right: 0;
-                            padding-top: 0;
-                            padding-bottom: 0;
-                            padding-left: 0;
-                            padding-right: 0;
-                            width: 100%;
-                        }
-
-                            .content-tabel table {
-border: none;
-border-collapse: collapse;
-                                margin-top: 0;
-                                margin-bottom: 0;
-                                margin-left: 0;
-                                margin-right: 0;
-                                padding-top: 0.5rem;
-                                padding-bottom: 0.5rem;
-                                padding-left: 0.5rem;
-                                padding-right: 0.5rem;
-                                width: 100%;
-                                max-width: 100%;
-                            }
-
-                                table caption {
-                                    padding-top: 0.5rem;
-                                }
-
-                                table tr:last-child td {
-                                    border-bottom: 0;
-                                }
-
-                                table tr td:first-child,
-                                table tr th:first-child {
-                                    border-left: 0;
-                                }
-
-                                table tr td:last-child,
-                                table tr th:last-child {
-                                    border-right: 0;
-                                }
-
-                                .content-tabel th {
-border: 1px solid #404040;
-border-radius: 4px;
-                                    margin-top: 0;
-                                    margin-bottom: 0;
-                                    margin-left: 0;
-                                    margin-right: 0;
-                                    padding-top: 0.5rem;
-                                    padding-bottom: 0.5rem;
-                                    padding-left: 0.5rem;
-                                    padding-right: 0.5rem;
+                                    text-shadow: 0.4px 0 currentcolor, -0.4px 0 currentcolor;
                                     background-color: #F8F8F8;
                                 }
 
-                                .content-tabel td {
+                                .sectiune-legaturi img {
 border: 1px solid #404040;
+border-radius: 4px;
+                                    margin-top: 0.2rem;
+                                    margin-bottom: 0.2rem;
+                                    margin-left: 0.2rem;
+                                    margin-right: 0.5rem;
+                                    padding-top: 0;
+                                    padding-bottom: 0;
+                                    padding-left: 0;
+                                    padding-right: 0;
+                                    width: 5rem;
+                                    height: 5rem;
+                                    background-color: #FFFFFF;
+                                }
+
+                                .sectiune-legaturi a {
+border: 0px solid #404040;
+border-radius: 4px;
                                     margin-top: 0;
                                     margin-bottom: 0;
                                     margin-left: 0;
                                     margin-right: 0;
-                                    padding-top: 0.5rem;
-                                    padding-bottom: 0.5rem;
-                                    padding-left: 0.5rem;
+                                    padding-top: 0;
+                                    padding-bottom: 0;
+                                    padding-left: 0;
                                     padding-right: 0.5rem;
+                                    width: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: flex-start;
+                                    text-decoration: none;
+                                    font-size: var(--sz3);
+                                    color: #404040;
                                 }
 
-/* Secțiuni de conținut */
+                                    .text {
+border: 0px solid #404040;
+border-radius: 4px;
+                                        margin-top: 0;
+                                        margin-bottom: 0;
+                                        margin-left: 0;
+                                        margin-right: 0;
+                                        padding-top: 0;
+                                        padding-bottom: 0;
+                                        padding-left: 0;
+                                        padding-right: 0;
+                                        width: 100%;
+                                        height: 5.5rem;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: center;
+                                    }
+
+                                        .line {
+                                            margin-top: 0;
+                                            white-space: nowrap;
+                                        }
 
 /* Secțiune Continut */
                     .sectiune-continut {
@@ -821,94 +949,20 @@ border-radius: 4px;
                             flex-grow: 1;
                         }
 
-                            .wrap-down {
-                                justify-content: flex-end;
-                            }
-
-                            .wrap-size {
-                                height: 0;
-                            }
-
-                            .wrap-show {
-                            }
-
-/* Secțiune Text */
-                    .sectiune-text {
-border: 0px solid #404040;
-border-radius: 4px;
-                        margin-top: 0;
-                        margin-bottom: 0;
-                        margin-left: 0;
-                        margin-right: 0;
-                        padding-top: 1rem;
-                        padding-bottom: 0;
-                        padding-left: 0.5rem;
-                        padding-right: 0.5rem;
-                        text-align: left;
-                        line-height: 1.5;
-                    }
-
-                    .coloane {
-border: 0px solid #404040;
-border-radius: 4px;
-                        margin-top: 0;
-                        margin-bottom: 0.5rem;
-                        margin-left: 0;
-                        margin-right: 0;
-                        padding-top: 0;
-                        padding-bottom: 0;
-                        padding-left: 0;
-                        padding-right: 0;
-                        column-width: 40rem;
-                        column-gap: var(--gap);
-                        text-align: left;
-                        line-height: 1.5;
-                    }
-
-                        .citat-1 {
-border: 0px solid #404040;
-border-radius: 4px;
-                            margin-top: 0;
-                            margin-bottom: 0.5rem;
-                            margin-left: 0;
-                            margin-right: 0;
-                            padding-top: 0;
-                            padding-bottom: 0;
-                            padding-left: 0;
-                            padding-right: 0;
-                            text-align: left;
+                        .wrap-down {
+                            justify-content: flex-end;
                         }
 
-                        .citat-2 {
-border: 0px solid #404040;
-border-radius: 4px;
-                            margin-top: 0;
-                            margin-bottom: var(--szp);
-                            margin-left: 0;
-                            margin-right: 0;
-                            padding-top: 0;
-                            padding-bottom: 0;
-                            padding-left: 0;
-                            padding-right: 0;
-                            text-align: left;
-                            font-weight: bold;
+                        .wrap-size {
+                            height: 0;
                         }
 
-/* Secțiune Informații */
-                    .sectiune-informatii {
+                        .wrap-show {
+                        }
+
+                        .content-imagine {
 border: 0px solid #404040;
 border-radius: 4px;
-                        margin-top: 0;
-                        margin-bottom: 0;
-                        margin-left: 0;
-                        margin-right: 0;
-                        padding-top: 1.5rem;
-                        padding-bottom: 0.5rem;
-                        padding-left: 0.5rem;
-                        padding-right: 0.5rem;
-                    }
-
-                        .sectiune-informatii ul {
                             margin-top: 0;
                             margin-bottom: 0;
                             margin-left: 0;
@@ -917,77 +971,12 @@ border-radius: 4px;
                             padding-bottom: 0;
                             padding-left: 0;
                             padding-right: 0;
-                            list-style: none;
+                            width: 100%;
+                            height: auto;
+                            display: block;
                         }
 
-                            .sectiune-informatii li {
-                                margin-top: 0;
-                                margin-bottom: 0;
-                                margin-left: 0;
-                                margin-right: 0;
-                                padding-top: 0
-                                padding-bottom: 0;
-                                padding-left: 0;
-                                padding-right: 0;
-                                list-style: none;
-                            }
-
-                                .sectiune-informatii a {
-border: 0px solid #404040;
-border-radius: 4px;
-                                    margin-top: 0
-                                    margin-bottom: 0;
-                                    margin-left: -0.5rem;
-                                    margin-right: 0;
-                                    padding-top: var(--pd3);
-                                    padding-bottom: var(--pd3);
-                                    padding-left: 0.5rem;
-                                    padding-right: 0.5rem;
-                                    display: inline-block;
-                                    text-decoration: none;
-                                    font-size: var(--sz3);
-                                    line-height: 1.5;
-                                    color: #404040;
-                                }
-
-                                .sectiune-informatii a:hover {
-                                    text-shadow: 0.4px 0 currentcolor, -0.4px 0 currentcolor;
-                                    color: #404040;
-                                }
-
-/* Secțiune Legături */
-                    .sectiune-legaturi {
-border: 0px solid #404040;
-border-radius: 4px;
-                        margin-top: auto;
-                        margin-bottom: 1rem;
-                        margin-left: 0;
-                        margin-right: 0;
-                        padding-top: 0;
-                        padding-bottom: 0;
-                        padding-left: 0;
-                        padding-right: 0;
-                    }
-
-                        .sectiune-legaturi ul {
-border: 0px solid #404040;
-border-radius: 4px;
-                            margin-top: 0.5rem;
-                            margin-bottom: 0.5rem;
-                            margin-left: 0;
-                            margin-right: 0;
-                            padding-top: 0;
-                            padding-bottom: 0;
-                            padding-left: 0.5rem;
-                            padding-right: 0.5rem;
-                            grid-template-columns: repeat(4, 1fr);
-                            display:grid;
-                            gap: var(--gap);
-                            align-items: center;
-                            list-style: none;
-                        }
-
-                            .sectiune-legaturi li {
+                            .content-imagine img {
 border: 1px solid #404040;
 border-radius: 4px;
                                 margin-top: 0;
@@ -998,34 +987,61 @@ border-radius: 4px;
                                 padding-bottom: 0;
                                 padding-left: 0;
                                 padding-right: 0;
-                                flex-grow: 1;
+                                width: 100%;
+                                height: auto;
+                                display: block;
+                                object-fit: cover;
                             }
 
-                                .sectiune-legaturi li:hover {
-border: 1px solid #000000;
-border-radius: 4px;
-                                    text-shadow: 0.4px 0 currentcolor, -0.4px 0 currentcolor;
-                                    background-color: #F8F8F8;
-                                }
-
-                                .sectiune-legaturi img {
+                        .content-tabel {
 border: 1px solid #404040;
 border-radius: 4px;
-                                    margin-top: 0;
-                                    margin-bottom: 0;
-                                    margin-left: 0;
-                                    margin-right: 0.5rem;
-                                    padding-top: 0;
-                                    padding-bottom: 0;
-                                    padding-left: 0;
-                                    padding-right: 0;
-                                    width: 5rem;
-                                    height: 5rem;
-                                    background-color: #FFFFFF;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            width: 100%;
+                        }
+
+                            .content-tabel table {
+border: none;
+border-collapse: collapse;
+                                margin-top: 0;
+                                margin-bottom: 0;
+                                margin-left: 0;
+                                margin-right: 0;
+                                padding-top: 0.5rem;
+                                padding-bottom: 0.5rem;
+                                padding-left: 0.5rem;
+                                padding-right: 0.5rem;
+                                width: 100%;
+                                max-width: 100%;
+                            }
+
+                                table caption {
+                                    padding-top: 0.5rem;
                                 }
 
-                                .sectiune-legaturi a {
-border: 0px solid #404040;
+                                table tr:last-child td {
+                                    border-bottom: 0;
+                                }
+
+                                table tr td:first-child,
+                                table tr th:first-child {
+                                    border-left: 0;
+                                }
+
+                                table tr td:last-child,
+                                table tr th:last-child {
+                                    border-right: 0;
+                                }
+
+                                .content-tabel th {
+border: 1px solid #404040;
 border-radius: 4px;
                                     margin-top: 0;
                                     margin-bottom: 0;
@@ -1033,16 +1049,21 @@ border-radius: 4px;
                                     margin-right: 0;
                                     padding-top: 0.5rem;
                                     padding-bottom: 0.5rem;
-                                    padding-left: 0.2rem;
+                                    padding-left: 0.5rem;
                                     padding-right: 0.5rem;
-                                    min-height: 5.5rem;
-                                    display: flex;
-                                    align-items: center;
-                                    text-align: center;
-                                    text-decoration: none;
-                                    font-size: var(--sz3);
-                                    line-height: 1.5;
-                                    color: #404040;
+                                    background-color: #F8F8F8;
+                                }
+
+                                .content-tabel td {
+border: 1px solid #404040;
+                                    margin-top: 0;
+                                    margin-bottom: 0;
+                                    margin-left: 0;
+                                    margin-right: 0;
+                                    padding-top: 0.5rem;
+                                    padding-bottom: 0.5rem;
+                                    padding-left: 0.5rem;
+                                    padding-right: 0.5rem;
                                 }
 
 /* SUBSOL */
@@ -1073,14 +1094,16 @@ border-radius: 4px;
                         padding-right: 0.5rem;
                         text-align: center;
                         font-size: var(--sz3);
-                        line-height: 1.5;
                         background-color: #FFFFFF;
                     }
 
 /* Scalare pagină */
-                @media (min-width: 2561px) {
+                @media (min-width: 1367px) {
                     aside {
                         min-height: 100vh;
+                    }
+                    .banner {
+                        margin-left: var(--asz);
                     }
                     .content {
                         margin-left: var(--asz);
@@ -1090,40 +1113,15 @@ border-radius: 4px;
                     }
                 }
 
-                @media (min-width: 1921px) and (max-width: 2560px) {
-                    aside {
-                        min-height: 100vh;
-                    }
-                    .content {
-                        margin-left: var(--asz);
-                    }
-                    .footer {
-                        margin-left: var(--asz);
-                    }
-                }
-
-                @media (min-width: 1367px) and (max-width: 1920px) {
-                    aside {
-                        min-height: 100vh;
-                    }
-                    .content {
-                        margin-left: var(--asz);
-                    }
-                    .footer {
-                        margin-left: var(--asz);
-                    }
-                }
-
-                @media (min-width: 1281px) and (max-width: 1366px) {
+/* aside */
+                @media (min-width: 1080px) and (max-width: 1366px) {
                     aside {
                         border-radius: 4px;
                     }
-                    .sectiune-legaturi {
-                        margin-bottom: 0;
-                    }
                 }
 
-                @media (min-width: 769px) and (max-width: 1280px) {
+/* legaturi 2 */
+                @media (min-width: 641px) and (max-width: 1080px) { 
                     aside {
                         border-radius: 4px;
                     }
@@ -1139,7 +1137,8 @@ border-radius: 4px;
                     }
                 }
 
-                @media (min-width: 641px) and (max-width: 768px) {
+/* page-menu 2 */
+                @media (min-width: 601px) and (max-width: 640px) {
                     aside {
                         border-radius: 4px;
                     }
@@ -1158,7 +1157,8 @@ border-radius: 4px;
                     }
                 }
 
-                @media (min-width: 480px) and (max-width: 640px) {
+/* legaturi 1 */
+                @media (min-width: 577px) and (max-width: 600px) { 
                     aside {
                         border-radius: 4px;
                     }
@@ -1175,12 +1175,28 @@ border-radius: 4px;
                         display: grid;
                         grid-template-columns: repeat(1, 1fr);
                     }
-                    .sectiune-legaturi a {
-                        text-align: left;  
+                }
+
+                @media (min-width: 480px) and (max-width: 576px) {
+                    aside {
+                        border-radius: 4px;
+                    }
+                    .page-menu .patru {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                    #program-continut .wrap-4 {
+                        grid-column: span 6;
+                    }
+                    #program-continut .wrap-show {
+                        display: none;
+                    }
+                    .sectiune-legaturi ul {
+                        display: grid;
+                        grid-template-columns: repeat(1, 1fr);
                     }
                 }
 
-                @media (min-width: 385px) and (max-width: 480px) {
+                @media (min-width: 353px) and (max-width: 480px) {
                     aside {
                         border-radius: 4px;
                     }
@@ -1197,12 +1213,10 @@ border-radius: 4px;
                         display: grid;
                         grid-template-columns: repeat(1, 1fr);
                     }
-                    .sectiune-legaturi a {
-                        text-align: left;  
-                    }
                 }
 
-                @media (max-width: 384px) {
+/* page-menu 1 */
+                @media (max-width: 352px) {
                     aside {
                         border-radius: 4px;
                     }
@@ -1218,8 +1232,5 @@ border-radius: 4px;
                     .sectiune-legaturi ul {
                         display: grid;
                         grid-template-columns: repeat(1, 1fr);
-                    }
-                    .sectiune-legaturi a {
-                        text-align: left;  
                     }
                 }
