@@ -5,8 +5,6 @@
                 const aside = document.querySelector('aside');
                 const toggleBtn = document.getElementById('menu-toggle');
                 const width = window.innerWidth;
-
-// Verificare vizibilitate Meniu pentru scalare pagină
                 if (width >= 1367) {
                     aside.classList.add('show');
                     toggleBtn.style.display = 'none';
@@ -57,7 +55,101 @@
                 document.documentElement.style.setProperty('--gap', sizeGap);
             }
 
-// Setare înălțime imagine "Program de lucru"
+// Aranjare text, "Secțiune Legături"
+            const parametri = [];
+            function initializeParams() {
+                const ids = ['mec', 'isjneamt', 'cjraeneamt', 'ccdneamt'];
+                ids.forEach(id => {
+                    const el = document.getElementById(id);
+                    if (el) {
+                        const text = el.innerText || el.textContent;
+                        parametri.push({ id, text });
+                    }
+                });
+            }
+            function masoaraString(text) {
+                const span = document.createElement('span');
+                span.style.visibility = 'hidden';
+                span.style.position = 'absolute';
+                span.style.whiteSpace = 'pre';
+                span.innerText = text;
+                document.body.appendChild(span);
+                const latime = span.offsetWidth;
+                document.body.removeChild(span);
+                return latime;
+            }
+            function potrivesteText(id, text) {
+                const aElement = document.querySelector(`a[aria-labelledby="${id}"]`);
+                const container = document.getElementById(id);
+                if (!aElement || !container) return;
+                    container.style.visibility = 'hidden';
+                    container.innerHTML = '';
+                    const aRect = aElement.getBoundingClientRect();
+                    const paddingPx = (0.2 + 0.1 + 5 + 0.1 + 0.5 + 0.1 + 0.1 + 0.5) * 16;
+                    const totalAvailableWidth = aRect.width - paddingPx;
+                    const maxLineLength = totalAvailableWidth;
+                    const cuvinte = text.split(' ');
+                    let randuri = [];
+                    let currentLine = [];
+                    for (const cuvant of cuvinte) {
+                        const tempLineText = currentLine.concat(cuvant).join(' ');
+                        const width = masoaraString(tempLineText);
+                        if (width <= maxLineLength) {
+                        currentLine.push(cuvant);
+                        } else {
+                            if (currentLine.length > 0) {
+                                randuri.push(currentLine.join(' '));
+                            }
+                            const cuvantWidth = masoaraString(cuvant);
+                            if (cuvantWidth > maxLineLength) {
+                                randuri.push(cuvant);
+                                currentLine = [];
+                            } else {
+                                currentLine = [cuvant];
+                                }
+                        }
+                }
+                if (currentLine.length > 0) {
+                    randuri.push(currentLine.join(' '));
+                }
+                let lungimeMaxima = 0;
+                const randuriDimensiuni = [];
+                randuri.forEach(r => {
+                    const width = masoaraString(r);
+                    randuriDimensiuni.push(width);
+                    if (width > lungimeMaxima) lungimeMaxima = width;
+                });
+                randuri.forEach((r, idx) => {
+                    const lineDiv = document.createElement('div');
+                    lineDiv.className = 'line';
+                    lineDiv.innerText = r;
+                    lineDiv.style.marginLeft = ((lungimeMaxima - randuriDimensiuni[idx]) / 2) + 'px';
+                    container.appendChild(lineDiv);
+                });
+                container.style.visibility = 'visible';
+            }
+            function potrivesteTexte() {
+                parametri.forEach(({ id, text }) => {
+                    const el = document.getElementById(id);
+                    if (!el) return;
+                    const img = document.querySelector(`a[aria-labelledby="${id}"] img`);
+                    if (!img) {
+                        setTimeout(() => {
+                            potrivesteText(id, text);
+                        }, 300);
+                    } else {
+                        if (img.complete && img.naturalWidth !== 0) {
+                            potrivesteText(id, text);
+                        } else {
+                            img.addEventListener('load', () => {
+                                potrivesteText(id, text);
+                            });
+                        }
+                    }
+                });
+            }
+
+// Setare înălțime imagine, "Program de lucru"
             function updateProgram() {
                 const programSecretariat = document.getElementById('program-secretariat');
                 const programImagine = document.querySelector('#imagine-lucru img');
@@ -70,49 +162,42 @@
 // Funcții de inițializare
 
 // Inițializare setări la încărcare pagină
-                window.addEventListener('load', () => {
-                    updateMeniu();
-                    updateGap();
-                    updateProgram();
-                });
+            window.addEventListener('load', () => {
+                updateMeniu();
+                updateGap();
+                updateProgram();
+                initializeParams();
+                potrivesteTexte();
+            });
 
 // Inițializare setări la redimensionare pagină
-                window.addEventListener('resize', () => {
-                    updateMeniu();
-                    updateGap();
-                    updateProgram();
-                });
+            window.addEventListener('resize', () => {
+                updateMeniu();
+                updateGap();
+                updateProgram();
+                potrivesteTexte();
+            });
 
 // Funcții de gestionare evenimente
 
 // Afișare sau ascundere Meniu la click pe buton
-                document.getElementById('menu-toggle').addEventListener('click', () => {
-                    const aside = document.querySelector('aside');
-                    aside.classList.toggle('show');
-                    updateButton();
-                });
+            document.getElementById('menu-toggle').addEventListener('click', () => {
+                const aside = document.querySelector('aside');
+                aside.classList.toggle('show');
+                updateButton();
+            });
 
 // Gestionare apăsare tastă CTRL
             const width = window.innerWidth;
             let ctrlToggleDone = false;
-
-// Afișare sau ascundere Meniu la apăsarea tastei CTRL
             document.addEventListener('keydown', (e) => {
                 if (e.key === 'Control') {
-
-// Verificare lățime ecran
                     if (window.innerWidth < 1367) {
-
-// Blocare comportament implicit pentru apasarea tastei CTRL
                         e.preventDefault();
-
-// Setare comportament particularizat pentru apasarea tastei CTRL
                         if (!ctrlToggleDone) {
                             const aside = document.querySelector('aside');
                             aside.classList.toggle('show');
                             updateButton();
-
-// Blocare apasare multiplă a tastei ESC
                             ctrlToggleDone = true;
                         }
                     }
@@ -122,8 +207,6 @@
 // Gestionare eliberare tastă CTRL
             document.addEventListener('keyup', (e) => {
                 if (e.key === 'Control') {
-
-// Resetetare stare pentru următoarea apăsare a tastei CTRL
                     ctrlToggleDone = false;
                 }
             });
