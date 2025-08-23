@@ -153,9 +153,11 @@
             function updateProgram() {
                 const programSecretariat = document.getElementById('program-secretariat');
                 const programImagine = document.querySelector('#imagine-lucru img');
-                if (programSecretariat && programImagine) {
-                    const heightDiv = programSecretariat.offsetHeight;
-                    programImagine.style.height = heightDiv + 'px';
+                if (programSecretariat && programImagine) {	
+                   programImagine.style.display = 'none';
+                   const heightDiv = programSecretariat.offsetHeight;
+                  programImagine.style.height = heightDiv + 'px';
+                  programImagine.style.display = 'block';
                 }
             }
 
