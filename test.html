@@ -1180,7 +1180,7 @@ border-radius: 4px;
                     }
                 }
 
-/* legaturi 2 */
+/* legaturi 2, wrap-show */
                 @media (min-width: 801px) and (max-width: 1080px) { 
                     aside {
                         border-radius: 4px;
@@ -1198,7 +1198,7 @@ border-radius: 4px;
                 }
 
 /* page-menu 2 */
-                @media (min-width: 641px) and (max-width: 800px) {
+                @media (min-width: 721px) and (max-width: 800px) {
                     aside {
                         border-radius: 4px;
                     }
@@ -1217,8 +1217,29 @@ border-radius: 4px;
                     }
                 }
 
+/* wrap-4 */
+                @media (min-width: 601px) and (max-width: 720px) { 
+                    aside {
+                        border-radius: 4px;
+                    }
+                    .page-menu .patru {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                    #program-continut .wrap-4 {
+                        grid-column: span 12;
+                    }
+                    #program-continut .wrap-show {
+                        display: none;
+                    }
+                    .sectiune-legaturi ul {
+                        display: grid;
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                }
+
+
 /* legaturi 1 */
-                @media (min-width: 353px) and (max-width: 640px) { 
+                @media (min-width: 353px) and (max-width: 600px) { 
                     aside {
                         border-radius: 4px;
                     }
