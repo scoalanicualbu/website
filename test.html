@@ -1090,6 +1090,10 @@ border-collapse: collapse;
                                     display: none;
                                 }
 
+                                table tr:first-child th {
+                                    border-top: 0;
+                                }
+
                                 table tr:last-child td {
                                     border-bottom: 0;
                                 }
@@ -1483,13 +1487,12 @@ border-radius: 4px;
 
                         <h2 id="secretariat-label">PROGRAM DE LUCRU CU PUBLICUL</h2>
                         <h3>Compartimentul Secretariat<br>Compartimentul Administrativ-Financiar</h3>
-                        <br>
                         <p>Aprobat în ședința Consiliului de Administrație din data de 10.10.2024</p>
 
                         <div id="tabel-secretariat" class="content-tabel">
-                            <table border="1" summary="Program de lucru cu publicul: zile și intervale orare pentru Compartimentul Secretariat și pentru Compartimentul Administrativ-Financiar">
+                            <table border="1" aria-labelledby="secretariat-descriere">
                                 <caption class="sr-only">
-                                    Program orar de lucru cu publicul
+                                    Program orar
                                 </caption>
                                 <colgroup>
                                     <col style="width: 40%;">
@@ -1524,20 +1527,22 @@ border-radius: 4px;
                                     </tr>
                                 </tbody>
                             </table>
+                            <div id="secretariat-descriere" class="sr-only">
+                                Tabelul afișează zilele săptămânii și intervalele orare de lucru cu publicul pentru Compartimentul Secretariat și Compartimentul Administrativ-Financiar.
+                            </div>
                         </div>
                     </div>
 
                     <div id="program-director" class="wrap-4 wrap-down" role="region" aria-labelledby="director-label">
+
+                        <h2 id="director-label">PROGRAM DE AUDIENȚE LA DIRECTOR</h2>
+                        <p>Aprobat în ședința Consiliului de Administrație din data de 10.10.2024</p>
+
                         <div id="tabel-director" class="content-tabel">
-                            <table border="1" summary="Acest tabel prezintă programul de audiențe director. Programul indică zilele săptămânii și intervalele orare de disponibilitate pentru fiecare zi.">
+                            <table border="1" aria-labelledby="director-descriere">
                                 <caption class="sr-only">
-                                    Program orar de audiențe director
+                                    Program orar
                                 </caption>
-                                    <br>
-                                    <br>
-                                    <h2 id="director-label">PROGRAM DE AUDIENȚE DIRECTOR</h2>
-                                    <br>
-                                    <p>Aprobat în ședința Consiliului de Administrație din data de 10.10.2024</p>
                                 <colgroup>
                                     <col style="width: 40%;">
                                     <col style="width: 60%;">
@@ -1571,6 +1576,9 @@ border-radius: 4px;
                                     </tr>
                                 </tbody>
                             </table>
+                            <div id="director-descriere" class="sr-only">
+                                Tabelul afișează zilele săptămânii și intervalele orare de audiențe la director.
+                            </div>
                         </div>
                     </div>
 
