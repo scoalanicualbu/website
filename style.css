@@ -1026,6 +1026,14 @@ border-collapse: collapse;
                                     padding-top: 0.5rem;
                                 }
 
+                                table caption.sr-only {
+                                    display: none;
+                                }
+
+                                table tr:first-child th {
+                                    border-top: 0;
+                                }
+
                                 table tr:last-child td {
                                     border-bottom: 0;
                                 }
@@ -1040,7 +1048,7 @@ border-collapse: collapse;
                                     border-right: 0;
                                 }
 
-                                .content-tabel th {
+                                table th {
 border: 1px solid #404040;
 border-radius: 4px;
                                     margin-top: 0;
@@ -1054,7 +1062,16 @@ border-radius: 4px;
                                     background-color: #F8F8F8;
                                 }
 
-                                .content-tabel td {
+                                    table th[scope="row"] {
+                                        font-weight: normal;
+                                        background-color: #FFFFFF;
+                                    }
+
+                                    table tbody tr:last-child th {
+                                        border: none;
+                                    }
+
+                                table td {
 border: 1px solid #404040;
                                     margin-top: 0;
                                     margin-bottom: 0;
@@ -1064,6 +1081,10 @@ border: 1px solid #404040;
                                     padding-bottom: 0.5rem;
                                     padding-left: 0.5rem;
                                     padding-right: 0.5rem;
+                                }
+
+                                table tfoot.sr-only {
+                                    display: none;
                                 }
 
 /* SUBSOL */
