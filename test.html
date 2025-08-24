@@ -1477,13 +1477,17 @@ border-radius: 4px;
 
                     <div id="program-secretariat" class="wrap-4 wrap-down" role="region" aria-labelledby="secretariat-label">
                         <div id="tabel-secretariat" class="content-tabel">
-                            <table border="1" summary="Acest tabel prezintă programul de lucru cu publicul. Programul indică zilele săptămânii și intervalele orare de disponibilitate pentru fiecare zi.">
-                                <caption id="secretariat-label">
-                                    <h2>PROGRAM DE LUCRU CU PUBLICUL</h2>
+                            <table border="1" aria-label="Programul de lucru cu publicul. Programul indică zilele săptămânii și intervalele orare de disponibilitate pentru fiecare zi.">
+                                <caption>
+                                    <h2 id="secretariat-label">PROGRAM DE LUCRU CU PUBLICUL</h2>
                                     <h3>Compartimentul Secretariat<br>Compartimentul Administrativ-Financiar</h3>
                                     <br>
                                     <p>Aprobat în ședința Consiliului de Administrație din data de 10.10.2024</p>
                                 </caption>
+                                <colgroup>
+                                    <col style="width: 40%;">
+                                    <col style="width: 60%;">
+                                </colgroup>
                                 <thead>
                                     <tr>
                                         <th scope="col">Ziua</th>
@@ -1518,14 +1522,18 @@ border-radius: 4px;
 
                     <div id="program-director" class="wrap-4 wrap-down" role="region" aria-labelledby="director-label">
                         <div id="tabel-director" class="content-tabel">
-                            <table border="1" summary="Acest tabel prezintă programul de audiențe director. Programul indică zilele săptămânii și intervalele orare de disponibilitate pentru fiecare zi.">
-                                <caption id="director-label">
+                            <table border="1" aria-label="Program de audiențe director. Programul indică zilele săptămânii și intervalele orare de disponibilitate pentru fiecare zi.">
+                                <caption>
                                     <br>
                                     <br>
-                                    <h2>PROGRAM DE AUDIENȚE DIRECTOR</h2>
+                                    <h2 id="director-label">PROGRAM DE AUDIENȚE DIRECTOR</h2>
                                     <br>
                                     <p>Aprobat în ședința Consiliului de Administrație din data de 10.10.2024</p>
                                 </caption>
+                                <colgroup>
+                                    <col style="width: 40%;">
+                                    <col style="width: 60%;">
+                                </colgroup>
                                 <thead>
                                     <tr>
                                         <th scope="col">Ziua</th>
