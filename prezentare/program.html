@@ -61,10 +61,14 @@
     <body>
 
 <!-- Link "Sari la conținut" -->
-        <a href="#main-content" id="skipToContinut" target="_self" class="skip-link" arialabelledby="link-sari-la-continut">
-            <span id="link-sari-la-continut">Mergi la conținutul paginii</span>
-            <span class="sr-only"> (se deschide în aceeași fereastră)</span>
-        </a>
+        <header role="presentation">
+
+            <a href="#main-content" id="skipToContinut" target="_self" class="skip-link" arialabelledby="link-sari-la-continut">
+                <span id="link-sari-la-continut">Mergi la conținutul paginii</span>
+                <span class="sr-only"> (se deschide în aceeași fereastră)</span>
+            </a>
+
+        </header>
 
 <!-- MENIU -->
         <aside id="main-menu" aria-label="Meniu">
@@ -248,14 +252,20 @@
                     </div>
 
                     <div id="program-secretariat" class="wrap-4 wrap-down" role="region" aria-labelledby="secretariat-label">
+
+                        <h2 id="secretariat-label">PROGRAM DE LUCRU CU PUBLICUL</h2>
+                        <h3>Compartimentul Secretariat<br>Compartimentul Administrativ-Financiar</h3>
+                        <p>Aprobat în ședința Consiliului de Administrație din data de 10.10.2024</p>
+
                         <div id="tabel-secretariat" class="content-tabel">
-                            <table>
-                                <caption id="secretariat-label">
-                                    <h2>PROGRAM DE LUCRU CU PUBLICUL</h2>
-                                    <h3>Compartimentul Secretariat<br>Compartimentul Administrativ-Financiar</h3>
-                                    <br>
-                                    <p>Aprobat în ședința Consiliului de Administrație din data de 10.10.2024</p>
+                            <table border="1" aria-labelledby="secretariat-descriere">
+                                <caption class="sr-only">
+                                    Program de lucru cu publicul
                                 </caption>
+                                <colgroup>
+                                    <col style="width: 40%;">
+                                    <col style="width: 60%;">
+                                </colgroup>
                                 <thead>
                                     <tr>
                                         <th scope="col">Ziua</th>
@@ -264,40 +274,52 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>Luni</td>
+                                        <th scope="row">Luni</th>
                                         <td>10:00 - 14:00</td>
                                     </tr>
                                     <tr>
-                                        <td>Marți</td>
+                                        <th scope="row">Marți</th>
                                         <td>12:00 - 16:00</td>
                                     </tr>
                                     <tr>
-                                        <td>Miercuri</td>
+                                        <th scope="row">Miercuri</th>
                                         <td>12:00 - 16:00</td>
                                     </tr>
                                     <tr>
-                                        <td>Joi</td>
+                                        <th scope="row">Joi</th>
                                         <td>08:30 - 12:30</td>
                                     </tr>
                                     <tr>
-                                        <td>Vineri</td>
+                                        <th scope="row">Vineri</th>
                                         <td>08:30 - 12:30</td>
                                     </tr>
                                 </tbody>
+                                <tfoot class="sr-only">
+                                    <tr>
+                                        <td colspan="2"></td>
+                                    </tr>
+                                </tfoot>
                             </table>
+                            <div id="secretariat-descriere" class="sr-only">
+                                Tabelul afișează zilele săptămânii și intervalele orare de lucru cu publicul pentru Compartimentul Secretariat și Compartimentul Administrativ-Financiar.
+                            </div>
                         </div>
                     </div>
 
                     <div id="program-director" class="wrap-4 wrap-down" role="region" aria-labelledby="director-label">
+
+                        <h2 id="director-label">PROGRAM DE AUDIENȚE LA DIRECTOR</h2>
+                        <p>Aprobat în ședința Consiliului de Administrație din data de 10.10.2024</p>
+
                         <div id="tabel-director" class="content-tabel">
-                            <table>
-                                <caption id="director-label">
-                                    <br>
-                                    <br>
-                                    <h2>PROGRAM DE AUDIENȚE DIRECTOR</h2>
-                                    <br>
-                                    <p>Aprobat în ședința Consiliului de Administrație din data de 10.10.2024</p>
+                            <table border="1" aria-labelledby="director-descriere">
+                                <caption class="sr-only">
+                                    Program de audiențe la director
                                 </caption>
+                                <colgroup>
+                                    <col style="width: 40%;">
+                                    <col style="width: 60%;">
+                                </colgroup>
                                 <thead>
                                     <tr>
                                         <th scope="col">Ziua</th>
@@ -306,27 +328,35 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>Luni</td>
+                                        <th scope="row">Luni</th>
                                         <td>09:00 - 11:00</td>
                                     </tr>
                                     <tr>
-                                        <td>Marți</td>
+                                        <th scope="row">Marți</th>
                                         <td>10:00 - 12:00</td>
                                     </tr>
                                     <tr>
-                                        <td>Miercuri</td>
+                                        <th scope="row">Miercuri</th>
                                         <td>-</td>
                                     </tr>
                                     <tr>
-                                        <td>Joi</td>
+                                        <th scope="row">Joi</th>
                                         <td>-</td>
                                     </tr>
                                     <tr>
-                                        <td>Vineri</td>
+                                        <th scope="row">Vineri</th>
                                         <td>09:00 - 11:00</td>
                                     </tr>
                                 </tbody>
+                                <tfoot class="sr-only">
+                                    <tr>
+                                        <td colspan="2"></td>
+                                    </tr>
+                                </tfoot>
                             </table>
+                            <div id="director-descriere" class="sr-only">
+                                Tabelul afișează zilele săptămânii și intervalele orare de audiențe la director.
+                            </div>
                         </div>
                     </div>
 
