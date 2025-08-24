@@ -1114,14 +1114,14 @@ border-radius: 4px;
                 }
 
 /* aside */
-                @media (min-width: 1080px) and (max-width: 1366px) {
+                @media (min-width: 1153px) and (max-width: 1366px) {
                     aside {
                         border-radius: 4px;
                     }
                 }
 
 /* legaturi 2, wrap-show */
-                @media (min-width: 801px) and (max-width: 1080px) { 
+                @media (min-width: 801px) and (max-width: 1152px) { 
                     aside {
                         border-radius: 4px;
                     }
