@@ -1108,7 +1108,7 @@ border-collapse: collapse;
                                     border-right: 0;
                                 }
 
-                                .content-tabel th {
+                                table th {
 border: 1px solid #404040;
 border-radius: 4px;
                                     margin-top: 0;
@@ -1122,7 +1122,16 @@ border-radius: 4px;
                                     background-color: #F8F8F8;
                                 }
 
-                                .content-tabel td {
+                                    table th[scope="row"] {
+                                        font-weight: normal;
+                                        background-color: #FFFFFF;
+                                    }
+
+                                    table tbody tr:last-child th {
+                                        border: none;
+                                    }
+
+                                table td {
 border: 1px solid #404040;
                                     margin-top: 0;
                                     margin-bottom: 0;
@@ -1132,6 +1141,10 @@ border: 1px solid #404040;
                                     padding-bottom: 0.5rem;
                                     padding-left: 0.5rem;
                                     padding-right: 0.5rem;
+                                }
+
+                                table tfoot.sr-only {
+                                    display: none;
                                 }
 
 /* SUBSOL */
@@ -1491,8 +1504,8 @@ border-radius: 4px;
 
                         <div id="tabel-secretariat" class="content-tabel">
                             <table border="1" aria-labelledby="secretariat-descriere">
-                                <caption>
-                                    Program de lucru cu publicul pentru Compartimentul Secretariat și Compartimentul Administrativ-Financiar
+                                <caption class="sr-only">
+                                    Program de lucru cu publicul
                                 </caption>
                                 <colgroup>
                                     <col style="width: 40%;">
@@ -1526,6 +1539,11 @@ border-radius: 4px;
                                         <td>08:30 - 12:30</td>
                                     </tr>
                                 </tbody>
+                                <tfoot class="sr-only">
+                                    <tr>
+                                        <td colspan="2"></td>
+                                    </tr>
+                                </tfoot>
                             </table>
                             <div id="secretariat-descriere" class="sr-only">
                                 Tabelul afișează zilele săptămânii și intervalele orare de lucru cu publicul pentru Compartimentul Secretariat și Compartimentul Administrativ-Financiar.
@@ -1575,6 +1593,11 @@ border-radius: 4px;
                                         <td>09:00 - 11:00</td>
                                     </tr>
                                 </tbody>
+                                <tfoot class="sr-only">
+                                    <tr>
+                                        <td colspan="2"></td>
+                                    </tr>
+                                </tfoot>
                             </table>
                             <div id="director-descriere" class="sr-only">
                                 Tabelul afișează zilele săptămânii și intervalele orare de audiențe la director.
