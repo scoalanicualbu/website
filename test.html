@@ -1174,14 +1174,14 @@ border-radius: 4px;
                 }
 
 /* aside */
-                @media (min-width: 1080px) and (max-width: 1366px) {
+                @media (min-width: 1153px) and (max-width: 1366px) {
                     aside {
                         border-radius: 4px;
                     }
                 }
 
 /* legaturi 2, wrap-show */
-                @media (min-width: 801px) and (max-width: 1080px) { 
+                @media (min-width: 801px) and (max-width: 1152px) { 
                     aside {
                         border-radius: 4px;
                     }
@@ -1285,10 +1285,14 @@ border-radius: 4px;
     <body>
 
 <!-- Link "Sari la conținut" -->
-        <a href="#main-content" id="skipToContinut" target="_self" class="skip-link" arialabelledby="link-sari-la-continut">
-            <span id="link-sari-la-continut">Mergi la conținutul paginii</span>
-            <span class="sr-only"> (se deschide în aceeași fereastră)</span>
-        </a>
+        <header role="presentation">
+
+            <a href="#main-content" id="skipToContinut" target="_self" class="skip-link" arialabelledby="link-sari-la-continut">
+                <span id="link-sari-la-continut">Mergi la conținutul paginii</span>
+                <span class="sr-only"> (se deschide în aceeași fereastră)</span>
+            </a>
+
+        </header>
 
 <!-- MENIU -->
         <aside id="main-menu" aria-label="Meniu">
@@ -1473,7 +1477,7 @@ border-radius: 4px;
 
                     <div id="program-secretariat" class="wrap-4 wrap-down" role="region" aria-labelledby="secretariat-label">
                         <div id="tabel-secretariat" class="content-tabel">
-                            <table>
+                            <table border="1" summary="Acest tabel prezintă programul de lucru cu publicul. Programul indică zilele săptămânii și intervalele orare de disponibilitate pentru fiecare zi.">
                                 <caption id="secretariat-label">
                                     <h2>PROGRAM DE LUCRU CU PUBLICUL</h2>
                                     <h3>Compartimentul Secretariat<br>Compartimentul Administrativ-Financiar</h3>
@@ -1514,7 +1518,7 @@ border-radius: 4px;
 
                     <div id="program-director" class="wrap-4 wrap-down" role="region" aria-labelledby="director-label">
                         <div id="tabel-director" class="content-tabel">
-                            <table>
+                            <table border="1" summary="Acest tabel prezintă programul de audiențe director. Programul indică zilele săptămânii și intervalele orare de disponibilitate pentru fiecare zi.">
                                 <caption id="director-label">
                                     <br>
                                     <br>
