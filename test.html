@@ -1863,10 +1863,10 @@ function limitPosition() {
 
   // Limite orizontale
   if (imgWidth <= containerWidth) {
-    // Imaginea mai mică decât containerul: o centrăm
+    // Imaginea mai mică decât containerul: centrarea
     translateX = (containerWidth - imgWidth) / 2;
   } else {
-    // Imaginea mai mare: limităm pentru a fi lipită de margini
+    // Limitare la margini
     const minX = containerWidth - imgWidth; // marginea dreaptă lipită
     const maxX = 0; // marginea stângă lipită
     if (translateX > maxX) translateX = maxX;
@@ -1875,10 +1875,10 @@ function limitPosition() {
 
   // Limite verticale
   if (imgHeight <= containerHeight) {
-    // Imaginea mai mică decât containerul: o centram
+    // Imaginea mai mică decât containerul: centrarea
     translateY = (containerHeight - imgHeight) / 2;
   } else {
-    // Imaginea mai mare: limităm pentru a fi lipită de margini
+    // Limitare la margini
     const minY = containerHeight - imgHeight; // marginea inferioară
     const maxY = 0; // marginea superioară
     if (translateY > maxY) translateY = maxY;
@@ -1923,7 +1923,7 @@ document.addEventListener('mousemove', (e) => {
 
 // La încărcare, poziționăm imaginea la centru
 window.addEventListener('load', () => {
-  // Inițial, dacă imaginea e mai mică, o centrăm
+  // Inițial, dacă imaginea e mai mică decât containerul, o centrăm
   const containerRect = container.getBoundingClientRect();
   const imgRect = img.getBoundingClientRect();
 
