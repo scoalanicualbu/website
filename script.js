@@ -1,3 +1,1659 @@
+ <!DOCTYPE html>
+
+<!-- Limbă și localizare -->
+<html lang="ro-RO">
+
+    <head>
+
+<!-- Titlu -->
+        <title>Contact</title>
+
+<!-- Resurse -->
+<!--        <base href="https://scoalanicualbu.github.io/website/">-->
+
+<!-- Codificare caractere -->
+        <meta charset="UTF-8">
+
+<!-- Compatibilitate -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+
+<!-- Vizualizare -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Descriere -->
+        <meta name="description"
+             content="Site-ul oficial al Școlii Gimnaziale „Nicu Albu” Piatra Neamț, pagina „Contact”.
+             Aici sunt cuprinse informații despre datele de contact ale școlii și legături către secțiuni precum istoric, circumscripție, program de lucru, comunicări.">
+
+<!-- Autor -->
+        <meta name="author" content="informatician IFTIMIA DAN-ADRIAN">
+
+<!-- Cuvinte cheie -->
+        <meta name="keywords" content="ȘCOALA GIMNAZIALĂ NICU ALBU PIATRA NEAMȚ PROGRAM LUCRU">
+
+<!-- Proprietate -->
+        <meta property="og:site_name" content="Școala Gimnazială „Nicu Albu” Piatra Neamț">
+        <meta property="og:url" content="https://scoalanicualbu.github.io/website">
+        <meta property="og:title" content="Site-ul oficial al Școlii Gimnaziale „Nicu Albu” Piatra Neamț, pagina „Contact”">
+        <meta property="og:description" content="Aici sunt cuprinse informații despre datele de contact ale școlii și legături către secțiuni precum istoric, circumscripție, program de lucru, comunicări.">
+        <meta property="og:type" content="website">
+        <meta property="og:locale" content="ro_RO">
+        <meta property="og:image" content="https://github.com/scoalanicualbu/website/blob/main/prezentare/intrare.png?raw=true">
+
+<!-- Iconiță favorită -->
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="favicon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="favicon-192x192.png">
+        <link rel="icon" type="image/png" sizes="512x512" href="favicon-512x512.png">
+        <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+<!-- Structurare -->
+<!--        <link rel="stylesheet" href="style.css">-->
+
+        <style>
+
+            :root {
+                --sz1: 1.5rem;
+                --pd1: 0.25rem;
+                --mgu: 0;
+                --mgd: 0;
+                --mgl: 0.1rem;
+                --mgr: 0.05rem;
+                --sz2: 1.25rem;
+                --pd2: 0.45rem;
+                --sz3: 1rem;
+                --pd3: 0.625rem;
+                --szp: 0.8rem;
+                --asz: 16rem;
+                --asu: 15rem;
+                --gap: 2rem;
+                --ga1: 2rem;
+                --ga2: 16rem;
+            }  
+
+          * {
+                box-sizing: border-box;
+            }
+
+            body {
+border: 0px solid #404040;
+                margin-top: 0;
+                margin-bottom: 0;
+                margin-left: 0;
+                margin-right: 0;
+                padding-top: 0;
+                padding-bottom: 0;
+                padding-left: 0;
+                padding-right: 0;
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+                line-height: 1.5;
+                font-family: Arial, sans-serif;
+                font-size: var(--sz3);
+                background-color: #FFFFFF;
+            }
+
+                h1 {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    margin-left: 0;
+                    margin-right: 0;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    padding-left: 0;
+                    padding-right: 0;
+                    font-size: var(--sz1);
+                }
+
+                h2 {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    margin-left: 0;
+                    margin-right: 0;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    padding-left: 0;
+                    padding-right: 0;
+                    font-size: var(--sz2);
+                }
+
+                h3 {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    margin-left: 0;
+                    margin-right: 0;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    padding-left: 0;
+                    padding-right: 0;
+                    font-size: var(--sz3);
+                }
+
+                p {
+                    margin-top: 0;
+                    margin-bottom: var(--szp);
+                    margin-left: 0;
+                    margin-right: 0;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+
+                .sr-only {
+                    position: absolute;
+                    border: 0;
+                    margin: -1px;
+                    padding: 0;
+                    width: 1px;
+                    height: 1px;
+                    clip: rect(0, 0, 0, 0);
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
+
+/* Sari la Conținut */
+                .skip-link {
+                    position: absolute;
+                    top: -40px;
+                    left: 0;
+                    padding: 8px;
+                    z-index: 100;
+                    text-decoration: none;
+                    color: #FFFFFF;
+                    background-color: #404040;
+                }
+
+                    .skip-link:focus {
+                        top: 0;
+                        outline: 2px dashed yellow; /* vizualizarea focus-ului */
+                    }
+
+                    .skip-link:focus-visible {
+                        top: 0;
+                        outline: 2px dashed yellow; /* vizualizarea focus-ului */
+                    }
+
+/* MENIU */
+                aside {
+border: none;
+border-right: 1px solid #404040;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    margin-left: 0;
+                    margin-right: 0;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    padding-left: 0.5rem;
+                    padding-right: 0.5rem;
+                    width: 100%;
+                    max-width: var(--asz);
+                    height: 100%;
+                    overflow-x: hidden;
+                    scrollbar-width: none;
+                    position: fixed;
+                    display: none;
+                    flex-direction: column;
+                    align-items: center;
+                    background-color: #F8F8F8;
+                }
+
+                    aside.show {
+                        display: flex;
+                        opacity: 1;
+                        transform: translateX(0);
+                        pointer-events: auto;
+                    }
+
+                    #menu-toggle {
+                        position: fixed;
+                        top: 10px;
+                        left: 10px;
+                        z-index: 9999;
+                        padding-bottom: 0.8rem;
+                        width: 2.8rem;
+                        height: 2.8rem;
+                        display: none;
+                        border: none;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 2rem;
+                        cursor: pointer;
+                        background: transparent;
+                    }
+
+                    aside.show + #menu-toggle {
+                        display: none;
+                    }
+
+/* Siglă */
+                    .side-logo {
+    border: 0px solid #404040;
+    border-radius: 4px;
+                        margin-top: 0.5rem;
+                        margin-bottom: 0;
+                        margin-left: auto;
+                        margin-right: auto;
+                        padding-top: 0;
+                        padding-bottom: 0;
+                        max-width: var(--asu);
+                        height: auto;
+                        display: block;
+                    }
+
+                        .side-logo img {
+border: 1px solid #404040;
+border-radius: 50%;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            margin-left: auto;
+                            margin-right: auto;
+                            width: 8.25rem;
+                            height: 8.25rem;
+                            display: block;
+                            background-color: #FFFFFF;
+                        }
+
+/* Denumire */
+                    .side-name {
+border: 0px solid #404040;
+border-radius: 4px;
+                        margin-top: 0;
+                        margin-bottom: 1.2rem;
+                        margin-left: 0;
+                        margin-right: 0;
+                        padding-top: var(--pd3);
+                        padding-bottom: var(--pd3);
+                        padding-left: 0;
+                        padding-right: 0;
+                        width: var(--asu);
+                        display: block;
+                        text-align: center;
+                        text-decoration: none;
+                        font-size: var(--sz3);
+                        font-weight: bold;
+                        line-height: 1.5;
+                        color: #202020;
+                    }
+
+/* Meniu site */
+                    .side-menu ul {
+border: 0px solid #404040;
+border-radius: 4px;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        margin-left: 0;
+                        margin-right: 0;
+                        padding-top: 0;
+                        padding-bottom: 0;
+                        padding-left: 0;
+                        padding-right: 0;
+                        width: var(--asu);
+                        list-style: none;
+                        text-align: center;
+                    }
+
+                            .side-menu a {
+border:0px solid #404040;
+border-radius: 4px;
+                                margin-top: 0;
+                                margin-bottom: 0;
+                                margin-left: 0;
+                                margin-right: 0;
+                                padding-top: var(--pd3);
+                                padding-bottom: var(--pd3);
+                                padding-left: 0.4rem;
+                                padding-right: 0.4rem;
+                                display: block;
+                                text-align: center;
+                                text-decoration: none;
+                                font-size: var(--sz3);
+                                color: #202020;
+                            }
+
+                                .side-menu a:hover {
+                                    font-weight: bold;
+                                }
+
+                                .side-menu a.active {
+                                    margin-top: 0;
+                                    margin-bottom: 0;
+                                    margin-left: 0;
+                                    margin-right: 0;
+                                    padding-top: var(--pd1);
+                                    padding-bottom: var(--pd1);
+                                    padding-left: 0.4rem;
+                                    padding-right: 0.4rem;
+                                    font-size: var(--sz1);
+                                    font-weight: bold;
+                                    pointer-events: none;
+                                }
+
+                                .side-menu a.inactive {
+                                    margin-top: 0;
+                                    margin-bottom: 0;
+                                    margin-left: 0;
+                                    margin-right: 0;
+                                    padding-top: var(--pd1);
+                                    padding-bottom: var(--pd1);
+                                    padding-left: 0.4rem;
+                                    padding-right: 0.4rem;
+                                    font-size: var(--sz1);
+                                }
+
+                                    .side-menu a.inactive:hover {
+                                        margin-top: var(--mgu);
+                                        margin-bottom: var(--mgd);
+                                        margin-left: var(--mgl);
+                                        margin-right: var(--mgr);
+                                        padding-top: var(--pd1);
+                                        padding-bottom: var(--pd1);
+                                        transform: scale(1.01);
+                                    }
+
+/* CONȚINUT */
+
+/* Banner */
+                .banner {
+border: 0px solid #404040;
+border-radius: 4px;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    margin-left: 0;
+                    margin-right: 0;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    padding-left: 0;
+                    padding-right: 1rem;
+                }
+
+                    .banner img {
+border: 1px solid #404040;
+border-radius: 4px;
+                        margin-top: 0.5rem;
+                        margin-bottom: 0.5rem;
+                        margin-left: 0.5rem;
+                        margin-right: 0.5rem;
+                        padding-top: 0;
+                        padding-bottom: 0;
+                        padding-left: 0;
+                        padding-right: 0;
+                        width: 100%;
+                        max-width: 100%;
+                        height: 14.2rem;
+                        object-fit: cover;
+                        display: block;
+                    }
+
+                .content {
+border: 0px solid #404040;
+border-radius: 4px;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    margin-left: 0;
+                    margin-right: 0;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    padding-left: 0;
+                    padding-right: 0;
+                    display: flex;
+                    flex-direction: column;
+                    flex-grow: 1;
+                    background-color: #FFFFFF;
+                }
+
+
+/* Meniu pagină */
+                    .page-menu {
+border: 0px solid #404040;
+border-radius: 4px;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        margin-left: 0;
+                        margin-right: 0;
+                        padding-top: 0.5rem;
+                        padding-bottom: 1.5rem;
+                        padding-left: 0.5rem;
+                        padding-right: 0.5rem;
+                    }
+
+                        .page-menu ul {
+border: 0px solid #404040;
+border-radius: 4px;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            display: grid;
+                            gap: var(--gap);
+                            align-items: center;
+                            list-style: none;
+                        }
+
+                            .page-menu .trei {
+                                grid-template-columns: repeat(3, 1fr);
+                            }
+
+                            .page-menu .patru {
+                                grid-template-columns: repeat(4, 1fr);
+                            }
+
+                            .page-menu .sase {
+                                grid-template-columns: repeat(6, 1fr);
+                            }
+
+                            .page-menu li {
+border: 1px solid #404040;
+border-radius: 4px;
+                                margin-top: 0;
+                                margin-bottom: 0;
+                                margin-left: 0;
+                                margin-right: 0;
+                                padding-top: 0;
+                                padding-bottom: 0;
+                                padding-left: 0;
+                                padding-right: 0;
+                                display: flex;
+                                align-items: center;
+                                flex-grow: 1;
+                            }
+
+                                .page-menu li:hover {
+border: 1px solid #000000;
+border-radius: 4px;
+                                    background-color: #F8F8F8;
+                                }
+
+                                .page-menu a {
+border: 0px solid #404040;
+border-radius: 4px;
+                                    margin-top: 0;
+                                    margin-bottom: 0;
+                                    margin-left: 0;
+                                    margin-right: 0;
+                                    padding-top: var(--pd3);
+                                    padding-bottom: var(--pd3);
+                                    padding-left: 0.5rem;
+                                    padding-right: 0.5rem;
+                                    width: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    text-decoration: none;
+                                    font-size: var(--sz3);
+                                    color: #404040;
+                                }
+
+                                    .page-menu a:hover {
+                                        text-shadow: 0.4px 0 currentcolor, -0.4px 0 currentcolor;
+                                    }
+
+                                    .page-menu a.active {
+border: 0px solid #000000;
+border-radius: 4px;
+                                        margin-top: 0;
+                                        margin-bottom: 0;
+                                        margin-left: 0;
+                                        margin-right: 0;
+                                        padding-top: var(--pd2);
+                                        padding-bottom: var(--pd2);
+                                        padding-left: 0.5rem;
+                                        padding-right: 0.5rem;
+                                        pointer-events: none;
+                                        font-size: var(--sz2);
+                                        font-weight: bold;
+                                        background-color: #DCDCDC;
+                                    }
+
+                                        .page-menu a.active:hover {
+                                            text-shadow: none;
+                                        }
+
+/* Conținut pagină */
+                    .page-content {
+border: 0px solid #404040;
+border-radius: 4px;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        margin-left: 0;
+                        margin-right: 0;
+                        padding-top: 0;
+                        padding-bottom: 0;
+                        padding-left: 0;
+                        padding-right: 0;
+                        display: flex;
+                        flex-direction: column;
+                        flex-grow: 1;
+                        background-color: #FFFFFF;
+                        }
+
+/* Secțiuni de conținut */
+
+/* Secțiune Text */
+                    .sectiune-text {
+border: 0px solid #404040;
+border-radius: 4px;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        margin-left: 0;
+                        margin-right: 0;
+                        padding-top: 1.5rem;
+                        padding-bottom: 0;
+                        padding-left: 0.5rem;
+                        padding-right: 0.5rem;
+                        width: 100%;
+                        text-align: left;
+                    }
+
+                        .citat-1 {
+border: 0px solid #404040;
+border-radius: 4px;
+                            margin-top: 0;
+                            margin-bottom: 0.5rem;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            text-align: left;
+                        }
+
+                        .citat-2 {
+border: 0px solid #404040;
+border-radius: 4px;
+                            margin-top: 0;
+                            margin-bottom: 1rem;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            text-align: left;
+                            font-weight: bold;
+                        }
+
+                        .citat-3 {
+border: 0px solid #404040;
+border-radius: 4px;
+                            margin-top: 0.5rem;
+                            margin-bottom: 1rem;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                        }
+
+                    .coloane {
+border: 0px solid #404040;
+border-radius: 4px;
+                        margin-top: 0;
+                        margin-bottom: 0.5rem;
+                        margin-left: 0;
+                        margin-right: 0;
+                        padding-top: 0;
+                        padding-bottom: 0;
+                        padding-left: 0;
+                        padding-right: 0;
+                        column-width: 40rem;
+                        column-gap: var(--gap);
+                        text-align: left;
+                    }
+
+/* Secțiune Informații */
+                    .sectiune-informatii {
+border: 0px solid #404040;
+border-radius: 4px;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        margin-left: 0;
+                        margin-right: 0;
+                        padding-top: 1.5rem;
+                        padding-bottom: 1.5rem;
+                        padding-left: 0.5rem;
+                        padding-right: 0.5rem;
+                    }
+
+                        .sectiune-informatii ul {
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            list-style: none;
+                        }
+
+                            .sectiune-informatii li {
+                                margin-top: 0;
+                                margin-bottom: 0;
+                                margin-left: 0;
+                                margin-right: 0;
+                                padding-top: 0;
+                                padding-bottom: 0;
+                                padding-left: 0;
+                                padding-right: 0;
+                                list-style: none;
+                            }
+
+                                .sectiune-informatii a {
+border: 0px solid #404040;
+border-radius: 4px;
+                                    margin-top: 0;
+                                    margin-bottom: 0;
+                                    margin-left: -0.5rem;
+                                    margin-right: 0;
+                                    padding-top: var(--pd3);
+                                    padding-bottom: var(--pd3);
+                                    padding-left: 0.5rem;
+                                    padding-right: 0.5rem;
+                                    display: inline-block;
+                                    text-decoration: none;
+                                    font-size: var(--sz3);
+                                    color: #404040;
+                                }
+
+                                .sectiune-informatii a:hover {
+                                    text-shadow: 0.4px 0 currentcolor, -0.4px 0 currentcolor;
+                                    color: #404040;
+                                }
+
+/* Secțiune Legături */
+                    .sectiune-legaturi {
+border: 0px solid #404040;
+border-radius: 4px;
+                        margin-top: auto;
+                        margin-bottom: 1.5rem;
+                        margin-left: 0;
+                        margin-right: 0;
+                        padding-top: 0;
+                        padding-bottom: 0;
+                        padding-left: 0;
+                        padding-right: 0;
+                    }
+
+                        .sectiune-legaturi ul {
+border: 0px solid #404040;
+border-radius: 4px;
+                            margin-top: 0.5rem;
+                            margin-bottom: 0.5rem;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0.5rem;
+                            padding-right: 0.5rem;
+                            grid-template-columns: repeat(4, 1fr);
+                            display:grid;
+                            gap: var(--gap);
+                            align-items: center;
+                            list-style: none;
+                        }
+
+                            .sectiune-legaturi li {
+border: 1px solid #404040;
+border-radius: 4px;
+                                margin-top: 0;
+                                margin-bottom: 0;
+                                margin-left: 0;
+                                margin-right: 0;
+                                padding-top: 0;
+                                padding-bottom: 0;
+                                padding-left: 0;
+                                padding-right: 0;
+                                display: flex;
+                                align-items: center;
+                                flex-grow: 1;
+                            }
+
+                                .sectiune-legaturi li:hover {
+border: 1px solid #000000;
+border-radius: 4px;
+                                    text-shadow: 0.4px 0 currentcolor, -0.4px 0 currentcolor;
+                                    background-color: #F8F8F8;
+                                }
+
+                                .sectiune-legaturi img {
+border: 1px solid #404040;
+border-radius: 4px;
+                                    margin-top: 0.2rem;
+                                    margin-bottom: 0.2rem;
+                                    margin-left: 0.2rem;
+                                    margin-right: 0.5rem;
+                                    padding-top: 0;
+                                    padding-bottom: 0;
+                                    padding-left: 0;
+                                    padding-right: 0;
+                                    width: 5rem;
+                                    height: 5rem;
+                                    background-color: #FFFFFF;
+                                }
+
+                                .sectiune-legaturi a {
+border: 0px solid #404040;
+border-radius: 4px;
+                                    margin-top: 0;
+                                    margin-bottom: 0;
+                                    margin-left: 0;
+                                    margin-right: 0;
+                                    padding-top: 0;
+                                    padding-bottom: 0;
+                                    padding-left: 0;
+                                    padding-right: 0.5rem;
+                                    width: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: flex-start;
+                                    text-decoration: none;
+                                    font-size: var(--sz3);
+                                    color: #404040;
+                                }
+
+                                    .text {
+border: 0px solid #404040;
+border-radius: 4px;
+                                        margin-top: 0;
+                                        margin-bottom: 0;
+                                        margin-left: 0;
+                                        margin-right: 0;
+                                        padding-top: 0;
+                                        padding-bottom: 0;
+                                        padding-left: 0;
+                                        padding-right: 0;
+                                        width: 100%;
+                                        height: 5.5rem;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: center;
+                                    }
+
+                                        .line {
+                                            margin-top: 0;
+                                            white-space: nowrap;
+                                        }
+
+/* Secțiune Continut */
+                    .sectiune-continut {
+border: 0px solid #404040;
+border-radius: 4px;
+                        margin-top: 0;
+                        margin-bottom: 1.5rem;
+                        margin-left: 0;
+                        margin-right: 0;
+                        padding-top: 1rem;
+                        padding-bottom: 0.5rem;
+                        padding-left: 0.5rem;
+                        padding-right: 0.5rem;
+                        display: grid;
+                        grid-template-columns: repeat(12, 1fr);
+                        gap: var(--gap);
+                    }
+
+                        .wrap-1 {
+border: 1px solid #404040;
+border-radius: 4px;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            grid-column: span 1;
+                            height: auto;
+                            display: flex;
+                            flex-direction: column;
+                            flex: 1;
+                            align-items: center;
+                            text-align: center;
+                        }
+
+                        .wrap-2 {
+border: 1px solid #404040;
+border-radius: 4px;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            grid-column: span 2;
+                            height: auto;
+                            display: flex;
+                            flex-direction: column;
+                            flex: 1;
+                            align-items: center;
+                            text-align: center;
+                        }
+
+                        .wrap-3 {
+border: 1px solid #404040;
+border-radius: 4px;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            grid-column: span 3;
+                            height: auto;
+                            display: flex;
+                            flex-direction: column;
+                            flex: 1;
+                            align-items: center;
+                            text-align: center;
+                        }
+
+                        .wrap-4 {
+border: 0px solid #404040;
+border-radius: 4px;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            grid-column: span 4;
+                            height: auto;
+                            display: flex;
+                            flex-direction: column;
+                            flex: 1;
+                            align-items: center;
+                            text-align: center;
+                        }
+
+                        .wrap-5 {
+border: 1px solid #404040;
+border-radius: 4px;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            grid-column: span 5;
+                            height: auto;
+                            display: flex;
+                            flex-direction: column;
+                            flex: 1;
+                            align-items: center;
+                            text-align: center;
+                        }
+
+                        .wrap-6 {
+border: 1px solid #404040;
+border-radius: 4px;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            grid-column: span 6;
+                            height: auto;
+                            display: flex;
+                            flex-direction: column;
+                            flex: 1;
+                            align-items: center;
+                            text-align: center;
+                        }
+
+                        .wrap-7 {
+border: 1px solid #404040;
+border-radius: 4px;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            grid-column: span 7;
+                            height: auto;
+                            display: flex;
+                            flex-direction: column;
+                            flex: 1;
+                            align-items: center;
+                            text-align: center;
+                        }
+
+                        .wrap-8 {
+border: 1px solid #404040;
+border-radius: 4px;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            grid-column: span 8;
+                            height: auto;
+                            display: flex;
+                            flex-direction: column;
+                            flex: 1;
+                            align-items: center;
+                            text-align: center;
+                        }
+
+                        .wrap-9 {
+border: 1px solid #404040;
+border-radius: 4px;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            grid-column: span 9;
+                            height: auto;
+                            display: flex;
+                            flex-direction: column;
+                            flex: 1;
+                            align-items: center;
+                            text-align: center;
+                        }
+
+                        .wrap-10 {
+border: 1px solid #404040;
+border-radius: 4px;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            grid-column: span 10;
+                            height: auto;
+                            display: grid;
+                            grid-template-columns: repeat(10, 1fr);
+                        }
+
+                        .wrap-11 {
+border: 1px solid #404040;
+border-radius: 4px;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            grid-column: span 11;
+                            height: auto;
+                            display: flex;
+                            flex-direction: column;
+                            flex: 1;
+                            align-items: center;
+                            text-align: center;
+                        }
+
+                        .wrap-12 {
+border: 0px solid #404040;
+border-radius: 4px;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            grid-column: span 12;
+                            height: auto;
+                            display: flex;
+                            flex-direction: column;
+                            flex: 1;
+                            align-items: center;
+                            text-align: center;
+                        }
+
+                        .wrap-down {
+                            justify-content: flex-end;
+                        }
+
+                        .wrap-size {
+                            height: 0;
+                        }
+
+                        .wrap-show {
+                        }
+
+                        .content-imagine {
+border: 0px solid #404040;
+border-radius: 4px;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            width: 100%;
+                            height: auto;
+                            display: block;
+                        }
+
+                            .content-imagine img {
+border: 1px solid #404040;
+border-radius: 4px;
+                                margin-top: 0;
+                                margin-bottom: 0;
+                                margin-left: 0;
+                                margin-right: 0;
+                                padding-top: 0;
+                                padding-bottom: 0;
+                                padding-left: 0;
+                                padding-right: 0;
+                                width: 100%;
+                                height: auto;
+                                display: block;
+                                object-fit: cover;
+                            }
+
+                        .zoom {
+border: 1px solid #404040;
+border-radius: 4px;
+                            position: relative;
+                            overflow: hidden;
+                        }
+
+                            .zoom img {
+border: 0px solid #404040;
+border-radius: 4px;
+                                display: block;
+                                transform-origin: top left;
+                                transition: transform 0.1s ease;
+                                cursor: grab;
+                            }
+
+                                .zoom img:hover {
+                                    cursor: grab;
+                                }
+
+                            .zoom.dragging img {
+                                cursor: grabbing;
+                            }
+
+                            .zoom::scroll-button(up) img {
+                                cursor: zoom-in;
+                            }
+
+                            .zoom.zoom-out img {	
+                                cursor: zoom-out;
+                            }
+
+                        .content-tabel {
+border: 1px solid #404040;
+border-radius: 4px;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            width: 100%;
+                        }
+
+                            .content-tabel table {
+border: none;
+border-collapse: collapse;
+                                margin-top: 0;
+                                margin-bottom: 0;
+                                margin-left: 0;
+                                margin-right: 0;
+                                padding-top: 0.5rem;
+                                padding-bottom: 0.5rem;
+                                padding-left: 0.5rem;
+                                padding-right: 0.5rem;
+                                width: 100%;
+                                max-width: 100%;
+                            }
+
+                                table caption {
+                                    padding-top: 0.5rem;
+                                }
+
+                                table caption.sr-only {
+                                    display: none;
+                                }
+
+                                table tr:first-child th {
+                                    border-top: 0;
+                                }
+
+                                table tr:last-child td {
+                                    border-bottom: 0;
+                                }
+
+                                table tr td:first-child,
+                                table tr th:first-child {
+                                    border-left: 0;
+                                }
+
+                                table tr td:last-child,
+                                table tr th:last-child {
+                                    border-right: 0;
+                                }
+
+                                table th {
+border: 1px solid #404040;
+border-radius: 4px;
+                                    margin-top: 0;
+                                    margin-bottom: 0;
+                                    margin-left: 0;
+                                    margin-right: 0;
+                                    padding-top: 0.5rem;
+                                    padding-bottom: 0.5rem;
+                                    padding-left: 0.5rem;
+                                    padding-right: 0.5rem;
+                                    background-color: #F8F8F8;
+                                }
+
+                                    table th[scope="row"] {
+                                        font-weight: normal;
+                                        background-color: #FFFFFF;
+                                    }
+
+                                    table tbody tr:last-child th {
+                                        border: none;
+                                    }
+
+                                table td {
+border: 1px solid #404040;
+                                    margin-top: 0;
+                                    margin-bottom: 0;
+                                    margin-left: 0;
+                                    margin-right: 0;
+                                    padding-top: 0.5rem;
+                                    padding-bottom: 0.5rem;
+                                    padding-left: 0.5rem;
+                                    padding-right: 0.5rem;
+                                }
+
+                                table tfoot.sr-only {
+                                    display: none;
+                                }
+
+                        .notă {
+border: 0px solid #404040;
+border-radius: 4px;
+                            margin-top: 0.5rem;
+                            margin-bottom: 1rem;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            text-align: left;
+                        }
+
+/* SUBSOL */
+                .footer {
+border: 0px solid #404040;
+border-radius: 4px;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    margin-left: 0;
+                    margin-right: 0;
+                    padding-top: 0.5rem;
+                    padding-bottom: 0.5rem;
+                    padding-left: 0.5rem;
+                    padding-right: 0.5rem;
+                    background-color: #FFFFFF;
+                }
+
+                    .footer-informatii {
+border: 0px solid #404040;
+border-radius: 4px;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        margin-left: 0;
+                        margin-right: 0;
+                        padding-top: var(--pd3);
+                        padding-bottom: var(--pd3);
+                        padding-left: 0.5rem;
+                        padding-right: 0.5rem;
+                        text-align: center;
+                        font-size: var(--sz3);
+                        background-color: #FFFFFF;
+                    }
+
+/* Scalare pagină */
+                @media (min-width: 1367px) {
+                    aside {
+                        min-height: 100vh;
+                    }
+                    .banner {
+                        margin-left: var(--asz);
+                    }
+                    .content {
+                        margin-left: var(--asz);
+                    }
+                    .footer {
+                        margin-left: var(--asz);
+                    }
+                }
+
+/* aside */
+                @media (min-width: 1153px) and (max-width: 1366px) {
+                    aside {
+                        border-radius: 4px;
+                    }
+                }
+
+/* legaturi 2, wrap-show */
+                @media (min-width: 801px) and (max-width: 1152px) { 
+                    aside {
+                        border-radius: 4px;
+                    }
+                    #program-continut .wrap-4 {
+                        grid-column: span 6;
+                    }
+                    #program-continut .wrap-show {
+                        display: none;
+                    }
+                    .sectiune-legaturi ul {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                }
+
+/* page-menu 2 */
+                @media (min-width: 721px) and (max-width: 800px) {
+                    aside {
+                        border-radius: 4px;
+                    }
+                    .page-menu .patru {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                    #program-continut .wrap-4 {
+                        grid-column: span 6;
+                    }
+                    #program-continut .wrap-show {
+                        display: none;
+                    }
+                    .sectiune-legaturi ul {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                }
+
+/* wrap-4 */
+                @media (min-width: 601px) and (max-width: 720px) { 
+                    aside {
+                        border-radius: 4px;
+                    }
+                    .page-menu .patru {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                    #program-continut .wrap-4 {
+                        grid-column: span 12;
+                    }
+                    #program-continut .wrap-show {
+                        display: none;
+                    }
+                    .sectiune-legaturi ul {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                }
+
+
+/* legaturi 1 */
+                @media (min-width: 427px) and (max-width: 600px) { 
+                    aside {
+                        border-radius: 4px;
+                    }
+                    .page-menu .patru {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                    #program-continut .wrap-4 {
+                        grid-column: span 12;
+                    }
+                    #program-continut .wrap-show {
+                        display: none;
+                    }
+                    .sectiune-legaturi ul {
+                        display: grid;
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                }
+
+/* page-menu 1 */
+                @media (max-width: 426px) {
+                    aside {
+                        border-radius: 4px;
+                    }
+                    .page-menu .patru {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                    #program-continut .wrap-4 {
+                        grid-column: span 12;
+                    }
+                    #program-continut .wrap-show {
+                        display: none;
+                    }
+                    .sectiune-legaturi ul {
+                        display: grid;
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                }
+
+        </style>
+
+    </head>
+
+    <body>
+
+<!-- Link "Sari la conținut" -->
+        <header role="presentation">
+
+            <a href="#main-content" id="skipToContinut" target="_self" class="skip-link" arialabelledby="link-sari-la-continut">
+                <span id="link-sari-la-continut">Mergi la conținutul paginii</span>
+                <span class="sr-only"> (se deschide în aceeași fereastră)</span>
+            </a>
+
+        </header>
+
+<!-- MENIU -->
+        <aside id="main-menu" aria-label="Meniu">
+
+            <header role="presentation">
+
+<!-- Siglă -->
+                <section id="sigla" aria-label="Siglă">
+                    <div class="side-name sr-only">Sigla școlii</div>
+                        <div class="side-logo" role="region">
+                            <img src="https://github.com/scoalanicualbu/website/blob/main/sigla.png?raw=true" alt="Sigla Școlii Gimnaziale „Nicu Albu” Piatra Neamț">
+                        </div>
+                </section>
+
+<!-- Denumire -->
+                <section id="denumire" aria-label="Denumire">
+                    <p class="side-name sr-only">Denumirea școlii</p>
+                    <p class="side-name">Școala Gimnazială<br>„Nicu Albu”<br>Piatra Neamț</p>
+                </section>
+
+            </header>
+
+<!-- Meniu site -->
+            <nav id="meniu-site" class="side-menu" aria-label="Meniu site">
+                <ul>
+                    <li>
+                        <a href="prezentare.html" target="_self" arialabelledby="link-pagina-prezentare">
+                            <span id="link-pagina-prezentare">Prezentare</span>
+                            <span class="sr-only"> (se deschide în aceeași fereastră)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="oferta.html" target="_self" arialabelledby="link-pagina-oferta-educationala">
+                            <span id="link-pagina-oferta-educationala">Oferta educațională</span>
+                            <span class="sr-only"> (se deschide în aceeași fereastră)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="gradinita.html" target="_self" arialabelledby="link-pagina-gradinita">
+                            <span id="link-pagina-gradinita">Grădiniță</span>
+                            <span class="sr-only"> (se deschide în aceeași fereastră)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pregatitoare.html" target="_self" arialabelledby="link-pagina-clasa-pregatitoare">
+                            <span id="link-pagina-clasa-pregatitoare">Clasa pregătitoare</span>
+                            <span class="sr-only"> (se deschide în aceeași fereastră)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="evaluare.html" target="_self" arialabelledby="link-pagina-evaluare-nationala">
+                            <span id="link-pagina-evaluare-nationala">Evaluare națională</span>
+                            <span class="sr-only"> (se deschide în aceeași fereastră)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="admitere.html" target="_self" arialabelledby="link-pagina-admitere">
+                            <span id="link-pagina-admitere">Admitere</span>
+                            <span class="sr-only"> (se deschide în aceeași fereastră)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="altfel.html" target="_self" arialabelledby="link-pagina-scoala-altfel">
+                            <span id="link-pagina-scoala-altfel">Școala Altfel</span>
+                            <span class="sr-only"> (se deschide în aceeași fereastră)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="verde.html" target="_self" arialabelledby="link-pagina-saptamana-verde">
+                            <span id="link-pagina-saptamana-verde">Săptămâna verde</span>
+                            <span class="sr-only"> (se deschide în aceeași fereastră)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="proiecte.html" target="_self" arialabelledby="link-pagina-proiecte">
+                            <span id="link-pagina-proiecte">Proiecte</span>
+                            <span class="sr-only"> (se deschide în aceeași fereastră)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="strategie.html" target="_self" arialabelledby="link-pagina-strategie">
+                        <span id="link-pagina-strategie">Strategie</span>
+                            <span class="sr-only"> (se deschide în aceeași fereastră)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="regulamente.html" target="_self" arialabelledby="link-pagina-regulamente">
+                            <span id="link-pagina-regulamente">Regulamente</span>
+                            <span class="sr-only"> (se deschide în aceeași fereastră)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="personal.html" target="_self" arialabelledby="link-pagina-personal">
+                            <span id="link-pagina-personal">Personal</span>
+                            <span class="sr-only"> (se deschide în aceeași fereastră)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="organigrama.html" target="_self" arialabelledby="link-pagina-organigrama">
+                            <span id="link-pagina-organigrama">Organigrama</span>
+                            <span class="sr-only"> (se deschide în aceeași fereastră)</span>
+                        </a>
+                    </li>
+                    <li aria-current="page">
+                        <a href="contact.html" target="_self" class="active" arialabelledby="link-pagina-contact">
+                            <span id="link-pagina-contact">Contact</span>
+                            <span class="sr-only"> (se deschide în aceeași fereastră)</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+        </aside>
+
+<!-- Buton Meniu -->
+        <button id="menu-toggle" aria-label="Buton Meniu site" aria-expanded="false" tabindex="0">&#9776;</button>
+
+<!-- CONȚINUT -->
+
+
+<!-- Banner -->
+                <header id="banner" class="banner" role="banner" aria-label="Banner">
+
+                    <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/intrare.png?raw=true" alt="Intrarea în Școala Gimnazială „Nicu Albu” Piatra Neamț">
+                    <div class="sr-only">
+                        <h1>Școala Gimnazială „Nicu Albu” Piatra Neamț</h1>
+                    </div>
+
+                </header>
+
+        <main id="contact" class="content" aria-label="Conținut">
+
+            <header role="presentation">
+
+<!-- Meniu pagină -->
+                <nav id="meniu-pagina" class="page-menu" aria-label="Meniu pagină">
+                    <ul class="patru">
+                        <li>
+                            <a href="prezentare/istoric.html" target="_self" arialabelledby="link-pagina-scurt-istoric">
+                                <span id="link-pagina-scurt-istoric">Scurt istoric</span>
+                                <span class="sr-only"> (se deschide în aceeași fereastră)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="prezentare/circumscriptie.html" target="_self" arialabelledby="link-pagina-circumscriptie">
+                                <span id="link-pagina-circumscriptie">Circumscripție</span>
+                                <span class="sr-only"> (se deschide în aceeași fereastră)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="prezentare/program.html" target="_self" arialabelledby="link-pagina-program-de-lucru">
+                                <span id="link-pagina-program-de-lucru">Program de lucru</span>
+                                <span class="sr-only"> (se deschide în aceeași fereastră)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="prezentare/comunicari.html" target="_self" arialabelledby="link-pagina-comunicari">
+                                <span id="link-pagina-comunicari">Comunicări</span>
+                                <span class="sr-only"> (se deschide în aceeași fereastră)</span>
+                            </a>
+                        </li>
+                    </ul>    
+                </nav>
+
+            </header>
+
+<!-- Secțiuni de conținut -->
+            <div id="main-content" class="page-content" role="region" aria-label="Conținut pagină">
+
+<!-- Secțiune Conținut -->
+                <section id="contact-continut" class="sectiune-continut" aria-label="Secțiune Conținut">
+
+                    <div id="contact-imagine" class="wrap-4 wrap-show" role="region" aria-label="Imagine Contact">
+                        <div id="imagine-contact" class="content-imagine wrap-size">
+                           <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/intrare.png?raw=true" alt="">
+                        </div>
+                    </div>
+
+                    <article id="contact-date" class="wrap-8 wrap-down" role="region" aria-labelledby="contact-label">
+
+                        <header class="sr-only" role="presentation">
+                            <h2 id="contact-label">Contact</h2>
+                        </header>
+	
+                        <h2 class="citat-3">ȘCOALA GIMNAZIALĂ „NICU ALBU” PIATRA NEAMȚ</h2>
+                        <p><b>Adresă</b>: Strada Ecoului, Numărul 5, Municipiul Piatra-Neamț, Județul Neamț</p>
+                        <p><b>Cod poștal</b>: 610 076</p>
+                        <p><b>Telefon</b>: 0233 218 177</p>
+                        <p><b>Fax</b>: 0233 210 651</p>
+                        <p><b>e-Mail</b>: scoalazece@yahoo.com</p>
+
+                    </article>
+
+                    <div id="contact-localizare" class="wrap-12" role="region" aria-label="Localizare Contact">
+                        <div id="localizare-contact" class="content-imagine zoom">
+                           <img src="https://github.com/scoalanicualbu/website/blob/main/contact/localizare.png?raw=true" alt="Localizarea pe harta Municipiului Piatra-Neamț a Școlii Gimnaziale „Nicu Albu” Piatra Neamț">
+                        </div>
+                    </div>
+
+                </section>
+
+<!-- Secțiune Legături -->
+                <section id="prezentare-legaturi" class="sectiune-legaturi" aria-label="Secțiune Legături">
+
+                    <header role="presentation">
+                        <div class="sr-only">
+                            <h2>Legături:</h2>
+                        </div>
+                    </header>
+
+                    <ul>                    
+                        <li>
+                            <a href="https://www.edu.ro" target="_new" rel="noopener noreferrer" aria-labelledby="mec">
+                                <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/mec.png?raw=true" alt="Sigla Ministerului Educației și Cercetării">
+                                <div id="mec" class="text">Ministerul Educației și Cercetării</div>
+                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.isjneamt.ro" target="_new" rel="noopener noreferrer" aria-labelledby="isjneamt">
+                                <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/isjneamt.png?raw=true" alt="Sigla Inspectoratului Școlar Județean Neamț">
+                                <div id="isjneamt" class="text">Inspectoratul Școlar Județean Neamț</div>
+                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.cjrae-neamt.ro" target="_new" rel="noopener noreferrer" aria-labelledby="cjraeneamt">
+                                <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/cjraeneamt.png?raw=true" alt="Sigla Centrului Județean de Resurse și Asistență Educațională Neamț">
+                                <div id="cjraeneamt" class="text">Centrul Județean de Resurse și Asistență Educațională Neamț</div>
+                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.ccdneamt.ro" target="_new" rel="noopener noreferrer" aria-labelledby="ccdneamt">
+                                <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/ccdneamt.png?raw=true" alt="Sigla Casei Corpului Didactic Neamț">
+                                <div id="ccdneamt" class="text">Casa Corpului Didactic Neamț</div>
+                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </section>
+
+            </div>
+
+        </main>
+
+<!-- SUBSOL -->
+        <footer class="footer" role="contentinfo" aria-labelledby="subsol">
+
+            <div  id="subsol" class="footer-informatii">
+                <span>&copy; 1993-<span id="year"></span> Școala Gimnazială „Nicu Albu” Piatra Neamț</span>
+            </div>
+
+        </footer>
+
+<!-- Funcționalitate -->
+<!--        <script src="script.js"></script>-->
+
+        <script>
+
 // Secțiune Meniu
 
 // Actualizare stare Meniu
@@ -29,6 +1685,67 @@
                     toggleBtn.setAttribute('aria-expanded', 'false');
                     }
             }
+
+// Funcții de inițializare
+
+// Inițializare setări la încărcare pagină
+            window.addEventListener('load', () => {
+                updateMeniu();
+                updateGap();
+                updateImagini();
+                initializeParams();
+                potrivesteTexte();
+                limitPosition();
+                updateTransform();
+            });
+
+// Inițializare setări la redimensionare pagină
+            window.addEventListener('resize', () => {
+                updateMeniu();
+                updateGap();
+                updateImagini();
+                potrivesteTexte();
+            });
+
+// Funcții de gestionare evenimente
+
+// Afișare sau ascundere Meniu la click pe buton
+            document.getElementById('menu-toggle').addEventListener('click', () => {
+                const aside = document.querySelector('aside');
+                aside.classList.toggle('show');
+                updateButton();
+            });
+
+// Gestionare apăsare tastă CTRL
+            const width = window.innerWidth;
+            let ctrlToggleDone = false;
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Control') {
+                    if (window.innerWidth < 1367) {
+                        e.preventDefault();
+                        if (!ctrlToggleDone) {
+                            const aside = document.querySelector('aside');
+                            aside.classList.toggle('show');
+                            updateButton();
+                            ctrlToggleDone = true;
+                        }
+                    }
+                }
+            });
+
+// Gestionare eliberare tastă CTRL
+            document.addEventListener('keyup', (e) => {
+                if (e.key === 'Control') {
+                    ctrlToggleDone = false;
+                }
+            });
+
+// Blocare comportament implicit zoom la apăsarea tastei CTRL împreună cu scroll la maus
+            document.addEventListener('wheel', (e) => {
+                if (e.ctrlKey) {
+                    e.preventDefault();
+                }
+            }, { passive: false });
 
 // Secțiune Conținut
 
@@ -259,68 +1976,13 @@
             updateTransform();
             });
 
-// Funcții de inițializare
-
-// Inițializare setări la încărcare pagină
-            window.addEventListener('load', () => {
-                updateMeniu();
-                updateGap();
-                updateImagini();
-                initializeParams();
-                potrivesteTexte();
-                limitPosition();
-                updateTransform();
-            });
-
-// Inițializare setări la redimensionare pagină
-            window.addEventListener('resize', () => {
-                updateMeniu();
-                updateGap();
-                updateImagini();
-                potrivesteTexte();
-            });
-
-// Funcții de gestionare evenimente
-
-// Afișare sau ascundere Meniu la click pe buton
-            document.getElementById('menu-toggle').addEventListener('click', () => {
-                const aside = document.querySelector('aside');
-                aside.classList.toggle('show');
-                updateButton();
-            });
-
-// Gestionare apăsare tastă CTRL
-            const width = window.innerWidth;
-            let ctrlToggleDone = false;
-            document.addEventListener('keydown', (e) => {
-                if (e.key === 'Control') {
-                    if (window.innerWidth < 1367) {
-                        e.preventDefault();
-                        if (!ctrlToggleDone) {
-                            const aside = document.querySelector('aside');
-                            aside.classList.toggle('show');
-                            updateButton();
-                            ctrlToggleDone = true;
-                        }
-                    }
-                }
-            });
-
-// Gestionare eliberare tastă CTRL
-            document.addEventListener('keyup', (e) => {
-                if (e.key === 'Control') {
-                    ctrlToggleDone = false;
-                }
-            });
-
-// Blocare comportament implicit zoom la apăsarea tastei CTRL împreună cu scroll la maus
-            document.addEventListener('wheel', (e) => {
-                if (e.ctrlKey) {
-                    e.preventDefault();
-                }
-            }, { passive: false });
-
 // Subsol pagină
             document.addEventListener('DOMContentLoaded', function() {
                 document.getElementById('year').textContent = new Date().getFullYear();
                 });
+
+        </script>
+
+    </body>
+
+</html>
