@@ -525,6 +525,19 @@ border-radius: 4px;
                             font-weight: bold;
                         }
 
+                        .citat-3 {
+border: 0px solid #404040;
+border-radius: 4px;
+                            margin-top: 0.5rem;
+                            margin-bottom: 1rem;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                        }
+
                     .coloane {
 border: 0px solid #404040;
 border-radius: 4px;
@@ -747,7 +760,9 @@ border-radius: 4px;
                             height: auto;
                             display: flex;
                             flex-direction: column;
-                            flex-grow: 1;
+                            flex: 1;
+                            align-items: center;
+                            text-align: center;
                         }
 
                         .wrap-2 {
@@ -765,7 +780,9 @@ border-radius: 4px;
                             height: auto;
                             display: flex;
                             flex-direction: column;
-                            flex-grow: 1;
+                            flex: 1;
+                            align-items: center;
+                            text-align: center;
                         }
 
                         .wrap-3 {
@@ -783,7 +800,9 @@ border-radius: 4px;
                             height: auto;
                             display: flex;
                             flex-direction: column;
-                            flex-grow: 1;
+                            flex: 1;
+                            align-items: center;
+                            text-align: center;
                         }
 
                         .wrap-4 {
@@ -821,7 +840,9 @@ border-radius: 4px;
                             height: auto;
                             display: flex;
                             flex-direction: column;
-                            flex-grow: 1;
+                            flex: 1;
+                            align-items: center;
+                            text-align: center;
                         }
 
                         .wrap-6 {
@@ -839,7 +860,9 @@ border-radius: 4px;
                             height: auto;
                             display: flex;
                             flex-direction: column;
-                            flex-grow: 1;
+                            flex: 1;
+                            align-items: center;
+                            text-align: center;
                         }
 
                         .wrap-7 {
@@ -857,7 +880,9 @@ border-radius: 4px;
                             height: auto;
                             display: flex;
                             flex-direction: column;
-                            flex-grow: 1;
+                            flex: 1;
+                            align-items: center;
+                            text-align: center;
                         }
 
                         .wrap-8 {
@@ -875,7 +900,9 @@ border-radius: 4px;
                             height: auto;
                             display: flex;
                             flex-direction: column;
-                            flex-grow: 1;
+                            flex: 1;
+                            align-items: center;
+                            text-align: center;
                         }
 
                         .wrap-9 {
@@ -893,7 +920,9 @@ border-radius: 4px;
                             height: auto;
                             display: flex;
                             flex-direction: column;
-                            flex-grow: 1;
+                            flex: 1;
+                            align-items: center;
+                            text-align: center;
                         }
 
                         .wrap-10 {
@@ -928,11 +957,13 @@ border-radius: 4px;
                             height: auto;
                             display: flex;
                             flex-direction: column;
-                            flex-grow: 1;
+                            flex: 1;
+                            align-items: center;
+                            text-align: center;
                         }
 
                         .wrap-12 {
-border: 1px solid #404040;
+border: 0px solid #404040;
 border-radius: 4px;
                             margin-top: 0;
                             margin-bottom: 0;
@@ -946,7 +977,9 @@ border-radius: 4px;
                             height: auto;
                             display: flex;
                             flex-direction: column;
-                            flex-grow: 1;
+                            flex: 1;
+                            align-items: center;
+                            text-align: center;
                         }
 
                         .wrap-down {
@@ -991,6 +1024,38 @@ border-radius: 4px;
                                 height: auto;
                                 display: block;
                                 object-fit: cover;
+                            }
+
+                        .zoom {
+border: 1px solid #404040;
+border-radius: 4px;
+                            position: relative;
+                            overflow: hidden;
+                        }
+
+                            .zoom img {
+border: 0px solid #404040;
+border-radius: 4px;
+                                display: block;
+                                transform-origin: top left;
+                                transition: transform 0.1s ease;
+                                cursor: grab;
+                            }
+
+                                .zoom img:hover {
+                                    cursor: grab;
+                                }
+
+                            .zoom.dragging img {
+                                cursor: grabbing;
+                            }
+
+                            .zoom::scroll-button(up) img {
+                                cursor: zoom-in;
+                            }
+
+                            .zoom.zoom-out img {	
+                                cursor: zoom-out;
                             }
 
                         .content-tabel {
