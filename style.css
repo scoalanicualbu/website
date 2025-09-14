@@ -146,6 +146,7 @@ border-right: 1px solid #404040;
                 }
 
                     aside.show {
+                        z-index: 9999;
                         display: flex;
                         opacity: 1;
                         transform: translateX(0);
