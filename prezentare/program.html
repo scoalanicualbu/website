@@ -5,12 +5,6 @@
 
     <head>
 
-<!-- Titlu -->
-        <title>Program de lucru</title>
-
-<!-- Resurse -->
-        <base href="https://scoalanicualbu.github.io/website/">
-
 <!-- Codificare caractere -->
         <meta charset="UTF-8">
 
@@ -21,6 +15,12 @@
 
 <!-- Vizualizare -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Titlu -->
+        <title>Program de lucru</title>
+
+<!-- Resurse -->
+        <base href="https://scoalanicualbu.github.io/website/">
 
 <!-- Descriere -->
         <meta name="description"
@@ -61,23 +61,19 @@
     <body>
 
 <!-- Link "Sari la conținut" -->
-        <header role="presentation">
-
-            <a href="#main-content" id="skipToContinut" target="_self" class="skip-link" aria-labelledby="link-sari-la-continut">
-                <span id="link-sari-la-continut">Mergi la conținutul paginii</span>
-                <span class="sr-only"> (se deschide în aceeași fereastră)</span>
-            </a>
-
-        </header>
+        <a href="#main-content" id="skipToContinut" target="_self" class="skip-link" aria-labelledby="link-sari-la-continut">
+            <span id="link-sari-la-continut">Mergi la conținutul paginii</span>
+            <span class="sr-only"> (se deschide în aceeași fereastră)</span>
+        </a>
 
 <!-- MENIU -->
         <aside id="main-menu" aria-label="Meniu">
 
-            <header role="presentation">
+            <header>
 
 <!-- Siglă -->
                 <section id="sigla" aria-label="Siglă școală">
-                    <div class="side-name sr-only">Sigla școlii</div>
+                    <h2 class="side-name sr-only">Sigla școlii</h2>
                         <div class="side-logo" role="region" aria-label="Sigla școlii">
                             <img src="https://github.com/scoalanicualbu/website/blob/main/sigla.png?raw=true" alt="Sigla Școlii Gimnaziale „Nicu Albu” Piatra Neamț">
                         </div>
@@ -85,7 +81,7 @@
 
 <!-- Denumire -->
                 <section id="denumire" aria-label="Denumire școală">
-                    <p class="side-name sr-only">Denumirea școlii</p>
+                    <h2 class="side-name sr-only">Denumirea școlii</h2>
                     <p class="side-name">Școala Gimnazială<br>„Nicu Albu”<br>Piatra Neamț</p>
                 </section>
 
@@ -184,20 +180,20 @@
         </aside>
 
 <!-- Buton Meniu -->
-        <button id="menu-toggle" aria-label="Buton Meniu site" aria-expanded="false" tabindex="0">&#9776;</button>
+        <button id="menu-toggle" aria-label="Buton Meniu site" aria-expanded="false" aria-controls="main-menu" aria-haspopup="true" tabindex="0">
+            &#9776;
+        </button>
 
 <!-- CONȚINUT -->
 
 
 <!-- Banner -->
-                <header id="banner" class="banner" role="banner" aria-label="Banner">
+        <header id="banner" class="banner" role="banner" aria-label="Banner">
 
-                    <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/program.png?raw=true" alt="Imagine panoramică a Municipiului Piatra-Neamț, centru și partea vestică, toamna">
-                    <div class="sr-only">
-                        <h1>Școala Gimnazială „Nicu Albu” Piatra Neamț</h1>
-                    </div>
+            <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/intrare.png?raw=true" alt="Intrarea principală în Școala Gimnazială „Nicu Albu” Piatra Neamț">
+            <h1 class="sr-only">Școala Gimnazială „Nicu Albu” Piatra Neamț</h1>
 
-                </header>
+        </header>
 
         <main id="program" class="content" aria-label="Conținut">
 
@@ -218,8 +214,8 @@
                                 <span class="sr-only"> (se deschide în aceeași fereastră)</span>
                             </a>
                         </li>
-                        <li aria-current="page">
-                            <a href="prezentare/program.html" target="_self" class="active" aria-labelledby="link-pagina-program-de-lucru">
+                        <li>
+                            <a href="prezentare/program.html" target="_self" class="active" aria-labelledby="link-pagina-program-de-lucru" aria-current="page">
                                 <span id="link-pagina-program-de-lucru">Program de lucru</span>
                                 <span class="sr-only"> (se deschide în aceeași fereastră)</span>
                             </a>
@@ -241,17 +237,17 @@
 <!-- Secțiune Conținut -->
                 <section id="program-continut" class="sectiune-continut" aria-label="Secțiune Conținut">
 
-                    <header class="sr-only" role="presentation">
-                            <h2>Program de lucru</h2>
+                    <header class="sr-only">
+                        <h2>Program de lucru</h2>
                     </header>
 
-                    <div id="program-imagine" class="wrap-4 wrap-show" role="region" aria-label="Imagine Program de lucru">
+                    <section id="program-imagine" class="wrap-4 wrap-show" aria-label="Imagine Program de lucru">
                         <div id="imagine-lucru" class="content-imagine wrap-size">
                            <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/intrare.png?raw=true" alt="">
                         </div>
-                    </div>
+                    </section>
 
-                    <div id="program-secretariat" class="wrap-4 wrap-down" role="region" aria-labelledby="secretariat-label">
+                    <section id="program-secretariat" class="wrap-4 wrap-down" aria-labelledby="secretariat-label">
 
                         <h2 id="secretariat-label">PROGRAM DE LUCRU CU PUBLICUL</h2>
                         <h3>Compartimentul Secretariat<br>Compartimentul Administrativ-Financiar</h3>
@@ -304,9 +300,9 @@
                                 Notă: Tabelul afișează zilele săptămânii și intervalele orare de lucru cu publicul pentru Compartimentul Secretariat și Compartimentul Administrativ-Financiar.
                             </div>
                         </div>
-                    </div>
+                    </section>
 
-                    <div id="program-director" class="wrap-4 wrap-down" role="region" aria-labelledby="director-label">
+                    <section id="program-director" class="wrap-4 wrap-down" role="region" aria-labelledby="director-label">
 
                         <h2 id="director-label">PROGRAM DE AUDIENȚE LA DIRECTOR</h2>
                         <p>Aprobat în ședința Consiliului de Administrație din data de 10.10.2024</p>
@@ -358,17 +354,15 @@
                                 Notă: Tabelul afișează zilele săptămânii și intervalele orare de audiențe la director.
                             </div>
                         </div>
-                    </div>
+                    </section>
 
                 </section>
 
 <!-- Secțiune Legături -->
                 <section id="program-legaturi" class="sectiune-legaturi" aria-label="Secțiune Legături">
 
-                    <header role="presentation">
-                        <div class="sr-only">
-                            <h2>Legături:</h2>
-                        </div>
+                    <header>
+                        <h2 class="sr-only">Legături:</h2>
                     </header>
 
                     <ul>                    
@@ -409,9 +403,10 @@
         </main>
 
 <!-- SUBSOL -->
-        <footer class="footer" role="contentinfo" aria-labelledby="subsol">
+        <footer class="footer" role="contentinfo" aria-labelledby="subsol-label">
 
-            <div id="subsol" class="footer-informatii">
+            <div id="subsol-label" class="sr-only">Subsol</div>
+            <div id="subsol-continut" class="footer-informatii">
                 <span>&copy; 1993-<span id="year"></span> Școala Gimnazială „Nicu Albu” Piatra Neamț</span>
             </div>
 
