@@ -5,12 +5,6 @@
 
     <head>
 
-<!-- Titlu -->
-        <title>Scurt istoric</title>
-
-<!-- Resurse -->
-        <base href="https://scoalanicualbu.github.io/website/">
-
 <!-- Codificare caractere -->
         <meta charset="UTF-8">
 
@@ -21,6 +15,12 @@
 
 <!-- Vizualizare -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Titlu -->
+        <title>Scurt istoric</title>
+
+<!-- Resurse -->
+        <base href="https://scoalanicualbu.github.io/website/">
 
 <!-- Descriere -->
         <meta name="description"
@@ -69,11 +69,11 @@
 <!-- MENIU -->
         <aside id="main-menu" aria-label="Meniu">
 
-            <header role="presentation">
+            <header>
 
 <!-- Siglă -->
                 <section id="sigla" aria-label="Siglă școală">
-                    <div class="side-name sr-only">Sigla școlii</div>
+                    <h2 class="side-name sr-only">Sigla școlii</h2>
                         <div class="side-logo" role="region" aria-label="Sigla școlii">
                             <img src="https://github.com/scoalanicualbu/website/blob/main/sigla.png?raw=true" alt="Sigla Școlii Gimnaziale „Nicu Albu” Piatra Neamț">
                         </div>
@@ -81,7 +81,7 @@
 
 <!-- Denumire -->
                 <section id="denumire" aria-label="Denumire școală">
-                    <p class="side-name sr-only">Denumirea școlii</p>
+                    <h2 class="side-name sr-only">Denumirea școlii</h2>
                     <p class="side-name">Școala Gimnazială<br>„Nicu Albu”<br>Piatra Neamț</p>
                 </section>
 
@@ -180,28 +180,28 @@
         </aside>
 
 <!-- Buton Meniu -->
-        <button id="menu-toggle" aria-label="Buton Meniu site" aria-expanded="false" tabindex="0">&#9776;</button>
+        <button id="menu-toggle" aria-label="Buton Meniu site" aria-expanded="false" aria-controls="main-menu" aria-haspopup="true" tabindex="0">
+            &#9776;
+        </button>
 
 <!-- CONȚINUT -->
 
 <!-- Banner -->
-                <header id="banner" class="banner" role="banner" aria-label="Banner">
+        <header id="banner" class="banner" role="banner" aria-label="Banner">
 
-                    <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/istoric.png?raw=true" alt="Intrarea în Școala Gimnazială „Nicu Albu” Piatra Neamț">
-                    <div class="sr-only">
-                        <h1>Școala Gimnazială „Nicu Albu” Piatra Neamț</h1>
-                    </div>
+            <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/intrare.png?raw=true" alt="Intrarea principală în Școala Gimnazială „Nicu Albu” Piatra Neamț">
+            <h1 class="sr-only">Școala Gimnazială „Nicu Albu” Piatra Neamț</h1>
 
-                </header>
+        </header>
 
         <main id="istoric" class="content" aria-label="Conținut">
 
-            <header role="presentation">
+            <header>
 <!-- Meniu pagină -->
                 <nav id="meniu-pagina" class="page-menu" aria-label="Meniu pagină">
                     <ul class="patru">
-                        <li aria-current="page">
-                            <a href="prezentare/istoric.html" target="_self" class="active" aria-labelledby="link-pagina-scurt-istoric">
+                        <li>
+                            <a href="prezentare/istoric.html" target="_self" class="active" aria-labelledby="link-pagina-scurt-istoric" aria-current="page">
                                 <span id="link-pagina-scurt-istoric">Scurt istoric</span>
                                 <span class="sr-only"> (se deschide în aceeași fereastră)</span>
                             </a>
@@ -237,10 +237,8 @@
 
                     <article>
 
-                        <header role="presentation">
-                            <div class="sr-only">
-                                <h2>Scurt istoric</h2>
-                            </div>
+                        <header class="sr-only">
+                            <h2>Scurt istoric</h2>
                         </header>
 
                         <div class="coloane">
@@ -267,10 +265,8 @@
 <!-- Secțiune Informații -->
                 <section id="istoric-informatii" class="sectiune-informatii" role="region" aria-labelledby="informatii-label">
 
-                    <header role="presentation">
-                        <div id="informatii-label" class="citat-2">
-                            <h2>Informații relevante:</h2>
-                        </div>
+                    <header>
+                        <h2 id="informatii-label" class="citat-1">Noutăți:</h2>
                     </header>
 
                     <ul class="coloane">
@@ -311,10 +307,8 @@
 <!-- Secțiune Legături -->
                 <section id="istoric-legaturi" class="sectiune-legaturi" aria-label="Secțiune Legături">
 
-                    <header role="presentation">
-                        <div class="sr-only">
-                            <h2>Legături:</h2>
-                        </div>
+                    <header>
+                        <h2 class="sr-only">Legături:</h2>
                     </header>
 
                     <ul>                    
@@ -355,9 +349,10 @@
         </main>
 
 <!-- SUBSOL -->
-        <footer class="footer" role="contentinfo" aria-labelledby="subsol">
+        <footer class="footer" role="contentinfo" aria-labelledby="subsol-label">
 
-            <div id="subsol" class="footer-informatii">
+            <div id="subsol-label" class="sr-only">Subsol</div>
+            <div id="subsol-continut" class="footer-informatii">
                 <span>&copy; 1993-<span id="year"></span> Școala Gimnazială „Nicu Albu” Piatra Neamț</span>
             </div>
 
