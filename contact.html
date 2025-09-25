@@ -5,12 +5,6 @@
 
     <head>
 
-<!-- Titlu -->
-        <title>Contact</title>
-
-<!-- Resurse -->
-        <base href="https://scoalanicualbu.github.io/website/">
-
 <!-- Codificare caractere -->
         <meta charset="UTF-8">
 
@@ -21,6 +15,12 @@
 
 <!-- Vizualizare -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Titlu -->
+        <title>Contact</title>
+
+<!-- Resurse -->
+        <base href="https://scoalanicualbu.github.io/website/">
 
 <!-- Descriere -->
         <meta name="description"
@@ -61,23 +61,19 @@
     <body>
 
 <!-- Link "Sari la conținut" -->
-        <header role="presentation">
-
-            <a href="#main-content" id="skipToContinut" target="_self" class="skip-link" aria-labelledby="link-sari-la-continut">
-                <span id="link-sari-la-continut">Mergi la conținutul paginii</span>
-                <span class="sr-only"> (se deschide în aceeași fereastră)</span>
-            </a>
-
-        </header>
+        <a href="#main-content" id="skipToContinut" target="_self" class="skip-link" aria-labelledby="link-sari-la-continut">
+            <span id="link-sari-la-continut">Mergi la conținutul paginii</span>
+            <span class="sr-only"> (se deschide în aceeași fereastră)</span>
+        </a>
 
 <!-- MENIU -->
         <aside id="main-menu" aria-label="Meniu">
 
-            <header role="presentation">
+            <header>
 
 <!-- Siglă -->
                 <section id="sigla" aria-label="Siglă școală">
-                    <div class="side-name sr-only">Sigla școlii</div>
+                    <h2 class="side-name sr-only">Sigla școlii</h2>
                         <div class="side-logo" role="region" aria-label="Sigla școlii">
                             <img src="https://github.com/scoalanicualbu/website/blob/main/sigla.png?raw=true" alt="Sigla Școlii Gimnaziale „Nicu Albu” Piatra Neamț">
                         </div>
@@ -85,7 +81,7 @@
 
 <!-- Denumire -->
                 <section id="denumire" aria-label="Denumire școală">
-                    <p class="side-name sr-only">Denumirea școlii</p>
+                    <h2 class="side-name sr-only">Denumirea școlii</h2>
                     <p class="side-name">Școala Gimnazială<br>„Nicu Albu”<br>Piatra Neamț</p>
                 </section>
 
@@ -172,8 +168,8 @@
                             <span class="sr-only"> (se deschide în aceeași fereastră)</span>
                         </a>
                     </li>
-                    <li aria-current="page">
-                        <a href="contact.html" target="_self" class="active" aria-labelledby="link-pagina-contact">
+                    <li>
+                        <a href="contact.html" target="_self" class="active" aria-labelledby="link-pagina-contact" aria-current="page">
                             <span id="link-pagina-contact">Contact</span>
                             <span class="sr-only"> (se deschide în aceeași fereastră)</span>
                         </a>
@@ -184,24 +180,24 @@
         </aside>
 
 <!-- Buton Meniu -->
-        <button id="menu-toggle" aria-label="Buton Meniu site" aria-expanded="false" tabindex="0">&#9776;</button>
+        <button id="menu-toggle" aria-label="Buton Meniu site" aria-expanded="false" aria-controls="main-menu" aria-haspopup="true" tabindex="0">
+            &#9776;
+        </button>
 
 <!-- CONȚINUT -->
 
 
 <!-- Banner -->
-                <header id="banner" class="banner" role="banner" aria-label="Banner">
+        <header id="banner" class="banner" role="banner" aria-label="Banner">
 
-                    <img src="https://github.com/scoalanicualbu/website/blob/main/contact/contact.png?raw=true" alt="Imagine panoramică a Municipiului Piatra-Neamț, centru și partea vestică, vara">
-                    <div class="sr-only">
-                        <h1>Școala Gimnazială „Nicu Albu” Piatra Neamț</h1>
-                    </div>
+            <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/intrare.png?raw=true" alt="Intrarea principală în Școala Gimnazială „Nicu Albu” Piatra Neamț">
+            <h1 class="sr-only">Școala Gimnazială „Nicu Albu” Piatra Neamț</h1>
 
-                </header>
+        </header>
 
         <main id="contact" class="content" aria-label="Conținut">
 
-            <header role="presentation">
+            <header>
 
 <!-- Meniu pagină -->
                 <nav id="meniu-pagina" class="page-menu" aria-label="Meniu pagină">
@@ -241,17 +237,14 @@
 <!-- Secțiune Conținut -->
                 <section id="contact-continut" class="sectiune-continut" aria-label="Secțiune Conținut">
 
-                    <div id="contact-imagine" class="wrap-4 wrap-show" role="region" aria-label="Imagine Contact">
-                        <div id="imagine-contact" class="content-imagine wrap-size">
+                    <section id="contact-imagine" class="wrap-4 wrap-show" aria-label="Imagine Contact">
+                        <div id="imagine-contact" class="content-imagine wrap-size" role="img">
                            <img src="https://github.com/scoalanicualbu/website/blob/main/contact/baloane.png?raw=true" alt="Elevi și baloane pe terenul de sport al Școlii Gimnaziale „Nicu Albu” Piatra Neamț">
                         </div>
-                    </div>
+                    </section>
 
                     <article id="contact-date" class="wrap-8 wrap-down" role="region" aria-labelledby="contact-label">
-
-                        <header class="sr-only" role="presentation">
-                            <h2 id="contact-label">Contact</h2>
-                        </header>
+                        <h2 id="contact-label" class="sr-only" >Contact</h2>
 	
                         <h2 class="citat-3">ȘCOALA GIMNAZIALĂ „NICU ALBU” PIATRA NEAMȚ</h2>
                         <p><b>Adresă</b>: Strada Ecoului, Numărul 5, Municipiul Piatra-Neamț, Județul Neamț</p>
@@ -262,22 +255,17 @@
 
                     </article>
 
-                    <div id="contact-localizare" class="wrap-12" role="region" aria-label="Localizare Contact">
+                    <section id="contact-localizare" class="wrap-12" aria-label="Localizare Contact">
                         <div id="localizare-contact" class="content-imagine zoom">
                            <img src="https://github.com/scoalanicualbu/website/blob/main/contact/localizare.png?raw=true" alt="Localizarea pe harta Municipiului Piatra-Neamț a Școlii Gimnaziale „Nicu Albu” Piatra Neamț">
                         </div>
-                    </div>
+                    </section>
 
                 </section>
 
 <!-- Secțiune Legături -->
                 <section id="contact-legaturi" class="sectiune-legaturi" aria-label="Secțiune Legături">
-
-                    <header role="presentation">
-                        <div class="sr-only">
-                            <h2>Legături:</h2>
-                        </div>
-                    </header>
+                    <h2 class="sr-only">Legături:</h2>
 
                     <ul>                    
                         <li>
@@ -317,9 +305,10 @@
         </main>
 
 <!-- SUBSOL -->
-        <footer class="footer" role="contentinfo" aria-labelledby="subsol">
+        <footer class="footer" role="contentinfo" aria-labelledby="subsol-label">
 
-            <div id="subsol" class="footer-informatii">
+            <div id="subsol-label" class="sr-only">Subsol</div>
+            <div id="subsol-continut" class="footer-informatii">
                 <span>&copy; 1993-<span id="year"></span> Școala Gimnazială „Nicu Albu” Piatra Neamț</span>
             </div>
 
