@@ -30,6 +30,67 @@
                     }
             }
 
+// Funcții de inițializare
+
+// Inițializare setări la încărcare pagină
+            window.addEventListener('load', () => {
+                updateMeniu();
+                updateGap();
+                updateImagini();
+                initializeParams();
+                potrivesteTexte();
+                limitPosition();
+                updateTransform();
+            });
+
+// Inițializare setări la redimensionare pagină
+            window.addEventListener('resize', () => {
+                updateMeniu();
+                updateGap();
+                updateImagini();
+                potrivesteTexte();
+            });
+
+// Funcții de gestionare evenimente
+
+// Afișare sau ascundere Meniu la click pe buton
+            document.getElementById('menu-toggle').addEventListener('click', () => {
+                const aside = document.querySelector('aside');
+                aside.classList.toggle('show');
+                updateButton();
+            });
+
+// Gestionare apăsare tastă CTRL
+            const width = window.innerWidth;
+            let ctrlToggleDone = false;
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Control') {
+                    if (window.innerWidth < 1367) {
+                        e.preventDefault();
+                        if (!ctrlToggleDone) {
+                            const aside = document.querySelector('aside');
+                            aside.classList.toggle('show');
+                            updateButton();
+                            ctrlToggleDone = true;
+                        }
+                    }
+                }
+            });
+
+// Gestionare eliberare tastă CTRL
+            document.addEventListener('keyup', (e) => {
+                if (e.key === 'Control') {
+                    ctrlToggleDone = false;
+                }
+            });
+
+// Blocare comportament implicit zoom la apăsarea tastei CTRL împreună cu scroll la maus
+            document.addEventListener('wheel', (e) => {
+                if (e.ctrlKey) {
+                    e.preventDefault();
+                }
+            }, { passive: false });
+
 // Secțiune Conținut
 
 // Calculare spațiere prin interpolare liniară
@@ -259,68 +320,7 @@
             updateTransform();
             });
 
-// Funcții de inițializare
-
-// Inițializare setări la încărcare pagină
-            window.addEventListener('load', () => {
-                updateMeniu();
-                updateGap();
-                updateImagini();
-                initializeParams();
-                potrivesteTexte();
-                limitPosition();
-                updateTransform();
-            });
-
-// Inițializare setări la redimensionare pagină
-            window.addEventListener('resize', () => {
-                updateMeniu();
-                updateGap();
-                updateImagini();
-                potrivesteTexte();
-            });
-
-// Funcții de gestionare evenimente
-
-// Afișare sau ascundere Meniu la click pe buton
-            document.getElementById('menu-toggle').addEventListener('click', () => {
-                const aside = document.querySelector('aside');
-                aside.classList.toggle('show');
-                updateButton();
-            });
-
-// Gestionare apăsare tastă CTRL
-            const width = window.innerWidth;
-            let ctrlToggleDone = false;
-            document.addEventListener('keydown', (e) => {
-                if (e.key === 'Control') {
-                    if (window.innerWidth < 1367) {
-                        e.preventDefault();
-                        if (!ctrlToggleDone) {
-                            const aside = document.querySelector('aside');
-                            aside.classList.toggle('show');
-                            updateButton();
-                            ctrlToggleDone = true;
-                        }
-                    }
-                }
-            });
-
-// Gestionare eliberare tastă CTRL
-            document.addEventListener('keyup', (e) => {
-                if (e.key === 'Control') {
-                    ctrlToggleDone = false;
-                }
-            });
-
-// Blocare comportament implicit zoom la apăsarea tastei CTRL împreună cu scroll la maus
-            document.addEventListener('wheel', (e) => {
-                if (e.ctrlKey) {
-                    e.preventDefault();
-                }
-            }, { passive: false });
-
 // Subsol pagină
             document.addEventListener('DOMContentLoaded', function() {
                 document.getElementById('year').textContent = new Date().getFullYear();
-            });
+                });
