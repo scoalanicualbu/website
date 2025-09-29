@@ -1171,7 +1171,9 @@ border-radius: 4px;
                             height: auto;
                             display: flex;
                             flex-direction: column;
-                            flex-grow: 1;
+                            flex: 1;
+                            align-items: center;
+                            text-align: center;
                         }
 
                         .wrap-2 {
@@ -1189,7 +1191,9 @@ border-radius: 4px;
                             height: auto;
                             display: flex;
                             flex-direction: column;
-                            flex-grow: 1;
+                            flex: 1;
+                            align-items: center;
+                            text-align: center;
                         }
 
                         .wrap-3 {
@@ -1207,7 +1211,9 @@ border-radius: 4px;
                             height: auto;
                             display: flex;
                             flex-direction: column;
-                            flex-grow: 1;
+                            flex: 1;
+                            align-items: center;
+                            text-align: center;
                         }
 
                         .wrap-4 {
@@ -1245,7 +1251,9 @@ border-radius: 4px;
                             height: auto;
                             display: flex;
                             flex-direction: column;
-                            flex-grow: 1;
+                            flex: 1;
+                            align-items: center;
+                            text-align: center;
                         }
 
                         .wrap-6 {
@@ -1263,7 +1271,9 @@ border-radius: 4px;
                             height: auto;
                             display: flex;
                             flex-direction: column;
-                            flex-grow: 1;
+                            flex: 1;
+                            align-items: center;
+                            text-align: center;
                         }
 
                         .wrap-7 {
@@ -1281,7 +1291,9 @@ border-radius: 4px;
                             height: auto;
                             display: flex;
                             flex-direction: column;
-                            flex-grow: 1;
+                            flex: 1;
+                            align-items: center;
+                            text-align: center;
                         }
 
                         .wrap-8 {
@@ -1299,7 +1311,9 @@ border-radius: 4px;
                             height: auto;
                             display: flex;
                             flex-direction: column;
-                            flex-grow: 1;
+                            flex: 1;
+                            align-items: center;
+                            text-align: center;
                         }
 
                         .wrap-9 {
@@ -1317,7 +1331,9 @@ border-radius: 4px;
                             height: auto;
                             display: flex;
                             flex-direction: column;
-                            flex-grow: 1;
+                            flex: 1;
+                            align-items: center;
+                            text-align: center;
                         }
 
                         .wrap-10 {
@@ -1352,7 +1368,9 @@ border-radius: 4px;
                             height: auto;
                             display: flex;
                             flex-direction: column;
-                            flex-grow: 1;
+                            flex: 1;
+                            align-items: center;
+                            text-align: center;
                         }
 
                         .wrap-12 {
@@ -1370,7 +1388,9 @@ border-radius: 4px;
                             height: auto;
                             display: flex;
                             flex-direction: column;
-                            flex-grow: 1;
+                            flex: 1;
+                            align-items: center;
+                            text-align: center;
                         }
 
                         .wrap-down {
