@@ -12,9 +12,7 @@
                 --szp: 0.8rem;
                 --asz: 16rem;
                 --asu: 15rem;
-                --gap: 2rem;
-                --ga1: 2rem;
-                --ga2: 16rem;
+                --gap: 1rem;
             }  
 
           * {
@@ -383,7 +381,7 @@ border-radius: 4px;
                         margin-left: 0;
                         margin-right: 0;
                         padding-top: 0.5rem;
-                        padding-bottom: 1.5rem;
+                        padding-bottom: 0.5rem;
                         padding-left: 0.5rem;
                         padding-right: 0.5rem;
                     }
@@ -512,7 +510,7 @@ border-radius: 4px;
                         margin-bottom: 0;
                         margin-left: 0;
                         margin-right: 0;
-                        padding-top: 1.5rem;
+                        padding-top: 0.5rem;
                         padding-bottom: 0;
                         padding-left: 0.5rem;
                         padding-right: 0.5rem;
@@ -618,8 +616,8 @@ border-radius: 4px;
                         margin-bottom: 0;
                         margin-left: 0;
                         margin-right: 0;
-                        padding-top: 1.5rem;
-                        padding-bottom: 1.5rem;
+                        padding-top: 0.5rem;
+                        padding-bottom: 0.5rem;
                         padding-left: 0.5rem;
                         padding-right: 0.5rem;
                     }
@@ -677,7 +675,7 @@ border-radius: 4px;
 border: 0px solid #404040;
 border-radius: 4px;
                         margin-top: auto;
-                        margin-bottom: 1.5rem;
+                        margin-bottom: 0.5rem;
                         margin-left: 0;
                         margin-right: 0;
                         padding-top: 0;
@@ -791,7 +789,7 @@ border-radius: 4px;
 border: 0px solid #404040;
 border-radius: 4px;
                         margin-top: 0;
-                        margin-bottom: 1.5rem;
+                        margin-bottom: 0.5rem;
                         margin-left: 0;
                         margin-right: 0;
                         padding-top: 0;
@@ -936,7 +934,6 @@ border-radius: 4px;
                                     display: grid;
                                     grid-template-columns: repeat(1, 1fr);
                                 }
-
 
                                 .sectiune-comunicari img {
 border: 1px solid #404040;
@@ -1141,10 +1138,10 @@ border-radius: 4px;
 border: 0px solid #404040;
 border-radius: 4px;
                         margin-top: 0;
-                        margin-bottom: 1.5rem;
+                        margin-bottom: 0.5rem;
                         margin-left: 0;
                         margin-right: 0;
-                        padding-top: 1rem;
+                        padding-top: 0.5rem;
                         padding-bottom: 0.5rem;
                         padding-left: 0.5rem;
                         padding-right: 0.5rem;
