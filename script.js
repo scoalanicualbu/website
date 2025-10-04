@@ -95,8 +95,8 @@
 
 // Calculare spațiere prin interpolare liniară
             function getGap() {
-                const maxGap = 2;
-                const minGap = 0.5;
+                const maxGap = 1;
+                const minGap = 1;
                 const maxVW = 2160;
                 const minVW = 300;
                 const VW = window.innerWidth;
