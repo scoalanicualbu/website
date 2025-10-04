@@ -593,6 +593,23 @@ border-radius: 4px;
                         text-align: left;
                     }
 
+                    .coloane-2 {
+border: 1px solid #404040;
+border-radius: 4px;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        margin-left: 0;
+                        margin-right: 0;
+                        padding-top: 0;
+                        padding-bottom: 0;
+                        padding-left: 0;
+                        padding-right: 0;
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        align-items: center;
+                        text-align: left;
+                    }
+
 /* Secțiune Informații */
                     .sectiune-informatii {
 border: 0px solid #404040;
@@ -620,6 +637,8 @@ border-radius: 4px;
                         }
 
                             .sectiune-informatii li {
+border: 0px solid #404040;
+border-radius: 4px;
                                 margin-top: 0;
                                 margin-bottom: 0;
                                 margin-left: 0;
@@ -1171,7 +1190,9 @@ border-radius: 4px;
                             height: auto;
                             display: flex;
                             flex-direction: column;
-                            flex-grow: 1;
+                            flex: 1;
+                            align-items: center;
+                            text-align: center;
                         }
 
                         .wrap-2 {
@@ -1189,7 +1210,9 @@ border-radius: 4px;
                             height: auto;
                             display: flex;
                             flex-direction: column;
-                            flex-grow: 1;
+                            flex: 1;
+                            align-items: left;
+                            text-align: center;
                         }
 
                         .wrap-3 {
@@ -1207,7 +1230,9 @@ border-radius: 4px;
                             height: auto;
                             display: flex;
                             flex-direction: column;
-                            flex-grow: 1;
+                            flex: 1;
+                            align-items: center;
+                            text-align: center;
                         }
 
                         .wrap-4 {
@@ -1245,11 +1270,13 @@ border-radius: 4px;
                             height: auto;
                             display: flex;
                             flex-direction: column;
-                            flex-grow: 1;
+                            flex: 1;
+                            align-items: center;
+                            text-align: center;
                         }
 
                         .wrap-6 {
-border: 1px solid #404040;
+border: 0px solid #404040;
 border-radius: 4px;
                             margin-top: 0;
                             margin-bottom: 0;
@@ -1263,7 +1290,9 @@ border-radius: 4px;
                             height: auto;
                             display: flex;
                             flex-direction: column;
-                            flex-grow: 1;
+                            flex: 1;
+                            align-items: start;
+                            text-align: left;
                         }
 
                         .wrap-7 {
@@ -1281,7 +1310,9 @@ border-radius: 4px;
                             height: auto;
                             display: flex;
                             flex-direction: column;
-                            flex-grow: 1;
+                            flex: 1;
+                            align-items: center;
+                            text-align: center;
                         }
 
                         .wrap-8 {
@@ -1299,7 +1330,9 @@ border-radius: 4px;
                             height: auto;
                             display: flex;
                             flex-direction: column;
-                            flex-grow: 1;
+                            flex: 1;
+                            align-items: center;
+                            text-align: center;
                         }
 
                         .wrap-9 {
@@ -1317,7 +1350,9 @@ border-radius: 4px;
                             height: auto;
                             display: flex;
                             flex-direction: column;
-                            flex-grow: 1;
+                            flex: 1;
+                            align-items: center;
+                            text-align: center;
                         }
 
                         .wrap-10 {
@@ -1352,11 +1387,13 @@ border-radius: 4px;
                             height: auto;
                             display: flex;
                             flex-direction: column;
-                            flex-grow: 1;
+                            flex: 1;
+                            align-items: center;
+                            text-align: center;
                         }
 
                         .wrap-12 {
-border: 1px solid #404040;
+border: 0px solid #404040;
 border-radius: 4px;
                             margin-top: 0;
                             margin-bottom: 0;
@@ -1370,7 +1407,9 @@ border-radius: 4px;
                             height: auto;
                             display: flex;
                             flex-direction: column;
-                            flex-grow: 1;
+                            flex: 1;
+                            align-items: start;
+                            text-align: left;
                         }
 
                         .wrap-down {
@@ -1415,6 +1454,71 @@ border-radius: 4px;
                                 height: auto;
                                 display: block;
                                 object-fit: cover;
+                            }
+
+                        .contain-imagine {
+border: 0px solid #404040;
+border-radius: 4px;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            width: 100%;
+                            height: auto;
+                            display: block;
+                        }
+
+                            .contain-imagine img {
+border: 1px solid #404040;
+border-radius: 4px;
+                                margin-top: 0;
+                                margin-bottom: 0;
+                                margin-left: 0;
+                                margin-right: 0;
+                                padding-top: 0;
+                                padding-bottom: 0;
+                                padding-left: 0;
+                                padding-right: 0;
+                                width: 100%;
+                                height: auto;
+                                display: block;
+                                object-fit: contain;
+                            }
+
+                        .zoom {
+border: 1px solid #404040;
+border-radius: 4px;
+                            position: relative;
+                            overflow: hidden;
+                        }
+
+                            .zoom img {
+border: 0px solid #404040;
+border-radius: 4px;
+                                display: block;
+                                transform-origin: top left;
+                                transition: transform 0.1s ease;
+                                cursor: grab;
+                            }
+
+                                .zoom img:hover {
+                                    cursor: grab;
+                                }
+
+                            .zoom.dragging img {
+                                cursor: grabbing;
+                            }
+
+                            .zoom::scroll-button(up) img {
+                                cursor: zoom-in;
+                            }
+
+                            .zoom.zoom-out img {	
+                                cursor: zoom-out;
                             }
 
                         .content-tabel {
@@ -1632,6 +1736,12 @@ border-radius: 4px;
                     #program-continut .wrap-show {
                         display: none;
                     }
+                    #personal-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
+                    #personal-continut .wrap-show {
+                        display: none;
+                    }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(2, 1fr);
                     }
@@ -1661,6 +1771,12 @@ border-radius: 4px;
                     #program-continut .wrap-show {
                         display: none;
                     }
+                    #personal-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
+                    #personal-continut .wrap-show {
+                        display: none;
+                    }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(1, 1fr);
                     }
@@ -1688,6 +1804,12 @@ border-radius: 4px;
                         grid-column: span 12;
                     }
                     #program-continut .wrap-show {
+                        display: none;
+                    }
+                    #personal-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
+                    #personal-continut .wrap-show {
                         display: none;
                     }
                     .sectiune-comunicari ul {
@@ -1720,6 +1842,12 @@ border-radius: 4px;
                     #program-continut .wrap-show {
                         display: none;
                     }
+                    #personal-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
+                    #personal-continut .wrap-show {
+                        display: none;
+                    }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(1, 1fr);
                     }
@@ -1747,6 +1875,12 @@ border-radius: 4px;
                         grid-column: span 12;
                     }
                     #program-continut .wrap-show {
+                        display: none;
+                    }
+                    #personal-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
+                    #personal-continut .wrap-show {
                         display: none;
                     }
                     .sectiune-comunicari ul {
