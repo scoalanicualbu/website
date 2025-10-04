@@ -232,7 +232,8 @@
             }
             const imaginiParametri = [
                 ['program-secretariat', '#imagine-lucru'],
-                ['contact-date', '#imagine-contact']
+                ['contact-date', '#imagine-contact'],
+                ['personal-text', '#imagine-personal']
             ];
             function updateImagini() {
                 imaginiParametri.forEach(([divId, imgSelector]) => {
