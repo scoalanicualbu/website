@@ -5,12 +5,6 @@
 
     <head>
 
-<!-- Titlu -->
-        <title>Contact</title>
-
-<!-- Resurse -->
-<!--        <base href="https://scoalanicualbu.github.io/website/">-->
-
 <!-- Codificare caractere -->
         <meta charset="UTF-8">
 
@@ -22,10 +16,14 @@
 <!-- Vizualizare -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!-- Titlu -->
+        <title>Program de lucru</title>
+
+<!-- Resurse -->
+<!--        <base href="https://scoalanicualbu.github.io/website/">-->
+
 <!-- Descriere -->
-        <meta name="description"
-             content="Site-ul oficial al Școlii Gimnaziale „Nicu Albu” Piatra Neamț, pagina „Contact”.
-             Aici sunt cuprinse informații despre datele de contact ale școlii și legături către secțiuni precum istoric, circumscripție, program de lucru, comunicări.">
+        <meta name="description" content="Site-ul oficial al Școlii Gimnaziale „Nicu Albu” Piatra Neamț, pagina „Program de lucru”. Aici sunt cuprinse informații despre programul de lucru al școlii și legături către secțiuni precum istoric, circumscripție, comunicări.">
 
 <!-- Autor -->
         <meta name="author" content="informatician IFTIMIA DAN-ADRIAN">
@@ -36,11 +34,11 @@
 <!-- Proprietate -->
         <meta property="og:site_name" content="Școala Gimnazială „Nicu Albu” Piatra Neamț">
         <meta property="og:url" content="https://scoalanicualbu.github.io/website">
-        <meta property="og:title" content="Site-ul oficial al Școlii Gimnaziale „Nicu Albu” Piatra Neamț, pagina „Contact”">
-        <meta property="og:description" content="Aici sunt cuprinse informații despre datele de contact ale școlii și legături către secțiuni precum istoric, circumscripție, program de lucru, comunicări.">
+        <meta property="og:title" content="Site-ul oficial al Școlii Gimnaziale „Nicu Albu” Piatra Neamț, pagina „Program de lucru”">
+        <meta property="og:description" content="Aici sunt cuprinse informații despre programul de lucru al școlii și legături către secțiuni precum istoric, circumscripție, comunicări.">
         <meta property="og:type" content="website">
         <meta property="og:locale" content="ro_RO">
-        <meta property="og:image" content="https://github.com/scoalanicualbu/website/blob/main/contact/contact.png?raw=true">
+        <meta property="og:image" content="https://github.com/scoalanicualbu/website/blob/main/prezentare/program.png?raw=true">
 
 <!-- Iconiță favorită -->
         <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -72,9 +70,7 @@
                 --szp: 0.8rem;
                 --asz: 16rem;
                 --asu: 15rem;
-                --gap: 2rem;
-                --ga1: 2rem;
-                --ga2: 16rem;
+                --gap: 1rem;
             }  
 
           * {
@@ -134,6 +130,36 @@ border: 0px solid #404040;
                     padding-left: 0;
                     padding-right: 0;
                     font-size: var(--sz3);
+                }
+
+                h4 {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    margin-left: 0;
+                    margin-right: 0;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    padding-left: 0;
+                    padding-right: 0;
+                    font-size: var(--sz3);
+                }
+
+                h5 {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    margin-left: 0;
+                    margin-right: 0;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    padding-left: 0;
+                    padding-right: 0;
+                    font-size: var(--sz3);
+                }
+
+                .hr {
+                    height: 1px;
+                    width: 100%;
+                    background-color: #404040;
                 }
 
                 p {
@@ -206,7 +232,6 @@ border-right: 1px solid #404040;
                 }
 
                     aside.show {
-                        z-index: 9999;
                         display: flex;
                         opacity: 1;
                         transform: translateX(0);
@@ -557,6 +582,20 @@ border-radius: 4px;
                         text-align: left;
                     }
 
+                        .citat-0 {
+border: 0px solid #404040;
+border-radius: 4px;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            text-align: left;
+                        }
+
                         .citat-1 {
 border: 0px solid #404040;
 border-radius: 4px;
@@ -589,14 +628,15 @@ border-radius: 4px;
                         .citat-3 {
 border: 0px solid #404040;
 border-radius: 4px;
-                            margin-top: 0.5rem;
-                            margin-bottom: 1rem;
+                            margin-top: 1rem;
+                            margin-bottom: 0.5rem;
                             margin-left: 0;
                             margin-right: 0;
                             padding-top: 0;
                             padding-bottom: 0;
                             padding-left: 0;
                             padding-right: 0;
+                            text-align: left;
                         }
 
                     .coloane {
@@ -612,6 +652,23 @@ border-radius: 4px;
                         padding-right: 0;
                         column-width: 40rem;
                         column-gap: var(--gap);
+                        text-align: left;
+                    }
+
+                    .coloane-2 {
+border: 1px solid #404040;
+border-radius: 4px;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        margin-left: 0;
+                        margin-right: 0;
+                        padding-top: 0;
+                        padding-bottom: 0;
+                        padding-left: 0;
+                        padding-right: 0;
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        align-items: center;
                         text-align: left;
                     }
 
@@ -642,6 +699,8 @@ border-radius: 4px;
                         }
 
                             .sectiune-informatii li {
+border: 0px solid #404040;
+border-radius: 4px;
                                 margin-top: 0;
                                 margin-bottom: 0;
                                 margin-left: 0;
@@ -789,6 +848,355 @@ border-radius: 4px;
                                             white-space: nowrap;
                                         }
 
+/* Secțiune Comunicări */
+                    .sectiune-comunicari {
+border: 0px solid #404040;
+border-radius: 4px;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        margin-left: 0;
+                        margin-right: 0;
+                        padding-top: 0;
+                        padding-bottom: 0;
+                        padding-left: 0;
+                        padding-right: 0;
+                    }
+
+                        .sectiune-comunicari ul {
+border: 0px solid #404040;
+border-radius: 4px;
+                            margin-top: 0.5rem;
+                            margin-bottom: 0.5rem;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0.5rem;
+                            padding-right: 0.5rem;
+                            display: grid;
+                            grid-template-columns: repeat(4, 1fr);
+                            gap: var(--gap);
+                            align-items: start;
+                            list-style: none;
+                        }
+
+                            .sectiune-comunicari li {
+border: 1px solid #404040;
+border-radius: 4px;
+                                margin-top: 0;
+                                margin-bottom: 0;
+                                margin-left: 0;
+                                margin-right: 0;
+                                padding-top: 0;
+                                padding-bottom: 0;
+                                padding-left: 0;
+                                padding-right: 0.5rem;
+                                display: flex;
+                                align-items: start;
+                                flex-grow: 1;
+                            }
+
+                        .sectiune-comunicari ul.a {
+border: 0px solid #404040;
+border-radius: 4px;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            display: grid;
+                            grid-template-columns: repeat(1, 1fr);
+                            gap: 0;
+                            align-items: start;
+                            list-style: none;
+                        }
+
+                            .sectiune-comunicari li.a {
+border: 0px solid #404040;
+border-radius: 4px;
+                                margin-top: 0;
+                                margin-bottom: 0;
+                                margin-left: 0;
+                                margin-right: 0;
+                                padding-top: 0;
+                                padding-bottom: 0;
+                                padding-left: 0;
+                                padding-right: 0;
+                                display: flex;
+                                align-items: start;
+                                flex-grow: 1;
+                            }
+
+                        .sectiune-comunicari ol {
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            margin-left: 1rem;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            list-style: decimal;
+                            list-style-position: outside;
+                        }
+
+                            .sectiune-comunicari ol li {
+border: 0px solid #404040;
+border-radius: 4px;
+                                margin-top: 0;
+                                margin-bottom: 0;
+                                margin-left: 0;
+                                margin-right: 0;
+                                padding-top: 0;
+                                padding-bottom: 0;
+                                padding-left: 0;
+                                padding-right: 0;
+                                display: list-item;
+                            }
+
+                        .sectiune-comunicari ol.m {
+                            margin-top: 0;
+                            margin-bottom: 0.5rem;
+                            margin-left: 1rem;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            list-style: disc;
+                            list-style-position: outside;
+                        }
+
+                            .sectiune-comunicari ol.m li {
+border: 0px solid #404040;
+border-radius: 4px;
+                                margin-top: 0;
+                                margin-bottom: 0;
+                                margin-left: 0;
+                                margin-right: 0;
+                                padding-top: 0;
+                                padding-bottom: 0;
+                                padding-left: 0;
+                                padding-right: 0;
+                                display: list-item;
+                            }
+
+                                .lista {
+border: 0px solid #404040;
+border-radius: 4px;
+                                    margin-top: 0;
+                                    margin-bottom: 0;
+                                    margin-left: 0;
+                                    margin-right: 0;
+                                    padding-top: 0;
+                                    padding-bottom: 0;
+                                    padding-left: 0;
+                                    padding-right: 0;
+                                    display: grid;
+                                    grid-template-columns: repeat(1, 1fr);
+                                }
+
+                                .sectiune-comunicari img {
+border: 1px solid #404040;
+border-radius: 4px;
+                                    margin-top: 0.2rem;
+                                    margin-bottom: -0.47rem;
+                                    margin-left: 0.2rem;
+                                    margin-right: 0.5rem;
+                                    padding-top: 0;
+                                    padding-bottom: 0;
+                                    padding-left: 0;
+                                    padding-right: 0;
+                                    width: 5rem;
+                                    height: 5rem;
+                                    background-color: #FFFFFF;
+                                }
+
+                                .imagine-1 {
+border: 0px solid #404040;
+border-radius: 4px;
+                                    margin-top: 0.2rem;
+                                    margin-bottom: 1rem;
+                                    margin-left: 0;
+                                    margin-right: 0;
+                                    padding-top: 0;
+                                    padding-bottom: 0;
+                                    padding-left: 0;
+                                    padding-right: 0;
+                                    display: grid;
+                                    grid-template-columns: repeat(1, 1fr);
+                                    align-items: center;
+                                }
+
+                                .imagine-1 img {
+border: 1px solid #404040;
+border-radius: 4px;
+                                    margin-top: 0;
+                                    margin-bottom: 0;
+                                    margin-left: 0;
+                                    margin-right: 0;
+                                    padding-top: 0;
+                                    padding-bottom: 0;
+                                    padding-left: 0;
+                                    padding-right: 0;
+                                    width: auto;
+                                    max-width: 100%;
+                                    height: 100%;
+                                    display: block;
+                                    object: fit: cover;
+                                    background-color: #FFFFFF;
+                                }
+
+                                .imagine-2 {
+border: 0px solid #404040;
+border-radius: 4px;
+                                    margin-top: 0.2rem;
+                                    margin-bottom: 1rem;
+                                    margin-left: 0;
+                                    margin-right: 0;
+                                    padding-top: 0;
+                                    padding-bottom: 0;
+                                    padding-left: 0;
+                                    padding-right: 0;
+                                    display: grid;
+                                    grid-template-columns: repeat(2, 1fr);
+                                    gap: 0.5rem;
+                                    align-items: center;
+                                }
+
+                                .imagine-2 img {
+border: 1px solid #404040;
+border-radius: 4px;
+                                    margin-top: 0;
+                                    margin-bottom: 0;
+                                    margin-left: 0;
+                                    margin-right: 0;
+                                    padding-top: 0;
+                                    padding-bottom: 0;
+                                    padding-left: 0;
+                                    padding-right: 0;
+                                    width: auto;
+                                    max-width: 100%;
+                                    height: 100%;
+                                    display: block;
+                                    object: fit: cover;
+                                    background-color: #FFFFFF;
+                                }
+
+                                .imagine-3 {
+border: 0px solid #404040;
+border-radius: 4px;
+                                    margin-top: 0.2rem;
+                                    margin-bottom: 1rem;
+                                    margin-left: 0;
+                                    margin-right: 0;
+                                    padding-top: 0;
+                                    padding-bottom: 0;
+                                    padding-left: 0;
+                                    padding-right: 0;
+                                    display: grid;
+                                    grid-template-columns: repeat(3, 1fr);
+                                    gap: 0.5rem;
+                                    align-items: center;
+                                }
+
+                                .imagine-3 img {
+border: 1px solid #404040;
+border-radius: 4px;
+                                    margin-top: 0;
+                                    margin-bottom: 0;
+                                    margin-left: 0;
+                                    margin-right: 0;
+                                    padding-top: 0;
+                                    padding-bottom: 0;
+                                    padding-left: 0;
+                                    padding-right: 0;
+                                    width: auto;
+                                    max-width: 100%;
+                                    height: 100%;
+                                    display: block;
+                                    object: fit: cover;
+                                    background-color: #FFFFFF;
+                                }
+
+                                .imagine-4 {
+border: 0px solid #404040;
+border-radius: 4px;
+                                    margin-top: 0.2rem;
+                                    margin-bottom: 1rem;
+                                    margin-left: 0;
+                                    margin-right: 0;
+                                    padding-top: 0;
+                                    padding-bottom: 0;
+                                    padding-left: 0;
+                                    padding-right: 0;
+                                    display: grid;
+                                    grid-template-columns: repeat(4, 1fr);
+                                    gap: 0.5rem;
+                                    align-items: center;
+                                }
+
+                                .imagine-4 img {
+border: 1px solid #404040;
+border-radius: 4px;
+                                    margin-top: 0;
+                                    margin-bottom: 0;
+                                    margin-left: 0;
+                                    margin-right: 0;
+                                    padding-top: 0;
+                                    padding-bottom: 0;
+                                    padding-left: 0;
+                                    padding-right: 0;
+                                    width: auto;
+                                    max-width: 100%;
+                                    height: 100%;
+                                    display: block;
+                                    object: fit: cover;
+                                    background-color: #FFFFFF;
+                                }
+
+                                .date {
+border: 1px solid #404040;
+border-radius: 4px;
+                                    margin-top: 0;
+                                    margin-bottom: 0.2rem;
+                                    margin-left: 0.2rem;
+                                    margin-right: 0;
+                                    padding-top: 0;
+                                    padding-bottom: 0;
+                                    padding-left: 0;
+                                    padding-right: 0;
+                                    width: 5rem;
+                                    text-align: center;
+                                    font-size: 0.9rem;
+                                    background-color: #FFFFFF;
+                                }
+
+                                .sectiune-comunicari a {
+border: 0px solid #404040;
+border-radius: 4px;
+                                    margin-top: 0;
+                                    margin-bottom: 0;
+                                    margin-left: -0.5rem;
+                                    margin-right: 0;
+                                    padding-top: var(--pd3);
+                                    padding-bottom: var(--pd3);
+                                    padding-left: 0.5rem;
+                                    padding-right: 0.5rem;
+                                    display: inline-block;
+                                    text-decoration: none;
+                                    font-size: var(--sz3);
+                                    color: #404040;
+                                }
+
+                                .sectiune-comunicari a:hover {
+                                    text-shadow: 0.4px 0 currentcolor, -0.4px 0 currentcolor;
+                                    color: #404040;
+                                }
+
 /* Secțiune Continut */
                     .sectiune-continut {
 border: 0px solid #404040;
@@ -806,8 +1214,30 @@ border-radius: 4px;
                         gap: var(--gap);
                     }
 
+                        .sectiune-continut a {
+border: 0px solid #404040;
+border-radius: 4px;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            margin-left: -0.5rem;
+                            margin-right: 0;
+                            padding-top: var(--pd3);
+                            padding-bottom: var(--pd3);
+                            padding-left: 0.5rem;
+                            padding-right: 0.5rem;
+                            display: inline-block;
+                            text-decoration: none;
+                            font-size: var(--sz3);
+                            color: #404040;
+                        }
+
+                            .sectiune-continut a:hover {
+                                text-shadow: 0.4px 0 currentcolor, -0.4px 0 currentcolor;
+                                color: #404040;
+                            }
+
                         .wrap-1 {
-border: 1px solid #404040;
+border: 0px solid #404040;
 border-radius: 4px;
                             margin-top: 0;
                             margin-bottom: 0;
@@ -827,7 +1257,7 @@ border-radius: 4px;
                         }
 
                         .wrap-2 {
-border: 1px solid #404040;
+border: 0px solid #404040;
 border-radius: 4px;
                             margin-top: 0;
                             margin-bottom: 0;
@@ -842,12 +1272,12 @@ border-radius: 4px;
                             display: flex;
                             flex-direction: column;
                             flex: 1;
-                            align-items: center;
+                            align-items: left;
                             text-align: center;
                         }
 
                         .wrap-3 {
-border: 1px solid #404040;
+border: 0px solid #404040;
 border-radius: 4px;
                             margin-top: 0;
                             margin-bottom: 0;
@@ -907,7 +1337,7 @@ border-radius: 4px;
                         }
 
                         .wrap-6 {
-border: 1px solid #404040;
+border: 0px solid #404040;
 border-radius: 4px;
                             margin-top: 0;
                             margin-bottom: 0;
@@ -922,8 +1352,8 @@ border-radius: 4px;
                             display: flex;
                             flex-direction: column;
                             flex: 1;
-                            align-items: center;
-                            text-align: center;
+                            align-items: start;
+                            text-align: left;
                         }
 
                         .wrap-7 {
@@ -947,7 +1377,7 @@ border-radius: 4px;
                         }
 
                         .wrap-8 {
-border: 1px solid #404040;
+border: 0px solid #404040;
 border-radius: 4px;
                             margin-top: 0;
                             margin-bottom: 0;
@@ -967,7 +1397,7 @@ border-radius: 4px;
                         }
 
                         .wrap-9 {
-border: 1px solid #404040;
+border: 0px solid #404040;
 border-radius: 4px;
                             margin-top: 0;
                             margin-bottom: 0;
@@ -986,6 +1416,24 @@ border-radius: 4px;
                             text-align: center;
                         }
 
+                        .wrap-92 {
+border: 0px solid #404040;
+border-radius: 4px;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            grid-column: span 9;
+                            height: auto;
+                            display: grid;
+                            grid-template-columns: repeat(2, 1fr);
+                            gap: 1rem;
+                        }
+
                         .wrap-10 {
 border: 1px solid #404040;
 border-radius: 4px;
@@ -1001,10 +1449,11 @@ border-radius: 4px;
                             height: auto;
                             display: grid;
                             grid-template-columns: repeat(10, 1fr);
+                            gap: 1rem;
                         }
 
                         .wrap-11 {
-border: 1px solid #404040;
+border: 0px solid #404040;
 border-radius: 4px;
                             margin-top: 0;
                             margin-bottom: 0;
@@ -1039,8 +1488,8 @@ border-radius: 4px;
                             display: flex;
                             flex-direction: column;
                             flex: 1;
-                            align-items: center;
-                            text-align: center;
+                            align-items: start;
+                            text-align: left;
                         }
 
                         .wrap-down {
@@ -1085,6 +1534,39 @@ border-radius: 4px;
                                 height: auto;
                                 display: block;
                                 object-fit: cover;
+                            }
+
+                        .contain-imagine {
+border: 0px solid #404040;
+border-radius: 4px;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            width: 100%;
+                            height: auto;
+                            display: block;
+                        }
+
+                            .contain-imagine img {
+border: 1px solid #404040;
+border-radius: 4px;
+                                margin-top: 0;
+                                margin-bottom: 0;
+                                margin-left: 0;
+                                margin-right: 0;
+                                padding-top: 0;
+                                padding-bottom: 0;
+                                padding-left: 0;
+                                padding-right: 0;
+                                width: 100%;
+                                height: auto;
+                                display: block;
+                                object-fit: contain;
                             }
 
                         .zoom {
@@ -1213,11 +1695,25 @@ border: 1px solid #404040;
                                     display: none;
                                 }
 
-                        .notă {
+                        .nota-1 {
 border: 0px solid #404040;
 border-radius: 4px;
                             margin-top: 0.5rem;
                             margin-bottom: 1rem;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            text-align: left;
+                        }
+
+                        .nota-2 {
+border: 0px solid #404040;
+border-radius: 4px;
+                            margin-top: 1rem;
+                            margin-bottom: 0;
                             margin-left: 0;
                             margin-right: 0;
                             padding-top: 0;
@@ -1259,7 +1755,7 @@ border-radius: 4px;
                     }
 
 /* Scalare pagină */
-                @media (min-width: 1367px) {
+                @media (min-width: 3841px) {
                     aside {
                         min-height: 100vh;
                     }
@@ -1274,10 +1770,38 @@ border-radius: 4px;
                     }
                 }
 
-/* aside */
+/* comunicari-2 */
+                @media (min-width: 1367px)and (max-width: 3840px) {
+                    aside {
+                        min-height: 100vh;
+                    }
+                    .banner {
+                        margin-left: var(--asz);
+                    }
+                    .content {
+                        margin-left: var(--asz);
+                    }
+                    .sectiune-comunicari ul {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                    .footer {
+                        margin-left: var(--asz);
+                    }
+                }
+
+/* aside, imagine-4 2, imagine-2 1 */
                 @media (min-width: 1153px) and (max-width: 1366px) {
                     aside {
                         border-radius: 4px;
+                    }
+                    .sectiune-comunicari ul {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                    .imagine-4 {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                    .imagine-2 {
+                        grid-template-columns: repeat(1, 1fr);
                     }
                 }
 
@@ -1286,11 +1810,26 @@ border-radius: 4px;
                     aside {
                         border-radius: 4px;
                     }
-                    #program-continut .wrap-4 {
-                        grid-column: span 6;
+                    #program-contain .wrap-92 {
+                        grid-column: span 12;
                     }
                     #program-continut .wrap-show {
                         display: none;
+                    }
+                    #personal-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
+                    #personal-continut .wrap-show {
+                        display: none;
+                    }
+                    .sectiune-comunicari ul {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                    .imagine-4 {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                    .imagine-2 {
+                        grid-template-columns: repeat(1, 1fr);
                     }
                     .sectiune-legaturi ul {
                         display: grid;
@@ -1298,7 +1837,7 @@ border-radius: 4px;
                     }
                 }
 
-/* page-menu 2 */
+/* page-menu 2, comunicari-1 */
                 @media (min-width: 721px) and (max-width: 800px) {
                     aside {
                         border-radius: 4px;
@@ -1306,11 +1845,26 @@ border-radius: 4px;
                     .page-menu .patru {
                         grid-template-columns: repeat(2, 1fr);
                     }
-                    #program-continut .wrap-4 {
-                        grid-column: span 6;
+                    #program-contain .wrap-92 {
+                        grid-column: span 12;
                     }
                     #program-continut .wrap-show {
                         display: none;
+                    }
+                    #personal-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
+                    #personal-continut .wrap-show {
+                        display: none;
+                    }
+                    .sectiune-comunicari ul {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                    .imagine-4 {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                    .imagine-2 {
+                        grid-template-columns: repeat(1, 1fr);
                     }
                     .sectiune-legaturi ul {
                         display: grid;
@@ -1318,7 +1872,7 @@ border-radius: 4px;
                     }
                 }
 
-/* wrap-4 */
+/* wrap-92 */
                 @media (min-width: 601px) and (max-width: 720px) { 
                     aside {
                         border-radius: 4px;
@@ -1326,11 +1880,26 @@ border-radius: 4px;
                     .page-menu .patru {
                         grid-template-columns: repeat(2, 1fr);
                     }
-                    #program-continut .wrap-4 {
+                    #program-contain .wrap-92 {
                         grid-column: span 12;
                     }
                     #program-continut .wrap-show {
                         display: none;
+                    }
+                    #personal-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
+                    #personal-continut .wrap-show {
+                        display: none;
+                    }
+                    .sectiune-comunicari ul {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                    .imagine-4 {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                    .imagine-2 {
+                        grid-template-columns: repeat(1, 1fr);
                     }
                     .sectiune-legaturi ul {
                         display: grid;
@@ -1339,7 +1908,7 @@ border-radius: 4px;
                 }
 
 
-/* legaturi 1 */
+/* legaturi 1, imagine-4 1 */
                 @media (min-width: 427px) and (max-width: 600px) { 
                     aside {
                         border-radius: 4px;
@@ -1347,11 +1916,26 @@ border-radius: 4px;
                     .page-menu .patru {
                         grid-template-columns: repeat(2, 1fr);
                     }
-                    #program-continut .wrap-4 {
+                    #program-contain .wrap-92 {
                         grid-column: span 12;
                     }
                     #program-continut .wrap-show {
                         display: none;
+                    }
+                    #personal-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
+                    #personal-continut .wrap-show {
+                        display: none;
+                    }
+                    .sectiune-comunicari ul {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                    .imagine-4 {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                    .imagine-2 {
+                        grid-template-columns: repeat(1, 1fr);
                     }
                     .sectiune-legaturi ul {
                         display: grid;
@@ -1367,11 +1951,26 @@ border-radius: 4px;
                     .page-menu .patru {
                         grid-template-columns: repeat(1, 1fr);
                     }
-                    #program-continut .wrap-4 {
+                    #program-contain .wrap-92 {
                         grid-column: span 12;
                     }
                     #program-continut .wrap-show {
                         display: none;
+                    }
+                    #personal-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
+                    #personal-continut .wrap-show {
+                        display: none;
+                    }
+                    .sectiune-comunicari ul {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                    .imagine-4 {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                    .imagine-2 {
+                        grid-template-columns: repeat(1, 1fr);
                     }
                     .sectiune-legaturi ul {
                         display: grid;
@@ -1399,7 +1998,7 @@ border-radius: 4px;
 <!-- Siglă -->
                 <section id="sigla" aria-label="Siglă">
                     <h2 class="side-name sr-only">Sigla școlii</h2>
-                    <div class="side-logo" role="img">
+                    <div class="side-logo">
                         <img src="https://github.com/scoalanicualbu/website/blob/main/sigla.png?raw=true" alt="Sigla Școlii Gimnaziale „Nicu Albu” Piatra Neamț">
                     </div>
                 </section>
@@ -1416,7 +2015,7 @@ border-radius: 4px;
             <nav id="meniu-site" class="side-menu" aria-label="Meniu site">
                 <ul>
                     <li>
-                        <a href="prezentare.html" target="_self" aria-labelledby="link-pagina-prezentare">
+                        <a href="prezentare.html" target="_self" class="inactive" aria-labelledby="link-pagina-prezentare">
                             <span id="link-pagina-prezentare">Prezentare</span>
                             <span class="sr-only"> (se deschide în aceeași fereastră)</span>
                         </a>
@@ -1494,7 +2093,7 @@ border-radius: 4px;
                         </a>
                     </li>
                     <li>
-                        <a href="contact.html" target="_self" class="active" aria-labelledby="link-pagina-contact" aria-current="page">
+                        <a href="contact.html" target="_self" aria-labelledby="link-pagina-contact">
                             <span id="link-pagina-contact">Contact</span>
                             <span class="sr-only"> (se deschide în aceeași fereastră)</span>
                         </a>
@@ -1515,12 +2114,12 @@ border-radius: 4px;
 <!-- Banner -->
         <header id="banner" class="banner" role="banner" aria-label="Banner">
 
-            <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/intrare.png?raw=true" alt="Intrarea principală în Școala Gimnazială „Nicu Albu” Piatra Neamț">
+            <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/program.png?raw=true" alt="Imagine panoramică a Municipiului Piatra-Neamț, partea vestică, toamna">
             <h1 class="sr-only">Școala Gimnazială „Nicu Albu” Piatra Neamț</h1>
 
         </header>
 
-        <main id="contact" class="content" aria-label="Conținut">
+        <main id="program" class="content" aria-label="Conținut">
 
             <header>
 
@@ -1540,7 +2139,7 @@ border-radius: 4px;
                             </a>
                         </li>
                         <li>
-                            <a href="prezentare/program.html" target="_self" aria-labelledby="link-pagina-program-de-lucru">
+                            <a href="prezentare/program.html" target="_self" class="active" aria-labelledby="link-pagina-program-de-lucru" aria-current="page">
                                 <span id="link-pagina-program-de-lucru">Program de lucru</span>
                                 <span class="sr-only"> (se deschide în aceeași fereastră)</span>
                             </a>
@@ -1560,36 +2159,128 @@ border-radius: 4px;
             <div id="main-content" class="page-content" role="region" aria-label="Conținut pagină">
 
 <!-- Secțiune Conținut -->
-                <section id="contact-continut" class="sectiune-continut" aria-label="Secțiune Conținut">
+                <section id="program-continut" class="sectiune-continut" aria-label="Secțiune Conținut">
+                    <h2 class="sr-only">Program de lucru</h2>
 
-                    <section id="contact-imagine" class="wrap-4 wrap-show" aria-label="Imagine Contact">
-                        <div id="imagine-contact" class="content-imagine wrap-size" role="img">
-                           <img src="https://github.com/scoalanicualbu/website/blob/main/contact/baloane.png?raw=true" alt="Elevi și baloane pe terenul de sport al Școlii Gimnaziale „Nicu Albu” Piatra Neamț">
+                    <section id="program-imagine" class="wrap-3 wrap-show" aria-label="Imagine Program de lucru">
+                        <div id="imagine-lucru" class="content-imagine wrap-size">
+                           <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/intrare.png?raw=true" alt="">
                         </div>
                     </section>
 
-                    <article id="contact-date" class="wrap-8 wrap-down" role="region" aria-labelledby="contact-label">
-                        <h2 id="contact-label" class="sr-only" >Contact</h2>
-	
-                        <h2 class="citat-3">ȘCOALA GIMNAZIALĂ „NICU ALBU” PIATRA NEAMȚ</h2>
-                        <p><b>Adresă</b>: Strada Ecoului, Numărul 5, Municipiul Piatra-Neamț, Județul Neamț</p>
-                        <p><b>Cod poștal</b>: 610 076</p>
-                        <p><b>Telefon</b>: 0233 218 177</p>
-                        <p><b>Fax</b>: 0233 210 651</p>
-                        <p><b>e-Mail</b>: scoalazece@yahoo.com</p>
+                    <section id="program-contain" class="wrap-92 wrap-down" aria-labelledby="program-label">
+                        <h2 id="program-label" class="sr-only" aria-hidden="true">Program:</h2>
 
-                    </article>
+                        <section id="program-secretariat" class="wrap-1 wrap-down" aria-labelledby="secretariat-label">
 
-                    <section id="contact-localizare" class="wrap-12" aria-label="Localizare Contact">
-                        <div id="localizare-contact" class="content-imagine zoom">
-                           <img src="https://github.com/scoalanicualbu/website/blob/main/contact/localizare.png?raw=true" alt="Localizarea pe harta Municipiului Piatra-Neamț a Școlii Gimnaziale „Nicu Albu” Piatra Neamț">
-                        </div>
+                            <h2 id="secretariat-label">PROGRAM DE LUCRU CU PUBLICUL</h2>
+                            <h3>Compartimentul Secretariat<br>Compartimentul Administrativ-Financiar</h3>
+                            <p>Aprobat în ședința Consiliului de Administrație din data de 23.09.2025</p>
+
+                            <div id="tabel-secretariat" class="content-tabel">
+                                <table border="1" aria-labelledby="secretariat-descriere">
+                                    <caption class="sr-only">
+                                        Program de lucru cu publicul
+                                    </caption>
+                                    <colgroup>
+                                        <col style="width: 40%;">
+                                        <col style="width: 60%;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Ziua</th>
+                                            <th scope="col">Intervalul orar</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Luni</th>
+                                            <td>08:30 - 12:30</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Marți</th>
+                                            <td>12:00 - 16:00</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Miercuri</th>
+                                            <td>08:30 - 12:30</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Joi</th>
+                                            <td>12:00 - 16:00</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Vineri</th>
+                                            <td>08:30 - 12:30</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot class="sr-only">
+                                        <tr>
+                                            <td colspan="2"></td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                                <div id="secretariat-descriere" class="nota-1 sr-only" role="note">
+                                    Notă: Tabelul afișează zilele săptămânii și intervalele orare de lucru cu publicul pentru Compartimentul Secretariat și Compartimentul Administrativ-Financiar.
+                                </div>
+                            </div>
+                        </section>
+
+                        <section id="program-director" class="wrap-1 wrap-down" aria-labelledby="director-label">
+
+                            <h2 id="director-label">PROGRAM DE AUDIENȚE LA DIRECTOR</h2>
+                            <p>Aprobat în ședința Consiliului de Administrație din data de 23.09.2025</p>
+
+                            <div id="tabel-director" class="content-tabel">
+                                <table border="1" aria-labelledby="director-descriere">
+                                    <caption class="sr-only">
+                                        Program de audiențe la director
+                                    </caption>
+                                    <colgroup>
+                                        <col style="width: 40%;">
+                                        <col style="width: 60%;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Ziua</th>
+                                            <th scope="col">Intervalul orar</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Luni</th>
+                                            <td>10:00 - 13:00</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Marți</th>
+                                            <td>11:00 - 13:00</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">Joi</th>
+                                            <td>14:00 - 15:30</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot class="sr-only">
+                                        <tr>
+                                            <td colspan="2"></td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                                <div id="director-descriere" class="nota-1 sr-only" role="note">
+                                    Notă: Tabelul afișează zilele săptămânii și intervalele orare de audiențe la director.
+                                </div>
+                            </div>
+                            <div id="director-precizari" class="nota-2" role="note">
+                                Pentru audiențe, înscrierile se fac la numărul de telefon 0233 218 177, pe adresa de e-mail scoalazece@yahoo.com sau la secretariatul unității.
+                            </div>
+                        </section>
+
                     </section>
 
                 </section>
 
 <!-- Secțiune Legături -->
-                <section id="contact-legaturi" class="sectiune-legaturi" aria-label="Secțiune Legături">
+                <section id="program-legaturi" class="sectiune-legaturi" aria-label="Secțiune Legături">
                     <h2 class="sr-only">Legături:</h2>
 
                     <ul>                    
@@ -1741,8 +2432,8 @@ border-radius: 4px;
 
 // Calculare spațiere prin interpolare liniară
             function getGap() {
-                const maxGap = 2;
-                const minGap = 0.5;
+                const maxGap = 1;
+                const minGap = 1;
                 const maxVW = 2160;
                 const minVW = 300;
                 const VW = window.innerWidth;
@@ -1855,7 +2546,7 @@ border-radius: 4px;
                 });
             }
 
-// Setare înălțime imagini, "Program de lucru", "Contact"
+// Setare înălțime imagini, "Program de lucru", "Contact", "Personal"
             function updateImagine(divId, imgSelector) {
                 const divElement = document.getElementById(divId);
                 const container = document.querySelector(imgSelector);
@@ -1878,7 +2569,8 @@ border-radius: 4px;
             }
             const imaginiParametri = [
                 ['program-secretariat', '#imagine-lucru'],
-                ['contact-date', '#imagine-contact']
+                ['contact-date', '#imagine-contact'],
+                ['personal-text', '#imagine-personal']
             ];
             function updateImagini() {
                 imaginiParametri.forEach(([divId, imgSelector]) => {
@@ -1969,7 +2661,7 @@ border-radius: 4px;
 // Subsol pagină
             document.addEventListener('DOMContentLoaded', function() {
                 document.getElementById('year').textContent = new Date().getFullYear();
-                });
+            });
 
         </script>
 
