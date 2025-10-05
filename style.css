@@ -98,6 +98,12 @@ border: 0px solid #404040;
                     font-size: var(--sz3);
                 }
 
+                .hr {
+                    height: 1px;
+                    width: 100%;
+                    background-color: #404040;
+                }
+
                 p {
                     margin-top: 0;
                     margin-bottom: var(--szp);
