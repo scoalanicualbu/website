@@ -209,7 +209,7 @@
                 });
             }
 
-// Setare înălțime imagini, "Program de lucru", "Contact"
+// Setare înălțime imagini, "Program de lucru", "Contact", "Personal"
             function updateImagine(divId, imgSelector) {
                 const divElement = document.getElementById(divId);
                 const container = document.querySelector(imgSelector);
@@ -233,7 +233,8 @@
             const imaginiParametri = [
                 ['program-secretariat', '#imagine-lucru'],
                 ['contact-date', '#imagine-contact'],
-                ['personal-text', '#imagine-personal']
+                ['personal-text', '#imagine-personal'],
+                ['sindicat-contact', '#imagine-sindicat']
             ];
             function updateImagini() {
                 imaginiParametri.forEach(([divId, imgSelector]) => {
