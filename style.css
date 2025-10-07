@@ -1440,6 +1440,7 @@ border-radius: 4px;
 
                         .wrap-size {
                             height: 0;
+                            display: none;
                         }
 
                         .wrap-show {
