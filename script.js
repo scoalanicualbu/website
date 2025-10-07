@@ -1,3 +1,8 @@
+// Subsol pagină
+            document.addEventListener('DOMContentLoaded', function() {
+                document.getElementById('year').textContent = new Date().getFullYear();
+            });
+
 // Secțiune Meniu
 
 // Actualizare stare Meniu
@@ -320,12 +325,4 @@
                     translateY = (container.clientHeight - img.offsetHeight * scale) / 2;
                 }
             updateTransform();
-            });
-
-// Subsol pagină
-            document.addEventListener('DOMContentLoaded', function() {
-                const yearSpan = document.getElementById('year');
-                if (yearSpan) {
-                    yearSpan.textContent = new Date().getFullYear();
-                }
             });
