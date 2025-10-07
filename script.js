@@ -219,20 +219,22 @@
                 const divElement = document.getElementById(divId);
                 const container = document.querySelector(imgSelector);
                 if (!divElement || !container) return;
-                    const img = container.querySelector('img');
-                    if (!img) return;
+                const img = container.querySelector('img');
+                if (!img) return;
+                const finalizeResize = () => {
                     if (img.complete && img.naturalWidth !== 0) {
                         img.style.display = 'none';
                         const height = divElement.offsetHeight;
                         img.style.height = height + 'px';
                         img.style.display = 'block';
-                    } else {
-                        img.onload = () => {
-                            img.style.display = 'none';
-                            const height = divElement.offsetHeight;
-                            img.style.height = height + 'px';
-                            img.style.display = 'block';
-                        };
+                    }
+                };
+                if (img.complete && img.naturalWidth !== 0) {
+                    finalizeResize();
+                } else {
+                    img.onload = () => {
+                        finalizeResize();
+                    };
                 }
             }
             const imaginiParametri = [
