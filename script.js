@@ -221,9 +221,9 @@
                 if (!divElement || !container) return;
                 const img = container.querySelector('img');
                 if (!img) return;
+                img.style.display = 'none';
                 const finalizeResize = () => {
                     if (img.complete && img.naturalWidth !== 0) {
-                        img.style.display = 'none';
                         const height = divElement.offsetHeight;
                         img.style.height = height + 'px';
                         img.style.display = 'block';
