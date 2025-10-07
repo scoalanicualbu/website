@@ -226,7 +226,7 @@
                     if (img.complete && img.naturalWidth !== 0) {
                         const height = divElement.offsetHeight;
                         img.style.height = height + 'px';
-                        img.style.display = 'block';
+                        img.style.display = '';
                     }
                 };
                 if (img.complete && img.naturalWidth !== 0) {
