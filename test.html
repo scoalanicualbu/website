@@ -183,6 +183,8 @@ border: 0px solid #404040;
                     clip: rect(0, 0, 0, 0);
                     overflow: hidden;
                     white-space: nowrap;
+                    color: #000000;
+                    background-color: #FFFFFF;
                 }
 
 /* Sari la Conținut */
@@ -194,7 +196,7 @@ border: 0px solid #404040;
                     z-index: 100;
                     text-decoration: none;
                     color: #FFFFFF;
-                    background-color: #404040;
+                    background-color: #000000;
                 }
 
                     .skip-link:focus {
@@ -239,21 +241,29 @@ border-right: 1px solid #404040;
                     }
 
                     #menu-toggle {
+border: 1px solid #404040;
+border-radius: 4px;
                         position: fixed;
                         top: 10px;
                         left: 10px;
                         z-index: 9999;
-                        padding-bottom: 0.8rem;
+                        padding-bottom: 0.9rem;
                         width: 2.8rem;
                         height: 2.8rem;
                         display: none;
-                        border: none;
                         justify-content: center;
                         align-items: center;
-                        font-size: 2rem;
+                        font-size: 1.9rem;
                         cursor: pointer;
-                        background: transparent;
+                        color: #000000;
+                        background: #FFFFFF;
                     }
+
+                        #menu-toggle:hover {
+border: 1px solid #000000;
+border-radius: 4px;
+                            background-color: #DCDCDC;
+                        }
 
                     aside.show + #menu-toggle {
                         display: none;
@@ -1046,7 +1056,7 @@ border-radius: 4px;
                                     max-width: 100%;
                                     height: 100%;
                                     display: block;
-                                    object: fit: cover;
+                                    object-fit: cover;
                                     background-color: #FFFFFF;
                                 }
 
@@ -1082,7 +1092,7 @@ border-radius: 4px;
                                     max-width: 100%;
                                     height: 100%;
                                     display: block;
-                                    object: fit: cover;
+                                    object-fit: cover;
                                     background-color: #FFFFFF;
                                 }
 
@@ -1118,7 +1128,7 @@ border-radius: 4px;
                                     max-width: 100%;
                                     height: 100%;
                                     display: block;
-                                    object: fit: cover;
+                                    object-fit: cover;
                                     background-color: #FFFFFF;
                                 }
 
@@ -1154,7 +1164,7 @@ border-radius: 4px;
                                     max-width: 100%;
                                     height: 100%;
                                     display: block;
-                                    object: fit: cover;
+                                    object-fit: cover;
                                     background-color: #FFFFFF;
                                 }
 
@@ -1272,7 +1282,7 @@ border-radius: 4px;
                             display: flex;
                             flex-direction: column;
                             flex: 1;
-                            align-items: left;
+                            align-items: start;
                             text-align: center;
                         }
 
@@ -2081,8 +2091,10 @@ border-radius: 4px;
 
     <body>
 
+        <h1 class="sr-only">Școala Gimnazială „Nicu Albu” Piatra Neamț, Pagina „Prezentare”</h1>
+
 <!-- Link "Sari la conținut" -->
-        <a href="#main-content" id="skipToContinut" target="_self" class="skip-link">
+        <a href="#main-content" id="skipToContinut" class="skip-link">
             Mergi la conținutul paginii
             <span class="sr-only"> (se deschide în aceeași fereastră)</span>
         </a>
@@ -2093,23 +2105,30 @@ border-radius: 4px;
             <header>
 
 <!-- Siglă -->
-                <section id="sigla" aria-label="Siglă">
+                <section id="sigla" aria-label="Sigla școlii">
+
                     <h2 class="side-name sr-only">Sigla școlii</h2>
+
                     <div class="side-logo">
                         <img src="https://github.com/scoalanicualbu/website/blob/main/sigla.png?raw=true" alt="Sigla Școlii Gimnaziale „Nicu Albu” Piatra Neamț">
                     </div>
+
                 </section>
 
 <!-- Denumire -->
-                <section id="denumire" aria-label="Denumire școală">
+                <section id="denumire" aria-label="Denumirea școlii">
+
                     <h2 class="side-name sr-only">Denumirea școlii</h2>
+
                     <p class="side-name">Școala Gimnazială<br>„Nicu Albu”<br>Piatra Neamț</p>
+
                 </section>
 
             </header>
 
 <!-- Meniu site -->
             <nav id="meniu-site" class="side-menu" aria-label="Meniu site">
+
                 <ul>
                     <li>
                         <a href="prezentare.html" class="active" aria-current="page">
@@ -2196,22 +2215,22 @@ border-radius: 4px;
                         </a>
                     </li>
                 </ul>
+
             </nav>
 
         </aside>
 
 <!-- Buton Meniu -->
-        <button id="menu-toggle" aria-label="Buton Meniu site" aria-expanded="false" aria-controls="main-menu" aria-haspopup="true" tabindex="0">
+        <button id="menu-toggle" type="button" aria-label="Buton Meniu site" aria-expanded="false" aria-controls="main-menu" aria-haspopup="menu" tabindex="0">
             &#9776;
         </button>
 
 <!-- CONȚINUT -->
 
 <!-- Banner -->
-        <header id="banner" class="banner" role="banner" aria-label="Banner Imaginea intrării în școală">
+        <header id="banner" class="banner" role="banner" aria-label="Banner - Imaginea intrării principale în Școala Gimnazială „Nicu Albu” Piatra Neamț">
 
             <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/intrare.png?raw=true" alt="Imaginea intrării principale în Școala Gimnazială „Nicu Albu” Piatra Neamț">
-            <h1 class="sr-only">Școala Gimnazială „Nicu Albu” Piatra Neamț</h1>
 
         </header>
 
@@ -2221,6 +2240,7 @@ border-radius: 4px;
 
 <!-- Meniu pagină -->
                 <nav id="meniu-pagina" class="page-menu" aria-label="Meniu pagină">
+
                     <ul class="patru">
                         <li>
                             <a href="prezentare/istoric.html">
@@ -2247,6 +2267,7 @@ border-radius: 4px;
                             </a>
                         </li>
                     </ul>    
+
                 </nav>
 
             </header>
@@ -2255,14 +2276,18 @@ border-radius: 4px;
             <div id="main-content" class="page-content" role="region" tabindex="-1" aria-label="Conținut pagină">
 
 <!-- Secțiune Text -->
-                <section id="prezentare-text" class="sectiune-text" aria-labelledby="prezentare-text-label">
+                <section id="prezentare-text" class="sectiune-text" aria-labelledby="prezentare-text-label-1 prexentare-text-label-2">
 
                    <header>
-                        <h2 id="prezentare-text-label" class="citat-1">Motto:</h2>
-                        <p class="citat-2">Suntem o familie! Împreună construim, învățăm, inovăm! Suntem o școală deschisă, pentru comunitate!</p>
+
+                        <h2 id="prezentare-text-label-1" class="citat-1">Motto:</h2>
+
+                        <p id="prezentare-text-label-2" class="citat-2">Suntem o familie! Împreună construim, învățăm, inovăm! Suntem o școală deschisă, pentru comunitate!</p>
+
                     </header>
 
                     <article>
+
                         <h3 class="sr-only">Prezentare</h3>
 
                         <div class="coloane">
@@ -2289,7 +2314,7 @@ border-radius: 4px;
 
                     <ul>
                         <li>
-                            <a href="https://www.scoalanicualbu.ro/comunicari" target="_new" rel="noopener noreferrer">
+                            <a href="https://www.scoalanicualbu.ro/comunicari" target="_blank" rel="noopener noreferrer" aria-label="Anunț - Festivitatea de deschidere a anului școlar 2025-2026 (se deschide într-o nouă fereastră)">
                                 Anunț - Festivitatea de deschidere a anului școlar 2025-2026
                                 <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
                             </a>
@@ -2305,31 +2330,31 @@ border-radius: 4px;
 	
                     <ul>                    
                         <li>
-                            <a href="https://www.edu.ro" target="_new" rel="noopener noreferrer" aria-labelledby="mec">
+                            <a href="https://www.edu.ro" target="_blank" rel="noopener noreferrer" aria-labelledby="mec pagina-mec">
                                 <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/mec.png?raw=true" alt="Sigla Ministerului Educației și Cercetării">
                                 <div id="mec" class="text">Ministerul Educației și Cercetării</div>
-                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
+                                <span id="pagina-mec" class="sr-only"> (se deschide într-o nouă fereastră)</span>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.isjneamt.ro" target="_new" rel="noopener noreferrer" aria-labelledby="isjneamt">
+                            <a href="https://www.isjneamt.ro" target="_blank" rel="noopener noreferrer" aria-labelledby="isjneamt pagina-isjneamt">
                                 <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/isjneamt.png?raw=true" alt="Sigla Inspectoratului Școlar Județean Neamț">
                                 <div id="isjneamt" class="text">Inspectoratul Școlar Județean Neamț</div>
-                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
+                                <span id="pagina-isjneamt" class="sr-only"> (se deschide într-o nouă fereastră)</span>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.cjrae-neamt.ro" target="_new" rel="noopener noreferrer" aria-labelledby="cjraeneamt">
+                            <a href="https://www.cjrae-neamt.ro" target="_blank" rel="noopener noreferrer" aria-labelledby="cjraeneamt pagina-cjraeneamt">
                                 <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/cjraeneamt.png?raw=true" alt="Sigla Centrului Județean de Resurse și Asistență Educațională Neamț">
                                 <div id="cjraeneamt" class="text">Centrul Județean de Resurse și Asistență Educațională Neamț</div>
-                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
+                                <span id="pagina-cjraeneamt"class="sr-only"> (se deschide într-o nouă fereastră)</span>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.ccdneamt.ro" target="_new" rel="noopener noreferrer" aria-labelledby="ccdneamt">
+                            <a href="https://www.ccdneamt.ro" target="_blank" rel="noopener noreferrer" aria-labelledby="ccdneamt pagina-ccdneamt">
                                 <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/ccdneamt.png?raw=true" alt="Sigla Casei Corpului Didactic Neamț">
                                 <div id="ccdneamt" class="text">Casa Corpului Didactic Neamț</div>
-                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
+                                <span id="pagina-ccdneamt" class="sr-only"> (se deschide într-o nouă fereastră)</span>
                             </a>
                         </li>
                     </ul>
@@ -2341,7 +2366,7 @@ border-radius: 4px;
         </main>
 
 <!-- SUBSOL -->
-        <footer class="footer" role="contentinfo" aria-label="Subsol">
+        <footer class="footer" role="contentinfo" aria-label="Subsol pagină">
 
             <div class="footer-informatii">
                 <span>&copy; 1993-<span id="year"></span> Școala Gimnazială „Nicu Albu” Piatra Neamț</span>
