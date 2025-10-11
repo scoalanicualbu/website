@@ -2628,39 +2628,43 @@ border-radius: 4px;
 // Zoom și translatare imagine, "Contact"
             const container = document.querySelector('.zoom');
             const img = container ? container.querySelector('img') : null;
-            let scale = 1;
-            let translateX = 0;
-            let translateY = 0;
-            const minScale = 1;
-            const maxScale = 4;
-            function updateTransform() {
-                img.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
-            }
-            function limitPosition() {
-                if (!container || !img) return;
-                const containerWidth = container.clientWidth;
-                const containerHeight = container.clientHeight;
-                const imgWidth = img.offsetWidth * scale;
-                const imgHeight = img.offsetHeight * scale;
-                if (imgWidth <= containerWidth) {
-                    translateX = (containerWidth - imgWidth) / 2;
-                } else {
-                    const minX = containerWidth - imgWidth;
-                    if (translateX > 0) translateX = 0;
-                    if (translateX < minX) translateX = minX;
+
+            if (container && img) {
+                let scale = 1;
+                let translateX = 0;
+                let translateY = 0;
+                const minScale = 1;
+                const maxScale = 4;
+
+                function updateTransform() {
+                    img.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
                 }
-                if (imgHeight <= containerHeight) {
-                    translateY = (containerHeight - imgHeight) / 2;
-                } else {
-                    const minY = containerHeight - imgHeight;
-                    if (translateY > 0) translateY = 0;
-                    if (translateY < minY) translateY = minY;
+
+                function limitPosition() {
+                    const containerWidth = container.clientWidth;
+                    const containerHeight = container.clientHeight;
+                    const imgWidth = img.offsetWidth * scale;
+                    const imgHeight = img.offsetHeight * scale;
+                    if (imgWidth <= containerWidth) {
+                        translateX = (containerWidth - imgWidth) / 2;
+                    } else {
+                        const minX = containerWidth - imgWidth;
+                        if (translateX > 0) translateX = 0;
+                        if (translateX < minX) translateX = minX;
+                    }
+                    if (imgHeight <= containerHeight) {
+                        translateY = (containerHeight - imgHeight) / 2;
+                    } else {
+                        const minY = containerHeight - imgHeight;
+                        if (translateY > 0) translateY = 0;
+                        if (translateY < minY) translateY = minY;
+                    }
                 }
-            }
-            let isDragging = false;
-            let startX = 0;
-            let startY = 0;
-            if (img) {
+
+                let isDragging = false;
+                let startX = 0;
+                let startY = 0;
+
                 img.style.cursor = 'grab';
                 img.addEventListener('mousedown', (e) => {
                     e.preventDefault();
@@ -2669,26 +2673,27 @@ border-radius: 4px;
                     startY = e.clientY;
                     img.style.cursor = 'grabbing';
                 });
-            }
-            document.addEventListener('mouseup', () => {
-                if (isDragging) {
-                    isDragging = false;
-                    img.style.cursor = 'grab';
-                }
-            });
-            document.addEventListener('mousemove', (e) => {
-                if (isDragging) {
-                    const dx = e.clientX - startX;
-                    const dy = e.clientY - startY;
-                    translateX += dx;
-                    translateY += dy;
-                    limitPosition();
-                    updateTransform();
-                    startX = e.clientX;
-                    startY = e.clientY;
-                }
-            });
-            if (container) {
+
+                document.addEventListener('mouseup', () => {
+                    if (isDragging) {
+                        isDragging = false;
+                        img.style.cursor = 'grab';
+                    }
+                });
+
+                document.addEventListener('mousemove', (e) => {
+                    if (isDragging) {
+                        const dx = e.clientX - startX;
+                        const dy = e.clientY - startY;
+                        translateX += dx;
+                        translateY += dy;
+                        limitPosition();
+                        updateTransform();
+                        startX = e.clientX;
+                        startY = e.clientY;
+                    }
+                });
+
                 container.addEventListener('wheel', (e) => {
                     e.preventDefault();
                     const containerRect = container.getBoundingClientRect();
