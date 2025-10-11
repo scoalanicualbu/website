@@ -2413,67 +2413,6 @@ border-radius: 4px;
                     }
             }
 
-// Funcții de inițializare
-
-// Inițializare setări la încărcare pagină
-            window.addEventListener('load', () => {
-                updateMeniu();
-                updateGap();
-                updateImagini();
-                initializeParams();
-                potrivesteTexte();
-                limitPosition();
-                updateTransform();
-            });
-
-// Inițializare setări la redimensionare pagină
-            window.addEventListener('resize', () => {
-                updateMeniu();
-                updateGap();
-                updateImagini();
-                potrivesteTexte();
-            });
-
-// Funcții de gestionare evenimente
-
-// Afișare sau ascundere Meniu la click pe buton
-            document.getElementById('menu-toggle').addEventListener('click', () => {
-                const aside = document.querySelector('aside');
-                aside.classList.toggle('show');
-                updateButton();
-            });
-
-// Gestionare apăsare tastă CTRL
-            const width = window.innerWidth;
-            let ctrlToggleDone = false;
-            document.addEventListener('keydown', (e) => {
-                if (e.key === 'Control') {
-                    if (window.innerWidth < 1367) {
-                        e.preventDefault();
-                        if (!ctrlToggleDone) {
-                            const aside = document.querySelector('aside');
-                            aside.classList.toggle('show');
-                            updateButton();
-                            ctrlToggleDone = true;
-                        }
-                    }
-                }
-            });
-
-// Gestionare eliberare tastă CTRL
-            document.addEventListener('keyup', (e) => {
-                if (e.key === 'Control') {
-                    ctrlToggleDone = false;
-                }
-            });
-
-// Blocare comportament implicit zoom la apăsarea tastei CTRL împreună cu scroll la maus
-            document.addEventListener('wheel', (e) => {
-                if (e.ctrlKey) {
-                    e.preventDefault();
-                }
-            }, { passive: false });
-
 // Secțiune Conținut
 
 // Calculare spațiere prin interpolare liniară
@@ -2596,29 +2535,32 @@ border-radius: 4px;
             function updateImagine(divId, imgSelector) {
                 const divElement = document.getElementById(divId);
                 const container = document.querySelector(imgSelector);
+
                 if (!divElement || !container) return;
-                    const img = container.querySelector('img');
-                    if (!img) return;
-                    if (img.complete && img.naturalWidth !== 0) {
+                const img = container.querySelector('img');
+                if (!img) return;
+                if (img.complete && img.naturalWidth !== 0) {
+                    img.style.display = 'none';
+                    const height = divElement.offsetHeight;
+                    img.style.height = height + 'px';
+                    img.style.display = 'block';
+                } else {
+                    img.onload = () => {
                         img.style.display = 'none';
                         const height = divElement.offsetHeight;
                         img.style.height = height + 'px';
                         img.style.display = 'block';
-                    } else {
-                        img.onload = () => {
-                            img.style.display = 'none';
-                            const height = divElement.offsetHeight;
-                            img.style.height = height + 'px';
-                            img.style.display = 'block';
-                        };
+                    };
                 }
             }
+
             const imaginiParametri = [
                 ['program-secretariat', '#imagine-lucru'],
                 ['contact-date', '#imagine-contact'],
                 ['personal-text', '#imagine-personal'],
                 ['sindicat-contact', '#imagine-sindicat']
             ];
+
             function updateImagini() {
                 imaginiParametri.forEach(([divId, imgSelector]) => {
                     updateImagine(divId, imgSelector);
@@ -2626,22 +2568,26 @@ border-radius: 4px;
             }
 
 // Zoom și translatare imagine, "Contact"
-document.addEventListener('DOMContentLoaded', () => {
-            const container = document.querySelector('.zoom');
-            const img = container ? container.querySelector('img') : null;
 
-            if (container && img) {
-                let scale = 1;
-                let translateX = 0;
-                let translateY = 0;
-                const minScale = 1;
-                const maxScale = 4;
+// Variabile globale pentru zoom și translatare
+            let scale = 1;
+            let translateX = 0;
+            let translateY = 0;
+            const minScale = 1;
+            const maxScale = 4;
+
+// Elemente globale
+let container = null;
+let img = null;
 
                 function updateTransform() {
+    if (img) {
                     img.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
                 }
+}
 
                 function limitPosition() {
+    if (!container || !img) return;
                     const containerWidth = container.clientWidth;
                     const containerHeight = container.clientHeight;
                     const imgWidth = img.offsetWidth * scale;
@@ -2662,6 +2608,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 }
 
+document.addEventListener('DOMContentLoaded', () => {
+            const container = document.querySelector('.zoom');
+            const img = container ? container.querySelector('img') : null;
+    if (!container || !img) return;
                 let isDragging = false;
                 let startX = 0;
                 let startY = 0;
@@ -2715,7 +2665,71 @@ document.addEventListener('DOMContentLoaded', () => {
                 updateTransform();
                 });
             }
+    // Inițializare poziție și transformare
+    limitPosition();
+    updateTransform();
 });
+
+// Funcții de inițializare
+
+// Inițializare setări la încărcare pagină
+            window.addEventListener('load', () => {
+                updateMeniu();
+                updateGap();
+                updateImagini();
+                initializeParams();
+                potrivesteTexte();
+                limitPosition();
+                updateTransform();
+            });
+
+// Inițializare setări la redimensionare pagină
+            window.addEventListener('resize', () => {
+                updateMeniu();
+                updateGap();
+                updateImagini();
+                potrivesteTexte();
+            });
+
+// Funcții de gestionare evenimente
+
+// Afișare sau ascundere Meniu la click pe buton
+            document.getElementById('menu-toggle').addEventListener('click', () => {
+                const aside = document.querySelector('aside');
+                aside.classList.toggle('show');
+                updateButton();
+            });
+
+// Gestionare apăsare tastă CTRL
+            const width = window.innerWidth;
+            let ctrlToggleDone = false;
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Control') {
+                    if (window.innerWidth < 1367) {
+                        e.preventDefault();
+                        if (!ctrlToggleDone) {
+                            const aside = document.querySelector('aside');
+                            aside.classList.toggle('show');
+                            updateButton();
+                            ctrlToggleDone = true;
+                        }
+                    }
+                }
+            });
+
+// Gestionare eliberare tastă CTRL
+            document.addEventListener('keyup', (e) => {
+                if (e.key === 'Control') {
+                    ctrlToggleDone = false;
+                }
+            });
+
+// Blocare comportament implicit zoom la apăsarea tastei CTRL împreună cu scroll la maus
+            document.addEventListener('wheel', (e) => {
+                if (e.ctrlKey) {
+                    e.preventDefault();
+                }
+            }, { passive: false });
 
         </script>
 
