@@ -122,9 +122,11 @@ border: 0px solid #404040;
                     padding: 0;
                     width: 1px;
                     height: 1px;
-                    clip: rect(0, 0, 0, 0);
+                    clip-path: inset(100%);
                     overflow: hidden;
                     white-space: nowrap;
+                    color: #000000;
+                    background-color: #FFFFFF;
                 }
 
 /* Sari la Conținut */
@@ -136,7 +138,7 @@ border: 0px solid #404040;
                     z-index: 100;
                     text-decoration: none;
                     color: #FFFFFF;
-                    background-color: #404040;
+                    background-color: #000000;
                 }
 
                     .skip-link:focus {
@@ -177,25 +179,32 @@ border-right: 1px solid #404040;
                         display: flex;
                         opacity: 1;
                         transform: translateX(0);
-                        pointer-events: auto;
                     }
 
                     #menu-toggle {
+border: 1px solid #404040;
+border-radius: 4px;
                         position: fixed;
                         top: 10px;
                         left: 10px;
                         z-index: 9999;
-                        padding-bottom: 0.8rem;
+                        padding-bottom: 0.9rem;
                         width: 2.8rem;
                         height: 2.8rem;
                         display: none;
-                        border: none;
                         justify-content: center;
                         align-items: center;
-                        font-size: 2rem;
+                        font-size: 1.9rem;
                         cursor: pointer;
-                        background: transparent;
+                        color: #000000;
+                        background: #FFFFFF;
                     }
+
+                        #menu-toggle:hover {
+border: 1px solid #000000;
+border-radius: 4px;
+                            background-color: #DCDCDC;
+                        }
 
                     aside.show + #menu-toggle {
                         display: none;
@@ -988,7 +997,7 @@ border-radius: 4px;
                                     max-width: 100%;
                                     height: 100%;
                                     display: block;
-                                    object: fit: cover;
+                                    object-fit: cover;
                                     background-color: #FFFFFF;
                                 }
 
@@ -1024,7 +1033,7 @@ border-radius: 4px;
                                     max-width: 100%;
                                     height: 100%;
                                     display: block;
-                                    object: fit: cover;
+                                    object-fit: cover;
                                     background-color: #FFFFFF;
                                 }
 
@@ -1060,7 +1069,7 @@ border-radius: 4px;
                                     max-width: 100%;
                                     height: 100%;
                                     display: block;
-                                    object: fit: cover;
+                                    object-fit: cover;
                                     background-color: #FFFFFF;
                                 }
 
@@ -1096,7 +1105,7 @@ border-radius: 4px;
                                     max-width: 100%;
                                     height: 100%;
                                     display: block;
-                                    object: fit: cover;
+                                    object-fit: cover;
                                     background-color: #FFFFFF;
                                 }
 
@@ -1214,7 +1223,7 @@ border-radius: 4px;
                             display: flex;
                             flex-direction: column;
                             flex: 1;
-                            align-items: left;
+                            align-items: start;
                             text-align: center;
                         }
 
