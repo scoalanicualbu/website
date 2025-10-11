@@ -2609,8 +2609,8 @@ let img = null;
                 }
 
 document.addEventListener('DOMContentLoaded', () => {
-            const container = document.querySelector('.zoom');
-            const img = container ? container.querySelector('img') : null;
+            container = document.querySelector('.zoom');
+            img = container ? container.querySelector('img') : null;
     if (!container || !img) return;
                 let isDragging = false;
                 let startX = 0;
