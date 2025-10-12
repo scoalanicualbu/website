@@ -135,7 +135,7 @@ border: 0px solid #404040;
                     top: -40px;
                     left: 0;
                     padding: 8px;
-                    z-index: 100;
+                    z-index: 11;
                     text-decoration: none;
                     color: #FFFFFF;
                     background-color: #000000;
@@ -166,6 +166,7 @@ border-right: 1px solid #404040;
                     width: 100%;
                     max-width: var(--asz);
                     height: 100%;
+                    z-index: 10;
                     overflow-x: hidden;
                     scrollbar-width: none;
                     position: fixed;
@@ -187,7 +188,7 @@ border-radius: 4px;
                         position: fixed;
                         top: 10px;
                         left: 10px;
-                        z-index: 9999;
+                        z-index: 10;
                         padding-bottom: 0.9rem;
                         width: 2.8rem;
                         height: 2.8rem;
@@ -1544,7 +1545,7 @@ border-radius: 4px;
                                 cursor: grabbing;
                             }
 
-                            .zoom::scroll-button(up) img {
+                            .zoom.zoom-in img {
                                 cursor: zoom-in;
                             }
 
