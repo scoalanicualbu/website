@@ -12,8 +12,8 @@
                 --szp: 0.8rem;
                 --asz: 16rem;
                 --asu: 15rem;
-                --gap: 1rem;
-            }  
+                --skp: -2.72rem;
+            }
 
           * {
                 box-sizing: border-box;
@@ -134,7 +134,17 @@ border: 0px solid #404040;
                     position: absolute;
                     top: -40px;
                     left: 0;
-                    padding: 8px;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    margin-left: 0;
+                    margin-right: 0;
+                    padding-top: var(--pd3);
+                    padding-bottom: var(--pd3);
+                    padding-left: 0.5rem;
+                    padding-right: 0.5rem;
+                    display: inline-block;
+                    text-decoration: none;
+                    font-size: var(--sz3);
                     z-index: 11;
                     text-decoration: none;
                     color: #FFFFFF;
