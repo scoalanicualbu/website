@@ -12,7 +12,7 @@
                 --szp: 0.8rem;
                 --asz: 16rem;
                 --asu: 15rem;
-                --skp: -4rem;
+                --skp: -2.8rem;
             }
 
           * {
@@ -132,7 +132,7 @@ border: 0px solid #404040;
 /* Sari la Conținut */
                 .skip-link {
                     position: absolute;
-                    top: -40px;
+                    top: var(--skp);
                     left: 0;
                     margin-top: 0;
                     margin-bottom: 0;
