@@ -59,7 +59,9 @@
     <body>
 
         <section id="titlu" aria-labelledby="titlu-label">
-            <h1 id="titlu-label" class="sr-only">Școala Gimnazială „Nicu Albu” Piatra Neamț, Pagina „Prezentare”</h1>
+
+            <h1 id="titlu-label" class="sr-only">Școala Gimnazială „Nicu Albu” Piatra Neamț, Pagina „Program de lucru”</h1>
+
         </section>
 
 <!-- Link "Sari la conținut" -->
@@ -197,7 +199,7 @@
 
 
 <!-- Banner -->
-        <header id="banner" class="banner" role="banner">
+        <header id="banner" class="banner">
 
             <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/program.png?raw=true" alt="Imagine panoramică a Municipiului Piatra-Neamț, partea vestică, toamna">
 
@@ -247,21 +249,25 @@
 <!-- Secțiune Conținut -->
                 <section id="program-continut" class="sectiune-continut" aria-labelledby="continut-label">
 
-                    <h2 id="continut-label" class="sr-only">Program de lucru</h2>
+                   <header>
+
+                       <h2 id="continut-label" class="sr-only">Program de lucru</h2>
+
+                   </header>
 
                     <section id="program-imagine" class="wrap-3 wrap-show" aria-labelledby="imagine-label">
 
                         <h2 id="imagine-label" class="sr-only" >Imagine Program:</h2>
 
                         <div id="imagine-lucru" class="content-imagine wrap-size">
-                           <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/intrare.png?raw=true" alt="">
+                           <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/intrare.png?raw=true" alt="Intrarea principală în Școala Gimnazială „Nicu Albu” Piatra Neamț">
                         </div>
 
                     </section>
 
                     <section id="program-contain" class="wrap-92 wrap-down" aria-labelledby="contain-label">
 
-                        <h2 id="contain-label" class="sr-only" aria-hidden="true">Date Program:</h2>
+                        <h2 id="contain-label" class="sr-only">Date Program:</h2>
 
                         <section id="program-secretariat" class="wrap-1 wrap-down" aria-labelledby="secretariat-label">
 
@@ -272,6 +278,7 @@
                             <p>Aprobat în ședința Consiliului de Administrație din data de 23.09.2025</p>
 
                             <div id="tabel-secretariat" class="content-tabel">
+
                                 <table border="1" aria-labelledby="secretariat-descriere">
                                     <caption class="sr-only">
                                         Program de lucru cu publicul
@@ -314,9 +321,11 @@
                                         </tr>
                                     </tfoot>
                                 </table>
+
                                 <div id="secretariat-descriere" class="nota-1 sr-only" role="note">
                                     Notă: Tabelul afișează zilele săptămânii și intervalele orare de lucru cu publicul pentru Compartimentul Secretariat și Compartimentul Administrativ-Financiar.
                                 </div>
+
                             </div>
 
                         </section>
@@ -328,6 +337,7 @@
                             <p>Aprobat în ședința Consiliului de Administrație din data de 23.09.2025</p>
 
                             <div id="tabel-director" class="content-tabel">
+
                                 <table border="1" aria-labelledby="director-descriere">
                                     <caption class="sr-only">
                                         Program de audiențe la director
@@ -362,9 +372,11 @@
                                         </tr>
                                     </tfoot>
                                 </table>
+
                                 <div id="director-descriere" class="nota-1 sr-only" role="note">
                                     Notă: Tabelul afișează zilele săptămânii și intervalele orare de audiențe la director.
                                 </div>
+
                             </div>
                             <div id="director-precizari" class="nota-2" role="note">
                                 Pentru audiențe, înscrierile se fac la numărul de telefon 0233 218 177, pe adresa de e-mail scoalazece@yahoo.com sau la secretariatul unității.
@@ -379,7 +391,11 @@
 <!-- Secțiune Legături -->
                 <section id="prezentare-legaturi" class="sectiune-legaturi" aria-labelledby="legaturi-label">
 
-                    <h2 id="legaturi-label" class="sr-only">Legături utile:</h2>
+                    <header>
+
+                        <h2 id="legaturi-label" class="sr-only">Legături utile:</h2>
+
+                    </header>
 	
                     <ul>                    
                         <li>
@@ -419,11 +435,17 @@
         </main>
 
 <!-- SUBSOL -->
-        <footer class="footer" aria-label="Subsol pagină">
+        <footer class="footer" aria-labelledby="subsol-label">
 
-            <div class="footer-informatii">
-                <span>&copy; 1993-<span id="year"></span> Școala Gimnazială „Nicu Albu” Piatra Neamț</span>
-            </div>
+            <h2 id="subsol-label" class="sr-only">Subsol pagină</h2>
+
+            <section class="footer-informatii" aria-labelledby="copyright-label">
+
+                <h3 id="copyright-label" class="sr-only">Drepturi de autor</h3>
+
+                <p class="citat-0 c" >&copy; 1993-<time id="year" datetime="1993"></time> Școala Gimnazială „Nicu Albu” Piatra Neamț</p>
+
+            </section>
 
         </footer>
 
