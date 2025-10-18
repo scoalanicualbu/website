@@ -60,7 +60,11 @@
 
         <section id="titlu" aria-labelledby="titlu-label">
 
-            <h1 id="titlu-label" class="sr-only">Școala Gimnazială „Nicu Albu” Piatra Neamț, Pagina „Prezentare”</h1>
+            <header>
+
+                <h1 id="titlu-label" class="sr-only">Școala Gimnazială „Nicu Albu” Piatra Neamț, Pagina „Prezentare”</h1>
+
+            </header>
 
         </section>
 
@@ -77,7 +81,11 @@
 <!-- Siglă -->
                 <section id="sigla" aria-labelledby="sigla-label">
 
-                    <h2 id="sigla-label" class="side-name sr-only">Siglă școală</h2>
+                    <header>
+
+                        <h2 id="sigla-label" class="side-name sr-only">Siglă școală</h2>
+
+                    </header>
 
                     <div class="side-logo">
                         <img src="https://github.com/scoalanicualbu/website/blob/main/sigla.png?raw=true" alt="Sigla Școlii Gimnaziale „Nicu Albu” Piatra Neamț">
@@ -88,7 +96,11 @@
 <!-- Denumire -->
                 <section id="denumire" aria-labelledby="denumire-label">
 
-                    <h2 id="denumire-label" class="side-name sr-only">Denumire școală</h2>
+                    <header>
+
+                        <h2 id="denumire-label" class="side-name sr-only">Denumire școală</h2>
+
+                    </header>
 
                     <p class="side-name">Școala Gimnazială<br>„Nicu Albu”<br>Piatra Neamț</p>
 
@@ -280,7 +292,11 @@
 <!-- Secțiune Informații -->
                 <section id="prezentare-informatii" class="sectiune-informatii" aria-labelledby="informatii-label">
 
-                    <h2 id="informatii-label" class="citat-1">Noutăți:</h2>
+                    <header>
+
+                        <h2 id="informatii-label" class="citat-1">Noutăți:</h2>
+
+                    </header>
 
                     <ul>
                         <li>
@@ -296,7 +312,11 @@
 <!-- Secțiune Legături -->
                 <section id="prezentare-legaturi" class="sectiune-legaturi" aria-labelledby="legaturi-label">
 
-                    <h2 id="legaturi-label" class="sr-only">Legături utile:</h2>
+                    <header>
+
+                        <h2 id="legaturi-label" class="sr-only">Legături utile:</h2>
+
+                    </header>
 	
                     <ul>                    
                         <li>
@@ -336,11 +356,25 @@
         </main>
 
 <!-- SUBSOL -->
-        <footer class="footer" aria-label="Subsol pagină">
+        <footer class="footer" aria-labelledby="subsol-label">
 
-            <div class="footer-informatii">
-                <span>&copy; 1993-<span id="year"></span> Școala Gimnazială „Nicu Albu” Piatra Neamț</span>
-            </div>
+            <header>
+
+                <h2 id="subsol-label" class="sr-only">Subsol pagină</h2>
+
+            </header>
+
+            <section class="footer-informatii" aria-labelledby="copyright-label">
+
+                <header>
+
+                    <h3 id="copyright-label" class="sr-only">Drepturi de autor</h3>
+
+                </header>
+
+                <p class="citat-0 c" >&copy; 1993-<time id="year" datetime=""></time> Școala Gimnazială „Nicu Albu” Piatra Neamț</p>
+
+            </section>
 
         </footer>
 
