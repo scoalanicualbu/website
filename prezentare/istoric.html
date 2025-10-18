@@ -207,6 +207,7 @@
         <main id="istoric" class="content" aria-label="Conținut principal">
 
             <header>
+
 <!-- Meniu pagină -->
                 <nav id="meniu-pagina" class="page-menu" aria-label="Meniu pagină">
 
@@ -247,11 +248,15 @@
 <!-- Secțiune Text -->
                 <section id="istoric-text" class="sectiune-text" aria-labelledby="text-label">
 
-                    <h2 id="text-label" class="sr-only">Scurt istoric</h2>
+                   <header>
+
+                        <h2 id="text-label" class="sr-only">Scurt istoric</h2>
+
+                    </header>
 
                     <article aria-labelledby="istoric-label">
 
-                        <h2 id="istoric-label" class="sr-only">Anul școlar 2010-2011</h2>
+                        <h3 id="istoric-label" class="sr-only">Anul școlar 2010-2011</h3>
 
                         <div class="coloane">
                             <p>Şcoala Gimnazială „Nicu Albu” Piatra Neamț, cunoscută în lumea învăţământului nemţean drept prima unitate de învăţământ care a adoptat sistemul Step by Step, din anul școlar 2010-2011, poartă numele celui care a fost un mare om politic şi un la fel de mare primar al urbei de sub Pietricica - Nicu Albu.</p>
@@ -277,7 +282,11 @@
 <!-- Secțiune Informații -->
                 <section id="istoric-informatii" class="sectiune-informatii" aria-labelledby="informatii-label">
 
-                    <h2 id="informatii-label" class="citat-1">Noutăți:</h2>
+                    <header>
+
+                        <h2 id="informatii-label" class="citat-1">Noutăți:</h2>
+
+                    </header>
 
                     <ul class="coloane">
                         <li>
@@ -317,7 +326,11 @@
 <!-- Secțiune Legături -->
                 <section id="istoric-legaturi" class="sectiune-legaturi" aria-labelledby="legaturi-label">
 
-                    <h2  id="legaturi-label" class="sr-only">Legături utile:</h2>
+                    <header>
+
+                        <h2 id="legaturi-label" class="sr-only">Legături utile:</h2>
+
+                    </header>
 
                     <ul>                    
                         <li>
@@ -357,11 +370,17 @@
         </main>
 
 <!-- SUBSOL -->
-        <footer class="footer" aria-label="Subsol pagină">
+        <footer class="footer" aria-labelledby="subsol-label">
 
-            <div class="footer-informatii">
-                <span>&copy; 1993-<span id="year"></span> Școala Gimnazială „Nicu Albu” Piatra Neamț</span>
-            </div>
+            <h2 id="subsol-label" class="sr-only">Subsol pagină</h2>
+
+            <section class="footer-informatii" aria-labelledby="copyright-label">
+
+                <h3 id="copyright-label" class="sr-only">Drepturi de autor</h3>
+
+                <p class="citat-0 c" >&copy; 1993-<time id="year" datetime="1993"></time> Școala Gimnazială „Nicu Albu” Piatra Neamț</p>
+
+            </section>
 
         </footer>
 
