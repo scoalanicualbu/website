@@ -59,7 +59,13 @@
     <body>
 
         <section id="titlu" aria-labelledby="titlu-label">
-            <h1 id="titlu-label" class="sr-only">Școala Gimnazială „Nicu Albu” Piatra Neamț, Pagina „Prezentare”</h1>
+
+            <header>
+
+                <h1 id="titlu-label" class="sr-only">Școala Gimnazială „Nicu Albu” Piatra Neamț, Pagina „Circumscripție”</h1>
+
+            </header>
+
         </section>
 
 <!-- Link "Sari la conținut" -->
@@ -196,7 +202,7 @@
 <!-- CONȚINUT -->
 
 <!-- Banner -->
-                <header id="banner" class="banner" role="banner">
+                <header id="banner" class="banner">
 
                     <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/circumscriptie.png?raw=true" alt="Imagine panoramică a Cartierului Precista din Municipiul Piatra-Neamț">
 
@@ -246,8 +252,15 @@
 <!-- Secțiune Text -->
                 <section id="circumscriptie-text" class="sectiune-text" aria-labelledby="text-label">
 
-                    <article>
+                   <header>
+
                         <h2 id="text-label" class="sr-only">Circumscripție</h2>
+
+                    </header>
+
+                    <article class="citat-3" aria-labelledby="circumscriptie-label">
+
+                        <h3 id="circumscriptie-label" class="sr-only">Descriere:</h3>
 
                         <div class="coloane">
                             <p>Circumscripția școlară reprezintă totalitatea străzilor arondate unității de învățământ de către inspectoratul școlar.</p>
@@ -263,7 +276,11 @@
 <!-- Secțiune Informații -->
                 <section id="circumscriptie-informatii" class="sectiune-informatii" aria-labelledby="informatii-label">
 
-                    <h2 id="informatii-label" class="citat-1">Informații relevante:</h2>
+                    <header>
+
+                        <h2 id="informatii-label" class="citat-1">Informații relevante:</h2>
+
+                    </header>
 
                     <ul class="coloane">
                         <li>
@@ -327,7 +344,11 @@
 <!-- Secțiune Legături -->
                 <section id="prezentare-legaturi" class="sectiune-legaturi" aria-labelledby="legaturi-label">
 
-                    <h2 id="legaturi-label" class="sr-only">Legături utile:</h2>
+                    <header>
+
+                        <h2 id="legaturi-label" class="sr-only">Legături utile:</h2>
+
+                    </header>
 	
                     <ul>                    
                         <li>
@@ -367,11 +388,17 @@
         </main>
 
 <!-- SUBSOL -->
-        <footer class="footer" aria-label="Subsol pagină">
+        <footer class="footer" aria-labelledby="subsol-label">
 
-            <div class="footer-informatii">
-                <span>&copy; 1993-<span id="year"></span> Școala Gimnazială „Nicu Albu” Piatra Neamț</span>
-            </div>
+            <h2 id="subsol-label" class="sr-only">Subsol pagină</h2>
+
+            <section class="footer-informatii" aria-labelledby="copyright-label">
+
+                <h3 id="copyright-label" class="sr-only">Drepturi de autor</h3>
+
+                <p class="citat-0 c" >&copy; 1993-<time id="year" datetime="1993"></time> Școala Gimnazială „Nicu Albu” Piatra Neamț</p>
+
+            </section>
 
         </footer>
 
