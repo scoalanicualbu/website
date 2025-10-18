@@ -1716,6 +1716,10 @@ border-radius: 4px;
                         background-color: #FFFFFF;
                     }
 
+                    .c {
+                        text-align: center;
+                    }
+
 /* Scalare pagină */
                 @media (min-width: 3841px) {
                     aside {
