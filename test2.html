@@ -70,8 +70,8 @@
                 --szp: 0.8rem;
                 --asz: 16rem;
                 --asu: 15rem;
-                --gap: 1rem;
-            }  
+                --skp: -2.8rem;
+            }
 
           * {
                 box-sizing: border-box;
@@ -180,21 +180,33 @@ border: 0px solid #404040;
                     padding: 0;
                     width: 1px;
                     height: 1px;
-                    clip: rect(0, 0, 0, 0);
+                    clip-path: inset(100%);
                     overflow: hidden;
                     white-space: nowrap;
+                    color: #000000;
+                    background-color: #FFFFFF;
                 }
 
 /* Sari la Conținut */
                 .skip-link {
                     position: absolute;
-                    top: -40px;
+                    top: var(--skp);
                     left: 0;
-                    padding: 8px;
-                    z-index: 100;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    margin-left: 0;
+                    margin-right: 0;
+                    padding-top: var(--pd3);
+                    padding-bottom: var(--pd3);
+                    padding-left: 0.5rem;
+                    padding-right: 0.5rem;
+                    display: inline-block;
+                    text-decoration: none;
+                    font-size: var(--sz3);
+                    z-index: 11;
                     text-decoration: none;
                     color: #FFFFFF;
-                    background-color: #404040;
+                    background-color: #000000;
                 }
 
                     .skip-link:focus {
@@ -222,6 +234,7 @@ border-right: 1px solid #404040;
                     width: 100%;
                     max-width: var(--asz);
                     height: 100%;
+                    z-index: 10;
                     overflow-x: hidden;
                     scrollbar-width: none;
                     position: fixed;
@@ -235,25 +248,32 @@ border-right: 1px solid #404040;
                         display: flex;
                         opacity: 1;
                         transform: translateX(0);
-                        pointer-events: auto;
                     }
 
                     #menu-toggle {
+border: 1px solid #404040;
+border-radius: 4px;
                         position: fixed;
                         top: 10px;
                         left: 10px;
-                        z-index: 9999;
-                        padding-bottom: 0.8rem;
+                        z-index: 10;
+                        padding-bottom: 0.9rem;
                         width: 2.8rem;
                         height: 2.8rem;
                         display: none;
-                        border: none;
                         justify-content: center;
                         align-items: center;
-                        font-size: 2rem;
+                        font-size: 1.9rem;
                         cursor: pointer;
-                        background: transparent;
+                        color: #000000;
+                        background: #FFFFFF;
                     }
+
+                        #menu-toggle:hover {
+border: 1px solid #000000;
+border-radius: 4px;
+                            background-color: #DCDCDC;
+                        }
 
                     aside.show + #menu-toggle {
                         display: none;
@@ -286,6 +306,24 @@ border-radius: 50%;
                             display: block;
                             background-color: #FFFFFF;
                         }
+
+                    .info-logo {
+border: 1px solid #404040;
+border-radius: 4px;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        margin-left: 0;
+                        margin-right: 0;
+                        padding-top: 0;
+                        padding-bottom: 0;
+                        padding-left: 0.2rem;
+                        padding-right: 0.2rem;
+                        width: auto;
+                        line-height: 1rem;
+                        text-align: left;
+                        font-size: 0.9rem;
+                        background-color: #FFFFFF;
+                    }
 
 /* Denumire */
                     .side-name {
@@ -471,7 +509,11 @@ border-radius: 4px;
                                 grid-template-columns: repeat(3, 1fr);
                             }
 
-                            .page-menu .patru {
+                            .page-menu .patru-prezentare {
+                                grid-template-columns: repeat(4, 1fr);
+                            }
+
+                            .page-menu .patru-organigrama {
                                 grid-template-columns: repeat(4, 1fr);
                             }
 
@@ -516,6 +558,7 @@ border-radius: 4px;
                                     display: flex;
                                     align-items: center;
                                     justify-content: center;
+                                    text-align: center;
                                     text-decoration: none;
                                     font-size: var(--sz3);
                                     color: #404040;
@@ -930,6 +973,34 @@ border-radius: 4px;
                                 flex-grow: 1;
                             }
 
+                        .sectiune-comunicari ul.m {
+                            margin-top: 0;
+                            margin-bottom: 1.5rem;
+                            margin-left: 1rem;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            grid-template-columns: unset;
+                            list-style: disc;
+                            list-style-position: outside;
+                        }
+
+                            .sectiune-comunicari ul.m li {
+border: 0px solid #404040;
+border-radius: 4px;
+                                margin-top: 0;
+                                margin-bottom: -1rem;
+                                margin-left: 0;
+                                margin-right: 0;
+                                padding-top: 0;
+                                padding-bottom: 0;
+                                padding-left: 0;
+                                padding-right: 0;
+                                display: list-item;
+                            }
+
                         .sectiune-comunicari ol {
                             margin-top: 0;
                             margin-bottom: 0;
@@ -944,33 +1015,6 @@ border-radius: 4px;
                         }
 
                             .sectiune-comunicari ol li {
-border: 0px solid #404040;
-border-radius: 4px;
-                                margin-top: 0;
-                                margin-bottom: 0;
-                                margin-left: 0;
-                                margin-right: 0;
-                                padding-top: 0;
-                                padding-bottom: 0;
-                                padding-left: 0;
-                                padding-right: 0;
-                                display: list-item;
-                            }
-
-                        .sectiune-comunicari ol.m {
-                            margin-top: 0;
-                            margin-bottom: 0.5rem;
-                            margin-left: 1rem;
-                            margin-right: 0;
-                            padding-top: 0;
-                            padding-bottom: 0;
-                            padding-left: 0;
-                            padding-right: 0;
-                            list-style: disc;
-                            list-style-position: outside;
-                        }
-
-                            .sectiune-comunicari ol.m li {
 border: 0px solid #404040;
 border-radius: 4px;
                                 margin-top: 0;
@@ -1002,9 +1046,9 @@ border-radius: 4px;
                                 .sectiune-comunicari img {
 border: 1px solid #404040;
 border-radius: 4px;
-                                    margin-top: 0.2rem;
-                                    margin-bottom: -0.47rem;
-                                    margin-left: 0.2rem;
+                                    margin-top: 0;
+                                    margin-bottom: -0.67rem;
+                                    margin-left: 0;
                                     margin-right: 0.5rem;
                                     padding-top: 0;
                                     padding-bottom: 0;
@@ -1042,11 +1086,11 @@ border-radius: 4px;
                                     padding-bottom: 0;
                                     padding-left: 0;
                                     padding-right: 0;
-                                    width: auto;
+                                    width: 100%;
                                     max-width: 100%;
-                                    height: 100%;
+                                    height: auto;
                                     display: block;
-                                    object: fit: cover;
+                                    object-fit: cover;
                                     background-color: #FFFFFF;
                                 }
 
@@ -1082,7 +1126,7 @@ border-radius: 4px;
                                     max-width: 100%;
                                     height: 100%;
                                     display: block;
-                                    object: fit: cover;
+                                    object-fit: cover;
                                     background-color: #FFFFFF;
                                 }
 
@@ -1118,7 +1162,7 @@ border-radius: 4px;
                                     max-width: 100%;
                                     height: 100%;
                                     display: block;
-                                    object: fit: cover;
+                                    object-fit: cover;
                                     background-color: #FFFFFF;
                                 }
 
@@ -1154,21 +1198,77 @@ border-radius: 4px;
                                     max-width: 100%;
                                     height: 100%;
                                     display: block;
-                                    object: fit: cover;
+                                    object-fit: cover;
                                     background-color: #FFFFFF;
                                 }
+
+                                .sectiune-comunicari figure.i {
+border: 0px solid #404040;
+border-radius: 4px;
+                                    margin-top: 0.2rem;
+                                    margin-bottom: 0;
+                                    margin-left: 0.2rem;
+                                    margin-right: 0.5rem;
+                                    padding-top: 0;
+                                    padding-bottom: 0;
+                                    padding-left: 0;
+                                    padding-right: 0;
+                                    width: 5rem;
+                                    height: auto;
+                                    background-color: #FFFFFF;
+                                }
+
+                                    .sectiune-comunicari figcaption.i {
+border: 1px solid #404040;
+border-radius: 4px;
+                                        margin-top: 0.2rem;
+                                        margin-bottom: -0.28rem;
+                                        margin-left: 0;
+                                        margin-right: 0;
+                                        padding-top: 0;
+                                        padding-bottom: 0;
+                                        padding-left: 0.15rem;
+                                        padding-right: 0.1rem;
+                                        width: 5rem;
+                                        line-height: 1rem;
+                                        text-align: left;
+                                        font-size: 0.9rem;
+                                        background-color: #FFFFFF;
+                                    }
+
+                                .sectiune-comunicari figure.figure-1 img {
+                                    margin-bottom: -0.1rem;
+                                }
+
+                                    .sectiune-comunicari figcaption.caption-1 {
+border: 1px solid #404040;
+border-radius: 4px;
+                                        margin-top: 0;
+                                        margin-bottom: 0.5rem;
+                                        margin-left: 0;
+                                        margin-right: 0.1rem;
+                                        padding-top: 0;
+                                        padding-bottom: 0;
+                                        padding-left: 0.5rem;
+                                        padding-right: 0.5rem;
+                                        width: auto;
+                                        line-height: 1rem;
+                                        text-align: center;
+                                        font-size: 0.9rem;
+                                        background-color: #FFFFFF;
+                                    }
 
                                 .date {
 border: 1px solid #404040;
 border-radius: 4px;
-                                    margin-top: 0;
+                                    margin-top: 0.5rem;
                                     margin-bottom: 0.2rem;
                                     margin-left: 0.2rem;
                                     margin-right: 0;
                                     padding-top: 0;
                                     padding-bottom: 0;
-                                    padding-left: 0;
-                                    padding-right: 0;
+                                    padding-left: 0.19rem;
+                                    padding-right: 0.19rem;
                                     width: 5rem;
                                     text-align: center;
                                     font-size: 0.9rem;
@@ -1272,7 +1372,7 @@ border-radius: 4px;
                             display: flex;
                             flex-direction: column;
                             flex: 1;
-                            align-items: left;
+                            align-items: start;
                             text-align: center;
                         }
 
@@ -1492,6 +1592,25 @@ border-radius: 4px;
                             text-align: left;
                         }
 
+                            .wrap-12 img {
+border: 0px solid #404040;
+border-radius: 4px;
+                                margin-top: 0;
+                                margin-bottom: 0;
+                                margin-left: 0;
+                                margin-right: 0;
+                                padding-top: 0;
+                                padding-bottom: 0;
+                                padding-left: 0;
+                                padding-right: 0;
+                                width: 100%;
+                                max-width: 100%;
+                                height: auto;
+                                display: block;
+                                object-fit: cover;
+                                background-color: #FFFFFF;
+                            }
+
                         .wrap-down {
                             justify-content: flex-end;
                         }
@@ -1593,7 +1712,7 @@ border-radius: 4px;
                                 cursor: grabbing;
                             }
 
-                            .zoom::scroll-button(up) img {
+                            .zoom.zoom-in img {
                                 cursor: zoom-in;
                             }
 
@@ -1754,6 +1873,10 @@ border-radius: 4px;
                         background-color: #FFFFFF;
                     }
 
+                    .c {
+                        text-align: center;
+                    }
+
 /* Scalare pagină */
                 @media (min-width: 3841px) {
                     aside {
@@ -1771,7 +1894,7 @@ border-radius: 4px;
                 }
 
 /* comunicari-2 */
-                @media (min-width: 1367px)and (max-width: 3840px) {
+                @media (min-width: 1681px)and (max-width: 3840px) {
                     aside {
                         min-height: 100vh;
                     }
@@ -1789,10 +1912,35 @@ border-radius: 4px;
                     }
                 }
 
+/* page-menu 2 (organigrama) */
+                @media (min-width: 1367px)and (max-width: 1680px) {
+                    aside {
+                        min-height: 100vh;
+                    }
+                    .banner {
+                        margin-left: var(--asz);
+                    }
+                    .page-menu .patru-organigrama {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                    .content {
+                        margin-left: var(--asz);
+                    }
+                    .sectiune-comunicari ul {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                    .footer {
+                        margin-left: var(--asz);
+                    }
+                }
+
 /* aside, imagine-4 2, imagine-2 1 */
                 @media (min-width: 1153px) and (max-width: 1366px) {
                     aside {
                         border-radius: 4px;
+                    }
+                    .page-menu .patru-organigrama {
+                        grid-template-columns: repeat(2, 1fr);
                     }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(2, 1fr);
@@ -1809,6 +1957,9 @@ border-radius: 4px;
                 @media (min-width: 801px) and (max-width: 1152px) { 
                     aside {
                         border-radius: 4px;
+                    }
+                    .page-menu .patru-organigrama {
+                        grid-template-columns: repeat(2, 1fr);
                     }
                     #program-continut .wrap-show {
                         display: none;
@@ -1856,12 +2007,15 @@ border-radius: 4px;
                     }
                 }
 
-/* page-menu 2, comunicari-1 */
+/* page-menu 2 (prezentare), comunicari-1 */
                 @media (min-width: 721px) and (max-width: 800px) {
                     aside {
                         border-radius: 4px;
                     }
-                    .page-menu .patru {
+                    .page-menu .patru-prezentare {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                    .page-menu .patru-organigrama {
                         grid-template-columns: repeat(2, 1fr);
                     }
                     #program-continut .wrap-show {
@@ -1910,13 +2064,16 @@ border-radius: 4px;
                     }
                 }
 
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!wrap-4 */
+/* wrap-4 */
                 @media (min-width: 601px) and (max-width: 720px) { 
                     aside {
                         border-radius: 4px;
                     }
-                    .page-menu .patru {
+                    .page-menu .patru-prezentare {
                         grid-template-columns: repeat(2, 1fr);
+                    }
+                    .page-menu .patru-organigrama {
+                        grid-template-columns: repeat(1, 1fr);
                     }
                     #program-continut .wrap-show {
                         display: none;
@@ -1970,8 +2127,11 @@ border-radius: 4px;
                     aside {
                         border-radius: 4px;
                     }
-                    .page-menu .patru {
+                    .page-menu .patru-prezentare {
                         grid-template-columns: repeat(2, 1fr);
+                    }
+                    .page-menu .patru-organigrama {
+                        grid-template-columns: repeat(1, 1fr);
                     }
                     #program-continut .wrap-show {
                         display: none;
@@ -2019,12 +2179,15 @@ border-radius: 4px;
                     }
                 }
 
-/* page-menu 1 */
+/* page-menu 1 (prezentare) */
                 @media (max-width: 426px) {
                     aside {
                         border-radius: 4px;
                     }
-                    .page-menu .patru {
+                    .page-menu .patru-prezentare {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                    .page-menu .patru-organigrama {
                         grid-template-columns: repeat(1, 1fr);
                     }
                     #program-continut .wrap-show {
@@ -2077,14 +2240,19 @@ border-radius: 4px;
 
     </head>
 
-    </head>
-
     <body>
 
+        <section id="titlu" aria-labelledby="titlu-label">
+
+            <h1 id="titlu-label" class="sr-only">Școala Gimnazială „Nicu Albu” Piatra Neamț</h1>
+
+            <p class="sr-only"><strong>Pagina „Prezentare”</strong></p>
+
+        </section>
+
 <!-- Link "Sari la conținut" -->
-        <a href="#main-content" id="skipToContinut" target="_self" class="skip-link">
+        <a href="#main-content" id="skipToContinut" class="skip-link">
             Mergi la conținutul paginii
-            <span class="sr-only"> (se deschide în aceeași fereastră)</span>
         </a>
 
 <!-- MENIU -->
@@ -2093,23 +2261,106 @@ border-radius: 4px;
             <header>
 
 <!-- Siglă -->
-                <section id="sigla" aria-label="Siglă">
-                    <h2 class="side-name sr-only">Sigla școlii</h2>
-                    <div class="side-logo">
-                        <img src="https://github.com/scoalanicualbu/website/blob/main/sigla.png?raw=true" alt="Sigla Școlii Gimnaziale „Nicu Albu” Piatra Neamț">
-                    </div>
+                <section id="sigla" aria-labelledby="sigla-label">
+
+                    <h2 id="sigla-label" class="side-name sr-only">Siglă școală</h2>
+
+                    <figure class="side-logo" tabindex="0">
+                        <img src="https://github.com/scoalanicualbu/website/blob/main/sigla.png?raw=true" alt="Sigla Școlii Gimnaziale „Nicu Albu” Piatra Neamț" aria-describedby="sigla-info">
+                    </figure>
+
+                    <article id="sigla-info" class="info-logo sr-only" aria-labelledby="sigla-info-label">
+
+                        <h3 id="sigla-info-label" class="citat-1">Descriere detaliată a siglei Școlii Gimnaziale „Nicu Albu” Piatra Neamț</h3>
+
+                        <p class="citat-1">Sigla Școlii Gimnaziale „Nicu Albu” Piatra Neamț este o emblemă complexă, bogată în simboluri și culori, care reflectă identitatea locală, națională și europeană, precum și valorile promovate de școală.</p>
+
+                        <section id="structura" aria-labelledby="structura-label">
+
+                            <h4 id="structura-label" class="citat-1">Formă și structură:</h4>
+
+                            <p class="citat-1">Sigla are o formă rotundă, sugerând unitate, continuitate și perfecțiune. Este structurată ca un sigiliu sau o emblemă, fiind concepută pentru a fi vizibilă și recognoscibilă. Elementele componente sunt dispuse concentric și stratificat în jurul unui nume central. În jurul acestuia se află elemente grafice și textuale, fiecare având o semnificație distinctă care completează identitatea instituției, creând o compoziție armonioasă.</p>
+
+                        </section>
+
+                        <section id="compozitie" aria-labelledby="compozitie-label">
+
+                            <h4 id="compozitie-label" class="citat-1">Compoziție și simbolistică:</h4>
+
+                            <p class="citat-1">Elementele sunt aranjate într-o manieră ierarhică și coerentă, existând o simetrie vizuală pe axa verticală care contribuie la stabilitatea designului.</p>
+
+                            <section id="arcada-superioara" aria-labelledby="arcada-superioara-label">
+
+                                <h5 id="arcada-superioara-label" class="citat-1">Arcada superioară (exterioară):</h5>
+
+                                <p class="citat-1">În partea de sus a siglei, se află un semicerc verde, care conține cuvintele „SCOALA” scrise pe arcuire. Textul este scris cu litere mari și clare, cu un font simplu și lizibil și sugerează scopul principal al instituției – educația.</p>
+                                <p class="citat-1">Culoarea verde simbolizează speranța, natura, vitalitatea, învățarea, creșterea, dezvoltarea armonioasă și prosperitatea, valori fundamentale ale unei instituții de învățământ.</p>
+                                <p class="citat-1">Imediat sub acest semicerc verde, pe un fundal de culoare albastru bleumarin (un albastru închis, profund), sunt dispuse circular 12 stele de culoare galben-aurie care formează steagul Uniunii Europene. Acestea evidențiază apartenența la valorile europene, precum și deschiderea către educație internațională, modernitate, mobilitate, colaborare și inovație.</p>
+                                <p class="citat-1">Culoarea albastru bleumarin simbolizează adevărul, încrederea, autoritatea, stabilitatea, seriozitatea și formalitatea, fiind o nuanță elegantă și sofisticată, deseori folosită în contexte profesionale.</p>
+                                <p class="citat-1">Stelele Uniunii Europene simbolizează unitate, solidaritate, armonie, perfecțiune și plenitudine.</p>
+                                <p class="citat-1">Culoarea galben-auriu simbolizează bucuria, optimismul, creativitatea, intelectul, bogăția spirituală și lumina.</p>
+
+                            </section>
+
+                            <section id="zona-centrala" aria-labelledby="zona-centrala-label">
+
+                                 <h5 id="zona-centrala-label" class="citat-1">Zona centrală:</h5>
+
+                                <p class="citat-1">Centrul siglei este dominat de textul „NICU ALBU”, element focal, cel mai proeminent din punct de vedere vizual. scris cu majuscule, de dimensiuni mari și de culoare roșie vibrantă. Această culoare simbolizează curajul, puterea, energia, vitalitatea, pasiunea, dedicarea, viața.</p>
+                                <p class="citat-1">Fontul este modern, clar și ușor de citit, accentuând importanța numelui: Nicu Albu (1852-1929) - personalitate istorică, primar și om politic care a modernizat orașul Piatra-Neamț, a introdus electricitatea, telefonul și a amenajat Parcul Cozla. Numele său pe siglă onorează moștenirea sa și valorile de progres, educație și comunitate pe care le-a promovat. Prin adoptarea numelui său, școala își asumă și dorește să perpetueze valorile sale: spiritul civic, leadershipul, viziunea pentru dezvoltare și grija pentru comunitate.</p>
+
+                            </section>
+
+                            <section id="arcada-inferioara" aria-labelledby="arcada-inferioara-label">
+
+                                <h5 id="arcada-inferioara-label" class="citat-1">Arcada inferioară (interioară):</h5>
+
+                                <p class="citat-1">Sub numele „NICU ALBU”, se găsește un semicerc alb, mai îngust, care funcționează ca o clemă, simbol al coeziunii, fiind o bază de susținere pentru elementele de dedesubt. Pe acest semicerc, pe arcuire, este scris cu majuscule negre textul „ROMANIA”, care afirmă identitatea națională, patriotismul și rădăcinile profunde ale instituției în cultura și istoria României.</p>
+                                <p class="citat-1">Albul simbolizează puritatea, claritatea, pacea, identitatea, începutul, iar negrul, seriozitatea și tradiția.</p>
+                                <p class="citat-1">Sub semicercul alb este plasată o reprezentare a unei cărți deschise care evidențiază misiunea educațională a școlii, importanța cunoașterii și a învățării continue. Cartea este redată simplu, cu linii clare și conține detalii sugestive:</p>
+                                <p class="citat-1">- pagina stângă prezintă o ilustrație stilizată, cu nuanțe sepia, a unui peisaj urban, simbolizând patrimoniul cultural și specificul local;</p>
+                                <p class="citat-1">- pagina dreaptă conține câteva rânduri de text scris de mână, într-un font caligrafic, tot în nuanțe sepia, detaliu ce adaugă o notă personală și istorică.</p>
+
+                            </section>
+
+                            <section id="banderola-inferioara" aria-labelledby="banderola-inferioara-label">
+
+                                <h5 id="banderola-inferioara-label" class="citat-1">Banderola inferioară (exterioară):</h5>
+
+                                <p class="citat-1">Sub semicercul alb și sub cartea deschisă, se desfășoară, pe arcuire, o banderolă tricoloră, reprezentând steagul României: roșu, galben și albastru, care adaugă dinamism și continuitate vizuală. Pe banda de culoare galbenă, care este banda centrală a drapelului, pe arcuire, este scris cu majuscule textul „PIATRA NEAMT”, indicând localizarea instituției, identitatea locală și mândria civică față de orașul Piatra-Neamț, un centru istoric și cultural important al regiunii Moldova.</p>
+
+                            </section>
+
+                        </section>
+
+                        <section id="concluzii" aria-labelledby="concluzii-label">
+
+                            <h4 id="concluzii-label" class="citat-1">Concluzii:</h4>
+
+                            <p class="citat-1">Sigla Școlii Gimnaziale „Nicu Albu” Piatra Neamț este o emblemă vizuală echilibrată și plină de semnificații, care reușește să încapsuleze esența și misiunea instituției într-un mod memorabil și inspirator: educația (cartea) este în centrul atenției, susținută de identitatea locală, națională și europeană, iar numele școlii ancorează instituția în comunitate și menține viu spiritul lui Nicu Albu.</p>
+                            <p class="citat-1">Designul este echilibrat, cu o bună ierarhizare a elementelor vizuale, iar culorile sunt alese strategic pentru a amplifica simbolistica.</p>
+                            <p class="citat-0">Prin combinarea elementelor tradiționale cu cele moderne, sigla transmite un mesaj de identitate, mândrie, tradiție, deschidere și aspirație spre excelență și reflectă misiunea unei școli moderne care își onorează trecutul și privește spre viitor. </p>
+
+                        </section>
+
+                    </article>
+
                 </section>
 
 <!-- Denumire -->
-                <section id="denumire" aria-label="Denumire școală">
-                    <h2 class="side-name sr-only">Denumirea școlii</h2>
+                <section id="denumire" aria-labelledby="denumire-label">
+
+                    <h2 id="denumire-label" class="side-name sr-only">Denumire școală</h2>
+
                     <p class="side-name">Școala Gimnazială<br>„Nicu Albu”<br>Piatra Neamț</p>
+
                 </section>
 
             </header>
 
 <!-- Meniu site -->
             <nav id="meniu-site" class="side-menu" aria-label="Meniu site">
+
                 <ul>
                     <li>
                         <a href="prezentare.html" class="active" aria-current="page">
@@ -2119,7 +2370,7 @@ border-radius: 4px;
                     </li>
                     <li>
                         <a href="oferta.html">
-                            Oferta educațională
+                            Ofertă educațională
                             <span class="sr-only"> (se deschide în aceeași fereastră)</span>
                         </a>
                     </li>
@@ -2131,7 +2382,7 @@ border-radius: 4px;
                     </li>
                     <li>
                         <a href="pregatitoare.html">
-                            Clasa pregătitoare
+                            Clasă pregătitoare
                             <span class="sr-only"> (se deschide în aceeași fereastră)</span>
                         </a>
                     </li>
@@ -2185,7 +2436,7 @@ border-radius: 4px;
                     </li>
                     <li>
                         <a href="organigrama.html">
-                            Organigrama
+                            Organigramă
                             <span class="sr-only"> (se deschide în aceeași fereastră)</span>
                         </a>
                     </li>
@@ -2196,32 +2447,33 @@ border-radius: 4px;
                         </a>
                     </li>
                 </ul>
+
             </nav>
 
         </aside>
 
-<!-- Buton Meniu -->
-        <button id="menu-toggle" aria-label="Buton Meniu site" aria-expanded="false" aria-controls="main-menu" aria-haspopup="true" tabindex="0">
-            &#9776;
-        </button>
-
 <!-- CONȚINUT -->
 
 <!-- Banner -->
-        <header id="banner" class="banner" role="banner" aria-label="Banner Imaginea intrării în școală">
+        <header id="banner" class="banner">
 
-            <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/intrare.png?raw=true" alt="Imaginea intrării principale în Școala Gimnazială „Nicu Albu” Piatra Neamț">
-            <h1 class="sr-only">Școala Gimnazială „Nicu Albu” Piatra Neamț</h1>
+            <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/intrare.png?raw=true" alt="Intrarea principală în Școala Gimnazială „Nicu Albu” Piatra Neamț">
 
         </header>
 
         <main id="prezentare" class="content" aria-label="Conținut principal">
 
+<!-- Buton Meniu -->
+            <button id="menu-toggle" type="button" tabindex="0" aria-label="Buton Meniu site" aria-expanded="false" aria-controls="main-menu" aria-haspopup="menu">
+                &#9776;
+            </button>
+
             <header>
 
 <!-- Meniu pagină -->
                 <nav id="meniu-pagina" class="page-menu" aria-label="Meniu pagină">
-                    <ul class="patru">
+
+                    <ul class="patru-prezentare">
                         <li>
                             <a href="prezentare/istoric.html">
                                 Scurt istoric
@@ -2246,7 +2498,8 @@ border-radius: 4px;
                                 <span class="sr-only"> (se deschide în aceeași fereastră)</span>
                             </a>
                         </li>
-                    </ul>    
+                    </ul>
+
                 </nav>
 
             </header>
@@ -2255,28 +2508,26 @@ border-radius: 4px;
             <div id="main-content" class="page-content" role="region" tabindex="-1" aria-label="Conținut pagină">
 
 <!-- Secțiune Text -->
-                <section id="prezentare-text" class="sectiune-text" aria-labelledby="prezentare-text-label">
+                <section id="prezentare-text" class="sectiune-text" aria-labelledby="prezentare-text-label-1 prezentare-text-label-2">
 
-                   <header>
-                        <h2 id="prezentare-text-label" class="citat-1">Motto:</h2>
-                        <p class="citat-2">Suntem o familie! Împreună construim, învățăm, inovăm! Suntem o școală deschisă, pentru comunitate!</p>
-                    </header>
+                    <h3 id="prezentare-text-label-1" class="citat-1">Motto:</h3>
 
-                    <article>
-                        <h3 class="sr-only">Prezentare</h3>
+                    <p id="prezentare-text-label-2" class="citat-2">Suntem o familie! Împreună construim, învățăm, inovăm! Suntem o școală deschisă, pentru comunitate!</p>
 
-                        <div class="coloane">
-                            <p>Şcoala Gimnazială „Nicu Albu” Piatra Neamţ este o şcoală urbană, care se situează în partea de vest a Municipiului Piatra Neamţ, în cartierul Precista, pe strada Ecoului, la numărul 5.</p>
-                            <p>În anul 1993, o dată cu construirea unei şcoli noi în cartierul Precista cu scopul de a descongestiona numărul mare de elevi şi clase care funcţionau la școala din acelaşi cartier, Şcoala cu clasele I-VIII Nr. 4 Piatra Neamț, apare, ca organizație nouă, Şcoala cu clasele I-VIII Nr. 10 Piatra Neamţ.</p>
-                            <p>Funcţionând din anul şcolar 1993-1994 într-un corp de clădire în construcţie, clădirea Şcolii cu clasele I-VIII Nr. 10 Piatra Neamţ a fost finalizată în 1997 aşa cum atestă procesul verbal de recepţie finală, datat 15.12.1997.</p>
-                            <p>Din data de 01.09.2010, prin Decizia Inspectoratului Școlar Județean Neamţ nr. 664 din 13.05.2010, denumirea Şcolii cu clasele I-VIII Nr. 10 Piatra Neamţ s-a modificat în Şcoala cu clasele I-VIII „Nicu Albu” Piatra Neamţ.</p>
-                            <p>Prin Hotărârea Consiliului Local al Municipiului Piatra Neamţ nr. 99 din 10.03.2012 privind aprobarea schimbării denumirii unor unităţi şcolare care aparţin reţelei şcolare a învăţământului preuniversitar din Municipiul Piatra Neamţ, începând cu anul şcolar 2012-2013 denumirea unităţii şcolare s-a modificat, respectiv, în Şcoala Gimnazială „Nicu Albu” Piatra Neamţ.</p>
-                            <p>Şcoala Gimnazială „Nicu Albu” Piatra Neamţ este o unitate de învăţământ de stat acreditată aparţinând sistemului educaţional preuniversitar, cu grupe și clase structurate pe 3 niveluri: preşcolar, primar şi gimnazial.</p>
-                            <p>Sfera educaţională a şcolii cuprinde desfăşurarea simultană a două sisteme, sistemul educaţional tradiţional şi un sistem alternativ de educaţie, sistemul Step by Step. Este prima şcoală din judeţul Neamţ care a experimentat şi aplică sistemul alternativ de educaţie Step by Step din anul școlar 2001-2002.</p>
-                            <p>Unitatea de învăţământ şi-a construit un brand din aceasta şi, în prezent, este apreciată şi căutată de părinţii care optează pentru această alternativă educațională aplicată doar pentru învățământul primar.</p>
-                            <p>În comparaţie cu sistemul tradiţional, în sistemul educațional Step by Step se foloseşte acelaşi plan-cadru de învăţământ, aceleaşi programe şcolare, dar oferă o altă modalitate de lucru cu elevii: lucrul pe centre de activitate, în care sunt aplicate metode interactive şi individualizate, tot demersul fiind centrat pe elev.</p>
-                            <p>Clasele de învăţământ primar în care se aplică alternativa educaţională Step by Step lucrează în programul „şcolii complete” (zilnic, între orele 08:00-16:00) şi prin implicarea considerabilă a părinţilor. În cele două spaţii amenajate ca săli cu mese se poate servi masa de prânz de către elevi, prin servicii de catering, suportate financiar de părinţi.</p>
-                        </div>
+                    <article id="prezentare-continut" class="coloane" aria-labelledby="prezentare-continut-label">
+
+                        <h4 id="prezentare-continut-label" class="sr-only">Scurtă prezentare</h4>
+
+                        <p>Şcoala Gimnazială „Nicu Albu” Piatra Neamţ este o şcoală urbană, care se situează în partea de vest a Municipiului Piatra Neamţ, în cartierul Precista, pe strada Ecoului, la numărul 5.</p>
+                        <p>În anul 1993, o dată cu construirea unei şcoli noi în cartierul Precista cu scopul de a descongestiona numărul mare de elevi şi clase care funcţionau la școala din acelaşi cartier, Şcoala cu clasele I-VIII Nr. 4 Piatra Neamț, apare, ca organizație nouă, Şcoala cu clasele I-VIII Nr. 10 Piatra Neamţ.</p>
+                        <p>Funcţionând din anul şcolar 1993-1994 într-un corp de clădire în construcţie, clădirea Şcolii cu clasele I-VIII Nr. 10 Piatra Neamţ a fost finalizată în 1997 aşa cum atestă procesul verbal de recepţie finală, datat 15.12.1997.</p>
+                        <p>Din data de 01.09.2010, prin Decizia Inspectoratului Școlar Județean Neamţ nr. 664 din 13.05.2010, denumirea Şcolii cu clasele I-VIII Nr. 10 Piatra Neamţ s-a modificat în Şcoala cu clasele I-VIII „Nicu Albu” Piatra Neamţ.</p>
+                        <p>Prin Hotărârea Consiliului Local al Municipiului Piatra Neamţ nr. 99 din 10.03.2012 privind aprobarea schimbării denumirii unor unităţi şcolare care aparţin reţelei şcolare a învăţământului preuniversitar din Municipiul Piatra Neamţ, începând cu anul şcolar 2012-2013 denumirea unităţii şcolare s-a modificat, respectiv, în Şcoala Gimnazială „Nicu Albu” Piatra Neamţ.</p>
+                        <p>Şcoala Gimnazială „Nicu Albu” Piatra Neamţ este o unitate de învăţământ de stat acreditată aparţinând sistemului educaţional preuniversitar, cu grupe și clase structurate pe 3 niveluri: preşcolar, primar şi gimnazial.</p>
+                        <p>Sfera educaţională a şcolii cuprinde desfăşurarea simultană a două sisteme, sistemul educaţional tradiţional şi un sistem alternativ de educaţie, sistemul Step by Step. Este prima şcoală din judeţul Neamţ care a experimentat şi aplică sistemul alternativ de educaţie Step by Step din anul școlar 2001-2002.</p>
+                        <p>Unitatea de învăţământ şi-a construit un brand din aceasta şi, în prezent, este apreciată şi căutată de părinţii care optează pentru această alternativă educațională aplicată doar pentru învățământul primar.</p>
+                        <p>În comparaţie cu sistemul tradiţional, în sistemul educațional Step by Step se foloseşte acelaşi plan-cadru de învăţământ, aceleaşi programe şcolare, dar oferă o altă modalitate de lucru cu elevii: lucrul pe centre de activitate, în care sunt aplicate metode interactive şi individualizate, tot demersul fiind centrat pe elev.</p>
+                        <p>Clasele de învăţământ primar în care se aplică alternativa educaţională Step by Step lucrează în programul „şcolii complete” (zilnic, între orele 08:00-16:00) şi prin implicarea considerabilă a părinţilor. În cele două spaţii amenajate ca săli cu mese se poate servi masa de prânz de către elevi, prin servicii de catering, suportate financiar de părinţi.</p>
 
                     </article>
 
@@ -2285,7 +2536,7 @@ border-radius: 4px;
 <!-- Secțiune Informații -->
                 <section id="prezentare-informatii" class="sectiune-informatii" aria-labelledby="prezentare-informatii-label">
 
-                    <h2 id="prezentare-informatii-label" class="citat-1">Noutăți:</h2>
+                    <h3 id="prezentare-informatii-label" class="citat-1">Noutăți:</h3>
 
                     <ul>
                         <li>
@@ -2299,34 +2550,34 @@ border-radius: 4px;
                 </section> 
 
 <!-- Secțiune Legături -->
-                <section id="prezentare-legaturi" class="sectiune-legaturi" aria-label="Legături utile">
+                <section id="prezentare-legaturi" class="sectiune-legaturi" aria-labelledby="prezentare-legaturi-label">
 
-                    <h2 class="sr-only">Legături:</h2>
-	
+                    <h3 id="prezentare-legaturi-label" class="sr-only">Legături utile:</h3>
+
                     <ul>                    
                         <li>
-                            <a href="https://www.edu.ro" target="_blank" rel="noopener noreferrer" aria-labelledby="mec">
+                            <a href="https://www.edu.ro" target="_blank" rel="noopener noreferrer">
                                 <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/mec.png?raw=true" alt="Sigla Ministerului Educației și Cercetării">
                                 <div id="mec" class="text">Ministerul Educației și Cercetării</div>
                                 <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.isjneamt.ro" target="_blank" rel="noopener noreferrer" aria-labelledby="isjneamt">
+                            <a href="https://www.isjneamt.ro" target="_blank" rel="noopener noreferrer">
                                 <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/isjneamt.png?raw=true" alt="Sigla Inspectoratului Școlar Județean Neamț">
                                 <div id="isjneamt" class="text">Inspectoratul Școlar Județean Neamț</div>
                                 <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.cjrae-neamt.ro" target="_blank" rel="noopener noreferrer" aria-labelledby="cjraeneamt">
+                            <a href="https://www.cjrae-neamt.ro" target="_blank" rel="noopener noreferrer">
                                 <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/cjraeneamt.png?raw=true" alt="Sigla Centrului Județean de Resurse și Asistență Educațională Neamț">
                                 <div id="cjraeneamt" class="text">Centrul Județean de Resurse și Asistență Educațională Neamț</div>
                                 <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.ccdneamt.ro" target="_blank" rel="noopener noreferrer" aria-labelledby="ccdneamt">
+                            <a href="https://www.ccdneamt.ro" target="_blank" rel="noopener noreferrer">
                                 <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/ccdneamt.png?raw=true" alt="Sigla Casei Corpului Didactic Neamț">
                                 <div id="ccdneamt" class="text">Casa Corpului Didactic Neamț</div>
                                 <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
@@ -2341,11 +2592,19 @@ border-radius: 4px;
         </main>
 
 <!-- SUBSOL -->
-        <footer class="footer" role="contentinfo" aria-label="Subsol">
+        <footer class="footer" aria-labelledby="subsol-label">
 
-            <div class="footer-informatii">
-                <span>&copy; 1993-<span id="year"></span> Școala Gimnazială „Nicu Albu” Piatra Neamț</span>
-            </div>
+            <h3 id="subsol-label" class="sr-only">Subsol pagină</h3>
+
+            <p class="sr-only">Această secțiune contine informații privind drepturile de autor</p>
+
+            <section id="copyright" class="footer-informatii" aria-labelledby="copyright-label">
+
+                <h4 id="copyright-label" class="sr-only">Drepturi de autor</h4>
+
+                <p class="citat-0 c" >&copy; 1993-<time id="year" datetime="1993"></time> Școala Gimnazială „Nicu Albu” Piatra Neamț</p>
+
+            </section>
 
         </footer>
 
@@ -2354,12 +2613,7 @@ border-radius: 4px;
 
         <script>
 
-// Subsol pagină
-            document.addEventListener('DOMContentLoaded', function() {
-                document.getElementById('year').textContent = new Date().getFullYear();
-            });
-
-// Secțiune Meniu
+// Definire funcții
 
 // Actualizare stare Meniu
             function updateMeniu() {
@@ -2372,7 +2626,7 @@ border-radius: 4px;
                 } else {
                     aside.classList.remove('show');
                     toggleBtn.style.display = 'block';
-                    }
+                }
                 updateButton();
             }
 
@@ -2388,71 +2642,8 @@ border-radius: 4px;
                     toggleBtn.innerHTML = '≡';
                     toggleBtn.setAttribute('aria-label', 'Meniu');
                     toggleBtn.setAttribute('aria-expanded', 'false');
-                    }
+                }
             }
-
-// Funcții de inițializare
-
-// Inițializare setări la încărcare pagină
-            window.addEventListener('load', () => {
-                updateMeniu();
-                updateGap();
-                updateImagini();
-                initializeParams();
-                potrivesteTexte();
-                limitPosition();
-                updateTransform();
-            });
-
-// Inițializare setări la redimensionare pagină
-            window.addEventListener('resize', () => {
-                updateMeniu();
-                updateGap();
-                updateImagini();
-                potrivesteTexte();
-            });
-
-// Funcții de gestionare evenimente
-
-// Afișare sau ascundere Meniu la click pe buton
-            document.getElementById('menu-toggle').addEventListener('click', () => {
-                const aside = document.querySelector('aside');
-                aside.classList.toggle('show');
-                updateButton();
-            });
-
-// Gestionare apăsare tastă CTRL
-            const width = window.innerWidth;
-            let ctrlToggleDone = false;
-            document.addEventListener('keydown', (e) => {
-                if (e.key === 'Control') {
-                    if (window.innerWidth < 1367) {
-                        e.preventDefault();
-                        if (!ctrlToggleDone) {
-                            const aside = document.querySelector('aside');
-                            aside.classList.toggle('show');
-                            updateButton();
-                            ctrlToggleDone = true;
-                        }
-                    }
-                }
-            });
-
-// Gestionare eliberare tastă CTRL
-            document.addEventListener('keyup', (e) => {
-                if (e.key === 'Control') {
-                    ctrlToggleDone = false;
-                }
-            });
-
-// Blocare comportament implicit zoom la apăsarea tastei CTRL împreună cu scroll la maus
-            document.addEventListener('wheel', (e) => {
-                if (e.ctrlKey) {
-                    e.preventDefault();
-                }
-            }, { passive: false });
-
-// Secțiune Conținut
 
 // Calculare spațiere prin interpolare liniară
             function getGap() {
@@ -2471,6 +2662,7 @@ border-radius: 4px;
                 const valueGap = minGap + ratio * (maxGap - minGap);
                 return valueGap.toFixed(2) + 'rem';
             }
+
             function updateGap() {
                 const sizeGap = getGap();
                 document.documentElement.style.setProperty('--gap', sizeGap);
@@ -2478,6 +2670,7 @@ border-radius: 4px;
 
 // Aranjare text, "Secțiune Legături"
             const parametri = [];
+
             function initializeParams() {
                 const ids = ['mec', 'isjneamt', 'cjraeneamt', 'ccdneamt'];
                 ids.forEach(id => {
@@ -2488,6 +2681,7 @@ border-radius: 4px;
                     }
                 });
             }
+
             function masoaraString(text) {
                 const span = document.createElement('span');
                 span.style.visibility = 'hidden';
@@ -2499,19 +2693,24 @@ border-radius: 4px;
                 document.body.removeChild(span);
                 return latime;
             }
+
             function potrivesteText(id, text) {
                 const aElement = document.querySelector(`a[aria-labelledby="${id}"]`);
                 const container = document.getElementById(id);
                 if (!aElement || !container) return;
+
                     container.style.visibility = 'hidden';
                     container.innerHTML = '';
+
                     const aRect = aElement.getBoundingClientRect();
                     const paddingPx = (0.2 + 0.1 + 5 + 0.1 + 0.5 + 0.1 + 0.1 + 0.5) * 16;
                     const totalAvailableWidth = aRect.width - paddingPx;
                     const maxLineLength = totalAvailableWidth;
+
                     const cuvinte = text.split(' ');
                     let randuri = [];
                     let currentLine = [];
+
                     for (const cuvant of cuvinte) {
                         const tempLineText = currentLine.concat(cuvant).join(' ');
                         const width = masoaraString(tempLineText);
@@ -2527,12 +2726,13 @@ border-radius: 4px;
                                 currentLine = [];
                             } else {
                                 currentLine = [cuvant];
-                                }
+                            }
                         }
                 }
                 if (currentLine.length > 0) {
                     randuri.push(currentLine.join(' '));
                 }
+
                 let lungimeMaxima = 0;
                 const randuriDimensiuni = [];
                 randuri.forEach(r => {
@@ -2540,6 +2740,7 @@ border-radius: 4px;
                     randuriDimensiuni.push(width);
                     if (width > lungimeMaxima) lungimeMaxima = width;
                 });
+
                 randuri.forEach((r, idx) => {
                     const lineDiv = document.createElement('div');
                     lineDiv.className = 'line';
@@ -2547,8 +2748,10 @@ border-radius: 4px;
                     lineDiv.style.marginLeft = ((lungimeMaxima - randuriDimensiuni[idx]) / 2) + 'px';
                     container.appendChild(lineDiv);
                 });
+
                 container.style.visibility = 'visible';
             }
+
             function potrivesteTexte() {
                 parametri.forEach(({ id, text }) => {
                     const el = document.getElementById(id);
@@ -2570,10 +2773,11 @@ border-radius: 4px;
                 });
             }
 
-// Setare înălțime imagini, "Program de lucru", "Contact", "Personal"
+// Setare înălțime imagini, "Program de lucru", "Contact", "Personal", "Sindicat"
             function updateImagine(divId, imgSelector) {
                 const divElement = document.getElementById(divId);
                 const container = document.querySelector(imgSelector);
+
                 if (!divElement || !container) return;
                     const img = container.querySelector('img');
                     if (!img) return;
@@ -2589,14 +2793,16 @@ border-radius: 4px;
                             img.style.height = height + 'px';
                             img.style.display = 'block';
                         };
-                }
+                    }
             }
+
             const imaginiParametri = [
                 ['program-secretariat', '#imagine-lucru'],
                 ['contact-date', '#imagine-contact'],
                 ['personal-text', '#imagine-personal'],
                 ['sindicat-contact', '#imagine-sindicat']
             ];
+
             function updateImagini() {
                 imaginiParametri.forEach(([divId, imgSelector]) => {
                     updateImagine(divId, imgSelector);
@@ -2604,83 +2810,210 @@ border-radius: 4px;
             }
 
 // Zoom și translatare imagine, "Contact"
-            const container = document.querySelector('.zoom');
-            const img = container.querySelector('img');
-            let scale = 1;
-            let translateX = 0;
-            let translateY = 0;
-            const minScale = 1;
-            const maxScale = 4;
-            function updateTransform() {
-                img.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
-            }
-            function limitPosition() {
+            function limitPosition(container, img, scale, translateX, translateY) {
                 const containerWidth = container.clientWidth;
                 const containerHeight = container.clientHeight;
                 const imgWidth = img.offsetWidth * scale;
                 const imgHeight = img.offsetHeight * scale;
+
+                let newTranslateX = translateX;
+                let newTranslateY = translateY;
+
                 if (imgWidth <= containerWidth) {
-                    translateX = (containerWidth - imgWidth) / 2;
+                    newTranslateX = (containerWidth - imgWidth) / 2;
                 } else {
                     const minX = containerWidth - imgWidth;
-                    if (translateX > 0) translateX = 0;
-                    if (translateX < minX) translateX = minX;
+                    if (newTranslateX > 0) newTranslateX = 0;
+                    if (newTranslateX < minX) newTranslateX = minX;
                 }
+
                 if (imgHeight <= containerHeight) {
-                    translateY = (containerHeight - imgHeight) / 2;
+                    newTranslateY = (containerHeight - imgHeight) / 2;
                 } else {
                     const minY = containerHeight - imgHeight;
-                    if (translateY > 0) translateY = 0;
-                    if (translateY < minY) translateY = minY;
+                    if (newTranslateY > 0) newTranslateY = 0;
+                    if (newTranslateY < minY) newTranslateY = minY;
                 }
+
+                return { translateX: newTranslateX, translateY: newTranslateY };
             }
-            let isDragging = false;
-            let startX = 0;
-            let startY = 0;
-            img.style.cursor = 'grab';
-            img.addEventListener('mousedown', (e) => {
-                e.preventDefault();
-                isDragging = true;
-                startX = e.clientX;
-                startY = e.clientY;
-                img.style.cursor = 'grabbing';
-            });
-            document.addEventListener('mouseup', () => {
-                if (isDragging) {
-                    isDragging = false;
-                    img.style.cursor = 'grab';
+
+            function setupZoomTranslatare() {
+                let scale = 1;
+                let translateX = 0;
+                let translateY = 0;
+                const minScale = 1;
+                const maxScale = 4;
+
+                const container = document.querySelector('.zoom');
+                const img = container ? container.querySelector('img') : null;
+                if (!container || !img) return;
+
+                let wheelTimeout = null;
+                let isDragging = false;
+                let startX = 0;
+                let startY = 0;
+
+                img.style.cursor = 'grab';
+
+                function updateTransform() {
+                    img.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
                 }
-            });
-            document.addEventListener('mousemove', (e) => {
-                if (isDragging) {
-                    const dx = e.clientX - startX;
-                    const dy = e.clientY - startY;
-                    translateX += dx;
-                    translateY += dy;
-                    limitPosition();
+
+                container.addEventListener('wheel', (e) => {
+                    e.preventDefault();
+
+                    const containerRect = container.getBoundingClientRect();
+                    const cursorX = e.clientX - containerRect.left;
+                    const cursorY = e.clientY - containerRect.top;
+
+                    const imgX = (cursorX - translateX) / scale;
+                    const imgY = (cursorY - translateY) / scale;
+
+                    const zoomFactor = e.deltaY < 0 ? 1.1 : 0.9;
+                    let newScale = Math.max(minScale, Math.min(maxScale, scale * zoomFactor));
+
+                    let newTranslateX = cursorX - imgX * newScale;
+                    let newTranslateY = cursorY - imgY * newScale;
+
+                    const limitedPos = limitPosition(container, img, newScale, newTranslateX, newTranslateY);
+
+                    scale = newScale;
+                    translateX = limitedPos.translateX;
+                    translateY = limitedPos.translateY;
+
+                    if (scale === minScale) {
+                        container.classList.remove('zoom-in', 'zoom-out');
+                    } else {
+                        if (e.deltaY < 0) {
+                            container.classList.add('zoom-in');
+                            container.classList.remove('zoom-out');
+                        } else {
+                        container.classList.remove('zoom-in');
+                        container.classList.add('zoom-out');
+                        }
+                    }
+
                     updateTransform();
+
+                    if (scale === minScale) {
+                        img.style.cursor = 'grab';
+                    } else {
+                        img.style.cursor = e.deltaY < 0 ? 'zoom-in' : 'zoom-out';
+                    }
+
+                    if (wheelTimeout) clearTimeout(wheelTimeout);
+                    wheelTimeout = setTimeout(() => {
+                        container.classList.remove('zoom-in', 'zoom-out');
+                        img.style.cursor = 'grab';
+                    }, 100);
+                });
+
+                img.addEventListener('mousedown', (e) => {
+                    e.preventDefault();
+                    isDragging = true;
                     startX = e.clientX;
                     startY = e.clientY;
+                    img.style.cursor = 'grabbing';
+                    container.classList.add('dragging');
+                    container.classList.remove('zoom-in', 'zoom-out');
+                });
+
+                document.addEventListener('mouseup', () => {
+                    if (isDragging) {
+                        isDragging = false;
+                        img.style.cursor = 'grab';
+                        container.classList.remove('dragging');
+                    }
+                });
+
+                document.addEventListener('mousemove', (e) => {
+                    if (!isDragging) return;
+                    const dx = e.clientX - startX;
+                    const dy = e.clientY - startY;
+                    startX = e.clientX;
+                    startY = e.clientY;
+
+                    let newTranslateX = translateX + dx;
+                    let newTranslateY = translateY + dy;
+
+                    const limitedPos = limitPosition(container, img, scale, newTranslateX, newTranslateY);
+
+                    translateX = limitedPos.translateX;
+                    translateY = limitedPos.translateY;
+
+                    updateTransform();
+                });
+            }
+
+// Funcții de gestionare evenimente
+
+            document.addEventListener('DOMContentLoaded', () => {
+
+// Setare an curent în Subsol pagină
+                const yearEl = document.getElementById('year');
+                if (yearEl) {
+                    yearEl.textContent = new Date().getFullYear();
                 }
-            });
-            container.addEventListener('wheel', (e) => {
-                e.preventDefault();
-                const containerRect = container.getBoundingClientRect();
-                const cursorX = e.clientX - containerRect.left;
-                const cursorY = e.clientY - containerRect.top;
-                const imgX = (cursorX - translateX) / scale;
-                const imgY = (cursorY - translateY) / scale;
-                const zoomFactor = e.deltaY < 0 ? 1.1 : 0.9;
-                const newScale = Math.max(minScale, Math.min(maxScale, scale * zoomFactor));
-                translateX = cursorX - imgX * newScale;
-                translateY = cursorY - imgY * newScale;
-                scale = newScale;
-                limitPosition();
-                if (scale === minScale) {
-                    translateX = (container.clientWidth - img.offsetWidth * scale) / 2;
-                    translateY = (container.clientHeight - img.offsetHeight * scale) / 2;
+
+// Apeluri de inițializare pentru funcții
+
+// Inițializare setări la încărcare pagină
+                updateMeniu();
+                updateGap();
+                updateImagini();
+                initializeParams();
+                potrivesteTexte();
+                setupZoomTranslatare();
+
+// Inițializare setări la redimensionare pagină
+                window.addEventListener('resize', () => {
+                    updateMeniu();
+                    updateGap();
+                    updateImagini();
+                    potrivesteTexte();
+                });
+
+// Afișare sau ascundere Meniu principal la click pe buton
+                const menuToggleBtn = document.getElementById('menu-toggle');
+                if (menuToggleBtn) {
+                    menuToggleBtn.addEventListener('click', () => {
+                        const aside = document.querySelector('aside');
+                        aside.classList.toggle('show');
+                        updateButton();
+                    });
                 }
-            updateTransform();
+
+// Gestionare apăsare tastă CTRL
+                let ctrlToggleDone = false;
+                document.addEventListener('keydown', (e) => {
+                    if (e.key === 'Control') {
+                        if (window.innerWidth < 1367) {
+                            e.preventDefault();
+                            if (!ctrlToggleDone) {
+                                const aside = document.querySelector('aside');
+                                aside.classList.toggle('show');
+                                updateButton();
+                                ctrlToggleDone = true;
+                            }
+                        }
+                    }
+                });
+
+// Gestionare eliberare tastă CTRL
+                document.addEventListener('keyup', (e) => {
+                    if (e.key === 'Control') {
+                        ctrlToggleDone = false;
+                    }
+                });
+
+// Blocare comportament implicit zoom la apăsarea tastei CTRL împreună cu scroll la maus
+                document.addEventListener('wheel', (e) => {
+                    if (e.ctrlKey) {
+                        e.preventDefault();
+                    }
+                }, { passive: false });
+
             });
 
         </script>
