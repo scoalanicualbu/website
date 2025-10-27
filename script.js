@@ -80,39 +80,40 @@
             }
 
             function potrivesteText(id, text) {
-                const aElement = document.querySelector(`a[aria-labelledby="${id}"]`);
                 const container = document.getElementById(id);
-                if (!aElement || !container) return;
+                if (!container) return;
+                const aElement = container.closest('a');
+                if (!aElement) return;
 
-                    container.style.visibility = 'hidden';
-                    container.innerHTML = '';
+                container.style.visibility = 'hidden';
+                container.innerHTML = '';
 
-                    const aRect = aElement.getBoundingClientRect();
-                    const paddingPx = (0.2 + 0.1 + 5 + 0.1 + 0.5 + 0.1 + 0.1 + 0.5) * 16;
-                    const totalAvailableWidth = aRect.width - paddingPx;
-                    const maxLineLength = totalAvailableWidth;
+                const aRect = aElement.getBoundingClientRect();
+                const paddingPx = (0.2 + 0.1 + 5 + 0.1 + 0.5 + 0.1 + 0.1 + 0.5) * 16;
+                const totalAvailableWidth = aRect.width - paddingPx;
+                const maxLineLength = totalAvailableWidth;
 
-                    const cuvinte = text.split(' ');
-                    let randuri = [];
-                    let currentLine = [];
+                const cuvinte = text.split(' ');
+                let randuri = [];
+                let currentLine = [];
 
-                    for (const cuvant of cuvinte) {
-                        const tempLineText = currentLine.concat(cuvant).join(' ');
-                        const width = masoaraString(tempLineText);
-                        if (width <= maxLineLength) {
-                        currentLine.push(cuvant);
-                        } else {
-                            if (currentLine.length > 0) {
-                                randuri.push(currentLine.join(' '));
-                            }
-                            const cuvantWidth = masoaraString(cuvant);
-                            if (cuvantWidth > maxLineLength) {
-                                randuri.push(cuvant);
-                                currentLine = [];
-                            } else {
-                                currentLine = [cuvant];
-                            }
+                for (const cuvant of cuvinte) {
+                    const tempLineText = currentLine.concat(cuvant).join(' ');
+                    const width = masoaraString(tempLineText);
+                    if (width <= maxLineLength) {
+                    currentLine.push(cuvant);
+                    } else {
+                        if (currentLine.length > 0) {
+                            randuri.push(currentLine.join(' '));
                         }
+                        const cuvantWidth = masoaraString(cuvant);
+                        if (cuvantWidth > maxLineLength) {
+                            randuri.push(cuvant);
+                            currentLine = [];
+                        } else {
+                            currentLine = [cuvant];
+                        }
+                    }
                 }
                 if (currentLine.length > 0) {
                     randuri.push(currentLine.join(' '));
