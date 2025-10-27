@@ -505,11 +505,15 @@ border-radius: 4px;
                             list-style: none;
                         }
 
-                            .page-menu .trei {
+                            .page-menu .trei-personal {
                                 grid-template-columns: repeat(3, 1fr);
                             }
 
-                            .page-menu .patru {
+                            .page-menu .patru-prezentare {
+                                grid-template-columns: repeat(4, 1fr);
+                            }
+
+                            .page-menu .patru-organigrama {
                                 grid-template-columns: repeat(4, 1fr);
                             }
 
@@ -554,6 +558,7 @@ border-radius: 4px;
                                     display: flex;
                                     align-items: center;
                                     justify-content: center;
+                                    text-align: center;
                                     text-decoration: none;
                                     font-size: var(--sz3);
                                     color: #404040;
@@ -1587,6 +1592,25 @@ border-radius: 4px;
                             text-align: left;
                         }
 
+                            .wrap-12 img {
+border: 0px solid #404040;
+border-radius: 4px;
+                                margin-top: 0;
+                                margin-bottom: 0;
+                                margin-left: 0;
+                                margin-right: 0;
+                                padding-top: 0;
+                                padding-bottom: 0;
+                                padding-left: 0;
+                                padding-right: 0;
+                                width: 100%;
+                                max-width: 100%;
+                                height: auto;
+                                display: block;
+                                object-fit: cover;
+                                background-color: #FFFFFF;
+                            }
+
                         .wrap-down {
                             justify-content: flex-end;
                         }
@@ -1870,7 +1894,7 @@ border-radius: 4px;
                 }
 
 /* comunicari-2 */
-                @media (min-width: 1367px)and (max-width: 3840px) {
+                @media (min-width: 1681px)and (max-width: 3840px) {
                     aside {
                         min-height: 100vh;
                     }
@@ -1888,10 +1912,35 @@ border-radius: 4px;
                     }
                 }
 
+/* page-menu 2 (organigrama) */
+                @media (min-width: 1367px)and (max-width: 1680px) {
+                    aside {
+                        min-height: 100vh;
+                    }
+                    .banner {
+                        margin-left: var(--asz);
+                    }
+                    .page-menu .patru-organigrama {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                    .content {
+                        margin-left: var(--asz);
+                    }
+                    .sectiune-comunicari ul {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                    .footer {
+                        margin-left: var(--asz);
+                    }
+                }
+
 /* aside, imagine-4 2, imagine-2 1 */
                 @media (min-width: 1153px) and (max-width: 1366px) {
                     aside {
                         border-radius: 4px;
+                    }
+                    .page-menu .patru-organigrama {
+                        grid-template-columns: repeat(2, 1fr);
                     }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(2, 1fr);
@@ -1908,6 +1957,9 @@ border-radius: 4px;
                 @media (min-width: 801px) and (max-width: 1152px) { 
                     aside {
                         border-radius: 4px;
+                    }
+                    .page-menu .patru-organigrama {
+                        grid-template-columns: repeat(2, 1fr);
                     }
                     #program-continut .wrap-show {
                         display: none;
@@ -1955,12 +2007,15 @@ border-radius: 4px;
                     }
                 }
 
-/* page-menu 2, comunicari-1 */
+/* page-menu 2 (prezentare), comunicari-1 */
                 @media (min-width: 721px) and (max-width: 800px) {
                     aside {
                         border-radius: 4px;
                     }
-                    .page-menu .patru {
+                    .page-menu .patru-prezentare {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                    .page-menu .patru-organigrama {
                         grid-template-columns: repeat(2, 1fr);
                     }
                     #program-continut .wrap-show {
@@ -2009,13 +2064,16 @@ border-radius: 4px;
                     }
                 }
 
-/* wrap-4 */
+/* page-menu-1 (organigrama), wrap-4 */
                 @media (min-width: 601px) and (max-width: 720px) { 
                     aside {
                         border-radius: 4px;
                     }
-                    .page-menu .patru {
+                    .page-menu .patru-prezentare {
                         grid-template-columns: repeat(2, 1fr);
+                    }
+                    .page-menu .patru-organigrama {
+                        grid-template-columns: repeat(1, 1fr);
                     }
                     #program-continut .wrap-show {
                         display: none;
@@ -2069,8 +2127,11 @@ border-radius: 4px;
                     aside {
                         border-radius: 4px;
                     }
-                    .page-menu .patru {
+                    .page-menu .patru-prezentare {
                         grid-template-columns: repeat(2, 1fr);
+                    }
+                    .page-menu .patru-organigrama {
+                        grid-template-columns: repeat(1, 1fr);
                     }
                     #program-continut .wrap-show {
                         display: none;
@@ -2118,12 +2179,75 @@ border-radius: 4px;
                     }
                 }
 
-/* page-menu 1 */
-                @media (max-width: 426px) {
+/* page-menu 1 (prezentare) */
+                @media (min-width: 321px) and (max-width: 426px) {
                     aside {
                         border-radius: 4px;
                     }
-                    .page-menu .patru {
+                    .page-menu .patru-prezentare {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                    .page-menu .patru-organigrama {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                    #program-continut .wrap-show {
+                        display: none;
+                    }
+                    #program-continut .wrap-92 {
+                        grid-column: span 12;
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                    #contact-continut .wrap-show {
+                        display: none;
+                    }
+                    #contact-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #contact-continut .citat-3 {
+                        text-align: center;
+                    }
+                    #personal-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
+                    #personal-continut .wrap-show {
+                        display: none;
+                    }
+                    #sindicat-continut .wrap-show {
+                        display: none;
+                    }
+                    #sindicat-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
+                    #sindicat-continut .citat-3 {
+                        text-align: center;
+                    }
+                    .sectiune-comunicari ul {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                    .imagine-4 {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                    .imagine-2 {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                    .sectiune-legaturi ul {
+                        display: grid;
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                }
+
+/* page-menu 1 (personal) */
+                @media (max-width: 320px) {
+                    aside {
+                        border-radius: 4px;
+                    }
+                    .page-menu .patru-prezentare {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                    .page-menu .trei-personal {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                    .page-menu .patru-organigrama {
                         grid-template-columns: repeat(1, 1fr);
                     }
                     #program-continut .wrap-show {
@@ -2411,7 +2535,7 @@ border-radius: 4px;
 <!-- Meniu pagină -->
                 <nav id="meniu-pagina" class="page-menu" aria-label="Meniu pagină">
 
-                    <ul class="trei">
+                    <ul class="trei-personal">
                         <li>
                             <a href="personal/mobilitate.html" class="active" aria-current="page">
                                 Mobilitate
@@ -2444,18 +2568,24 @@ border-radius: 4px;
 
                     <h3 id="mobilitate-text-label" class="sr-only">Mobilitate</h3>
 
-                    <p class="sr-only">Această secțiune cuprinde informații despre mobilitatea personalului</p>
+                    <article id="mobilitate-continut" class="citat-3" aria-labelledby="mobilitate-continut-label">
 
-                    <article id="mobilitate-descriere" class="coloane" aria-labelledby="mobilitate-descriere-label">
+                        <h4 id="mobilitate-continut-label" class="sr-only">Mobilitatea personalului</h4>
 
-                        <h4 id="mobilitate-descriere-label" class="sr-only">Descriere</h4>
+                        <p class="sr-only">Această secțiune cuprinde informații despre mobilitatea personalului</p>
 
-                        <p>Politica educaţională a României susţine mobilitatea şi schimburile de studenţi şi personal academic la toate nivelurile educaţionale, ca o contribuţie importantă la dezvoltarea dimensiunii europene în educaţie şi a calităţii educaţiei, precum şi la îmbunătăţirea relaţiilor de colaborare şi a deschiderii sistemului educaţional.</p>
-                        <p class="citat-0">Dezvoltarea resurselor umane în învățământul preuniversitar implică două componente:</p>
-                        <p class="citat-0">‒ mobilitatea personalului didactic;</p>
-                        <p>‒ evaluarea activității și a performanței personalului didactic.</p>
-                        <p>Mobilitatea personalului didactic este reglmentată prin Metodologia-cadru privind mobilitatea personalului didactic de predare din învățământul preuniversitar, care cuprinde condiţiile de ocupare a posturilor didactice de predare/catedrelor vacante/rezervate în învăţământul preuniversitar, organizarea şi desfășurarea etapelor de mobilitate a personalului didactic din învăţământul preuniversitar, angajarea personalului didactic de predare în învăţământul preuniversitar, precum şi eliberarea din funcţie a personalului didactic de predare din învăţământul preuniversitar.</p>
-                        <p>Evaluarea activităţii personalului didactic este reglementată prin Metodologia de evaluare anuală a activităţii personalului didactic şi didactic auxiliar din unităţile de învăţământ preuniversitar, care conține procedura de evaluare anuală a activităţii personalului didactic şi didactic auxiliar, stabileşte normele de evaluare a performanţelor profesionale individuale şi de aplicare a criteriilor de evaluare precum şi instrumentele de evaluare, asigură cadrul necesar pentru o evaluare unitară, obiectivă şi transparentă a personalului didactic şi didactic auxiliar și asigură un sistem motivaţional care să determine creşterea performanţelor profesionale individuale.</p>
+                        <section id="mobilitate-descriere" class="coloane" aria-labelledby="mobilitate-descriere-label">
+
+                            <h4 id="mobilitate-descriere-label" class="sr-only">Descriere</h4>
+
+                            <p>Politica educaţională a României susţine mobilitatea şi schimburile de studenţi şi personal academic la toate nivelurile educaţionale, ca o contribuţie importantă la dezvoltarea dimensiunii europene în educaţie şi a calităţii educaţiei, precum şi la îmbunătăţirea relaţiilor de colaborare şi a deschiderii sistemului educaţional.</p>
+                            <p class="citat-0">Dezvoltarea resurselor umane în învățământul preuniversitar implică două componente:</p>
+                            <p class="citat-0">‒ mobilitatea personalului didactic;</p>
+                            <p>‒ evaluarea activității și a performanței personalului didactic.</p>
+                            <p>Mobilitatea personalului didactic este reglmentată prin Metodologia-cadru privind mobilitatea personalului didactic de predare din învățământul preuniversitar, care cuprinde condiţiile de ocupare a posturilor didactice de predare/catedrelor vacante/rezervate în învăţământul preuniversitar, organizarea şi desfășurarea etapelor de mobilitate a personalului didactic din învăţământul preuniversitar, angajarea personalului didactic de predare în învăţământul preuniversitar, precum şi eliberarea din funcţie a personalului didactic de predare din învăţământul preuniversitar.</p>
+                            <p>Evaluarea activităţii personalului didactic este reglementată prin Metodologia de evaluare anuală a activităţii personalului didactic şi didactic auxiliar din unităţile de învăţământ preuniversitar, care conține procedura de evaluare anuală a activităţii personalului didactic şi didactic auxiliar, stabileşte normele de evaluare a performanţelor profesionale individuale şi de aplicare a criteriilor de evaluare precum şi instrumentele de evaluare, asigură cadrul necesar pentru o evaluare unitară, obiectivă şi transparentă a personalului didactic şi didactic auxiliar și asigură un sistem motivaţional care să determine creşterea performanţelor profesionale individuale.</p>
+
+                        </section>
 
                     </article>
 
