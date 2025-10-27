@@ -447,7 +447,7 @@ border-radius: 4px;
                             list-style: none;
                         }
 
-                            .page-menu .trei {
+                            .page-menu .trei-personal {
                                 grid-template-columns: repeat(3, 1fr);
                             }
 
@@ -1658,7 +1658,7 @@ border-radius: 4px;
                                 cursor: zoom-in;
                             }
 
-                            .zoom.zoom-out img {	
+                            .zoom.zoom-out img {
                                 cursor: zoom-out;
                             }
 
@@ -2006,7 +2006,7 @@ border-radius: 4px;
                     }
                 }
 
-/* wrap-4 */
+/* page-menu-1 (organigrama), wrap-4 */
                 @media (min-width: 601px) and (max-width: 720px) { 
                     aside {
                         border-radius: 4px;
@@ -2122,11 +2122,71 @@ border-radius: 4px;
                 }
 
 /* page-menu 1 (prezentare) */
-                @media (max-width: 426px) {
+                @media (min-width: 353px) and (max-width: 426px) {
                     aside {
                         border-radius: 4px;
                     }
                     .page-menu .patru-prezentare {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                    .page-menu .patru-organigrama {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                    #program-continut .wrap-show {
+                        display: none;
+                    }
+                    #program-continut .wrap-92 {
+                        grid-column: span 12;
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                    #contact-continut .wrap-show {
+                        display: none;
+                    }
+                    #contact-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #contact-continut .citat-3 {
+                        text-align: center;
+                    }
+                    #personal-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
+                    #personal-continut .wrap-show {
+                        display: none;
+                    }
+                    #sindicat-continut .wrap-show {
+                        display: none;
+                    }
+                    #sindicat-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
+                    #sindicat-continut .citat-3 {
+                        text-align: center;
+                    }
+                    .sectiune-comunicari ul {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                    .imagine-4 {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                    .imagine-2 {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                    .sectiune-legaturi ul {
+                        display: grid;
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                }
+
+/* page-menu 1 (personal) */
+                @media (max-width: 352px) {
+                    aside {
+                        border-radius: 4px;
+                    }
+                    .page-menu .patru-prezentare {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                    .page-menu .trei-personal {
                         grid-template-columns: repeat(1, 1fr);
                     }
                     .page-menu .patru-organigrama {
