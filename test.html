@@ -1892,13 +1892,38 @@ border-radius: 4px;
                     }
                 }
 
-/* comunicari-2 */
-                @media (min-width: 1367px)and (max-width: 3840px) {
+/* page-menu 2 (organigrama) */
+                @media (min-width: 1681px)and (max-width: 3840px) {
                     aside {
                         min-height: 100vh;
                     }
                     .banner {
                         margin-left: var(--asz);
+                    }
+                    .page-menu .patru-organigrama {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                    .content {
+                        margin-left: var(--asz);
+                    }
+                    .sectiune-comunicari ul {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                    .footer {
+                        margin-left: var(--asz);
+                    }
+                }
+
+/* comunicari-2 */
+                @media (min-width: 1367px)and (max-width: 1680px) {
+                    aside {
+                        min-height: 100vh;
+                    }
+                    .banner {
+                        margin-left: var(--asz);
+                    }
+                    .page-menu .patru-organigrama {
+                        grid-template-columns: repeat(2, 1fr);
                     }
                     .content {
                         margin-left: var(--asz);
@@ -1916,6 +1941,9 @@ border-radius: 4px;
                     aside {
                         border-radius: 4px;
                     }
+                    .page-menu .patru-organigrama {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(2, 1fr);
                     }
@@ -1931,6 +1959,9 @@ border-radius: 4px;
                 @media (min-width: 801px) and (max-width: 1152px) { 
                     aside {
                         border-radius: 4px;
+                    }
+                    .page-menu .patru-organigrama {
+                        grid-template-columns: repeat(2, 1fr);
                     }
                     #program-continut .wrap-show {
                         display: none;
@@ -1978,7 +2009,7 @@ border-radius: 4px;
                     }
                 }
 
-/* page-menu 2, comunicari-1 */
+/* page-menu 2 (prezentare), comunicari-1 */
                 @media (min-width: 721px) and (max-width: 800px) {
                     aside {
                         border-radius: 4px;
@@ -2150,7 +2181,7 @@ border-radius: 4px;
                     }
                 }
 
-/* page-menu 1 */
+/* page-menu 1 (prezentare) */
                 @media (max-width: 426px) {
                     aside {
                         border-radius: 4px;
