@@ -186,7 +186,8 @@
                 ['program-secretariat', '#imagine-lucru'],
                 ['contact-date', '#imagine-contact'],
                 ['personal-text', '#imagine-personal'],
-                ['sindicat-contact', '#imagine-sindicat']
+                ['sindicat-contact', '#imagine-sindicat'],
+                ['ca-text', '#imagine-ca']
             ];
 
             function updateImagini() {
