@@ -624,6 +624,20 @@ border-radius: 4px;
                             text-align: left;
                         }
 
+                        .citat-4 {
+border: 0px solid #404040;
+border-radius: 4px;
+                            margin-top: 0.5rem;
+                            margin-bottom: 0.5rem;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0.5rem;
+                            padding-right: 0;
+                            text-align: left;
+                        }
+
                     .coloane {
 border: 0px solid #404040;
 border-radius: 4px;
@@ -1315,7 +1329,7 @@ border-radius: 4px;
                             flex-direction: column;
                             flex: 1;
                             align-items: start;
-                            text-align: center;
+                            text-align: left
                         }
 
                         .wrap-3 {
@@ -1910,6 +1924,9 @@ border-radius: 4px;
                         grid-column: span 12;
                         grid-template-columns: repeat(1, 1fr);
                     }
+                    #contact-continut .citat-3 {
+                        text-align: center;
+                    }
                     #contact-continut .wrap-show {
                         display: none;
                     }
@@ -1919,20 +1936,29 @@ border-radius: 4px;
                     #sindicat-continut .citat-3 {
                         text-align: center;
                     }
-                    #personal-continut .wrap-8 {
-                        grid-column: span 12;
-                    }
-                    #personal-continut .wrap-show {
-                        display: none;
-                    }
                     #sindicat-continut .wrap-show {
                         display: none;
                     }
                     #sindicat-continut .wrap-8 {
                         grid-column: span 12;
                     }
-                    #sindicat-continut .citat-3 {
-                        text-align: center;
+                    #personal-continut .wrap-show {
+                        display: none;
+                    }
+                    #personal-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
+                    #ca-continut .wrap-show {
+                        display: none;
+                    }
+                    #ca-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #conducere-continut .wrap-show {
+                        display: none;
+                    }
+                    #conducere-continut .wrap-9 {
+                        grid-column: span 12;
                     }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(2, 1fr);
@@ -1967,20 +1993,17 @@ border-radius: 4px;
                         grid-column: span 12;
                         grid-template-columns: repeat(1, 1fr);
                     }
+                    #contact-continut .citat-3 {
+                        text-align: center;
+                    }
                     #contact-continut .wrap-show {
                         display: none;
                     }
                     #contact-continut .wrap-9 {
                         grid-column: span 12;
                     }
-                    #contact-continut .citat-3 {
+                    #sindicat-continut .citat-3 {
                         text-align: center;
-                    }
-                    #personal-continut .wrap-8 {
-                        grid-column: span 12;
-                    }
-                    #personal-continut .wrap-show {
-                        display: none;
                     }
                     #sindicat-continut .wrap-show {
                         display: none;
@@ -1988,8 +2011,23 @@ border-radius: 4px;
                     #sindicat-continut .wrap-8 {
                         grid-column: span 12;
                     }
-                    #sindicat-continut .citat-3 {
-                        text-align: center;
+                    #personal-continut .wrap-show {
+                        display: none;
+                    }
+                    #personal-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
+                    #ca-continut .wrap-show {
+                        display: none;
+                    }
+                    #ca-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #conducere-continut .wrap-show {
+                        display: none;
+                    }
+                    #conducere-continut .wrap-9 {
+                        grid-column: span 12;
                     }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(1, 1fr);
@@ -2024,20 +2062,17 @@ border-radius: 4px;
                         grid-column: span 12;
                         grid-template-columns: repeat(1, 1fr);
                     }
+                    #contact-continut .citat-3 {
+                        text-align: center;
+                    }
                     #contact-continut .wrap-show {
                         display: none;
                     }
                     #contact-continut .wrap-9 {
                         grid-column: span 12;
                     }
-                    #contact-continut .citat-3 {
+                    #sindicat-continut .citat-3 {
                         text-align: center;
-                    }
-                    #personal-continut .wrap-8 {
-                        grid-column: span 12;
-                    }
-                    #personal-continut .wrap-show {
-                        display: none;
                     }
                     #sindicat-continut .wrap-show {
                         display: none;
@@ -2045,8 +2080,23 @@ border-radius: 4px;
                     #sindicat-continut .wrap-8 {
                         grid-column: span 12;
                     }
-                    #sindicat-continut .citat-3 {
-                        text-align: center;
+                    #personal-continut .wrap-show {
+                        display: none;
+                    }
+                    #personal-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
+                    #ca-continut .wrap-show {
+                        display: none;
+                    }
+                    #ca-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #conducere-continut .wrap-show {
+                        display: none;
+                    }
+                    #conducere-continut .wrap-9 {
+                        grid-column: span 12;
                     }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(1, 1fr);
@@ -2064,7 +2114,7 @@ border-radius: 4px;
                 }
 
 
-/* legaturi 1, imagine-4 1, wrap-92 12-1 */
+/* legaturi 1, imagine-4 1, wrap-92 12-1, wrap-6 12 (conducere-ul) */
                 @media (min-width: 427px) and (max-width: 600px) { 
                     aside {
                         border-radius: 4px;
@@ -2082,20 +2132,17 @@ border-radius: 4px;
                         grid-column: span 12;
                         grid-template-columns: repeat(1, 1fr);
                     }
+                    #contact-continut .citat-3 {
+                        text-align: center;
+                    }
                     #contact-continut .wrap-show {
                         display: none;
                     }
                     #contact-continut .wrap-9 {
                         grid-column: span 12;
                     }
-                    #contact-continut .citat-3 {
+                    #sindicat-continut .citat-3 {
                         text-align: center;
-                    }
-                    #personal-continut .wrap-8 {
-                        grid-column: span 12;
-                    }
-                    #personal-continut .wrap-show {
-                        display: none;
                     }
                     #sindicat-continut .wrap-show {
                         display: none;
@@ -2103,8 +2150,26 @@ border-radius: 4px;
                     #sindicat-continut .wrap-8 {
                         grid-column: span 12;
                     }
-                    #sindicat-continut .citat-3 {
-                        text-align: center;
+                    #personal-continut .wrap-show {
+                        display: none;
+                    }
+                    #personal-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
+                    #ca-continut .wrap-show {
+                        display: none;
+                    }
+                    #ca-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #conducere-continut .wrap-show {
+                        display: none;
+                    }
+                    #conducere-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #conducere-ul .wrap-6 {
+                        grid-column: span 12;
                     }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(1, 1fr);
@@ -2139,20 +2204,17 @@ border-radius: 4px;
                         grid-column: span 12;
                         grid-template-columns: repeat(1, 1fr);
                     }
+                    #contact-continut .citat-3 {
+                        text-align: center;
+                    }
                     #contact-continut .wrap-show {
                         display: none;
                     }
                     #contact-continut .wrap-9 {
                         grid-column: span 12;
                     }
-                    #contact-continut .citat-3 {
+                    #sindicat-continut .citat-3 {
                         text-align: center;
-                    }
-                    #personal-continut .wrap-8 {
-                        grid-column: span 12;
-                    }
-                    #personal-continut .wrap-show {
-                        display: none;
                     }
                     #sindicat-continut .wrap-show {
                         display: none;
@@ -2160,8 +2222,26 @@ border-radius: 4px;
                     #sindicat-continut .wrap-8 {
                         grid-column: span 12;
                     }
-                    #sindicat-continut .citat-3 {
-                        text-align: center;
+                    #personal-continut .wrap-show {
+                        display: none;
+                    }
+                    #personal-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
+                    #ca-continut .wrap-show {
+                        display: none;
+                    }
+                    #ca-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #conducere-continut .wrap-show {
+                        display: none;
+                    }
+                    #conducere-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #conducere-ul .wrap-6 {
+                        grid-column: span 12;
                     }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(1, 1fr);
@@ -2199,20 +2279,17 @@ border-radius: 4px;
                         grid-column: span 12;
                         grid-template-columns: repeat(1, 1fr);
                     }
+                    #contact-continut .citat-3 {
+                        text-align: center;
+                    }
                     #contact-continut .wrap-show {
                         display: none;
                     }
                     #contact-continut .wrap-9 {
                         grid-column: span 12;
                     }
-                    #contact-continut .citat-3 {
+                    #sindicat-continut .citat-3 {
                         text-align: center;
-                    }
-                    #personal-continut .wrap-8 {
-                        grid-column: span 12;
-                    }
-                    #personal-continut .wrap-show {
-                        display: none;
                     }
                     #sindicat-continut .wrap-show {
                         display: none;
@@ -2220,8 +2297,26 @@ border-radius: 4px;
                     #sindicat-continut .wrap-8 {
                         grid-column: span 12;
                     }
-                    #sindicat-continut .citat-3 {
-                        text-align: center;
+                    #personal-continut .wrap-show {
+                        display: none;
+                    }
+                    #personal-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
+                    #ca-continut .wrap-show {
+                        display: none;
+                    }
+                    #ca-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #conducere-continut .wrap-show {
+                        display: none;
+                    }
+                    #conducere-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #conducere-ul .wrap-6 {
+                        grid-column: span 12;
                     }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(1, 1fr);
