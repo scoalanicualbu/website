@@ -638,6 +638,20 @@ border-radius: 4px;
                             text-align: left;
                         }
 
+                        .citat-5 {
+border: 0px solid #404040;
+border-radius: 4px;
+                            margin-top: 0.5rem;
+                            margin-bottom: 0;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0.5rem;
+                            padding-right: 0;
+                            text-align: left;
+                        }
+
                     .coloane {
 border: 0px solid #404040;
 border-radius: 4px;
@@ -2177,6 +2191,15 @@ border-radius: 4px;
                     #ceac-continut .wrap-9 {
                         grid-column: span 12;
                     }
+                    #comisii-continut .wrap-show {
+                        display: none;
+                    }
+                    #comisii-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #comisii-ul .wrap-6 {
+                        grid-column: span 12;
+                    }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(1, 1fr);
                     }
@@ -2253,6 +2276,15 @@ border-radius: 4px;
                         display: none;
                     }
                     #ceac-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #comisii-continut .wrap-show {
+                        display: none;
+                    }
+                    #comisii-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #comisii-ul .wrap-6 {
                         grid-column: span 12;
                     }
                     .sectiune-comunicari ul {
@@ -2334,6 +2366,15 @@ border-radius: 4px;
                         display: none;
                     }
                     #ceac-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #comisii-continut .wrap-show {
+                        display: none;
+                    }
+                    #comisii-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #comisii-ul .wrap-6 {
                         grid-column: span 12;
                     }
                     .sectiune-comunicari ul {
