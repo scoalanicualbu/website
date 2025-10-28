@@ -189,7 +189,8 @@
                 ['sindicat-contact', '#imagine-sindicat'],
                 ['ca-text', '#imagine-ca'],
                 ['conducere-text', '#imagine-conducere'],
-                ['ceac-descriere', '#imagine-ceac']
+                ['ceac-descriere', '#imagine-ceac'],
+                ['comisii-descriere', '#imagine-comisii']
             ];
 
             function updateImagini() {
