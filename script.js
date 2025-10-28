@@ -187,7 +187,8 @@
                 ['contact-date', '#imagine-contact'],
                 ['personal-text', '#imagine-personal'],
                 ['sindicat-contact', '#imagine-sindicat'],
-                ['ca-text', '#imagine-ca']
+                ['ca-text', '#imagine-ca'],
+                ['conducere-text', '#imagine-conducere']
             ];
 
             function updateImagini() {
