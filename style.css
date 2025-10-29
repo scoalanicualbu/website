@@ -1896,6 +1896,9 @@ border-radius: 4px;
                     .content {
                         margin-left: var(--asz);
                     }
+                    #sindicat-continut .citat-3 {
+                        text-align: center;
+                    }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(2, 1fr);
                     }
@@ -1911,6 +1914,9 @@ border-radius: 4px;
                     }
                     .page-menu .patru-organigrama {
                         grid-template-columns: repeat(2, 1fr);
+                    }
+                    #sindicat-continut .citat-3 {
+                        text-align: center;
                     }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(2, 1fr);
