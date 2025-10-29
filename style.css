@@ -1924,7 +1924,7 @@ border-radius: 4px;
                 }
 
 /* legaturi 2, wrap-show, wrap-92 12-2, wrap-9 12 */
-                @media (min-width: 901px) and (max-width: 1152px) { 
+                @media (min-width: 913px) and (max-width: 1152px) { 
                     aside {
                         border-radius: 4px;
                     }
@@ -1947,6 +1947,12 @@ border-radius: 4px;
                     #contact-continut .wrap-9 {
                         grid-column: span 12;
                     }
+                    #personal-continut .wrap-show {
+                        display: none;
+                    }
+                    #personal-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
                     #sindicat-continut .citat-3 {
                         text-align: center;
                     }
@@ -1954,12 +1960,6 @@ border-radius: 4px;
                         display: none;
                     }
                     #sindicat-continut .wrap-8 {
-                        grid-column: span 12;
-                    }
-                    #personal-continut .wrap-show {
-                        display: none;
-                    }
-                    #personal-continut .wrap-8 {
                         grid-column: span 12;
                     }
                     #ca-continut .wrap-show {
@@ -1972,6 +1972,24 @@ border-radius: 4px;
                         display: none;
                     }
                     #conducere-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #conducere-ul .wrap-6 {
+                        grid-column: span 12;
+                    }
+                    #ceac-continut .wrap-show {
+                        display: none;
+                    }
+                    #ceac-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #comisii-continut .wrap-show {
+                        display: none;
+                    }
+                    #comisii-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #comisii-ul .wrap-6 {
                         grid-column: span 12;
                     }
                     .sectiune-comunicari ul {
@@ -1990,7 +2008,7 @@ border-radius: 4px;
                 }
 
 /* page-menu-1 (organigrama) */
-                @media (min-width: 801px) and (max-width: 900px) {
+                @media (min-width: 801px) and (max-width: 912px) {
                     aside {
                         border-radius: 4px;
                     }
@@ -2013,6 +2031,12 @@ border-radius: 4px;
                     #contact-continut .wrap-9 {
                         grid-column: span 12;
                     }
+                    #personal-continut .wrap-show {
+                        display: none;
+                    }
+                    #personal-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
                     #sindicat-continut .citat-3 {
                         text-align: center;
                     }
@@ -2020,12 +2044,6 @@ border-radius: 4px;
                         display: none;
                     }
                     #sindicat-continut .wrap-8 {
-                        grid-column: span 12;
-                    }
-                    #personal-continut .wrap-show {
-                        display: none;
-                    }
-                    #personal-continut .wrap-8 {
                         grid-column: span 12;
                     }
                     #ca-continut .wrap-show {
@@ -2038,6 +2056,24 @@ border-radius: 4px;
                         display: none;
                     }
                     #conducere-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #conducere-ul .wrap-6 {
+                        grid-column: span 12;
+                    }
+                    #ceac-continut .wrap-show {
+                        display: none;
+                    }
+                    #ceac-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #comisii-continut .wrap-show {
+                        display: none;
+                    }
+                    #comisii-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #comisii-ul .wrap-6 {
                         grid-column: span 12;
                     }
                     .sectiune-comunicari ul {
@@ -2082,6 +2118,12 @@ border-radius: 4px;
                     #contact-continut .wrap-9 {
                         grid-column: span 12;
                     }
+                    #personal-continut .wrap-show {
+                        display: none;
+                    }
+                    #personal-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
                     #sindicat-continut .citat-3 {
                         text-align: center;
                     }
@@ -2089,12 +2131,6 @@ border-radius: 4px;
                         display: none;
                     }
                     #sindicat-continut .wrap-8 {
-                        grid-column: span 12;
-                    }
-                    #personal-continut .wrap-show {
-                        display: none;
-                    }
-                    #personal-continut .wrap-8 {
                         grid-column: span 12;
                     }
                     #ca-continut .wrap-show {
@@ -2107,6 +2143,24 @@ border-radius: 4px;
                         display: none;
                     }
                     #conducere-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #conducere-ul .wrap-6 {
+                        grid-column: span 12;
+                    }
+                    #ceac-continut .wrap-show {
+                        display: none;
+                    }
+                    #ceac-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #comisii-continut .wrap-show {
+                        display: none;
+                    }
+                    #comisii-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #comisii-ul .wrap-6 {
                         grid-column: span 12;
                     }
                     .sectiune-comunicari ul {
@@ -2151,6 +2205,12 @@ border-radius: 4px;
                     #contact-continut .wrap-9 {
                         grid-column: span 12;
                     }
+                    #personal-continut .wrap-show {
+                        display: none;
+                    }
+                    #personal-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
                     #sindicat-continut .citat-3 {
                         text-align: center;
                     }
@@ -2158,12 +2218,6 @@ border-radius: 4px;
                         display: none;
                     }
                     #sindicat-continut .wrap-8 {
-                        grid-column: span 12;
-                    }
-                    #personal-continut .wrap-show {
-                        display: none;
-                    }
-                    #personal-continut .wrap-8 {
                         grid-column: span 12;
                     }
                     #ca-continut .wrap-show {
@@ -2176,6 +2230,24 @@ border-radius: 4px;
                         display: none;
                     }
                     #conducere-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #conducere-ul .wrap-6 {
+                        grid-column: span 12;
+                    }
+                    #ceac-continut .wrap-show {
+                        display: none;
+                    }
+                    #ceac-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #comisii-continut .wrap-show {
+                        display: none;
+                    }
+                    #comisii-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #comisii-ul .wrap-6 {
                         grid-column: span 12;
                     }
                     .sectiune-comunicari ul {
@@ -2221,6 +2293,12 @@ border-radius: 4px;
                     #contact-continut .wrap-9 {
                         grid-column: span 12;
                     }
+                    #personal-continut .wrap-show {
+                        display: none;
+                    }
+                    #personal-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
                     #sindicat-continut .citat-3 {
                         text-align: center;
                     }
@@ -2228,12 +2306,6 @@ border-radius: 4px;
                         display: none;
                     }
                     #sindicat-continut .wrap-8 {
-                        grid-column: span 12;
-                    }
-                    #personal-continut .wrap-show {
-                        display: none;
-                    }
-                    #personal-continut .wrap-8 {
                         grid-column: span 12;
                     }
                     #ca-continut .wrap-show {
