@@ -1931,8 +1931,8 @@ border-radius: 4px;
                     .page-menu .patru-organigrama {
                         grid-template-columns: repeat(2, 1fr);
                     }
-                    #program-continut .wrap-show {
-                        display: none;
+                    #sindicat-continut .citat-3 {
+                        text-align: center;
                     }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(2, 1fr);
