@@ -191,7 +191,8 @@
                 ['conducere-text', '#imagine-conducere'],
                 ['ceac-descriere', '#imagine-ceac'],
                 ['comisii-descriere', '#imagine-comisii'],
-                ['regulamente-descriere', '#imagine-regulamente']
+                ['regulamente-descriere', '#imagine-regulamente'],
+                ['oferta-text', '#imagine-oferta']
             ];
 
             function updateImagini() {
