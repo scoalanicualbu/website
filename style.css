@@ -459,6 +459,10 @@ border-radius: 4px;
                                 grid-template-columns: repeat(4, 1fr);
                             }
 
+                            .page-menu .patru-regulamente {
+                                grid-template-columns: repeat(4, 1fr);
+                            }
+
                             .page-menu .sase {
                                 grid-template-columns: repeat(6, 1fr);
                             }
@@ -2024,6 +2028,15 @@ border-radius: 4px;
                     #comisii-ul .wrap-6 {
                         grid-column: span 12;
                     }
+                    #regulamente-continut .wrap-show {
+                        display: none;
+                    }
+                    #regulamente-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #regulamente-ul .wrap-6 {
+                        grid-column: span 12;
+                    }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(2, 1fr);
                     }
@@ -2039,7 +2052,7 @@ border-radius: 4px;
                     }
                 }
 
-/* page-menu 2 (prezentare), comunicari-1 */
+/* page-menu 2 (prezentare, regulamente), comunicari-1 */
                 @media (min-width: 721px) and (max-width: 800px) {
                     aside {
                         border-radius: 4px;
@@ -2049,6 +2062,9 @@ border-radius: 4px;
                     }
                     .page-menu .patru-organigrama {
                         grid-template-columns: repeat(1, 1fr);
+                    }
+                    .page-menu .patru-regulamente {
+                        grid-template-columns: repeat(2, 1fr);
                     }
                     #program-continut .wrap-show {
                         display: none;
@@ -2109,6 +2125,15 @@ border-radius: 4px;
                         grid-column: span 12;
                     }
                     #comisii-ul .wrap-6 {
+                        grid-column: span 12;
+                    }
+                    #regulamente-continut .wrap-show {
+                        display: none;
+                    }
+                    #regulamente-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #regulamente-ul .wrap-6 {
                         grid-column: span 12;
                     }
                     .sectiune-comunicari ul {
@@ -2137,6 +2162,9 @@ border-radius: 4px;
                     .page-menu .patru-organigrama {
                         grid-template-columns: repeat(1, 1fr);
                     }
+                    .page-menu .patru-regulamente {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
                     #program-continut .wrap-show {
                         display: none;
                     }
@@ -2196,6 +2224,15 @@ border-radius: 4px;
                         grid-column: span 12;
                     }
                     #comisii-ul .wrap-6 {
+                        grid-column: span 12;
+                    }
+                    #regulamente-continut .wrap-show {
+                        display: none;
+                    }
+                    #regulamente-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #regulamente-ul .wrap-6 {
                         grid-column: span 12;
                     }
                     .sectiune-comunicari ul {
@@ -2225,6 +2262,9 @@ border-radius: 4px;
                     .page-menu .patru-organigrama {
                         grid-template-columns: repeat(1, 1fr);
                     }
+                    .page-menu .patru-regulamente {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
                     #program-continut .wrap-show {
                         display: none;
                     }
@@ -2284,6 +2324,15 @@ border-radius: 4px;
                         grid-column: span 12;
                     }
                     #comisii-ul .wrap-6 {
+                        grid-column: span 12;
+                    }
+                    #regulamente-continut .wrap-show {
+                        display: none;
+                    }
+                    #regulamente-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #regulamente-ul .wrap-6 {
                         grid-column: span 12;
                     }
                     .sectiune-comunicari ul {
@@ -2312,6 +2361,9 @@ border-radius: 4px;
                     .page-menu .patru-organigrama {
                         grid-template-columns: repeat(1, 1fr);
                     }
+                    .page-menu .patru-regulamente {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
                     #program-continut .wrap-show {
                         display: none;
                     }
@@ -2371,6 +2423,15 @@ border-radius: 4px;
                         grid-column: span 12;
                     }
                     #comisii-ul .wrap-6 {
+                        grid-column: span 12;
+                    }
+                    #regulamente-continut .wrap-show {
+                        display: none;
+                    }
+                    #regulamente-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #regulamente-ul .wrap-6 {
                         grid-column: span 12;
                     }
                     .sectiune-comunicari ul {
@@ -2388,7 +2449,7 @@ border-radius: 4px;
                     }
                 }
 
-/* page-menu 1 (personal) */
+/* page-menu 1 (personal, regulamente) */
                 @media (max-width: 352px) {
                     aside {
                         border-radius: 4px;
@@ -2400,6 +2461,9 @@ border-radius: 4px;
                         grid-template-columns: repeat(1, 1fr);
                     }
                     .page-menu .patru-organigrama {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                    .page-menu .patru-regulamente {
                         grid-template-columns: repeat(1, 1fr);
                     }
                     #program-continut .wrap-show {
@@ -2461,6 +2525,15 @@ border-radius: 4px;
                         grid-column: span 12;
                     }
                     #comisii-ul .wrap-6 {
+                        grid-column: span 12;
+                    }
+                    #regulamente-continut .wrap-show {
+                        display: none;
+                    }
+                    #regulamente-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #regulamente-ul .wrap-6 {
                         grid-column: span 12;
                     }
                     .sectiune-comunicari ul {
