@@ -17,28 +17,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- Titlu -->
-        <title>Conducerea școlii</title>
+        <title>Regulamente</title>
 
 <!-- Resurse -->
 <!--        <base href="https://scoalanicualbu.github.io/website/">-->
 
 <!-- Descriere -->
-        <meta name="description" content="Site-ul oficial al Școlii Gimnaziale „Nicu Albu” Piatra Neamț, pagina „Conducerea școlii”. Aici sunt cuprinse informații despre conducerea școlii și legături către secțiuni precum Consiliul de Administrație, Comisia de Evaluare și Asigurare a Calității, Comisii de lucru.">
+        <meta name="description" content="Site-ul oficial al Școlii Gimnaziale „Nicu Albu” Piatra Neamț, pagina „Regulamente”. Aici sunt cuprinse informații despre regulamente și legături către secțiuni precum circumscripție, program de lucru, preșcolari și elevi, asociația părinților.">
 
 <!-- Autor -->
         <meta name="author" content="informatician IFTIMIA DAN-ADRIAN">
 
 <!-- Cuvinte cheie -->
-        <meta name="keywords" content="ȘCOALA GIMNAZIALĂ NICU ALBU PIATRA NEAMȚ CONDUCERE">
+        <meta name="keywords" content="ȘCOALA GIMNAZIALĂ NICU ALBU PIATRA NEAMȚ REGULAMENTE">
 
 <!-- Proprietate -->
         <meta property="og:site_name" content="Școala Gimnazială „Nicu Albu” Piatra Neamț">
         <meta property="og:url" content="https://scoalanicualbu.github.io/website">
-        <meta property="og:title" content="Site-ul oficial al Școlii Gimnaziale „Nicu Albu” Piatra Neamț, pagina „Conducerea școlii”">
-        <meta property="og:description" content="Aici sunt cuprinse informații despre conducerea școlii și legături către secțiuni precum Consiliul de Administrație, Comisia de Evaluare și Asigurare a Calității, Comisii de lucru.">
+        <meta property="og:title" content="Site-ul oficial al Școlii Gimnaziale „Nicu Albu” Piatra Neamț, pagina „Regulamente”">
+        <meta property="og:description" content="Aici sunt cuprinse informații despre regulamente și legături către secțiuni precum circumscripție, program de lucru, preșcolari și elevi, asociația părinților.">
         <meta property="og:type" content="website">
         <meta property="og:locale" content="ro_RO">
-        <meta property="og:image" content="https://github.com/scoalanicualbu/website/blob/main/organigrama/ca.png?raw=true">
+        <meta property="og:image" content="https://github.com/scoalanicualbu/website/blob/main/regulamente/regulamente.png?raw=true">
 
 <!-- Iconiță favorită -->
         <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -517,6 +517,10 @@ border-radius: 4px;
                                 grid-template-columns: repeat(4, 1fr);
                             }
 
+                            .page-menu .patru-regulamente {
+                                grid-template-columns: repeat(4, 1fr);
+                            }
+
                             .page-menu .sase {
                                 grid-template-columns: repeat(6, 1fr);
                             }
@@ -687,6 +691,20 @@ border: 0px solid #404040;
 border-radius: 4px;
                             margin-top: 0.5rem;
                             margin-bottom: 0.5rem;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0.5rem;
+                            padding-right: 0;
+                            text-align: left;
+                        }
+
+                        .citat-5 {
+border: 0px solid #404040;
+border-radius: 4px;
+                            margin-top: 0.5rem;
+                            margin-bottom: 0;
                             margin-left: 0;
                             margin-right: 0;
                             padding-top: 0;
@@ -1940,6 +1958,9 @@ border-radius: 4px;
                     .content {
                         margin-left: var(--asz);
                     }
+                    #sindicat-continut .citat-3 {
+                        text-align: center;
+                    }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(2, 1fr);
                     }
@@ -1956,6 +1977,9 @@ border-radius: 4px;
                     .page-menu .patru-organigrama {
                         grid-template-columns: repeat(2, 1fr);
                     }
+                    #sindicat-continut .citat-3 {
+                        text-align: center;
+                    }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(2, 1fr);
                     }
@@ -1968,12 +1992,38 @@ border-radius: 4px;
                 }
 
 /* legaturi 2, wrap-show, wrap-92 12-2, wrap-9 12 */
-                @media (min-width: 801px) and (max-width: 1152px) { 
+                @media (min-width: 913px) and (max-width: 1152px) { 
                     aside {
                         border-radius: 4px;
                     }
                     .page-menu .patru-organigrama {
                         grid-template-columns: repeat(2, 1fr);
+                    }
+                    #sindicat-continut .citat-3 {
+                        text-align: center;
+                    }
+                    .sectiune-comunicari ul {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                    .imagine-4 {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                    .imagine-2 {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                    .sectiune-legaturi ul {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                }
+
+/* page-menu-1 (organigrama) */
+                @media (min-width: 801px) and (max-width: 912px) {
+                    aside {
+                        border-radius: 4px;
+                    }
+                    .page-menu .patru-organigrama {
+                        grid-template-columns: repeat(1, 1fr);
                     }
                     #program-continut .wrap-show {
                         display: none;
@@ -1991,6 +2041,12 @@ border-radius: 4px;
                     #contact-continut .wrap-9 {
                         grid-column: span 12;
                     }
+                    #personal-continut .wrap-show {
+                        display: none;
+                    }
+                    #personal-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
                     #sindicat-continut .citat-3 {
                         text-align: center;
                     }
@@ -1998,12 +2054,6 @@ border-radius: 4px;
                         display: none;
                     }
                     #sindicat-continut .wrap-8 {
-                        grid-column: span 12;
-                    }
-                    #personal-continut .wrap-show {
-                        display: none;
-                    }
-                    #personal-continut .wrap-8 {
                         grid-column: span 12;
                     }
                     #ca-continut .wrap-show {
@@ -2016,6 +2066,33 @@ border-radius: 4px;
                         display: none;
                     }
                     #conducere-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #conducere-ul .wrap-6 {
+                        grid-column: span 12;
+                    }
+                    #ceac-continut .wrap-show {
+                        display: none;
+                    }
+                    #ceac-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #comisii-continut .wrap-show {
+                        display: none;
+                    }
+                    #comisii-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #comisii-ul .wrap-6 {
+                        grid-column: span 12;
+                    }
+                    #regulamente-continut .wrap-show {
+                        display: none;
+                    }
+                    #regulamente-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #regulamente-ul .wrap-6 {
                         grid-column: span 12;
                     }
                     .sectiune-comunicari ul {
@@ -2042,7 +2119,7 @@ border-radius: 4px;
                         grid-template-columns: repeat(2, 1fr);
                     }
                     .page-menu .patru-organigrama {
-                        grid-template-columns: repeat(2, 1fr);
+                        grid-template-columns: repeat(1, 1fr);
                     }
                     #program-continut .wrap-show {
                         display: none;
@@ -2060,6 +2137,12 @@ border-radius: 4px;
                     #contact-continut .wrap-9 {
                         grid-column: span 12;
                     }
+                    #personal-continut .wrap-show {
+                        display: none;
+                    }
+                    #personal-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
                     #sindicat-continut .citat-3 {
                         text-align: center;
                     }
@@ -2067,12 +2150,6 @@ border-radius: 4px;
                         display: none;
                     }
                     #sindicat-continut .wrap-8 {
-                        grid-column: span 12;
-                    }
-                    #personal-continut .wrap-show {
-                        display: none;
-                    }
-                    #personal-continut .wrap-8 {
                         grid-column: span 12;
                     }
                     #ca-continut .wrap-show {
@@ -2085,6 +2162,33 @@ border-radius: 4px;
                         display: none;
                     }
                     #conducere-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #conducere-ul .wrap-6 {
+                        grid-column: span 12;
+                    }
+                    #ceac-continut .wrap-show {
+                        display: none;
+                    }
+                    #ceac-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #comisii-continut .wrap-show {
+                        display: none;
+                    }
+                    #comisii-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #comisii-ul .wrap-6 {
+                        grid-column: span 12;
+                    }
+                    #regulamente-continut .wrap-show {
+                        display: none;
+                    }
+                    #regulamente-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #regulamente-ul .wrap-6 {
                         grid-column: span 12;
                     }
                     .sectiune-comunicari ul {
@@ -2129,6 +2233,12 @@ border-radius: 4px;
                     #contact-continut .wrap-9 {
                         grid-column: span 12;
                     }
+                    #personal-continut .wrap-show {
+                        display: none;
+                    }
+                    #personal-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
                     #sindicat-continut .citat-3 {
                         text-align: center;
                     }
@@ -2136,12 +2246,6 @@ border-radius: 4px;
                         display: none;
                     }
                     #sindicat-continut .wrap-8 {
-                        grid-column: span 12;
-                    }
-                    #personal-continut .wrap-show {
-                        display: none;
-                    }
-                    #personal-continut .wrap-8 {
                         grid-column: span 12;
                     }
                     #ca-continut .wrap-show {
@@ -2154,6 +2258,33 @@ border-radius: 4px;
                         display: none;
                     }
                     #conducere-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #conducere-ul .wrap-6 {
+                        grid-column: span 12;
+                    }
+                    #ceac-continut .wrap-show {
+                        display: none;
+                    }
+                    #ceac-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #comisii-continut .wrap-show {
+                        display: none;
+                    }
+                    #comisii-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #comisii-ul .wrap-6 {
+                        grid-column: span 12;
+                    }
+                    #regulamente-continut .wrap-show {
+                        display: none;
+                    }
+                    #regulamente-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #regulamente-ul .wrap-6 {
                         grid-column: span 12;
                     }
                     .sectiune-comunicari ul {
@@ -2172,7 +2303,7 @@ border-radius: 4px;
                 }
 
 
-/* legaturi 1, imagine-4 1, wrap-92 12-1 */
+/* legaturi 1, imagine-4 1, wrap-92 12-1, wrap-6 12 (conducere-ul) */
                 @media (min-width: 427px) and (max-width: 600px) { 
                     aside {
                         border-radius: 4px;
@@ -2199,6 +2330,12 @@ border-radius: 4px;
                     #contact-continut .wrap-9 {
                         grid-column: span 12;
                     }
+                    #personal-continut .wrap-show {
+                        display: none;
+                    }
+                    #personal-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
                     #sindicat-continut .citat-3 {
                         text-align: center;
                     }
@@ -2206,12 +2343,6 @@ border-radius: 4px;
                         display: none;
                     }
                     #sindicat-continut .wrap-8 {
-                        grid-column: span 12;
-                    }
-                    #personal-continut .wrap-show {
-                        display: none;
-                    }
-                    #personal-continut .wrap-8 {
                         grid-column: span 12;
                     }
                     #ca-continut .wrap-show {
@@ -2227,6 +2358,30 @@ border-radius: 4px;
                         grid-column: span 12;
                     }
                     #conducere-ul .wrap-6 {
+                        grid-column: span 12;
+                    }
+                    #ceac-continut .wrap-show {
+                        display: none;
+                    }
+                    #ceac-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #comisii-continut .wrap-show {
+                        display: none;
+                    }
+                    #comisii-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #comisii-ul .wrap-6 {
+                        grid-column: span 12;
+                    }
+                    #regulamente-continut .wrap-show {
+                        display: none;
+                    }
+                    #regulamente-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #regulamente-ul .wrap-6 {
                         grid-column: span 12;
                     }
                     .sectiune-comunicari ul {
@@ -2299,6 +2454,30 @@ border-radius: 4px;
                         grid-column: span 12;
                     }
                     #conducere-ul .wrap-6 {
+                        grid-column: span 12;
+                    }
+                    #ceac-continut .wrap-show {
+                        display: none;
+                    }
+                    #ceac-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #comisii-continut .wrap-show {
+                        display: none;
+                    }
+                    #comisii-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #comisii-ul .wrap-6 {
+                        grid-column: span 12;
+                    }
+                    #regulamente-continut .wrap-show {
+                        display: none;
+                    }
+                    #regulamente-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #regulamente-ul .wrap-6 {
                         grid-column: span 12;
                     }
                     .sectiune-comunicari ul {
@@ -2376,6 +2555,30 @@ border-radius: 4px;
                     #conducere-ul .wrap-6 {
                         grid-column: span 12;
                     }
+                    #ceac-continut .wrap-show {
+                        display: none;
+                    }
+                    #ceac-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #comisii-continut .wrap-show {
+                        display: none;
+                    }
+                    #comisii-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #comisii-ul .wrap-6 {
+                        grid-column: span 12;
+                    }
+                    #regulamente-continut .wrap-show {
+                        display: none;
+                    }
+                    #regulamente-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #regulamente-ul .wrap-6 {
+                        grid-column: span 12;
+                    }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(1, 1fr);
                     }
@@ -2401,7 +2604,7 @@ border-radius: 4px;
 
             <h1 id="titlu-label" class="sr-only">Școala Gimnazială „Nicu Albu” Piatra Neamț</h1>
 
-            <p class="sr-only"><strong>Pagina „Conducerea școlii”</strong></p>
+            <p class="sr-only"><strong>Pagina „Regulamente”</strong></p>
 
         </section>
 
@@ -2578,7 +2781,7 @@ border-radius: 4px;
                         </a>
                     </li>
                     <li>
-                        <a href="regulamente.html">
+                        <a href="regulamente.html"  class="active" aria-current="page">
                             Regulamente
                             <span class="sr-only"> (se deschide în aceeași fereastră)</span>
                         </a>
@@ -2590,7 +2793,7 @@ border-radius: 4px;
                         </a>
                     </li>
                     <li>
-                        <a href="organigrama.html" class="inactive">
+                        <a href="organigrama.html">
                             Organigramă
                             <span class="sr-only"> (se deschide în aceeași fereastră)</span>
                         </a>
@@ -2612,11 +2815,11 @@ border-radius: 4px;
 <!-- Banner -->
         <header id="banner" class="banner">
 
-            <img src="https://github.com/scoalanicualbu/website/blob/main/organigrama/conducere.png?raw=true" alt="Turnul lui Ștefan cel Mare din centrul istoric al Minicipiului Piatra-Neamț">
+            <img src="https://github.com/scoalanicualbu/website/blob/main/regulamente/regulamente.png?raw=true" alt="Un birou aglomerat pe care se află două monitoare de calculator care afișeaza situații și grafice financiare, două tastaturi albe, un calculator de birou, dosare colorate în lucru, un suport cu creioane ascuțite, o cană verde, bibliorafturi colorate, iar în lateral, pe fundal, estompate, sunt rafturi cu cărți.">
 
         </header>
 
-        <main id="conducere" class="content" aria-label="Conținut principal">
+        <main id="regualmente" class="content" aria-label="Conținut principal">
 
 <!-- Buton Meniu -->
             <button id="menu-toggle" type="button" tabindex="0" aria-label="Buton Meniu site" aria-expanded="false" aria-controls="main-menu" aria-haspopup="menu">
@@ -2628,28 +2831,28 @@ border-radius: 4px;
 <!-- Meniu pagină -->
                 <nav id="meniu-pagina" class="page-menu" aria-label="Meniu pagină">
 
-                    <ul class="patru-organigrama">
+                    <ul class="patru-regulamente">
                         <li>
-                            <a href="organigrama/ca.html">
-                                Consiliul de Administrație
+                            <a href="prezentare/circumscriptie.html">
+                                Circumscripție
                                 <span class="sr-only"> (se deschide în aceeași fereastră)</span>
                             </a>
                         </li>
                         <li>
-                            <a href="organigrama/conducere.html" class="active" aria-current="page">
-                                Conducerea școlii
+                            <a href="prezentare/program.html">
+                                Program de lucru
                                 <span class="sr-only"> (se deschide în aceeași fereastră)</span>
                             </a>
                         </li>
                         <li>
-                            <a href="organigrama/ceac.html">
-                                Comisia de Evaluare și Asigurare a Calității
+                            <a href="regulamente.html">
+                                Preșcolari și elevi
                                 <span class="sr-only"> (se deschide în aceeași fereastră)</span>
                             </a>
                         </li>
                         <li>
-                            <a href="organigrama/comisii.html">
-                                Comisii de lucru
+                            <a href="regulamente.html">
+                                Asociația părinților
                                 <span class="sr-only"> (se deschide în aceeași fereastră)</span>
                             </a>
                         </li>
@@ -2663,137 +2866,129 @@ border-radius: 4px;
             <div id="main-content" class="page-content" role="region" tabindex="-1" aria-label="Conținut pagină">
 
 <!-- Secțiune Conținut -->
-                <section id="conducere-continut" class="sectiune-continut" aria-labelledby="conducere-continut-label">
+                <section id="regulamente-continut" class="sectiune-continut" aria-labelledby="regulamente-continut-label">
 
-                    <h3 id="conducere-continut-label" class="sr-only">Conducerea școlii</h3>
+                    <h3 id="regulamente-continut-label" class="sr-only">Regulamente</h3>
 
-                    <p class="sr-only">Această secțiune cuprinde informații privind conducerea școlii.</p>
+                    <p class="sr-only">Această secțiune cuprinde informații despre regulamente.</p>
 
-                    <section id="conducere-imagine" class="wrap-3 wrap-show" aria-labelledby="conducere-imagine-label">
+                    <section id="regulamente-imagine" class="wrap-3 wrap-show" aria-labelledby="regulamente-imagine-label">
 
-                        <h4 id="conducere-imagine-label" class="sr-only">Imagine Declarații de avere și interese:</h4>
+                        <h4 id="regulamente-imagine-label" class="sr-only">Standarde:</h4>
 
-                        <p class="sr-only">Această secțiune cuprinde o imagine reprezentativă pentru declarații de avere și interese.</p>
+                        <p class="sr-only">Această secțiune cuprinde o imagine reprezentativă pentru regulamente.</p>
 
-                        <div id="imagine-conducere" class="contain-imagine wrap-size">
-                           <img src="https://github.com/scoalanicualbu/website/blob/main/organigrama/avere.png?raw=true" alt="Drapelul Uniunii Europene fluturând, cu panglici tricolore în partea de sus și de jos, afișând în centru, cu alb, textul „Declarații de avere și interese”">
+                        <div id="imagine-regulamente" class="content-imagine wrap-size">
+                           <img src="https://github.com/scoalanicualbu/website/blob/main/regulamente/standard.png?raw=true" alt="Un birou îngrijit pe care se află un caiet spiralat, un suport cu creioane ascuțite, un teanc de cărți groase deasupra căruia se află un măr verde, iar pe fundal, estompate, sunt rafturi pline de bibliorafturi colorate.">
                         </div>
 
                     </section>
 
-                    <section id="conducere-text" class="wrap-9 wrap-down" aria-labelledby="conducere-text-label">
+                    <section id="regulamente-text" class="wrap-9 wrap-down" aria-labelledby="regulamente-text-label">
 
-                        <h4 id="conducere-text-label" class="sr-only">Descriere:</h4>
+                        <h4 id="regulamente-text-label" class="sr-only">Descriere:</h4>
 
-                        <p class="sr-only">Această secțiune cuprinde descrierea obligației de a publica declarațiile de avere și interese.</p>
+                        <p class="sr-only">Această secțiune cuprinde o scurtă descriere a regulamentelor.</p>
 
-                        <section id="conducere-descriere" class="sectiune-text coloane" aria-labelledby="ca-descriere-label">
+                        <section id="regulamente-descriere" class="sectiune-text coloane" aria-labelledby="regulamente-descriere-label">
 
-                            <h3 id="conducere-descriere-label" class="sr-only">Scurtă descriere</h3>
+                            <h3 id="regulamente-descriere-label" class="sr-only">Scurtă descriere</h3>
 
-                            <p>Conform Legii nr. 176 din 01.09.2010 privind integritatea în exercitarea funcţiilor şi demnităţilor publice, pentru modificarea şi completarea Legii nr. 144 din 21.05.2007 privind înfiinţarea, organizarea şi funcţionarea Agenţiei Naţionale de Integritate, precum şi pentru modificarea şi completarea altor acte normative, completată prin Legea nr. 105 din 03.07.2020 și modificată prin Ordonanța de Urgență a Guvernului României nr. 127 din 15.12.2021, prezentăm declarațiile de avere și interese.</p>
-
+                            <p>În cadrul sistemului de învățământ din România, organizarea și funcționarea unei unități de învățământ este reglementată de Ministerul Educației și Cercetării prin Regulamentul-cadru de organizare și funcționare a unităților de învățământ preuniversitar, în conformitate cu prevederile legale în vigoare, care se aplică în toate unitățile de învățământ, precum și de propriul Regulament de organizare și funcționare a unității de învățământ și propiul Regulamentului Intern, aprobate de Consiliul de Administrație.</p>
                         </section>
 
                     </section>
 
-                </section> 
+                </section>
+
+<!-- Secțiune Text -->
+                <section id="regulamente-prezentare" class="sectiune-text" aria-labelledby="regulamente-prezentare-label">
+
+                    <h3 id="regulamente-prezentare-label" class="sr-only">Scurtă prezentare a regulamentelor</h3>
+
+                    <p class="sr-only">Această secțiune conține o scurtă prezentare a comisiilor de lucru.</p>
+
+                    <article id="prezentare" class="coloane" aria-labelledby="regulamente-label">
+
+                        <h4 id="prezentare-label" class="sr-only">Prezentare:</h4>
+
+                        <p class="citat-0">Regulamentul-cadru de organizare și funcționare a unităților de învățământ preuniversitar conține prevederi referitoare la:</p>
+                        <p class="citat-0">‒ dispoziții generale: cadrul de reglementare; principiile de organizare și funcționare a învățământului preuniversitar;</p>
+                        <p class="citat-0">‒ organizarea unităților de învățământ: rețeaua școlară; organizarea programului școlar; formațiunile de studiu;</p>
+                        <p class="citat-0">‒ managementul unităților de învățământ: dispoziții generale; Consiliul de Administrație; Directorul; Directorul adjunct; tipul și conținutul documentelor manageriale;</p>
+                        <p class="citat-0">‒ personalul unităților de învățământ: dispoziții generale; personalul didactic; personalul nedidactic; evaluarea personalului din unitățile de învățământ; răspunderea disciplinară a personalului din unitatea de învățământ;</p>
+                        <p class="citat-0">‒ organismele funcționale și responsabilități ale cadrelor didactice: organismele funcționale la nivelul unității de învățământ (Consiliul Profesoral, Consiliul clasei); responsabilitățile personalului didactic în unitatea de învățământ (coordonatorul pentru proiecte și programe educative școlare și extrașcolare, profesorul diriginte);</p>
+                        <p class="citat-0">‒ structura, organizarea și responsabilitățile personalului didactic auxiliar și nedidactic: compartimentul secretariat; serviciul financiar (organizare și responsabilități, management financiar); compartimentul administrativ (organizare și responsabilități, management administrativ); biblioteca școlară;</p>
+                        <p class="citat-0">‒ elevi: dobândirea și exercitarea calității de elev; activitatea educativă extrașcolară; evaluarea copiilor/elevilor (evaluarea rezultatelor învățării și încheierea situației școlare, examene organizate la nivelul unităților de învățământ); transferul elevilor;</p>
+                        <p class="citat-0">‒ evaluarea unităților de învățământ: dispoziții generale; evaluarea internă a calității educației; evaluarea externă a calității educației;</p>
+                        <p class="citat-0">‒ partenerii educaționali: drepturile părinților/reprezentanților legali; îndatoririle părinților/reprezentanților legali; Adunarea generală a părinților; Comitetul de părinți; Consiliul reprezentativ al părinților și Asociația de părinți; contractul educațional; școala și comunitatea prin parteneriate/protocoale între unitățile de învățământ și alți parteneri educaționali;</p>
+                        <p>‒ dispoziții tranzitorii și finale.</p>
+
+                        <p>Respectarea prevederilor Regulamentului-cadru de organizare și funcționare a unităților de învățământ preuniversitar de către personalul didactic, didactic auxiliar, nedidactic și elevi este obligatorie, nerespectarea acestora constituind abatere disciplinară și fiind sancționată conform prevederilor legale.</p>
+                        <p>În baza Regulamentul-cadru de organizare și funcționare a unităților de învățământ preuniversitar, a actelor normative și/sau administrative cu caracter normativ care reglementează drepturile și obligațiile beneficiarilor primari și secundari ai educației și ale personalului din unitățile de învățământ, precum și a contractelor colective de muncă aplicabile, unitățile de învățământ își elaborează propriul Regulament de organizare și funcționare. Acesta conține reglementări cu caracter general, în funcție de tipul unității de învățământ, precum și reglementări specifice fiecărei unități de învățământ, în conformitate cu prevederile legale în vigoare.</p>
+                        <p>Proiectul Regulamentului de organizare și funcționare a unității de învățământ se elaborează de către un colectiv de lucru, coordonat de un cadru didactic. Din colectivul de lucru, numit prin hotărâre a Consiliului de Administrație, fac parte și reprezentanți ai organizațiilor sindicale, ai părinților și ai elevilor, desemnați de către Consiliul reprezentativ al părinților și Asociația părinților, respectiv de Consiliul consultativ al elevilor.</p>
+                        <p>Proiectul Regulamentului de organizare și funcționare a unității de învățământ, precum și modificările ulterioare ale acestuia se supun spre dezbatere în Consiliul reprezentativ al părinților și Asociația părinților, în Consiliul consultativ al elevilor și în Consiliul Profesoral, la care participă cu drept de vot și personalul didactic auxiliar și nedidactic.</p>
+                        <p>Regulamentul de organizare și funcționare a unității de învățământ, precum și modificările ulterioare ale acestuia se aprobă, prin hotărâre, de Consiliul de Administrație. După aprobare, acesta se înregistrează la secretariatul unității de învățământ.</p>
+                        <p>Pentru aducerea la cunoștința personalului unității de învățământ, a părinților și a elevilor, Regulamentul de organizare și funcționare a unității de învățământ se afișează pe site-ul unității de învățământ sau, în lipsa acestuia, prin orice altă formă. Educatoarele/Învățătorii/Institutorii/Profesorii pentru învățământul preșcolar/primar/Profesorii diriginți au obligația de a prezenta la începutul fiecărui an școlar elevilor și părinților Regulamentul de organizare și funcționare a unității de învățământ.</p>
+                        <p>Regulamentul de organizare și funcționare a unității de învățământ poate fi revizuit anual sau ori de câte ori este nevoie.</p>
+                        <p>Respectarea prevederilor Regulamentului de organizare și funcționare a unității de învățământ este obligatorie, nerespectarea acestuia constituind abatere și fiind sancționată conform prevederilor legale.</p>
+                        <p>Regulamentul Intern al unității de învățământ conține dispozițiile obligatorii prevăzute la articolul nr. 242 din Legea nr. 53 din 24.01.2003 Codul muncii, republicată, cu modificările și completările ulterioare, și în contractele colective de muncă aplicabile și se aprobă prin hotărâre a Consiliului de Administrație, după consultarea reprezentanților organizațiilor sindicale care au membri în unitatea de învățământ, afiliate la federațiile sindicale reprezentative la nivel de sector de activitate învățământ preuniversitar.</p>
+
+                        <p class="citat-0">Regulamentul Intern al Școlii Gimnaziale „Nicu Albu” Piatra Neamț a fost dezbătut în Consiliul profesoral, în Comisia paritară şi a fost aprobat de Consiliului de Administraţie. Acesta reglementează:</p>
+                        <p class="citat-0">‒ programul cursurilor zilnice, programul compartimentelor şi angajaţilor unităţii de învățământ;</p>
+                        <p class="citat-0">‒ programul serviciului pe şcoală şi atribuţiile persoanelor responsabile;</p>
+                        <p class="citat-0">‒ modul de organizare şi utilizare a spaţiului interior şi al căilor de acces din curtea şcolii şi corpul de clădire;</p>
+                        <p class="citat-0">‒ comportamentul şi ţinuta elevilor şi a întregului personal al şcolii.</p>
+
+                        <p>Respectarea Regulamentului Intern este obligatorie pentru toate cadrele didactice, personalul didactic auxiliar, personalul nedidactic, copiii, elevii, părinţii/reprezentanţii legali ai acestora, angajaţi/şcolarizaţi/parteneri educaționali la Şcoala Gimnazială „Nicu Albu” Piatra Neamţ.</p>
+
+                    </article>
+
+                </section>
 
 <!-- Secțiune Conținut -->
-                <section id="conducere-declarații" class="sectiune-conținut" aria-labelledby="conducere-declarații-label">
+                <section id="regulamente-informatii" class="sectiune-conținut" aria-labelledby="regulamente-informatii-label">
 
-                    <h3 id="conducere-declarații-label" class="sr-only">Declarații de avere și interese</h3>
+                    <h3 id="regulamente-informatii-label" class="sr-only">Această secțiune conține Regulamentul-cadru de organizare și funcționare a unităților de învățământ preuniversitar și Regulamentul Intern al Școlii Gimnaziale „Nicu Albu” Piatra Neamț.</h3>
 
-                    <p class="citat-4"><strong>Informații relevante:</strong></p>
+                    <p class="citat-5"><strong>Informații relevante:</strong></p>
 
-                    <ul id="conducere-ul" class="sectiune-informatii">
-
-                        <li class="sectiune-continut">
-
-                            <section id="avere-2025" class="wrap-6" aria-labelledby="avere-2025-label">
-
-                                <h4 id="avere-2025-label" class="citat-1 sr-only">Declarații de avere pentru anul 2025</h4>
-
-                                <p id="avere-2025-label" class="citat-1"><strong>2025</strong></p>
-
-                                <ul>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1JKOchRW2hrFqwr8lFCaYgfpdrrQZRkIJ/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de avere profesor Motfolea Valentina, director
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1n_Jox3rDNeOR-GuS2KhZK4FXTw0a3JhG/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de avere secretar Georgescu Anca-Mădălina, secretar șef
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1Lptzwkqn0Ae2v-SI5s24_LXxUJWY9ShJ/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de avere administrator financiar Moraru Mihaela-Oana, contabil șef
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                </ul>
-
-                            </section>
-
-                            <section id="interese-2025" class="wrap-6" aria-labelledby="interese-2025-label">
-
-                                <h4 id="avere-2025-label" class="citat-1 sr-only">Declarații de interese pentru anul 2025</h4>
-
-                                <p id="avere-2025-label" class="citat-1"><strong>2025</strong></p>
-
-                                <ul>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1WqbVymvwi7JDj3HJYwmAQxARnTZcUTZt/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de interese profesor Motfolea Valentina, director
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1ESwepBDTJhJFCTEvGm0D02prhhdLsUaU/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de interese secretar Georgescu Anca-Mădălina, secretar șef
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/13GgCx6Y0hadrN76FXzKktLdeKAAtsYBb/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de interese administrator financiar Moraru Mihaela-Oana, contabil șef
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                </ul>
-
-                            </section>
-
-                        </li>
+                    <ul id="regulamente-ul" class="sectiune-informatii">
 
                         <li class="sectiune-continut">
 
-                            <section id="avere-2024" class="wrap-6" aria-labelledby="avere-2024-label">
+                            <section id="regulamente-rofuip" class="wrap-6" aria-labelledby="regulamente-rofuip-label">
 
-                                <h4 id="avere-2024-label" class="citat-1 sr-only">Declarații de avere pentru anul 2024</h4>
-
-                                <p id="avere-2024-label" class="citat-3"><strong>2024</strong></p>
+                                <h4 id="regulamente-rofuip-label" class="citat-3 sr-only">Regulamentul-cadru de organizare și funcționare a unităților de învățământ preuniversitar</h4>
 
                                 <ul>
                                     <li>
-                                        <a href="https://drive.google.com/file/d/1Dtk1GxPOfRJ8-4P_cajAw_x7WOn7qoLV/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de avere profesor Motfolea Valentina, director
+                                        <a href="https://drive.google.com/file/d/15AvyM8vpVH5b9eFre8Wf5nngDbxlzyYn/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                            Ordinul Ministerului Educației nr. 5726 din 06.08.2024 privind aprobarea Regulamentului-cadru de organizare și funcționare a unităților de învățământ preuniversitar
                                             <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://drive.google.com/file/d/1q3d9ZvEgvi2_D1k62dGpjMbR72w_waOW/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de avere secretar Georgescu Anca-Mădălina, secretar șef
+                                        <a href="https://drive.google.com/file/d/16ZbZKXIxrRb4lxPsF8sye6h2AiGoo9Xo/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                            Ordinul Ministerului Educației nr. 4183 din 04.07.2022 privind aprobarea Regulamentului-cadru de organizare și funcționare a unităților de învățământ preuniversitar
                                             <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://drive.google.com/file/d/1OJAM381v5IHCREzU-NKMdLTYpjozZ0fG/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de avere administrator financiar Moraru Mihaela-Oana, contabil șef
+                                        <a href="https://drive.google.com/file/d/1fYVrBjx9YgQNvq3qH4cL5-_ycC5z7ldG/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                            Anexa la Regulamentul-cadru de organizare și funcționare a unităților de învățământ preuniversitar, Model de contract educational
+                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://drive.google.com/file/d/1FaP6Lwty3uLcjEfVm4-xQ4hH5zEk6nv_/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                            Anexa la Ordinul Ministerului Educației și Cercetării nr. 5447 din 31.08.2020, Regulamentul-cadru de organizare și funcționare a unităților de învățământ preuniversitar
+                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://drive.google.com/file/d/1M_OFTYwEvg1p_ackLNOw5U7l6Vdp_d7w/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                            Ordinul Ministerului Educației și Cercetării nr. 5447 din 31.08.2020 privind aprobarea Regulamentului-cadru de organizare și funcționare a unităților de învățământ preuniversitar
                                             <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
                                         </a>
                                     </li>
@@ -2801,631 +2996,44 @@ border-radius: 4px;
 
                             </section>
 
-                            <section id="interese-2024" class="wrap-6" aria-labelledby="interese-2024-label">
+                            <section id="regulamente-roi" class="wrap-6" aria-labelledby="regulamente-roi-label">
 
-                                <h4 id="avere-2024-label" class="citat-1 sr-only">Declarații de interese pentru anul 2024</h4>
-
-                                <p id="avere-2024-label" class="citat-3"><strong>2024</strong></p>
+                                <h4 id="regulamente-roi-label" class="citat-3 sr-only">Regulamentul Intern al Școlii Gimnaziale „Nicu Albu” Piatra Neamț</h4>
 
                                 <ul>
                                     <li>
-                                        <a href="https://drive.google.com/file/d/1PlNgcpizvLiz9KFzk1cn-bRTlg0omta9/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de interese profesor Motfolea Valentina, director
+                                        <a href="https://drive.google.com/file/d/1dErQpPDjaGW0uulU4XfJczMKEUdmfsRk/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                            Regulamentul Intern al Școlii Gimnaziale „Nicu Albu” Piatra Neamț pentru anul școlar 2024-2025
                                             <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://drive.google.com/file/d/1dqvJR1F9UAjbj_DNT6sRbbbX_LKHhPjH/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de interese secretar Georgescu Anca-Mădălina, secretar șef
+                                        <a href="https://drive.google.com/file/d/1g-rE2YtE6vL9cStOsAoToy4W8xBuSIM8/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                            Regulamentul Intern al Școlii Gimnaziale „Nicu Albu” Piatra Neamț pentru anul școlar 2023-2024
                                             <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://drive.google.com/file/d/1b_0q8hfV8iEpgaKbIk2e2jqIioNEa6-T/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de interese administrator financiar Moraru Mihaela-Oana, contabil șef
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                </ul>
-
-                            </section>
-
-                        </li>
-
-                        <li class="sectiune-continut">
-
-                            <section id="avere-2023" class="wrap-6" aria-labelledby="avere-2023-label">
-
-                                <h4 id="avere-2023-label" class="citat-1 sr-only">Declarații de avere pentru anul 2023</h4>
-
-                                <p id="avere-2023-label" class="citat-3"><strong>2023</strong></p>
-
-                                <ul>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1aXnZuTjjCjDEj4YGZy2Yrvsr4XLelP1k/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de avere profesor Motfolea Valentina, director
+                                        <a href="https://drive.google.com/file/d/1id5q8N0pdt5uTptAP0eWAeKpqWrdUvUS/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                            Regulamentul Intern al Școlii Gimnaziale „Nicu Albu” Piatra Neamț pentru anul școlar 2022-2023
                                             <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://drive.google.com/file/d/1W2vIBneCneYQuZPexJ4wmq5U7-c6YdBn/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de avere secretar Georgescu Anca-Mădălina, secretar șef
+                                        <a href="https://drive.google.com/file/d/1fb64gNm5peCgvnWetT3vI7jj6tDLfHLj/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                            Regulamentul Intern al Școlii Gimnaziale „Nicu Albu” Piatra Neamț pentru anul școlar 2020-2021
                                             <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://drive.google.com/file/d/1QRlIcudAHaDEZni_T_eiBq8XSgAZET3g/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de avere administrator financiar Moraru Mihaela-Oana, contabil șef
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                </ul>
-
-                            </section>
-
-                            <section id="interese-2023" class="wrap-6" aria-labelledby="interese-2023-label">
-
-                                <h4 id="avere-2023-label" class="citat-1 sr-only">Declarații de interese pentru anul 2023</h4>
-
-                                <p id="avere-2023-label" class="citat-3"><strong>2023</strong></p>
-
-                                <ul>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1fR8VDonsbiskmdIO4HztKBabzvhtTfwd/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de interese profesor Motfolea Valentina, director
+                                        <a href="https://drive.google.com/file/d/125x9N6orJ0MinkYLExgAI7Hp3THkUz5y/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                            Regulamentul Intern al Școlii Gimnaziale „Nicu Albu” Piatra Neamț pentru anul școlar 2013-2014
                                             <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://drive.google.com/file/d/1mPMO9yyJ3owtjJKVYdxlNbdczApLgryZ/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de interese secretar Georgescu Anca-Mădălina, secretar șef
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/10S-3-9hkFcRRb7MNwJPcXtORvpXNibrK/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de interese administrator financiar Moraru Mihaela-Oana, contabil șef
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                </ul>
-
-                            </section>
-
-                        </li>
-
-                        <li class="sectiune-continut">
-
-                            <section id="avere-2022" class="wrap-6" aria-labelledby="avere-2022-label">
-
-                                <h4 id="avere-2022-label" class="citat-1 sr-only">Declarații de avere pentru anul 2022</h4>
-
-                                <p id="avere-2022-label" class="citat-3"><strong>2022</strong></p>
-
-                                <ul>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1fsoyQDiKCYnPrb7FQk889KCDSVrB8Na-/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de avere profesor Motfolea Valentina, director
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/19HJsNAg3v9EAnWTUpnZAX0J3TP17U2X4/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de avere profesor pentru învățământul primar Usturoi Elena, director
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1zfuGBv6fY2BUytKdSDTSXyXKkYOxxwir/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de avere secretar Georgescu Anca-Mădălina, secretar șef
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1DtEe5Y2qCMtuIjU_grLdWIGPs6z_x49b/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de avere administrator financiar Moraru Mihaela-Oana, contabil șef
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                </ul>
-
-                            </section>
-
-                            <section id="interese-2022" class="wrap-6" aria-labelledby="interese-2022-label">
-
-                                <h4 id="avere-2022-label" class="citat-1 sr-only">Declarații de interese pentru anul 2022</h4>
-
-                                <p id="avere-2022-label" class="citat-3"><strong>2022</strong></p>
-
-                                <ul>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1BRSzgKE1sFwD1sBITJYUu5I7Tb6-r-VA/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de interese profesor Motfolea Valentina, director
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1zSaWSMuOyODPFgAEq87GGbPg-nw-lRJa/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de interese profesor pentru învățământul primar Usturoi Elena, director
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1d6x3Om1fVyFnQkzsn24psjMnxkY7lXMl/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de interese secretar Georgescu Anca-Mădălina, secretar șef
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1sdOrcgtPxm4hsnUjLLpvqNAnLQIvDJ3N/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de interese administrator financiar Moraru Mihaela-Oana, contabil șef
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                </ul>
-
-                            </section>
-
-                        </li>
-
-                        <li class="sectiune-continut">
-
-                            <section id="avere-2021" class="wrap-6" aria-labelledby="avere-2021-label">
-
-                                <h4 id="avere-2021-label" class="citat-1 sr-only">Declarații de avere pentru anul 2021</h4>
-
-                                <p id="avere-2021-label" class="citat-3"><strong>2021</strong></p>
-
-                                <ul>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1blMMC1HefyYtOdFGi9U0FxkI4ieVZLDm/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de avere profesor pentru învățământul primar Usturoi Elena, director
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1ncgWHl4ntxCO6Nac0ykE1Kvvu1t5Bvtp/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de avere profesor pentru învățământul primar Domnica Daniela, director
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/157roTwPyZ9t5fzY4FSIGXPm67ng0Er1C/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de avere secretar Georgescu Anca-Mădălina, secretar șef
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1B6DLMLxeTGvUD4AevxCi3S6s3BcJkvNy/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de avere administrator financiar Moraru Mihaela-Oana, contabil șef
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                </ul>
-
-                            </section>
-
-                            <section id="interese-2021" class="wrap-6" aria-labelledby="interese-2021-label">
-
-                                <h4 id="avere-2021-label" class="citat-1 sr-only">Declarații de interese pentru anul 2021</h4>
-
-                                <p id="avere-2021-label" class="citat-3"><strong>2021</strong></p>
-
-                                <ul>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1Yi8QM8k16GXB-RdXPdCHchXESHJry-mM/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de interese profesor pentru învățământul primar Usturoi Elena, director
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1cjBPLKf8SDCZ6s0bgYdN9qthGktq6ExR/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de interese profesor pentru învățământul primar Domnica Daniela, director
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1JK7izvKAj9rzjz7yF8YeLcXscgVgE6Rk/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de interese secretar Georgescu Anca-Mădălina, secretar șef
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1lvmjs9kF3lIsJGrztCyM9iKzP_hjtN-n/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de interese administrator financiar Moraru Mihaela-Oana, contabil șef
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                </ul>
-
-                            </section>
-
-                        </li>
-
-                        <li class="sectiune-continut">
-
-                            <section id="avere-2020" class="wrap-6" aria-labelledby="avere-2020-label">
-
-                                <h4 id="avere-2020-label" class="citat-1 sr-only">Declarații de avere pentru anul 2020</h4>
-
-                                <p id="avere-2020-label" class="citat-3"><strong>2020</strong></p>
-
-                                <ul>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1WpU9vCxRdCnGxE94rTEb__O51FucUha2/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de avere profesor pentru învățământul primar Domnica Daniela, director
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1IiZk7VKPWcR7MmfpHXYB5ig8odc-bHPe/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de avere secretar Georgescu Anca-Mădălina, secretar șef
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1Y2GtpLYwba2xWraFux0BGKaEFwgVctAU/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de avere administrator financiar Moraru Mihaela-Oana, contabil șef
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                </ul>
-
-                            </section>
-
-                            <section id="interese-2020" class="wrap-6" aria-labelledby="interese-2020-label">
-
-                                <h4 id="avere-2020-label" class="citat-1 sr-only">Declarații de interese pentru anul 2020</h4>
-
-                                <p id="avere-2020-label" class="citat-3"><strong>2020</strong></p>
-
-                                <ul>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1TzzevE1uI5DpE5MrZupP-79FP4WmDYCu/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de interese profesor pentru învățământul primar Domnica Daniela, director
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1e5S9-YCg6D-og4JOkMB8v5_KnTxWrT0E/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de interese secretar Georgescu Anca-Mădălina, secretar șef
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1G1TPlMUuZWyhW25Aoee3A_59_EUgX-En/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de interese administrator financiar Moraru Mihaela-Oana, contabil șef
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                </ul>
-
-                            </section>
-
-                        </li>
-
-                        <li class="sectiune-continut">
-
-                            <section id="avere-2019" class="wrap-6" aria-labelledby="avere-2019-label">
-
-                                <h4 id="avere-2019-label" class="citat-1 sr-only">Declarații de avere pentru anul 2019</h4>
-
-                                <p id="avere-2019-label" class="citat-3"><strong>2019</strong></p>
-
-                                <ul>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1WShg1Z5p-zoD-YyX6HTKD0J3UuNd0M0n/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de avere profesor pentru învățământul primar Domnica Daniela, director
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1jXz3oY_WCAUURpLRzcj1Ny3SoL4hCvFf/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de avere secretar Georgescu Anca-Mădălina, secretar șef
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1yF7PmL-GmvViGNSmoFM_FlEDhQ62cEZA/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de avere administrator financiar Moraru Mihaela-Oana, contabil șef
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                </ul>
-
-                            </section>
-
-                            <section id="interese-2019" class="wrap-6" aria-labelledby="interese-2019-label">
-
-                                <h4 id="avere-2019-label" class="citat-1 sr-only">Declarații de interese pentru anul 2019</h4>
-
-                                <p id="avere-2019-label" class="citat-3"><strong>2019</strong></p>
-
-                                <ul>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1-ChjP83amkb01ljR9n45hNzr0oWOG4JM/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de interese profesor pentru învățământul primar Domnica Daniela, director
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1v4MpaYaEE7o1pUKEl3ixX1jl4KWbgzKE/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de interese secretar Georgescu Anca-Mădălina, secretar șef
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1jD2dgT3PvC0euzPlYo1PHPOOdSD9tc57/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de interese administrator financiar Moraru Mihaela-Oana, contabil șef
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                </ul>
-
-                            </section>
-
-                        </li>
-
-                        <li class="sectiune-continut">
-
-                            <section id="avere-2018" class="wrap-6" aria-labelledby="avere-2018-label">
-
-                                <h4 id="avere-2018-label" class="citat-1 sr-only">Declarații de avere pentru anul 2018</h4>
-
-                                <p id="avere-2018-label" class="citat-3"><strong>2018</strong></p>
-
-                                <ul>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1ZNQLTT0Ns7D65brJfFDU7w5nFB__BCmJ/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de avere profesor pentru învățământul primar Domnica Daniela, director
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/14KfvI4d80oLXD9K1dGw8ZWqzNsyQTJdJ/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de avere secretar Georgescu Anca-Mădălina, secretar șef
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1aNMji6i-JB9J1LNMLuP2Y9X0Gkpt9wSG/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de avere administrator financiar Moraru Mihaela-Oana, contabil șef
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                </ul>
-
-                            </section>
-
-                            <section id="interese-2018" class="wrap-6" aria-labelledby="interese-2018-label">
-
-                                <h4 id="avere-2018-label" class="citat-1 sr-only">Declarații de interese pentru anul 2018</h4>
-
-                                <p id="avere-2018-label" class="citat-3"><strong>2018</strong></p>
-
-                                <ul>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1C1HI-mEbKTMO0lCZjMNi26CDJjG-2E-F/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de interese profesor pentru învățământul primar Domnica Daniela, director
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1DZFSQHUxRClH1wVtTul76yfJcVeYNoRd/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de interese secretar Georgescu Anca-Mădălina, secretar șef
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1dmN_C03ZJYr75G6Vbqf1WVigkJYCpPPr/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de interese administrator financiar Moraru Mihaela-Oana, contabil șef
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                </ul>
-
-                            </section>
-
-                        </li>
-
-                        <li class="sectiune-continut">
-
-                            <section id="avere-2017" class="wrap-6" aria-labelledby="avere-2017-label">
-
-                                <h4 id="avere-2017-label" class="citat-1 sr-only">Declarații de avere pentru anul 2017</h4>
-
-                                <p id="avere-2017-label" class="citat-3"><strong>2017</strong></p>
-
-                                <ul>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/13pJy__-mGiY1LpcXUzM7tU0l2P4MHahP/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de avere profesor pentru învățământul primar Domnica Daniela, director
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1F2dISlItlcgz3ioPtj-8xFWM405aC9dc/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de avere secretar Georgescu Anca-Mădălina, secretar șef
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                </ul>
-
-                            </section>
-
-                            <section id="interese-2017" class="wrap-6" aria-labelledby="interese-2017-label">
-
-                                <h4 id="avere-2017-label" class="citat-1 sr-only">Declarații de interese pentru anul 2017</h4>
-
-                                <p id="avere-2017-label" class="citat-3"><strong>2017</strong></p>
-
-                                <ul>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1AWNm-qabl0vjjDpxfkJK-yO2K-KtDEjD/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de interese profesor pentru învățământul primar Domnica Daniela, director
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1KVZDvqrlicy5ziRWv4_OzzkIjymbBblU/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de interese secretar Georgescu Anca-Mădălina, secretar șef
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                </ul>
-
-                            </section>
-
-                        </li>
-
-                        <li class="sectiune-continut">
-
-                            <section id="avere-2016" class="wrap-6" aria-labelledby="avere-2016-label">
-
-                                <h4 id="avere-2016-label" class="citat-1 sr-only">Declarații de avere pentru anul 2016</h4>
-
-                                <p id="avere-2016-label" class="citat-3"><strong>2016</strong></p>
-
-                                <ul>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1AiHVgEMZH5SuFXOrXcZKpXTngqj2SYKu/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de avere secretar Georgescu Anca-Mădălina, secretar șef
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                </ul>
-
-                            </section>
-
-                            <section id="interese-2016" class="wrap-6" aria-labelledby="interese-2016-label">
-
-                                <h4 id="avere-2016-label" class="citat-1 sr-only">Declarații de interese pentru anul 2016</h4>
-
-                                <p id="avere-2016-label" class="citat-3"><strong>2016</strong></p>
-
-                                <ul>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1HjWU9dHislCgR1TADcPNquWs8AtQgtB5/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de interese secretar Georgescu Anca-Mădălina, secretar șef
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                </ul>
-
-                            </section>
-
-                        </li>
-
-                        <li class="sectiune-continut">
-
-                            <section id="avere-2015" class="wrap-6" aria-labelledby="avere-2015-label">
-
-                                <h4 id="avere-2015-label" class="citat-1 sr-only">Declarații de avere pentru anul 2015</h4>
-
-                                <p id="avere-2015-label" class="citat-3"><strong>2015</strong></p>
-
-                                <ul>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1qihybJCRZIrFb12drImZW9QFlX19D50b/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de avere secretar Georgescu Anca-Mădălina, secretar șef
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                </ul>
-
-                            </section>
-
-                            <section id="interese-2015" class="wrap-6" aria-labelledby="interese-2015-label">
-
-                                <h4 id="avere-2015-label" class="citat-1 sr-only">Declarații de interese pentru anul 2015</h4>
-
-                                <p id="avere-2015-label" class="citat-3"><strong>2015</strong></p>
-
-                                <ul>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1C9CY3xWCDB9H_mJU9bJK_hghXFjuD4st/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de interese secretar Georgescu Anca-Mădălina, secretar șef
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                </ul>
-
-                            </section>
-
-                        </li>
-
-                        <li class="sectiune-continut">
-
-                            <section id="avere-2014" class="wrap-6" aria-labelledby="avere-2014-label">
-
-                                <h4 id="avere-2014-label" class="citat-1 sr-only">Declarații de avere pentru anul 2014</h4>
-
-                                <p id="avere-2014-label" class="citat-3"><strong>2014</strong></p>
-
-                                <ul>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1yDWHeEOWd9vFBmHragSLwVW2_VGVxZmn/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de avere secretar Georgescu Anca-Mădălina, secretar șef
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                </ul>
-
-                            </section>
-
-                            <section id="interese-2014" class="wrap-6" aria-labelledby="interese-2014-label">
-
-                                <h4 id="avere-2014-label" class="citat-1 sr-only">Declarații de interese pentru anul 2014</h4>
-
-                                <p id="avere-2014-label" class="citat-3"><strong>2014</strong></p>
-
-                                <ul>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1E71HEKCtiuP6TWokyAdISltw1z3B5vZ-/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de interese secretar Georgescu Anca-Mădălina, secretar șef
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                </ul>
-
-                            </section>
-
-                        </li>
-
-                        <li class="sectiune-continut">
-
-                            <section id="avere-2013" class="wrap-6" aria-labelledby="avere-2013-label">
-
-                                <h4 id="avere-2013-label" class="citat-1 sr-only">Declarații de avere pentru anul 2013</h4>
-
-                                <p id="avere-2013-label" class="citat-3"><strong>2014</strong></p>
-
-                                <ul>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1QH9EKXegyZagIH9Hrb9MWDDA9z8UiGOK/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de avere secretar Georgescu Anca-Mădălina, secretar șef
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                </ul>
-
-                            </section>
-
-                            <section id="interese-2013" class="wrap-6" aria-labelledby="interese-2013-label">
-
-                                <h4 id="avere-2013-label" class="citat-1 sr-only">Declarații de interese pentru anul 2013</h4>
-
-                                <p id="avere-2013-label" class="citat-3"><strong>2013</strong></p>
-
-                                <ul>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1FjIyrtRirCU-La-Ygy4IEttj_p1ki6WB/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Declarație de interese secretar Georgescu Anca-Mădălina, secretar șef
+                                        <a href="https://drive.google.com/file/d/1gYh7MBH8Z0Ven3d69aGDszxHsVmj1-Tu/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                            Regulamentul Intern al Școlii cu clasele I-VIII „Nicu Albu” Piatra Neamț pentru anul școlar 2010-2011
                                             <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
                                         </a>
                                     </li>
@@ -3440,9 +3048,9 @@ border-radius: 4px;
                 </section> 
 
 <!-- Secțiune Legături -->
-                <section id="conducere-legaturi" class="sectiune-legaturi" aria-labelledby="conducere-legaturi-label">
+                <section id="regulamente-legaturi" class="sectiune-legaturi" aria-labelledby="regulamente-legaturi-label">
 
-                    <h3 id="conducere-legaturi-label" class="sr-only">Legături utile:</h3>
+                    <h3 id="regulamente-legaturi-label" class="sr-only">Legături utile:</h3>
 
                     <ul>                    
                         <li>
@@ -3693,7 +3301,10 @@ border-radius: 4px;
                 ['personal-text', '#imagine-personal'],
                 ['sindicat-contact', '#imagine-sindicat'],
                 ['ca-text', '#imagine-ca'],
-                ['conducere-text', '#imagine-conducere']
+                ['conducere-text', '#imagine-conducere'],
+                ['ceac-descriere', '#imagine-ceac'],
+                ['comisii-descriere', '#imagine-comisii'],
+                ['regulamente-descriere', '#imagine-regulamente']
             ];
 
             function updateImagini() {
