@@ -190,7 +190,8 @@
                 ['ca-text', '#imagine-ca'],
                 ['conducere-text', '#imagine-conducere'],
                 ['ceac-descriere', '#imagine-ceac'],
-                ['comisii-descriere', '#imagine-comisii']
+                ['comisii-descriere', '#imagine-comisii'],
+                ['regulamente-descriere', '#imagine-regulamente']
             ];
 
             function updateImagini() {
