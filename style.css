@@ -2037,6 +2037,12 @@ border-radius: 4px;
                     #regulamente-ul .wrap-6 {
                         grid-column: span 12;
                     }
+                    #oferta-continut .wrap-show {
+                        display: none;
+                    }
+                    #oferta-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(2, 1fr);
                     }
@@ -2136,6 +2142,12 @@ border-radius: 4px;
                     #regulamente-ul .wrap-6 {
                         grid-column: span 12;
                     }
+                    #oferta-continut .wrap-show {
+                        display: none;
+                    }
+                    #oferta-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(1, 1fr);
                     }
@@ -2233,6 +2245,12 @@ border-radius: 4px;
                         grid-column: span 12;
                     }
                     #regulamente-ul .wrap-6 {
+                        grid-column: span 12;
+                    }
+                    #oferta-continut .wrap-show {
+                        display: none;
+                    }
+                    #oferta-continut .wrap-9 {
                         grid-column: span 12;
                     }
                     .sectiune-comunicari ul {
@@ -2335,6 +2353,12 @@ border-radius: 4px;
                     #regulamente-ul .wrap-6 {
                         grid-column: span 12;
                     }
+                    #oferta-continut .wrap-show {
+                        display: none;
+                    }
+                    #oferta-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(1, 1fr);
                     }
@@ -2432,6 +2456,12 @@ border-radius: 4px;
                         grid-column: span 12;
                     }
                     #regulamente-ul .wrap-6 {
+                        grid-column: span 12;
+                    }
+                    #oferta-continut .wrap-show {
+                        display: none;
+                    }
+                    #oferta-continut .wrap-9 {
                         grid-column: span 12;
                     }
                     .sectiune-comunicari ul {
@@ -2534,6 +2564,12 @@ border-radius: 4px;
                         grid-column: span 12;
                     }
                     #regulamente-ul .wrap-6 {
+                        grid-column: span 12;
+                    }
+                    #oferta-continut .wrap-show {
+                        display: none;
+                    }
+                    #oferta-continut .wrap-9 {
                         grid-column: span 12;
                     }
                     .sectiune-comunicari ul {
