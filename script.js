@@ -192,7 +192,8 @@
                 ['ceac-descriere', '#imagine-ceac'],
                 ['comisii-descriere', '#imagine-comisii'],
                 ['regulamente-descriere', '#imagine-regulamente'],
-                ['oferta-text', '#imagine-oferta']
+                ['oferta-text', '#imagine-oferta'],
+                ['gradinita-text', '#imagine-gradinita']
             ];
 
             function updateImagini() {
