@@ -17,28 +17,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- Titlu -->
-        <title>Regulamente</title>
+        <title>Grădiniță</title>
 
 <!-- Resurse -->
 <!--        <base href="https://scoalanicualbu.github.io/website/">-->
 
 <!-- Descriere -->
-        <meta name="description" content="Site-ul oficial al Școlii Gimnaziale „Nicu Albu” Piatra Neamț, pagina „Regulamente”. Aici sunt cuprinse informații despre regulamente și legături către secțiuni precum circumscripție, program de lucru, preșcolari și elevi, asociația părinților.">
+        <meta name="description" content="Site-ul oficial al Școlii Gimnaziale „Nicu Albu” Piatra Neamț, pagina „Grădiniță”. Aici sunt cuprinse informații despre grădiniță și legături către secțiuni precum istoric, circumscripție, program de lucru, comunicări.">
 
 <!-- Autor -->
         <meta name="author" content="informatician IFTIMIA DAN-ADRIAN">
 
 <!-- Cuvinte cheie -->
-        <meta name="keywords" content="ȘCOALA GIMNAZIALĂ NICU ALBU PIATRA NEAMȚ REGULAMENTE">
+        <meta name="keywords" content="ȘCOALA GIMNAZIALĂ NICU ALBU PIATRA NEAMȚ GRĂDINIȚĂ">
 
 <!-- Proprietate -->
         <meta property="og:site_name" content="Școala Gimnazială „Nicu Albu” Piatra Neamț">
         <meta property="og:url" content="https://scoalanicualbu.github.io/website">
-        <meta property="og:title" content="Site-ul oficial al Școlii Gimnaziale „Nicu Albu” Piatra Neamț, pagina „Regulamente”">
-        <meta property="og:description" content="Aici sunt cuprinse informații despre regulamente și legături către secțiuni precum circumscripție, program de lucru, preșcolari și elevi, asociația părinților.">
+        <meta property="og:title" content="Site-ul oficial al Școlii Gimnaziale „Nicu Albu” Piatra Neamț, pagina „Grădiniță”">
+        <meta property="og:description" content="Aici sunt cuprinse informații despre grădiniță și legături către secțiuni precum istoric, circumscripție, program de lucru, comunicări.">
         <meta property="og:type" content="website">
         <meta property="og:locale" content="ro_RO">
-        <meta property="og:image" content="https://github.com/scoalanicualbu/website/blob/main/regulamente/regulamente.png?raw=true">
+        <meta property="og:image" content="https://github.com/scoalanicualbu/website/blob/main/gradinita/gradinita.png?raw=true">
 
 <!-- Iconiță favorită -->
         <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -807,6 +807,73 @@ border-radius: 4px;
                                 .sectiune-informatii a:hover {
                                     text-shadow: 0.4px 0 currentcolor, -0.4px 0 currentcolor;
                                     color: #404040;
+                                }
+
+/* Secțiune TelVerde */
+                    .sectiune-telverde {
+border: 0px solid #404040;
+border-radius: 4px;
+                        margin-top: auto;
+                        margin-bottom: 0;
+                        margin-left: 0;
+                        margin-right: 0;
+                        padding-top: 0;
+                        padding-bottom: 0;
+                        padding-left: 0;
+                        padding-right: 0;
+                    }
+
+                        .sectiune-telverde ul {
+border: 0px solid #404040;
+border-radius: 4px;
+                            margin-top: 0.5rem;
+                            margin-bottom: 0.5rem;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0.5rem;
+                            padding-right: 0.5rem;
+                            grid-template-columns: repeat(8, 1fr);
+                            display:grid;
+                            gap: var(--gap);
+                            align-items: center;
+                            list-style: none;
+                        }
+
+                            .sectiune-telverde li {
+border: 0px solid #404040;
+border-radius: 4px;
+                                margin-top: 0;
+                                margin-bottom: 0;
+                                margin-left: 0;
+                                margin-right: 0;
+                                padding-top: 0;
+                                padding-bottom: 0;
+                                padding-left: 0;
+                                padding-right: 0;
+                                display: flex;
+                                align-items: center;
+                                flex-grow: 1;
+                            }
+
+                                .sectiune-telverde img {
+border: 1px solid #404040;
+border-radius: 4px;
+                                    margin-top: 0;
+                                    margin-bottom: 0;
+                                    margin-left: 0;
+                                    margin-right: 0;
+                                    padding-top: 0;
+                                    padding-bottom: 0;
+                                    padding-left: 0;
+                                    padding-right: 0;
+                                    width: auto;
+                                    max-width: 100%;
+                                    height: 100%;
+                                    display: block;
+                                    object-fit: cover;
+                                    background-color: #FFFFFF;
                                 }
 
 /* Secțiune Legături */
@@ -2095,6 +2162,18 @@ border-radius: 4px;
                     #regulamente-ul .wrap-6 {
                         grid-column: span 12;
                     }
+                    #oferta-continut .wrap-show {
+                        display: none;
+                    }
+                    #oferta-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #gradinita-continut .wrap-show {
+                        display: none;
+                    }
+                    #gradinita-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(2, 1fr);
                     }
@@ -2194,6 +2273,18 @@ border-radius: 4px;
                     #regulamente-ul .wrap-6 {
                         grid-column: span 12;
                     }
+                    #oferta-continut .wrap-show {
+                        display: none;
+                    }
+                    #oferta-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #gradinita-continut .wrap-show {
+                        display: none;
+                    }
+                    #gradinita-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(1, 1fr);
                     }
@@ -2291,6 +2382,18 @@ border-radius: 4px;
                         grid-column: span 12;
                     }
                     #regulamente-ul .wrap-6 {
+                        grid-column: span 12;
+                    }
+                    #oferta-continut .wrap-show {
+                        display: none;
+                    }
+                    #oferta-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #gradinita-continut .wrap-show {
+                        display: none;
+                    }
+                    #gradinita-continut .wrap-9 {
                         grid-column: span 12;
                     }
                     .sectiune-comunicari ul {
@@ -2393,6 +2496,18 @@ border-radius: 4px;
                     #regulamente-ul .wrap-6 {
                         grid-column: span 12;
                     }
+                    #oferta-continut .wrap-show {
+                        display: none;
+                    }
+                    #oferta-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #gradinita-continut .wrap-show {
+                        display: none;
+                    }
+                    #gradinita-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(1, 1fr);
                     }
@@ -2490,6 +2605,18 @@ border-radius: 4px;
                         grid-column: span 12;
                     }
                     #regulamente-ul .wrap-6 {
+                        grid-column: span 12;
+                    }
+                    #oferta-continut .wrap-show {
+                        display: none;
+                    }
+                    #oferta-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #gradinita-continut .wrap-show {
+                        display: none;
+                    }
+                    #gradinita-continut .wrap-9 {
                         grid-column: span 12;
                     }
                     .sectiune-comunicari ul {
@@ -2594,6 +2721,18 @@ border-radius: 4px;
                     #regulamente-ul .wrap-6 {
                         grid-column: span 12;
                     }
+                    #oferta-continut .wrap-show {
+                        display: none;
+                    }
+                    #oferta-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #gradinita-continut .wrap-show {
+                        display: none;
+                    }
+                    #gradinita-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(1, 1fr);
                     }
@@ -2619,7 +2758,7 @@ border-radius: 4px;
 
             <h1 id="titlu-label" class="sr-only">Școala Gimnazială „Nicu Albu” Piatra Neamț</h1>
 
-            <p class="sr-only"><strong>Pagina „Regulamente”</strong></p>
+            <p class="sr-only"><strong>Pagina „Grădiniță”</strong></p>
 
         </section>
 
@@ -2748,7 +2887,7 @@ border-radius: 4px;
                         </a>
                     </li>
                     <li>
-                        <a href="gradinita.html">
+                        <a href="gradinita.html" class="active" aria-current="page">
                             Grădiniță
                             <span class="sr-only"> (se deschide în aceeași fereastră)</span>
                         </a>
@@ -2796,7 +2935,7 @@ border-radius: 4px;
                         </a>
                     </li>
                     <li>
-                        <a href="regulamente.html"  class="active" aria-current="page">
+                        <a href="regulamente.html">
                             Regulamente
                             <span class="sr-only"> (se deschide în aceeași fereastră)</span>
                         </a>
@@ -2830,11 +2969,11 @@ border-radius: 4px;
 <!-- Banner -->
         <header id="banner" class="banner">
 
-            <img src="https://github.com/scoalanicualbu/website/blob/main/regulamente/regulamente.png?raw=true" alt="Un birou aglomerat pe care se află două monitoare de calculator care afișeaza situații și grafice financiare, două tastaturi albe, un calculator de birou, dosare colorate în lucru, un suport cu creioane ascuțite, o cană verde, bibliorafturi colorate, iar în lateral, pe fundal, estompate, sunt rafturi cu cărți.">
+            <img src="https://github.com/scoalanicualbu/website/blob/main/gradinita/gradinita.png?raw=true" alt="Un grup vesel de copii, purtând haine obișnuite în nuanțe de gri, galben și alb, stau aliniați pe o podea albă și privesc râzând direct la cameră dintr-o perspectivă de sus.">
 
         </header>
 
-        <main id="regualmente" class="content" aria-label="Conținut principal">
+        <main id="gradinita" class="content" aria-label="Conținut principal">
 
 <!-- Buton Meniu -->
             <button id="menu-toggle" type="button" tabindex="0" aria-label="Buton Meniu site" aria-expanded="false" aria-controls="main-menu" aria-haspopup="menu">
@@ -2846,7 +2985,13 @@ border-radius: 4px;
 <!-- Meniu pagină -->
                 <nav id="meniu-pagina" class="page-menu" aria-label="Meniu pagină">
 
-                    <ul class="patru-regulamente">
+                    <ul class="patru-prezentare">
+                        <li>
+                            <a href="prezentare/istoric.html">
+                                Scurt istoric
+                                <span class="sr-only"> (se deschide în aceeași fereastră)</span>
+                            </a>
+                        </li>
                         <li>
                             <a href="prezentare/circumscriptie.html">
                                 Circumscripție
@@ -2860,14 +3005,8 @@ border-radius: 4px;
                             </a>
                         </li>
                         <li>
-                            <a href="regulamente.html">
-                                Preșcolari și elevi
-                                <span class="sr-only"> (se deschide în aceeași fereastră)</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="regulamente.html">
-                                Asociația părinților
+                            <a href="prezentare/comunicari.html">
+                                Comunicări
                                 <span class="sr-only"> (se deschide în aceeași fereastră)</span>
                             </a>
                         </li>
@@ -2881,35 +3020,46 @@ border-radius: 4px;
             <div id="main-content" class="page-content" role="region" tabindex="-1" aria-label="Conținut pagină">
 
 <!-- Secțiune Conținut -->
-                <section id="regulamente-continut" class="sectiune-continut" aria-labelledby="regulamente-continut-label">
+                <section id="gradinita-continut" class="sectiune-continut" aria-labelledby="gradinita-continut-label">
 
-                    <h3 id="regulamente-continut-label" class="sr-only">Regulamente</h3>
+                    <h3 id="gradinita-continut-label" class="sr-only">Grădiniță</h3>
 
-                    <p class="sr-only">Această secțiune cuprinde informații despre regulamente.</p>
+                    <p class="sr-only">Această secțiune cuprinde informații despre grădiniță.</p>
 
-                    <section id="regulamente-imagine" class="wrap-3 wrap-show" aria-labelledby="regulamente-imagine-label">
+                    <section id="gradinita-imagine" class="wrap-3 wrap-show" aria-labelledby="gradinita-imagine-label">
 
-                        <h4 id="regulamente-imagine-label" class="sr-only">Standarde:</h4>
+                        <h4 id="gradinita-imagine-label" class="sr-only">Preșcolari:</h4>
 
-                        <p class="sr-only">Această secțiune cuprinde o imagine reprezentativă pentru regulamente.</p>
+                        <p class="sr-only">Această secțiune cuprinde o imagine reprezentativă pentru grădiniță.</p>
 
-                        <div id="imagine-regulamente" class="content-imagine wrap-size">
-                           <img src="https://github.com/scoalanicualbu/website/blob/main/regulamente/standard.png?raw=true" alt="Un birou îngrijit pe care se află un caiet spiralat, un suport cu creioane ascuțite, un teanc de cărți groase deasupra căruia se află un măr verde, iar pe fundal, estompate, sunt rafturi pline de bibliorafturi colorate.">
+                        <div id="imagine-gradinita" class="content-imagine wrap-size">
+                           <img src="https://github.com/scoalanicualbu/website/blob/main/gradinita/prescolari.png?raw=true" alt="Sub supravegherea implicată a unui adult, un grup de copii mici stau pe o podea de lemn jucându-se cu blocuri de construcție și jucării colorate într-o cameră puternic luminată.">
                         </div>
 
                     </section>
 
-                    <section id="regulamente-text" class="wrap-9 wrap-down" aria-labelledby="regulamente-text-label">
+                    <section id="gradinita-text" class="wrap-9 wrap-down" aria-labelledby="gradinita-text-label">
 
-                        <h4 id="regulamente-text-label" class="sr-only">Descriere:</h4>
+                        <h4 id="gradinita-text-label" class="sr-only">Prezentare</h4>
 
-                        <p class="sr-only">Această secțiune cuprinde o scurtă descriere a regulamentelor.</p>
+                        <p class="sr-only">Această secțiune cuprinde o scurtă prezentare a educației preșcolare.</p>
 
-                        <section id="regulamente-descriere" class="sectiune-text coloane" aria-labelledby="regulamente-descriere-label">
+                        <section id="prezentare" class="sectiune-text coloane" aria-labelledby="prezentare-label">
 
-                            <h3 id="regulamente-descriere-label" class="sr-only">Scurtă descriere</h3>
+                            <h3 id="prezentare-label" class="sr-only">Educația timpurie</h3>
 
-                            <p>În cadrul sistemului de învățământ din România, organizarea și funcționarea unei unități de învățământ este reglementată de Ministerul Educației și Cercetării prin Regulamentul-cadru de organizare și funcționare a unităților de învățământ preuniversitar, în conformitate cu prevederile legale în vigoare, care se aplică în toate unitățile de învățământ, precum și de propriul Regulament de organizare și funcționare a unității de învățământ și propiul Regulamentului Intern, aprobate de Consiliul de Administrație.</p>
+                            <p>Educaţia copilului începe  încă de la naştere. Această educație este continuată de educația timpurie din unitățile de învațământ. Învățământul preșcolar reprezintă prima treaptă de pregătire în educația formală și pentru pentru educația formală. </p>
+                            <p>Focalizarea pe educația timpurie este foarte importantă. Aceasta este perioada când copiii se dezvoltă rapid. Dacă procesul de dezvoltare, în acest stadiu, este neglijat, compensarea pierderilor se realizează mult mai dificil. Această perioadă este foarte importantă în formarea unor deprinderi și comportamente sociale, având ca scop integrarea persoanelor în societate. Eșecul în educația timpurie poate contribui la marginalizarea copiilor în societate, iar, ulterior, a adultului format.</p>
+
+                            <p class="citat-0">Conform Curriculum-ului pentru educaţia timpurie a copiilor de la 3 la 6/7 ani, învățământul preșcolar are următoarele caracteristici:</p>
+                            <p class="citat-0">‒ asigură intrarea copilului în sistemul de învăţământ obligatoriu, prin formarea capacităţii de a învăţa;</p>
+                            <p class="citat-0">‒ accentuează unicitatea copilului şi consideră că abordarea lui trebuie să fie holistică (comprehensivă din toate punctele de vedere ale dezvoltarii sale);</p>
+                            <p class="citat-0">‒ solicită în mod fundamental ca la vârstele mici să avem o abordare pluridisciplinară (îngrijire, nutriţie şi educaţie în acelaşi timp);</p>
+                            <p class="citat-0">‒ solicită ca activităţile desfăşurate în cadrul procesului educaţional să devină adevărate ocazii de învăţare situaţională;</p>
+                            <p>‒ porneşte de la premisa că părintele nu poate lipsi din acest cerc educaţional, el fiind partenerul-cheie în educaţia copilului, iar relaţia familie-grădiniţă-comunitate devine hotărâtoare.</p>
+
+                            <p>Grădiniţa asigură mediul care garantează siguranţa şi sănătatea copiilor şi care, ţinând cont de caracteristicile psihologice ale dezvoltării copilului, implică atât familia cât şi comunitatea în procesul de învăţare.</p>
+
                         </section>
 
                     </section>
@@ -2917,155 +3067,385 @@ border-radius: 4px;
                 </section>
 
 <!-- Secțiune Text -->
-                <section id="regulamente-prezentare" class="sectiune-text" aria-labelledby="regulamente-prezentare-label">
+                <section id="gradinita-descriere" class="sectiune-text" aria-labelledby="gradinita-descriere-label">
 
-                    <h3 id="regulamente-prezentare-label" class="sr-only">Scurtă prezentare a regulamentelor</h3>
+                    <h3 id="gradinita-descriere-label" class="sr-only">Scurtă descriere a învățământului preșcolar</h3>
 
-                    <p class="sr-only">Această secțiune conține o scurtă prezentare a comisiilor de lucru.</p>
+                    <p class="sr-only">Această secțiune conține o scurtă descriere a învățământului preșcolar.</p>
 
-                    <article id="prezentare" class="coloane" aria-labelledby="regulamente-label">
+                    <article id="descriere" class="coloane" aria-labelledby="descriere-label">
 
-                        <h4 id="prezentare-label" class="sr-only">Prezentare:</h4>
+                        <h4 class="sr-only" id="descriere-label">Descriere:</h4>
 
-                        <p class="citat-0">Regulamentul-cadru de organizare și funcționare a unităților de învățământ preuniversitar conține prevederi referitoare la:</p>
-                        <p class="citat-0">‒ dispoziții generale: cadrul de reglementare; principiile de organizare și funcționare a învățământului preuniversitar;</p>
-                        <p class="citat-0">‒ organizarea unităților de învățământ: rețeaua școlară; organizarea programului școlar; formațiunile de studiu;</p>
-                        <p class="citat-0">‒ managementul unităților de învățământ: dispoziții generale; Consiliul de Administrație; Directorul; Directorul adjunct; tipul și conținutul documentelor manageriale;</p>
-                        <p class="citat-0">‒ personalul unităților de învățământ: dispoziții generale; personalul didactic; personalul nedidactic; evaluarea personalului din unitățile de învățământ; răspunderea disciplinară a personalului din unitatea de învățământ;</p>
-                        <p class="citat-0">‒ organismele funcționale și responsabilități ale cadrelor didactice: organismele funcționale la nivelul unității de învățământ (Consiliul Profesoral, Consiliul clasei); responsabilitățile personalului didactic în unitatea de învățământ (coordonatorul pentru proiecte și programe educative școlare și extrașcolare, profesorul diriginte);</p>
-                        <p class="citat-0">‒ structura, organizarea și responsabilitățile personalului didactic auxiliar și nedidactic: compartimentul secretariat; serviciul financiar (organizare și responsabilități, management financiar); compartimentul administrativ (organizare și responsabilități, management administrativ); biblioteca școlară;</p>
-                        <p class="citat-0">‒ elevi: dobândirea și exercitarea calității de elev; activitatea educativă extrașcolară; evaluarea copiilor/elevilor (evaluarea rezultatelor învățării și încheierea situației școlare, examene organizate la nivelul unităților de învățământ); transferul elevilor;</p>
-                        <p class="citat-0">‒ evaluarea unităților de învățământ: dispoziții generale; evaluarea internă a calității educației; evaluarea externă a calității educației;</p>
-                        <p class="citat-0">‒ partenerii educaționali: drepturile părinților/reprezentanților legali; îndatoririle părinților/reprezentanților legali; Adunarea generală a părinților; Comitetul de părinți; Consiliul reprezentativ al părinților și Asociația de părinți; contractul educațional; școala și comunitatea prin parteneriate/protocoale între unitățile de învățământ și alți parteneri educaționali;</p>
-                        <p>‒ dispoziții tranzitorii și finale.</p>
+                        <section id="descriere-conditii" class="sectiune-text" aria-labelledby="descriere-conditii-label">
 
-                        <p>Respectarea prevederilor Regulamentului-cadru de organizare și funcționare a unităților de învățământ preuniversitar de către personalul didactic, didactic auxiliar, nedidactic și elevi este obligatorie, nerespectarea acestora constituind abatere disciplinară și fiind sancționată conform prevederilor legale.</p>
-                        <p>În baza Regulamentul-cadru de organizare și funcționare a unităților de învățământ preuniversitar, a actelor normative și/sau administrative cu caracter normativ care reglementează drepturile și obligațiile beneficiarilor primari și secundari ai educației și ale personalului din unitățile de învățământ, precum și a contractelor colective de muncă aplicabile, unitățile de învățământ își elaborează propriul Regulament de organizare și funcționare. Acesta conține reglementări cu caracter general, în funcție de tipul unității de învățământ, precum și reglementări specifice fiecărei unități de învățământ, în conformitate cu prevederile legale în vigoare.</p>
-                        <p>Proiectul Regulamentului de organizare și funcționare a unității de învățământ se elaborează de către un colectiv de lucru, coordonat de un cadru didactic. Din colectivul de lucru, numit prin hotărâre a Consiliului de Administrație, fac parte și reprezentanți ai organizațiilor sindicale, ai părinților și ai elevilor, desemnați de către Consiliul reprezentativ al părinților și Asociația părinților, respectiv de Consiliul consultativ al elevilor.</p>
-                        <p>Proiectul Regulamentului de organizare și funcționare a unității de învățământ, precum și modificările ulterioare ale acestuia se supun spre dezbatere în Consiliul reprezentativ al părinților și Asociația părinților, în Consiliul consultativ al elevilor și în Consiliul Profesoral, la care participă cu drept de vot și personalul didactic auxiliar și nedidactic.</p>
-                        <p>Regulamentul de organizare și funcționare a unității de învățământ, precum și modificările ulterioare ale acestuia se aprobă, prin hotărâre, de Consiliul de Administrație. După aprobare, acesta se înregistrează la secretariatul unității de învățământ.</p>
-                        <p>Pentru aducerea la cunoștința personalului unității de învățământ, a părinților și a elevilor, Regulamentul de organizare și funcționare a unității de învățământ se afișează pe site-ul unității de învățământ sau, în lipsa acestuia, prin orice altă formă. Educatoarele/Învățătorii/Institutorii/Profesorii pentru învățământul preșcolar/primar/Profesorii diriginți au obligația de a prezenta la începutul fiecărui an școlar elevilor și părinților Regulamentul de organizare și funcționare a unității de învățământ.</p>
-                        <p>Regulamentul de organizare și funcționare a unității de învățământ poate fi revizuit anual sau ori de câte ori este nevoie.</p>
-                        <p>Respectarea prevederilor Regulamentului de organizare și funcționare a unității de învățământ este obligatorie, nerespectarea acestuia constituind abatere și fiind sancționată conform prevederilor legale.</p>
-                        <p>Regulamentul Intern al unității de învățământ conține dispozițiile obligatorii prevăzute la articolul nr. 242 din Legea nr. 53 din 24.01.2003 Codul muncii, republicată, cu modificările și completările ulterioare, și în contractele colective de muncă aplicabile și se aprobă prin hotărâre a Consiliului de Administrație, după consultarea reprezentanților organizațiilor sindicale care au membri în unitatea de învățământ, afiliate la federațiile sindicale reprezentative la nivel de sector de activitate învățământ preuniversitar.</p>
+                            <h5 class="citat-1" id="descriere-conditii-label">Condiții de înscriere în învățământul primar</h5>
 
-                        <p class="citat-0">Regulamentul Intern al Școlii Gimnaziale „Nicu Albu” Piatra Neamț a fost dezbătut în Consiliul profesoral, în Comisia paritară şi a fost aprobat de Consiliului de Administraţie. Acesta reglementează:</p>
-                        <p class="citat-0">‒ programul cursurilor zilnice, programul compartimentelor şi angajaţilor unităţii de învățământ;</p>
-                        <p class="citat-0">‒ programul serviciului pe şcoală şi atribuţiile persoanelor responsabile;</p>
-                        <p class="citat-0">‒ modul de organizare şi utilizare a spaţiului interior şi al căilor de acces din curtea şcolii şi corpul de clădire;</p>
-                        <p class="citat-0">‒ comportamentul şi ţinuta elevilor şi a întregului personal al şcolii.</p>
+                            <p>În grupele de nivel preșcolar pot fi înscriși copiii cu vârste între 3 și 6 ani, în limita planului de școlarizare aprobat. Numărul de locuri care se acordă prin cifra de școlarizare asigură, cu prioritate, cuprinderea întregii generații a copiilor de 4 ani în grupa mijlocie și cuprinderea întregii generații a copiilor de 5 ani în grupa mare din învățământul preșcolar.</p>
 
-                        <p>Respectarea Regulamentului Intern este obligatorie pentru toate cadrele didactice, personalul didactic auxiliar, personalul nedidactic, copiii, elevii, părinţii/reprezentanţii legali ai acestora, angajaţi/şcolarizaţi/parteneri educaționali la Şcoala Gimnazială „Nicu Albu” Piatra Neamţ.</p>
+                        </section>
+
+                        <section id="descriere-alegere" class="sectiune-text" aria-labelledby="descriere-alegere-label">
+
+                            <h5 class="citat-1" id="descriere-alegerei-label">Alegerea unității de învățământ la care va fi înscris copilul</h5>
+
+                            <p>Părinții/reprezentanții legali ai copiilor cu vârsta cuprinsă între 3-6 ani pot solicita înscrierea copiilor în unități de învățământ cu personalitate juridică cu grupe de nivel preșcolar. În acest scop, vor depune, pe locurile libere rămase, după operațiunea de reînscrieri, cerere-tip de înscriere la unitatea de învățământ aleasă, care poate fi o unitate de învățământ cu grupe de nivel preșcolar din apropierea domiciliului/reședinței sau din apropierea locului de muncă.</p>
+                            <p>Numărul locurilor libere este stabilit ca diferență între numărul de locuri alocate pentru nivelul preșcolar, pe grupe de vârstă, prin planul de școlarizare și numărul de copii care au ocupat locuri în etapa de reînscrieri.</p>
+                            <p>În situația în care într-o unitate de învățământ numărul cererilor-tip de înscriere primite de la părinții/reprezentanții legali ai copiilor este mai mare decât numărul de locuri libere, comisia de înscriere din unitatea de învățământ selectează copiii în ordinea descrescătoare a vârstei și aplică criterii de departajare generale și specifice, în vederea stabilirii celor care vor fi admiși.</p>
+
+                            <p class="citat-0">Criteriile generale de departajare sunt următoarele:</p>
+                            <p class="citat-0">‒ copilul are vârsta de 4 sau 5 ani împliniți la începutul anului școlar;</p>
+                            <p class="citat-0">‒ domiciliul copilului/reședința/locul de muncă al unuia dintre părinți/al reprezentantului legal este situat în apropierea unității de învățământ unde părintele/reprezentantul legal depune cererea-tip de înscriere;</p>
+                            <p class="citat-0">‒ cel puțin unul dintre părinți/reprezentantul legal ai/al copilului urmează o formă de învățământ la zi;</p>
+                            <p class="citat-0">‒ existența unui document care dovedește că beneficiază de tutelă sau de o măsură de protecție specială stabilită în condițiile Legii nr.272 din 21.06.2004, cu modificările și completările ulterioare;</p>
+                            <p class="citat-0">‒ existența unui document care dovedește că este în grija unui singur părinte (familie monoparentală);</p>
+                            <p class="citat-0">‒ ambii părinți/părintele unic/reprezentantul legal ai/al copilului lucrează sau cel puțin unul dintre ei se încadrează în una dintre situațiile: (1) pensionat în conformitate cu prevederile legale; (2) cu certificat de handicap; (3) șomer, în căutarea unui loc de muncă, cu documente doveditoare de la Agenția de Ocupare a Forței de Muncă;</p>
+                            <p class="citat-0">‒ existența unui certificat medical de încadrare în grad de handicap a copilului și/sau a certificatului de orientare școlară și profesională eliberat de Centrul Județean de Resurse și Asistență Educațională Neamț;</p>
+                            <p>‒ existența unui frate/a unei surori înmatriculat/înmatriculate în unitatea de învățământ respectivă, în anul școlar pentru care se face înscrierea.</p>
+
+                            <p>Criteriile specifice de departajare sunt elaborate de fiecare unitate de învățământ și se aplică după aplicarea criteriilor generale. Pentru criteriile specifice stabilite, unitatea de învățământ indică documentele doveditoare pe care părintele/reprezentantul legal trebuie să le depună în momentul completării/validării cererii-tip de înscriere.</p>
+
+                        </section>
+
+                        <section id="descriere-procedura" class="sectiune-text" aria-labelledby="descriere-procedura-label">
+
+                            <h5 class="citat-1" id="descriere-procedura-label">Procedura de înscriere în învățământul preșcolar</h5>
+
+                            <p class="citat-0">Dosarul de înscriere cuprinde următoarele documente, în copie:</p>
+                            <p class="citat-0">‒ certificatul de naștere al copilului;</p>
+                            <p class="citat-0">‒ certificatul de încadrare în grad de handicap a copilului, dacă este cazul;</p>
+                            <p class="citat-0">‒ certificatul medical de tip A5 în care este specificat diagnosticul medical, dacă este cazul;</p>
+                            <p class="citat-0">‒ certificatul pentru cerințe educaționale speciale ale copilului, dacă este cazul;</p>
+                            <p class="citat-0">‒ actele de identitate ale părinților/reprezentantului legal;</p>
+                            <p class="citat-0">‒ certificatul de căsătorie a părinților/tutorilor legali ai copilului, dacă este cazul;</p>
+                            <p class="citat-0">‒ hotărârârea judecătorească definitivă de divorț din care să rezulte modul în care se exercită autoritatea părintească și unde a fost stabilită locuința copilului, dacă este cazul;</p>
+                            <p class="citat-0">‒ declarație privind acceptul celuilalt părinte în caz de divorț și custodie comună a copilului;</p>
+                            <p>‒ alte documente doveditoare care fac obiectul criteriilor generale sau specifice de înscriere și care sunt analizate în timpul procesului de înscriere.</p>
+
+                            <p class="citat-0">La dosarul de înscriere se adaugă, până la începutul anului școlar, următoarele documente:</p>
+                            <p class="citat-0">‒ adeverința de la medicul de familie în care se menționează că respectivul copil este sănătos clinic, care este necesară în prima zi de prezentare a copilului în unitatea de învățământ;</p>
+                            <p>‒ avizul epidemiologic/dovada de vaccinare întocmit(ă) conform prevederilor elaborate de Ministerul Sănătății, cu privire la intrarea copilului în colectivitate, eliberat de medicul de familie al copilului cu maximum 5 zile înainte de a începe frecventarea cursurilor în unitatea de învățământ.</p>
+
+                            <p>Dosarul de înscriere este însoțit de o cerere-tip de înscriere în care părintele/reprezentantul legal al copilului va alege trei opțiuni cu privire la unitățile de învățământ pe care acesta le are în vedere pentru copil.</p>
+                            <p>Cererea-tip este completată și validată în Sistemul Informatic Integrat al Învăţământului din România de către membrul desemnat din cadrul comisiei de înscriere de la nivelul unității de învățământ, după certificarea conform cu originalul a copiilor documentelor depuse la dosarul de înscriere.</p>
+
+                        </section>
+
+                        <section id="descriere-etape" class="sectiune-text" aria-labelledby="descriere-etape-label">
+
+                            <h5 class="citat-1" id="descriere-etape-label">Etapele de înscriere în învățământul preșcolar</h5>
+
+                            <p class="citat-0">În prima etapă se colectează și se procesează cererile-tip de înscriere și documentele depuse/transmise de părinți/reprezentanții legali, având la bază deciziile consiliilor de administrație ale unităților de învățământ, luate în urma aplicării criteriilor de departajare. În această etapă se derulează trei faze, după cum urmează:</p>
+                            <p class="citat-0">‒ în faza I se evaluează cererile-tip de înscriere de la unitățile de învățământ exprimate ca primă opțiune și se generează lista cererilor respinse;</p>
+                            <p class="citat-0">‒ în faza a II-a se evaluează cererile-tip de înscriere respinse în Faza I, de la unitățile de învățământ exprimate ca a doua opțiune și se generează lista cererilor respinse;</p>
+                            <p>‒ în faza a III-a se evaluează cererile-tip de înscriere respinse în Faza a II-a, de la unitățile de învățământ exprimate ca a treia opțiune și se generează lista cererilor respinse care pot intra, la solicitarea părinților, pe baza unei noi cereri, în evaluare în a doua etapă a înscrierilor, pe locurile rămase libere.</p>
+
+                            <p>Părinții pot ridica dosarele respinse de la unitatea de învățământ la care au fost depuse în 5 zile lucrătoare de la data afișării rezultatelor finale ale etapei.</p>
+
+                            <p class="citat-0">În a doua etapă este asigurată înscrierea, pe locurile libere rămase, a copiilor respinși în etapa anterioară. În această etapă se colectează și se procesează noile cereri-tip de înscriere, cu alte trei opțiuni și documentele depuse/transmise de părinți/reprezentanții legali, având la bază aplicarea criteriilor de departajare; în mod similar cu activitățile derulate în etapa I. Și în această etapă se derulează trei faze, respectiv:</p>
+                            <p class="citat-0">‒ în faza I se evaluează cererile-tip de înscriere de la unitățile de învățământ exprimate ca primă opțiune și se generează lista cererilor respinse;</p>
+                            <p class="citat-0">‒ în faza a II-a se evaluează cererile-tip de înscriere respinse în Faza I, de la unitățile de învățământ exprimate ca a doua opțiune și se generează lista cererilor respinse;</p>
+                            <p>‒ în faza a III-a se evaluează cererile-tip de înscriere respinse în Faza a II-a, de la unitățile de învățământ exprimate ca a treia opțiune și se generează lista cererilor respinse care pot intra în evaluare, pe locurile rămase libere, în etapa de ajustări, la solicitarea părinților/reprezentanților legali.</p>
+
+                            <p>Părinții pot ridica dosarele respinse de la unitatea de învățământ la care au fost depuse în 5 zile lucrătoare de la data afișării rezultatelor finale ale etapei.</p>
+
+                            <p class="citat-0">În etapa de ajustări, derulată la nivelul inspectoratului școlar, se colectează și se procesează noi cereri-tip de înscriere și documentele depuse/transmise de părinții/reprezentanții legali ai copiilor care au rămas nerepartizați după derularea celor două etape anterioare, precum și cei care nu au participat la primele două etape sau nu au fost înscriși din diferite alte motive. Înscrierea se realizează pe locurile rămase libere, precum și în funcție de suplimentările de locuri pe care le pot publica inspectoratele școlare. În această etapă se soluționează:</p>
+                            <p class="citat-0">‒ cu prioritate, cazurile copiilor de 4 și 5 ani împliniți la începutul anului școlar rămași neînscriși;</p>
+                            <p class="citat-0">‒ cazurile copiilor pentru are s-a solicitat înscrierea în clasa pregătitoare din învățământul primar și nu au fost admiși ca urmare a avizului negativ al Centrul Județean de Resurse și Asistență Educațională Neamț;</p>
+                            <p>‒ cazurile copiilor de 2 ani pentru care se solicită înscrierea în învățământul preșcolar, cu respectarea prevederilor art.23 alin (1^1) din Legea educației naționale nr.1 din 05.01.2011, cu modificările și completările ulterioare.</p>
+
+                            <p>Constituirea grupelor de preșcolari se face după finalizarea procesului de înscriere, conform calendarului, în baza Procedurii de distribuție aleatorie a elevilor în formațiunile de studiu, aprobate de Consiliul de Administrație, cu respectarea criteriilor de transparență, echitate, nondiscriminare și incluziune.</p>
+
+                        </section>
+
+                        <section id="descriere-sanctiuni" class="sectiune-text" aria-labelledby="descriere-sanctiuni-label">
+
+                            <h5 class="citat-1" id="descriere-sanctiuni-label">Interdicții și sancțiuni</h5>
+
+                            <p>Conform metodologiei, prezentarea de înscrisuri false la înscrierea în învățământul preșcolar se pedepsește conform legii și atrage pierderea locului obținut prin fraudă.</p>
+                            <p>Persoanele vinovate de transcrierea eronată, deliberată, a datelor personale ale copiilor sau de nerespectarea prevederilor metodologiei vor fi sancționate disciplinar, administrativ, civil sau penal, după caz.</p>
+                            <p>Se interzice unităților de învățământ de stat să instituie taxe sau să solicite părinților alte foloase pentru a realiza înscrierea copiilor în învățământul preșcolar.</p>
+                            <p>Se interzice colectarea sau favorizarea acțiunii de colectare a unor fonduri materiale sau bănești de la părinții care solicită înscrierea copiilor în învățământul preșcolar.</p>
+                            <p>Personalul din învățământ care, în procesul de înscriere a copiilor în învățământul preșcolar, săvârșește fapte de natură penală sau care manifestă neglijență în îndeplinirea atribuțiilor ce îi revin este sancționat în conformitate cu prevederile legislației în vigoare.</p>
+                            <p>Potrivit articolului nr. 52 din metodologie, Comisia județeană, precum și comisiile de înscriere și distribuire a elevilor din unitățile de învățământ pot solicita autorităților în drept verificarea respectării prevederilor Ordonanței de Urgență a Guvernului nr. 97 din 14.07.2005 privind evidența, domiciliul, reședința și actele de identitate ale cetățenilor români.</p>
+
+                        </section>
 
                     </article>
 
                 </section>
 
-<!-- Secțiune Conținut -->
-                <section id="regulamente-informatii" class="sectiune-conținut" aria-labelledby="regulamente-informatii-label">
+<!-- Secțiune Informații -->
+                <section id="gradinita-informatii" class="sectiune-informatii" aria-labelledby="gradinita-informatii-label">
 
-                    <h3 id="regulamente-informatii-label" class="sr-only">Această secțiune conține Regulamentul-cadru de organizare și funcționare a unităților de învățământ preuniversitar și Regulamentul Intern al Școlii Gimnaziale „Nicu Albu” Piatra Neamț.</h3>
+                    <h3 id="gradinita-informatii-label" class="citat-1">Informații relevante:</h3>
 
-                    <p class="citat-5"><strong>Informații relevante:</strong></p>
+                    <ul class="coloane">
+                        <li>
+                            <a href="https://drive.google.com/file/d/17PjjnjNR9_p8OwYGzhssxdLlm1OGO-Sa/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                Adresa Inspectoratului Școlar Județean Neamț nr. 7839 din 14.07.2025 Procedură operațională „Înscrierea în învățământul antepreșcolar/preșcolar în anul școlar 2025-2026 - repartizarea copiillor înscriși în etapa de ajustări pe locurile rămase libere
+                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1rtUDecTrRRLHYeh3YavtBE7kpWaV3q5N/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                Adresa Inspectoratului Școlar Județean Neamț nr. 7586 din 07.07.2025 Comunicat de presă, Etapa a II-a de înscriere a copiilor antepreșcolari și preșcolari în anul școlar 2025-2026
+                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1bfXLSY9hrLvgUdszPkQ_8-coU6XJsWup/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                Procedura operațională a Inspectoratului Școlar Județean Neamț nr. 3226 din 24.03.2025 privind organizarea și desfășurarea reînscrierii/înscrierii copiilor în învățământul preșcolar/antepreșcolar în anul școlar 2025-2026
+                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1VFxDVmZ5gdM7iHgczy6gnWBv_wQXHyBs/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                Planul de măsuri al Inspectoratului Școlar Județean Neamț nr. 3213 din 24.03.202 pentru pregătirea și organizarea înscrierii copiilor antepreșcolari și preșcolari în unități de învățământ cu personalitate juridică cu grupe de nivel preșcolar și/sau antepreșcolar și în servicii de educație timpurie complementare, anul școlar 2025-2026
+                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1q4hUhay4O39FinxVTSSduSP9egyuzl45/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                Cerere-tip de înscriere în educația timpurie - 2025 - preșcolar
+                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/12b6lhFqE0i6PPLE0H6URfRMdV4TxRT3n/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                Adresa Inspectoratului Școlar Județean Neamț nr. 2559-6 din 10.03.2025 Precizări/documente necesare înscrierii copiilor în unități de învățământ preuniversitar cu personalitate juridică cu grupe de nivel preșcolar și/sau antepreșcolar și în serviciile de educație timpurie complementare
+                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/10rIWnGpHtyjvp2a0ByHWlZSlTZMsBPlD/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                Adresa Inspectoratului Școlar Județean Neamț nr. 2559-5 din 10.03.2025 Modalitatea de stabilire a locurilor libere pentru înscrierea copiilor în unități de învățământ preuniversitar cu personalitate juridică cu grupe de nivel preșcolar și/sau antepreșcolar și în servicii de educație timpurie complementare
+                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/195hEPEOeHdbOsn1DFawE1nhCUXzPnR62/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                Adresa Inspectoratului Școlar Județean Neamț nr. 2559-3 din 10.03.2025 Criteriile generale de departajare pentru nivelul antepreșcolar, criteriile generale de departajare pentru nivelul preșcolar, criteriile generale de departajare pentru nivelul antepreșcolar și preșcolar din cadrul serviciilor de educație timpurie complementare, criteriile specifice de departajare pentru înscrierea copiilor în unități de învățământ preuniversitar cu personalitate juridică cu grupe de nivel preșcolar și/sau antepreșcolar și în serviciile de educație timpurie complementare
+                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1r6gkjEf5jnMfxuM2xcVSYxJMgmLmHF68/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                Adresa Inspectoratului Școlar Județean Neamț nr. 2559-2 din 10.03.2025 Precizări privind înscrierea copiilor în mai multe unități de învățământ preuniversitar cu personalitate juridică cu grupe de nivel preșcolar și/sau antepreșcolar și în serviciile de educație timpurie complementare
+                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1ZvZxALMrjeu4pgi9vYWCrFBfifsZhL4W/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                Adresa Inspectoratului Școlar Județean Neamț nr. 2559-1 din 10.03.2025 Unități de învățământ preuniversitar din județul neamț care au ca structură servicii de educație timpurie complementară
+                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1cv-uNybYgata93TXquK-sy5Ze3JV-ihq/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                Ordinul Ministerului Educației și Cercetării nr. 3436 din 28.02.2025 privind aprobarea Calendarului înscrierii copiilor antepreșcolari și preșcolari în anul școlar 2025-2026 în unități de învățământ preuniversitar cu personalitate juridică cu grupe de nivel preșcolar și/sau antepreșcolar și în servicii de educație timpurie complementare
+                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1EhxJc-ksjRnnNMkbUKBHEgu6pwGQqEdq/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                Ordinul Ministerului Educației nr. 4018 din 15.03.2024 privind aprobarea Metodologiei-cadru de înscriere a copiilor în unități de învățământ preuniversitar cu personalitate juridică cu grupe de nivel preșcolar și/sau antepreșcolar și în servicii de educație timpurie complementare și a Calendarului înscrierii copiilor antepreșcolari și preșcolari în anul școlar 2024-2025 în unități de învățământ preuniversitar cu personalitate juridică cu grupe de nivel preșcolar și/sau antepreșcolar și în servicii de educație timpurie complementare
+                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
+                            </a>
+                        </li>
+                    </ul>
 
-                    <ul id="regulamente-ul" class="sectiune-informatii">
+                </section>
 
-                        <li class="sectiune-continut">
+<!-- Secțiune Informații -->
+                <section id="gradinita-utile" class="sectiune-informatii" aria-labelledby="gradinita-utile-label">
 
-                            <section id="regulamente-rofuip" class="wrap-6" aria-labelledby="regulamente-rofuip-label">
+                    <h3 id="gradinita-utile-label" class="citat-1">Alte informații utile:</h3>
 
-                                <h4 id="regulamente-rofuip-label" class="citat-3 sr-only">Regulamentul-cadru de organizare și funcționare a unităților de învățământ preuniversitar</h4>
+                    <ul class="coloane">
+                        <li>
+                            <a href="https://drive.google.com/file/d/1GGivmj7OzEfAfnryjwlR8C77yMPeRwAN/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                Hotărârea Guvernului nr. 1563 din 04.12 2024 privind aprobarea Metodologiei de organizare și funcționare a serviciilor de educație timpurie complementare
+                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/101s8O-fk8Wg4TjhbE0umdVPSEgxJu51X/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                Ordinul Ministerului Educației nr. 6584 din 04.09.2024 pentru aprobarea Metodologiei privind întocmirea Raportului descriptiv de evaluare referitor la dezvoltarea fizică și la formarea competențelor cognitive și socioemoționale ale copilului, la finalul grupei mari a grădiniței
+                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1d_GGgSKuGXZ0GQK-Z093vUZjWCwJWqFX/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                Ordinul Ministerului Educației nr. 6478 din 30.08.2024 Metodologie privind portofoliul educațional al preșcolarului și al elevului din învățământul preuniversitar
+                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1SmP41JQ7eLFl2mYr6L97fC0AxXMf2_xc/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                Ordinul Ministerului Educației nr. 4628 din 07.06.2024 privind aprobarea Reperelor fundamentale în învățarea și dezvoltarea timpurie a copilului de la naștere la 7 ani
+                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1PKekYNgGWvd6Z6THLiwLG83JxkAPwgJc/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                Ordinul Ministerului Educației nr. 6731 din 28.11.2023 privind aprobarea Profilului de formare a absolventului
+                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1SmKFI7PvFmmkSb62j-6h531oyfAbPu7Z/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                Ordinul Ministerului Educației Naționale nr. 4694 din 20.08.2019 privind aprobarea Curriculumului pentru educatie timpurie
+                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
+                            </a>
+                        </li>
+                    </ul>
 
-                                <ul>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/15AvyM8vpVH5b9eFre8Wf5nngDbxlzyYn/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Ordinul Ministerului Educației nr. 5726 din 06.08.2024 privind aprobarea Regulamentului-cadru de organizare și funcționare a unităților de învățământ preuniversitar
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/16ZbZKXIxrRb4lxPsF8sye6h2AiGoo9Xo/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Ordinul Ministerului Educației nr. 4183 din 04.07.2022 privind aprobarea Regulamentului-cadru de organizare și funcționare a unităților de învățământ preuniversitar
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1fYVrBjx9YgQNvq3qH4cL5-_ycC5z7ldG/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Anexa la Regulamentul-cadru de organizare și funcționare a unităților de învățământ preuniversitar, Model de contract educational
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1FaP6Lwty3uLcjEfVm4-xQ4hH5zEk6nv_/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Anexa la Ordinul Ministerului Educației și Cercetării nr. 5447 din 31.08.2020, Regulamentul-cadru de organizare și funcționare a unităților de învățământ preuniversitar
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1M_OFTYwEvg1p_ackLNOw5U7l6Vdp_d7w/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Ordinul Ministerului Educației și Cercetării nr. 5447 din 31.08.2020 privind aprobarea Regulamentului-cadru de organizare și funcționare a unităților de învățământ preuniversitar
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                </ul>
+                </section>
 
-                            </section>
+<!-- Secțiune TelVerde -->
+                <section id="gradinita-telverde" class="sectiune-telverde" aria-labelledby="gradinita-telverde-label">
 
-                            <section id="regulamente-roi" class="wrap-6" aria-labelledby="regulamente-roi-label">
+                    <h3 id="gradinita-telverde-label" class="sr-only">Linii telefonice dedicate TelVerde</h3>
 
-                                <h4 id="regulamente-roi-label" class="citat-3 sr-only">Regulamentul Intern al Școlii Gimnaziale „Nicu Albu” Piatra Neamț</h4>
+                    <ul>
 
-                                <ul>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1dErQpPDjaGW0uulU4XfJczMKEUdmfsRk/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Regulamentul Intern al Școlii Gimnaziale „Nicu Albu” Piatra Neamț pentru anul școlar 2024-2025
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1g-rE2YtE6vL9cStOsAoToy4W8xBuSIM8/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Regulamentul Intern al Școlii Gimnaziale „Nicu Albu” Piatra Neamț pentru anul școlar 2023-2024
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1id5q8N0pdt5uTptAP0eWAeKpqWrdUvUS/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Regulamentul Intern al Școlii Gimnaziale „Nicu Albu” Piatra Neamț pentru anul școlar 2022-2023
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1fb64gNm5peCgvnWetT3vI7jj6tDLfHLj/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Regulamentul Intern al Școlii Gimnaziale „Nicu Albu” Piatra Neamț pentru anul școlar 2020-2021
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/125x9N6orJ0MinkYLExgAI7Hp3THkUz5y/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Regulamentul Intern al Școlii Gimnaziale „Nicu Albu” Piatra Neamț pentru anul școlar 2013-2014
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://drive.google.com/file/d/1gYh7MBH8Z0Ven3d69aGDszxHsVmj1-Tu/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                            Regulamentul Intern al Școlii cu clasele I-VIII „Nicu Albu” Piatra Neamț pentru anul școlar 2010-2011
-                                            <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                                        </a>
-                                    </li>
-                                </ul>
+                        <li>
+
+                            <section id="telverde-mec-covid19" class="wrap-3" aria-labelledby="telverde-mec-covid19-label">
+
+                                <h4 id="telverde-mec-covid19-label" class="sr-only">Număr TelVerde al Ministerului Educației și Cercetării - Linie telefonică dedicată consilierii psihologice pe tema CODID-19 pentru cadre didactice, elevi și părinți:</h4>
+
+                                <div>
+
+                            <img src="https://github.com/scoalanicualbu/website/blob/main/telverde-mec-covid19.png?raw=true" alt="004 0771 141 767 Centrul Județean de Resurse și Asistență Educațională Neamț - Linie telefonică dedicată consilierii psihologice pe tema CODID-19 pentru cadre didactice, elevi și părinți">
+
+                                </div>
 
                             </section>
 
                         </li>
 
-                    </ul>
+                        <li>
 
-                </section> 
+                            <section id="telverde-cjraeneamt-consiliere" class="wrap-3" aria-labelledby="telverde-cjraeneamt-consiliere-label">
+
+                                <h4 id="telverde-cjraeneamt-consiliere-label" class="sr-only">Număr TelVerde al Centrului Județean de Resurse și Asistență Educațională Neamț - Linie telefonică dedicată consilierii online:</h4>
+
+                                <div>
+
+                            <img src="https://github.com/scoalanicualbu/website/blob/main/telverde-cjraeneamt-consiliere.png?raw=true" alt="004 0371 092 511 Centrul Județean de Resurse și Asistență Educațională Neamț - Linie telefonică dedicată consilierii online">
+
+                                </div>
+
+                            </section>
+
+                        </li>
+
+                        <li>
+
+                            <section id="telverde-isjneamt-prescolar" class="wrap-3" aria-labelledby="telverde-isjneamt-prescolar-label">
+
+                                <h4 id="telverde-isjneamt-prescolar-label" class="sr-only">Număr TelVerde al Inspectoratului Școlar Județean Neamț - Linie telefonică dedicată înscrierii în învățământul preșcolar:</h4>
+
+                                <div>
+
+                            <img src="https://github.com/scoalanicualbu/website/blob/main/telverde-isjneamt-prescolar.png?raw=true" alt="004 0800 816 233 Inspectoratul Școlar Județean Neamț - Linie telefonică dedicată înscrierii în învățământul preșcolar">
+
+                                </div>
+
+                            </section>
+
+                        </li>
+
+                        <li>
+
+                            <section id="telverde-isjneamt-primar" class="wrap-3" aria-labelledby="telverde-isjneamt-primar-label">
+
+                                <h4 id="telverde-isjneamt-primar-label" class="sr-only">Număr TelVerde al Inspectoratului Școlar Județean Neamț - Linie telefonică dedicată înscrierii în învățământul primar:</h4>
+
+                                <div>
+
+                            <img src="https://github.com/scoalanicualbu/website/blob/main/telverde-isjneamt-primar.png?raw=true" alt="004 0800 816 233 Inspectoratul Școlar Județean Neamț - Linie telefonică dedicată înscrierii în învățământul primar">
+
+                                </div>
+
+                            </section>
+
+                        </li>
+
+                        <li>
+
+                            <section id="telverde-isjneamt-examene" class="wrap-3" aria-labelledby="telverde-isjneamt-examene-label">
+
+                                <h4 id="telverde-isjneamt-examene-label" class="sr-only">Număr TelVerde al Inspectoratului Școlar Județean Neamț - Linie telefonică dedicată examenelor naționale:</h4>
+
+                                <div>
+
+                            <img src="https://github.com/scoalanicualbu/website/blob/main/telverde-isjneamt-examene.png?raw=true" alt="004 0800 816 233 Inspectoratul Școlar Județean Neamț - Linie telefonică dedicată examenelor naționale">
+
+                                </div>
+
+                            </section>
+
+                        </li>
+
+                        <li>
+
+                            <section id="telverde-mec-evaluare" class="wrap-3" aria-labelledby="telverde-mec-evaluare-label">
+
+                                <h4 id="telverde-mec-evaluare-label" class="sr-only">Număr TelVerde al Ministerului Educației și Cercetării - Linie telefonică dedicată pentru sesizarea oricăror disfuncționalități privind desfășurarea Evaluărilor Naționale:</h4>
+
+                                <div>
+
+                            <img src="https://github.com/scoalanicualbu/website/blob/main/telverde-mec-evaluare.png?raw=true" alt="004 0800 801 100 Ministerul Educației și Cercetării - Linie telefonică dedicată pentru sesizarea oricăror disfuncționalități privind desfășurarea Evaluărilor Naționale">
+
+                                </div>
+
+                            </section>
+
+                        </li>
+
+                        <li>
+
+                            <section id="telverde-mec-parinti" class="wrap-3" aria-labelledby="telverde-mec-parinti-label">
+
+                                <h4 id="telverde-mec-parinti-label" class="sr-only">Număr TelVerde al Ministerului Educației și Cercetării - Linie telefonică dedicată elevilor, studenților și părinților:</h4>
+
+                                <div>
+
+                                    <img src="https://github.com/scoalanicualbu/website/blob/main/telverde-mec-parinti.png?raw=true" alt="004 0800 672 031 Ministerul Educației și Cercetării - Linie telefonică dedicată elevilor, studenților și părinților">
+
+                                </div>
+
+                            </section>
+
+                        </li>
+
+                        <li>
+
+                            <section id="telverde-mec-directori" class="wrap-3" aria-labelledby="telverde-mec-directori-label">
+
+                                <h4 id="telverde-mec-directori-label" class="sr-only">Număr TelVerde al Ministerului Educației și Cercetării - Linie telefonică dedicată directorilor și administrației centrale:</h4>
+
+                                <div>
+
+                            <img src="https://github.com/scoalanicualbu/website/blob/main/telverde-mec-directori.png?raw=true" alt="004 0800 672 032 Ministerul Educației și Cercetării - Linie telefonică dedicată directorilor și administrației centrale">
+
+                                </div>
+
+                            </section>
+
+                        </li>
+ 
+                        </ul>
+
+                </section>
 
 <!-- Secțiune Legături -->
-                <section id="regulamente-legaturi" class="sectiune-legaturi" aria-labelledby="regulamente-legaturi-label">
+                <section id="gradinita-legaturi" class="sectiune-legaturi" aria-labelledby="gradinita-legaturi-label">
 
-                    <h3 id="regulamente-legaturi-label" class="sr-only">Legături utile:</h3>
+                    <h3 id="gradinita-legaturi-label" class="sr-only">Legături utile:</h3>
 
                     <ul>                    
                         <li>
@@ -3319,7 +3699,9 @@ border-radius: 4px;
                 ['conducere-text', '#imagine-conducere'],
                 ['ceac-descriere', '#imagine-ceac'],
                 ['comisii-descriere', '#imagine-comisii'],
-                ['regulamente-descriere', '#imagine-regulamente']
+                ['regulamente-descriere', '#imagine-regulamente'],
+                ['oferta-text', '#imagine-oferta'],
+                ['gradinita-text', '#imagine-gradinita']
             ];
 
             function updateImagini() {
