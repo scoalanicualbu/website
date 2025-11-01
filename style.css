@@ -2147,6 +2147,12 @@ border-radius: 4px;
                     #gradinita-continut .wrap-9 {
                         grid-column: span 12;
                     }
+                    #pregatitoare-continut .wrap-show {
+                        display: none;
+                    }
+                    #pregatitoare-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(2, 1fr);
                     }
@@ -2261,6 +2267,12 @@ border-radius: 4px;
                     #gradinita-continut .wrap-9 {
                         grid-column: span 12;
                     }
+                    #pregatitoare-continut .wrap-show {
+                        display: none;
+                    }
+                    #pregatitoare-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(1, 1fr);
                     }
@@ -2373,6 +2385,12 @@ border-radius: 4px;
                         display: none;
                     }
                     #gradinita-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #pregatitoare-continut .wrap-show {
+                        display: none;
+                    }
+                    #pregatitoare-continut .wrap-9 {
                         grid-column: span 12;
                     }
                     .sectiune-comunicari ul {
@@ -2490,6 +2508,12 @@ border-radius: 4px;
                     #gradinita-continut .wrap-9 {
                         grid-column: span 12;
                     }
+                    #pregatitoare-continut .wrap-show {
+                        display: none;
+                    }
+                    #pregatitoare-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(1, 1fr);
                     }
@@ -2602,6 +2626,12 @@ border-radius: 4px;
                         display: none;
                     }
                     #gradinita-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #pregatitoare-continut .wrap-show {
+                        display: none;
+                    }
+                    #pregatitoare-continut .wrap-9 {
                         grid-column: span 12;
                     }
                     .sectiune-comunicari ul {
@@ -2719,6 +2749,12 @@ border-radius: 4px;
                         display: none;
                     }
                     #gradinita-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #pregatitoare-continut .wrap-show {
+                        display: none;
+                    }
+                    #pregatitoare-continut .wrap-9 {
                         grid-column: span 12;
                     }
                     .sectiune-comunicari ul {
