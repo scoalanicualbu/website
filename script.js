@@ -193,7 +193,8 @@
                 ['comisii-descriere', '#imagine-comisii'],
                 ['regulamente-descriere', '#imagine-regulamente'],
                 ['oferta-text', '#imagine-oferta'],
-                ['gradinita-text', '#imagine-gradinita']
+                ['gradinita-text', '#imagine-gradinita'],
+                ['pregatitoare-text', '#imagine-pregatitoare']
             ];
 
             function updateImagini() {
