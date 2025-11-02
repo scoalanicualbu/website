@@ -17,28 +17,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- Titlu -->
-        <title>Grădiniță</title>
+        <title>EN II, EN IV, EN VI</title>
 
 <!-- Resurse -->
 <!--        <base href="https://scoalanicualbu.github.io/website/">-->
 
 <!-- Descriere -->
-        <meta name="description" content="Site-ul oficial al Școlii Gimnaziale „Nicu Albu” Piatra Neamț, pagina „Grădiniță”. Aici sunt cuprinse informații despre grădiniță și legături către secțiuni precum istoric, circumscripție, program de lucru, comunicări.">
+        <meta name="description" content="Site-ul oficial al Școlii Gimnaziale „Nicu Albu” Piatra Neamț, pagina „Evaluări Naționale la finalul claselor a II-a, a IV-a și a VI-a”. Aici sunt cuprinse informații despre Evaluările Naționale la finalul claselor a II-a, a IV-a și a VI-a și legături către secțiuni precum Simularea Evaluării Naționale pentru absolvenții clasei a VIII-a, Evaluare Națională pentru absolvenții clasei a VIII-a.">
 
 <!-- Autor -->
         <meta name="author" content="informatician IFTIMIA DAN-ADRIAN">
 
 <!-- Cuvinte cheie -->
-        <meta name="keywords" content="ȘCOALA GIMNAZIALĂ NICU ALBU PIATRA NEAMȚ GRĂDINIȚĂ">
+        <meta name="keywords" content="ȘCOALA GIMNAZIALĂ NICU ALBU PIATRA NEAMȚ EVALUĂRI NAȚIONALE II IV VI">
 
 <!-- Proprietate -->
         <meta property="og:site_name" content="Școala Gimnazială „Nicu Albu” Piatra Neamț">
         <meta property="og:url" content="https://scoalanicualbu.github.io/website">
-        <meta property="og:title" content="Site-ul oficial al Școlii Gimnaziale „Nicu Albu” Piatra Neamț, pagina „Grădiniță”">
-        <meta property="og:description" content="Aici sunt cuprinse informații despre grădiniță și legături către secțiuni precum istoric, circumscripție, program de lucru, comunicări.">
+        <meta property="og:title" content="Site-ul oficial al Școlii Gimnaziale „Nicu Albu” Piatra Neamț, pagina „Evaluări Naționale la finalul claselor a II-a, a IV-a și a VI-a”">
+        <meta property="og:description" content="Aici sunt cuprinse informații despre Evaluările Naționale la finalul claselor a II-a, a IV-a și a VI-a și legături către secțiuni precum Simularea Evaluării Naționale pentru absolvenții clasei a VIII-a, Evaluare Națională pentru absolvenții clasei a VIII-a.">
         <meta property="og:type" content="website">
         <meta property="og:locale" content="ro_RO">
-        <meta property="og:image" content="https://github.com/scoalanicualbu/website/blob/main/gradinita/gradinita.png?raw=true">
+        <meta property="og:image" content="https://github.com/scoalanicualbu/website/blob/main/evaluare/evaluare246.png?raw=true">
 
 <!-- Iconiță favorită -->
         <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -506,6 +506,10 @@ border-radius: 4px;
                         }
 
                             .page-menu .trei-personal {
+                                grid-template-columns: repeat(3, 1fr);
+                            }
+
+                            .page-menu .trei-evaluare {
                                 grid-template-columns: repeat(3, 1fr);
                             }
 
@@ -2205,6 +2209,12 @@ border-radius: 4px;
                     #gradinita-continut .wrap-9 {
                         grid-column: span 12;
                     }
+                    #pregatitoare-continut .wrap-show {
+                        display: none;
+                    }
+                    #pregatitoare-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(2, 1fr);
                     }
@@ -2223,7 +2233,7 @@ border-radius: 4px;
                     }
                 }
 
-/* page-menu 2 (prezentare, regulamente), comunicari-1 */
+/* page-menu 2 (prezentare, regulamente), comunicari-1, telverde 2 */
                 @media (min-width: 721px) and (max-width: 800px) {
                     aside {
                         border-radius: 4px;
@@ -2317,6 +2327,12 @@ border-radius: 4px;
                         display: none;
                     }
                     #gradinita-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #pregatitoare-continut .wrap-show {
+                        display: none;
+                    }
+                    #pregatitoare-continut .wrap-9 {
                         grid-column: span 12;
                     }
                     .sectiune-comunicari ul {
@@ -2431,6 +2447,12 @@ border-radius: 4px;
                         display: none;
                     }
                     #gradinita-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #pregatitoare-continut .wrap-show {
+                        display: none;
+                    }
+                    #pregatitoare-continut .wrap-9 {
                         grid-column: span 12;
                     }
                     .sectiune-comunicari ul {
@@ -2548,6 +2570,12 @@ border-radius: 4px;
                     #gradinita-continut .wrap-9 {
                         grid-column: span 12;
                     }
+                    #pregatitoare-continut .wrap-show {
+                        display: none;
+                    }
+                    #pregatitoare-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(1, 1fr);
                     }
@@ -2566,7 +2594,7 @@ border-radius: 4px;
                     }
                 }
 
-/* page-menu 1 (prezentare) */
+/* page-menu 1 (prezentare), telverde 1 */
                 @media (min-width: 353px) and (max-width: 426px) {
                     aside {
                         border-radius: 4px;
@@ -2660,6 +2688,12 @@ border-radius: 4px;
                         display: none;
                     }
                     #gradinita-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #pregatitoare-continut .wrap-show {
+                        display: none;
+                    }
+                    #pregatitoare-continut .wrap-9 {
                         grid-column: span 12;
                     }
                     .sectiune-comunicari ul {
@@ -2779,6 +2813,12 @@ border-radius: 4px;
                     #gradinita-continut .wrap-9 {
                         grid-column: span 12;
                     }
+                    #pregatitoare-continut .wrap-show {
+                        display: none;
+                    }
+                    #pregatitoare-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(1, 1fr);
                     }
@@ -2807,7 +2847,7 @@ border-radius: 4px;
 
             <h1 id="titlu-label" class="sr-only">Școala Gimnazială „Nicu Albu” Piatra Neamț</h1>
 
-            <p class="sr-only"><strong>Pagina „Grădiniță”</strong></p>
+            <p class="sr-only"><strong>Pagina „Evaluări Naționale la finalul claselor a II-a, a IV-a și a VI-a”</strong></p>
 
         </section>
 
@@ -2936,7 +2976,7 @@ border-radius: 4px;
                         </a>
                     </li>
                     <li>
-                        <a href="gradinita.html" class="active" aria-current="page">
+                        <a href="gradinita.html">
                             Grădiniță
                             <span class="sr-only"> (se deschide în aceeași fereastră)</span>
                         </a>
@@ -2948,7 +2988,7 @@ border-radius: 4px;
                         </a>
                     </li>
                     <li>
-                        <a href="evaluare.html">
+                        <a href="evaluare.html" class="inactive">
                             Evaluare națională
                             <span class="sr-only"> (se deschide în aceeași fereastră)</span>
                         </a>
@@ -3018,11 +3058,11 @@ border-radius: 4px;
 <!-- Banner -->
         <header id="banner" class="banner">
 
-            <img src="https://github.com/scoalanicualbu/website/blob/main/gradinita/gradinita.png?raw=true" alt="Un grup vesel de copii, purtând haine obișnuite în nuanțe de gri, galben și alb, stau aliniați pe o podea albă și privesc râzând direct la cameră dintr-o perspectivă de sus.">
+            <img src="https://github.com/scoalanicualbu/website/blob/main/evaluare/evaluari246.png?raw=true" alt="Un grup de elevi de clase primare, entuziaști și curioși, sunt adunați și citesc, în colaborare, aplecați în jurul unei cărți deschise aflate pe o bancă dintr-o sală de clasă luminoasă">
 
         </header>
 
-        <main id="gradinita" class="content" aria-label="Conținut principal">
+        <main id="evaluari246" class="content" aria-label="Conținut principal">
 
 <!-- Buton Meniu -->
             <button id="menu-toggle" type="button" tabindex="0" aria-label="Buton Meniu site" aria-expanded="false" aria-controls="main-menu" aria-haspopup="menu">
@@ -3034,32 +3074,26 @@ border-radius: 4px;
 <!-- Meniu pagină -->
                 <nav id="meniu-pagina" class="page-menu" aria-label="Meniu pagină">
 
-                    <ul class="patru-prezentare">
+                    <ul class="trei-evaluare">
                         <li>
-                            <a href="prezentare/istoric.html">
-                                Scurt istoric
+                            <a href="evaluare/evaluare246.html" class="active" aria-current="page">
+                                Evaluări Naționale clasele a II-a. a IV-a și a VI-a
                                 <span class="sr-only"> (se deschide în aceeași fereastră)</span>
                             </a>
                         </li>
                         <li>
-                            <a href="prezentare/circumscriptie.html">
-                                Circumscripție
+                            <a href="evaluare/simulare8.html">
+                                Simularea Evaluării Naționale clasa a VIII-a
                                 <span class="sr-only"> (se deschide în aceeași fereastră)</span>
                             </a>
                         </li>
                         <li>
-                            <a href="prezentare/program.html">
-                                Program de lucru
+                            <a href="evaluare/evaluare.html">
+                                Evaluare Națională absolvenți clasa a VIII-a
                                 <span class="sr-only"> (se deschide în aceeași fereastră)</span>
                             </a>
                         </li>
-                        <li>
-                            <a href="prezentare/comunicari.html">
-                                Comunicări
-                                <span class="sr-only"> (se deschide în aceeași fereastră)</span>
-                            </a>
-                        </li>
-                    </ul>
+                    </ul>    
 
                 </nav>
 
@@ -3069,45 +3103,52 @@ border-radius: 4px;
             <div id="main-content" class="page-content" role="region" tabindex="-1" aria-label="Conținut pagină">
 
 <!-- Secțiune Conținut -->
-                <section id="gradinita-continut" class="sectiune-continut" aria-labelledby="gradinita-continut-label">
+                <section id="evaluari246-continut" class="sectiune-continut" aria-labelledby="evaluari246-continut-label">
 
-                    <h3 id="gradinita-continut-label" class="sr-only">Grădiniță</h3>
+                    <h3 id="evaluari246-continut-label" class="sr-only">Evaluări Naționale la finalul claselor a II-a, a IV-a și a VI-a</h3>
 
-                    <p class="sr-only">Această secțiune cuprinde informații despre grădiniță.</p>
+                    <p class="sr-only">Această secțiune cuprinde informații despre Evaluările Naționale la finalul claselor a II-a, a IV-a și a VI-a.</p>
 
-                    <section id="gradinita-imagine" class="wrap-3 wrap-show" aria-labelledby="gradinita-imagine-label">
+                    <section id="evaluari246-imagine" class="wrap-4 wrap-show" aria-labelledby="evaluari246-imagine-label">
 
-                        <h4 id="gradinita-imagine-label" class="sr-only">Preșcolari:</h4>
+                        <h4 id="evaluari246-imagine-label" class="sr-only">Final de ciclu de învățământ primar</h4>
 
-                        <p class="sr-only">Această secțiune cuprinde o imagine reprezentativă pentru grădiniță.</p>
+                        <p class="sr-only">Această secțiune cuprinde o imagine reprezentativă privind finalul ciclului de învățământ primar.</p>
 
-                        <div id="imagine-gradinita" class="content-imagine wrap-size">
-                           <img src="https://github.com/scoalanicualbu/website/blob/main/gradinita/prescolari.png?raw=true" alt="Sub supravegherea implicată a unui adult, un grup de copii mici stau pe o podea de lemn jucându-se cu blocuri de construcție și jucării colorate într-o cameră puternic luminată.">
+                        <div id="imagine-evaluari246" class="content-imagine wrap-size">
+                           <img src="https://github.com/scoalanicualbu/website/blob/main/evaluare/teste246.png?raw=true" alt="Un profesor stă mândru în spatele și cuprinde cu brațele un grup de elevi de clase primare care pozează zâmbitori, purtând ghiozdane și ținând în mâini caiete colorate în fața unor bănci pe care sunt multe cărți, suporturi cu creioane colorate, un glob pământesc, un mar verde, iar în fundal este o tablă verde pe care sunt desenate, cu cretă albă, figuri geometrice și formule matematice">
                         </div>
 
                     </section>
 
-                    <section id="gradinita-text" class="wrap-9 wrap-down" aria-labelledby="gradinita-text-label">
+                    <section id="evaluari246-text" class="wrap-8 wrap-down" aria-labelledby="evaluari246-text-label">
 
-                        <h4 id="gradinita-text-label" class="sr-only">Prezentare</h4>
+                        <h4 id="evaluari246-text-label" class="sr-only">Descrierea Evaluărilor Naționale la finalul claselor a II-a, a IV-a și a VI-a</h4>
 
-                        <p class="sr-only">Această secțiune cuprinde o scurtă prezentare a educației preșcolare.</p>
+                        <p class="sr-only">Această secțiune cuprinde o scurtă descriere a Evaluărilor Naționale la finalul claselor a II-a, a IV-a și a VI-a</p>
 
-                        <section id="prezentare" class="sectiune-text coloane" aria-labelledby="prezentare-label">
+                        <section id="evaluari246-salarizare" class="sectiune-text coloane" aria-labelledby="evaluari246-salarizare-label">
 
-                            <h3 id="prezentare-label" class="sr-only">Educația timpurie</h3>
+                            <h3 id="evaluari246-salarizare-label" class="sr-only">Descriere</h3>
 
-                            <p>Educaţia copilului începe  încă de la naştere. Această educație este continuată de educația timpurie din unitățile de învațământ. Învățământul preșcolar reprezintă prima treaptă de pregătire în educația formală și pentru pentru educația formală. </p>
-                            <p>Focalizarea pe educația timpurie este foarte importantă. Aceasta este perioada când copiii se dezvoltă rapid. Dacă procesul de dezvoltare, în acest stadiu, este neglijat, compensarea pierderilor se realizează mult mai dificil. Această perioadă este foarte importantă în formarea unor deprinderi și comportamente sociale, având ca scop integrarea persoanelor în societate. Eșecul în educația timpurie poate contribui la marginalizarea copiilor în societate, iar, ulterior, a adultului format.</p>
+                            <p>Ministerul Educației și Cercetării, prin Direcția Generală Învățământ Preuniversitar, organizează anual, la nivel național, Evaluarea competențelor fundamentale la finalul clasei a II-a, Evaluarea competențelor fundamentale dobândite în ciclul primar la finalul clasei a IV-a și Evaluarea elevilor la finalul clasei a VI-a.</p>
+                            <p>Subiectele și baremele de evaluare și de notare, precum și alte informații referitoare la Evaluările Naționale sunt cuprinse în Caietul cadrului didactic, document tip, elaborat de Centrul Național de Politici și Evaluare în Educație. Testele sunt formulate clar, precis și în strictă concordanță cu programele școlare în vigoare pentru fiecare disciplină de studiu. Acestea au un nivel mediu de dificultate și au un format asemănător cu cel al evaluărilor internaționale.</p>
 
-                            <p class="citat-0">Conform Curriculum-ului pentru educaţia timpurie a copiilor de la 3 la 6/7 ani, învățământul preșcolar are următoarele caracteristici:</p>
-                            <p class="citat-0">‒ asigură intrarea copilului în sistemul de învăţământ obligatoriu, prin formarea capacităţii de a învăţa;</p>
-                            <p class="citat-0">‒ accentuează unicitatea copilului şi consideră că abordarea lui trebuie să fie holistică (comprehensivă din toate punctele de vedere ale dezvoltarii sale);</p>
-                            <p class="citat-0">‒ solicită în mod fundamental ca la vârstele mici să avem o abordare pluridisciplinară (îngrijire, nutriţie şi educaţie în acelaşi timp);</p>
-                            <p class="citat-0">‒ solicită ca activităţile desfăşurate în cadrul procesului educaţional să devină adevărate ocazii de învăţare situaţională;</p>
-                            <p>‒ porneşte de la premisa că părintele nu poate lipsi din acest cerc educaţional, el fiind partenerul-cheie în educaţia copilului, iar relaţia familie-grădiniţă-comunitate devine hotărâtoare.</p>
+                            <p class="citat-0">Pentru Evaluarea competențelor fundamentale la finalul clasei a II-a, testele sunt structurate astfel:</p>
+                            <p class="citat-0">‒ primul test vizează evaluarea competențelor de producere a mesajelor scrise;</p>
+                            <p class="citat-0">‒ al doilea test vizează evaluarea competențelor de receptare a mesajelor citite;</p>
+                            <p>‒ al treilea test vizează evaluarea competențelor de matematică.</p>
 
-                            <p>Grădiniţa asigură mediul care garantează siguranţa şi sănătatea copiilor şi care, ţinând cont de caracteristicile psihologice ale dezvoltării copilului, implică atât familia cât şi comunitatea în procesul de învăţare.</p>
+                            <p class="citat-0">Pentru Evaluarea competențelor fundamentale dobândite în ciclul primar la finalul clasei a IV-a, testele sunt structurate astfel:</p>
+                            <p class="citat-0">‒ primul test vizează evaluarea competențelor de întelegere a textului scris;</p>
+                            <p>‒ al doilea test vizează evaluarea competențelor de matematică.</p>
+
+                            <p class="citat-0">Pentru Evaluarea elevilor la finalul clasei a VI-a, testele sunt structurate astfel:</p>
+                            <p class="citat-0">‒ primul test vizează evaluarea unor competențe din aria curriculară „Limbă și comunicare”;</p>
+                            <p>‒ al doilea test vizează evaluarea unor competențe din aria curriculară „Matematică și Știinte ale naturii”.</p>
+
+                            <p>Instrumentele de evaluare sunt confidentiale din momentul demarării acțiunii de elaborare a acestora și până în momentul în care sunt publicate pe website-ul www.subiecte.edu.ro. Toate persoanele care au acces la aceste documente semnează un angajament de confidențialitate, în condițiile legii.</p>
+                            <p>Rezultatele individuale obținute nu se afișează/nu se comunică public și nu se înregistrează în catalogul clasei. Aceste rezultate sunt valorificate la nivelul unității de învatamânt printr-un proces de analiză de către cadrul didactic și de către colectivul de catedră din fiecare unitate școlară. În urma acestei analize, cadrul didactic decide, acolo unde este cazul, elaborarea planului individualizat de învățare al elevului, instrument fundamental de remediere/dezvoltare/orientare care cuprinde informații diagnostice și prognostice în vederea orientării și optimizării învățării. Decizia privind elaborarea planului individualizat de învățare al elevului se ia coroborând rezultatele la Evaluările Naționale cu datele și observațiile înregistrate de-a lungul parcursului educational al elevului. Planurile individualizate de învățare ale elevilor sunt comunicate părinților/reprezentanților legali ai elevilor.</p>
 
                         </section>
 
@@ -3115,190 +3156,15 @@ border-radius: 4px;
 
                 </section>
 
-<!-- Secțiune Text -->
-                <section id="gradinita-descriere" class="sectiune-text" aria-labelledby="gradinita-descriere-label">
-
-                    <h3 id="gradinita-descriere-label" class="sr-only">Scurtă descriere a învățământului preșcolar</h3>
-
-                    <p class="sr-only">Această secțiune conține o scurtă descriere a învățământului preșcolar.</p>
-
-                    <article id="descriere" class="coloane" aria-labelledby="descriere-label">
-
-                        <h4 class="sr-only" id="descriere-label">Descriere:</h4>
-
-                        <section id="descriere-conditii" class="sectiune-text" aria-labelledby="descriere-conditii-label">
-
-                            <h5 class="citat-1" id="descriere-conditii-label">Condiții de înscriere în învățământul primar</h5>
-
-                            <p>În grupele de nivel preșcolar pot fi înscriși copiii cu vârste între 3 și 6 ani, în limita planului de școlarizare aprobat. Numărul de locuri care se acordă prin cifra de școlarizare asigură, cu prioritate, cuprinderea întregii generații a copiilor de 4 ani în grupa mijlocie și cuprinderea întregii generații a copiilor de 5 ani în grupa mare din învățământul preșcolar.</p>
-
-                        </section>
-
-                        <section id="descriere-alegere" class="sectiune-text" aria-labelledby="descriere-alegere-label">
-
-                            <h5 class="citat-1" id="descriere-alegerei-label">Alegerea unității de învățământ la care va fi înscris copilul</h5>
-
-                            <p>Părinții/reprezentanții legali ai copiilor cu vârsta cuprinsă între 3-6 ani pot solicita înscrierea copiilor în unități de învățământ cu personalitate juridică cu grupe de nivel preșcolar. În acest scop, vor depune, pe locurile libere rămase, după operațiunea de reînscrieri, cerere-tip de înscriere la unitatea de învățământ aleasă, care poate fi o unitate de învățământ cu grupe de nivel preșcolar din apropierea domiciliului/reședinței sau din apropierea locului de muncă.</p>
-                            <p>Numărul locurilor libere este stabilit ca diferență între numărul de locuri alocate pentru nivelul preșcolar, pe grupe de vârstă, prin planul de școlarizare și numărul de copii care au ocupat locuri în etapa de reînscrieri.</p>
-                            <p>În situația în care într-o unitate de învățământ numărul cererilor-tip de înscriere primite de la părinții/reprezentanții legali ai copiilor este mai mare decât numărul de locuri libere, comisia de înscriere din unitatea de învățământ selectează copiii în ordinea descrescătoare a vârstei și aplică criterii de departajare generale și specifice, în vederea stabilirii celor care vor fi admiși.</p>
-
-                            <p class="citat-0">Criteriile generale de departajare sunt următoarele:</p>
-                            <p class="citat-0">‒ copilul are vârsta de 4 sau 5 ani împliniți la începutul anului școlar;</p>
-                            <p class="citat-0">‒ domiciliul copilului/reședința/locul de muncă al unuia dintre părinți/al reprezentantului legal este situat în apropierea unității de învățământ unde părintele/reprezentantul legal depune cererea-tip de înscriere;</p>
-                            <p class="citat-0">‒ cel puțin unul dintre părinți/reprezentantul legal ai/al copilului urmează o formă de învățământ la zi;</p>
-                            <p class="citat-0">‒ existența unui document care dovedește că beneficiază de tutelă sau de o măsură de protecție specială stabilită în condițiile Legii nr.272 din 21.06.2004, cu modificările și completările ulterioare;</p>
-                            <p class="citat-0">‒ existența unui document care dovedește că este în grija unui singur părinte (familie monoparentală);</p>
-                            <p class="citat-0">‒ ambii părinți/părintele unic/reprezentantul legal ai/al copilului lucrează sau cel puțin unul dintre ei se încadrează în una dintre situațiile: (1) pensionat în conformitate cu prevederile legale; (2) cu certificat de handicap; (3) șomer, în căutarea unui loc de muncă, cu documente doveditoare de la Agenția de Ocupare a Forței de Muncă;</p>
-                            <p class="citat-0">‒ existența unui certificat medical de încadrare în grad de handicap a copilului și/sau a certificatului de orientare școlară și profesională eliberat de Centrul Județean de Resurse și Asistență Educațională Neamț;</p>
-                            <p>‒ existența unui frate/a unei surori înmatriculat/înmatriculate în unitatea de învățământ respectivă, în anul școlar pentru care se face înscrierea.</p>
-
-                            <p>Criteriile specifice de departajare sunt elaborate de fiecare unitate de învățământ și se aplică după aplicarea criteriilor generale. Pentru criteriile specifice stabilite, unitatea de învățământ indică documentele doveditoare pe care părintele/reprezentantul legal trebuie să le depună în momentul completării/validării cererii-tip de înscriere.</p>
-
-                        </section>
-
-                        <section id="descriere-procedura" class="sectiune-text" aria-labelledby="descriere-procedura-label">
-
-                            <h5 class="citat-1" id="descriere-procedura-label">Procedura de înscriere în învățământul preșcolar</h5>
-
-                            <p class="citat-0">Dosarul de înscriere cuprinde următoarele documente, în copie:</p>
-                            <p class="citat-0">‒ certificatul de naștere al copilului;</p>
-                            <p class="citat-0">‒ certificatul de încadrare în grad de handicap a copilului, dacă este cazul;</p>
-                            <p class="citat-0">‒ certificatul medical de tip A5 în care este specificat diagnosticul medical, dacă este cazul;</p>
-                            <p class="citat-0">‒ certificatul pentru cerințe educaționale speciale ale copilului, dacă este cazul;</p>
-                            <p class="citat-0">‒ actele de identitate ale părinților/reprezentantului legal;</p>
-                            <p class="citat-0">‒ certificatul de căsătorie a părinților/tutorilor legali ai copilului, dacă este cazul;</p>
-                            <p class="citat-0">‒ hotărârârea judecătorească definitivă de divorț din care să rezulte modul în care se exercită autoritatea părintească și unde a fost stabilită locuința copilului, dacă este cazul;</p>
-                            <p class="citat-0">‒ declarație privind acceptul celuilalt părinte în caz de divorț și custodie comună a copilului;</p>
-                            <p>‒ alte documente doveditoare care fac obiectul criteriilor generale sau specifice de înscriere și care sunt analizate în timpul procesului de înscriere.</p>
-
-                            <p class="citat-0">La dosarul de înscriere se adaugă, până la începutul anului școlar, următoarele documente:</p>
-                            <p class="citat-0">‒ adeverința de la medicul de familie în care se menționează că respectivul copil este sănătos clinic, care este necesară în prima zi de prezentare a copilului în unitatea de învățământ;</p>
-                            <p>‒ avizul epidemiologic/dovada de vaccinare întocmit(ă) conform prevederilor elaborate de Ministerul Sănătății, cu privire la intrarea copilului în colectivitate, eliberat de medicul de familie al copilului cu maximum 5 zile înainte de a începe frecventarea cursurilor în unitatea de învățământ.</p>
-
-                            <p>Dosarul de înscriere este însoțit de o cerere-tip de înscriere în care părintele/reprezentantul legal al copilului va alege trei opțiuni cu privire la unitățile de învățământ pe care acesta le are în vedere pentru copil.</p>
-                            <p>Cererea-tip este completată și validată în Sistemul Informatic Integrat al Învăţământului din România de către membrul desemnat din cadrul comisiei de înscriere de la nivelul unității de învățământ, după certificarea conform cu originalul a copiilor documentelor depuse la dosarul de înscriere.</p>
-
-                        </section>
-
-                        <section id="descriere-etape" class="sectiune-text" aria-labelledby="descriere-etape-label">
-
-                            <h5 class="citat-1" id="descriere-etape-label">Etapele de înscriere în învățământul preșcolar</h5>
-
-                            <p class="citat-0">În prima etapă se colectează și se procesează cererile-tip de înscriere și documentele depuse/transmise de părinți/reprezentanții legali, având la bază deciziile consiliilor de administrație ale unităților de învățământ, luate în urma aplicării criteriilor de departajare. În această etapă se derulează trei faze, după cum urmează:</p>
-                            <p class="citat-0">‒ în faza I se evaluează cererile-tip de înscriere de la unitățile de învățământ exprimate ca primă opțiune și se generează lista cererilor respinse;</p>
-                            <p class="citat-0">‒ în faza a II-a se evaluează cererile-tip de înscriere respinse în Faza I, de la unitățile de învățământ exprimate ca a doua opțiune și se generează lista cererilor respinse;</p>
-                            <p>‒ în faza a III-a se evaluează cererile-tip de înscriere respinse în Faza a II-a, de la unitățile de învățământ exprimate ca a treia opțiune și se generează lista cererilor respinse care pot intra, la solicitarea părinților, pe baza unei noi cereri, în evaluare în a doua etapă a înscrierilor, pe locurile rămase libere.</p>
-
-                            <p>Părinții pot ridica dosarele respinse de la unitatea de învățământ la care au fost depuse în 5 zile lucrătoare de la data afișării rezultatelor finale ale etapei.</p>
-
-                            <p class="citat-0">În a doua etapă este asigurată înscrierea, pe locurile libere rămase, a copiilor respinși în etapa anterioară. În această etapă se colectează și se procesează noile cereri-tip de înscriere, cu alte trei opțiuni și documentele depuse/transmise de părinți/reprezentanții legali, având la bază aplicarea criteriilor de departajare; în mod similar cu activitățile derulate în etapa I. Și în această etapă se derulează trei faze, respectiv:</p>
-                            <p class="citat-0">‒ în faza I se evaluează cererile-tip de înscriere de la unitățile de învățământ exprimate ca primă opțiune și se generează lista cererilor respinse;</p>
-                            <p class="citat-0">‒ în faza a II-a se evaluează cererile-tip de înscriere respinse în Faza I, de la unitățile de învățământ exprimate ca a doua opțiune și se generează lista cererilor respinse;</p>
-                            <p>‒ în faza a III-a se evaluează cererile-tip de înscriere respinse în Faza a II-a, de la unitățile de învățământ exprimate ca a treia opțiune și se generează lista cererilor respinse care pot intra în evaluare, pe locurile rămase libere, în etapa de ajustări, la solicitarea părinților/reprezentanților legali.</p>
-
-                            <p>Părinții pot ridica dosarele respinse de la unitatea de învățământ la care au fost depuse în 5 zile lucrătoare de la data afișării rezultatelor finale ale etapei.</p>
-
-                            <p class="citat-0">În etapa de ajustări, derulată la nivelul inspectoratului școlar, se colectează și se procesează noi cereri-tip de înscriere și documentele depuse/transmise de părinții/reprezentanții legali ai copiilor care au rămas nerepartizați după derularea celor două etape anterioare, precum și cei care nu au participat la primele două etape sau nu au fost înscriși din diferite alte motive. Înscrierea se realizează pe locurile rămase libere, precum și în funcție de suplimentările de locuri pe care le pot publica inspectoratele școlare. În această etapă se soluționează:</p>
-                            <p class="citat-0">‒ cu prioritate, cazurile copiilor de 4 și 5 ani împliniți la începutul anului școlar rămași neînscriși;</p>
-                            <p class="citat-0">‒ cazurile copiilor pentru are s-a solicitat înscrierea în clasa pregătitoare din învățământul primar și nu au fost admiși ca urmare a avizului negativ al Centrul Județean de Resurse și Asistență Educațională Neamț;</p>
-                            <p>‒ cazurile copiilor de 2 ani pentru care se solicită înscrierea în învățământul preșcolar, cu respectarea prevederilor art.23 alin (1^1) din Legea educației naționale nr.1 din 05.01.2011, cu modificările și completările ulterioare.</p>
-
-                            <p>Constituirea grupelor de preșcolari se face după finalizarea procesului de înscriere, conform calendarului, în baza Procedurii de distribuție aleatorie a elevilor în formațiunile de studiu, aprobate de Consiliul de Administrație, cu respectarea criteriilor de transparență, echitate, nondiscriminare și incluziune.</p>
-
-                        </section>
-
-                        <section id="descriere-sanctiuni" class="sectiune-text" aria-labelledby="descriere-sanctiuni-label">
-
-                            <h5 class="citat-1" id="descriere-sanctiuni-label">Interdicții și sancțiuni</h5>
-
-                            <p>Conform metodologiei, prezentarea de înscrisuri false la înscrierea în învățământul preșcolar se pedepsește conform legii și atrage pierderea locului obținut prin fraudă.</p>
-                            <p>Persoanele vinovate de transcrierea eronată, deliberată, a datelor personale ale copiilor sau de nerespectarea prevederilor metodologiei vor fi sancționate disciplinar, administrativ, civil sau penal, după caz.</p>
-                            <p>Se interzice unităților de învățământ de stat să instituie taxe sau să solicite părinților alte foloase pentru a realiza înscrierea copiilor în învățământul preșcolar.</p>
-                            <p>Se interzice colectarea sau favorizarea acțiunii de colectare a unor fonduri materiale sau bănești de la părinții care solicită înscrierea copiilor în învățământul preșcolar.</p>
-                            <p>Personalul din învățământ care, în procesul de înscriere a copiilor în învățământul preșcolar, săvârșește fapte de natură penală sau care manifestă neglijență în îndeplinirea atribuțiilor ce îi revin este sancționat în conformitate cu prevederile legislației în vigoare.</p>
-                            <p>Potrivit articolului nr. 52 din metodologie, Comisia județeană, precum și comisiile de înscriere și distribuire a elevilor din unitățile de învățământ pot solicita autorităților în drept verificarea respectării prevederilor Ordonanței de Urgență a Guvernului nr. 97 din 14.07.2005 privind evidența, domiciliul, reședința și actele de identitate ale cetățenilor români.</p>
-
-                        </section>
-
-                    </article>
-
-                </section>
-
 <!-- Secțiune Informații -->
-                <section id="gradinita-informatii" class="sectiune-informatii" aria-labelledby="gradinita-informatii-label">
+                <section id="evaluari246-informatii" class="sectiune-informatii" aria-labelledby="evaluari246-informatii-label">
 
-                    <h3 id="gradinita-informatii-label" class="citat-1">Informații relevante:</h3>
+                    <h3 id="evaluari246-informatii-label" class="citat-1">Informații relevante:</h3>
 
                     <ul class="coloane">
                         <li>
-                            <a href="https://drive.google.com/file/d/17PjjnjNR9_p8OwYGzhssxdLlm1OGO-Sa/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                Adresa Inspectoratului Școlar Județean Neamț nr. 7839 din 14.07.2025 Procedură operațională „Înscrierea în învățământul antepreșcolar/preșcolar în anul școlar 2025-2026 - repartizarea copiillor înscriși în etapa de ajustări pe locurile rămase libere
-                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://drive.google.com/file/d/1rtUDecTrRRLHYeh3YavtBE7kpWaV3q5N/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                Adresa Inspectoratului Școlar Județean Neamț nr. 7586 din 07.07.2025 Comunicat de presă, Etapa a II-a de înscriere a copiilor antepreșcolari și preșcolari în anul școlar 2025-2026
-                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://drive.google.com/file/d/1bfXLSY9hrLvgUdszPkQ_8-coU6XJsWup/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                Procedura operațională a Inspectoratului Școlar Județean Neamț nr. 3226 din 24.03.2025 privind organizarea și desfășurarea reînscrierii/înscrierii copiilor în învățământul preșcolar/antepreșcolar în anul școlar 2025-2026
-                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://drive.google.com/file/d/1VFxDVmZ5gdM7iHgczy6gnWBv_wQXHyBs/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                Planul de măsuri al Inspectoratului Școlar Județean Neamț nr. 3213 din 24.03.202 pentru pregătirea și organizarea înscrierii copiilor antepreșcolari și preșcolari în unități de învățământ cu personalitate juridică cu grupe de nivel preșcolar și/sau antepreșcolar și în servicii de educație timpurie complementare, anul școlar 2025-2026
-                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://drive.google.com/file/d/1q4hUhay4O39FinxVTSSduSP9egyuzl45/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                Cerere-tip de înscriere în educația timpurie - 2025 - preșcolar
-                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://drive.google.com/file/d/12b6lhFqE0i6PPLE0H6URfRMdV4TxRT3n/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                Adresa Inspectoratului Școlar Județean Neamț nr. 2559-6 din 10.03.2025 Precizări/documente necesare înscrierii copiilor în unități de învățământ preuniversitar cu personalitate juridică cu grupe de nivel preșcolar și/sau antepreșcolar și în serviciile de educație timpurie complementare
-                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://drive.google.com/file/d/10rIWnGpHtyjvp2a0ByHWlZSlTZMsBPlD/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                Adresa Inspectoratului Școlar Județean Neamț nr. 2559-5 din 10.03.2025 Modalitatea de stabilire a locurilor libere pentru înscrierea copiilor în unități de învățământ preuniversitar cu personalitate juridică cu grupe de nivel preșcolar și/sau antepreșcolar și în servicii de educație timpurie complementare
-                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://drive.google.com/file/d/195hEPEOeHdbOsn1DFawE1nhCUXzPnR62/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                Adresa Inspectoratului Școlar Județean Neamț nr. 2559-3 din 10.03.2025 Criteriile generale de departajare pentru nivelul antepreșcolar, criteriile generale de departajare pentru nivelul preșcolar, criteriile generale de departajare pentru nivelul antepreșcolar și preșcolar din cadrul serviciilor de educație timpurie complementare, criteriile specifice de departajare pentru înscrierea copiilor în unități de învățământ preuniversitar cu personalitate juridică cu grupe de nivel preșcolar și/sau antepreșcolar și în serviciile de educație timpurie complementare
-                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://drive.google.com/file/d/1r6gkjEf5jnMfxuM2xcVSYxJMgmLmHF68/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                Adresa Inspectoratului Școlar Județean Neamț nr. 2559-2 din 10.03.2025 Precizări privind înscrierea copiilor în mai multe unități de învățământ preuniversitar cu personalitate juridică cu grupe de nivel preșcolar și/sau antepreșcolar și în serviciile de educație timpurie complementare
-                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://drive.google.com/file/d/1ZvZxALMrjeu4pgi9vYWCrFBfifsZhL4W/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                Adresa Inspectoratului Școlar Județean Neamț nr. 2559-1 din 10.03.2025 Unități de învățământ preuniversitar din județul neamț care au ca structură servicii de educație timpurie complementară
-                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://drive.google.com/file/d/1cv-uNybYgata93TXquK-sy5Ze3JV-ihq/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                Ordinul Ministerului Educației și Cercetării nr. 3436 din 28.02.2025 privind aprobarea Calendarului înscrierii copiilor antepreșcolari și preșcolari în anul școlar 2025-2026 în unități de învățământ preuniversitar cu personalitate juridică cu grupe de nivel preșcolar și/sau antepreșcolar și în servicii de educație timpurie complementare
-                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://drive.google.com/file/d/1EhxJc-ksjRnnNMkbUKBHEgu6pwGQqEdq/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                Ordinul Ministerului Educației nr. 4018 din 15.03.2024 privind aprobarea Metodologiei-cadru de înscriere a copiilor în unități de învățământ preuniversitar cu personalitate juridică cu grupe de nivel preșcolar și/sau antepreșcolar și în servicii de educație timpurie complementare și a Calendarului înscrierii copiilor antepreșcolari și preșcolari în anul școlar 2024-2025 în unități de învățământ preuniversitar cu personalitate juridică cu grupe de nivel preșcolar și/sau antepreșcolar și în servicii de educație timpurie complementare
+                            <a href="https://www.scoalanicualbu.ro/comunicari" target="_blank" rel="noopener noreferrer">
+                                Anunț - Festivitatea de deschidere a anului școlar 2025-2026
                                 <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
                             </a>
                         </li>
@@ -3307,44 +3173,86 @@ border-radius: 4px;
                 </section>
 
 <!-- Secțiune Informații -->
-                <section id="gradinita-utile" class="sectiune-informatii" aria-labelledby="gradinita-utile-label">
+                <section id="evaluari246-utile" class="sectiune-informatii" aria-labelledby="evaluari246-utile-label">
 
-                    <h3 id="gradinita-utile-label" class="citat-1">Alte informații utile:</h3>
+                    <h3 id="evaluari246-utile-label" class="citat-1">Alte informații utile:</h3>
 
                     <ul class="coloane">
                         <li>
-                            <a href="https://drive.google.com/file/d/1GGivmj7OzEfAfnryjwlR8C77yMPeRwAN/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                Hotărârea Guvernului nr. 1563 din 04.12 2024 privind aprobarea Metodologiei de organizare și funcționare a serviciilor de educație timpurie complementare
+                            <a href="https://drive.google.com/file/d/1K8XB-0zAmxPC9Pr4UDUnQumZHau7OkR-/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                Adresa Inspectoratului Școlar Județean Neamț nr. 13070 din 10.10.2024 Obținerea Certificatului de orientare școlară și profesională de către copiii/elevii cu CES
                                 <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
                             </a>
                         </li>
                         <li>
-                            <a href="https://drive.google.com/file/d/101s8O-fk8Wg4TjhbE0umdVPSEgxJu51X/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                Ordinul Ministerului Educației nr. 6584 din 04.09.2024 pentru aprobarea Metodologiei privind întocmirea Raportului descriptiv de evaluare referitor la dezvoltarea fizică și la formarea competențelor cognitive și socioemoționale ale copilului, la finalul grupei mari a grădiniței
+                            <a href="https://drive.google.com/file/d/1lmg7UpjnSmutqzss0DeAKPG5Vy__Y_7U/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                Adresa Inspectoratului Școlar Județean Neamț nr. 13038 din 09.10.2024 Prezența și atribuțiile facilitatorului în unitățile de învățământ unde sunt școlarizați copii/elevi cu cerințe educaționale speciale
                                 <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
                             </a>
                         </li>
                         <li>
-                            <a href="https://drive.google.com/file/d/1d_GGgSKuGXZ0GQK-Z093vUZjWCwJWqFX/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                            <a href="https://drive.google.com/file/d/1id7bGWbi33ytey9Xlkuhg3iCFZcU3Wi1/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                Ordinul comun al Ministerului Muncii, Familiei, Protecţiei Sociale și Persoanelor Vârstnice nr. 1985 din 04.10.2016, al Ministerului Sănătății nr. 1305 din 17.11.2016 și al Ministerului Educației Naționale și Cercetării Științifice nr. 5805 din 23.11.2016 privind aprobarea metodologiei pentru evaluarea şi intervenţia integrată în vederea încadrării copiilor cu dizabilităţi în grad de handicap, a orientării şcolare şi profesionale a copiilor cu cerinţe educaţionale speciale, precum şi în vederea abilitării şi reabilitării copiilor cu dizabilităţi şi/sau cerinţe educaţionale speciale
+                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1LUGfNNjgJR9WZ_MyvvUVfBM46m29zYaD/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                Carmen Dragomir - Prietenul Dislexicului la Literatura Romana - Material compensatoriu TSI pentru clasele 5-8
+                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1P7BpEcthtD9IuXTX0203UUk1HNNfAyjS/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                Carmen Dragomir - Prietenul Dislexicului la Limba Romana - Material compensatoriu TSI pentru clasele 5-8
+                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1wizivL_JKL2F7zMiySC9DJkbSS7bs44i/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                Adresa Inspectoratului Școlar Județean Neamț nr. 13058 din 10.10.2024 Materiale pentru elevii cu tulburări specifice de învățare
+                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1jVwQ7QRm3hEeggzwIY75FNSHQPg103t0/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                Ordinul Ministerului Educației Naționale nr. 3124 din 20.01.2017 privind aprobarea Metodologiei pentru asigurarea suportului necesar elevilor cu tulburări de învăţare
+                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/12CpeFMHZrr4pRXXSayDim5JnIoIiWje6/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                Adresa Inspectoratului Școlar Județean Neamț nr. 13061 din 10.10.2024 Realizarea planului de servicii individualizat
+                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1o5DMfbq4_zA9zjKjuXvpwUX3F_B-77ai/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                Adresa Inspectoratului Școlar Județean Neamț nr. 13040 din 09.10.2024 Școlarizarea la domiciliu
+                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1eGetbpbRPV_A8kHigfpRY8KOdvm2b1T6/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                Ordinul Ministerului Educaţiei Naţionale şi Cercetării Ştiinţifice nr. 5086 din 31.08.2016 pentru aprobarea Metodologiei-cadru privind şcolarizarea la domiciliu, respectiv înfiinţarea de grupe/clase în spitale
+                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1FjTGlb3Br__JHKb3NKhqpVgH7T8tV9i4/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                                 Ordinul Ministerului Educației nr. 6478 din 30.08.2024 Metodologie privind portofoliul educațional al preșcolarului și al elevului din învățământul preuniversitar
                                 <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
                             </a>
                         </li>
                         <li>
-                            <a href="https://drive.google.com/file/d/1SmP41JQ7eLFl2mYr6L97fC0AxXMf2_xc/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                Ordinul Ministerului Educației nr. 4628 din 07.06.2024 privind aprobarea Reperelor fundamentale în învățarea și dezvoltarea timpurie a copilului de la naștere la 7 ani
+                            <a href="https://drive.google.com/file/d/1yQKeA89e1yf215JOJKG27xFq0p5GhNEO/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                Ordinul Ministerului Educației nr. 5707 din 01.08.2024 privind aprobarea Statutului elevului
                                 <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
                             </a>
                         </li>
                         <li>
-                            <a href="https://drive.google.com/file/d/1PKekYNgGWvd6Z6THLiwLG83JxkAPwgJc/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                            <a href="https://drive.google.com/file/d/1umv08iAwxZBhjfQiv0wGmN5ojU3seOZd/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                                 Ordinul Ministerului Educației nr. 6731 din 28.11.2023 privind aprobarea Profilului de formare a absolventului
-                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://drive.google.com/file/d/1SmKFI7PvFmmkSb62j-6h531oyfAbPu7Z/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                Ordinul Ministerului Educației Naționale nr. 4694 din 20.08.2019 privind aprobarea Curriculumului pentru educatie timpurie
                                 <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
                             </a>
                         </li>
@@ -3353,9 +3261,9 @@ border-radius: 4px;
                 </section>
 
 <!-- Secțiune TelVerde -->
-                <section id="gradinita-telverde" class="sectiune-telverde" aria-labelledby="gradinita-telverde-label">
+                <section id="evaluari246-telverde" class="sectiune-telverde" aria-labelledby="evaluari246-telverde-label">
 
-                    <h3 id="gradinita-telverde-label" class="sr-only">Linii telefonice dedicate TelVerde</h3>
+                    <h3 id="evaluari246-telverde-label" class="sr-only">Linii telefonice dedicate TelVerde</h3>
 
                     <ul>
 
@@ -3492,9 +3400,9 @@ border-radius: 4px;
                 </section>
 
 <!-- Secțiune Legături -->
-                <section id="gradinita-legaturi" class="sectiune-legaturi" aria-labelledby="gradinita-legaturi-label">
+                <section id="evaluari246-legaturi" class="sectiune-legaturi" aria-labelledby="evaluari246-legaturi-label">
 
-                    <h3 id="gradinita-legaturi-label" class="sr-only">Legături utile:</h3>
+                    <h3 id="evaluari246-legaturi-label" class="sr-only">Legături utile:</h3>
 
                     <ul>                    
                         <li>
@@ -3538,11 +3446,11 @@ border-radius: 4px;
 
             <h3 id="subsol-label" class="sr-only">Subsol pagină</h3>
 
-            <p class="sr-only">Această secțiune contine informații privind drepturile de autor.</p>
+            <p class="sr-only">Această secțiune contine informații privind drepturile de autor</p>
 
             <section id="copyright" class="footer-informatii" aria-labelledby="copyright-label">
 
-                <h4 id="copyright-label" class="sr-only">Drepturi de autor:</h4>
+                <h4 id="copyright-label" class="sr-only">Drepturi de autor</h4>
 
                 <p class="citat-0 c" >&copy; 1993-<time id="year" datetime="1993"></time> Școala Gimnazială „Nicu Albu” Piatra Neamț</p>
 
@@ -3750,7 +3658,9 @@ border-radius: 4px;
                 ['comisii-descriere', '#imagine-comisii'],
                 ['regulamente-descriere', '#imagine-regulamente'],
                 ['oferta-text', '#imagine-oferta'],
-                ['gradinita-text', '#imagine-gradinita']
+                ['gradinita-text', '#imagine-gradinita'],
+                ['pregatitoare-text', '#imagine-pregatitoare'],
+                ['evaluari246-text', '#imagine-evaluari246']
             ];
 
             function updateImagini() {
@@ -3971,4 +3881,3 @@ border-radius: 4px;
     </body>
 
 </html>
-
