@@ -451,6 +451,10 @@ border-radius: 4px;
                                 grid-template-columns: repeat(3, 1fr);
                             }
 
+                            .page-menu .trei-evaluare {
+                                grid-template-columns: repeat(3, 1fr);
+                            }
+
                             .page-menu .patru-prezentare {
                                 grid-template-columns: repeat(4, 1fr);
                             }
@@ -1954,7 +1958,7 @@ border-radius: 4px;
                 }
 
 /* telverde 4 */
-                @media (min-width: 1681px)and (max-width: 1920px) {
+                @media (min-width: 1801px)and (max-width: 1920px) {
                     aside {
                         min-height: 100vh;
                     }
@@ -1975,6 +1979,31 @@ border-radius: 4px;
                     }
                 }
 
+/* page-menu 1 (evaluare) */
+                @media (min-width: 1681px)and (max-width: 1800px) {
+                    aside {
+                        min-height: 100vh;
+                    }
+                    .banner {
+                        margin-left: var(--asz);
+                    }
+                    .content {
+                        margin-left: var(--asz);
+                    }
+                    .page-menu .trei-evaluare {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                    .sectiune-comunicari ul {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                    .sectiune-telverde ul {
+                        grid-template-columns: repeat(4, 1fr);
+                    }
+                    .footer {
+                        margin-left: var(--asz);
+                    }
+                }
+
 /* page-menu 2 (organigrama) */
                 @media (min-width: 1367px)and (max-width: 1680px) {
                     aside {
@@ -1982,6 +2011,9 @@ border-radius: 4px;
                     }
                     .banner {
                         margin-left: var(--asz);
+                    }
+                    .page-menu .trei-evaluare {
+                        grid-template-columns: repeat(1, 1fr);
                     }
                     .page-menu .patru-organigrama {
                         grid-template-columns: repeat(2, 1fr);
@@ -2008,6 +2040,9 @@ border-radius: 4px;
                     aside {
                         border-radius: 4px;
                     }
+                    .page-menu .trei-evaluare {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
                     .page-menu .patru-organigrama {
                         grid-template-columns: repeat(2, 1fr);
                     }
@@ -2032,6 +2067,9 @@ border-radius: 4px;
                 @media (min-width: 913px) and (max-width: 1152px) { 
                     aside {
                         border-radius: 4px;
+                    }
+                    .page-menu .trei-evaluare {
+                        grid-template-columns: repeat(1, 1fr);
                     }
                     .page-menu .patru-organigrama {
                         grid-template-columns: repeat(2, 1fr);
@@ -2061,6 +2099,9 @@ border-radius: 4px;
                 @media (min-width: 801px) and (max-width: 912px) {
                     aside {
                         border-radius: 4px;
+                    }
+                    .page-menu .trei-evaluare {
+                        grid-template-columns: repeat(1, 1fr);
                     }
                     .page-menu .patru-organigrama {
                         grid-template-columns: repeat(1, 1fr);
@@ -2178,6 +2219,9 @@ border-radius: 4px;
                     }
                     .page-menu .patru-prezentare {
                         grid-template-columns: repeat(2, 1fr);
+                    }
+                    .page-menu .trei-evaluare {
+                        grid-template-columns: repeat(1, 1fr);
                     }
                     .page-menu .patru-organigrama {
                         grid-template-columns: repeat(1, 1fr);
@@ -2298,6 +2342,9 @@ border-radius: 4px;
                     }
                     .page-menu .patru-prezentare {
                         grid-template-columns: repeat(2, 1fr);
+                    }
+                    .page-menu .trei-evaluare {
+                        grid-template-columns: repeat(1, 1fr);
                     }
                     .page-menu .patru-organigrama {
                         grid-template-columns: repeat(1, 1fr);
@@ -2420,6 +2467,9 @@ border-radius: 4px;
                     .page-menu .patru-prezentare {
                         grid-template-columns: repeat(2, 1fr);
                     }
+                    .page-menu .trei-evaluare {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
                     .page-menu .patru-organigrama {
                         grid-template-columns: repeat(1, 1fr);
                     }
@@ -2538,6 +2588,9 @@ border-radius: 4px;
                         border-radius: 4px;
                     }
                     .page-menu .patru-prezentare {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                    .page-menu .trei-evaluare {
                         grid-template-columns: repeat(1, 1fr);
                     }
                     .page-menu .patru-organigrama {
@@ -2661,6 +2714,9 @@ border-radius: 4px;
                         grid-template-columns: repeat(1, 1fr);
                     }
                     .page-menu .trei-personal {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                    .page-menu .trei-evaluare {
                         grid-template-columns: repeat(1, 1fr);
                     }
                     .page-menu .patru-organigrama {
