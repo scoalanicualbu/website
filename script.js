@@ -194,7 +194,8 @@
                 ['regulamente-descriere', '#imagine-regulamente'],
                 ['oferta-text', '#imagine-oferta'],
                 ['gradinita-text', '#imagine-gradinita'],
-                ['pregatitoare-text', '#imagine-pregatitoare']
+                ['pregatitoare-text', '#imagine-pregatitoare'],
+                ['evaluari246-text', '#imagine-evaluari246']
             ];
 
             function updateImagini() {
