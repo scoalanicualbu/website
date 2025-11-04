@@ -2440,6 +2440,24 @@ border-radius: 4px;
                     #pregatitoare-continut .wrap-9 {
                         grid-column: span 12;
                     }
+                    #evaluari246-continut .wrap-show {
+                        display: none;
+                    }
+                    #evaluari246-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
+                    #simulare8-continut .wrap-show {
+                        display: none;
+                    }
+                    #simulare8-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
+                    #evaluare-continut .wrap-show {
+                        display: none;
+                    }
+                    #evaluare-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(1, 1fr);
                     }
@@ -2564,6 +2582,24 @@ border-radius: 4px;
                     #pregatitoare-continut .wrap-9 {
                         grid-column: span 12;
                     }
+                    #evaluari246-continut .wrap-show {
+                        display: none;
+                    }
+                    #evaluari246-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
+                    #simulare8-continut .wrap-show {
+                        display: none;
+                    }
+                    #simulare8-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
+                    #evaluare-continut .wrap-show {
+                        display: none;
+                    }
+                    #evaluare-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(1, 1fr);
                     }
@@ -2685,6 +2721,24 @@ border-radius: 4px;
                         display: none;
                     }
                     #pregatitoare-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #evaluari246-continut .wrap-show {
+                        display: none;
+                    }
+                    #evaluari246-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
+                    #simulare8-continut .wrap-show {
+                        display: none;
+                    }
+                    #simulare8-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
+                    #evaluare-continut .wrap-show {
+                        display: none;
+                    }
+                    #evaluare-continut .wrap-8 {
                         grid-column: span 12;
                     }
                     .sectiune-comunicari ul {
@@ -2811,6 +2865,24 @@ border-radius: 4px;
                         display: none;
                     }
                     #pregatitoare-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #evaluari246-continut .wrap-show {
+                        display: none;
+                    }
+                    #evaluari246-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
+                    #simulare8-continut .wrap-show {
+                        display: none;
+                    }
+                    #simulare8-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
+                    #evaluare-continut .wrap-show {
+                        display: none;
+                    }
+                    #evaluare-continut .wrap-8 {
                         grid-column: span 12;
                     }
                     .sectiune-comunicari ul {
