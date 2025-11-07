@@ -200,11 +200,40 @@
                 ['evaluare-text', '#imagine-evaluare']
             ];
 
-            function updateImagini() {
-                imaginiParametri.forEach(([divId, imgSelector]) => {
-                    updateImagine(divId, imgSelector);
-                });
+function updateImagini() {
+    imaginiParametri.forEach(([divId, imgSelector]) => {
+
+        const divElement = document.getElementById(divId);
+        if (!divElement) return;
+
+        const container = document.querySelector(imgSelector);
+        if (!container) return;
+
+        const img = container.querySelector('img');
+        if (!img) return;
+
+        const maxIncercari = 10;
+        let incercari = 0;
+
+        const tryUpdate = () => {
+            if (img.complete && img.naturalWidth !== 0) {
+                updateImagine(divId, imgSelector);
+            } else {
+                incercari++;
+                if (incercari < maxIncercari) {
+                    setTimeout(tryUpdate, 300);
+                } else {
+                    console.warn(`Imaginea din ${divId} nu s-a încărcat după ${maxIncercari} încercări.`);
+                }
             }
+        };
+        if (img.complete && img.naturalWidth !== 0) {
+            updateImagine(divId, imgSelector);
+        } else {
+            tryUpdate();
+        }
+    });
+}
 
 // Zoom și translatare imagine, "Contact"
             function limitPosition(container, img, scale, translateX, translateY) {
