@@ -35,7 +35,6 @@ border: 0px solid #404040;
                 line-height: 1.5;
                 font-family: Arial, sans-serif;
                 font-size: var(--sz3);
-                color: #404040;
                 background-color: #FFFFFF;
             }
 
@@ -49,8 +48,6 @@ border: 0px solid #404040;
                     padding-left: 0;
                     padding-right: 0;
                     font-size: var(--sz1);
-                    color: #404040;
-                    background-color: #FFFFFF;
                 }
 
                 h2 {
@@ -63,8 +60,6 @@ border: 0px solid #404040;
                     padding-left: 0;
                     padding-right: 0;
                     font-size: var(--sz2);
-                    color: #404040;
-                    background-color: #FFFFFF;
                 }
 
                 h3 {
@@ -77,8 +72,6 @@ border: 0px solid #404040;
                     padding-left: 0;
                     padding-right: 0;
                     font-size: var(--sz3);
-                    color: #404040;
-                    background-color: #FFFFFF;
                 }
 
                 h4 {
@@ -91,8 +84,6 @@ border: 0px solid #404040;
                     padding-left: 0;
                     padding-right: 0;
                     font-size: var(--sz3);
-                    color: #404040;
-                    background-color: #FFFFFF;
                 }
 
                 h5 {
@@ -116,24 +107,11 @@ border: 0px solid #404040;
                     padding-bottom: 0;
                     padding-left: 0;
                     padding-right: 0;
-                    color: #404040;
-                    background-color: #FFFFFF;
-                }
-
-                strong {
-                    color: #000000;
-                    background-color: #FFFFFF;
-                }
-
-                span {
-                    color: #000000;
-                    background-color: #FFFFFF;
                 }
 
                 .hr {
                     height: 1px;
                     width: 100%;
-                    color: #404040;
                     background-color: #404040;
                 }
 
