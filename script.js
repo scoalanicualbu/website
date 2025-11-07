@@ -212,6 +212,8 @@ function updateImagini() {
         const img = container.querySelector('img');
         if (!img) return;
 
+                        img.style.display = 'none';
+
         const maxIncercari = 10;
         let incercari = 0;
 
