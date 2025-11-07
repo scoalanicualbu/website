@@ -61,9 +61,6 @@
                 ids.forEach(id => {
                     const el = document.getElementById(id);
                     if (el) {
-                const container = document.getElementById(id);
-                if (!container) return;
-                container.style.visibility = 'hidden';
                         const text = el.innerText || el.textContent;
                         parametri.push({ id, text });
                     }
