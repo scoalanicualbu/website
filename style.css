@@ -455,6 +455,10 @@ border-radius: 4px;
                                 grid-template-columns: repeat(3, 1fr);
                             }
 
+                            .page-menu .trei-admitere {
+                                grid-template-columns: repeat(3, 1fr);
+                            }
+
                             .page-menu .patru-prezentare {
                                 grid-template-columns: repeat(4, 1fr);
                             }
@@ -834,6 +838,10 @@ border-radius: 4px;
                         padding-bottom: 0;
                         padding-left: 0;
                         padding-right: 0;
+                    }
+
+                    .down {
+                        margin-top: 0;
                     }
 
                         .sectiune-legaturi ul {
@@ -2064,7 +2072,7 @@ border-radius: 4px;
                 }
 
 /* legaturi 2, wrap-show, wrap-92 12-2, wrap-9 12 */
-                @media (min-width: 913px) and (max-width: 1152px) { 
+                @media (min-width: 901px) and (max-width: 1152px) { 
                     aside {
                         border-radius: 4px;
                     }
@@ -2096,11 +2104,14 @@ border-radius: 4px;
                 }
 
 /* page-menu-1 (organigrama) */
-                @media (min-width: 801px) and (max-width: 912px) {
+                @media (min-width: 801px) and (max-width: 900px) {
                     aside {
                         border-radius: 4px;
                     }
                     .page-menu .trei-evaluare {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                    .page-menu .trei-admitere {
                         grid-template-columns: repeat(1, 1fr);
                     }
                     .page-menu .patru-organigrama {
@@ -2223,6 +2234,9 @@ border-radius: 4px;
                     .page-menu .trei-evaluare {
                         grid-template-columns: repeat(1, 1fr);
                     }
+                    .page-menu .trei-admitere {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
                     .page-menu .patru-organigrama {
                         grid-template-columns: repeat(1, 1fr);
                     }
@@ -2317,6 +2331,12 @@ border-radius: 4px;
                     #pregatitoare-continut .wrap-9 {
                         grid-column: span 12;
                     }
+                    #admitere-continut .wrap-show {
+                        display: none;
+                    }
+                    #admitere-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(1, 1fr);
                     }
@@ -2344,6 +2364,9 @@ border-radius: 4px;
                         grid-template-columns: repeat(2, 1fr);
                     }
                     .page-menu .trei-evaluare {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                    .page-menu .trei-admitere {
                         grid-template-columns: repeat(1, 1fr);
                     }
                     .page-menu .patru-organigrama {
@@ -2456,6 +2479,12 @@ border-radius: 4px;
                         display: none;
                     }
                     #evaluare-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
+                    #admitere-continut .wrap-show {
+                        display: none;
+                    }
+                    #admitere-continut .wrap-8 {
                         grid-column: span 12;
                     }
                     .sectiune-comunicari ul {
@@ -2488,6 +2517,9 @@ border-radius: 4px;
                     .page-menu .trei-evaluare {
                         grid-template-columns: repeat(1, 1fr);
                     }
+                    .page-menu .trei-admitere {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
                     .page-menu .patru-organigrama {
                         grid-template-columns: repeat(1, 1fr);
                     }
@@ -2598,6 +2630,12 @@ border-radius: 4px;
                         display: none;
                     }
                     #evaluare-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
+                    #admitere-continut .wrap-show {
+                        display: none;
+                    }
+                    #admitere-continut .wrap-8 {
                         grid-column: span 12;
                     }
                     .sectiune-comunicari ul {
@@ -2629,6 +2667,9 @@ border-radius: 4px;
                     .page-menu .trei-evaluare {
                         grid-template-columns: repeat(1, 1fr);
                     }
+                    .page-menu .trei-admitere {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
                     .page-menu .patru-organigrama {
                         grid-template-columns: repeat(1, 1fr);
                     }
@@ -2739,6 +2780,12 @@ border-radius: 4px;
                         display: none;
                     }
                     #evaluare-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
+                    #admitere-continut .wrap-show {
+                        display: none;
+                    }
+                    #admitere-continut .wrap-8 {
                         grid-column: span 12;
                     }
                     .sectiune-comunicari ul {
@@ -2773,6 +2820,9 @@ border-radius: 4px;
                     .page-menu .trei-evaluare {
                         grid-template-columns: repeat(1, 1fr);
                     }
+                    .page-menu .trei-admitere {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
                     .page-menu .patru-organigrama {
                         grid-template-columns: repeat(1, 1fr);
                     }
@@ -2883,6 +2933,12 @@ border-radius: 4px;
                         display: none;
                     }
                     #evaluare-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
+                    #admitere-continut .wrap-show {
+                        display: none;
+                    }
+                    #admitere-continut .wrap-8 {
                         grid-column: span 12;
                     }
                     .sectiune-comunicari ul {
