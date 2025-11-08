@@ -2343,6 +2343,12 @@ border-radius: 4px;
                     #profesional-continut .wrap-8 {
                         grid-column: span 12;
                     }
+                    #dual-continut .wrap-show {
+                        display: none;
+                    }
+                    #dual-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(1, 1fr);
                     }
@@ -2497,6 +2503,12 @@ border-radius: 4px;
                         display: none;
                     }
                     #profesional-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
+                    #dual-continut .wrap-show {
+                        display: none;
+                    }
+                    #dual-continut .wrap-8 {
                         grid-column: span 12;
                     }
                     .sectiune-comunicari ul {
@@ -2656,6 +2668,12 @@ border-radius: 4px;
                     #profesional-continut .wrap-8 {
                         grid-column: span 12;
                     }
+                    #dual-continut .wrap-show {
+                        display: none;
+                    }
+                    #dual-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(1, 1fr);
                     }
@@ -2810,6 +2828,12 @@ border-radius: 4px;
                         display: none;
                     }
                     #profesional-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
+                    #dual-continut .wrap-show {
+                        display: none;
+                    }
+                    #dual-continut .wrap-8 {
                         grid-column: span 12;
                     }
                     .sectiune-comunicari ul {
@@ -2969,6 +2993,12 @@ border-radius: 4px;
                         display: none;
                     }
                     #profesional-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
+                    #dual-continut .wrap-show {
+                        display: none;
+                    }
+                    #dual-continut .wrap-8 {
                         grid-column: span 12;
                     }
                     .sectiune-comunicari ul {
