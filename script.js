@@ -198,7 +198,8 @@
                 ['evaluari246-text', '#imagine-evaluari246'],
                 ['simulare8-text', '#imagine-simulare8'],
                 ['evaluare-text', '#imagine-evaluare'],
-                ['admitere-text', '#imagine-admitere']
+                ['admitere-text', '#imagine-admitere'],
+                ['profesional-text', '#imagine-profesional']
             ];
 
             function updateImagini() {
