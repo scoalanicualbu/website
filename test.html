@@ -17,30 +17,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- Titlu -->
-        <title>Admitere</title>
+        <title>Săptămâna verde</title>
 
 <!-- Resurse -->
 <!--        <base href="https://scoalanicualbu.github.io">-->
 
 <!-- Descriere -->
-        <meta name="description" content="Site-ul oficial al Școlii Gimnaziale „Nicu Albu” Piatra Neamț, pagina „Admitere în învățământul liceal”. Aici sunt cuprinse informații despre admiterea în învățământul liceal și legături către secțiuni precum admitere în învățământul profesional și admitere în învățământul dual.">
+        <meta name="description" content="Site-ul oficial al Școlii Gimnaziale „Nicu Albu” Piatra Neamț, pagina „Săptămâna verde”. Aici sunt cuprinse informații despre programul național „Săptămâna verde” și legături către secțiuni precum istoric, circumscripție, program de lucru, comunicări.">
 
 <!-- Autor -->
         <meta name="author" content="informatician IFTIMIA DAN-ADRIAN">
 
 <!-- Cuvinte cheie -->
-        <meta name="keywords" content="ȘCOALA GIMNAZIALĂ NICU ALBU PIATRA NEAMȚ ADMITERE ÎNVĂȚĂMÂNT LICEAL">
+        <meta name="keywords" content="ȘCOALA GIMNAZIALĂ NICU ALBU PIATRA NEAMȚ SĂPTĂMÂNA VERDE">
 
 <!-- Proprietate -->
         <meta property="og:site_name" content="Școala Gimnazială „Nicu Albu” Piatra Neamț">
         <meta property="og:url" content="https://scoalanicualbu.github.io">
-        <meta property="og:title" content="Site-ul oficial al Școlii Gimnaziale „Nicu Albu” Piatra Neamț, pagina „Admitere în învățământul liceal”">
-        <meta property="og:description" content="Aici sunt cuprinse informații despre admiterea în învățământul liceal și legături către secțiuni precum admitere în învățământul profesional și admitere în învățământul dual.">
+        <meta property="og:title" content="Site-ul oficial al Școlii Gimnaziale „Nicu Albu” Piatra Neamț, pagina „Săptămâna verde”">
+        <meta property="og:description" content="Aici sunt cuprinse informații despre programul național „Săptămâna verde” și legături către secțiuni precum istoric, circumscripție, program de lucru, comunicări.">
         <meta property="og:type" content="website">
         <meta property="og:locale" content="ro_RO">
-        <meta property="og:image" content="https://raw.githubusercontent.com/scoalanicualbu/scoalanicualbu.github.io/main/sigla.png">
-        <meta property="og:image" content="https://raw.githubusercontent.com/scoalanicualbu/scoalanicualbu.github.io/main/admitere/admitere.png">
-        <meta property="og:image" content="https://raw.githubusercontent.com/scoalanicualbu/scoalanicualbu.github.io/main/admitere/liceeni.png">
+        <meta property="og:image" content="sigla.png">
+        <meta property="og:image" content="verde/verde.png">
+        <meta property="og:image" content="verde/logo.png">
+        <meta property="og:image" content="verde/teme.png">
 
 <!-- Iconiță favorită -->
         <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -900,6 +901,10 @@ border-radius: 4px;
                         padding-right: 0;
                     }
 
+                    .down {
+                        margin-top: 0;
+                    }
+
                         .sectiune-legaturi ul {
 border: 0px solid #404040;
 border-radius: 4px;
@@ -1501,8 +1506,8 @@ border-radius: 4px;
                             display: flex;
                             flex-direction: column;
                             flex: 1;
-                            align-items: center;
-                            text-align: center;
+                            align-items: start;
+                            text-align: left;
                         }
 
                         .wrap-4 {
@@ -2003,7 +2008,7 @@ border-radius: 4px;
                 }
 
 /* comunicari-2 */
-                @media (min-width: 1921px)and (max-width: 3840px) {
+                @media (min-width: 2161px)and (max-width: 3840px) {
                     aside {
                         min-height: 100vh;
                     }
@@ -2012,6 +2017,28 @@ border-radius: 4px;
                     }
                     .content {
                         margin-left: var(--asz);
+                    }
+                    .sectiune-comunicari ul {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                    .footer {
+                        margin-left: var(--asz);
+                    }
+                }
+
+/* page-menu-2 (organigrama) */
+                @media (min-width: 1921px)and (max-width: 2160px) {
+                    aside {
+                        min-height: 100vh;
+                    }
+                    .banner {
+                        margin-left: var(--asz);
+                    }
+                    .content {
+                        margin-left: var(--asz);
+                    }
+                    .page-menu .patru-organigrama {
+                        grid-template-columns: repeat(2, 1fr);
                     }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(2, 1fr);
@@ -2031,6 +2058,9 @@ border-radius: 4px;
                     }
                     .content {
                         margin-left: var(--asz);
+                    }
+                    .page-menu .patru-organigrama {
+                        grid-template-columns: repeat(2, 1fr);
                     }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(2, 1fr);
@@ -2057,6 +2087,9 @@ border-radius: 4px;
                     .page-menu .trei-evaluare {
                         grid-template-columns: repeat(1, 1fr);
                     }
+                    .page-menu .patru-organigrama {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(2, 1fr);
                     }
@@ -2068,7 +2101,7 @@ border-radius: 4px;
                     }
                 }
 
-/* page-menu 2 (organigrama) */
+/* citat-3 (sindicat) */
                 @media (min-width: 1367px)and (max-width: 1680px) {
                     aside {
                         min-height: 100vh;
@@ -2099,7 +2132,7 @@ border-radius: 4px;
                     }
                 }
 
-/* aside, imagine-4 2, imagine-2 1 */
+/* aside nu, imagine-4 2, imagine-2 1 */
                 @media (min-width: 1153px) and (max-width: 1366px) {
                     aside {
                         border-radius: 4px;
@@ -2127,7 +2160,7 @@ border-radius: 4px;
                     }
                 }
 
-/* legaturi 2, wrap-show, wrap-92 12-2, wrap-9 12 */
+/* legaturi 2, wrap-show nu, wrap-92 12-2, wrap-9 12 */
                 @media (min-width: 901px) and (max-width: 1152px) { 
                     aside {
                         border-radius: 4px;
@@ -2159,7 +2192,7 @@ border-radius: 4px;
                     }
                 }
 
-/* page-menu-1 (organigrama) */
+/*  page-menu 1 (admitere) */
                 @media (min-width: 801px) and (max-width: 900px) {
                     aside {
                         border-radius: 4px;
@@ -2279,7 +2312,7 @@ border-radius: 4px;
                     }
                 }
 
-/* page-menu 2 (prezentare, regulamente), comunicari-1, telverde 2 */
+/* page-menu 2 (prezentare, regulamente), comunicari 1, telverde 2 */
                 @media (min-width: 721px) and (max-width: 800px) {
                     aside {
                         border-radius: 4px;
@@ -2391,6 +2424,18 @@ border-radius: 4px;
                         display: none;
                     }
                     #admitere-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
+                    #profesional-continut .wrap-show {
+                        display: none;
+                    }
+                    #profesional-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
+                    #dual-continut .wrap-show {
+                        display: none;
+                    }
+                    #dual-continut .wrap-8 {
                         grid-column: span 12;
                     }
                     .sectiune-comunicari ul {
@@ -2543,6 +2588,18 @@ border-radius: 4px;
                     #admitere-continut .wrap-8 {
                         grid-column: span 12;
                     }
+                    #profesional-continut .wrap-show {
+                        display: none;
+                    }
+                    #profesional-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
+                    #dual-continut .wrap-show {
+                        display: none;
+                    }
+                    #dual-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(1, 1fr);
                     }
@@ -2562,7 +2619,7 @@ border-radius: 4px;
                 }
 
 
-/* legaturi 1, imagine-4 1, wrap-92 12-1, wrap-6 12 (conducere-ul) */
+/* legaturi 1, imagine-4 1, wrap-92 12-1, wrap-6 12 (conducere-ul),  wrap-3 (altfel) */
                 @media (min-width: 427px) and (max-width: 600px) { 
                     aside {
                         border-radius: 4px;
@@ -2692,6 +2749,24 @@ border-radius: 4px;
                         display: none;
                     }
                     #admitere-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
+                    #profesional-continut .wrap-show {
+                        display: none;
+                    }
+                    #profesional-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
+                    #dual-continut .wrap-show {
+                        display: none;
+                    }
+                    #dual-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
+                    #altfel-continut .wrap-show {
+                        display: none;
+                    }
+                    #altfel-continut .wrap-9 {
                         grid-column: span 12;
                     }
                     .sectiune-comunicari ul {
@@ -2842,6 +2917,24 @@ border-radius: 4px;
                         display: none;
                     }
                     #admitere-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
+                    #profesional-continut .wrap-show {
+                        display: none;
+                    }
+                    #profesional-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
+                    #dual-continut .wrap-show {
+                        display: none;
+                    }
+                    #dual-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
+                    #altfel-continut .wrap-show {
+                        display: none;
+                    }
+                    #altfel-continut .wrap-9 {
                         grid-column: span 12;
                     }
                     .sectiune-comunicari ul {
@@ -2997,6 +3090,24 @@ border-radius: 4px;
                     #admitere-continut .wrap-8 {
                         grid-column: span 12;
                     }
+                    #profesional-continut .wrap-show {
+                        display: none;
+                    }
+                    #profesional-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
+                    #dual-continut .wrap-show {
+                        display: none;
+                    }
+                    #dual-continut .wrap-8 {
+                        grid-column: span 12;
+                    }
+                    #altfel-continut .wrap-show {
+                        display: none;
+                    }
+                    #altfel-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(1, 1fr);
                     }
@@ -3025,7 +3136,7 @@ border-radius: 4px;
 
             <h1 id="titlu-label" class="sr-only">Școala Gimnazială „Nicu Albu” Piatra Neamț</h1>
 
-            <p class="sr-only"><strong>Pagina „Admitere în învățământul liceal”</strong></p>
+            <p class="sr-only"><strong>Pagina „Săptămâna verde”</strong></p>
 
         </section>
 
@@ -3172,19 +3283,19 @@ border-radius: 4px;
                         </a>
                     </li>
                     <li>
-                        <a href="admitere.html" class="inactive">
+                        <a href="admitere.html">
                             Admitere
                             <span class="sr-only"> (se deschide în aceeași fereastră)</span>
                         </a>
                     </li>
                     <li>
                         <a href="altfel.html">
-                            Școala Altfel
+                            Școala altfel
                             <span class="sr-only"> (se deschide în aceeași fereastră)</span>
                         </a>
                     </li>
                     <li>
-                        <a href="verde.html">
+                        <a href="verde.html" class="active" aria-current="page">
                             Săptămâna verde
                             <span class="sr-only"> (se deschide în aceeași fereastră)</span>
                         </a>
@@ -3236,11 +3347,11 @@ border-radius: 4px;
 <!-- Banner -->
         <header id="banner" class="banner">
 
-            <img src="https://raw.githubusercontent.com/scoalanicualbu/scoalanicualbu.github.io/main/admitere/admitere.png" alt="Un grup divers de studenți zambind și discutănd se plimbă, în linie, în aer liber, pe o alee însorită a campusului, mărginită de copaci înalți, luxurianți, într-o atmosferă luminoasă și plină de viață">
+            <img src="https://raw.githubusercontent.com/scoalanicualbu/scoalanicualbu.github.io/main/verde/verde.png" alt="Doi copii mici, văzuți din spate, cu rucsacuri, unul albastru și unul galben, merg pe o cărare însorită, mărginită de copaci, evocând un sentiment de aventură și curiozitate">
 
         </header>
 
-        <main id="admitere" class="content" aria-label="Conținut principal">
+        <main id="verde" class="content" aria-label="Conținut principal">
 
 <!-- Buton Meniu -->
             <button id="menu-toggle" type="button" tabindex="0" aria-label="Buton Meniu site" aria-expanded="false" aria-controls="main-menu" aria-haspopup="menu">
@@ -3252,26 +3363,32 @@ border-radius: 4px;
 <!-- Meniu pagină -->
                 <nav id="meniu-pagina" class="page-menu" aria-label="Meniu pagină">
 
-                    <ul class="trei-admitere">
+                    <ul class="patru-prezentare">
                         <li>
-                            <a href="admitere.html" class="active" aria-current="page">
-                                Admitere învățământ liceal
+                            <a href="prezentare/istoric.html">
+                                Scurt istoric
                                 <span class="sr-only"> (se deschide în aceeași fereastră)</span>
                             </a>
                         </li>
                         <li>
-                            <a href="admitere/profesional.html">
-                                Admitere învățământ profesional
+                            <a href="prezentare/circumscriptie.html">
+                                Circumscripție
                                 <span class="sr-only"> (se deschide în aceeași fereastră)</span>
                             </a>
                         </li>
                         <li>
-                            <a href="admitere/dual.html">
-                                Admitere învățământ dual
+                            <a href="prezentare/program.html">
+                                Program de lucru
                                 <span class="sr-only"> (se deschide în aceeași fereastră)</span>
                             </a>
                         </li>
-                    </ul>    
+                        <li>
+                            <a href="prezentare/comunicari.html">
+                                Comunicări
+                                <span class="sr-only"> (se deschide în aceeași fereastră)</span>
+                            </a>
+                        </li>
+                    </ul>
 
                 </nav>
 
@@ -3281,55 +3398,150 @@ border-radius: 4px;
             <div id="main-content" class="page-content" role="region" tabindex="-1" aria-label="Conținut pagină">
 
 <!-- Secțiune Conținut -->
-                <section id="admitere-continut" class="sectiune-continut" aria-labelledby="admitere-continut-label">
+                <section id="verde-continut" class="sectiune-continut" aria-labelledby="verde-continut-label">
 
-                    <h3 id="admitere-continut-label" class="sr-only">Admitere în învățământul liceal</h3>
+                    <h2 id="verde-continut-label" class="sr-only">Programul național „Săptămâna verde”</h2>
 
-                    <p class="sr-only">Această secțiune cuprinde informații despre admiterea în învățământul liceal.</p>
+                    <p class="sr-only">Această secțiune cuprinde informații despre programul național „Săptămâna verde”.</p>
 
-                    <section id="admitere-imagine" class="wrap-4 wrap-show" aria-labelledby="admitere-imagine-label">
+                    <section id="verde-logo" class="wrap-3 wrap-show" aria-labelledby="verde-logo-label">
 
-                        <h4 id="admitere-imagine-label" class="sr-only">Admitere:</h4>
+                        <h3 id="verde-logo-label" class="sr-only">Prezentare:</h3>
 
-                        <p class="sr-only">Această secțiune cuprinde o imagine reprezentativă privind sfărșitul ciclului gimnazial.</p>
+                        <p class="sr-only">Această secțiune cuprinde o imagine reprezentativă a programului național „Săptămâna verde”.</p>
 
-                        <div id="imagine-admitere" class="content-imagine wrap-size">
-                           <img src="https://raw.githubusercontent.com/scoalanicualbu/scoalanicualbu.github.io/main/admitere/liceeni.png" alt="Un grup de elevi zâmbitori, cărând ghiozdane și caiete colorate, pozează în fața unei table scrise dintr-o sală de clasă într-o atmosferă veselă, academică">
+                        <div id="imagine-logo" class="content-imagine wrap-size">
+                           <img src="https://raw.githubusercontent.com/scoalanicualbu/scoalanicualbu.github.io/main/verde/logo.png" alt="Banner ilustrat cu „Săptămâna verde”, cu text verde îngroșat, în mijlocul unor ilustrații cu tematică ecologică, precum un glob, copaci, căprioară, bec, iar în partea de sus sunt două sigle ce reprezintă Ministerul Educației și Ministerul Mediului, Apelor și Pădurilor, evocând o temă de sustenabilitate și conștientizare a mediului">
+                        </div>
+
+                        </article>
+
+                            <h4 class="citat-3">De ce o „Săptămână verde”?</h4>
+
+                            <p>Pentru că poluarea și schimbările climatice ne afectează pe toți, iar ele sunt consecințe ale comportamentului nostru! Pământul are nevoie de noi, iar școala este locul în care copiii pot învăța, împreună, să aibă mai multă grijă de el!</p>
+                            <p class="citat-0">Pentru că se creează contexte pentru activități în comun - preșcolari, elevi, cadre didactice, părinți, iar aceste contexte sunt nu doar mijloace de învățare, ci și căi de formare a unei culturi școlare bazate pe încredere, respect, colaborare, susținere reciprocă și comunicare nonviolentă.</p>
+
+                        </article>
+
+                    </section>
+
+                    <section id="verde-teme" class="wrap-3 wrap-show" aria-labelledby="verde-teme-label">
+
+                        <h3 id="verde-teme-label" class="sr-only">Teme:</h3>
+
+                        <p class="sr-only">Această secțiune cuprinde o imagine sugestivă privind temele abordate în cadrul programului național „Săptămâna verde”.</p>
+
+                        <div id="imagine-teme" class="contain-imagine wrap-size">
+                           <img src="https://raw.githubusercontent.com/scoalanicualbu/scoalanicualbu.github.io/main/verde/teme.png" alt="Afiș informativ intitulat „Ce învățăm în Săptămâna verde?”, care prezintă o listă de acțiuni privind schimbările climatice și conservarea, cu o temă verde și mov, cu ilustrații cu tematică ecologică, precum un glob, un răsad, un clopoțel, iar în partea de sus sunt două sigle ce reprezintă Ministerul Educației și Ministerul Mediului, Apelor și Pădurilor">
                         </div>
 
                     </section>
 
-                    <section id="admitere-text" class="wrap-8 wrap-down" aria-labelledby="admitere-text-label">
+                    <section id="verde-provocari" class="wrap-3 wrap-show" aria-labelledby="verde-provocari-label">
 
-                        <h4 id="admitere-text-label" class="sr-only">Descrierea admiterii în învățământul liceal</h4>
+                        <h3 id="teme-provocari-label" class="sr-only">Provocări:</h3>
 
-                        <p class="sr-only">Această secțiune cuprinde o scurtă descriere a admiterii în învățământul liceal.</p>
+                        <p class="sr-only">Această secțiune cuprinde o imagine sugestivă privind provocările ce pot fi abordate în cadrul programului național „Săptămâna verde”.</p>
 
-                        <section id="admitere-descriere" class="sectiune-text coloane" aria-labelledby="admitere-descriere-label">
+                        <div id="imagine-provocari" class="contain-imagine wrap-size">
+                           <img src="https://raw.githubusercontent.com/scoalanicualbu/scoalanicualbu.github.io/main/verde/provocari.png" alt="Afiș informativ intitulat „Provocări pentru Săptămâna Verde”, care prezintă o listă de întrebări despre conștientizarea mediului, sustenabilitate și schimbări climatice, însoțite de ilustrații precum inimă, haine, glob, alimente, subliniind inițiativele școlare ecologice și schimbările stilului de viață, iar în partea de sus sunt două sigle ce reprezintă Ministerul Educației și Ministerul Mediului, Apelor și Pădurilor">
+                        </div>
 
-                            <h3 id="admitere-descriere-label" class="sr-only">Descriere:</h3>
+                    </section>
 
-                            <p>Învățământul liceal este centrat pe dezvoltarea şi diversificarea competenţelor-cheie şi pe formarea competenţelor specifice în funcţie de filieră, profil, specializare sau calificare.</p>
-                            <p>Cuprinde următoarele filiere şi profiluri: filiera teoretică (profilurile umanist şi real), filiera tehnologică (profilurile tehnic, servicii, resurse naturale şi protecţia mediului), filiera vocaţională (profilurile militar, teologic, sportiv, artistic şi pedagogic). Aceste filiere sunt menite să ajute elevul în alegerea viitoarei cariere în funcție de afinități.</p>
-                            <p>Finalizarea învăţământului liceal este atestată printr-un certificat de absolvire care conferă: dreptul de a urma învăţământul postsecundar non-terţiar, dreptul de a participa la examenul de bacalaureat, dreptul de a participa la examenul de atestare a competenţelor profesionale. Absolvenţii primesc de asemenea portofoliul personal pentru educaţie permanentă actualizat şi foaia matricolă.</p>
-                            <p>Învăţământul postsecundar non-terţiar este organizat prin şcolile postliceale şi şcolile de maiştri şi poate fi urmat numai de absolvenţii de liceu - cu sau fără diplomă de bacalaureat.</p>
-                            <p>Absolvenţii de liceu care promovează examenul de bacalaureat primesc diploma de bacalaureat care le conferă dreptul de a urma învăţământul superior, organizat prin universităţi, instituţii, academii de studii, şcoli de studii postuniversitare.</p>
+                    <section id="verde-protejare" class="wrap-3 wrap-show" aria-labelledby="verde-protejare-label">
 
-                        </section>
+                        <h3 id="verde-protejare-label" class="sr-only">Protejare:</h3>
+
+                        <p class="sr-only">Această secțiune cuprinde o imagine sugestivă privind protejarea Pământului în cadrul programului național „Săptămâna verde”.</p>
+
+                        <div id="imagine-protejare" class="contain-imagine wrap-size">
+                           <img src="https://raw.githubusercontent.com/scoalanicualbu/scoalanicualbu.github.io/main/verde/protejare.png" alt="Afiș informativ intitulat „Săptămâna verde”, care încurajează protecția mediului, prezintând orizontul schițat al Pământului pe care sunt siluete de oameni, copaci, munți, păsări, cu bule de dialog cu mesaje ecologice, iar în partea de sus sunt două sigle ce reprezintă Ministerul Educației și Ministerul Mediului, Apelor și Pădurilor">
+                        </div>
 
                     </section>
 
                 </section>
 
-<!-- Secțiune Informații -->
-                <section id="admitere-informatii" class="sectiune-informatii" aria-labelledby="admitere-informatii-label">
+<!-- Secțiune Text -->
+                <section id="verde-descriere" class="sectiune-text" aria-labelledby="verde-descriere-label">
 
-                    <h3 id="admitere-informatii-label" class="citat-1">Informații relevante:</h3>
+                    <h3 id="verde-descriere-label" class="sr-only">Scurtă descriere a programului național „Săptămâna verde”</h3>
+
+                    <p class="sr-only">Această secțiune conține o scurtă descriere a programului național „Săptămâna verde”.</p>
+
+                    <article id="descriere" class="coloane" aria-labelledby="descriere-label">
+
+                        <h4 id="descriere-label" class="sr-only">Descriere:</h4>
+
+                        <p>Prin Ordinul Ministerului Educației nr. 3629 din 02.02.2023 a fost aprobată Metodologia de organizare a programului „Săptămâna verde”. Programul este în acord cu prevederile raportului „Educația privind schimbările climatice și mediul în școli sustenabile”, elaborat de către grupul de lucru de la nivelul Administrației Prezidențiale, ale „Strategiei naționale privind educația pentru mediu și schimbări climatice 2023-2030", aprobată prin Hotărârea Guvernului României nr. 59 din 18.01.2023 și ale „Strategiei naționale pentru dezvoltarea durabilă a României 2030”, aprobată prin Hotărârea Guvernului României nr. 877 din 09.11.2018.</p>
+                        <p>Programul „Săptămâna verde” își propune completarea experiențelor de învățare ale elevilor din cadrul disciplinelor/modulelor de studiu, cu accent pe componenta referitoare la schimbări climatice și protecția mediului, scopul fiind formarea unor comportamente responsabile față de mediul înconjurător.</p>
+
+                        <p class="citat-0">Programul contribuie la dezvoltarea competențelor preșcolarilor/elevilor de investigare inter- și transdisciplinară a realității înconjurătoare și formarea unor comportamente responsabile față de mediul înconjurător, prin dezvoltarea capacității acestora de a:</p>
+                        <p class="citat-0">‒ înțelege și utiliza noțiuni elementare referitoare la mediu și la schimbările climatice pentru a conștientiza faptul că schimbările climatice sunt o problemă emergentă a omenirii, precum și a înțelege măsurile de combatere a acestora;</p>
+                        <p class="citat-0">‒ înțelege legislația de mediu și rolul autorităților, instituțiilor, companiilor, organizațiilor nonguvernamentale și altor actori în combaterea schimbărilor climatice și protejarea mediului;</p>
+                        <p class="citat-0">‒ înțelege schimbările climatice în context global, sistemic și în conexiune cu alte domenii/probleme/teme precum: exploatarea iresponsabilă a resurselor naturale, poluarea, risipa alimentară, managementul deșeurilor, consumul și producția sustenabile, biodiversitatea, pădurile și viața terestră, apele și viața acvatică, catastrofele naturale, energia verde, justiția socială;</p>
+                        <p class="citat-0">‒ explora/investiga mediul înconjurător și a relaționa pozitiv cu mediul natural;</p>
+                        <p class="citat-0">‒ lua decizii și de a acționa zi de zi ținând seama de impactul asupra planetei, adoptând un comportament de protejare și îmbunătățire a calității mediului, inclusiv de utilizare responsabilă a resurselor naturale;</p>
+                        <p class="citat-0">‒ se adapta la fenomene meteo extreme și a răspunde la potențiale dezastre naturale;</p>
+                        <p class="citat-0">‒ iniția și desfășura acțiuni civice individuale și/sau în echipă, de combatere a schimbărilor climatice și protecția mediului;</p>
+                        <p>‒ participa, în viitor, la elaborarea de politici publice și la dezvoltarea de noi tehnologii care să contribuie la combaterea schimbărilor climatice și protecția mediului.</p>
+
+                        <p>Programul „Săptămâna verde” contribuie la atingerea obiectivelor educaționale din domeniile știință, tehnologie, inginerie, arte și matematică, oferind un context semnificativ de experimentare în care atât cadrele didactice, cât și preșcolarii/elevii sunt încurajați să își manifeste creativitatea și să îmbine, într-un mod atractiv, teoria cu aplicațiile acesteia în viața cotidiană.</p>
+
+                        <p class="citat-0">În perioada alocată programului „Săptămâna verde” cadrele didactice proiectează, desfășoară și evaluează activități educaționale având una sau mai multe dintre următoarele caracteristici:</p>
+                        <p class="citat-0">‒ sunt inter- și transdisciplinare;</p>
+                        <p class="citat-0">‒ implică preșcolarii/elevii în explorarea/investigarea mediului natural;</p>
+                        <p class="citat-0">‒ presupun colaborarea dintre preșcolari/elevi și familiile lor;</p>
+                        <p class="citat-0">‒ contribuie la rezolvarea unor probleme locale de mediu și la informarea/sensibilizarea membrilor comunității locale privind schimbările climatice și protecția mediului;</p>
+                        <p class="citat-0">‒ sunt desfășurate în parteneriat cu alte unități de învățământ, instituții, organizații nonguvernamentale și/sau operatori economici;</p>
+                        <p class="citat-0">‒ sunt inovatoare și/sau relevante pentru contextul în care sunt derulate;</p>
+                        <p>‒ sunt bazate pe constatările unor cercetări și pe bune practici recente din domeniul educației privind schimbările climatice și de mediu.</p>
+
+                        <p>În perioada alocată programului „Săptămâna verde" se desfășoară activități educaționale precum: lecții în natură, dezbateri, jocuri de rol, fotografie vorbită, exerciții de construcție participativă a unor scenarii de viitor, vizionări de documentare, experimente, biblioteci vii, teatru-forum, teatru legislativ, proiecte de servicii în folosul comunității, voluntariat, expediții/excursii în parcuri naturale și în arii protejate.</p>
+                        <p>Cadrele didactice și partenerii interesați au acces la platforma dedicată educației pentru schimbări climatice și pentru mediu, saptamanaverde.edu.ro. Platforma cuprinde o bibliotecă digitală cu resurse educaționale pe teme de mediu și climă, exemple și oferte de activități, o hartă interactivă a disponibilităților de cazare gratuită din ariile naturale protejate, precum și exemple cu privire la orarul și proiectarea activităților.</p>
+
+                </section>
+
+<!-- Secțiune Informații -->
+                <section id="altfel-informatii" class="sectiune-informatii" aria-labelledby="altfel-informatii-label">
+
+                    <h3 id="altfel-informatii-label" class="citat-1">Informații relevante:</h3>
 
                     <ul class="coloane">
                         <li>
-                            <a href="https://drive.google.com/file/d/1XAdBGW74xaCxOURALHb7FPCshfOg8ngC/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                Ordinul Ministerului Educației și Cercetării nr. 6060 din 29.08.2025 privind organizarea și desfășurarea admiterii în nvățământul liceal pentru anul școlar 2026-2027
+                            <a href="https://drive.google.com/file/d/1SGYdJJ6InJ1DObl_8LpcfdeiPkvq8Sgg/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                Adresa Inspectoratului Școlar Județean Neamț nr. 11695 din 25.09.2024 Activitățile ce urmează a fi organizate în cadrul programului „Școala Altfel”, în anul școlar 2024-2025
+                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1FMHBQwgVLMUzCKi86LoBavyTqT1tEiMA/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                Planificarea activităților curriculare și extracurriculare din cadrul săptămânii „Școala altfel” 2023-2024
+                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1-h0DbWwiBGQ2aUtZ_A5UM30NttbiNNrI/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                Ordinul Ministerului Educației nr. 6479 din 05.10.2023 privind aprobarea Metodologiei de organizare a Programului „Școala altfel”
+                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1oS6wwkUigRu-GTk3YsC6tCq4aQRjzix0/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                Școala altfel - Ghid de implementare 2016
+                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1TDgmzEtbMKpgsi68pcqfszBPTASPSyt3/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                Anexa la Ordinul Ministerului Educației Naționale și Cercetării Științifice nr. 5034 din 29.08.2016 Metodologie de organizare a Programului național „Școala altfel”
+                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/10Wzmej8Ro8OC8y4YiqKHN1JOoonaNSai/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                Ordinul Ministerului Educației Naționale și Cercetării Științifice nr. 5034 din 29.08.2016 pentru aprobarea Metodologiei de organizare a Programului național „Școala altfel”
                                 <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
                             </a>
                         </li>
@@ -3337,175 +3549,36 @@ border-radius: 4px;
 
                 </section>
 
-<!-- Secțiune TelVerde -->
-                <section id="admitere-telverde" class="sectiune-telverde" aria-labelledby="admitere-telverde-label">
-
-                    <h3 id="admitere-telverde-label" class="sr-only">Linii telefonice dedicate TelVerde</h3>
-
-                    <ul>
-
-                        <li>
-
-                            <section id="telverde-mec-covid19" class="wrap-3" aria-labelledby="telverde-mec-covid19-label">
-
-                                <h4 id="telverde-mec-covid19-label" class="sr-only">Număr TelVerde al Ministerului Educației și Cercetării - Linie telefonică dedicată consilierii psihologice pe tema CODID-19 pentru cadre didactice, elevi și părinți:</h4>
-
-                                <div>
-
-                            <img src="https://github.com/scoalanicualbu/website/blob/main/telverde-mec-covid19.png?raw=true" alt="004 0771 141 767 Centrul Județean de Resurse și Asistență Educațională Neamț - Linie telefonică dedicată consilierii psihologice pe tema CODID-19 pentru cadre didactice, elevi și părinți">
-
-                                </div>
-
-                            </section>
-
-                        </li>
-
-                        <li>
-
-                            <section id="telverde-cjraeneamt-consiliere" class="wrap-3" aria-labelledby="telverde-cjraeneamt-consiliere-label">
-
-                                <h4 id="telverde-cjraeneamt-consiliere-label" class="sr-only">Număr TelVerde al Centrului Județean de Resurse și Asistență Educațională Neamț - Linie telefonică dedicată consilierii online:</h4>
-
-                                <div>
-
-                            <img src="https://github.com/scoalanicualbu/website/blob/main/telverde-cjraeneamt-consiliere.png?raw=true" alt="004 0371 092 511 Centrul Județean de Resurse și Asistență Educațională Neamț - Linie telefonică dedicată consilierii online">
-
-                                </div>
-
-                            </section>
-
-                        </li>
-
-                        <li>
-
-                            <section id="telverde-isjneamt-prescolar" class="wrap-3" aria-labelledby="telverde-isjneamt-prescolar-label">
-
-                                <h4 id="telverde-isjneamt-prescolar-label" class="sr-only">Număr TelVerde al Inspectoratului Școlar Județean Neamț - Linie telefonică dedicată înscrierii în învățământul preșcolar:</h4>
-
-                                <div>
-
-                            <img src="https://github.com/scoalanicualbu/website/blob/main/telverde-isjneamt-prescolar.png?raw=true" alt="004 0800 816 233 Inspectoratul Școlar Județean Neamț - Linie telefonică dedicată înscrierii în învățământul preșcolar">
-
-                                </div>
-
-                            </section>
-
-                        </li>
-
-                        <li>
-
-                            <section id="telverde-isjneamt-primar" class="wrap-3" aria-labelledby="telverde-isjneamt-primar-label">
-
-                                <h4 id="telverde-isjneamt-primar-label" class="sr-only">Număr TelVerde al Inspectoratului Școlar Județean Neamț - Linie telefonică dedicată înscrierii în învățământul primar:</h4>
-
-                                <div>
-
-                            <img src="https://github.com/scoalanicualbu/website/blob/main/telverde-isjneamt-primar.png?raw=true" alt="004 0800 816 233 Inspectoratul Școlar Județean Neamț - Linie telefonică dedicată înscrierii în învățământul primar">
-
-                                </div>
-
-                            </section>
-
-                        </li>
-
-                        <li>
-
-                            <section id="telverde-isjneamt-examene" class="wrap-3" aria-labelledby="telverde-isjneamt-examene-label">
-
-                                <h4 id="telverde-isjneamt-examene-label" class="sr-only">Număr TelVerde al Inspectoratului Școlar Județean Neamț - Linie telefonică dedicată examenelor naționale:</h4>
-
-                                <div>
-
-                            <img src="https://github.com/scoalanicualbu/website/blob/main/telverde-isjneamt-examene.png?raw=true" alt="004 0800 816 233 Inspectoratul Școlar Județean Neamț - Linie telefonică dedicată examenelor naționale">
-
-                                </div>
-
-                            </section>
-
-                        </li>
-
-                        <li>
-
-                            <section id="telverde-mec-evaluare" class="wrap-3" aria-labelledby="telverde-mec-evaluare-label">
-
-                                <h4 id="telverde-mec-evaluare-label" class="sr-only">Număr TelVerde al Ministerului Educației și Cercetării - Linie telefonică dedicată pentru sesizarea oricăror disfuncționalități privind desfășurarea Evaluărilor Naționale:</h4>
-
-                                <div>
-
-                            <img src="https://github.com/scoalanicualbu/website/blob/main/telverde-mec-evaluare.png?raw=true" alt="004 0800 801 100 Ministerul Educației și Cercetării - Linie telefonică dedicată pentru sesizarea oricăror disfuncționalități privind desfășurarea Evaluărilor Naționale">
-
-                                </div>
-
-                            </section>
-
-                        </li>
-
-                        <li>
-
-                            <section id="telverde-mec-parinti" class="wrap-3" aria-labelledby="telverde-mec-parinti-label">
-
-                                <h4 id="telverde-mec-parinti-label" class="sr-only">Număr TelVerde al Ministerului Educației și Cercetării - Linie telefonică dedicată elevilor, studenților și părinților:</h4>
-
-                                <div>
-
-                                    <img src="https://github.com/scoalanicualbu/website/blob/main/telverde-mec-parinti.png?raw=true" alt="004 0800 672 031 Ministerul Educației și Cercetării - Linie telefonică dedicată elevilor, studenților și părinților">
-
-                                </div>
-
-                            </section>
-
-                        </li>
-
-                        <li>
-
-                            <section id="telverde-mec-directori" class="wrap-3" aria-labelledby="telverde-mec-directori-label">
-
-                                <h4 id="telverde-mec-directori-label" class="sr-only">Număr TelVerde al Ministerului Educației și Cercetării - Linie telefonică dedicată directorilor și administrației centrale:</h4>
-
-                                <div>
-
-                            <img src="https://github.com/scoalanicualbu/website/blob/main/telverde-mec-directori.png?raw=true" alt="004 0800 672 032 Ministerul Educației și Cercetării - Linie telefonică dedicată directorilor și administrației centrale">
-
-                                </div>
-
-                            </section>
-
-                        </li>
- 
-                        </ul>
-
-                </section>
-
 <!-- Secțiune Legături -->
-                <section id="admitere-legaturi" class="sectiune-legaturi" aria-labelledby="admitere-legaturi-label">
+                <section id="altfel-legaturi" class="sectiune-legaturi" aria-labelledby="altfel-legaturi-label">
 
-                    <h3 id="admitere-legaturi-label" class="sr-only">Legături utile:</h3>
+                    <h3 id="altfel-legaturi-label" class="sr-only">Legături utile:</h3>
 
                     <ul>                    
                         <li>
                             <a href="https://www.edu.ro" target="_blank" rel="noopener noreferrer">
-                                <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/mec.png?raw=true" alt="Sigla Ministerului Educației și Cercetării">
+                                <img src="https://raw.githubusercontent.com/scoalanicualbu/scoalanicualbu.github.io/main/prezentare/mec.png" alt="Sigla Ministerului Educației și Cercetării">
                                 <div id="mec" class="text">Ministerul Educației și Cercetării</div>
                                 <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
                             </a>
                         </li>
                         <li>
                             <a href="https://www.isjneamt.ro" target="_blank" rel="noopener noreferrer">
-                                <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/isjneamt.png?raw=true" alt="Sigla Inspectoratului Școlar Județean Neamț">
+                                <img src="https://raw.githubusercontent.com/scoalanicualbu/scoalanicualbu.github.io/main/prezentare/isjneamt.png" alt="Sigla Inspectoratului Școlar Județean Neamț">
                                 <div id="isjneamt" class="text">Inspectoratul Școlar Județean Neamț</div>
                                 <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
                             </a>
                         </li>
                         <li>
                             <a href="https://www.cjrae-neamt.ro" target="_blank" rel="noopener noreferrer">
-                                <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/cjraeneamt.png?raw=true" alt="Sigla Centrului Județean de Resurse și Asistență Educațională Neamț">
+                                <img src="https://raw.githubusercontent.com/scoalanicualbu/scoalanicualbu.github.io/main/prezentare/cjraeneamt.png" alt="Sigla Centrului Județean de Resurse și Asistență Educațională Neamț">
                                 <div id="cjraeneamt" class="text">Centrul Județean de Resurse și Asistență Educațională Neamț</div>
                                 <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
                             </a>
                         </li>
                         <li>
                             <a href="https://www.ccdneamt.ro" target="_blank" rel="noopener noreferrer">
-                                <img src="https://github.com/scoalanicualbu/website/blob/main/prezentare/ccdneamt.png?raw=true" alt="Sigla Casei Corpului Didactic Neamț">
+                                <img src="https://raw.githubusercontent.com/scoalanicualbu/scoalanicualbu.github.io/main/prezentare/ccdneamt.png" alt="Sigla Casei Corpului Didactic Neamț">
                                 <div id="ccdneamt" class="text">Casa Corpului Didactic Neamț</div>
                                 <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
                             </a>
@@ -3740,7 +3813,15 @@ border-radius: 4px;
                 ['evaluari246-text', '#imagine-evaluari246'],
                 ['simulare8-text', '#imagine-simulare8'],
                 ['evaluare-text', '#imagine-evaluare'],
-                ['admitere-text', '#imagine-admitere']
+                ['admitere-text', '#imagine-admitere'],
+                ['profesional-text', '#imagine-profesional'],
+                ['dual-text', '#imagine-dual'],
+                ['altfel-descriere', '#imagine-glob'],
+                ['altfel-program', '#imagine-maini'],
+                ['altfel-rezultate', '#imagine-cerc'],
+                ['verde-logo', '#imagine-teme'],
+                ['verde-logo', '#imagine-provocari'],
+                ['verde-logo', '#imagine-protejare']
             ];
 
             function updateImagini() {
