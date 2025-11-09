@@ -1947,7 +1947,7 @@ border-radius: 4px;
                 }
 
 /* comunicari-2 */
-                @media (min-width: 1921px)and (max-width: 3840px) {
+                @media (min-width: 2161px)and (max-width: 3840px) {
                     aside {
                         min-height: 100vh;
                     }
@@ -1956,6 +1956,28 @@ border-radius: 4px;
                     }
                     .content {
                         margin-left: var(--asz);
+                    }
+                    .sectiune-comunicari ul {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                    .footer {
+                        margin-left: var(--asz);
+                    }
+                }
+
+/* page-menu-2 (organigrama) */
+                @media (min-width: 1921px)and (max-width: 2160px) {
+                    aside {
+                        min-height: 100vh;
+                    }
+                    .banner {
+                        margin-left: var(--asz);
+                    }
+                    .content {
+                        margin-left: var(--asz);
+                    }
+                    .page-menu .patru-organigrama {
+                        grid-template-columns: repeat(2, 1fr);
                     }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(2, 1fr);
@@ -1975,6 +1997,9 @@ border-radius: 4px;
                     }
                     .content {
                         margin-left: var(--asz);
+                    }
+                    .page-menu .patru-organigrama {
+                        grid-template-columns: repeat(2, 1fr);
                     }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(2, 1fr);
@@ -2001,6 +2026,9 @@ border-radius: 4px;
                     .page-menu .trei-evaluare {
                         grid-template-columns: repeat(1, 1fr);
                     }
+                    .page-menu .patru-organigrama {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(2, 1fr);
                     }
@@ -2012,7 +2040,7 @@ border-radius: 4px;
                     }
                 }
 
-/* page-menu 2 (organigrama) */
+/* citat-3 (sindicat) */
                 @media (min-width: 1367px)and (max-width: 1680px) {
                     aside {
                         min-height: 100vh;
@@ -2043,7 +2071,7 @@ border-radius: 4px;
                     }
                 }
 
-/* aside, imagine-4 2, imagine-2 1 */
+/* aside nu, imagine-4 2, imagine-2 1 */
                 @media (min-width: 1153px) and (max-width: 1366px) {
                     aside {
                         border-radius: 4px;
@@ -2071,7 +2099,7 @@ border-radius: 4px;
                     }
                 }
 
-/* legaturi 2, wrap-show, wrap-92 12-2, wrap-9 12 */
+/* legaturi 2, wrap-show nu, wrap-92 12-2, wrap-9 12 */
                 @media (min-width: 901px) and (max-width: 1152px) { 
                     aside {
                         border-radius: 4px;
@@ -2103,7 +2131,7 @@ border-radius: 4px;
                     }
                 }
 
-/* page-menu-1 (organigrama) */
+/*  page-menu 1 (admitere) */
                 @media (min-width: 801px) and (max-width: 900px) {
                     aside {
                         border-radius: 4px;
@@ -2223,7 +2251,7 @@ border-radius: 4px;
                     }
                 }
 
-/* page-menu 2 (prezentare, regulamente), comunicari-1, telverde 2 */
+/* page-menu 2 (prezentare, regulamente), comunicari 1, telverde 2 */
                 @media (min-width: 721px) and (max-width: 800px) {
                     aside {
                         border-radius: 4px;
@@ -2530,7 +2558,7 @@ border-radius: 4px;
                 }
 
 
-/* legaturi 1, imagine-4 1, wrap-92 12-1, wrap-6 12 (conducere-ul) */
+/* legaturi 1, imagine-4 1, wrap-92 12-1, wrap-6 12 (conducere-ul),  wrap-3 (altfel) */
                 @media (min-width: 427px) and (max-width: 600px) { 
                     aside {
                         border-radius: 4px;
