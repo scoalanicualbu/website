@@ -200,7 +200,10 @@
                 ['evaluare-text', '#imagine-evaluare'],
                 ['admitere-text', '#imagine-admitere'],
                 ['profesional-text', '#imagine-profesional'],
-                ['dual-text', '#imagine-dual']
+                ['dual-text', '#imagine-dual'],
+                ['altfel-descriere', '#imagine-glob'],
+                ['altfel-program', '#imagine-maini'],
+                ['altfel-rezultate', '#imagine-cerc']
             ];
 
             function updateImagini() {
