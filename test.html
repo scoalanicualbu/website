@@ -4108,7 +4108,6 @@ function updateVoluntari() {
     const ajusteazaInaltimeaImaginei = () => {
         const inaltimeSos = divSos.offsetHeight;
 
-        // Suma înălțimii tuturor copiilor din verde-voluntari, excluzând imaginea
         let inaltimeCopii = 0;
         Array.from(divVoluntari.children).forEach(elem => {
             if (elem.id !== 'imagine-voluntari') {
@@ -4116,41 +4115,21 @@ function updateVoluntari() {
             }
         });
 
-        // Înălțimea pentru imagine trebuie să fie diferența
         const inaltimeImagineNecesară = inaltimeSos - inaltimeCopii;
-
-        // Setează înălțimea imaginii
-        if (inaltimeImagineNecesară > 0) {
-            imagine.style.height = inaltimeImagineNecesară + 'px';
-        } else {
-            imagine.style.height = '0px'; // sau 100%, dacă e nevoie
-        }
+        console.log('Inaltime SOS:', inaltimeSos);
+        console.log('Inaltime copii:', inaltimeCopii);
+        console.log('Inaltime necesara imagine:', inaltimeImagineNecesară);
+        imagine.style.height = inaltimeImagineNecesară > 0 ? inaltimeImagineNecesară + 'px' : '0px';
     };
 
-    if (imagine.complete && imagine.naturalWidth !== 0) {
-        ajusteazaInaltimeaImaginei();
-    } else {
-        imagine.onload = () => {
-            ajusteazaInaltimeaImaginei();
-        };
-        // În cazul în care imaginea e deja încărcată și evenimentul onload nu s-a declanșat
-        if (imagine.complete && imagine.naturalWidth !== 0) {
-            ajusteazaInaltimeaImaginei();
-        }
-    }
     // Apelează funcția pentru prima dată și la resize
     ajusteazaInaltimeaImaginei();
+
 }
 
-// Apel la încărcare
-window.addEventListener('load', () => {
-    updateVoluntari();
-});
-
-// Apel la resize
-window.addEventListener('resize', () => {
-    updateVoluntari();
-});
+// Adaugă evenimentele
+window.addEventListener('load', updateVoluntari);
+window.addEventListener('resize', updateVoluntari);
 
 const ajusteazaInaltimeaImaginei = () => {
     const inaltimeSos = divSos.offsetHeight;
