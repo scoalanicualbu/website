@@ -4138,16 +4138,20 @@ function updateVoluntari() {
             ajusteazaInaltimeaImaginei();
         }
     }
+    // Apelează funcția pentru prima dată și la resize
+    ajusteazaInaltimeaImaginei();
 }
 
 // Apel la încărcare
 window.addEventListener('load', () => {
     updateVoluntari();
+    ajusteazaInaltimeaImaginei();
 });
 
 // Apel la resize
 window.addEventListener('resize', () => {
     updateVoluntari();
+    ajusteazaInaltimeaImaginei();
 });
 
 const ajusteazaInaltimeaImaginei = () => {
