@@ -244,6 +244,83 @@
                 });
             }
 
+// Setare înălțime container în funcție de container de referință, "Săptămâna verde"
+            function updateDiv(referenceDivId, targetDivId, imageDivId, nrSiblings) {
+                const divRef = document.getElementById(referenceDivId);
+                const divTar = document.getElementById(targetDivId);
+                const divImg = document.getElementById(imageDivId);
+
+                if (!divRef || !divTar || !divImg) return;
+
+                const imagine = divImg.querySelector('img');
+                if (!imagine) return;
+
+                imagine.style.display = 'none';
+
+                const ajusteazaImg = () => {
+                    const inaltimeRef = divRef.offsetHeight;
+
+                    let inaltimeCopii = 0;
+                    Array.from(divTar.children).forEach(elem => {
+                        if (elem.id !== imageDivId) {
+                        inaltimeCopii += elem.offsetHeight;
+                        }
+                    });
+
+                    const inaltimeImg = inaltimeRef - inaltimeCopii - ( 2 * nrSiblings) - 1;
+                    imagine.style.height = inaltimeImg > 0 ? inaltimeImg + 'px' : '0px';
+                    imagine.style.display = 'block';
+                };
+
+                if (imagine.complete && imagine.naturalWidth !== 0) {	
+                    ajusteazaImg();
+                } else {
+                    imagine.onload = () => {
+                    ajusteazaImg();
+                    };
+                }
+            }
+
+            const divsParametri = [
+                ['verde-motivatie', 'verde-logo', 'imagine-logo', '1'],
+                ['imagine-sos', 'verde-voluntari', 'imagine-voluntari', '2']
+            ];
+
+            function updateDivs() {
+                const maxIncercari = 10;
+                let incercari = 0;
+
+                const tryUpdate = () => {
+                    let toateGăsite = true;
+
+                    divsParametri.forEach(([referenceDivId, targetDivId, imageDivId, nrSiblings]) => {
+                        const referenceDiv = document.getElementById(referenceDivId);
+                        const targetDiv = document.getElementById(targetDivId);
+                        const imageDiv = document.getElementById(imageDivId);
+
+                        if (!referenceDiv || !targetDiv || !imageDiv) {
+                            toateGăsite = false;
+                            return;
+                        }
+                    });
+
+                    if (toateGăsite) {
+                        divsParametri.forEach(([referenceDivId, targetDivId, imageDivId, nrSiblings]) => {
+                            updateDiv(referenceDivId, targetDivId, imageDivId, nrSiblings);
+                        });
+                    } else {
+                        incercari++;
+                        if (incercari < maxIncercari) {
+                            setTimeout(tryUpdate, 300);
+                        } else {
+                            console.warn(`Unele elemente din divsParametri nu au fost găsite după ${maxIncercari} încercări.`);
+                            }
+                    }
+                };
+
+                tryUpdate();
+            }
+
 // Zoom și translatare imagine, "Contact"
             function limitPosition(container, img, scale, translateX, translateY) {
                 const containerWidth = container.clientWidth;
@@ -399,6 +476,7 @@
                 updateImagini();
                 initializeParams();
                 potrivesteTexte();
+                updateDivs();
                 setupZoomTranslatare();
 
 // Inițializare setări la redimensionare pagină
@@ -406,6 +484,7 @@
                     updateMeniu();
                     updateGap();
                     updateImagini();
+                    updateDivs();
                     potrivesteTexte();
                 });
 
