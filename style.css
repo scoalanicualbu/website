@@ -115,6 +115,30 @@ border: 0px solid #404040;
                     background-color: #404040;
                 }
 
+                .hp {
+                    margin-top: 0.5rem;
+                    margin-bottom: 0.5rem;
+                    margin-left: 0;
+                    margin-right: 0;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    padding-left: 0;
+                    padding-right: 0;
+                    width: 100%;
+                }
+
+                .hp-2 {
+                    margin-top: 0.1rem;
+                    margin-bottom: 0.1rem;
+                    margin-left: 0;
+                    margin-right: 0;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    padding-left: 0;
+                    padding-right: 0;
+                    width: 100%;
+                }
+
                 .sr-only {
                     position: absolute;
                     border: 0;
@@ -1405,8 +1429,8 @@ border-radius: 4px;
                             display: flex;
                             flex-direction: column;
                             flex: 1;
-                            align-items: center;
-                            text-align: center;
+                            align-items: start;
+                            text-align: left;
                         }
 
                         .wrap-2 {
@@ -1426,7 +1450,7 @@ border-radius: 4px;
                             flex-direction: column;
                             flex: 1;
                             align-items: start;
-                            text-align: left
+                            text-align: left;
                         }
 
                         .wrap-3 {
@@ -1445,8 +1469,8 @@ border-radius: 4px;
                             display: flex;
                             flex-direction: column;
                             flex: 1;
-                            align-items: center;
-                            text-align: center;
+                            align-items: start;
+                            text-align: left;
                         }
 
                         .wrap-4 {
@@ -1465,8 +1489,8 @@ border-radius: 4px;
                             display: flex;
                             flex-direction: column;
                             flex: 1;
-                            align-items: center;
-                            text-align: center;
+                            align-items: start;
+                            text-align: left;
                         }
 
                         .wrap-5 {
@@ -1485,8 +1509,8 @@ border-radius: 4px;
                             display: flex;
                             flex-direction: column;
                             flex: 1;
-                            align-items: center;
-                            text-align: center;
+                            align-items: start;
+                            text-align: left;
                         }
 
                         .wrap-6 {
@@ -1525,8 +1549,8 @@ border-radius: 4px;
                             display: flex;
                             flex-direction: column;
                             flex: 1;
-                            align-items: center;
-                            text-align: center;
+                            align-items: start;
+                            text-align: left;
                         }
 
                         .wrap-8 {
@@ -1545,8 +1569,8 @@ border-radius: 4px;
                             display: flex;
                             flex-direction: column;
                             flex: 1;
-                            align-items: center;
-                            text-align: center;
+                            align-items: start;
+                            text-align: left;
                         }
 
                         .wrap-9 {
@@ -1565,8 +1589,8 @@ border-radius: 4px;
                             display: flex;
                             flex-direction: column;
                             flex: 1;
-                            align-items: center;
-                            text-align: center;
+                            align-items: start;
+                            text-align: left;
                         }
 
                         .wrap-92 {
@@ -1621,8 +1645,8 @@ border-radius: 4px;
                             display: flex;
                             flex-direction: column;
                             flex: 1;
-                            align-items: center;
-                            text-align: center;
+                            align-items: start;
+                            text-align: left;
                         }
 
                         .wrap-12 {
@@ -1676,6 +1700,22 @@ border-radius: 4px;
                         }
 
                         .content-imagine {
+border: 0px solid #404040;
+border-radius: 4px;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            width: 100%;
+                            height: auto;
+                            display: block;
+                        }
+
+                        .content-imagine a {
 border: 0px solid #404040;
 border-radius: 4px;
                             margin-top: 0;
@@ -1941,6 +1981,12 @@ border-radius: 4px;
                     .content {
                         margin-left: var(--asz);
                     }
+                    #div-link {
+                        display: none;
+                    }
+                    #imagine-link {
+                        display: none;
+                    }
                     .footer {
                         margin-left: var(--asz);
                     }
@@ -1957,6 +2003,12 @@ border-radius: 4px;
                     .content {
                         margin-left: var(--asz);
                     }
+                    #div-link {
+                        display: none;
+                    }
+                    #imagine-link {
+                        display: none;
+                    }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(2, 1fr);
                     }
@@ -1965,7 +2017,7 @@ border-radius: 4px;
                     }
                 }
 
-/* page-menu-2 (organigrama) */
+/* page-menu-2 (organigrama),  verde (div-link, imagine-link) da, wrap-3 (verde 2-platforma1,2) */
                 @media (min-width: 1921px)and (max-width: 2160px) {
                     aside {
                         min-height: 100vh;
@@ -1978,6 +2030,12 @@ border-radius: 4px;
                     }
                     .page-menu .patru-organigrama {
                         grid-template-columns: repeat(2, 1fr);
+                    }
+                    #verde-platforma-1 .wrap-3 {
+                        grid-column: span 6;
+                    }
+                    #verde-platforma-2 .wrap-3 {
+                        grid-column: span 6;
                     }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(2, 1fr);
@@ -2000,6 +2058,12 @@ border-radius: 4px;
                     }
                     .page-menu .patru-organigrama {
                         grid-template-columns: repeat(2, 1fr);
+                    }
+                    #verde-platforma-1 .wrap-3 {
+                        grid-column: span 6;
+                    }
+                    #verde-platforma-2 .wrap-3 {
+                        grid-column: span 6;
                     }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(2, 1fr);
@@ -2028,6 +2092,12 @@ border-radius: 4px;
                     }
                     .page-menu .patru-organigrama {
                         grid-template-columns: repeat(2, 1fr);
+                    }
+                    #verde-platforma-1 .wrap-3 {
+                        grid-column: span 6;
+                    }
+                    #verde-platforma-2 .wrap-3 {
+                        grid-column: span 6;
                     }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(2, 1fr);
@@ -2060,6 +2130,12 @@ border-radius: 4px;
                     #sindicat-continut .citat-3 {
                         text-align: center;
                     }
+                    #verde-platforma-1 .wrap-3 {
+                        grid-column: span 6;
+                    }
+                    #verde-platforma-2 .wrap-3 {
+                        grid-column: span 6;
+                    }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(2, 1fr);
                     }
@@ -2084,6 +2160,12 @@ border-radius: 4px;
                     }
                     #sindicat-continut .citat-3 {
                         text-align: center;
+                    }
+                    #verde-platforma-1 .wrap-3 {
+                        grid-column: span 6;
+                    }
+                    #verde-platforma-2 .wrap-3 {
+                        grid-column: span 6;
                     }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(2, 1fr);
@@ -2113,6 +2195,12 @@ border-radius: 4px;
                     #sindicat-continut .citat-3 {
                         text-align: center;
                     }
+                    #verde-platforma-1 .wrap-3 {
+                        grid-column: span 6;
+                    }
+                    #verde-platforma-2 .wrap-3 {
+                        grid-column: span 6;
+                    }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(2, 1fr);
                     }
@@ -2131,7 +2219,7 @@ border-radius: 4px;
                     }
                 }
 
-/*  page-menu 1 (admitere) */
+/*  page-menu 1 (admitere), wrap-3 (verde 2-platforma1,2) */
                 @media (min-width: 801px) and (max-width: 900px) {
                     aside {
                         border-radius: 4px;
@@ -2233,6 +2321,15 @@ border-radius: 4px;
                     #pregatitoare-continut .wrap-9 {
                         grid-column: span 12;
                     }
+                    #verde-platforma-1 .wrap-3 {
+                        grid-column: span 12;
+                    }
+                    #verde-platforma-2 .wrap-3 {
+                        grid-column: span 12;
+                    }
+                    #verde-proiecte .wrap-2 {
+                        grid-column: span 4;
+                    }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(2, 1fr);
                     }
@@ -2251,7 +2348,7 @@ border-radius: 4px;
                     }
                 }
 
-/* page-menu 2 (prezentare, regulamente), comunicari 1, telverde 2 */
+/* page-menu 2 (prezentare, regulamente), wrap-3 (verde 2-continut), wrap-2 (verde 3-proiecte), comunicari 1, telverde 2 */
                 @media (min-width: 721px) and (max-width: 800px) {
                     aside {
                         border-radius: 4px;
@@ -2376,6 +2473,21 @@ border-radius: 4px;
                     }
                     #dual-continut .wrap-8 {
                         grid-column: span 12;
+                    }
+                    #verde-continut .wrap-3 {
+                        grid-column: span 6;
+                    }
+                    #verde-continut .wrap-9 {
+                        grid-column: span 6;
+                    }
+                    #verde-platforma-1 .wrap-3 {
+                        grid-column: span 12;
+                    }
+                    #verde-platforma-2 .wrap-3 {
+                        grid-column: span 12;
+                    }
+                    #verde-proiecte .wrap-2 {
+                        grid-column: span 4;
                     }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(1, 1fr);
@@ -2539,6 +2651,21 @@ border-radius: 4px;
                     #dual-continut .wrap-8 {
                         grid-column: span 12;
                     }
+                    #verde-continut .wrap-3 {
+                        grid-column: span 6;
+                    }
+                    #verde-continut .wrap-9 {
+                        grid-column: span 6;
+                    }
+                    #verde-platforma-1 .wrap-3 {
+                        grid-column: span 12;
+                    }
+                    #verde-platforma-2 .wrap-3 {
+                        grid-column: span 12;
+                    }
+                    #verde-proiecte .wrap-2 {
+                        grid-column: span 4;
+                    }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(1, 1fr);
                     }
@@ -2558,7 +2685,7 @@ border-radius: 4px;
                 }
 
 
-/* legaturi 1, imagine-4 1, wrap-92 12-1, wrap-6 12 (conducere-ul),  wrap-3 (altfel) */
+/* legaturi 1, imagine-4 1, wrap-92 12-1, wrap-6 12 (conducere-ul),  wrap-3 (altfel, verde 1-continut) */
                 @media (min-width: 427px) and (max-width: 600px) { 
                     aside {
                         border-radius: 4px;
@@ -2708,6 +2835,24 @@ border-radius: 4px;
                     #altfel-continut .wrap-9 {
                         grid-column: span 12;
                     }
+                    #verde-logo .wrap-show {
+                        display: none;
+                    }
+                    #verde-continut .wrap-3 {
+                        grid-column: span 12;
+                    }
+                    #verde-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #verde-platforma-1 .wrap-3 {
+                        grid-column: span 12;
+                    }
+                    #verde-platforma-2 .wrap-3 {
+                        grid-column: span 12;
+                    }
+                    #verde-proiecte .wrap-2 {
+                        grid-column: span 6;
+                    }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(1, 1fr);
                     }
@@ -2726,7 +2871,7 @@ border-radius: 4px;
                     }
                 }
 
-/* page-menu 1 (prezentare), telverde 1 */
+/* page-menu 1 (prezentare), wrap-2 (verde 2-proiecte), telverde 1 */
                 @media (min-width: 353px) and (max-width: 426px) {
                     aside {
                         border-radius: 4px;
@@ -2875,6 +3020,24 @@ border-radius: 4px;
                     }
                     #altfel-continut .wrap-9 {
                         grid-column: span 12;
+                    }
+                    #verde-logo .wrap-show {
+                        display: none;
+                    }
+                    #verde-continut .wrap-3 {
+                        grid-column: span 12;
+                    }
+                    #verde-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #verde-platforma-1 .wrap-3 {
+                        grid-column: span 12;
+                    }
+                    #verde-platforma-2 .wrap-3 {
+                        grid-column: span 12;
+                    }
+                    #verde-proiecte .wrap-2 {
+                        grid-column: span 6;
                     }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(1, 1fr);
@@ -3046,6 +3209,24 @@ border-radius: 4px;
                     }
                     #altfel-continut .wrap-9 {
                         grid-column: span 12;
+                    }
+                    #verde-logo .wrap-show {
+                        display: none;
+                    }
+                    #verde-continut .wrap-3 {
+                        grid-column: span 12;
+                    }
+                    #verde-continut .wrap-9 {
+                        grid-column: span 12;
+                    }
+                    #verde-platforma-1 .wrap-3 {
+                        grid-column: span 12;
+                    }
+                    #verde-platforma-2 .wrap-3 {
+                        grid-column: span 12;
+                    }
+                    #verde-proiecte .wrap-2 {
+                        grid-column: span 6;
                     }
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(1, 1fr);
