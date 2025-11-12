@@ -3450,11 +3450,18 @@ border-radius: 4px;
 
                         <p class="sr-only">Această secțiune cuprinde o imagine reprezentativă a programului național „Săptămâna verde”.</p>
 
-                        <div id="imagine-logo" class="content-imagine wrap-show">
+                        <div id="imagine-link" class="content-imagine">
                             <a href="https://saptamanaverde.edu.ro/ro" target="_blank" rel="noopener noreferrer">
-                               <img src="https://raw.githubusercontent.com/scoalanicualbu/scoalanicualbu.github.io/main/verde/logo.png" alt="Banner ilustrat cu „Săptămâna verde”, cu text verde îngroșat, în mijlocul unor ilustrații cu tematică ecologică, precum un glob, copaci, căprioară, bec, iar în partea de sus sunt două sigle ce reprezintă Ministerul Educației și Ministerul Mediului, Apelor și Pădurilor, evocând o temă de sustenabilitate și conștientizare a mediului">
+                               <img src="https://raw.githubusercontent.com/scoalanicualbu/scoalanicualbu.github.io/main/verde/link.png" alt="Textul „Platforma de Resurse pentru Săptămâna Verde”, cu litere mari, îngroșate, în verde măsliniu și verde, pe fond alb">
                                 <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
                             </a>
+                        </div>
+
+                        <div class="hp-2" role="separator" aria-orientation="horizontal" aria-hidden="true">
+                        </div>
+
+                        <div id="imagine-logo" class="content-imagine wrap-show">
+                           <img src="https://raw.githubusercontent.com/scoalanicualbu/scoalanicualbu.github.io/main/verde/logo.png" alt="Banner ilustrat cu „Săptămâna verde”, cu text verde îngroșat, în mijlocul unor ilustrații cu tematică ecologică, precum un glob, copaci, căprioară, bec, iar în partea de sus sunt două sigle ce reprezintă Ministerul Educației și Ministerul Mediului, Apelor și Pădurilor, evocând o temă de sustenabilitate și conștientizare a mediului">
                         </div>
 
                     </section>
@@ -3766,7 +3773,7 @@ border-radius: 4px;
                         </div>
 
                         <div id="imagine-voluntari" class="content-imagine">
-                           <img src="https://raw.githubusercontent.com/scoalanicualbu/scoalanicualbu.github.io/main/verde/voluntari3.png" alt="Un grup de tineri îmbrăcați în tricouri verzi cu mesajul „VOLUNTAR” își dau mâinile într-un grup, zâmbind în aer liber, într-o atmosferă optimistă și de colaborare">
+                           <img src="https://raw.githubusercontent.com/scoalanicualbu/scoalanicualbu.github.io/main/verde/voluntari.png" alt="Un grup de tineri îmbrăcați în tricouri verzi cu mesajul „VOLUNTAR” își dau mâinile într-un grup, zâmbind în aer liber, într-o atmosferă optimistă și de colaborare">
                         </div>
 
                         <div class="hp-2" role="separator" aria-orientation="horizontal" aria-hidden="true">
@@ -4052,8 +4059,7 @@ border-radius: 4px;
                 ['dual-text', '#imagine-dual'],
                 ['altfel-descriere', '#imagine-glob'],
                 ['altfel-program', '#imagine-maini'],
-                ['altfel-rezultate', '#imagine-cerc'],
-                ['verde-motivatie', '#imagine-logo']
+                ['altfel-rezultate', '#imagine-cerc']
             ];
 
             function updateImagini() {
@@ -4094,57 +4100,82 @@ border-radius: 4px;
                 });
             }
 
-// Setare înălțime container, "Săptămâna verde"
-function updateVoluntari() {
-    const divSos = document.getElementById('verde-sos');
-    const divVoluntari = document.getElementById('verde-voluntari');
-    const imgContainer = document.getElementById('imagine-voluntari');
+// Setare înălțime container în funcție de container de referință, "Săptămâna verde"
+            function updateDiv(referenceDivId, targetDivId, imageDivId, nrSiblings) {
+                const divRef = document.getElementById(referenceDivId);
+                const divTar = document.getElementById(targetDivId);
+                const divImg = document.getElementById(imageDivId);
 
-    if (!divSos || !divVoluntari || !imgContainer) return;
+                if (!divRef || !divTar || !divImg) return;
 
-    const imagine = imgContainer.querySelector('img');
-    if (!imagine) return;
+                const imagine = divImg.querySelector('img');
+                if (!imagine) return;
 
-    const ajusteazaInaltimeaImaginei = () => {
-        const inaltimeSos = divSos.offsetHeight;
+                imagine.style.display = 'none';
 
-        let inaltimeCopii = 0;
-        Array.from(divVoluntari.children).forEach(elem => {
-            if (elem.id !== 'imagine-voluntari') {
-                inaltimeCopii += elem.offsetHeight;
+                const ajusteazaImg = () => {
+                    const inaltimeRef = divRef.offsetHeight;
+
+                    let inaltimeCopii = 0;
+                    Array.from(divTar.children).forEach(elem => {
+                        if (elem.id !== imageDivId) {
+                        inaltimeCopii += elem.offsetHeight;
+                        }
+                    });
+
+                    const inaltimeImg = inaltimeRef - inaltimeCopii - ( 2 * nrSiblings) - 1;
+                    imagine.style.height = inaltimeImg > 0 ? inaltimeImg + 'px' : '0px';
+                    imagine.style.display = 'block';
+                };
+
+                if (imagine.complete && imagine.naturalWidth !== 0) {	
+                    ajusteazaImg();
+                } else {
+                    imagine.onload = () => {
+                    ajusteazaImg();
+                    };
+                }
             }
-        });
 
-        const inaltimeImagineNecesară = inaltimeSos - inaltimeCopii;
-        console.log('Inaltime SOS:', inaltimeSos);
-        console.log('Inaltime copii:', inaltimeCopii);
-        console.log('Inaltime necesara imagine:', inaltimeImagineNecesară);
-        imagine.style.height = inaltimeImagineNecesară > 0 ? inaltimeImagineNecesară + 'px' : '0px';
-    };
+            const divsParametri = [
+                ['verde-motivatie', 'verde-logo', 'imagine-logo', '1'],
+                ['imagine-sos', 'verde-voluntari', 'imagine-voluntari', '2']
+            ];
 
-    // Apelează funcția pentru prima dată și la resize
-    ajusteazaInaltimeaImaginei();
+            function updateDivs() {
+                const maxIncercari = 10;
+                let incercari = 0;
 
-}
+                const tryUpdate = () => {
+                    let toateGăsite = true;
 
-// Adaugă evenimentele
-window.addEventListener('load', updateVoluntari);
-window.addEventListener('resize', updateVoluntari);
+                    divsParametri.forEach(([referenceDivId, targetDivId, imageDivId, nrSiblings]) => {
+                        const referenceDiv = document.getElementById(referenceDivId);
+                        const targetDiv = document.getElementById(targetDivId);
+                        const imageDiv = document.getElementById(imageDivId);
 
-const ajusteazaInaltimeaImaginei = () => {
-    const inaltimeSos = divSos.offsetHeight;
-    let inaltimeCopii = 0;
-    Array.from(divVoluntari.children).forEach(elem => {
-        if (elem.id !== 'imagine-voluntari') {
-            inaltimeCopii += elem.offsetHeight;
-        }
-    });
-    const inaltimeImagineNecesară = inaltimeSos - inaltimeCopii;
-    console.log('Inaltime SOS:', inaltimeSos);
-    console.log('Inaltime copii:', inaltimeCopii);
-    console.log('Inaltime necesara imagine:', inaltimeImagineNecesară);
-    imagine.style.height = inaltimeImagineNecesară > 0 ? inaltimeImagineNecesară + 'px' : '0px';
-};
+                        if (!referenceDiv || !targetDiv || !imageDiv) {
+                            toateGăsite = false;
+                            return;
+                        }
+                    });
+
+                    if (toateGăsite) {
+                        divsParametri.forEach(([referenceDivId, targetDivId, imageDivId, nrSiblings]) => {
+                            updateDiv(referenceDivId, targetDivId, imageDivId, nrSiblings);
+                        });
+                    } else {
+                        incercari++;
+                        if (incercari < maxIncercari) {
+                            setTimeout(tryUpdate, 300);
+                        } else {
+                            console.warn(`Unele elemente din divsParametri nu au fost găsite după ${maxIncercari} încercări.`);
+                            }
+                    }
+                };
+
+                tryUpdate();
+            }
 
 // Zoom și translatare imagine, "Contact"
             function limitPosition(container, img, scale, translateX, translateY) {
@@ -4299,10 +4330,9 @@ const ajusteazaInaltimeaImaginei = () => {
                 updateMeniu();
                 updateGap();
                 updateImagini();
-             //   updateDivs();
-//updateVoluntari;
                 initializeParams();
                 potrivesteTexte();
+                updateDivs();
                 setupZoomTranslatare();
 
 // Inițializare setări la redimensionare pagină
@@ -4310,8 +4340,7 @@ const ajusteazaInaltimeaImaginei = () => {
                     updateMeniu();
                     updateGap();
                     updateImagini();
-             //       updateDivs();
-//updateVoluntari;
+                    updateDivs();
                     potrivesteTexte();
                 });
 
