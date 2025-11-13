@@ -1967,6 +1967,7 @@ border-radius: 4px;
                     }
 
                     .c {
+                        align-items: center;
                         text-align: center;
                     }
 
@@ -2110,8 +2111,48 @@ border-radius: 4px;
                     }
                 }
 
-/* aside nu, imagine-4 2, imagine-2 1 */
-                @media (min-width: 1153px) and (max-width: 1680px) {
+/* imagine-4 2, imagine-2 1 */
+                @media (min-width: 1367px) and (max-width: 1680px) {
+                    aside {
+                        min-height: 100vh;
+                    }
+                    .banner {
+                        margin-left: var(--asz);
+                    }
+                    .content {
+                        margin-left: var(--asz);
+                    }
+                    .page-menu .trei-evaluare {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                    .page-menu .patru-organigrama {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                    #verde-platforma-1 .wrap-3 {
+                        grid-column: span 6;
+                    }
+                    #verde-platforma-2 .wrap-3 {
+                        grid-column: span 6;
+                    }
+                    .sectiune-comunicari ul {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                    .imagine-4 {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                    .imagine-2 {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+                    .sectiune-telverde ul {
+                        grid-template-columns: repeat(4, 1fr);
+                    }
+                    .footer {
+                        margin-left: var(--asz);
+                    }
+                }
+
+/* aside da */
+                @media (min-width: 1153px) and (max-width: 1366px) {
                     aside {
                         border-radius: 4px;
                     }
