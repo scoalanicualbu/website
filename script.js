@@ -471,13 +471,15 @@
 // Apeluri de inițializare pentru funcții
 
 // Inițializare setări la încărcare pagină
-                updateMeniu();
-                updateGap();
-                updateImagini();
-                initializeParams();
-                potrivesteTexte();
-                updateDivs();
-                setupZoomTranslatare();
+                window.addEventListener('load', () => {
+                    updateMeniu();
+                    updateGap();
+                    updateImagini();
+                    updateDivs();
+                    initializeParams();
+                    potrivesteTexte();
+                    setupZoomTranslatare();
+                });
 
 // Inițializare setări la redimensionare pagină
                 window.addEventListener('resize', () => {
