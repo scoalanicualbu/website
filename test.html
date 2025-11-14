@@ -215,52 +215,51 @@ border: 0px solid #404040;
                     background-color: #FFFFFF;
                 }
 
-.tooltip-text {
-  visibility: hidden;
-  opacity: 0;
-  background-color: #f5f5f5; /* gri pal */
-  color: #222;
-  text-align: center;
-  border-radius: 4px;
-  padding: 6px 10px;
-  position: absolute;
-  z-index: 1000;
-  bottom: 125%; /* puțin mai sus de element */
-  left: 50%;
-  transform: translateX(-50%);
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-  font-size: 13px;
-  font-family: Arial, sans-serif;
-  white-space: nowrap;
-  max-width: 220px;
-  transition: opacity 0.2s ease-in-out;
-  pointer-events: none;
-  user-select: none;
-  line-height: 1.3;
-}
-
-.tooltip-text::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -6px;
-  border-width: 6px;
-  border-style: solid;
-  border-color: #f5f5f5 transparent transparent transparent;
-}
-
-.tooltip-link:hover .tooltip-text,
-.tooltip-link:focus .tooltip-text {
-  visibility: visible;
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.tooltip-link:focus {
-  outline: 2px solid #2684ff;
-  outline-offset: 2px;
-}
+  a.tooltip-link {
+    position: relative;
+    outline: none;
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+font-weight: normal;
+  }
+  a.tooltip-link:focus {
+    outline: 1px solid #FFFFFF;
+    outline-offset: 2px;
+  }
+  .tooltip-text {
+    position: absolute;
+    top: 0%; /* dedesubt */
+    left: 0; /* va fi ajustat din JS */
+    background: #f5f5f5; /* gri pal */
+    color: #000;
+    padding: 4px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+    font-size: 12px;
+font-weight: normal;
+    line-height: 1.2;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.15s ease-in-out;
+    pointer-events: none;
+    z-index: 1000;
+    border: 1px solid #444; /* chenar gri închis */
+    max-width: 300px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+  .tooltip-text::after {
+    content: none;
+  }
+  a.tooltip-link:hover .tooltip-text,
+  a.tooltip-link:focus .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
 
 /* Sari la Conținut */
                 .skip-link {
@@ -3947,7 +3946,7 @@ border-radius: 4px;
                         <p class="sr-only">Această secțiune cuprinde o imagine sugestivă privind voluntarii asociați programului național „Săptămâna verde”.</p>
 
                         <div id="imagine-senscivic" class="content-imagine">
-                            <a href="https://senscivic.ro" target="_blank" rel="noopener noreferrer">
+                            <a href="https://senscivic.ro" target="_blank" rel="noopener noreferrer"  title="Se deschide într-o nouă fereastră">
                                <img src="verde/senscivic.png" alt="Sigla Asociației „Sens Civic”: textul „Asociația Sens Civic” în albastru deasupra unui logo circular cu un design în formă de stea și Pământ, înconjurat de dungi roșii, galbene și albastre">
                                 <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
                             </a>
@@ -3965,7 +3964,7 @@ border-radius: 4px;
 
                         <div id="imagine-letsdoit" class="content-imagine">
                             <a href="https://letsdoitromania.ro" target="_blank" rel="noopener noreferrer">
-                               <img src="verde/letsdoit.png" alt="Sigla Asociației „Sens Civic”: șapte fețe zâmbitoare colorate, stilizate, dispuse într-un cerc, transmit diversitate și muncă în echipă, iar în dreapta un text verde, pe fundal alb, spune „LET'S DO IT, ROMANIA!”">
+                               <img src="verde/letsdoit.png" alt="Sigla Asociaţiei „Let’s Do It, Romania!”: șapte fețe zâmbitoare colorate, stilizate, dispuse într-un cerc, transmit diversitate și muncă în echipă, iar în dreapta un text verde, pe fundal alb, spune „LET'S DO IT, ROMANIA!”">
                                 <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
                             </a>
                         </div>
@@ -4569,6 +4568,41 @@ border-radius: 4px;
                 }, { passive: false });
 
             });
+
+  const links = document.querySelectorAll('a.tooltip-link');
+
+  links.forEach(link => {
+    const tooltip = link.querySelector('.tooltip-text');
+
+    function adjustTooltipPosition() {
+      // Resetăm poziția pentru a calcula corect lățimea
+      tooltip.style.left = '0px';
+
+      const linkRect = link.getBoundingClientRect();
+      const tooltipRect = tooltip.getBoundingClientRect();
+      const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+
+      // Poziția dorită inițială: dedesubt, aliniat la stânga link-ului
+      let left = 0;
+
+      // Dacă tooltip-ul depășește marginea dreaptă a ecranului, ajustăm spre stânga
+      const overflowRight = linkRect.left + tooltipRect.width - viewportWidth + 10; // 10px margine
+
+      if (overflowRight > 0) {
+        left = -overflowRight;
+      }
+
+      tooltip.style.left = left + 'px';
+    }
+
+    link.addEventListener('mouseenter', adjustTooltipPosition);
+    link.addEventListener('focus', adjustTooltipPosition);
+    window.addEventListener('resize', () => {
+      if (tooltip.style.visibility === 'visible') {
+        adjustTooltipPosition();
+      }
+    });
+  });
 
         </script>
 
