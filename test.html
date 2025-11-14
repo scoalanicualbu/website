@@ -96,6 +96,7 @@ border: 0px solid #404040;
                 line-height: 1.5;
                 font-family: Arial, sans-serif;
                 font-size: var(--sz3);
+                color: #404040;
                 background-color: #FFFFFF;
             }
 
@@ -2028,6 +2029,7 @@ border-radius: 4px;
                     }
 
                     .c {
+                        align-items: center;
                         text-align: center;
                     }
 
@@ -2078,7 +2080,7 @@ border-radius: 4px;
                     }
                 }
 
-/* page-menu-2 (organigrama) */
+/* page-menu-2 (organigrama),  verde (div-link, imagine-link) da, wrap-3 (verde 2-platforma1,2) */
                 @media (min-width: 1921px)and (max-width: 2160px) {
                     aside {
                         min-height: 100vh;
@@ -2171,12 +2173,15 @@ border-radius: 4px;
                     }
                 }
 
-/* citat-3 (sindicat) */
-                @media (min-width: 1367px)and (max-width: 1680px) {
+/* imagine-4 2, imagine-2 1 */
+                @media (min-width: 1367px) and (max-width: 1680px) {
                     aside {
                         min-height: 100vh;
                     }
                     .banner {
+                        margin-left: var(--asz);
+                    }
+                    .content {
                         margin-left: var(--asz);
                     }
                     .page-menu .trei-evaluare {
@@ -2184,12 +2189,6 @@ border-radius: 4px;
                     }
                     .page-menu .patru-organigrama {
                         grid-template-columns: repeat(2, 1fr);
-                    }
-                    .content {
-                        margin-left: var(--asz);
-                    }
-                    #sindicat-continut .citat-3 {
-                        text-align: center;
                     }
                     #verde-platforma-1 .wrap-3 {
                         grid-column: span 6;
@@ -2200,6 +2199,12 @@ border-radius: 4px;
                     .sectiune-comunicari ul {
                         grid-template-columns: repeat(2, 1fr);
                     }
+                    .imagine-4 {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                    .imagine-2 {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
                     .sectiune-telverde ul {
                         grid-template-columns: repeat(4, 1fr);
                     }
@@ -2208,7 +2213,7 @@ border-radius: 4px;
                     }
                 }
 
-/* aside nu, imagine-4 2, imagine-2 1 */
+/* aside da */
                 @media (min-width: 1153px) and (max-width: 1366px) {
                     aside {
                         border-radius: 4px;
@@ -2218,9 +2223,6 @@ border-radius: 4px;
                     }
                     .page-menu .patru-organigrama {
                         grid-template-columns: repeat(2, 1fr);
-                    }
-                    #sindicat-continut .citat-3 {
-                        text-align: center;
                     }
                     #verde-platforma-1 .wrap-3 {
                         grid-column: span 6;
@@ -2253,9 +2255,6 @@ border-radius: 4px;
                     .page-menu .patru-organigrama {
                         grid-template-columns: repeat(2, 1fr);
                     }
-                    #sindicat-continut .citat-3 {
-                        text-align: center;
-                    }
                     #verde-platforma-1 .wrap-3 {
                         grid-column: span 6;
                     }
@@ -2280,7 +2279,7 @@ border-radius: 4px;
                     }
                 }
 
-/*  page-menu 1 (admitere) */
+/*  page-menu 1 (admitere), wrap-3 (verde 2-platforma1,2) */
                 @media (min-width: 801px) and (max-width: 900px) {
                     aside {
                         border-radius: 4px;
@@ -2315,9 +2314,6 @@ border-radius: 4px;
                     }
                     #personal-continut .wrap-8 {
                         grid-column: span 12;
-                    }
-                    #sindicat-continut .citat-3 {
-                        text-align: center;
                     }
                     #sindicat-continut .wrap-show {
                         display: none;
@@ -2409,7 +2405,7 @@ border-radius: 4px;
                     }
                 }
 
-/* page-menu 2 (prezentare, regulamente), comunicari 1, telverde 2 */
+/* page-menu 2 (prezentare, regulamente), wrap-3 (verde 2-continut), wrap-2 (verde 3-proiecte), comunicari 1, telverde 2 */
                 @media (min-width: 721px) and (max-width: 800px) {
                     aside {
                         border-radius: 4px;
@@ -2450,9 +2446,6 @@ border-radius: 4px;
                     }
                     #personal-continut .wrap-8 {
                         grid-column: span 12;
-                    }
-                    #sindicat-continut .citat-3 {
-                        text-align: center;
                     }
                     #sindicat-continut .wrap-show {
                         display: none;
@@ -2610,9 +2603,6 @@ border-radius: 4px;
                     #personal-continut .wrap-8 {
                         grid-column: span 12;
                     }
-                    #sindicat-continut .citat-3 {
-                        text-align: center;
-                    }
                     #sindicat-continut .wrap-show {
                         display: none;
                     }
@@ -2746,7 +2736,7 @@ border-radius: 4px;
                 }
 
 
-/* legaturi 1, imagine-4 1, wrap-92 12-1, wrap-6 12 (conducere-ul),  wrap-3 (altfel) */
+/* legaturi 1, imagine-4 1, wrap-92 12-1, wrap-6 12 (conducere-ul),  wrap-3 (altfel, verde 1-continut) */
                 @media (min-width: 427px) and (max-width: 600px) { 
                     aside {
                         border-radius: 4px;
@@ -2787,9 +2777,6 @@ border-radius: 4px;
                     }
                     #personal-continut .wrap-8 {
                         grid-column: span 12;
-                    }
-                    #sindicat-continut .citat-3 {
-                        text-align: center;
                     }
                     #sindicat-continut .wrap-show {
                         display: none;
@@ -2932,7 +2919,7 @@ border-radius: 4px;
                     }
                 }
 
-/* page-menu 1 (prezentare), telverde 1 */
+/* page-menu 1 (prezentare), wrap-2 (verde 2-proiecte), telverde 1 */
                 @media (min-width: 353px) and (max-width: 426px) {
                     aside {
                         border-radius: 4px;
@@ -2967,9 +2954,6 @@ border-radius: 4px;
                     }
                     #contact-continut .wrap-9 {
                         grid-column: span 12;
-                    }
-                    #sindicat-continut .citat-3 {
-                        text-align: center;
                     }
                     #sindicat-continut .wrap-show {
                         display: none;
@@ -3156,9 +3140,6 @@ border-radius: 4px;
                     }
                     #contact-continut .wrap-9 {
                         grid-column: span 12;
-                    }
-                    #sindicat-continut .citat-3 {
-                        text-align: center;
                     }
                     #sindicat-continut .wrap-show {
                         display: none;
@@ -3950,31 +3931,27 @@ border-radius: 4px;
 
                     <ul>                    
                         <li>
-                            <a href="https://www.edu.ro" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.edu.ro" target="_blank" rel="noopener noreferrer" aria-label="Ministerul Educației și Cercetării (se deschide într-o nouă fereastră)">
                                 <img src="https://raw.githubusercontent.com/scoalanicualbu/scoalanicualbu.github.io/main/prezentare/mec.png" alt="Sigla Ministerului Educației și Cercetării">
                                 <div id="mec" class="text">Ministerul Educației și Cercetării</div>
-                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.isjneamt.ro" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.isjneamt.ro" target="_blank" rel="noopener noreferrer" aria-label="Inspectoratul Școlar Județean Neamț (se deschide într-o nouă fereastră)">
                                 <img src="https://raw.githubusercontent.com/scoalanicualbu/scoalanicualbu.github.io/main/prezentare/isjneamt.png" alt="Sigla Inspectoratului Școlar Județean Neamț">
                                 <div id="isjneamt" class="text">Inspectoratul Școlar Județean Neamț</div>
-                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.cjrae-neamt.ro" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.cjrae-neamt.ro" target="_blank" rel="noopener noreferrer" aria-label="Centrul Județean de Resurse și Asistență Educațională Neamț (se deschide într-o nouă fereastră)">
                                 <img src="https://raw.githubusercontent.com/scoalanicualbu/scoalanicualbu.github.io/main/prezentare/cjraeneamt.png" alt="Sigla Centrului Județean de Resurse și Asistență Educațională Neamț">
                                 <div id="cjraeneamt" class="text">Centrul Județean de Resurse și Asistență Educațională Neamț</div>
-                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.ccdneamt.ro" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.ccdneamt.ro" target="_blank" rel="noopener noreferrer" aria-label="Casa Corpului Didactic Neamț (se deschide într-o nouă fereastră)">
                                 <img src="https://raw.githubusercontent.com/scoalanicualbu/scoalanicualbu.github.io/main/prezentare/ccdneamt.png" alt="Sigla Casei Corpului Didactic Neamț">
                                 <div id="ccdneamt" class="text">Casa Corpului Didactic Neamț</div>
-                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
                             </a>
                         </li>
                     </ul>
@@ -4485,8 +4462,11 @@ border-radius: 4px;
                 updateImagini();
                 initializeParams();
                 potrivesteTexte();
-                updateDivs();
                 setupZoomTranslatare();
+
+                window.onload = () => {
+                    updateDivs();
+                };
 
 // Inițializare setări la redimensionare pagină
                 window.addEventListener('resize', () => {
