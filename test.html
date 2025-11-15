@@ -220,7 +220,6 @@ border: 0px solid #404040;
                     outline: none;
                     display: inline-block;
                     text-decoration: none;
-                    font-family: Arial, sans-serif;
                     font-size: 0.75rem;
                     font-weight: normal;
                     color: #404040;
@@ -242,7 +241,7 @@ border-radius: 4px;
                     padding-bottom: 0.15rem;
                     padding-left: 0.2rem;
                     padding-right: 0.2rem;
-                    max-width: 300px;
+                    width: auto;
                     position: absolute;
                     bottom: 0;
                     right: 0;
@@ -251,9 +250,7 @@ border-radius: 4px;
                     opacity: 0;
                     transition: opacity 0.15s ease-in-out;
                     pointer-events: none;
-                    white-space: nowrap;
-                    overflow-wrap: break-word;
-                    word-wrap: break-word;
+                    text-align: center;
                     line-height: 1;
                     font-size: 0.75rem;
                     font-weight: normal;
@@ -3963,9 +3960,9 @@ border-radius: 4px;
                         <p class="sr-only">Această secțiune cuprinde o imagine sugestivă privind voluntarii asociați programului național „Săptămâna verde”.</p>
 
                         <div id="imagine-senscivic" class="content-imagine">
-                            <a href="https://senscivic.ro" target="_blank" rel="noopener noreferrer"  title="Se deschide într-o nouă fereastră">
-                               <img src="verde/senscivic.png" alt="Sigla Asociației „Sens Civic”: textul „Asociația Sens Civic” în albastru deasupra unui logo circular cu un design în formă de stea și Pământ, înconjurat de dungi roșii, galbene și albastre">
-                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
+                            <a href="https://senscivic.ro" target="_blank" rel="noopener noreferrer" class="tooltip-link" aria-label="Asociația „Sens Civic” (se deschide într-o nouă fereastră)">
+                                <img src="verde/senscivic.png" alt="Sigla Asociației „Sens Civic”: textul „Asociația Sens Civic” în albastru deasupra unui logo circular cu un design în formă de stea și Pământ, înconjurat de dungi roșii, galbene și albastre">
+                                <span role="tooltip" class="tooltip-text">Se deschide într-o nouă fereastră</span>
                             </a>
                         </div>
 
@@ -3980,9 +3977,9 @@ border-radius: 4px;
                         </div>
 
                         <div id="imagine-letsdoit" class="content-imagine">
-                            <a href="https://letsdoitromania.ro" target="_blank" rel="noopener noreferrer">
-                               <img src="verde/letsdoit.png" alt="Sigla Asociaţiei „Let’s Do It, Romania!”: șapte fețe zâmbitoare colorate, stilizate, dispuse într-un cerc, transmit diversitate și muncă în echipă, iar în dreapta un text verde, pe fundal alb, spune „LET'S DO IT, ROMANIA!”">
-                                <span class="sr-only"> (se deschide într-o nouă fereastră)</span>
+                            <a href="https://letsdoitromania.ro" target="_blank" rel="noopener noreferrer" class="tooltip-link" aria-label="Asociaţia „Let’s Do It, Romania!” (se deschide într-o nouă fereastră)">
+                                <img src="verde/letsdoit.png" alt="Sigla Asociaţiei „Let’s Do It, Romania!”: șapte fețe zâmbitoare colorate, stilizate, dispuse într-un cerc, transmit diversitate și muncă în echipă, iar în dreapta un text verde, pe fundal alb, spune „LET'S DO IT, ROMANIA!”">
+                                <div role="tooltip" class="tooltip-text">Se deschide într-o nouă fereastră</div>
                             </a>
                         </div>
 
